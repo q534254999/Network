@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.2.1 VLAN 中继</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>VLAN 中继</h1>
+        <div>
+          <p>中继是两台网络设备之间的点对点链路，负责传输多个 VLAN 的流量。VLAN TRUNK 在整个网络上扩展 VLAN。思科支持 IEEE 802.1Q 来协调快速以太网、千兆以太网和 10 千兆以太网接口上的 TRUNK。 </p>
+          <p></p>
+          <p>如果没有 VLAN TRUNK，VLAN 并不是很有用。VLAN TRUNK 允许在交换机之间传播所有 VLAN 流量，这样位于同一 VLAN 但连接到不同交换机的设备便可以通信，不需要路由器的干预。</p>
+          <p></p>
+          <p>VLAN TRUNK 不属于具体的 VLAN，而是作为多个 VLAN 中交换机与路由器之间的管道。TRUNK 还可在网络设备和服务器或其他具有相应 802.1Q 网卡的设备之间使用。默认情况下，在思科 Catalyst 交换机上，TRUNK 端口支持所有 VLAN。</p>
+          <p></p>
+          <p>在图中，交换机 S1 和 S2 之间的链路以及 S1 和 S3 均配置为在网络中传输来自 VLAN 10、20、30 和 99 的流量。如果没有 VLAN TRUNK，此网络将无法运行。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示三台交换机，交换机 1 连接到交换机 2 和 3。交换机 2 和 3，每个有三个 VLAN。有标注表明哪个端口分配了哪个 VLAN。还有一个标注，表明交换机 1 使用允许必要的 VLAN 跨越链路的中继链路连接到交换机 2 和 3。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

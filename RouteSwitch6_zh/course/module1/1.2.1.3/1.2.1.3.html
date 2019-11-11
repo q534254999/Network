@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.2.1.3 转发到下一跳</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>转发到下一跳</h1>
+        <div>
+          <p>当 R1 收到来自 PC1 的以太网帧时，将发生以下过程：</p>
+          <p></p>
+          <p>1.R1 检查目标 MAC 地址，其匹配接收接口的 MAC 地址：FastEthernet 0/0。因此，R1 将帧复制到缓冲区。</p>
+          <p>2.R1 将以太网类型字段标识为 0x800，这意味着以太网帧在帧的数据部分中包含 IPv4 数据包。</p>
+          <p>3.R1 将以太网帧解封。</p>
+          <p>4.由于数据包的目的 IPv4 地址与 R1 的所有直连网络均不匹配，因此 R1 将查询其路由表来确定数据包的路由方式。R1 将在路由表中搜索将数据包的目的 IPv4 地址作为主机地址包含在该网络中的网络地址。在本例中，路由表存在 192.168.4.0/24 网络的路由条目。数据包的目标 IPv4 地址为 192.168.4.10，这是该网络中的主机 IPv4 地址。</p>
+          <p></p>
+          <p>R1 找到的指向 192.168.4.0/24 网络的路由，使用的下一跳 IPv4 地址为 192.168.2.2，送出接口为 FastEthernet 0/1。这意味着将 IPv4 数据包封装到一个新的包含下一跳路由器 IPv4 地址的目的 MAC 地址的以太网帧中。 </p>
+          <p></p>
+          <p>由于送出接口连接的是以太网，R1 必须使用 ARP 将下一跳 IPv4 地址解析为目的 MAC 地址：</p>
+          <p></p>
+          <p>1.R1 在其 ARP 缓存中查找下一跳 IPv4 地址 192.168.2.2。如果该条目不在 ARP 缓存中，则 R1 将从 FastEthernet 0/1 接口发送 ARP 请求，而且 R2 将以 ARP 回复应答。收到 ARP 回复后，R1 便使用 192.168.2.2 条目及相关 MAC 地址更新其 ARP 缓存。</p>
+          <p>2.现在 IPv4 数据包被封装到新的以太网帧中，并从 R1 的 FastEthernet 0/1 接口转发出去。</p>
+          <p></p>
+          <p>图中的动画说明 R1 如何将数据包转发到 R2。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中是一个路由器接收数据包的动画。该图显示路由器将接受数据包，因为目标 MAC 地址是该路由器的地址。路由器读取目标 IP 地址并查看其路由表以确定将数据包转发到何处。路由器确定需要将数据包发送到下一个路由器上的以太网接口。路由器将封装数据、使用下一跳接口作为目标 MAC 地址并使用其自己的 MAC 地址作为源地址。未更改源和目标 IP 地址。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+图 1 显示路由器 2，内部网络在左侧，外部网络在右侧。内部网络包含 2 台计算机和路由器 1。外部网络包含两个服务器。路由器 2 使用 PAT。从 PC1 发送到服务器的 ping 失败。“show ip nat translations”命令的输出显示无转换。图 2 显示了“show ip nat statistics”命令的输出。输出显示了内部接口和外部接口向后兼容。下面列出了纠正此问题的语法。图 3 显示“show access-lists”命令的输出。此外，还列出了删除列表以及重新创建列表的语法。图 4 显示了“show ip nat statistics”命令和“show ip nat translations”命令的输出。

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.3 Auto-MDIX</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Auto-MDIX</h1>
+        <div>
+          <p>直到最近，在连接设备时仍然要求使用某些电缆类型（直通或交叉）。交换机到交换机或交换机到路由器的连接要求使用不同的以太网电缆。在接口上使用自动介质相关接口交叉 (auto-MDIX) 功能可以解决这一问题。当启用 auto-MDIX 时，接口会自动检测所需电缆连接类型（直通或交叉）并配置相应连接。如果连接到无自动 MDIX 功能的交换机，必须使用直通电缆连接到设备（如，服务器、工作站或路由器）。必须使用交叉线缆连接到其他交换机或中继器。 </p>
+          <p></p>
+          <p>当启用 auto-MDIX 时，可以使用任意一种类型的电缆连接其他设备，而接口会自动纠正以使通信成功。在较新版本的思科交换机上，<b>mdix auto </b>接口配置模式命令可以启用此功能。当在接口上使用 auto-MDIX 时，接口速度和双工必须设置为“<b>auto</b>”，这样该功能才能正常运行。</p>
+          <p>用于启用 auto-MDIX 的命令如图 1 所示。</p>
+          <p></p>
+          <p>
+            <b>注</b>：Catalyst 2960 和 Catalyst 3560 交换机上会默认启用 auto-MDIX 功能，但在更早版的 Catalyst 2950 和 Catalyst 3550 交换机上此功能不可用。</p>
+          <p></p>
+          <p>要检查某个特定接口的 Auto-MDIX 设置，应当使用 <b>show controllers ethernet-controller </b>命令和关键字<b> phy</b>。要将输出限定为引用 Auto-MDIX 的行，请使用<b> include Auto-MDIX </b>过滤器。如图 2 所示，输出将指示打开/关闭此功能。</p>
+          <p></p>
+          <p>使用图 3 中的语法检查器为 S2 上的 FastEthernet 0/1 接口配置 auto-MDIX。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示一个列出用于在交换机端口接口上配置 MDIX 功能的命令的表。CLI 以特权 EXEC 模式启动，且第一条命令是，configure terminal。这将进入全局配置模式。下一命令是 interface fast Ethernet zero slash one，然后交换机提示符变为配置 - if，并且放在括号内。下一命令为 duplex full。下一命令为 speed 100。新命令为 mdix auto，用于将 MDIX 选项设置为自动。该表以 copy running-config startup-config 命令结束。图 2 显示 show controllers Ethernet-controller fa0/1 phy | include Auto-MDIX 命令的输出。图 3 是允许学生使用 MDIX 选项配置交换机端口接口的互动练习。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

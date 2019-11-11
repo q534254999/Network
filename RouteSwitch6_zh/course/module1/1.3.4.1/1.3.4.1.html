@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.3.4.1 动态路由 </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.3.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>动态路由 </h1>
+        <div>
+          <p>路由器使用动态路由协议共享有关远程网络连通性和状态的信息。动态路由协议将执行多种活动，包括网络发现和路由表维护。</p>
+          <p></p>
+          <p>网络发现是路由协议的一项功能，通过此功能路由器能够与使用相同路由协议的其它路由器共享网络信息。动态路由协议使路由器能够自动地从其他路由器获知远程网络，这样便无需依赖在每台路由器上手动配置的指向远程网络的静态路由。这些网络以及通往每个网络的最佳路径都会添加到路由器的路由表中，并标识为由特定动态路由协议获知的网络。</p>
+          <p></p>
+          <p>在网络发现过程中，路由器将交换路由并更新其路由表。路由器在完成交换和路由表更新后已经聚合。之后路由器将在其路由表中维护网络。 </p>
+          <p></p>
+          <p>该图提供了一个关于两台相邻路由器如何初步交换路由信息的简单场景。在该简化交换中，R1 介绍了自己以及其可到达的网络。R2 回应其网络列表。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示通过 WAN 链路连接的两个路由器且它们都运行动态路由协议 EIGRP。每个路由器都有三个连接网络，并且它们会将这些网络通告到另一个路由器。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

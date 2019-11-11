@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.2.3 规则 2 - 忽略全 0 数据段</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>规则 2 - 忽略全 0 数据段</h1>
+        <div>
+          <p>第二条有助于缩短 IPv6 地址记法的规则是使用双冒号 (::) 替换任何由一个或多个全由 0 组成的16 位数据段（十六进制数）组成的连续字符串。 </p>
+          <p>双冒号 (::) 仅可在每个地址中使用一次，否则可能会得出一个以上的地址。当与忽略前导 0 的方法一起使用时，IPv6 地址记法可以大幅缩短。这通常称为压缩格式。</p>
+          <p>不正确的地址： </p>
+          <p>
+            <ul>
+              <li>2001:0DB8::ABCD::1234</li>
+            </ul>
+          </p>
+          <p>压缩的不明确地址的可能扩展：</p>
+          <p>
+            <ul>
+              <li>2001:0DB8::ABCD:0000:0000:1234</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:0DB8::ABCD:0000:0000:0000:1234</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:0DB8:0000:ABCD::1234</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:0DB8:0000:0000:ABCD::1234</li>
+            </ul>
+          </p>
+          <p>图 1 到图 7 的几个示例显示如何使用双冒号 (::) 和忽略前导 0 的方法来减小 IPv6 地址的大小。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figures 1 through 7 show examples of Rule 2 which replaces a single, continuous string of one or more all zero hextets with a double colon. For example, the IPv6 address 2001:DB8:0:1111:0:0:0:200 that has already had Rule 1 applied to it becomes 2001:DB8:0:1111::200</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

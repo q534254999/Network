@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.0.1.1 第 9 章：IPv4 NAT</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.0.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>第 9 章：IPv4 NAT</h1>
+        <div>
+          <p>互联网上的所有公共 IPv4 地址必须到地区互联网注册管理机构 (RIR) 进行注册。组织可租用服务提供商的公共地址。公有 IP 地址的注册拥有者可将该地址分配给网络设备。 </p>
+          <p></p>
+          <p>43 亿个地址是最大理论值，IPv4 地址空间很有限。当 Bob Kahn 和 Vint Cerf 在 1981 年首次开发 TCP/IP 协议簇（包括 IPv4）时，他们从未想象过互联网会如何变化。当时，个人计算机主要是为了满足爱好者的好奇心，而万维网还是在十多年以后才出现的。 </p>
+          <p></p>
+          <p>随着个人计算机的激增和万维网的出现，很快 43 亿个 IPv4 地址就不够用了。长期解决方案是 IPv6，但是现在迫切需要更快的地址耗尽解决方案。就短期而言，IETF 实施了几种解决方案，包括网络地址转换 (NAT) 和 RFC 1918 私有 IPv4 地址.本章讨论 NAT 与私有地址空间一起如何用于节省并更有效地使用 IPv4 地址，从而让各种规模的网络访问互联网。本章包括：</p>
+          <p>
+            <ul>
+              <li>NAT 特性、术语和一般操作</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>不同类型的 NAT，包括静态 NAT，动态 NAT 和过载的 NAT</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>NAT 优势和缺点</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>配置、验证和分析静态 NAT、动态 NAT 和 NAT 过载</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>如何使用端口转发从互联网访问内部设备</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>使用 <b>show </b>和<b> debug </b>命令对 NAT 进行故障排除</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>如何使用 NAT for IPv6 在 IPv6 地址和 IPv4 地址之间进行转换</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图显示本章的目标列表。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

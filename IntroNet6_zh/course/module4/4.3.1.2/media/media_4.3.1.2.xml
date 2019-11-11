@@ -1,0 +1,40 @@
+<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>数据链路子层</b>]]></text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[<b>网络层</b>]]></text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[<b>数据链路层</b>]]></text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[<b>物理层</b>]]></text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[LLC 子层]]>
+        </text>
+    </component>
+    <component id="ID_txt06">
+        <text>
+            <![CDATA[MAC 子层]]>
+        </text>
+    </component>
+    <component id="ID_txt07">
+        <text>
+            <![CDATA[<b>802.3 以太网</b>]]></text>
+    </component>
+    <component id="ID_txt08">
+        <text>
+            <![CDATA[<b>802.11 Wi-Fi</b>]]></text>
+    </component>
+    <component id="ID_txt09">
+        <text>
+            <![CDATA[<b>802.15 蓝牙</b>]]></text>
+    </component>
+</textcomponents>

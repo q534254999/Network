@@ -1,0 +1,1 @@
+图中显示的扩展 ACL 只允许包含 UDP 目标端口 67 或 68 的数据包。第一个命令是 access-list 100 permit udp any eq67。ACL 的第二行是 access-list 100 permit udp any eq68。图中接着运行命令 debug ip packet 100。这用于查看与 ACL100 也就是配置为允许 DHCP 的 ACL 匹配的练习。图中显示路由器从源 IP255.255.255.255 接收两个广播数据包，也就是 DHCP 请求。图中的最后一个命令是 debug ip dhcp server events。此命令将报告服务器事件，在图中将显示服务器上的 DHCP 活动。此练习包括将一个 IP 地址返回到池中，并且分配一个 IP 地址。

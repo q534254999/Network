@@ -1,0 +1,198 @@
+<textcomponents><!-- Slide 1 --><component id='ID_s1_inst'>
+	<text><![CDATA[<b>练习 – 第 1 部分：确定路由器存储器类型</b><br><br>指出您对路由器存储器的理解。 将内存功能拖动到相应字段来匹配内存类型。<br><br>通过点击“检查”按钮检查您的答案的准确度。 如果您的回答正确，请单击“按钮 2”继续本练习。 如果您的回答不正确，请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_s1_header01'>
+	<text><![CDATA[<b>内存类型</b>]]></text>
+</component>
+
+<component id='ID_s1_header02'>
+	<text><![CDATA[<b>内存功能</b>]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[NVRAM]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[闪存]]></text>
+</component>
+
+<component id='ID_s1_txt03'>
+	<text><![CDATA[ROM]]></text>
+</component>
+
+<component id='ID_s1_txt04'>
+	<text><![CDATA[RAM]]></text>
+</component><!-- Drag and Drop --><component id='ID_mf1_DS'>
+	<text><![CDATA[<font color="#393536">启动配置</font>]]></text>
+</component>
+
+<component id='ID_mf2_DS'>
+	<text><![CDATA[<font color="#393536">IOS 和系统文件</font>]]></text>
+</component>
+
+<component id='ID_mf3_DS'>
+	<text><![CDATA[<font color="#393536">诊断和启动说明</font>]]></text>
+</component>
+
+<component id='ID_mf4_DS'>
+	<text><![CDATA[<font color="#393536">运行配置</font>]]></text>
+</component>
+
+<component id='ID_mf5_DS'>
+	<text><![CDATA[<font color="#393536">病毒、蠕虫或特洛伊木马</font>]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[您已成功将每个内存功能与其类型匹配。 点击“按钮 2”以继续。]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[您尚未成功将每个内存功能与其类型匹配。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_s1_check'>
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id='ID_s1_reset'>
+	<text><![CDATA[<b>重置</b>]]></text>
+</component><!-- Slide 2 --><component id='ID_s2_inst'>
+	<text><![CDATA[<b>练习 – 第 2 部分：确定路由器组件</b><br><br>确定此思科 1941 系列路由器上的端口/插槽。 将端口或插槽名称与对应到相应后面板位置的字母进行匹配。 将位置字母拖动到提供的字段。]]></text>
+</component>
+
+<component id='ID_s2_circ01'>
+	<text><![CDATA[<b>A</b>]]></text>
+</component>
+
+<component id='ID_s2_circ02'>
+	<text><![CDATA[<b>B</b>]]></text>
+</component>
+
+<component id='ID_s2_circ03'>
+	<text><![CDATA[<b>C</b>]]></text>
+</component>
+
+<component id='ID_s2_circ04'>
+	<text><![CDATA[<b>D</b>]]></text>
+</component>
+
+<component id='ID_s2_circ05'>
+	<text><![CDATA[<b>E</b>]]></text>
+</component>
+
+<component id='ID_s2_circ06'>
+	<text><![CDATA[<b>F</b>]]></text>
+</component>
+
+<component id='ID_s2_circ07'>
+	<text><![CDATA[<b>G</b>]]></text>
+</component>
+
+<component id='ID_s2_header01'>
+	<text><![CDATA[<b>后面板端口或插槽名称</b>]]></text>
+</component>
+
+<component id='ID_s2_header02'>
+	<text><![CDATA[<b>后面板位置</b>]]></text>
+</component>
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[LAN 接口]]></text>
+</component>
+
+<component id='ID_s2_txt02'>
+	<text><![CDATA[控制台 USB Mini-B 端口]]></text>
+</component>
+
+<component id='ID_s2_txt03'>
+	<text><![CDATA[AUX 端口]]></text>
+</component>
+
+<component id='ID_s2_txt04'>
+	<text><![CDATA[4 GB 闪存卡插槽]]></text>
+</component>
+
+<component id='ID_s2_txt05'>
+	<text><![CDATA[双宽 eHWIC 插槽]]></text>
+</component>
+
+<component id='ID_s2_txt06'>
+	<text><![CDATA[控制台 RJ-45 端口]]></text>
+</component>
+
+<component id='ID_s2_txt07'>
+	<text><![CDATA[eHWIC 0 插槽]]></text>
+</component><!-- Drag and Drop --><component id='ID_sTwo1_DS'>
+
+	<text><![CDATA[A]]></text>
+</component>
+<component id='ID_sTwo2_DS'>
+
+	<text><![CDATA[B]]></text>
+</component>
+
+<component id='ID_sTwo3_DS'>
+
+	<text><![CDATA[C]]></text>
+</component>
+
+<component id='ID_sTwo4_DS'>
+
+	<text><![CDATA[D]]></text>
+</component>
+
+<component id='ID_sTwo5_DS'>
+
+	<text><![CDATA[E]]></text>
+</component>
+
+<component id='ID_sTwo6_DS'>
+
+	<text><![CDATA[F]]></text>
+</component>
+
+<component id='ID_sTwo7_DS'>
+
+	<text><![CDATA[G]]></text>
+
+</component>
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[您已成功将每个后面板端口或插槽名称与其位置相匹配。]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[您尚未成功将每个后面板端口或插槽名称与其位置相匹配。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_s2_check'>
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id='ID_s2_reset'>
+	<text><![CDATA[<b>重置</b>]]></text>
+</component>
+
+
+
+</textcomponents>

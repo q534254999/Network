@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.2.5 语音 VLAN 标记</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>语音 VLAN 标记</h1>
+        <div>
+          <p>回想一下，要支持 VoIP，需要单独的语音 VLAN。 </p>
+          <p></p>
+          <p>用于连接思科 IP 电话的接入端口可配置为使用两个单独的 VLAN：一个 VLAN 用于语音流量，另一个 VLAN 用于与电话连接的设备所发出的数据流量。交换机和 IP 电话之间的链路充当 TRUNK，用以传送语音 VLAN 流量和数据 VLAN 流量。</p>
+          <p></p>
+          <p>思科 IP 电话包含一个集成式三端口 10/100 交换机。从这些端口可连接到如下设备：</p>
+          <p>
+            <ul>
+              <li>端口 1 连接到交换机或其他 IP 语音 (VoIP) 设备。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>端口 2 是内部 10/100 接口，用于传送 IP 电话流量。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>端口 3（接入端口）连接到 PC 或其它设备。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>在交换机上，将访问配置为发送思科发现协议 (CDP) 数据包，该数据包将指示已连接的 IP 电话根据流量类型，以以下三种方式之一将语音流量发送到交换机：</p>
+          <p>
+            <ul>
+              <li>以标记了第 2 层服务类别优先级值的语音 VLAN 发送</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>以标记了第 2 层 CoS 优先级值的访问 VLAN 发送</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>以无标记（无第 2 层 CoS 优先级值）的访问 VLAN 发送</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>在图 1 中，学生计算机 PC5 连接到思科 IP 电话，而电话又连接到交换机 S3。VLAN 150 用于传送语音流量，而 PC5 位于供学生数据使用的 VLAN 20 中。</p>
+          <p></p>
+          <p>
+            <b>示例配置</b>
+          </p>
+          <p></p>
+          <p>图 2 显示了示例输出。关于思科 IOS 语音命令的讨论不在本课程的讨论范围之内，但输出示例中的突出显示区域表示 F0/18 接口已配置一个数据 VLAN (VLAN 20) 和一个语音 VLAN (VLAN 150)。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示一个连接到 VoIP 电话的交换机和一台与电话相连的计算机。有标注表明交换机配置为支持语音流量以及 VLAN 20 的流量。如果流量是用于电话而不是 VLAN 150，则会将其指向电话。但是，如果流量不是发往电话的，则会将其指向计算机。图 2 显示交换机上“show interface f0/0 switchport”命令的输出。访问 VLAN 和语音 VLAN 突出显示。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>交换机</b><br/><br/><textformat blockindent='-14'><ul><li>确定相连主机、端口位置和唯一 MAC 地址</li><li>将唯一的主机地址记录到 MAC 地址表中</li><li>使用单播、组播和广播发送和接收数据流量</li></ul></textformat>]]></text>
+</component>
+
+
+
+</textcomponents>

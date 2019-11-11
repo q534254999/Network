@@ -1,0 +1,63 @@
+<textcomponents>
+   
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>练习 - 计算子网掩码（基本）</b>]]></text>
+    </component>
+    <component id="ID_s1_instr_title">
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id="ID_s1_instr_body">
+        <text>
+            <![CDATA[在本练习中，您将获得十进制格式的子网掩码。在提供的二进制八位数字段中输入子网掩码的二进制表示。此外，在“前缀记法”字段中将掩码转换为前缀记法 (/x) 格式。]]>
+        </text>
+    </component>
+    <component id="txt_correct">
+        <text>
+            <![CDATA[<b>正确</b>]]></text>
+    </component>
+    <component id="txt_incorrect">
+        <text>
+            <![CDATA[<b>不正确</b>]]></text>
+    </component>
+    <component id="txt_body_correct">
+        <text>
+            <![CDATA[您已正确将子网掩码转换为二进制和前缀记法格式。请单击“新数字”以继续。]]>
+        </text>
+    </component>
+    <component id="txt_body_incorrect">
+        <text>
+            <![CDATA[您尚未正确将子网掩码转换为二进制和前缀记法格式。请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[<b>子网掩码</b>]]></text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[<b>子网掩码（二进制）</b>]]></text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[<b>前缀记法</b>]]></text>
+    </component>
+    <component id="txt_check">
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id="txt_reset">
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+    <component id="txt_newnumber">
+        <text>
+            <![CDATA[新数字]]></text>
+    </component>
+    <component id="mask">
+        <text>
+            <![CDATA[<b>计算子网掩码</b>]]></text>
+    </component>
+</textcomponents>

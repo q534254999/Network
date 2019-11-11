@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.7 组播 MAC 地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>组播 MAC 地址</h1>
+        <div>
+          <p>组播地址允许源设备向一组设备发送数据包。属于某一组播组的设备都指派有该组播组 IP 地址。IPv4 组播地址的范围为 224.0.0.0 到 239.255.255.255。IPv6 组播地址的范围以 FF00::/8 开头。由于组播地址代表一组地址（有时称为主机组），因此只能用作数据包的目的地址。源地址始终为单播地址。 </p>
+          <p>远程游戏中需要使用组播地址，其中有许多玩家通过远程连接来玩同一个游戏。另一个使用组播地址的例子就是通过视频会议进行远程教学，其中许多学生将连接到同一个教室。 </p>
+          <p>如同单播和广播地址一样，组播 IP 地址也需要相应的组播 MAC 地址才能在本地网络中实际传送帧。与 IPv4 组播地址关联的组播 MAC 地址是一个以十六进制的 01-00-5E 开头的特殊值。组播 MAC 地址的其余部分通过将 IP 组播组地址的低 23 位换算成 6 个十六进制字符而创建。对于 IPv6 地址，组播 MAC 地址以 33-33 开头。</p>
+          <p>动画所示的示例是组播十六进制地址 01-00-5E-00-00-C8。IPv4 地址 224.0.0.200 的最后一个字节（或 8 位）是十进制值 200。计算十六进制对应值的最简单的方法是首先用每四位使用一个空格，将其转换为二进制，200（十进制）= 1100 1000（二进制）。二进制转换为十六进制的表已给出，1100 1000（二进制）= 0xC8。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">This animation shows several computers connected to a switch.  Host one wants to send a packet to a group of computers (a multicast).  The diagram shows the MAC address and IP address of host 1.  The graphic also shows the frame with source and destination MAC address and the encapsulated packet with source and destination IP address.  The destination IP address is a multicast address (224.0.0.200) and the destination MAC address is special.  It starts with 01-00-5E and ends with the hexadecimal equivalent of the last three octets of the IP multicast address, 00-00-C8.  When the animation plays, the frame travels from host 1 to the selected hosts that are listening to the multicast address.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

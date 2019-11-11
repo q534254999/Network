@@ -1,0 +1,18 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+.orangeCallOut{
+	line-height: 15px !important;
+}
+
+#ID_txt02, #ID_txt03{
+	height: 27px !important;
+}
+
+@media only screen and (device-width: 768px) {
+.orangeCallOut{
+	line-height: 15px !important;
+}
+}

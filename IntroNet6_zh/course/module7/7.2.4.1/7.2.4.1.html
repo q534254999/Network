@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.4.1 IPv6 全局单播地址结构</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv6 全局单播地址结构</h1>
+        <div>
+          <p>IPv6 全局单播地址 (GUA) 具有全局唯一性，可在 IPv6 Internet 上路由。这些地址相当于公有 IPv4 地址。互联网名称与数字地址分配机构 (ICANN)，即 IANA 的运营商，将 IPv6 地址块分配给五家 RIR。目前分配的仅是前三位为 001 或 2000:: /3 的全局单播地址。换句话说，GUA 地址的第一个十六进制数以 2 或 3 开头。这只是可用 IPv6 地址空间的 1/8，对于其他类型单播和组播地址而言只是很小的一部分。 </p>
+          <p>
+            <b>注意</b>：2001:0DB8::/32  已经留作备档之用，包括示例用途。 </p>
+          <p>图 1 为全局单播地址的结构和范围。</p>
+          <p>全局单播地址有三个部分：</p>
+          <p>
+            <ul>
+              <li>全局路由前缀</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>子网 ID</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>接口 ID</li>
+            </ul>
+          </p>
+          <p>
+            <b>全局路由前缀</b>
+          </p>
+          <p>全局路由前缀为提供商（如 ISP）分配给客户或站点的地址的前缀或网络部分。一般来说，RIR 向客户分配 /48 全局路由前缀。这包括从公司企业网络到单个家庭网络中的每个站点。 </p>
+          <p>图 2 显示使用 /48 全局路由前缀的全局单播地址结构。/48 前缀是分配的最常见全局路由前缀，本课程中的多数示例均使用该前缀。 </p>
+          <p>例如，IPv6 地址 2001:0DB8:ACAD::/48 的前缀显示前 48 位（3 个十六进制数）(2001:0DB8:ACAD) 是该地址的前缀或网络部分。/48 前缀长度前的双冒号 (::) 表示地址的剩余部分全部为 0。</p>
+          <p>全局路由前缀的大小决定子网 ID 的大小。</p>
+          <p>
+            <b>子网 ID</b>
+          </p>
+          <p>组织使用子网 ID 确定其站点的子网。子网 ID 越大，可用子网越多。</p>
+          <p>
+            <b>接口 ID</b>
+          </p>
+          <p>IPv6 接口 ID 相当于 IPv4 地址的主机部分。使用术语“接口 ID”是因为单个主机可能有多个接口，而每个接口又有一个或多个 IPv6 地址。强烈建议在大多数情况下使用 /64 子网。换言之，如图 2 所示的 64 位接口 ID。 </p>
+          <p>
+            <b>注意</b>：与 IPv4 不同，在 IPv6 中，全 0 和全 1 主机地址可以分配给设备。全 1 地址可以使用是因为 IPv6 中不使用广播地址。全 0 地址也可使用，但它留作子网路由器任播地址，应仅分配给路由器。</p>
+          <p>读取多数 IPv6 地址的一种简单方法是计算十六进制数。如图 3 所示，在 /64 全局单播地址中，前四个十六进制数是地址的网络部分，其中第四个十六进制数表示子网 ID。剩下的四个十六进制数用于接口 ID。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the first three bits in an IPv6 global unicast address are set to 001.  The figure shows the range of binary bits for the first hextet to be from 2000 to 3FFF. Figure 2 shows the IPv6 global routing prefix of /48.  The first 48 bits serve as the global routing prefix and the next sixteen bits are used as a subnet identifier.  The /48 routing prefix plus the 16 bit subnet identifier form the /64 prefix.   The remaining 64 bits are the interface identifier. Figure 3 shows how to read a global unicast address.  The address is listed first as a compressed address, 2001:DB8:ACAD:1::10/64.  The first four hextets is the prefix and the last four hextets is the interface identifier.  This expands to 2001:0DB8:ACAD:0001:0000:0000:0000:0010 /64.  The global routing prefix is 2001:0DB8:ACAD.  The subnet ID is 0001 and the interface ID is 0000:0000:0000:0200.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

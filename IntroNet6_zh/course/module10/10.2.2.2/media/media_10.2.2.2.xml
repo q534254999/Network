@@ -1,0 +1,38 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>DNS 消息格式</b>]]></text>
+</component>
+	<component id="ID_title_txt">
+		<text><![CDATA[<b>DNS 将同一种消息格式用于：</b>]]></text>
+	</component>
+<component id="ID_body01">
+  <text><![CDATA[<textformat blockindent='-14'><LI>所有类型的客户端查询和服务器响应</LI><LI>错误消息</LI><LI>资源记录信息在服务器之间的传输</LI></textformat>]]></text> 
+  </component>
+  <component id="ID_txt02">
+<text><![CDATA[<b>标题</b>]]></text>
+</component>
+<component id="ID_txt03">
+<text><![CDATA[<b>问题</b>]]></text>
+</component>
+<component id="ID_txt04">
+<text><![CDATA[<b>答案</b>]]></text>
+</component>
+<component id="ID_txt05">
+<text><![CDATA[<b>权限</b>]]></text>
+</component>
+<component id="ID_txt06">
+<text><![CDATA[<b>其他</b>]]></text>
+</component>
+  <component id="ID_txt07">
+<text><![CDATA[向域名服务器提出的问题]]></text>
+</component>
+<component id="ID_txt08">
+<text><![CDATA[回答该问题的资源记录]]></text>
+</component>
+<component id="ID_txt09">
+<text><![CDATA[指向权限的资源记录]]></text>
+</component>
+<component id="ID_txt10">
+<text><![CDATA[包含其他信息的资源记录]]></text>
+</component>
+</textcomponents>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.1.2 配置主机名</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置主机名</h1>
+        <div>
+          <p>一旦确定命名约定后，接下来的步骤就是使用 CLI 将名称应用到设备。 </p>
+          <p></p>
+          <p>如图 1 所示，在特权 EXEC 模式下，输入 <b>configure terminal</b> 命令访问全局配置模式。注意命令提示符的变化。</p>
+          <p></p>
+          <p>从全局配置模式下，输入命令 <b>hostname</b> 后跟交换机的名称，然后按 Enter 键。注意命令提示符的变化。</p>
+          <p></p>
+          <p>
+            <b>注意</b>：要删除已配置的主机名并使交换机返回默认提示符，请使用 <b>no hostname</b>全局配置命令。 </p>
+          <p></p>
+          <p>每次添加或修改设备时，请始终确保更新相关文档。请在文档中通过地点、用途和地址来标识设备。 </p>
+          <p></p>
+          <p>使用图 2 中的语法检查器练习在交换机上输入主机名。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the command syntax for configuring a hostname. Figure 2 is a Syntax Checker allowing the learner to practice configuring the hostname on a switch.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

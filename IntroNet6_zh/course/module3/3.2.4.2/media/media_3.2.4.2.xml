@@ -1,0 +1,115 @@
+<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>OSI 参考模型</b>]]></text>
+    </component>
+    <component id="ID_osi_header">
+        <text>
+            <![CDATA[OSI 模型]]>
+        </text>
+    </component>
+    <component id="ID_s1_titleTxt07">
+        <text>
+            <![CDATA[应用层]]></text>
+    </component>
+    <component id="ID_s1_bodyTxt07">
+        <text>
+            <![CDATA[应用层包含用于进程间通信的协议。]]>
+        </text>
+    </component>
+    <component id="ID_s1_titleTxt06">
+        <text>
+            <![CDATA[表示层]]></text>
+    </component>
+    <component id="ID_s1_bodyTxt06">
+        <text>
+            <![CDATA[表示层对应用层服务之间传输的数据规定了通用的表示方式。]]>
+        </text>
+    </component>
+    <component id="ID_s1_titleTxt05">
+        <text>
+            <![CDATA[会话层]]></text>
+    </component>
+    <component id="ID_s1_bodyTxt05">
+        <text>
+            <![CDATA[会话层为表示层提供组织对话和管理数据交换的服务。]]>
+        </text>
+    </component>
+    <component id="ID_s1_titleTxt04">
+        <text>
+            <![CDATA[传输层]]></text>
+    </component>
+    <component id="ID_s1_bodyTxt04">
+        <text>
+            <![CDATA[传输层为终端设备之间的每个通信定义了数据分段、传输和重组服务。]]>
+        </text>
+    </component>
+    <component id="ID_s1_titleTxt03">
+        <text>
+            <![CDATA[网络层]]></text>
+    </component>
+    <component id="ID_s1_bodyTxt03">
+        <text>
+            <![CDATA[网络层为所标识的终端设备之间通过网络交换一个个数据的片段提供服务。]]>
+        </text>
+    </component>
+    <component id="ID_s1_titleTxt02">
+        <text>
+            <![CDATA[数据链路层]]></text>
+    </component>
+    <component id="ID_s1_bodyTxt02">
+        <text>
+            <![CDATA[数据链路层协议描述了设备之间通过公共介质交换数据帧的方法。]]>
+        </text>
+    </component>
+    <component id="ID_s1_titleTxt01">
+        <text>
+            <![CDATA[物理层]]></text>
+    </component>
+    <component id="ID_s1_bodyTxt01">
+        <text>
+            <![CDATA[物理层协议描述的机械、电气、功能和操作方法用于激活、维护和停用网络设备之间比特传输使用的物理连接。]]>
+        </text>
+    </component>
+    <!--OSI Model-->
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[<font>OSI 模型</font>]]>
+        </text>
+    </component>
+    <component id="ID_osi_txt07">
+        <text>
+            <![CDATA[7.应用层]]>
+        </text>
+    </component>
+    <component id="ID_osi_txt06">
+        <text>
+            <![CDATA[6.表示层]]>
+        </text>
+    </component>
+    <component id="ID_osi_txt05">
+        <text>
+            <![CDATA[5.会话层]]>
+        </text>
+    </component>
+    <component id="ID_osi_txt04">
+        <text>
+            <![CDATA[4.传输层]]>
+        </text>
+    </component>
+    <component id="ID_osi_txt03">
+        <text>
+            <![CDATA[3.网络层]]>
+        </text>
+    </component>
+    <component id="ID_osi_txt02">
+        <text>
+            <![CDATA[2.数据链路层]]>
+        </text>
+    </component>
+    <component id="ID_osi_txt01">
+        <text>
+            <![CDATA[1.物理层]]>
+        </text>
+    </component>
+</textcomponents>

@@ -1,0 +1,17 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b><font face="_typewriter">any</font> 和 <font face="_typewriter">host</font> 关键字</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>示例 1:</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>示例 2:</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[示例为可选关键字 <font face="_typewriter"><b>host</b></font> 和 <font face="_typewriter"><b>any</b></font> 在 ACL 语句中的格式。]]></text>
+</component>
+</textcomponents>

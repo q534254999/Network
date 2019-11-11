@@ -1,0 +1,28 @@
+<textcomponents>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[<b>考虑和需求过程</b>]]></text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[<b>确定最终用户需求</b>]]></text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[<b>做出决定并选择操作系统</b>]]></text>
+    </component>
+    <component id="transcript">
+        <text>
+            <![CDATA[<b>此处显示脚本</b>]]></text>
+    </component>
+    <component id="ID_op2">
+        <text>
+            <![CDATA[<省略部分输出>]]>
+        </text>
+    </component>
+    <component id="ID_op1">
+        <text>
+            <![CDATA[<省略部分输出>]]>
+        </text>
+    </component>
+</textcomponents>

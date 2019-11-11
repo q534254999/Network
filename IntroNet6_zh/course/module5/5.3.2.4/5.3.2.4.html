@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.3.2.4 视频演示 - ARP 应答</title>
+    <!-- Activity / Other / Flash PnC -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.3.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>视频演示 - ARP 应答</h1>
+        <div>
+          <p>只有具有和 ARP 请求中目的 IPv4 地址关联的 IPv4 地址的设备会以 ARP 应答做出响应。ARP 应答消息包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>发送方的 IPv4 地址</b> – 这是发送方的IPv4 地址，发送方即被请求 MAC 地址的那台设备。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>发送方的 MAC 地址</b> – 这是发送方的 MAC 地址，即 ARP 请求发送方需要的 MAC 地址。</li>
+            </ul>
+          </p>
+          <p>ARP 应答使用以下报头信息封装在以太网帧中：</p>
+          <p>
+            <ul>
+              <li>
+                <b>目的 MAC 地址</b> – 这是 ARP 请求发送方的 MAC 地址。  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>源 MAC 地址</b> – 这是 ARP 应答发送方的 MAC 地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>类型</b> - ARP 消息的类型字段为 0x806。该类型字段会通知接收网卡需要将帧的数据部分传递给 ARP 处理。</li>
+            </ul>
+          </p>
+          <p>只有原始发送 ARP 请求的设备会收到单播 ARP 应答。收到该 ARP 应答后，设备会将 IPv4 地址及相应的 MAC 地址添加到自身的 ARP 表中。该 IPv4 地址的数据包现在便可使用其相应的 MAC 地址封装在帧中。 </p>
+          <p>单击图中的“播放”，观看 ARP 应答的演示。</p>
+          <p>单击<a href="../../files/5.3.2.4%20Video%20Slides%20-%20ARP%20Operation%20-%20ARP%20Reply.pdf" target="_blank">此处</a>从演示文稿中下载视频幻灯片。</p>
+          <p>如果没有设备响应 ARP 请求，就无法创建帧，所以会丢弃数据包。</p>
+          <p>ARP 表中的条目具有时间戳。如果设备在时间戳到期时没有从特定设备收到帧，此设备的条目将会从 ARP 表中删除。</p>
+          <p>此外，也可以在 ARP 表中输入静态映射条目，但这种情况很少见。静态 ARP 表条目没有到期时间，必须手动删除。</p>
+          <p>
+            <b>注意</b>：IPv6 使用与 IPv4 类似的 ARP 流程，称为 ICMPv6 邻居发现。与 IPv4 的 ARP 请求和 ARP 应答类似，Pv6 使用邻居请求和邻居通告消息。</p>
+          <p>单击<a href="../../files/5.3.2.4%20Video%20-%20ARP%20Operation%20-%20ARP%20Reply.pdf" target="_blank">此处</a>可阅读本视频的脚本。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" src="media/index.html" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is a video with the title "ARP Reply".</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

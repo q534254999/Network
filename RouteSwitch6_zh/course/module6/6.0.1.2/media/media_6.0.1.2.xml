@@ -1,0 +1,30 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[VLAN 18 数据]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[VLAN 17 语音]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[VLAN 35 无线]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[VLAN 18 数据]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[VLAN 17 语音]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[VLAN 35 无线]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[LAN 交换机可划分为端口组（称为 VLAN），以提高网络性能、管理和安全性。]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,10 @@
+﻿<textcomponents>
+	
+	<component id="ID_type">
+		<text><![CDATA[实验]]></text>
+	</component>
+	<component id="ID_title">
+		<text><![CDATA[使用 Tera Term 管理路由器配置文件]]></text>
+	</component>
+	
+</textcomponents>

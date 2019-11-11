@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.2.2 TCP 报头</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>TCP 报头</h1>
+        <div>
+          <p>TCP 是一种状态协议。状态协议是跟踪通信会话状态的协议。为了跟踪会话的状态，TCP 记录已发送的信息和已确认的信息。状态会话开始于会话建立时，结束于会话终止时。</p>
+          <p>如图所示，每个 TCP 数据段都有 20 字节的开销用于在报头中封装应用层数据。</p>
+          <p>
+            <ul>
+              <li>
+                <b>源端口（16 位）和目的端口（16 位）</b>- 用于识别应用程序。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>序列号（32 位）</b>- 用于数据重组。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>确认号（32 位）</b>- 表示收到的数据。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>报头长度（4 位）</b>- 称为“数据偏移量”。表示 TCP 数据段报头的长度。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>保留（6 位）</b>- 此字段留作将来使用。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>控制位（6 位）</b>- 包括位码或标志，表示 TCP 数据段的用途和功能。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>窗口大小（16 位）</b>- 表示可以一次接受的字节的数量。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>校验和（16 位）</b>- 用于数据段报头和数据的错误检查。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>紧急（16 位）</b>- 表示数据是否紧急。</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the fields of the TCP header including source and destination ports, sequence number, acknowledgment number, header length, and window size.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

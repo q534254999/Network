@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.3.4 将路由器配置为 DHCPv6 中继代理</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>将路由器配置为 DHCPv6 中继代理</h1>
+        <div>
+          <p>如果 DHCPv6 服务器位于不同的网络而不是客户端上，那么可以将 IPv6 路由器配置为 DHCPv6 中继代理。配置 DHCPv6 中继代理的操作类似于将 IPv4 路由器配置为 DHCPv4 中继的操作。 </p>
+          <p></p>
+          <p>
+            <b>注</b>：虽然 DHCPv6 中继代理的配置与 DHCPv4 类似，但是 IPv6 路由器或中继代理转发 DHCPv6 消息时与 DHCPv4 中继略有不同。此消息和过程已超出本课程的范围。</p>
+          <p></p>
+          <p>图 1 显示了一个示例拓扑结构，在该拓扑结构中，有一个 DHCPv6 服务器位于 2001:DB8:CAFE:1::/64 网络中。网络管理员希望将此 DHCPv6 服务器用作一个中央有状态 DHCPv6 服务器以将 IPv6 地址分配给所有客户端。因此，其他网络的客户端（例如 2001:DB8:CAFE:A::/64 网络上的 PC1）必须与 DHCPv6 服务器通信。 </p>
+          <p></p>
+          <p>将客户端的 DHCPv6 消息发送到 IPv6 组播地址 FF02::1:2。All_DHCPv6_Relay_Agents_and_Servers 地址。此地址有本地链路范围，这意味着路由器不转发这些消息。必须将路由器配置为 DHCPv6 中继代理使 DHCPv6 客户端和服务器实现通信。</p>
+          <p></p>
+          <p>
+            <b>配置 DHCPv6 中继代理</b>
+          </p>
+          <p></p>
+          <p>如图 2 所示，使用 <b>ipv6 dhcp relay destination</b> 命令配置 DHCPv6 中继代理。以 DHCPv6 服务器的地址作为目的地将此命令配置在朝向 DHCPv6 客户端的接口上。</p>
+          <p></p>
+          <p><b>show ipv6 dhcp interface</b> 命令验证 G0/0 接口通过将 2001:DB8:CAFE:1::6 配置为 DHCPv6 服务器而处于中继模式。</p>
+          <p></p>
+          <p>使用图 3 中的语法检查程序，在正确的路由器上配置 DHCPv6 中继命令以便 PC3 可以从 DHCPv6 服务器接收 IPv6 编址信息。参考图 1，查看网络拓扑结构。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示三个路由器的网络拓扑。R2 在中间，有一个 WAN 串行链路连接到 R1，一个 WAN 串行链路连接到 R3。R1 和 R3 没有直接相连。R1 有两个活动的千兆以太网 LAN。其中每个 LAN 都连接一台交换机，每台交换机连接一个计算机。还有一个 DHCP 服务器连接到 S2。R3 有一个活动的千兆以太网 LAN，其包含交换机和计算机。图 2 显示了用来配置 DHCPv6 中继代理的命令。该示例在全局配置模式下开始，首先使用命令 interface g 0/0 转到特定接口。下一条命令是 ipv6 dhcp relay destination 2001:db8:cafe:1::6。该图还显示了命令 show ipv6 dhcp interface g 0/0 的输出。此输出指出了接口处于中继模式并列出了配置的中继 IP 地址。图 3 是允许学生配置 DHCPv6 中继代理的一个互动练习。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

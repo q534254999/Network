@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.6.2 配置 IPv4 和 IPv6 静态主机路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.6.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置 IPv4 和 IPv6 静态主机路由</h1>
+        <div>
+          <p>主机路由可以是一个手动配置的静态路由，将流量定向到特定目标设备（例如验证服务器）。静态路由使用目标 IP 地址和用于 IPv4 主机路由的 255.255.255.255 (/32) 掩码和用于 IPv6 主机路由的 /128 前缀长度。静态路由在路由表的输出中标记为“S”。在 BRANCH 路由器上配置 IPv4 和 IPv6 主机路由以访问图 1 拓扑中的服务器。</p>
+          <p></p>
+          <p>对于 IPv6 静态路由，下一跳地址可以是相邻路由器的本地链路地址。但是，如图 2 所示，在使用本地链路地址作为下一跳时，您必须指定接口类型和接口号。</p>
+          <p></p>
+          <p>使用图 3 中的语法检查程序配置和验证 IPv4 和 IPv6 静态主机路由。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">静态图形</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.3.4 验证 PAT</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证 PAT</h1>
+        <div>
+          <p>已将路由器 R2 配置为向 192.168.0.0/16 客户端提供 PAT。当内部主机离开路由器 R2 进入互联网时，将其转换为来自 PAT 池的带有唯一源端口号的 IPv4 地址。</p>
+          <p></p>
+          <p>如图 1 所示，用于验证 PAT 的命令和用于验证静态和动态 NAT 的命令相同。<b>show ip nat translations</b> 命令用于显示从两个不同主机到不同 Web 服务器的转换。注意，为两台不同的内部主机分配了同一个 IPv4 地址 209.165.200.226（内部全局地址）。NAT 表中的源端口号将这两个转换区分开来。</p>
+          <p></p>
+          <p>如图 2 所示，<b>show ip nat statistics</b> 命令用于验证 NAT-POOL2 是否为两个转换分配了单个地址。输出中所包含的是有关活动转换的数量和类型、NAT 配置参数、地址池中的地址数量以及已分配的地址数量的信息。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了“show ip nat translations”命令的输出。图 2 显示了“clear ip nat statistics”命令和“show ip nat statistics”命令的输出。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

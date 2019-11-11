@@ -1,0 +1,125 @@
+<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>漏洞 - 技术</b>]]></text>
+    </component>
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>漏洞 - 配置</b>]]></text>
+    </component>
+    <component id="ID_s3_title">
+        <text>
+            <![CDATA[<b>漏洞 - 策略</b>]]></text>
+    </component>
+    <!--Slide 1-->
+    <component id="ID_s1_tBox_header">
+        <text>
+            <![CDATA[网络安全缺陷：]]>
+        </text>
+    </component>
+    <component id="ID_s1_tBox_body">
+        <text>
+            <![CDATA[<b>TCP/IP 协议缺陷</b><ul><li>超文本传输协议 (HTTP)、文件传输协议 (FTP) 和互联网控制消息协议 (ICMP) 本性是不安全的。</li><li>简单网络管理协议 (SNMP) 和简单邮件传输协议 (SMTP) 与 TCP 设计的内在不安全结构有关。</li></ul><b><br/>操作系统缺陷</b><ul><li>每个操作系统都有必须解决的安全问题。</li><li>UNIX、Linux、Mac OS、Mac OS X、Windows Server 2012、Windows 7、Windows 8</li><li>它们记录在计算机应急响应小组 (CERT) 档案中，网址为<a href="http://www.cert.org" target="_blank"><font color='#00A1E3'><b><u> http://www.cert.org</u></b></font></a>。</li></ul><br/><b>网络设备缺陷</b><br/>各种网络设备类型（例如路由器、防火墙和交换机）都有安全缺陷，必须要进行识别和保护。 这些设备的缺陷包括密码保护、缺乏身份验证、路由协议、防火墙漏洞等。<br/>]]></text>
+    </component>
+    <component id='ID_s1_table'>
+        <text>
+            <![CDATA[
+				<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+				<tr  class="mtable_title">
+					<td colspan='1' bgcolor='#FFFFFF'><font size='16' color='#393536'><b>网络安全缺陷：</b></font></td>
+				</tr>				
+				<tr class="mtable_top">
+					<td colspan='1' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#E9E7E8' valign="top"><br/> <b>TCP/IP 协议缺陷</b><ul><li>超文本传输协议 (HTTP)、文件传输协议 (FTP) 和互联网控制消息协议 (ICMP) 本性是不安全的。</li><li>简单网络管理协议 (SNMP) 和简单邮件传输协议 (SMTP) 与 TCP 设计的内在不安全结构有关。</li></ul><b><br/>操作系统缺陷</b><ul><li>每个操作系统都有必须解决的安全问题。</li><li>UNIX、Linux、Mac OS、Mac OS X、Windows Server 2012、Windows 7、Windows 8</li><li>它们记录在计算机应急响应小组 (CERT) 档案中，网址为<a href="http://www.cert.org" target="_blank"><font color='#00A1E3'><b><u> http://www.cert.org</u></b></font></a>。</li></ul><br/><b>网络设备缺陷</b><br/>各种网络设备类型（例如路由器、防火墙和交换机）都有安全缺陷，必须要进行识别和保护。 这些设备的缺陷包括密码保护、缺乏身份验证、路由协议、防火墙漏洞等。<br/></td>
+				</tr>
+			</table>]]>
+        </text>
+    </component>
+    <!--Slide 2
+
+<ul></ul></textformat>
+-->
+    <component id='ID_s2_table'>
+        <text>
+           <![CDATA[
+				<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+				
+				<tr class="mtable_title">
+					<td colspan='2' bgcolor='#FFFFFF'><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+				</tr>	
+				<tr class="mtable_top">
+					<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+				</tr>				
+				<tr class="mtable_title">
+					<td bgcolor='#666263' width='180' valign="top"><font size='11' color='#ffffff'><b>配置缺陷</b></font></td>
+					<td bgcolor='#666263'  valign="top"><font size='11' color='#ffffff'><b>缺陷是如何被利用的</b></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#E9E7E8' valign="top"><font size='11'color='#393536'>不安全的用户帐户</font></td>
+					<td bgcolor='#E9E7E8' valign="top"><font size='11' color='#393536'>用户帐户信息在网络上使用不安全的方式传输，导致用户名和密码被他人窃取。</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F2F2F2' valign="top"><font size='11' color='#393536'>系统帐户的密码容易被猜到</font></td>
+					<td bgcolor='#F2F2F2' valign="top"><font size='11' color='#393536'>用户密码选择不善和容易猜出造成了这种常见问题。</font></td>
+				</tr>	
+				<tr>
+					<td bgcolor='#E9E7E8' valign="top"><font size='11'color='#393536'>互联网服务配置错误</font></td>
+					<td bgcolor='#E9E7E8' valign="top"><font size='11' color='#393536'>在 Web 浏览器上打开 JavaScript 往往会导致访问不受信任的站点时遭受恶意 JavaScript 攻击。 缺陷的其他潜在来源包括终端服务、FTP 或 Web 服务器（例如 Microsoft 互联网信息服务 [IIS]、Apache HTTP 服务器）配置错误。</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F2F2F2' valign="top"><font size='11' color='#393536'>产品的默认设置不安全</font></td>
+					<td bgcolor='#F2F2F2' valign="top"><font size='11' color='#393536'>许多产品的默认设置容易带来安全漏洞。</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#E9E7E8' valign="top"><font size='11'color='#393536'>网络设备配置错误</font></td>
+					<td bgcolor='#E9E7E8' valign="top"><font size='11' color='#393536'>设备本身配置错误会带来严重的安全问题。 例如，误配置的访问列表、路由协议或 SNMP 社区字符串可能带来大量安全隐患。</font></td>
+				</tr>
+			</table>]]>
+        </text>
+    </component>
+    <!--Slide 3-->
+    <component id='ID_s3_table'>
+        <text>
+             <![CDATA[
+				<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+				<tr class="mtable_title">
+					<td colspan='2' bgcolor='#FFFFFF'><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+				</tr>
+				<tr class="mtable_top">
+					<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+				</tr>
+				<tr class="mtable_title">
+					<td bgcolor='#666263' width='180' valign="top"><font size='11' color='#ffffff'><b>策略缺陷</b></font></td>
+					<td bgcolor='#666263'  valign="top"><font size='11' color='#ffffff'><b>缺陷是如何被利用的</b></font></td>
+					
+				</tr>
+				<tr>
+					<td bgcolor='#E9E7E8' valign="top"><font size='11'color='#393536'>缺乏书面的安全策略</font></td>
+					<td bgcolor='#E9E7E8' valign="top"><font size='11' color='#393536'>未以书面形式记录的策略无法得到长久有效的应用和执行。</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F2F2F2' valign="top"><font size='11' color='#393536'>政治</font></td>
+					<td bgcolor='#F2F2F2' valign="top"><font size='11' color='#393536'>政治斗争和争权夺利可能导致难以长期执行相同的安全策略。</font></td>
+				</tr>	
+				<tr>
+					<td bgcolor='#E9E7E8' valign="top"><font size='11'color='#393536'>缺乏身份验证持续性</font></td>
+					<td bgcolor='#E9E7E8' valign="top"><font size='11' color='#393536'>如果密码选择不当、易于破解或甚至是默认密码，会导致对网络的未经授权的访问。</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F2F2F2' valign="top"><font size='11' color='#393536'>没有实行逻辑访问控制</font></td>
+					<td bgcolor='#F2F2F2' valign="top"><font size='11' color='#393536'>监控和审计力度不够，导致攻击和未授权使用不断发生，浪费公司资源。 使得这些不安全情况持续发生的 IT 技术人员、IT 管理人员、甚至公司领导层都可能因此而卷入法律诉讼或被解雇。</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#E9E7E8' valign="top"><font size='11'color='#393536'>软件和硬件的安装与更改没有遵循策略执行</font></td>
+					<td bgcolor='#E9E7E8' valign="top"><font size='11' color='#393536'>未经授权更改网络拓扑或安装未经准许的应用程序会造成安全漏洞。</font></td>	
+				</tr>
+			    <tr>
+					<td bgcolor='#F2F2F2' valign="top"><font size='11' color='#393536'>没有设计灾难恢复计划</font></td>
+					<td bgcolor='#F2F2F2' valign="top"><font size='11' color='#393536'>缺乏灾难恢复计划可能造成企业在遭到攻击时发生恐慌和混乱。</font></td>
+				</tr>
+			</table>]]>
+        </text>
+    </component>
+</textcomponents>

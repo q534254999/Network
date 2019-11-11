@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.5.1 分配的 IPv6 组播地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.5.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>分配的 IPv6 组播地址</h1>
+        <div>
+          <p>IPv6 组播地址类似于 IPv4 组播地址。回想一下，组播地址用于发送单个数据包到一个或多个目标（组播组）。IPv6 组播地址的前缀为 FF00::/8。 </p>
+          <p>
+            <b>注意</b>：组播地址仅可用作目的地址，不能用作源地址。</p>
+          <p>IPv6 组播地址分为两种类型：</p>
+          <p>
+            <ul>
+              <li>分配的组播</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>请求的节点组播</li>
+            </ul>
+          </p>
+          <p>
+            <b>分配的组播</b>
+          </p>
+          <p>分配的组播地址是为预先定义的设备组保留的组播地址。分配的组播地址是用于到达运行通用协议或服务的设备组的单个地址。分配的组播地址用在特定的协议环境，例如 DHCPv6。 </p>
+          <p>两种常见的 IPv6 分配组播组包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>FF02::1 全节点组播组</b> – 这是一个包含所有支持 IPv6 的设备的组播组。发送到该组的数据包由该链路或网络上的所有 IPv6 接口接收和处理。这与 IPv4 中的广播地址具有相同的效果。图中显示使用全节点组播地址进行通信的示例。IPv6 路由器将 Internet 控制消息协议第 6 版 (ICMPv6) RA 消息发送给全节点组播组。RA 消息通知网络中所有支持 IPv6 的设备有关编址的信息，例如前缀、前缀长度和默认网关。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>FF02::2 全路由组播组</b> – 这是一个所有 IPv6 路由器均会加入的组播组。使用 <b>ipv6 unicast-routing</b> 全局配置命令将路由器启用为 IPv6 路由器后，该路由器即成为该组播组的一员。发送到该组的数据包由该链路或网络上的所有 IPv6 路由器接收和处理。 </li>
+            </ul>
+          </p>
+          <p>支持 IPv6 的设备将 ICMPv6 路由器请求 (RS) 消息发送到全路由器组播地址。RS 消息向 IPv6 路由器发出 RA 消息请求来协助设备的地址配置。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a router with a switch connected to one gigabit Ethernet port. There are 2 computers, a server, and a printer connected to the switch.  The router is sending an IPv6 all-nodes multicast message to destination address FF02::1.  The message is sent out to all the IPv6 enabled devices that are connected to the switch.  </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

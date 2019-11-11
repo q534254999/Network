@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.2.5 ACL 统计信息</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>ACL 统计信息</h1>
+        <div>
+          <p>将 ACL 应用于接口之后，就要进行一些测试，<b>show access-lists </b>命令将显示每条匹配语句的统计信息。在图 1 的输出中，注意某些语句已经匹配。当生成应与 ACL 语句匹配的流量时，<b>show access-lists</b> 命令输出中显示的匹配项应该会增加。例如，在本示例中，如果从 PC1 对 PC3 或 PC4 发出 ping 操作，则输出将会显示 ACL 1 的 deny 语句匹配有所增加。 </p>
+          <p></p>
+          <p>permit 和 deny 语句都将跟踪匹配项的统计信息；但是，我们曾学过，每个 ACL 都有一条隐含的 deny any 语句作为最后一条语句。该语句不会在 <b>show access-lists</b> 命令中显示，因此，并不显示该语句的统计信息。要查看隐含的 deny any 语句的统计信息，请手动配置该语句，使其显示在输出中。 </p>
+          <p></p>
+          <p>在 ACL 的测试过程中，可以使用 <b>clear access-list counters</b> 命令清除计数。可单独使用此命令，或将其与特定 ACL 的编号或名称一起使用。如图 2 所示，该命令将清除 ACL 的统计信息计数。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示如何查看 ACL 统计信息。该图显示特权 EXEC 模式命令 show access-lists 的输出。输出列出每个 ACL 的行和每行的匹配数。例如，序号为 1 的 ACL 第 10 行后面紧接着显示了以下字样：“4 matches”。这意味着有四个数据包符合第 10 行的条件。在图中，已发送一个将会匹配第 10 行的条件的 ping 操作，并且在查看统计信息时，可以发现匹配数已经增加。图 2 显示了命令 clear access-list counters 1 的使用。命令 show access-lists 的输出不再列出 ACL 的任何匹配项。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>路由器接口和 VLAN 间路由</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[G0/0.10]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[G0/0.30]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>R1 接口</b><br/>G0/0: 172.17.10.1<br/>G0/1: 172.17.30.1]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[中继]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[中继]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[中继]]></text> 
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[中继]]></text> 
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>单播帧</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>单播帧 VLAN 10</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>单播帧 VLAN 30</b>]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[VLAN 标记帧]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[VLAN 标记帧]]></text>
+</component>
+
+  
+  
+
+<component id="ID_tbox01">
+  <text><![CDATA[PC1 将单播帧发送到 PC3。]]></text>
+</component>
+<component id="ID_tbox02">
+  <text><![CDATA[S2 在 VLAN 10 上接收并标记该帧，然后发送到 S1。 ]]></text>
+</component>
+<component id="ID_tbox03">
+  <text><![CDATA[S1 移除 VLAN 标记，然后将帧转发到 R1。]]></text>
+</component>
+<component id="ID_tbox04">
+  <text><![CDATA[R1 收到 G0/0 上的帧。]]></text>
+</component>
+<component id="ID_tbox05">
+  <text><![CDATA[R1 检查路由表。 目标网络直连到 R1 G0/1。]]></text>
+</component>
+<component id="ID_tbox06">
+  <text><![CDATA[R1 会将数据包从 G0/1 接口转发出去。]]></text>
+</component>
+<component id="ID_tbox07">
+  <text><![CDATA[S1 在 VLAN 30 上接收并标记该帧，然后发送到 S2。]]></text>
+</component>
+<component id="ID_tbox08">
+  <text><![CDATA[S2 移除 VLAN 标记，然后将帧转发到 PC3。]]></text>
+</component>
+
+
+
+
+<component id="end">
+<text><![CDATA[结束]]></text>
+</component>
+
+<component id="fforward">
+<text><![CDATA[快进]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[暂停]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[播放]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[快退]]></text>
+</component>
+
+<component id="start">
+<text><![CDATA[开始]]></text>
+</component>
+
+</textcomponents>

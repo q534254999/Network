@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.3.3 配置下一跳静态 IPv6 路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置下一跳静态 IPv6 路由</h1>
+        <div>
+          <p>在下一跳静态路由中，仅指定下一跳 IPv6 地址。退出接口派生自下一跳。例如，在图 1 中，R1 上配置三条静态路由。</p>
+          <p></p>
+          <p>对于 IPv4，在路由器转发任何数据包之前，路由表流程必须解析路由，以确定用于转发数据包的送出接口。路由解析过程取决于路由器使用的转发机制类型。CEF（思科快速转发）是运行 IOS 12.0 或更高版本的大多数平台的默认行为。</p>
+          <p></p>
+          <p>图 2 详细显示了在不使用 CEF 的情况下，R1 路由表中的基本数据包转发路由解析流程。当数据包发往 2001:DB8:ACAD:3::/64 网络时，R1 将：</p>
+          <p></p>
+          <p>1.查找路由表中的匹配项，发现必须将数据包转发到下一跳 IPv6 地址 2001:DB8:ACAD:4::2。仅引用下一跳 IPv6 地址而没有引用退出接口的每个路由必须使用路由表中的另一路由以及退出接口来解析下一跳 IPv6 地址。</p>
+          <p></p>
+          <p>2.R1 现在必须确定如何到达 2001:DB8:ACAD:4::2；因此，它第二次搜索匹配项。在这种情况下，IPv6 地址匹配使用送出接口 Serial 0/0/0 的 直连网络 2001:DB8:ACAD:4::/64。此查找告知路由表过程：此数据包已转发到该接口之外。 </p>
+          <p></p>
+          <p>因此，将任何数据包转发到 2001:DB8:ACAD:3::/64 网络实际上经过了两次路由表查找过程。如果路由器在转发数据包前需要执行多次路由表查找，那么它的查找过程就是一种递归查找。 </p>
+          <p></p>
+          <p>只有指定的下一跳地址直接或间接地解析为有效送出接口，递归静态 IPv6 路由才有效（即它是要插入到路由表中的候选路由）。</p>
+          <p></p>
+          <p>使用图 3 和图 4 中的语法检查器配置下一跳静态 IPv6 路由。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">这些图基于标准实验图。R1，有 LAN 连接到 R2，还有一个 LAN 使用一个 LAN 连接到 R3。图 1 显示在路由器 1 上使用 IPv6 来配置远程网络的静态路由。使用下一跳地址配置静态路由。图 2 演示路由器 1 访问路由器 3 上的 LAN 的递归查找过程。只要使用下一跳与退出接口进入静态路由，就需要进行此过程。图 3 是允许学生使用 ipv6 将路由器 2 上的静态路由配置为使用下一跳地址到达路由器 3 的 LAN 的互动练习。图 4 是一个交互练习，允许学习者在路由器 3 上使用 IPv6 配置指向路由器 2 的另一端的网络的静态路由。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

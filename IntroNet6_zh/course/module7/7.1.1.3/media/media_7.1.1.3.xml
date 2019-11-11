@@ -1,0 +1,332 @@
+﻿<textcomponents>
+    <!-- slide 1 -->
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>十进制位置记数法</b>]]></text>
+    </component>
+    <!--end slide 1 table-->
+    <!-- slide 1 table for flash-->
+    <component id="ID_s1_table">
+        <text>
+            <![CDATA[<table header="none" bordercolor="#FFFFFF" borderwidth="3" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4" class="mtable" width="600">
+	<tr class="mtable_title">
+		<td colspan="5" bgcolor="#FFFFFF"><font size="5"></font></td>
+	</tr>
+	<tr class="mtable_top">
+		<td colspan="5" bgcolor="#4E4C4D"><font size="1" color="#4E4C4D">.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="225"><p align="right"><font color="#FFFFFF"><b>基</b></font></p><br/><br/></td>
+		<td bgcolor="#E9E7E8"><p align="center">10</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">10</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">10</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">10</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263"><p align="right"><font color="#FFFFFF"><b>相应位置</b></font></p><br/><br/></td>
+		<td bgcolor="#F2F2F2"><p align="center">3</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">2</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">1</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">0</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263"><p align="right"><font color="#FFFFFF"><b>计算</b></font></p><br/><br/></td>
+		<td bgcolor="#E9E7E8"><p align="center">(10^3)</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">(10^2)</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">(10^1)</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">(10^0)</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263"><p align="right"><font color="#FFFFFF"><b>位置值</b></font></p><br/><br/></td>
+		<td bgcolor="#F2F2F2"><p align="center">1000</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">100</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">10</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">1</p></td>
+	</tr>
+</table>
+]]>
+        </text>
+    </component>
+    <!-- end slide 1 table-->
+    <!-- slide 1 popups-->
+    <component id="ID_titleTxt01">
+        <text>
+            <![CDATA[<b>基 </b>]]></text>
+    </component>
+    <component id="ID_bodyTxt01">
+        <text>
+            <![CDATA[第一行识别数字基数或基。 十进制计数法基于 10，因此基为 10。]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt02">
+        <text>
+            <![CDATA[<b>相应位置</b>]]></text>
+    </component>
+    <component id="ID_bodyTxt02">
+        <text>
+            <![CDATA[第 2 行考虑十进制数字的起始位置，从右到左依次为 0（第 1 位置）、1（第 2 位置）、2（第 3 位置）、3（第 4 位置）。 这些数字还表示用于计算位置值的指数值（第 4 行）。]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt03">
+        <text>
+            <![CDATA[<b>计算</b>]]></text>
+    </component>
+    <component id="ID_bodyTxt03">
+        <text>
+            <![CDATA[第 3 行计算位置值，使用基及其位置的指数值进行计算。 注意：n^0 始终等于 1。]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt04">
+        <text>
+            <![CDATA[<b>位置值</b>]]></text>
+    </component>
+    <component id="ID_bodyTxt04">
+        <text>
+            <![CDATA[第一行识别数字基数或基。 因此，列出的值从左到右分别表示千位、百位、十位和个位。]]>
+        </text>
+    </component>
+    <!-- end slide 1 popups-->
+    <!-- end slide 1 -->
+    <!-- slide 2 -->
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>应用十进制位置记数法</b>]]></text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[<font size="16"><font color='#F68026'><b>1234</b></font></font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_table">
+        <text>
+            <![CDATA[<table header="none" bordercolor="#FFFFFF" borderwidth="3" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4" class="mtable" width="600">
+	<tr class="mtable_title">
+		<td colspan="5" bgcolor="#FFFFFF"><font size="5"></font></td>
+	</tr>
+	<tr class="mtable_top">
+		<td colspan="5" bgcolor="#4E4C4D"><font size="1" color="#4E4C4D">.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF"></font></td>
+		<td bgcolor="#666263"><font color="#FFFFFF">千位</font></td>
+		<td bgcolor="#666263"><font color="#FFFFFF">百位</font></td>
+		<td bgcolor="#666263"><font color="#FFFFFF">十位</font></td>
+		<td bgcolor="#666263"><font color="#FFFFFF">个位</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8">位置值</td>
+		<td bgcolor="#E9E7E8"><p align="center">1000</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">100</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">10</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">1</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2">十进制数</td>
+		<td bgcolor="#F2F2F2"><p align="center">1</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">2</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">3</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">4</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8">计算</td>
+		<td bgcolor="#E9E7E8"><p align="center">1 x 1000</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">2 x 100</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">3 x 10</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">4 x 1</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2">数字相加…</td>
+		<td bgcolor="#F2F2F2"><p align="center">1000</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">+ 200</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">+ 30</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">+ 4</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8">结果</td>
+		<td bgcolor="#E9E7E8" colspan="4"><p align="center">1,234</p></td>
+	</tr>
+</table>
+]]>
+        </text>
+    </component>
+    <!-- end slide 2 -->
+    <!-- slide 3 -->
+    <component id="ID_s3_title">
+        <text>
+            <![CDATA[<b>二进制位置记数法</b>]]></text>
+    </component>
+    <!-- slide 3 table-->
+    <component id="ID_s3_table">
+        <text>
+            <![CDATA[<table header="none" bordercolor="#FFFFFF" borderwidth="3" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4" class="mtable" width="600">
+	<tr class="mtable_title">
+		<td colspan="9" bgcolor="#FFFFFF"><font size="5"></font></td>
+	</tr>
+	<tr class="mtable_top">
+		<td colspan="9" bgcolor="#4E4C4D"><font size="1" color="#4E4C4D">.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="225px"><p align="right"><font color='#FFFFFF'><b>基</b></font></p><br/><br/></td>
+		<td bgcolor="#E9E7E8"><p align="center">2</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">2</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">2</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">2</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">2</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">2</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">2</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">2</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263"><p align="right"><font color='#FFFFFF'><b>相应位置</b></font></p><br/><br/></td>
+		<td bgcolor="#F2F2F2"><p align="center">7</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">6</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">5</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">4</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">3</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">2</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">1</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">0</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263"><p align="right"><font color='#FFFFFF'><b>计算</b></font></p><br/><br/></td>
+		<td bgcolor="#E9E7E8"><p align="center">(2^7)</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">(2^6)</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">(2^5)</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">(2^4)</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">(2^3)</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">(2^2)</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">(2^1)</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">(2^0)</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263"><p align="right"><font color='#FFFFFF'><b>位置值</b></font></p><br/><br/></td>
+		<td bgcolor="#F2F2F2"><p align="center">128</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">64</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">32</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">16</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">8</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">4</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">2</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">1</p></td>
+	</tr>
+</table>
+]]>
+        </text>
+    </component>
+    <!-- end 3 table -->
+    <!-- slide 3 popups-->
+    <component id="ID_s3_titleTxt01">
+        <text>
+            <![CDATA[基 ]]>
+        </text>
+    </component>
+    <component id="ID_s3_bodyTxt01">
+        <text>
+            <![CDATA[二进制记数法基于 2，因此基为 2。]]>
+        </text>
+    </component>
+    <component id="ID_s3_titleTxt02">
+        <text>
+            <![CDATA[相应位置]]>
+        </text>
+    </component>
+    <component id="ID_s3_bodyTxt02">
+        <text>
+            <![CDATA[第 2 行考虑二进制数字的起始位置，从右到左依次为 0（第 1 位置）、1（第 2 位置）、2（第 3 位置）、3（第 4 位置）。 这些数字还表示用于计算位置值的指数值（第 4 行）。]]>
+        </text>
+    </component>
+    <component id="ID_s3_titleTxt03">
+        <text>
+            <![CDATA[计算]]>
+        </text>
+    </component>
+    <component id="ID_s3_bodyTxt03">
+        <text>
+            <![CDATA[第 3 行计算位置值，使用基及其位置的指数值进行计算。 注意：n^0 始终等于 1。]]>
+        </text>
+    </component>
+    <component id="ID_s3_titleTxt04">
+        <text>
+            <![CDATA[位置值]]>
+        </text>
+    </component>
+    <component id="ID_s3_bodyTxt04">
+        <text>
+            <![CDATA[第 4 行识别位置值，这意味着该位置的数字表示单位值。 因此，列出的值从右到左分别表示单位 1、2、4、8 等。]]>
+        </text>
+    </component>
+    <!-- end slide 3 popups-->
+    <!-- end slide 3 -->
+    <!-- slide 4 -->
+    <component id="ID_s4_title">
+        <text>
+            <![CDATA[<b>应用二进制位置记数法</b>]]></text>
+    </component>
+    <component id="ID_s4_txt01">
+        <text>
+            <![CDATA[<font size="16"><font color='#F68026'><b>11000000</b></font></font>]]>
+        </text>
+    </component>
+    <component id="ID_s4_table">
+        <text>
+            <![CDATA[<table header="none" bordercolor="#FFFFFF" borderwidth="3" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4" class="mtable" width="600">
+	<tr class="mtable_title">
+		<td colspan="9" bgcolor="#FFFFFF"><font size="5"></font></td>
+	</tr>
+	<tr class="mtable_top">
+		<td colspan="9" bgcolor="#4E4C4D"><font size="1" color="#4E4C4D">.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF">位置值</font></td>
+		<td bgcolor="#E9E7E8"><p align="center">128</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">64</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">32</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">16</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">8</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">4</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">2</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">1</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263"><font color="#FFFFFF">二进制数字</font></td>
+		<td bgcolor="#F2F2F2"><p align="center">1</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">1</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">0</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">0</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">0</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">0</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">0</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">0</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263"><font color="#FFFFFF">计算</font></td>
+		<td bgcolor="#E9E7E8"><p align="center">1 x  128</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">1 x  64</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">0 x  32</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">0 x  16</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">0 x  8</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">0 x  4</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">0 x  2</p></td>
+		<td bgcolor="#E9E7E8"><p align="center">0 x  1</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263"><font color="#FFFFFF">数字相加…</font></td>
+		<td bgcolor="#F2F2F2"><p align="center">128</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">+ 64</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">+ 0</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">+ 0</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">+ 0</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">+ 0</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">+ 0</p></td>
+		<td bgcolor="#F2F2F2"><p align="center">+ 0</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263"><font color="#FFFFFF">结果</font></td>
+		<td bgcolor="#E9E7E8" colspan="8"><p align="center">192</p></td>
+	</tr>
+</table>
+]]>
+        </text>
+    </component>
+    <!-- end slide 4 -->
+</textcomponents>

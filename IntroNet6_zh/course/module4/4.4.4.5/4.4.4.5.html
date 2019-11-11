@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.4.5 LAN 和 WAN 上的帧</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.4.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>LAN 和 WAN 上的帧</h1>
+        <div>
+          <p>在 TCP/IP 网络中，所有 OSI 第 2 层协议都与 OSI 第 3 层的 IP 一起使用。但是，所用的第 2 层协议取决于逻辑拓扑和物理介质。 </p>
+          <p>每个协议执行指定第 2 层逻辑拓扑的介质访问控制。这意味着在执行这些协议时，有很多种不同的网络设备都可以充当运行在数据链路层上的节点。这些设备包括计算机上的网卡以及路由器和第 2 层交换机上的接口。</p>
+          <p>用于特定网络拓扑的第 2 层协议取决于实施该拓扑的技术。而技术取决于网络规模（根据主机数量和地理范围判断）以及通过网络提供的服务。</p>
+          <p>LAN 通常使用能支持大量主机的高带宽技术。由于 LAN 的地理范围相对较小（单个建筑物或多个建筑物的园区），用户的密集度高，因此这种技术比较节约成本。</p>
+          <p>但是，对于服务范围较广（例如一个城市或多个城市）的 WAN，使用高带宽技术通常不够经济。长距离物理链路的成本以及长距离传送信号的技术一般都会使带宽容量降低。 </p>
+          <p>带宽差异常会导致 LAN 和 WAN 使用不同的协议。</p>
+          <p>数据链路层协议包括： </p>
+          <p>
+            <ul>
+              <li>以太网 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>802.11 无线</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>点对点协议 (PPP) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>HDLC</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>帧中继</li>
+            </ul>
+          </p>
+          <p>单击“播放”查看第 2 层协议示例。</p>
+          
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">This animation shows several routers connecting two end devices.  The layer two frame changes from hop to hop depending on the physical media.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

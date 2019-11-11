@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.3.2 IPv6 前缀长度</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv6 前缀长度</h1>
+        <div>
+          <p>回想一下，IPv4 地址的前缀或网络部分可以由点分十进制子网掩码或前缀长度（斜线记法）标识。例如， IPv4 地址 192.168.1.10（点分十进制子网掩码为 255.255.255.0）等值于 192.168.1.10/24。 </p>
+          <p>IPv6 使用前缀长度表示地址的前缀部分。IPv6 不使用点分十进制子网掩码记法。使用前缀长度表示使用 IPv6 地址/前缀长度的 IPv6 地址的网络部分。</p>
+          <p>前缀长度范围为 0 至 128。LAN 和大多数其他网络类型的典型 IPv6 前缀长度为 /64。这意味着地址前缀或网络部分的长度为 64 位，为该地址的接口 ID（主机部分）另外保留 64 位。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows an example of /64 prefix notation in IPv6 addressing.  The IPv6 address 2001:0DB8:000A:0000:0000:0000:0000:0000 is divided into two parts. Four hextets or 64 bits on the left represents the network prefix and four hextets or 64 bits on the right represent the interface ID. The compressed IPv6 network address is written as 2001:DB8:A::/64</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

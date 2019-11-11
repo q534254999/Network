@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.3.6 验证 IPv6 静态路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.3.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证 IPv6 静态路由</h1>
+        <div>
+          <p>除了 <b>ping </b>和 <b>traceroute</b>，用于验证静态路由的有用命令包括：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>show ipv6 route </b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ipv6 route static</b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ipv6 route network</b>
+              </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>图 1 显示 <b>show ipv6 route static </b>命令的输出示例。输出反映了使用下一跳全局单播地址的静态路由。</p>
+          <p></p>
+          <p>图 2 显示 <b>show ip route 2001:DB8:ACAD:3:: </b>命令的示例输出。</p>
+          <p></p>
+          <p>图 3 验证运行配置中的 <b>ipv6 route</b> 配置。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">这些图基于标准实验图。R1，有 LAN 连接到 R2，还有一个 LAN 使用一个 LAN 连接到 R3。图 1 显示路由器 1 上“show ipv6 route static”命令的输出。图 2 显示特定网络的“show ipv6 route”命令的输出。图 3 显示“show running-config | section ipv6 route”命令的输出。  </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

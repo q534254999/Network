@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.4.1 故障排除任务</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>故障排除任务</h1>
+        <div>
+          <p>故障排除 DHCPv6 类似于故障排除 DHCPv4。 </p>
+          <p></p>
+          <p>
+            <b>故障排除任务 1：解决冲突</b>
+          </p>
+          <p></p>
+          <p>与 IPv4 地址类似，在仍需要连接到网络的客户端上，IPv6 地址租期可能已过期。<b>show ipv6 dhcp conflict</b> 命令显示有状态 DHCPv6 服务器记录的所有地址冲突。如果检测到 IPv6 地址冲突，客户端通常会删除该地址，并使用 SLAAC 或有状态 DHCPv6 生成一个新地址。 </p>
+          <p></p>
+          <p>
+            <b>故障排除任务 2：验证分配方法</b>
+          </p>
+          <p></p>
+          <p><b>show ipv6 interface </b><i>interface </i>命令可以用来验证 RA 消息中所指示的地址分配方法，正如 M 标记和 O 标记的设置所指示的方法。此信息显示在输出的最后几行中。如果客户端没有从有状态 DHCPv6 服务器收到其 IPv6 地址，那么可能是由于 RA 消息中的 M 标记和 O 标记不正确。</p>
+          <p></p>
+          <p>
+            <b>故障排除任务 3：使用静态 IPv6 地址进行测试</b>
+          </p>
+          <p></p>
+          <p>无论是 DHCPv4 还是 DHCPv6，在故障排除任何 DHCP 问题时，都可以通过在客户端工作站配置静态 IP 地址来验证网络连接。对于 IPv6，如果工作站不能使用静态配置的 IPv6 地址访问网络资源，那么问题的根源就不是 SLAAC 或 DHCPv6。此时，需要排除网络连接故障。</p>
+          <p></p>
+          <p>
+            <b>故障排除任务 4：验证交换机端口配置</b>
+          </p>
+          <p></p>
+          <p>如果 DHCPv6 客户端无法从 DHCPv6 服务器获取信息，请验证交换机端口是否启用并正常运行。 </p>
+          <p></p>
+          <p>
+            <b>注</b>：如果客户端与 DHCPv6 服务器之间有交换机，且客户端无法获取 DHCP 配置，则交换机端口配置问题可能是原因。这些原因可能包括与中继、信道或生成树相关的问题。PortFast 和边缘端口配置解决在思科交换机的初始安装中发生的最常见 DHCPv6 客户端问题。 </p>
+          <p></p>
+          <p>
+            <b>故障排除任务 5：在相同子网或 VLAN 上测试 DHCPv6 操作</b>
+          </p>
+          <p></p>
+          <p>如果无状态或有状态 DHCPv6 服务器正常运行，但不是在客户端上，而是处于不同的 IPv6 网络或 VLAN 中，那么问题可能与 DHCPv6 中继代理有关。朝向路由器接口的客户端必须配置有 <b>ipv6 dhcp relay destination</b> 命令。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中的表格列出了用于 DHCPv6 故障排除的任务。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

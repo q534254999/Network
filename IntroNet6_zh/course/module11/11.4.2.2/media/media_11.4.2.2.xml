@@ -1,0 +1,15 @@
+<textcomponents><!-- slide 1 --><component id="ID_s1_title">
+		<text><![CDATA[<b>双工不匹配拓扑</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[全双工]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[半双工]]></text>
+	</component><!-- end slide 1 --><component id="ID_s3_txt01">
+		<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+	</component>
+	<component id="ID_s2_txt01">
+		<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+	</component>
+</textcomponents>

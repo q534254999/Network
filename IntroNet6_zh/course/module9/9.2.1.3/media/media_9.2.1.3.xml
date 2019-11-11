@@ -1,0 +1,262 @@
+﻿<textcomponents>
+	
+	<component id="ID_s2_title">
+	<text><![CDATA[<b>TCP 会话终止 (FIN)</b>]]></text>
+	</component>
+	
+	<component id="ID_s3_title">
+	<text><![CDATA[<b>TCP 会话终止 (ACK)</b>]]></text>
+	</component>
+	
+	<component id="ID_s2_text01">
+	<text><![CDATA[<textformat blockindent="-14"><li>协议分析器显示了帧 16（TCP FIN 请求）的详细信息。</li></textformat>]]></text>
+	</component>
+	
+	
+	<component id="ID_s3_text01">
+	<text><![CDATA[<textformat blockindent="-12"><li>协议分析器显示了帧 17（TCP ACK 响应）的详细信息。</li></textformat>]]></text>
+	</component>
+	
+	
+
+<component id="ID_title">
+<text><![CDATA[<b>TCP 连接的建立和终止</b>]]></text> 
+</component>
+<component id="ID_btn01">
+<text><![CDATA[重置]]></text>
+</component>
+<component id="ID_btn02">
+  <text><![CDATA[1]]></text> 
+  </component>
+<component id="ID_btn03">
+  <text><![CDATA[2]]></text> 
+  </component>
+  
+  <component id="ID_btn04">
+<text><![CDATA[3]]></text>
+</component>
+<component id="ID_btn05">
+  <text><![CDATA[1]]></text> 
+  </component>
+  
+  <component id="ID_btn06">
+  <text><![CDATA[2]]></text> 
+  </component>
+  
+  <component id="ID_btn07">
+  <text><![CDATA[3]]></text> 
+  </component>
+  
+  <component id="ID_btn08">
+  <text><![CDATA[4]]></text> 
+  </component>
+  
+  <component id="ID_btn09">
+  <text><![CDATA[结束]]></text> 
+  </component>
+  
+  <component id="ID_txt01">
+<text><![CDATA[SYN ACK]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[FIN ACK]]></text> 
+</component> 
+
+ <component id="ID_txt03">
+<text><![CDATA[<b>A</b>]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>B</b>]]></text> 
+</component><!-- slide 1 --><component id="ID_s1_txt02">
+<text><![CDATA[发送 SYN]]></text> 
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[(SEQ=100 CTL=SYN)]]></text> 
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[已接收 SYN]]></text> 
+</component>
+
+<component id="ID_s1_txt05">
+<text><![CDATA[CTL = TCP 报头中设置为 1 的控制位<br/>A 向 B 发送 SYN 请求？]]></text> 
+</component><!-- slide 2 --><component id="ID_s2_txt02">
+<text><![CDATA[发送 SYN]]></text> 
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[(SEQ=100 CTL=SYN)]]></text> 
+</component>
+
+<component id="ID_s2_txt04">
+<text><![CDATA[已接收 SYN]]></text> 
+</component>
+
+<component id="ID_s2_txt05">
+<text><![CDATA[已接收 SYN、ACK]]></text> 
+</component>
+
+<component id="ID_s2_txt06">
+<text><![CDATA[发送 SYN、ACK]]></text> 
+</component>
+
+
+<component id="ID_s2_txt08">
+<text><![CDATA[(SEQ=300 ACK=101 CTL=SYN, ACK)]]></text> 
+</component>
+
+<component id="ID_s2_txt09">
+<text><![CDATA[CTL = TCP 报头中设置为 1 的控制位<br/>B 向 A 发送 ACK 响应和 SYN 请求？]]></text> 
+</component><!-- slide 3 --><component id="ID_s3_txt02">
+<text><![CDATA[发送 SYN]]></text> 
+</component>
+
+<component id="ID_s3_txt03">
+<text><![CDATA[(SEQ=100 CTL=SYN)]]></text> 
+</component>
+
+<component id="ID_s3_txt04">
+<text><![CDATA[已接收 SYN、ACK]]></text> 
+</component>
+
+<component id="ID_s3_txt05">
+<text><![CDATA[3]]></text> 
+</component>
+
+<component id="ID_s3_txt06">
+<text><![CDATA[建立]]></text> 
+</component>
+
+<component id="ID_s3_txt07">
+<text><![CDATA[(SEQ=101 ACK=301 CTL=ACK)]]></text> 
+</component>
+
+<component id="ID_s3_txt08">
+<text><![CDATA[已接收 SYN]]></text> 
+</component>
+
+<component id="ID_s3_txt09">
+<text><![CDATA[发送 SYN、ACK]]></text> 
+</component>
+
+<component id="ID_s3_txt10">
+<text><![CDATA[2]]></text> 
+</component>
+
+<component id="ID_s3_txt11">
+<text><![CDATA[(SEQ=300 ACK=101 CTL=SYN, ACK)]]></text> 
+</component>
+
+<component id="ID_s3_txt12">
+<text><![CDATA[B 将 FIN 请求发送到 A。]]></text> 
+</component><!-- slide 4 --><component id="ID_s4_txt02">
+<text><![CDATA[发送 FIN]]></text> 
+</component>
+
+<component id="ID_s4_txt03">
+<text><![CDATA[已接收 FIN]]></text> 
+</component>
+
+<component id="ID_s4_txt04">
+<text><![CDATA[A 将 FIN 请求发送到 B。]]></text> 
+</component><!-- slide 5 --><component id="ID_s5_txt02">
+<text><![CDATA[发送 FIN]]></text> 
+</component>
+
+<component id="ID_s5_txt03">
+<text><![CDATA[已接收 ACK]]></text> 
+</component>
+
+<component id="ID_s5_txt04">
+<text><![CDATA[已接收 FIN]]></text> 
+</component>
+
+<component id="ID_s5_txt05">
+<text><![CDATA[发送 ACK]]></text> 
+</component>
+
+<component id="ID_s5_txt06">
+<text><![CDATA[2]]></text> 
+</component>
+
+<component id="ID_s5_txt07">
+<text><![CDATA[B 将 ACK 响应发送到 A。]]></text> 
+</component><!-- slide 6 --><component id="ID_s6_txt02">
+<text><![CDATA[发送 FIN]]></text> 
+</component>
+
+<component id="ID_s6_txt03">
+<text><![CDATA[已接收 ACK]]></text> 
+</component>
+
+<component id="ID_s6_txt04">
+<text><![CDATA[已接收 FIN]]></text> 
+</component>
+
+<component id="ID_s6_txt05">
+<text><![CDATA[已接收 FIN]]></text> 
+</component>
+
+<component id="ID_s6_txt06">
+<text><![CDATA[发送 ACK]]></text> 
+</component>
+
+
+<component id="ID_s6_txt08">
+<text><![CDATA[发送 FIN]]></text> 
+</component>
+
+<component id="ID_s6_txt09">
+<text><![CDATA[3]]></text> 
+</component>
+
+<component id="ID_s6_txt10">
+<text><![CDATA[B 将 FIN 发送到 A。]]></text> 
+</component><!-- slide 7 --><component id="ID_s7_txt02">
+<text><![CDATA[发送 FIN]]></text> 
+</component>
+
+<component id="ID_s7_txt03">
+<text><![CDATA[已接收 ACK]]></text> 
+</component>
+
+<component id="ID_s7_txt04">
+<text><![CDATA[已接收 FIN]]></text> 
+</component>
+
+
+
+<component id="ID_s7_txt06">
+<text><![CDATA[发送 ACK]]></text> 
+</component>
+
+<component id="ID_s7_txt07">
+<text><![CDATA[已接收 FIN]]></text> 
+</component>
+
+<component id="ID_s7_txt08">
+<text><![CDATA[发送 ACK]]></text> 
+</component>
+
+
+
+<component id="ID_s7_txt10">
+<text><![CDATA[发送 FIN]]></text> 
+</component>
+
+
+
+<component id="ID_s7_txt12">
+<text><![CDATA[已接收 ACK]]></text> 
+</component>
+
+<component id="ID_s7_txt13">
+<text><![CDATA[A 将 ACK 响应发送到 B。]]></text> 
+</component><!-- slide 8 --><component id="ID_s8_txt01">
+<text><![CDATA[会话已终止]]></text> 
+</component>
+
+</textcomponents>

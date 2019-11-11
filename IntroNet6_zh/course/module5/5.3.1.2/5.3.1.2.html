@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.3.1.2 目的远程网络</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>目的远程网络</h1>
+        <div>
+          <p>如图所示，当目的 IP 地址处于远程网络中时，则目的 MAC 地址为主机的默认网关（即路由器的网卡）的地址。我们采用一个邮政类比，这和人们带着信件去当地邮局一样。他们只需要将信件带到邮局，然后邮局会负责将信件送达最终目的地。</p>
+          <p>图中展示了向远程网络中的 Web 服务器发送 IP 数据包的 PC-A 的以太网 MAC 地址和 IPv4 地址。路由器通过检查目的 IPv4 地址来确定转发 IPv4 数据包的最佳路径。这类似于邮政服务根据收件人的地址转发邮件。 </p>
+          <p>路由器收到以太网帧后，将解封第 2 层信息。它可借助目的 IP 地址确定下一跳设备，然后将 IP 数据包封装在发送接口的新数据链路帧中。在路径中的每个链路上，IP 数据包将会封装到一个根据与此链路相关的特定数据链路技术而定的帧中，例如以太网。如果下一跳设备为最终目的地，则目的 MAC 地址将是该设备的以太网网卡的 MAC 地址。  </p>
+          <p>数据流中 IPv4 数据包的 IPv4 地址如何与通往目的地路径中每条链路上的 MAC 地址相关联？这可以通过地址解析协议 (ARP) 过程来完成。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows PC A connected to router 1, which is connected to R2. R2 is connected to a file server. PC A is sending data to the file server. PC A builds a packet with its own IP address as the source and the destination IP address of the file server. PC A then builds a frame with its own MAC address as the source and the MAC address for R1 as the destination.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

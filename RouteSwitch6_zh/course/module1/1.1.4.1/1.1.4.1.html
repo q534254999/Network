@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.4.1 验证接口设置</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证接口设置</h1>
+        <div>
+          <p>有几个 <b>show</b> 命令可用于验证接口的操作和配置。以下三个命令对于快速确定接口状态尤其有用：</p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip interface brief </b>- 显示所有接口的汇总，包括接口的 IPv4 地址和当前运行状态。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip route </b>- 显示存储在 RAM 中的 IPv4 路由表的内容。在思科 IOS 15 中，路由表中应当显示活动接口以及由代码“<b>C</b>”（连接）或“<b>L</b>”（本地）标识的两个相关条目。在较早的 IOS 版本中，只显示带有代码“<b>C</b>”的一个条目。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show running-config interface </b>
+                <i>interface-id</i>
+                <b></b>- 显示在指定接口上配置的命令。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>图 1 显示 <b>show ip interface brief</b> 命令的输出。在输出中，由状态和协议均显示“up”可知，LAN 接口和 WAN 链路均已激活并可以运行。显示其他输出说明存在配置或布线问题。</p>
+          <p></p>
+          <p>
+            <b>注</b>：在图 1 中显示 Embedded-Service-Engine0/0 接口，因为思科 ISR G2 在主板上配有双核 CPU。Embedded-Service-Engine0/0 接口不属于本课程的范围。</p>
+          <p></p>
+          <p>图 2 显示的是 <b>show ip route</b> 命令的输出。注意三个直连网络条目和三个本地主机路由接口条目。本地主机路由的管理距离为 0。它还具有 IPv4 的 /32 掩码和 IPv6 的 /128 掩码。本地主机路由是拥有此 IP 地址的路由器上的路由。它用于允许路由器处理发往该 IP 地址的数据包。</p>
+          <p></p>
+          <p>图 3 显示 <b>show running-config interface</b> 命令的输出。输出显示了在指定接口上配置的当前命令。 </p>
+          <p></p>
+          <p>以下两个命令用于收集接口的更多详细信息： </p>
+          <p>
+            <ul>
+              <li>
+                <b>show interfaces </b>- 显示设备上所有接口的接口信息和数据包流量计数。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip interface </b>- 显示路由器上所有接口的 IPv4 相关信息。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>使用图 4 和图 5 中的语法检查器来验证 R1 的接口。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示路由器上运行的 show ip interface brief 命令的输出。输出中有两个千兆位接口、两个串行接口、IP 地址及各自的当前运行状态。图 2 显示路由器上运行的 show ip route 命令的输出。此路由器有三个配置的接口，因此在第一列中有三个由字母 C 标识的相连路由，且在第一列中有三个由字母 L 标识的本地路由。图 3 显示 show running-config interface gigabitEthernet 0/0 命令的输出。此输出列出有关指定接口（包括子网掩码）的更多详细信息。图 4 是允许学生运行 show interface gigabitethernet 0/0 命令并观察输出的互动练习。图 5 是允许学生运行 show ip interface gigabitethernet 0/0 命令并观察输出的互动练习。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+﻿<textcomponents> 
+<component id="ID_title">
+   <text><![CDATA[<b>确定流量优先级</b>]]></text>
+   </component>
+<component id="ID_txt01">
+<text><![CDATA[主干网络]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[流量按照优先级顺序发送到主干]]></text> 
+</component>
+
+
+<component id="ID_txt03">
+<text><![CDATA[流量不分任何优先级发送到路由器]]></text>  
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>流量</b>]]></text> 
+</component> 
+
+<component id="ID_txt05">           
+<text><![CDATA[<b>优先级</b>]]></text>  
+</component>
+   
+<component id="ID_txt06">              
+<text><![CDATA[<b>语音</b>]]></text>   
+</component>
+
+<component id="ID_txt07">              
+<text><![CDATA[<b>高优先级</b>]]></text>   
+</component>
+
+<component id="ID_txt08">              
+<text><![CDATA[<b>SMTP</b>]]></text>   
+</component>
+
+<component id="ID_txt09">              
+<text><![CDATA[<b>中优先级</b>]]></text>   
+</component>
+
+<component id="ID_txt10">              
+<text><![CDATA[<b>即时消息</b>]]></text>   
+</component>
+
+<component id="ID_txt11">              
+<text><![CDATA[<b>普通优先级</b>]]></text>   
+</component>
+
+<component id="ID_txt12">              
+<text><![CDATA[<b>FTP</b>]]></text>   
+</component>
+
+<component id="ID_txt13">              
+<text><![CDATA[<b>低优先级</b>]]></text>   
+</component>
+
+<component id="ID_txt14">              
+<text><![CDATA[优先级有四个队列。高优先级队列总是先为空。]]></text>   
+</component>
+
+
+</textcomponents>

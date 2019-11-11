@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.4.3.2 交换机的默认网关</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.4.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>交换机的默认网关</h1>
+        <div>
+          <p>一般来说，连接客户端计算机的工作组交换机是第 2 层设备。因此，第 2 层交换机不需要使用 IP 地址就能正常工作。但是，如果您想通过多个网络连接到交换机并进行管理，则需要配置 SVI 的 IPv4 地址、子网掩码和默认网关地址。 </p>
+          <p>在希望通过本地网络之外的方式通信的所有设备上，一般都会配置默认网关地址。换句话说，若要使用 SSH 或 Telnet 从其他网络远程访问交换机，交换机必须具有配置了 IPv4 地址、子网掩码和默认网关地址的 SVI。如果从本地网络中的主机访问交换机，则不需要使用默认网关 IPv4 地址。</p>
+          <p>要为交换机配置默认网关，请使用 <b>ip default-gateway</b> 全局配置命令。配置的 IP 地址是相连交换机的路由器接口的 IP 地址。</p>
+          <p>图 1 显示了管理员正在建立到另一个网络上的交换机 S1 的远程连接。必须使用默认网关配置 S1，S1 才能够应答并建立与管理主机的 SSH 连接。</p>
+          <p>常见误解是，对于来源为与交换机相连的主机且目的地为远程网络中的主机的数据包，交换机会使用自身配置的默认网关地址来确定转发数据包的目的地。实际上，IP 地址和默认网关信息仅用于来源为交换机的数据包。来自与交换机相连的主机计算机的数据包必须在主机计算机操作系统上配置默认网关地址。 </p>
+          <p>使用图 2 中的语法检查器练习在交换机上配置默认网关。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a network with a worker connected to a LAN.  The figure demonstrates how to configure a switch with a management interface (VLAN 1) and a default gateway so a network administrator can manage the switch remotely.  Without these configured, you cannot connect to a switch remotely. Figure 2 is a Syntax Checker activity allowing the learner to practice configuring a management interface and default gateway on a switch.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

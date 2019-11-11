@@ -1,0 +1,64 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>与远程网络通信</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[<b>初始来源</b>]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[<b>最终目的地</b>]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[00-0A]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[00-0C]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[<b>目的 IP 地址</b>]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[文件服务器]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[192.168.1.110]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[172.16.1.99]]></text>
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[MAC 地址缩短是为了便于演示。]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[<b>目的 MAC 地址</b>]]></text>
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[网卡]]></text>
+	</component>
+	<component id="ID_txt14">
+		<text><![CDATA[网卡]]></text>
+	</component>
+	<component id="ID_txt13">
+		<text><![CDATA[网卡]]></text>
+	</component>
+	<component id="ID_txt12">
+		<text><![CDATA[网卡]]></text>
+	</component><!-- Slide 1--><component id="ID_s1_txt01">
+		<text><![CDATA[目的 MAC 地址<br/>00-0C]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[源 MAC 地址<br/>00-0A]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[源 IP<br/>192.168.1.110]]></text>
+	</component>
+	<component id="ID_s1_txt04">
+		<text><![CDATA[目的 IP 地址<br/>172.16.1.99]]></text>
+	</component>
+	<component id="ID_s1_txt05">
+		<text><![CDATA[<b>第 2 层以太网报头</b>]]></text>
+	</component>
+	<component id="ID_s1_txt06">
+		<text><![CDATA[<b>第 3 层 IP 数据包</b>]]></text>
+	</component>
+</textcomponents>

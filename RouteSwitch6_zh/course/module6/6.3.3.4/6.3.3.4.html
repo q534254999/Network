@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.3.4 配置单臂路由器：验证子接口</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置单臂路由器：验证子接口</h1>
+        <div>
+          <p>在默认情况下，配置思科路由器是为了在本地子接口之间路由流量。因此，并不需要专门启用路由。</p>
+          <p></p>
+          <p>在图 1 中，命令 <b>show vlan</b> 用于显示有关思科 IOS VLAN 子接口的信息。输出结果显示了两个 VLAN 子接口：GigabitEthernet0/0.10 和 GigabitEthernet0/0.30。</p>
+          <p></p>
+          <p>使用<span class="cmd"><b></b></span><b>show ip route</b><span class="cmd"><b></b></span>命令检查路由表（图 2）。在本示例中，路由表中定义的路由表示它们与特定的子接口相关联，而不与独立的物理接口相关联。路由表中显示了两个路由。一个路由通往连接到本地子接口 G0/0.10 的子网 172.17.10.0。另一个路由通往连接到本地子接口 G0/0.30 的子网 172.17.30.0。路由器通过路由表确定所接收流量的发送位置。例如，在子接口 G0/0.10 上收到发往子网 172.17.30.0 的数据包后，路由器将判断出它需要将该数据包从子接口 G0/0.30 发送至子网 172.17.30.0 中的主机。</p>
+          <p></p>
+          <p></p>
+          <p>使用图 3 中的语法检查程序配置和验证 R1 上的单臂路由器。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示从已配置单臂路由器 VLAN 间路由的路由器的角度来讲，命令 show vlans 的输出。图 2 显示从已配置单臂路由器 VLAN 间路由的路由器的角度来讲，ip routing table 的输出。图 3 是展示创建子接口、设置封装以及在用于单臂 VLAN 间路由的路由器上激活物理接口的过程的语法检查程序。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

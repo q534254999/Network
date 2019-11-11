@@ -1,0 +1,65 @@
+﻿<textcomponents>
+
+	<component id="ID_title">
+		<text><![CDATA[<b>控制位字段</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[<b>20 字节</b>]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[<b><font color='#ffffff'>位 (0)</font></b>]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[<b><font color='#ffffff'>位 (15)</font></b>]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[<b><font color='#ffffff'>位 (16)</font></b>]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[<b><font color='#ffffff'>位 (31)</font></b>]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[源端口 (16)]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[目的端口 (16)]]></text>
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[序列号 (32)]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[确认号 (32)]]></text>
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[报头长度 (4)]]></text>
+	</component>
+	<component id="ID_txt12">
+		<text><![CDATA[窗口 (16)]]></text>
+	</component>
+	<component id="ID_txt13">
+		<text><![CDATA[校验和 (16)]]></text>
+	</component>
+	<component id="ID_txt14">
+		<text><![CDATA[紧急 (16)]]></text>
+	</component>
+	<component id="ID_txt15">
+		<text><![CDATA[选项（0 或 32，如果有）]]></text>
+	</component>
+	<component id="ID_txt16">
+		<text><![CDATA[应用层数据（大小不等）]]></text>
+	</component>
+	<component id="ID_txt17">
+		<text><![CDATA[保留 (6)]]></text>
+	</component>
+	<component id="ID_txt18">
+		<text><![CDATA[控制<br/>位 (6)]]></text>
+	</component>
+
+	
+	<component id="ID_titleTxt01">
+		<text><![CDATA[]]></text>
+	</component>
+	<component id="ID_bodyTxt01">
+		<text><![CDATA[<b>URG</b> - 紧急指针字段有效<br/><b>ACK</b> - 确认字段有效<br/><b>PSH</b> - 推送功能<br/><b>RST</b> - 重置连接<br/><b>SYN</b> - 同步序列号<br/><b>FIN</b> - 发送方不再发送数据]]></text>
+	</component>
+</textcomponents>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.4.2 帧字段</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>帧字段</h1>
+        <div>
+          <p>成帧技术将位流拆分成可破解的多个分组，且将控制信息作为不同字段值插入帧头和帧尾中。此格式使物理信号具备能被节点接收且可在目的地解码成数据包的一种结构。</p>
+          <p>如图所示，通用帧字段类型包括： </p>
+          <p>
+            <ul>
+              <li>
+                <b>帧开始和停止指示标志</b> - 用于标识帧的开始和结束位置的限制。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>编址</b> - 表示介质上的源节点和目的节点。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>类型</b> - 用于标识数据字段中的第 3 层协议。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>控制</b> - 用于标识特殊流量控制服务，比如服务质量 (QoS)。QoS 用于为某些类型的消息提供转发优先权。传送 IP 语音 (VoIP) 数据包的数据链路帧通常会获得优先权，因为它们对延迟敏感。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>数据</b> - 包含帧负载（即数据包报头、数据段报头和数据）。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>错误检测</b> - 这些帧字段用于进行错误检测并包含在数据之后形成帧尾。 </li>
+            </ul>
+          </p>
+          <p>并非所有协议均包含全部此类字段。特定数据链路协议的标准定义了实际帧格式。 </p>
+          <p>数据链路层协议将帧尾添加到各帧结尾处。帧尾的作用是确定帧是否无错到达。此过程称为错误检测，通过将组成帧的各个位的逻辑或数学摘要放入帧尾中来实现。因为介质中的信号可能遭受干扰、失真或丢失，从而大幅更改这些信号所代表的位值，所以要将错误检测添加到数据链路层。</p>
+          <p>发送节点会创建帧内容的逻辑摘要，称为循环冗余校验 (CRC) 值。此值将放入帧校验序列 (FCS) 字段中以代表帧内容。在以太网尾部，FCS 为接收节点提供一种方法，用于确定帧是否出现传输错误。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a frame with header, data and trailer.  The header is expanded to show the header fields: Frame start, addressing, type and control.  The trailer is expanded to show the trailer fields: Error detection and frame stop.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

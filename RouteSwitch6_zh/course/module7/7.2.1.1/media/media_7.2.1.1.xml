@@ -1,0 +1,67 @@
+<textcomponents>
+
+	<component id="ID_s1_title">
+	  <text><![CDATA[<b>标准 ACL <font face="_typewriter">access-list</font> 命令语法</b>]]></text> 
+	  </component>
+		
+	<component id="ID_s2_title">
+	  <text><![CDATA[<b>删除 ACL</b>]]></text> 
+	</component>
+	
+	  
+	  
+	<component id="ID_Table_01">
+			<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+		<tr class="liner">
+			<td colspan='2' bgcolor='#0E6360' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+		</tr>
+		
+		<tr>
+			
+			<td width="100" bgcolor='#077A77' valign="top"><font color='#ffffff'><b>参数</b></font></td>
+			<td bgcolor='#077A77' valign="top"><font color='#ffffff'><b>说明</b></font></td>	
+			
+		</tr>
+			
+		
+		<tr>
+			<td bgcolor="#EFF8F7" valign="top"><font face='_typewriter' color='#393536'><i>access-list-number</i></font></td>
+			<td bgcolor="#EFF8F7" valign="top"><font color='#393536'>ACL 的编号。 这是一个十进制数，值在 1 到 99 或 1300 到 1999 之间（适用于标准 ACL）。</font></td>			
+		 
+		</tr>
+		<tr>
+			<td bgcolor="#ffffff" valign="top"><font color='#393536' face='_typewriter'><b>deny</b></font></td>
+			<td bgcolor="#ffffff" valign="top"><font color='#393536'>匹配条件时拒绝访问。</font></td>			
+		 
+		</tr>
+		
+		<tr>
+			<td bgcolor="#EFF8F7" valign="top"><font color='#393536' face='_typewriter'><b>permit</b></font></td>
+			<td bgcolor="#EFF8F7" valign="top"><font color='#393536'>匹配条件时允许访问。</font></td>	 	 
+		</tr>
+		
+		<tr>
+			<td bgcolor="#ffffff" valign="top"><font color='#393536' face='_typewriter'><b>remark</b></font></td>
+			<td bgcolor="#ffffff" valign="top"><font color='#393536'>在 IP 访问列表中添加备注，增强列表的可读性。</font></td>			
+		 
+		</tr>	
+		
+		<tr>
+			<td bgcolor="#EFF8F7" valign="top"><font color='#393536' face='_typewriter'><i>source</i></font></td>
+			<td bgcolor="#EFF8F7" valign="top"><font color='#393536'>发送数据包的网络号或主机号。 可通过两种方法指定 <font color='#393536' face='_typewriter'><i>source</i></font>：<ul><li><textformat blockindent='-14'>使用以点分十进制格式分四部分的 32 位数字。</textformat></li><li><textformat blockindent='-14'>使用关键字 <font face='_typewriter'><b> any </b></font> 作为 0.0.0.0 255.255.255.255 的 <font face='_typewriter'><i> source </i></font> 和 <font face='_typewriter'><i> source-wildcard </i></font> 的缩写。</textformat></li></ul></font></td>
+		 
+		</tr>
+		
+		<tr>
+			<td bgcolor="#ffffff" valign="top"><font color='#393536' face='_typewriter'><i>source-wildcard</i></font></td>
+			<td bgcolor="#ffffff" valign="top"><font color='#393536'>（可选）要应用到源的 32 位通配符掩码。 在要忽略的位上置 1。</font></td>
+	</tr>
+	
+		
+		<tr>
+			<td bgcolor="#ffffff" valign="top"><font color='#393536' face='_typewriter'><b>log</b></font></td>
+			<td bgcolor="#EFF8F7" valign="top"><font color='#393536'><p>（可选）对匹配条目的数据包生成信息性日志消息，该消息将随后发送到控制台。 （记录到控制台的消息级别由 <font face='_typewriter'><b>logging console</b></font> 命令控制。）</p><br/><p>消息内容包括 ACL 号、数据包是被允许还是被拒绝、源地址以及数据包的数量。 此消息在出现与条件匹配的第一个数据包时生成，随后每五分钟生成一次，其中会包含在过去的五分钟内允许或拒绝的数据包的数量。</p></font></td>
+		</tr>		
+	</table>]]></text> 
+	</component>
+</textcomponents>

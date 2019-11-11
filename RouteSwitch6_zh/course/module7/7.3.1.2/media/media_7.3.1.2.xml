@@ -1,0 +1,21 @@
+<textcomponents><!-- slide 1 --><component id="ID_s1_title">
+<text><![CDATA[<b>语句冲突</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<textformat blockindent='-14'>ACL 3：Host 语句与前面的 range 语句冲突。</textformat>]]></text>
+</component><!-- slide 2 --><component id="ID_s2_title">
+<text><![CDATA[<b>Host 语句在 range 语句之前输入</b>]]></text> 
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[<textformat blockindent='-14'>ACL 4：Host 语句可以始终在 range 语句之前配置。</textformat>]]></text>
+</component><!-- slide 3 --><component id="ID_s3_title">
+<text><![CDATA[<b>Host 语句在 range 语句之后配置且没有发生冲突</b>]]></text> 
+</component>
+
+<component id="ID_s3_txt01">
+<text><![CDATA[<textformat blockindent='-14'>ACL 5：如果没有冲突，host 语句可以在 range 语句之后配置。</textformat>]]></text>
+</component>
+
+</textcomponents>

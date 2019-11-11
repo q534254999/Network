@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.2.4 本征 VLAN 和 802.1Q 标记</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>本征 VLAN 和 802.1Q 标记</h1>
+        <div>
+          <p>
+            <b>本征 VLAN 上的有标记帧 </b>
+          </p>
+          <p></p>
+          <p>支持中继的某些设备会在本征 VLAN 流量中添加 VLAN 标记。而发送到本征 VLAN 上的控制流量不应添加标记。如果 802.1Q 中继端口收到的有标记帧的 VLAN ID 与本征 VLAN 相同，则会丢弃该帧。因此，在思科交换机上配置交换机端口时，要配置设备不发送本征 VLAN 上的有标记帧。其它厂商生产的在本征 VLAN 上支持有标记帧的设备涉及 IP 电话、服务器、路由器和非思科交换机。 </p>
+          <p></p>
+          <p>
+            <b>本征 VLAN 上的无标记帧</b>
+          </p>
+          <p></p>
+          <p>当思科交换机 TRUNK 端口收到无标记帧时（在设计合理的网络中并不常见），它会将这些帧转发到本征 VLAN。如果没有设备与本征 VLAN 关联（并不少见），并且没有其他 TRUNK 端口（并不少见），则会将帧丢弃。默认的本征 VLAN 为 VLAN 1。当配置 802.1Q TRUNK 端口时，默认 Port VLAN ID (PVID) 分配本征 VLAN ID 的值。所有出入 802.1Q 端口的无标记流量根据 PVID 值转发。例如，如果 VLAN 99 配置为本征 VLAN，则 PVID 为 99，所有的无标记流量转发到 VLAN 99。如果没有重新配置本征 VLAN，则 PVID 值设置为 VLAN 1。 </p>
+          <p></p>
+          <p>在图中，PC1 通过集线器连接到 802.1Q TRUNK 链路。PC1 发送无标记流量，交换机与中继端口上配置的本征 VLAN 关联并相应地转发流量。PC1 在 TRUNK 上收到的有标记流量将被丢弃。此场景反映了不理想的网络设计，原因如下：使用集线器，主机连接到 TRUNK 链路，并且它意味着交换机的接入端口已分配给本征 VLAN。这也说明了 IEEE 802.1Q 规范使用本征 VLAN 来处理传统场景的动机。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示具有多个 VLAN 的交换网络。一台 PC 连接到与交换网络相连的集线器。从 PC 发出的数据包传输到具有 VLAN 1 连接的任何交换机。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

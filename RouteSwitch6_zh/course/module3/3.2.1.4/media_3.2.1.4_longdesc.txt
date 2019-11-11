@@ -1,0 +1,1 @@
+图 1 显示 show ip protocols 命令的输出，并突出显示声明路由器正在发送第一版，但可能会收到第一版和第二版更新的部分。图 2 显示在路由器上启用 RIPv2 的命令。该图以全局配置模式开始并使用命令 router rip 启用 RIP。下一命令为 version 2，可启用 RIPv2 并禁用 RIPv1。显示命令 show ip protocols 的结果，此时路由器正在仅发送和接收 RIP 第 2 版。图 3 显示命令 show ip route | begin Gateway 的输出。其中显示路由表，由于在上一图中 version 2 命令仅在路由器上启用第 2 版，因此无 RIP 路由，且此时忽略 RIP 第 1 版更新。图 4 是允许学生在路由器上配置 RIPv2 的互动媒体元素。

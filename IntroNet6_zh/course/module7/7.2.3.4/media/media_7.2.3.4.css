@@ -1,0 +1,16 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_bubble01, #ID_bubble02, #ID_bubble03{
+	color: #fff !important;
+}
+
+
+@media only screen and (device-width: 768px) {
+#ID_bubble01, #ID_bubble02, #ID_bubble03{
+	color: #fff !important;
+}
+
+}

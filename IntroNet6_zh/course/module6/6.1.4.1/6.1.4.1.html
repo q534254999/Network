@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.4.1 IPv4 的局限性</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv4 的局限性</h1>
+        <div>
+          <p>多年来，IPv4 不断更新以迎接新的挑战。但是，尽管经历了多次变更，IPv4 仍然有三个重要问题：</p>
+          <p>
+            <ul>
+              <li>
+                <b>IP 地址耗尽 -</b> IPv4 的可用唯一公有 IPv4 地址数量有限。尽管有大约 40 亿的 IPv4 地址，但是支持 IP 的新设备数量的不断增加，以及始终在线的连接的增加和欠发达地区的潜在连接的增加不断催生更多的地址需求。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Internet 路由表膨胀 -</b> 路由器使用路由表确定最佳路径。随着连接到 Internet 的服务器数量增加，网络路由的数量也不断增加。这些 IPv4 路由消耗 Internet 路由器上的大量内存和处理器资源。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>缺乏端到端连接 -</b> 网络地址转换 (NAT) 是 IPv4 网络中经常实施的一项技术。NAT 为多种设备共享单一的公有 IPv4 地址提供方法。但是，因为共享了公有 IPv4 地址，内部网络主机的 IPv4 地址会隐藏起来。这会给需要端到端连接的技术造成难题。</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a gas gage on E to show that we are out of IPv4 addresses.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

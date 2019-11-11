@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.3.2 配置 PAT：单个地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置 PAT：单个地址</h1>
+        <div>
+          <p>
+            <b>为单一公有 IPv4 地址配置 PAT</b>
+          </p>
+          <p></p>
+          <p>图 1 显示了用于单个公有 IPv4 地址转换的 PAT 实施的拓扑。在示例中，来自网络 192.168.0.0/16 的所有主机（匹配 ACL 1）通过路由器 R2 将流量发送到互联网，这些主机地址将会转换为 IPv4 地址 209.165.200.225（接口 S0/1/0 的 IPv4 地址）。由于使用了 <b>overload</b> 关键字，因此在 NAT 表中可通过端口号来识别通信流。</p>
+          <p></p>
+          <p>图 2 显示了使用单一 IPv4 地址配置 PAT 的步骤。如果只有一个公有 IPv4 地址可用，则过载配置通常会将此公有地址分配给与 ISP 连接的外部接口。所有内部地址离开该外部接口时，均被转换为此 IPv4 地址。 </p>
+          <p></p>
+          <p>
+            <b>步骤 1.</b>定义 ACL，使其允许流量转换。</p>
+          <p></p>
+          <p>
+            <b>步骤 2.</b>使用 <b>interface</b> 和 <b>overload</b> 关键字配置源转换。<b>interface</b> 关键字用于确定在转换内部地址时使用哪个接口 IPv4 地址。<b>overload</b> 关键字指示路由器跟踪端口号以及每个 NAT 条目。</p>
+          <p></p>
+          <p>
+            <b>步骤 3.</b>确定对于 NAT 哪些接口是内部接口。即与内部网络连接的所有接口。</p>
+          <p></p>
+          <p>
+            <b>步骤 4.</b>确定对于 NAT 哪些接口是外部接口。这应该与步骤 2 的源转换语句中标识的接口相同。</p>
+          <p></p>
+          <p>配置与动态 NAT 相似，不同之处在于不是使用地址池，而是使用 <b>interface</b> 关键字来识别外部 IPv4 地址。因此没有定义 NAT 池。 </p>
+          <p></p>
+          <p>使用图 3 中的语法检查器，在 R2 上使用单个地址配置 PAT。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示路由器 2，内部网络在左侧，外部网络在右侧。内部网络包含路由器 1 和两个计算机。外部网络包含一个服务器。以下是显示转换的 NAT 表。图 2 显示的表格列出了配置 PAT 涉及的步骤和命令。图 3 是交互练习，使学习者可以练习如何配置 PAT。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

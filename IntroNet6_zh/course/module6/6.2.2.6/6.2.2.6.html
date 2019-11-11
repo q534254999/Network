@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.2.6 下一跳地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>下一跳地址</h1>
+        <div>
+          <p>当要转发至远程网络的数据包到达路由器时，路由器会将目的网络与路由表中的路由进行匹配。如果找到匹配项，路由器会通过已确定的接口将数据包转发到下一跳地址。</p>
+          <p>请参考图 1 中的示例网络拓扑。假设 PC1 或 PC2 已发送了一个指向 10.1.1.0 或 10.1.2.0 网络的数据包。当数据包到达 R1 的千兆接口时，R1 会将数据包的目的 IPv4 地址与其路由表中的条目进行比较。图 2 显示了路由表。根据路由内容，R1 会通过其 Serial 0/0/0 接口将数据包转发到下一跳地址 209.165.200.226。</p>
+          <p>注意路由来源为 <b>C</b> 和 <b>L</b> 的直连网络没有下一跳地址。这是因为路由器可以使用指定的接口直接将数据包转发至这些网络上的主机。</p>
+          <p>还必须要知道，路由器不能转发目的网络与路由表中的路由不匹配的数据包。如果路由表中没有代表目的网络的路由，会丢弃数据包（即不转发）。但是，正如主机可以使用默认网关将数据包转发到未知目的地址，路由器也可以包含默认路由，以创建最后选用网关。可以手动配置或动态获取默认路由。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows two routers connected by a serial connection.  Each router has two LANs attached.  Figure 2 shows the output from "show ip route" command issued on router 1. The two routes learned by EIGRP have the next hop interface highlighted in orange.  The next hop is the IP address of the WAN interface on the remote router.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

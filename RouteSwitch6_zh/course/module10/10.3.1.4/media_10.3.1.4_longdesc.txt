@@ -1,0 +1,1 @@
+该图显示了路由器上 copy running-config tftp 命令的输出。这将允许客户将当前配置备份到网络上的 TFTP 服务器。

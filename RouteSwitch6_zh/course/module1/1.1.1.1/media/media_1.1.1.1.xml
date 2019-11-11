@@ -1,0 +1,31 @@
+<textcomponents>
+
+	<component id="ID_title">
+		<text><![CDATA[<b>网络特征</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[拓扑]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[速度]]></text> 
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[成本]]></text> 
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[安全性]]></text> 
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[可用性]]></text> 
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[可扩展性]]></text> 
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[可靠性]]></text> 
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[<b>网络特征</b>]]></text> 
+	</component>
+
+</textcomponents>

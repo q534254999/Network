@@ -1,0 +1,55 @@
+<textcomponents>
+    <!-- Slide 1 -->
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[CLI 访问选项]]>
+        </text>
+    </component>
+    <!-- buttons -->
+    <component id="ID_s1_titleTxt01">
+        <text>
+            <![CDATA[控制台]]></text>
+    </component>
+    <component id="ID_s1_titleTxt02">
+        <text>
+            <![CDATA[SSH]]></text>
+    </component>
+    <component id="ID_s1_titleTxt03">
+        <text>
+            <![CDATA[Telnet]]></text>
+    </component>
+    <!-- End buttons -->
+    <!-- textboxes -->
+    <component id="ID_s1_btn01">
+        <text>
+            <![CDATA[控制台]]>
+        </text>
+    </component>
+    <component id="ID_s1_bodyTxt01">
+        <text>
+            <![CDATA[使用控制台端口的优势在于，即使没有配置任何网络服务，也可以访问设备，例如执行网络设备的初始配置时。当执行初始配置时，运行终端仿真软件的计算机使用特殊电缆连接到设备的控制台端口。用于设置交换机或路由器的配置命令可通过该相连的计算机输入。]]>
+        </text>
+    </component>
+    <component id="ID_s1_btn02">
+        <text>
+            <![CDATA[SSH]]>
+        </text>
+    </component>
+    <component id="ID_s1_bodyTxt02">
+        <text>
+            <![CDATA[SSH 是用于远程管理的推荐方法，因为它可以提供安全连接。SSH 提供加密密码身份验证和会话数据的传输。这可使用户 ID、密码和管理会话的详细信息保持私密。大部分 Cisco IOS 版本配备了 SSH 服务器和 SSH 客户端，可用于与其他设备建立 SSH 会话。]]>
+        </text>
+    </component>
+    <component id="ID_s1_btn03">
+        <text>
+            <![CDATA[Telnet]]>
+        </text>
+    </component>
+    <component id="ID_s1_bodyTxt03">
+        <text>
+            <![CDATA[最佳实践表明，应使用 SSH 而非 Telnet 来实现远程管理 CLI 连接。Cisco IOS 包含 Telnet 服务器和 Telnet 客户端，可用于与其他设备建立 Telnet 会话。]]>
+        </text>
+    </component>
+    <!-- End textboxes -->
+    <!-- End Slide 1 -->
+</textcomponents>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.3.1.1 同一网络中的目的地</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>同一网络中的目的地</h1>
+        <div>
+          <p>将两个主要地址分配给以太网 LAN 上的设备： </p>
+          <p>
+            <ul>
+              <li>
+                <b>物理地址（MAC 地址）</b>– 用于同一网络中的以太网网卡之间的通信。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>逻辑地址（IP 地址）</b>– 用于将数据包从原始源发送到最终目的地。 </li>
+            </ul>
+          </p>
+          <p>IP 地址用于标识原始源的地址和最终目的地址。目的 IP 地址可在同一 IP 网络中作为源地址，也可用于远程网络。</p>
+          <p>
+            <b>注意</b>：当给定一个域名（例如 www.cisco.com）时，大多数应用程序会使用 DNS（域名系统）来确定 IP 地址。DNS 将在后面的章节中讨论。</p>
+          <p>第 2 层或物理地址，和以太网 MAC 地址一样，都有不同的目的。这些地址用于通过封装的 IP 数据包将数据链路帧从同一网络中一个网卡发送到另一个网卡。如果目的 IP 地址处于同一网络中，则目的 MAC 地址是目的设备的 MAC 地址。 </p>
+          <p>图中展示了 PC-A 的以太网 MAC 地址和 IP 地址正在向同一网络中的文件服务器发送 IP 数据包。</p>
+          <p>第 2 层以太网帧包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>目的 MAC 地址</b> – 文件服务器的以太网网卡的 MAC 地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>源 MAC 地址</b> – PC-A 的以太网网卡的 MAC 地址。</li>
+            </ul>
+          </p>
+          <p>第 3 层 IP 数据包包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>源 IP</b> – 原始源，即 PC-A 的 IP 地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>目的 IP</b> – 最终目的地，即服务器的 IP 地址。 </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a PC connected to a server. The PC is sending data to the server. The PC puts the Layer 3 source and destination IP addresses in the packet header and then puts the Layer 2 source and destination MAC addresses in the frame header.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.3.5 端口模式不正确</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.3.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>端口模式不正确</h1>
+        <div>
+          <p>TRUNK 链路通常使用 <b>switchport mode trunk</b> 命令静态配置。思科 Catalyst 交换机 TRUNK 端口使用 DTP 协商链路的状态。如果 TRUNK 链路上的端口所配置的 TRUNK 模式与相邻 TRUNK 端口不兼容，则两台交换机之间不能形成 TRUNK 链路。 </p>
+          <p></p>
+          <p>在图 1 所示的场景中，PC4 无法连接到内部 Web 服务器。拓扑显示有效配置。出现问题的原因是什么？ </p>
+          <p>使用 <b>show interfaces trunk</b> 命令检查交换机 S1 上的 TRUNK 端口状态。图 2 所示的输出表明，交换机 S1 的接口 Fa0/3 当前不是 TRUNK 链路。检查 F0/3 接口后发现，交换机端口静态配置为中继模式。检查交换机 S3 上的 TRUNK 后发现，没有活动的 TRUNK 端口。进一步检查后发现，Fa0/3 接口处于静态接入模式。这是因为该端口是使用<b> switchport mode access </b>命令创建的。这便是 TRUNK 失败的原因。</p>
+          <p></p>
+          <p>要解决此问题，请重新配置交换机 S3 的 F0/3 端口的中继模式，如图 3 所示。更改配置之后，<b>show interfaces </b>命令的输出表明，交换机 S3 的该端口现在处于中继模式。PC4 的屏幕输出表明它已与 IPv4 地址为 172.17.10.30 的 Web/TFTP 服务器重新建立连接。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示一个 LAN，带有一台连接到交换机 3 的 PC，和一台连接到交换机 1 的 Web 服务器。交换机之间的链路为允许适当 VLAN 的中继链路。PC 具有标注，说明其未连接到 Web 服务器。图 2 显示交换机 1 上“show interfaces trunk”命令的输出，和交换机 1 上“show interface f0/3 switchport”命令的输出。f0/3 的模式突出显示并设置为 dynamic auto。还显示交换机 3 上“show interfaces trunk”命令的输出。交换机 3 上没有中继。还显示交换机 3 上“show interfaces f0/3”命令的输出。端口模式突出显示并设置为 dynamic auto。图 3 显示在交换机 1 和交换机 3 上将端口 f0/3 配置为中继端口的语法，以及从 PC 到 Web 服务器的 ping 操作成功的输出。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

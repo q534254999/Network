@@ -1,0 +1,81 @@
+<textcomponents><!--Slide 1--><component id="ID_s1_title">
+		<text><![CDATA[<b>命名设备</b>]]></text>
+	</component><!--Slide 2--><component id="ID_s2_title">
+		<text><![CDATA[<b>安全管理访问</b>]]></text>
+	</component><!--Slide 3--><component id="ID_s3_title">
+		<text><![CDATA[<b>配置 标语</b>]]></text>
+	</component><!--Slide 4--><component id="ID_s4_title">
+		<text><![CDATA[<b>保存配置</b>]]></text>
+	</component><!--Slide 5--><component id="ID_sc_reset">
+		<text><![CDATA[重置]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[看答案]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[全部显示]]></text>
+	</component>
+	<component id="ID_s5_title">
+		<text><![CDATA[<b>在 R2 上配置基本设置</b>]]></text>
+	</component>
+	<component id="ID_s5_SC5" fontSize="12" fontFace="_typewriter" fontColor="#ffffff">
+		<text></text>
+		<feedback id="fb"><![CDATA[<b>***</b><font face="_sans" color="#FFFFFF" class="fbBluefont">您必须输入确切完整的命令。 包含名称或密码的命令区分大小写。</font><b>***</b>]]></feedback>
+		<existingcommands><![CDATA[<font face="_sans"><b>输入命令将路由器名称配置为“R2”。</b></font>]]></existingcommands>
+		<command prompt="Router#">
+			<correctresponse><![CDATA[configure terminal]]></correctresponse>
+			<deviceresponse><![CDATA[Enter configuration commands, one per line. End with CNTL/Z.]]></deviceresponse>
+		</command>
+		<command prompt="Router(config)#">
+			<correctresponse><![CDATA[hostname R2]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>将加密密码配置为“class”。</b></font>]]></instruction>
+		</command>
+		<command prompt="R2(config)#">
+			<correctresponse><![CDATA[enable secret class]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>将控制台线路密码配置为“cisco”并要求用户登录。 然后退出线路配置模式。</b></font>]]></instruction>
+		</command>
+		<command prompt="R2(config)#">
+			<correctresponse><![CDATA[line console 0]]></correctresponse>
+		</command>
+		<command prompt="R2(config-line)#">
+			<correctresponse><![CDATA[password cisco]]></correctresponse>
+		</command>
+		<command prompt="R2(config-line)#">
+			<correctresponse><![CDATA[login]]></correctresponse>
+		</command>
+		<command prompt="R2(config-line)#">
+			<correctresponse><![CDATA[exit]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>将线路 0 到 4 的 vty 密码配置为“cisco”并要求用户登录。</b>]]></instruction>
+		</command>
+		<command prompt="R2(config)#">
+			<correctresponse><![CDATA[line vty 0 4]]></correctresponse>
+		</command>
+		<command prompt="R2(config-line)#">
+			<correctresponse><![CDATA[password cisco]]></correctresponse>
+		</command>
+		<command prompt="R2(config-line)#">
+			<correctresponse><![CDATA[login]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>退出线路配置模式，并加密所有明文密码。</b>]]></instruction>
+		</command>
+		<command prompt="R2(config-line)#">
+			<correctresponse><![CDATA[exit]]></correctresponse>
+		</command>
+		<command prompt="R2(config)#">
+			<correctresponse><![CDATA[service password-encryption]]></correctresponse>
+			<instruction><![CDATA[<font  face="_sans"><b>输入提示语“Authorized Access Only!”并使用 # 作为定界符。</b>]]></instruction>
+		</command>
+		<command prompt="R2(config)#">
+			<correctresponse><![CDATA[banner motd #Authorized Access Only!#]]></correctresponse>
+			<instruction><![CDATA[<font  face="_sans"><b>退出全局配置模式，并保存配置。</b>]]></instruction>
+		</command>
+		<command prompt="R2(config)#">
+			<correctresponse><![CDATA[exit]]></correctresponse>
+		</command>
+		<command prompt="R2#">
+			<correctresponse><![CDATA[copy running-config startup-config]]></correctresponse>
+			<deviceresponse><![CDATA[Destination filename [startup-config]? <br>Building configuration...<br>[OK]<br>R2#<br>]]></deviceresponse>
+			<instruction><![CDATA[<font  class="syntaxBottomLine" face="_sans"><b>您已成功配置 R2 的初始设置。</b>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+</textcomponents>

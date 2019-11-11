@@ -1,0 +1,40 @@
+<textcomponents>
+   <component id="ID_s1_title">
+      <text><![CDATA[<b>排除交换机介质问题</b>]]></text>
+      </component>
+
+<component id="ID_txt01">
+   <text><![CDATA[执行 <b>show interfaces</b> 命令。]]></text>
+   </component>
+<component id="ID_txt02">
+   <text><![CDATA[接口是否正常？]]></text>
+   </component>
+<component id="ID_txt03">
+   <text><![CDATA[<textformat blockindent="-14"><ul><li>是否有 EMI/noise 指示？ 如果有，删除源。</li><li>检验在两端正确设置了双工设置。</li></ul></textformat>]]></text>
+   </component>
+<component id="ID_txt04">
+   <text><![CDATA[<textformat blockindent="-14"><ul><li>检验正确连接电缆。</li><li>检查电缆和连接器是否损坏。</li><li>检验在两端正确设置了速度。</li></ul></textformat>]]></text>
+   </component>
+<component id="ID_txt05">
+   <text><![CDATA[是否解决问题？]]></text>
+   </component>
+<component id="ID_txt06">
+   <text><![CDATA[完成]]></text>
+   </component>
+<component id="ID_txt07">
+   <text><![CDATA[记录工作完成并上报问题。 ]]></text>
+   </component>
+<component id="ID_txt08">
+   <text><![CDATA[是]]></text>
+   </component>
+<component id="ID_txt09">
+   <text><![CDATA[否]]></text>
+   </component>
+<component id="ID_txt10">
+   <text><![CDATA[是]]></text>
+   </component>
+<component id="ID_txt11">
+   <text><![CDATA[否]]></text>
+   </component>
+
+	</textcomponents>

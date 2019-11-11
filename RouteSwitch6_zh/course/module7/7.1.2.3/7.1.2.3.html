@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.2.3 计算通配符掩码</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>计算通配符掩码</h1>
+        <div>
+          <p>计算通配符掩码颇具挑战性。一个简便方法是从 255.255.255.255 中减去子网掩码。</p>
+          <p></p>
+          <p>
+            <b>通配符掩码计算：示例 1</b>
+          </p>
+          <p></p>
+          <p>在该图的第一个示例中，假设您希望允许 192.168.3.0 网络中的所有用户进行访问。因为其子网掩码是 255.255.255.0，所以您可以从 255.255.255.255 中减去子网掩码 255.255.255.0。得到的通配符掩码为 0.0.0.255。</p>
+          <p></p>
+          <p>
+            <b>通配符掩码计算：示例 2</b>
+          </p>
+          <p></p>
+          <p>在该图的第二个示例中，假设您希望允许子网 192.168.3.32/28 中的 14 位用户访问网络。IPv4 子网的子网掩码是 255.255.255.240，因此从 255.255.255.255 中减去子网掩码 255.255.255.240。得到的通配符掩码为 0.0.0.15。</p>
+          <p></p>
+          <p>
+            <b>通配符掩码计算：示例 3</b>
+          </p>
+          <p></p>
+          <p>在该图的第三个示例中，假设您希望只匹配网络 192.168.10.0 和 192.168.11.0。同样，您可以从 255.255.255.255 中减去对应的子网掩码（本例中为 255.255.254.0）。结果是 0.0.1.255。</p>
+          <p></p>
+          <p>您可以使用如下所示的两条语句得到相同结果：</p>
+          <p></p>
+          <p>
+            <span class="cmd">R1(config)# </span>
+            <span class="cmd">
+              <b>access-list 10 permit 192.168.10.0</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">R1(config)# </span>
+            <span class="cmd">
+              <b>access-list 10 permit 192.168.11.0</b>
+            </span>
+          </p>
+          <p></p>
+          <p>按以下方式配置通配符掩码更为有效：</p>
+          <p></p>
+          <p>
+            <span class="cmd">R1(config)#</span>
+            <span class="cmd">
+              <b> access-list 10 permit 192.168.10.0 0.0.1.255</b>
+            </span>
+          </p>
+          <p></p>
+          <p>假设您需要匹配 192.168.16.0/24 至 192.168.31.0/24 范围内的网络。这些网络可以汇总至 192.168.16.0/20。在这种情况下，0.0.15.255 是配置如下所示有效 ACL 语句的正确通配符掩码：</p>
+          <p></p>
+          <p>
+            <span class="cmd">R1(config)#</span>
+            <span class="cmd">
+              <b> access-list 10 permit 192.168.16.0 0.0.15.255</b>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示用于计算通配符掩码的三个示例，使用的方法是从所有 255 中执行减法。在示例 1 中，有四组 255，并且在下面列出了 IPv4 子网掩码。然后从这四组 255 中减去子网掩码，结果就得出了通配符掩码。该图列出 255.255.255.255 - 255.255.255.0。这将生成 0.0.0.255，作为通配符掩码。示例 2 显示如何计算 /28 网络的通配符掩码。该图列出 255.255.255.255 - 255.255.255.240。这个计算结果将得出通配符掩码 0.0.0.15。示例 3 显示如何计算 /23 子网掩码的通配符掩码。该图列出 255.255.255.255 - 255.255.255.254。这个计算结果将得出通配符掩码 0.0.1.255。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

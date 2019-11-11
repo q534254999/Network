@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.4.4 传统有类编址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.4.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>传统有类编址</h1>
+        <div>
+          <p>1981 年，使用在 <a href="https://tools.ietf.org/html/rfc790" target="_blank">RFC 790</a> 中 Assigned Numbers  部分定义的<i>有类编址</i>对互联网 IPv4 地址进行了分配。根据三个类别（A 类、B 类或 C 类）之一为客户分配网络地址。RFC 将单播范围分为具体的类别，分别是：</p>
+          <p>
+            <ul>
+              <li>
+                <b>A 类 (0.0.0.0/8 - 127.0.0.0/8) </b>– 用于支持拥有 1600 万以上主机地址的规模非常大的网络。它的第一个二进制八位数使用固定的 /8 前缀表示网络地址，其他的三个二进制八位数表示主机地址。所有 A 类地址要求高位二进制八位数的最高有效位必须为零，以生成总数为 128 的 A 类网络。图 1 总结了 A 类。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>B 类 (128.0.0.0 /16 – 191.255.0.0 /16) </b>– 用于支持拥有大约 65,000 个主机地址的大中型网络。它的两个高位二进制八位数使用固定的 /16 前缀表示网络地址，其他的两个二进制八位数表示主机地址。高位二进制八位数的两个最高有效位必须为 10，以创建超过 16,000 个网络。图 2 总结了 B 类。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>C 类 (192.0.0.0 /24 – 223.255.255.0 /24) </b>– 用于支持最多拥有 254 台主机的小型网络。它的前三个二进制八位数使用固定的 /24 前缀表示网络地址，其余的二进制八位数表示主机地址。高位二进制八位数的前三个最高有效位必须为 110，以创建超过两百万个网络。图 3 总结了 C 类。</li>
+            </ul>
+          </p>
+          <p>
+            <b>注意</b>：还有包含 224.0.0.0 到 239.0.0.0 的 D 类组播块以及包含 240.0.0.0 – 255.0.0.0 的 E 类实验地址块。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the Class A address specifics including: address block is from 0.0.0.0 to 127.0.0.0 with the caveat that 0.0.0.0 and 127.0.0.0 are reserved and cannot be assigned; default subnet mask is /8 or 255.0.0.0; the maximum number of networks is 128; the number of host per network is 16,777,214; the value of the first high order bit in the first octet is 0. Figure 2 shows the Class B address specifics including: address block is from 128.0.0.0 to 191.255.0.0; default subnet mask is /16 or 255.255.0.0; the maximum number of networks is 16,384; the number of host per network is 65,534; the value of the first two high order bit in the first octet is 1 and 0. Figure 3 shows the Class C address specifics including: address block is from 192.0.0.0 to 223.255.255.0; default subnet mask is /24 or 255.255.255.0; the maximum number of networks is 2,097,152; the number of host per network is 254; the value of the first three high order bit in the first octet is 110.   </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

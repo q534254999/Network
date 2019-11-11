@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.1.2.3 使用 LLDP 发现设备</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>使用 LLDP 发现设备</h1>
+        <div>
+          <p>LLDP 启用时，请使用 <b>show lldp neighbors</b> 命令发现设备邻居。例如，假设图 1 所示拓扑中缺少文档。网络管理员只知道 S1 连接到两台设备。网络管理员使用 <b>show lldp neighbors</b> 命令发现 S1 的邻居有一台路由器和一台交换机。</p>
+          <p></p>
+          <p>
+            <b>注</b>：S2 功能下的字母 B 代表网桥。对于此输出，网桥这个词也可以指交换机。 </p>
+          <p></p>
+          <p>如图 ２ 所示，在 <b>show lldp neighbors</b> 的结果中，可以构建交换机 S1 的拓扑。当需要有关邻居的更多详细信息时，<b>show lldp neighbors detail</b> 命令可用于提供邻居的 IOS 版本、IP 地址和设备功能等信息。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了交换机 S1 连接到两个云，还显示了“show lldp neighbors”命令的输出，其中显示交换机 S1 有两个邻居：路由器 R1 和交换机 S2。路由器 R1 连接到本地 fastethernet 0/5 接口，交换机 S2 连接到本地 fastethernet 0/4 接口。图 2 显示路由器 R1 连接到交换机 S1，交换机 S1 又连接到另一台交换机 S2。“show lldp neighbors detail”命令的输出突出显示路由器 R1 的管理 IP 地址为 192.168.1.1。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

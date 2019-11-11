@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.1.2 传输层的职责</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>传输层的职责</h1>
+        <div>
+          <p>
+            <b>跟踪各个会话</b>
+          </p>
+          <p>在传输层中，源应用程序和目的应用程序之间传输的每个数据集称为会话（图 1）。每台主机上都可以有多个应用程序同时在网络上通信。每个应用程序都与一台或多台远程主机上的一个或多个应用程序通信。传输层负责维护并跟踪这些会话。</p>
+          <p>
+            <b>数据分段和数据段重组</b>
+          </p>
+          <p>数据必须准备好用易管理的片段通过介质发送出去。大多数网络对单个数据包能承载的数据量都有限制。传输层协议的服务可将应用程序数据分为大小适中的数据块（图 2）。该服务包括每段数据所需的封装功能。报头用于重组，每个数据块都会添加一个报头。此报头用于跟踪数据流。</p>
+          <p>数据片段到达目的设备后，传输层必须能将其重组为可用于应用层的完整数据流。传输层协议规定了如何使用传输层报头信息来重组要传送到应用层的数据片段。</p>
+          <p>
+            <b>标识应用程序 </b>
+          </p>
+          <p>为了将数据流传送到适当的应用程序，传输层必须要标识目标应用程序（图 3）。因此，传输层为每一个应用程序分配一个标识符，称为端口号。在每台主机中，每个需要访问网络的软件进程都将被分配一个唯一的端口号。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a single computer that has multiple web pages open along with an instant messaging window, an e-mail application, a streaming video application and a VoIP phone application running.  This represents that a computer typically has more than one process running any one time and it is the transport layer that tracks each individual conversation flowing between a source application and a destination application separately. Figure 2 shows a series of data blocks being transmitted to the computer.  The data blocks are of varying colors which correspond to different services. Figure 3 shows the computer sending the packages to the proper application, the web browser, the e-mail client, the streaming video application or the VoIP phone.  Each application has a specific data block color.  This represents the computer sorting the data based on application. Figure four shows the setup and termination of a data transfer session between a host and a server.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.4.3 验证默认静态路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证默认静态路由</h1>
+        <div>
+          <p>在图 1 中，<b>show ipv6 route static </b>命令输出显示路由表的内容。 </p>
+          <p></p>
+          <p>不同于 IPv4，IPv6 不明确规定默认 IPv6 是最后选用网关。 </p>
+          <p></p>
+          <p>该配置的关键之处在于 ::/0 掩码。请记住，路由表中的 IPv6 prefix-length 决定了数据包的目标 IP 地址与路由表中的路由之间必须匹配的位数。::/0 掩码表示位不需要匹配。只要不存在更精确的匹配，默认静态 IPv6 路由可以匹配所有数据包。</p>
+          <p></p>
+          <p>图 2 显示了对 R3 LAN 接口成功执行 ping 操作。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">这些图基于标准实验图。图 1 显示路由器 1 上“show ipv6 route static”命令的输出。图 2 显示从路由器 1 对路由器 3 上的 LAN 接口执行 ping 操作的结果。由于静态路由已全部配置，因此此 ping 操作成功。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

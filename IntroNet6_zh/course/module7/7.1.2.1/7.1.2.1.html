@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.2.1 网络部分和主机部分</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>网络部分和主机部分</h1>
+        <div>
+          <p>要确定两台主机是否位于相同网络，了解二进制记法非常必要。我们学过，IPv4 地址为分层地址，由网络部分和主机部分两个部分组成。在确定网络部分和主机部分时，必须先查看 32 位数据流。如图所示，在 32 位数据流中，部分位用于标识网络，部分位用于标识主机。</p>
+          <p>对于同一网络中的所有设备，地址的网络部分中的位必须完全相同。地址的主机部分中的位必须唯一，这方便识别网络中的特定主机。如果两台主机在 32 位数据流中的指定网络部分有相同的位模式，则这两台主机位于同一网络。 </p>
+          <p>但是，主机如何知道 32 位数据流中的哪一部分用于标识网络，哪一部分用于标识主机呢？这项工作由<i>子网掩码</i>负责。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the dotted decimal IPv4 address 192.168.10.10 and the binary values for the octets below it. The IP addresses is divided into the network portion and the host portion with the first three octets in the network and the fourth octet in the host.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

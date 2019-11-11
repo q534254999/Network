@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.2.2 配置密码</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置密码</h1>
+        <div>
+          <p>要配置的最重要的密码是对特权 EXEC 模式的访问，如图 1 所示。要保护特权 EXEC 访问，请使用<b></b><b> enable secret </b><i>password</i> 全局配置命令。 </p>
+          <p></p>
+          <p>要保护用户 EXEC 访问，必须配置控制台端口，如图 2 所示。使用 <b>line console 0</b> 全局配置命令进入线路控制台配置模式。0 用于代表第一个（而且在大多数情况下是唯一的一个）控制台接口。接下来，使用 <b>password </b><i>password</i> 命令指定用户 EXEC 模式密码。最后，使用 <b>login</b> 命令启用用户 EXEC 访问。现在控制台访问需要输入密码，然后才能访问用户 EXEC 模式。 </p>
+          <p></p>
+          <p>虚拟终端 (VTY) 线路支持对设备的远程访问。要保护为 SSH 和 Telnet 使用的 VTY 线路，请使用 <b>line vty 0 15</b> 全局配置命令进入线路 VTY 模式，如图 3 所示。许多思科交换机支持第 0 到 15 的 16 条 VTY 线路。接下来，使用 <b>password </b><i>password</i> 命令指定 VTY 密码。最后，使用 <b>login</b> 命令启用 VTY 访问。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 demonstrates how to configure an encrypted privileged exec mode password using the "enable secret" command. Figure 2 demonstrates how to configure a password for the console line. Figure 3 demonstrates how to configure a password for the vty lines. Both console and vty lines are configured using the “password” and “login” commands.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

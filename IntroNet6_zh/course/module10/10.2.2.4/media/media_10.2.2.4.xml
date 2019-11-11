@@ -1,0 +1,65 @@
+﻿<textcomponents>
+
+<component id='ID_s1_title'>
+	<text><![CDATA[<b>使用 nslookup</b>]]></text>
+</component>
+
+<component id='ID_s2_title'>
+	<text><![CDATA[<b>Windows 和 Linux 中的 DNS CLI 命令</b>]]></text>
+</component>
+
+<component id="ID_SC_title">
+		<text><![CDATA[<b>使用 <font face="_typewriter">nslookup</font> 命令</b>]]></text>
+	</component><!--Syntax Checker Button Text--><component id="ID_sc_reset">
+			<text><![CDATA[重置]]></text>
+		</component>
+
+        <component id="ID_sc_showme">
+			<text><![CDATA[看答案]]></text>
+		</component>
+
+        <component id="ID_sc_showall">
+			<text><![CDATA[全部显示]]></text>
+		</component><!--End Syntax Checker Button Text--><component id="ID_SC" fontSize="12" fontFace='_typewriter'  fontColor="#ffffff">
+                <feedback id="fb"><![CDATA[<b><font size = '10' face="_sans" color="#FFFFFF">***您必须输入确切完整的命令。 包含名称或密码的命令区分大小写。***</font></b>]]></feedback>
+              <existingcommands><![CDATA[<font size = '10' face="_sans"><b>在 Windows 命令提示符中，输入“nslookup”命令开始<br>名称服务器的手动查询。 <br></b></font>]]></existingcommands>
+                <command prompt="c:\>">
+                       <correctresponse><![CDATA[nslookup]]></correctresponse>
+                                <deviceresponse><![CDATA[Default Server: UnKnown<br>Address: 10.10.10.1<br>]]></deviceresponse>
+                       <instruction><![CDATA[<font size = '10' face="_sans"><b>输出列出了在客户端配置的 DNS 服务器的名称和 IP 地址。 <br>注意 DNS 服务器地址可以手动配置也可以通过 <br>DHCP 动态获取。 您现在处于 nslookup 模式。 输入域名“www.cisco.com”。</font>]]></instruction>
+              </command>
+                <command prompt=">">
+                       <correctresponse><![CDATA[www.cisco.com]]></correctresponse>
+                                <deviceresponse><![CDATA[Server: e144.dscb.akamaiedge.net<br>Addresses: 2600:1400:1:1:8500::90<br>          2600:1400:1:1:8200::90<br>          2600:1400:1:1:8100::90<br>          23.67.208.170<br>Aliases: www.cisco.com<br>          www.cisco.com.akadns.net<br>          wwwds.cisco.com.edgekey.net<br>          wwwds.cisco.com.edgekey.net.globalredir.akadns.net<br>]]></deviceresponse>
+                       <instruction><![CDATA[<font size = '10' face="_sans"><b>输出列出了服务器“e144”目前在<br>其数据库中与“www.cisco.com”相关的 IP 地址。 注意，还列出了 IPv6 地址。 此外，还显示了将解析为“www.cisco.com”的各种别名。<br> 输入“exit”命令退出 nslookup 模式<br>并返回 Windows 命令行。<br></font>]]></instruction>
+              </command>
+                <command prompt=">">
+                       <correctresponse><![CDATA[exit]]></correctresponse>
+                                <deviceresponse><![CDATA[C:\><br>]]></deviceresponse>
+                       <instruction><![CDATA[<font size = '10' face="_sans"><b>您可以通过将域名添加到 nslookup 命令来直接查询 DNS 服务器。 <br>输入“nslookup www.google.com”。<br></font>]]></instruction>
+              </command>
+                <command prompt="c:\>">
+                       <correctresponse><![CDATA[nslookup www.google.com]]></correctresponse>
+                                <deviceresponse><![CDATA[Server: UnKnown<br>Address: 10.10.10.1<br><br>Non-authoritative answer:<br>Name: www.google.com<br>Addresses: 2001:4860:4002:802::1014<br>          74.125.227.80<br>          74.125.227.84<br>          74.125.227.83<br>          74.125.227.82<br>          74.125.227.81<br>]]></deviceresponse>
+                       <instruction><![CDATA[<font size = '10' face="_sans"><b><ul>您正在使用 Linux 命令提示符。但 nslookup 命令相同。<li>输入“nslookup”命令开始名称服务器的手动查询。</li><li>在 > 提示符处输入“www.cisco.com”。</li><li>输入“exit”命令退出 nslookup 模式并返回 Linux 命令行。</li></font>]]></instruction>
+              </command>
+                <command prompt="user@cisconetacad$">
+                       <correctresponse><![CDATA[nslookup]]></correctresponse>
+                                <deviceresponse><![CDATA[Server: 127.0.1.1<br>Address: 127.0.1.1#53]]></deviceresponse>
+              </command>
+                <command prompt=">">
+                       <correctresponse><![CDATA[www.cisco.com]]></correctresponse>
+                                <deviceresponse><![CDATA[Non-authoritative answer:<br>www.cisco.com canonical name = www.cisco.com.akadns.net.<br>www.cisco.com.akadns.net canonical name = wwwds.cisco.com.edgekey.net.<br>wwwds.cisco.com.edgekey.net canonical name = wwwds.cisco.com.edgekey.net.globalredir.akadns.net.<br>wwwds.cisco.com.edgekey.net.globalredir.akadns.net canonical name = e144.dscb.akamaiedge.net.<br>Name: e144.dscb.akamaiedge.net<br>Address: 23.60.112.170<br>]]></deviceresponse>
+              </command>
+                <command prompt=">">
+                       <correctresponse><![CDATA[exit]]></correctresponse>
+                                <deviceresponse><![CDATA[user@cisconetacad$<br>]]></deviceresponse>
+                       <instruction><![CDATA[<font size = '10' face="_sans"><b>与在 Windows 中一样，您可以通过将域名<br>添加到 nslookup 命令来直接查询 DNS 服务器。 输入“nslookup www.google.com”。<br></font>]]></instruction>
+              </command>
+                <command prompt="user@cisconetacad$#">
+                       <correctresponse><![CDATA[nslookup www.google.com]]></correctresponse>
+                                <deviceresponse><![CDATA[Server: 127.0.1.1<br>Address: 127.0.1.1#53<br><br>Non-authoritative answer:<br>Name: www.google.com<br>Address: 74.125.225.209<br>Name: www.google.com<br>Address: 74.125.225.210<br>Name: www.google.com<br>Address: 74.125.225.211<br>Name: www.google.com<br>Address: 74.125.225.212<br>Name: www.google.com<br>Address: 74.125.225.208<br><br>user@cisconetacad$<br>]]></deviceresponse>
+                       <instruction><![CDATA[<font size = '10' face="_sans"><b>您成功使用了 nslookup 命令来验证域名的状态。<br></font>]]></instruction>
+              </command>
+<command prompt=""/>
+ </component><!--End Syntax Checker Body Text--></textcomponents>

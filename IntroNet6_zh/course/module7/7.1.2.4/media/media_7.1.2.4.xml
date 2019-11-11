@@ -1,0 +1,85 @@
+<textcomponents>
+    <component id="txt_instructions">
+        <text>
+            <![CDATA[<b>练习 – 使用 AND 运算确定网络地址</b>]]></text>
+    </component>
+    <component id="ID_titleTxt01">
+    <text><![CDATA[说明]]></text>
+  </component>
+  <component id="ID_bodyTxt01">
+    <text><![CDATA[使用 AND 运算过程确定网络地址（二进制和十进制格式）。]]></text>
+  </component>
+    <component id="txt_incorrect">
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id="txt_correct">
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id="txt_correct_body">
+        <text>
+            <![CDATA[网络地址的二进制和十进制版本正确！请单击“新数字”以继续。]]>
+        </text>
+    </component>
+    <component id="txt_incorrect_decimal">
+        <text>
+            <![CDATA[网络地址的二进制和/或十进制版本不正确。请重试。]]>
+        </text>
+    </component>
+    <component id="txt_incorrect_binary">
+        <text>
+            <![CDATA[网络地址的二进制和/或十进制版本不正确。请重试。]]>
+        </text>
+    </component>
+    <component id="txt_incorrect_all">
+        <text>
+            <![CDATA[网络地址的二进制和/或十进制版本不正确。请重试。]]>
+        </text>
+    </component>
+    <component id="txt_hostaddress">
+        <text>
+            <![CDATA[主机地址]]>
+        </text>
+    </component>
+    <component id="txt_subnetmask">
+        <text>
+            <![CDATA[子网掩码]]>
+        </text>
+    </component>
+    <component id="txt_hostaddrbin">
+        <text>
+            <![CDATA[二进制主机地址]]>
+        </text>
+    </component>
+    <component id="txt_subnetbin">
+        <text>
+            <![CDATA[二进制子网掩码]]>
+        </text>
+    </component>
+    <component id="txt_netbin">
+        <text>
+            <![CDATA[二进制网络地址]]>
+        </text>
+    </component>
+    <component id="txt_netdec">
+        <text>
+            <![CDATA[十进制网络地址]]>
+        </text>
+    </component>
+    <component id="txt_check">
+        <text>
+            <![CDATA[检查]]>
+        </text>
+    </component>
+    <component id="txt_reset">
+        <text>
+            <![CDATA[重置]]>
+        </text>
+    </component>
+    <component id="txt_newnumber">
+        <text>
+            <![CDATA[新数字]]>
+        </text>
+    </component>
+</textcomponents>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.3.4 争用访问 – CSMA/CD</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>争用访问 – CSMA/CD</h1>
+        <div>
+          <p>WLAN、使用集线器的以太网 LAN 和传统以太网总线网络都是争用访问网络的示例。所有这些网络都在半双工模式下运行。这需要有一个进程来管理设备何时可以发送以及当多台设备同时发送时会发生什么情况。</p>
+          <p>载波侦听多路访问/冲突检测 (CSMA/CD) 进程可用于半双工以太网 LAN。图 1 显示了使用集线器的以太网 LAN。CSMA 进程如下：</p>
+          <p>1.PC1 有一个以太网帧要发送给 PC3。</p>
+          <p>2.PC1 的网卡需要确定是否有人通过介质传输。如果它没有检测到载波信号，也就是说，它没有收到来自其他设备的传输，则假定网络可用于发送。 </p>
+          <p>3.PC1 的网卡发送以太网帧，如图 1 所示。</p>
+          <p>4.以太网集线器接收帧。以太网集线器也称为多端口中继器。传入端口上收到的任何位都会重新生成，并通过所有其他端口发送出去，如图 2 所示。  </p>
+          <p>5.如果另一台设备，比如 PC2，想要传输，但当前正在接收一个帧，则它必须等待通道畅通。</p>
+          <p>6.与集线器连接的所有设备都将收到该帧。由于帧拥有 PC3 的目的数据链路地址，只有该设备会接受并复制整个帧。所有其他设备的网卡都将忽略该帧，如图 3 所示。</p>
+          <p>如果两台设备同时传输，则会发生冲突。两台设备都将检测到网络上的冲突，这就是冲突检测 (CD)。这一过程可通过网卡比较传输的数据与接收的数据，或通过识别出介质中的信号振幅高于正常状况来实现。两台设备发送的数据会损坏且需重新发送。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figures 1, 2 and 3 show three PCs attached to a hub. In Figure 1, PC1 says “The medium is available so I will send the Ethernet frame to PC3.” A frame is leaving PC1. In Figure 2, the hub forwards the frame to PC2 and PC3. PC2 says “I have a frame to send but I have to wait because I am receiving a frame.” In Figure 3, PC2 and PC3 receive the frame. PC2 says “This frame is not for me, so I will ignore it.” PC3 says, “This frame is for me, so I will copy in the entire frame.”</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

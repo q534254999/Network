@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.4.2 验证 IPv6 接口设置</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证 IPv6 接口设置</h1>
+        <div>
+          <p>用于验证 IPv6 接口配置的命令与 IPv4 所使用的命令类似。 </p>
+          <p></p>
+          <p>图 1 中的 <b>show ipv6 interface brief</b> 命令显示了每个接口的汇总。与接口名称位于同一行的“up/up”输出指示第 1 层/第 2 层接口状态。这与等效的 IPv4 命令的状态和协议列相同。 </p>
+          <p></p>
+          <p>输出显示了每个接口的两个已配置的 IPv6 地址。其中一个地址是手动输入的 IPv6 全局单播地址。另一个地址以 FE80 开头，是接口的本地链路单播地址。每当分配全局单播地址时，本地链路地址会自动添加到接口。要求 IPv6 网络接口使用本地链路地址，但不一定要是全局单播地址。</p>
+          <p></p>
+          <p>图 2 所示 <b>show ipv6 interface gigabitethernet 0/0</b> 命令的输出显示了接口状态和属于该接口的所有 IPv6 地址。除了本地链路地址和全局单播地址外，输出还包括为该接口分配的组播地址，以前缀 FF02 开头。</p>
+          <p></p>
+          <p>图 3 所示的 <b>show ipv6 route</b> 命令可用于检验 IPv6 网络和特定 IPv6 接口地址是否已经安装到 IPv6 路由表。<b>show </b><b>ipv6 </b><b>route </b>命令仅用于显示 IPv6 网络，而无法显示 IPv4 网络。</p>
+          <p></p>
+          <p>在路由表中，路由旁边的“<b>C</b>”表示这是一个直连网络。当路由器接口配置了全局单播地址并处于“up/up”状态时，IPv6 前缀和前缀长度会作为直连路由添加至 IPv6 路由表。 </p>
+          <p></p>
+          <p>接口上配置的 IPv6 全局单播地址也作为本地路由添加到路由表中。本地路由具有 /128 前缀。路由表使用本地路由来有效处理将路由器接口地址作为目的地址的数据包。</p>
+          <p></p>
+          <p>IPv6 的 <b>ping</b> 命令与用于 IPv4 的命令相同，但是使用 IPv6 地址。如图 4 所示，<b>ping</b> 命令用于验证 R1 和 PC1 之间的第 3 层连接。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示 show ipv 6 interface brief 命令的输出。其中仅列出接口的地址和状态信息。图 2 显示show i.p.v.6. interface gigabit ethernet 命令的输出。其中列出更加详细的信息，如分配给接口的组播地址。图 3 显示 ipv6 route 命令的输出，这是路由器的 IPv6 路由表。图 4 显示 ping 命令在 IPv6 接口上的用法和输出。该命令为 ping 2001:db8:acad:1::10。  </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

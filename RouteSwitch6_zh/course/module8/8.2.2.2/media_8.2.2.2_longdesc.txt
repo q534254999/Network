@@ -1,0 +1,1 @@
+图中显示已连接两台路由器的交换机。一个路由器是无状态 DHCPv6 服务器，另一个是 DHCPv6 客户端。该图显示了用于将路由器配置为 DHCPv6 客户端的命令。该图在全局配置模式下开始，第一个命令是 interface g 0/1。下一个命令为 i.p.v.6. enable。最后一个命令是 ipv6 address autoconfig。

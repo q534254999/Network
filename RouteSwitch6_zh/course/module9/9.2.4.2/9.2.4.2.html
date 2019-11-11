@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.4.2 无线路由器示例 </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>无线路由器示例 </h1>
+        <div>
+          <p>该图显示了 Packet Tracer 无线路由器的单端口转发配置窗口。默认情况下，路由器上未启用端口转发。</p>
+          <p></p>
+          <p>可以通过指定转发请求时应当使用的内部本地地址来为应用程序启用端口转发。在图中，进入无线路由器的 HTTP 服务请求将转发到内部本地地址为 192.168.1.254 的 Web 服务器。如果无线路由器的外部 WAN IPv4 地址为 209.165.200.225，则外部用户可以输入 <b>http://www.example.com</b>，无线路由器会把该 HTTP 请求重定向到位于 IPv4 地址 192.168.1.254 的内部 Web 服务器，使用默认端口号 80。</p>
+          <p></p>
+          <p>可以指定除默认端口 80 之外的其他端口。但是，外部用户必须知道所使用的特定端口号。要指定其他端口，需要修改“单一端口转发”窗口中“外部端口”的值。</p>
+          <p></p>
+          <p>配置端口转发的方法取决于网络上宽带路由器的品牌和型号。不过，有一些步骤是通用的。如果 ISP 提供的说明或路由器附带的说明未提供足够的指导，网站 <a href="http://www.portforward.com/" target="_blank">http://www.portforward.com</a> 提供了多种宽带路由器的指南。您可以按照说明，根据需要添加或删除端口，以满足您想允许或拒绝的任何应用程序的需要。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了一个无线路由器，内部网络在左侧，外部网络在右侧。有一个 Packet Tracer GUI 正在配置端口转发的屏幕截图。  </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

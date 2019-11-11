@@ -1,0 +1,13 @@
+﻿<textcomponents><!-- slide 2 --><component id="ID_title">
+<text><![CDATA[<b>可扩展性</b>]]></text> 
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[Internet]]></text> 
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[可以将增加的用户和整个网络连接到 Internet 而不降低现有用户的性能。]]></text> 
+</component>
+
+</textcomponents>

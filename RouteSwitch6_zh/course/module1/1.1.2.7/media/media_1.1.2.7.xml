@@ -1,0 +1,42 @@
+<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>配置交换机管理界面</b>]]></text>
+	</component>
+	<component id="ID_sc_reset">
+		<text><![CDATA[重置]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[看答案]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[全部显示]]></text>
+	</component>
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>在 S2 上配置管理 SVI</b>]]></text>
+	</component>
+	<component id="ID_SC" fontSize="12" fontFace="_typewriter" fontColor="#ffffff">
+		<text></text>
+		<feedback id="fb"><![CDATA[<b><font face="_sans" color="#FFFFFF" >***您必须输入确切完整的命令。 包含名称或密码的命令区分大小写。***</font></b>]]></feedback>
+		<existingcommands><![CDATA[<font face="_sans" ><b>使用网络中的第二个可用地址在 S2 上配置 VLAN 1 接口。 请务必激活接口。</b></font>]]></existingcommands>
+		<command prompt="S2(config)# " class="commandfont">
+			<correctresponse><![CDATA[interface vlan 1]]></correctresponse>
+		</command>
+		<command prompt="S2(config-if)# " class="commandfont">
+			<correctresponse><![CDATA[ip address 192.168.11.2 255.255.255.0]]></correctresponse>
+		</command>
+		<command prompt="S2(config-if)# " class="commandfont">
+			<correctresponse><![CDATA[no shutdown]]></correctresponse>
+			<deviceresponse><![CDATA[%LINK-5-CHANGED: Interface Vlan1, changed state to up]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans" ><b>退出接口配置模式。</b></font>]]></instruction>
+		</command>
+		<command prompt="S2(config-if)# " class="commandfont">
+			<correctresponse><![CDATA[exit]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans" ><b>为 S2 配置默认网关。</b></font>]]></instruction>
+		</command>
+		<command prompt="S2(config)# " class="commandfont">
+			<correctresponse><![CDATA[ip default-gateway 192.168.11.1]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans" class="syntaxBottomLine"><b>您已成功在 S2 上配置管理 SVI。</b></font>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+</textcomponents>

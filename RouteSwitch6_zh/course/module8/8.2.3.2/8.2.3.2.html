@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.3.2 将路由器配置为有状态 DHCPv6 客户端</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>将路由器配置为有状态 DHCPv6 客户端</h1>
+        <div>
+          <p>如图所示，使用 <b>ipv6 enable</b> 接口配置模式命令允许路由器接收本地链路地址以发送 RS 消息并参与 DHCPv6。</p>
+          <p></p>
+          <p><b>ipv6 address dhcp</b> 接口配置模式命令使路由器等同于该接口上的 DHCPv6 客户端。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">该图显示了用于将路由器配置为有状态 DHCPv6 客户端的命令。该示例在全局配置模式下开始，首先移到所需接口。第一个命令是 interface g 0/1。下一个命令为 i.p.v.6. enable。最后一个命令是 ipv6 address dhcp。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

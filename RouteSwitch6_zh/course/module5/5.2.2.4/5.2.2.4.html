@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.2.4 端口安全：配置</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>端口安全：配置</h1>
+        <div>
+          <p>图 1 总结了思科 Catalyst 交换机的默认端口安全设置。</p>
+          <p></p>
+          <p>图 2 显示了在 S1 交换机的快速以太网 F0/18 端口上配置端口安全所需要的思科 IOS CLI 命令。请注意该示例未指定违规模式。在本示例中，违规模式是关闭的（默认模式）。</p>
+          <p></p>
+          <p>图 3 显示了如何为交换机 S1 快速以太网端口 0/19 上的端口安全启用粘性安全 MAC 地址。如前所述，安全 MAC 地址的最大数量可以手动配置。在本示例中，使用思科 IOS 命令语法将端口 0/19 的 MAC 地址最大数量设为 10。在默认情况下，违规模式设置为关闭。</p>
+          <p></p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 总结了思科 Catalyst 交换机的默认端口安全配置。端口安全禁用，当设置端口时，最大安全 MAC 地址数设置为 1，违规模式关闭，并禁用粘性 MAC 地址获取。图 2 显示在交换机端口接口上配置端口安全所需的 CLI 命令。第一个命令为 interface fastEthernet 0/18。此命令从全局配置模式切换到特定接口。下一命令为 switchport mode access，该命令将端口严格设置为终端设备的接入端口。最后一个命令为 switchport port-security。图 3 继续上一示例并添加命令 switchport port-security maximum 50。最后一个命令为 switchport port-security mac-address sticky。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

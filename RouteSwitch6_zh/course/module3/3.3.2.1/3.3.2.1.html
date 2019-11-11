@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.2.1 路由表术语</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>路由表术语</h1>
+        <div>
+          <p>如图所示，动态建立的路由表提供了大量信息。因此，了解路由表生成的输出非常重要。讨论路由表的内容时会应用特别术语。</p>
+          <p></p>
+          <p>思科 IP 路由表并不是一个平面数据库。路由表实际上是一个分层结构，在查找路由并转发数据包时，这样的结构可加快查找进程。在此结构中包括若干个层级。 </p>
+          <p></p>
+          <p>采用下列形式讨论路由：</p>
+          <p>
+            <ul>
+              <li>最终路由</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>一级路由</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>一级父路由 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>二级子路由</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示命令 show ip route | begin Gateway 的输出。这显示路由器 R-1 的路由表，该路由器有三条直连路由，这些路由具有三个接口 IP 地址，该路由器通过 RIP 获知五条路由，一条候选默认路由以及配置的一个最后选用网关。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

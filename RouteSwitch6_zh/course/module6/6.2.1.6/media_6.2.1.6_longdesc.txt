@@ -1,0 +1,1 @@
+图 1 显示一个带“show vlan”命令选项的表，和一个带“show interfaces”命令选项及其说明的表。图 2 显示“show vlan name student”命令和“show vlan summary”命令的输出。图 3 显示“show interfaces vlan 20”命令的输出。图 4 是允许学生练习搭配 vlan 使用 show 命令的互动练习。

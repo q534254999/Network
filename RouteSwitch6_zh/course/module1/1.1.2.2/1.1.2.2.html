@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.2.2 默认网关</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>默认网关</h1>
+        <div>
+          <p>要启用网络访问，必须为设备配置 IP 地址信息，以确定合适的：</p>
+          <p>
+            <ul>
+              <li>
+                <b>IP 地址</b> - 标识本地网络中的唯一主机。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>子网掩码</b> - 标识主机可以使用哪个网络子网进行通信。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>默认网关 </b>- 标识当目标未处于同一本地网络子网时将数据包发送到的路由器的 IP 地址。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>当主机向同一 IP 网络中的设备发送数据包时，只需将数据包从主机接口转发到目的设备。 </p>
+          <p></p>
+          <p>当主机向不同 IP 网络中的设备发送数据包时，则数据包将转发到默认网关，因为主机设备不能直接与本地网络之外的设备通信。默认网关是将流量从本地网络路由到远程网络上设备的目的地。它通常用于将本地网络连接到互联网。 </p>
+          <p></p>
+          <p>默认网关通常是路由器上与本地网络连接的接口地址。路由器将维护所有相连网络的路由表条目以及远程网络的条目，并确定到达这些目的地的最佳路径。 </p>
+          <p></p>
+          <p>例如，如果 PC1 向位于 176.16.1.99 上的 Web 服务器发送数据包，则它将会发现 Web 服务器不在本地网络中，因此必须将数据包转发到其默认网关的介质访问控制 (MAC) 地址。图中的数据包协议数据单元 (PDU) 用于标识源 IP 和 MAC 地址以及目的 IP 和 MAC 地址。</p>
+          <p></p>
+          <p>
+            <b>注</b>：路由器通常还会配置自己的默认网关。这称为最后选用网关。  </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示已连接两台计算机和一台 FTP 服务器的交换机。存在从交换机到路由器的链接。路由器链接到另一个路由器，该路由器又链接到第三个路由器。两台计算机和服务器的默认网关是连接到交换机的路由器端口。第三个路由器与交换机相连，Web 服务器又连接到该交换机。图中显示其中一台计算机需要与 Web 服务器通信时形成的 PDU。PDU 包括目标 MAC 地址，由于 Web 服务器不在本地网络上且必须将数据包发送到路由器，该地址将是默认网关的 MAC 地址。源 MAC 将是发送请求的计算机的地址，源 IP 地址将来自发送计算机。目标 IP 地址将是 Web 服务器的地址。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

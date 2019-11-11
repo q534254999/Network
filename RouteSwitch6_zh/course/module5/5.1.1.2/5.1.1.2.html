@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.1.2 从系统崩溃中恢复</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>从系统崩溃中恢复</h1>
+        <div>
+          <p>如果由于系统文件丢失或损坏而使操作系统不能使用，则启动加载程序将提供对交换机的访问。启动加载程序有一个命令行，可以提供对闪存中存储的文件的访问。 </p>
+          <p></p>
+          <p>可通过控制台连接按照以下步骤访问启动加载程序：</p>
+          <p></p>
+          <p>
+            <b>步骤 1</b>.通过控制台电缆将 PC 连接到交换机控制台端口。配置终端仿真软件，使其连接到交换机。</p>
+          <p>
+            <b>步骤 2</b>.拔下交换机电源线。 </p>
+          <p>
+            <b>步骤 3</b>.将电源线重新连接到交换机，在 15 秒钟内按住“<b>模式</b>”按钮，此时“系统”LED 仍呈绿色闪烁。 </p>
+          <p>
+            <b>步骤 4</b>.<b>继续按住</b> <b>Mode</b> 按钮，直到 System（系统）LED 先后呈短暂的琥珀色和稳定的绿色；然后松开 Mode 按钮。</p>
+          <p>
+            <b>步骤 5</b>.启动加载程序的<b> switch: </b>提示符会显示在 PC 上的终端仿真软件中。</p>
+          <p></p>
+          <p><b></b>启动加载程序命令行支持用于格式化闪存文件系统，重新安装操作系统软件和恢复已丢失或已忘记密码的命令。例如，<b>dir</b> 命令可用于查看指定目录中的文件列表，如图所示。</p>
+          <p></p>
+          <p>
+            <b>注</b>：注意在本示例中，IOS 位于闪存文件夹的根中。</p>
+          <p></p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示命令 dir flash: 的输出。该命令将列出闪存的内容，且图中列出各种文件，包括 IOS 文件。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

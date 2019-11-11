@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.2.1.4 数据包路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>数据包路由</h1>
+        <div>
+          <p>当 R2 在其 Fa0/0 接口接收帧时，将发生以下过程：</p>
+          <p></p>
+          <p>1.R2 检查目标 MAC 地址，其匹配接收接口的 MAC 地址：FastEthernet 0/0。因此，R2 将帧复制到缓冲区。</p>
+          <p>2.R2 将以太网类型字段标识为 0x800，这意味着以太网帧在帧的数据部分中包含 IPv4 数据包。</p>
+          <p>3.R2 将以太网帧解封。</p>
+          <p>4.由于数据包的目的 IPv4 地址与 R2 的所有接口地址均不匹配，因此 R2 将查询其路由表来确定数据包的路由方式。R2 使用与 R1 相同的过程在路由表中搜索数据包的目的 IPv4 地址。</p>
+          <p></p>
+          <p>R2 的路由表中有一条通向 192.168.4.0/24 网络的路由，下一跳 IPv4 地址为 192.168.3.2，送出接口为 Serial 0/0/0。由于送出接口连接的不是以太网，因此 R2 无需将下一跳 IPv4 地址解析为目的 MAC 地址。 </p>
+          <p></p>
+          <p>5.IPv4 数据包将封装到新的数据链路帧中，然后通过 Serial 0/0/0 送出接口发送出去。</p>
+          <p></p>
+          <p>当接口为点对点 (P2P) 串行连接时，路由器将 IPv4 数据包封装成适合送出接口（HDLC、PPP 等）使用的数据链路帧格式。由于串行接口上没有 MAC 地址，因此 R2 将数据链路目的地址设置为相当于广播的地址。</p>
+          <p></p>
+          <p>图中的动画说明 R2 如何将数据包转发到 R3。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中是一个路由器接收数据包的动画。该图显示路由器将接受数据包，因为目标 MAC 地址是该路由器的地址。路由器读取目标 IP 地址并查看其路由表以确定将数据包转发到何处。路由器确定需要将数据包发送出串行接口，该接口没有 MAC 地址。路由器将使用广播地址为第 2 层信息封装数据。未更改源和目标 IP 地址。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.1.2 物理和逻辑拓扑</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>物理和逻辑拓扑</h1>
+        <div>
+          <p>网络拓扑是指网络设备及它们之间的互连布局或关系。可以通过两种方式查看 LAN 和 WAN 拓扑：</p>
+          <p>
+            <ul>
+              <li>
+                <b>物理拓扑</b> - 是指物理连接，用于标识终端设备和基础设施设备（如路由器、交换机和无线接入点）如何互连。物理拓扑通常是点对点拓扑或星型拓扑。请参见图 1。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>逻辑拓扑</b> - 是指网络将帧从一个节点传输到另一节点的方法。这种布局由网络节点之间的虚拟连接组成。这些逻辑信号路径是按数据链路层协议定义的。当共享介质提供不同的访问控制方法时，点对点链路的逻辑拓扑相对简单。请参见图 2。</li>
+            </ul>
+          </p>
+          <p>在控制对介质的数据访问时，数据链路层“看见”的是网络的逻辑拓扑。正是逻辑拓扑在影响网络成帧和介质访问控制的类型。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a floor plan with the location of each network drop and where it is on the floor plan.  This is called a physical topology. Figure 2 shows a router that has two interfaces each connected to a LAN.  Each LAN has a network address. Intermediary devices are labelled with port numbers. LANs are labelled with the network address. This is called a logical topology.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>对 DHCPv4 进行故障排除</b>]]></text>
+</component>
+
+<component id="ID_s1_table01">
+<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+</tr>
+
+<tr>
+<td width="160" bgcolor='#eff8f7' valign="top" ><font color='#393536'>故障排除任务 1：</font></td>
+<td  width="240" bgcolor='#eff8f7' valign="top"><font color='#393536'>解决地址冲突。</font></td>
+</tr>
+
+<tr>
+<td width="40" bgcolor='#ffffff' valign="top"><font color='#393536'>故障排除任务 2：</font></td>
+<td width="90" bgcolor='#ffffff' valign="top"><font color='#393536'>验证物理连接.</font></td>
+</tr>
+
+<tr>
+<td width="40" bgcolor='#eff8f7' valign="top"><font color='#393536'>故障排除任务 3：</font></td>
+<td width="90" bgcolor='#eff8f7' valign="top"><font color='#393536'>使用静态 IPv4 地址进行测试。</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#ffffff' valign="top"><font color='#393536'>故障排除任务 4：</font></td>
+<td bgcolor='#ffffff' valign="top"><font color='#393536'>验证交换机端口配置。</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#eff8f7' valign="top"><font color='#393536'>故障排除任务 5：</font></td>
+<td bgcolor='#eff8f7' valign="top"><font color='#393536'>从同一子网或 VLAN 进行测试。</font></td>
+</tr>
+
+ 
+</table>]]></text> 
+</component>
+
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>查看 DHCPv4 冲突</b>]]></text>
+</component>
+
+</textcomponents>

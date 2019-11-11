@@ -1,0 +1,35 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>SLAAC 和 DHCPv6</b>]]></text>
+</component>
+<component id="ID_txt01">
+	<text><![CDATA[客户端]]></text> 
+</component>
+<component id="ID_txt02">
+	<text><![CDATA[<b>RS</b>]]></text> 
+</component>
+<component id="ID_txt03">
+	<text><![CDATA[“我需要来自 R1 的 RA。”]]></text> 
+</component>
+<component id="ID_txt04">
+	<text><![CDATA[<b>RA 选项</b>]]></text> 
+</component>
+<component id="ID_txt05">
+	<text><![CDATA[仅 SLAAC（默认）]]></text> 
+</component>
+<component id="ID_txt06">
+	<text><![CDATA[“仅使用该 RA。”]]></text> 
+</component>
+<component id="ID_txt07">
+	<text><![CDATA[无状态 DHCP：SLAAC 和 DHCPv6]]></text> 
+</component>
+<component id="ID_txt08">
+	<text><![CDATA[“使用该 RA 和 DHCPv6 服务器。”]]></text> 
+</component>
+<component id="ID_txt09">
+	<text><![CDATA[有状态 DHCPv6：仅 DHCPv6]]></text> 
+</component>
+<component id="ID_txt10">
+	<text><![CDATA[“使用 DHCPv6 服务器。”]]></text> 
+</component>
+</textcomponents>

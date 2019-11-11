@@ -1,0 +1,46 @@
+<textcomponents>
+<component id="ID_inst">
+<text><![CDATA[<b>练习 - 确定 NAT 术语</b><br/><br/>PC1 将通过支持 NAT 的路由器 (R1) 与 Web 服务器通信。 请将 NAT 地址的每种类型拖到拓扑中的相应字段。]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[Web 服务器]]></text> 
+  </component><!--Drag and drop--><component id='ID_drag01'>
+	<text><![CDATA[<font color="#393536">内部全局</font>]]></text>
+</component>
+<component id='ID_drag02'>
+	<text><![CDATA[<font color="#393536">外部全局</font>]]></text>
+</component>
+<component id='ID_drag03'>
+	<text><![CDATA[<font color="#393536">外部本地</font>]]></text>
+</component>
+<component id='ID_drag04'>
+	<text><![CDATA[<font color="#393536">内部本地</font>]]></text>
+</component>
+
+
+
+<component id='ID_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_CORRECT_BODY'>
+	<text><![CDATA[您已成功将 NAT 地址类型与网络拓扑进行配对。]]></text>
+</component>
+
+
+<component id='ID_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_INCORRECT_BODY'>
+	<text><![CDATA[您未成功将 NAT 地址类型与网络拓扑进行配对。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>重置</b>]]></text>
+</component>
+</textcomponents>

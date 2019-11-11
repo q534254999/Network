@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.3.1 使用 VLAN 的 IP 编址问题</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>使用 VLAN 的 IP 编址问题</h1>
+        <div>
+          <p>每个 VLAN 必须对应唯一的 IP 子网。如果同一个 VLAN 中的两台设备具有不同的子网地址，它们将无法通信。这是比较常见的一种问题，但也很容易解决，只需找出不正确的配置，然后将子网地址更改为正确的地址。</p>
+          <p></p>
+          <p>在图 1 中，PC1 无法连接到所示的 Web/TFTP 服务器。 </p>
+          <p></p>
+          <p>在图 2 中，检查完 PC1 的 IPv4 配置设置后，发现配置 VLAN 时出现最常见的错误：IPv4 地址配置不正确。PC1 配置的 IPv4 地址为 172.172.10.21，但是正确的配置应该是 172.17.10.21。</p>
+          <p></p>
+          <p>在图 3 中，PC1 快速以太网配置对话框显示，IPv4 地址已更新为 172.17.10.21。底部的输出显示 PC1 已与 IPv4 地址为 172.17.10.30 的 Web/TFTP 服务器重新建立连接。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示一个小型 LAN，带有一台连接到交换机 2 的 PC，一台连接到交换机 3 的 PC，和一台连接到交换机 1 的 Web 服务器。交换机之间的链路为中继链路，并允许必要的 VLAN。连接到交换机 2 的 PC 具有标注，说明其未连接到 Web 服务器。图 2 显示 PC 上“ip config”命令的输出。图 3 显示在 PC上配置 IP 地址以将其更改为正确的子网的屏幕截图。请注意，该屏幕截图来自 packet tracer 中的 PC。下面是 PC 上 ping 命令的输出，显示对 Web 服务器的 ping 操作成功。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

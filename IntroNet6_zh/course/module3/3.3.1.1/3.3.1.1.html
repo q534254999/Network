@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.1.1 消息分段</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>消息分段</h1>
+        <div>
+          <p>理论上来说，可以将一次通信的内容（如音乐视频或电子邮件消息）作为一大块连续的高容量位流，通过网络从源发送到目的地。但如果真以这种方式传输消息，那就意味着在传输此数据期间，同一个网络中的其他设备都不能发送或接收消息。这种大型数据流会导致严重的延迟。而且，一旦互联网络基础架构中有一条链路在传输期间出现故障，那么整个消息都会丢失，必须全部重传。 </p>
+          <p></p>
+          <p>所以，更好的办法是先将数据划分为更小、更易于管理的片段，然后再通过网络发送。将数据流划分为较小的片段称为分段。消息分段主要有两个优点：</p>
+          <p>
+            <ul>
+              <li>通过从源设备向目的设备发送一个个小片段，就可以在网络上交替发送许多不同会话，称为多路复用。单击图 1 中的每个按钮，然后单击“播放”按钮观看分段和多路复用的动画演示。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>分段可以增强网络通信的效率。如果由于网络故障或网络拥塞，有部分消息未能传送到目的地，则只需重新传输丢失的部分。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>使用分段和多路复用在网络上传输消息要面临的挑战是增加了该过程的复杂程度。试想一下，这就如同您要邮寄一封 100 页的信件，但每个信封里只能装一页纸。写地址、贴邮票、邮寄、收信和打开全部 100 个信封的过程对发信人和收信人而言都很耗费时间。 </p>
+          <p></p>
+          <p>在网络通信中，每个消息段也必须经过类似的过程才能确保其到达正确目的设备并重新组装成原始消息的内容，如图 2 所示。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one has two animations, the first one depicts the process of segmenting a message.  In this animation a message is segmented into four segments and each one is transmitted.  The second animation depicts the multiplexing process where two computers share access to the network. Figure two shows the labeling of segments to provide ordering and assembling of the segments as they are sent from the source and as they arrive at their destination.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

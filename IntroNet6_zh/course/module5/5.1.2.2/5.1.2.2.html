@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.2 MAC 地址：以太网身份</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>MAC 地址：以太网身份</h1>
+        <div>
+          <p>在以太网中，每台网络设备都连接到同一个共享介质。以太网曾经主要是半双工拓扑，使用多路访问总线或后来的以太网集线器。这就意味着所有节点都将接收每一个传输的帧。为了避免处理每个帧时产生过多开销，创建了 MAC 地址来标识实际源和目的节点。MAC 编址为 OSI 模型的较低层提供了设备识别方法。虽然现在以太网已经转换到了全双工网卡和交换机，但不是目的设备的设备仍可以接收到以太网帧。</p>
+          <p>
+            <b>MAC 地址结构</b>
+          </p>
+          <p>MAC 地址值是 IEEE 为确保每台以太网设备使用全局唯一地址而强制厂商遵守规定的直接结果。IEEE 规定销售以太网设备的任何厂商都要向 IEEE 注册。IEEE 为厂商分配了一个 3 字节（24 位）的代码，称为组织唯一标识符 (OUI)。 </p>
+          <p>IEEE 要求厂商遵守两条简单的规定，如图所示： </p>
+          <p>
+            <ul>
+              <li>分配给网卡或其他以太网设备的所有 MAC 地址都必须使用厂商分配的 OUI 作为前 3 个字节。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>OUI 相同的所有 MAC 地址必须在最后 3 个字节中分配一个唯一值。 </li>
+            </ul>
+          </p>
+          <p>
+            <b>注意</b>：由于生产中或一些虚拟机实施方法中的错误，可能存在重复的 MAC 地址。在以上任一情况下，必须在新网卡或软件中修改 MAC 地址。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows how a MAC address is divided into two 24 bit halves.  The first 24 bits represent the Organizationally Unique Identifier (OUI) and the second 24 bits represent the unique device (network interface).</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

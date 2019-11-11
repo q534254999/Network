@@ -1,0 +1,1 @@
+图 1 显示路由器 2，内部网络在左侧，外部网络在右侧。内部网络包含 2 台计算机和路由器 1。外部网络包含两个服务器。路由器 2 使用 PAT。图 2 显示了多个命令的输出。首先是“clear ip nat statistics”命令，然后是“clear ip nat translations star”命令。现在，主机通过 telnet 登录到服务器，然后显示“show ip nat statistics”命令，再显示“show ip nat translations”命令。

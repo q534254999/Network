@@ -1,0 +1,126 @@
+<textcomponents>
+    <!-- instructions -->
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>练习 – MAC 和 LLC 子层</b>]]></text>
+    </component>
+    <component id='ID_instr_title'>
+	<text><![CDATA[说明]]></text>
+</component>
+
+<component id='ID_instr_body'>
+	<text><![CDATA[表中提供 MAC 和 LLC 子层的描述。在 MAC 或 LLC 字段中单击将每个描述与正确的子层进行配对。]]></text>
+</component>
+    <!-- buttons -->
+    <component id="ID_s1_CHECK">
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id="ID_s1_RESET">
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+    <!--Number of rows in the table-->
+    <component id="txt_numrows">
+        <text>
+            <![CDATA[6]]>
+        </text>
+    </component>
+    <!--Number of columns for the answers in the table. Do not count the question column-->
+    <component id="txt_a1">
+        <text>
+            <![CDATA[2]]>
+        </text>
+    </component>
+    <!--Answer column headers-->
+    <component id="MCTable_title">
+        <text>
+            <![CDATA[黑客特征]]>
+        </text>
+    </component>
+    <component id="txt_col1">
+        <text>
+            <![CDATA[<b>MAC</b>]]></text>
+    </component>
+    <component id="txt_col2">
+        <text>
+            <![CDATA[<b>LLC</b>]]></text>
+    </component>
+    <!--Question text - blockindent code moves the text away from the left edge a bit-->
+    <!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1.<textformat blockindent='13'>通过软件驱动程序控制网络接口卡。</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2.<textformat blockindent='13'>使用上层将用于传输数据的应用信息添加到上 层协议。</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3.<textformat blockindent='13'>使用硬件来支持带宽要求，并检查位中的错误 （包括发送和接收的位）。</textformat>]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[4.<textformat blockindent='13'>根据信令和物理介质标准要求控制 介质访问。</textformat>]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[5.<textformat blockindent='13'>通过使用 CSMA/CD 或 CSMA/CA 来支持以太网技术。</textformat>]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[6.<textformat blockindent='13'>保持物理设备的相对独立。</textformat>]]></text>
+</component>
+    <!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+    <!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+    <component id="txt_numcols">
+        <text>
+            <![CDATA[2]]>
+        </text>
+    </component>
+    <component id="txt_a6">
+        <text>
+            <![CDATA[2]]>
+        </text>
+    </component>
+    <component id="txt_a4">
+        <text>
+            <![CDATA[1]]>
+        </text>
+    </component>
+    <component id="txt_a3">
+        <text>
+            <![CDATA[1]]>
+        </text>
+    </component>
+    <component id="txt_a5">
+        <text>
+            <![CDATA[1]]>
+        </text>
+    </component>
+    <component id="txt_a2">
+        <text>
+            <![CDATA[2]]>
+        </text>
+    </component>
+    <!-- Correct Feedback -->
+    <component id="ID_titleCorrect">
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id="ID_correctText">
+        <text>
+            <![CDATA[您已成功地将描述与正确的子层配对。]]>
+        </text>
+    </component>
+    <!-- Incorrect Feedback -->
+    <component id="ID_titleIncorrect">
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id="ID_IncorrectText">
+        <text>
+            <![CDATA[您未成功将描述与正确的子层配对。请单击“重置”重试。]]>
+        </text>
+    </component>
+</textcomponents>

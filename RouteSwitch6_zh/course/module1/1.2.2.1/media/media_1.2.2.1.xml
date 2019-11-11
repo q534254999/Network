@@ -1,0 +1,72 @@
+<textcomponents>
+
+<component id='ID_title'>
+	<text><![CDATA[<b>数据包转发决策过程</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[数据包到达接口。]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[路由器在<br/>路由表中搜素匹配项。]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[目的 IP 地址是否匹配以下对象的<br/>子网…]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[直连接口？]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[检查 ARP 缓存（ARP，如果需要），然后转发到本地子网上的主机。]]></text> 
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[远程网络？]]></text> 
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[封装该帧，然后从退出接口转发到下一个跳。]]></text> 
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[是否有最后选用网关？]]></text> 
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[封装该帧，然后从退出接口转发到下一个跳。]]></text> 
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[丢弃数据包。]]></text> 
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[是]]></text> 
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[是]]></text> 
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[是]]></text> 
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[否]]></text> 
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[否]]></text> 
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[否]]></text> 
+</component>
+
+
+</textcomponents>

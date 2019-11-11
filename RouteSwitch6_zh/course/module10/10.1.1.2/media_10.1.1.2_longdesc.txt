@@ -1,0 +1,1 @@
+图 1 使用“show cdp”命令显示 CDP 的默认设置，包括每 60 秒发送 CDP 消息、180 秒的保持时间以及启用 CDPv2。图 2 显示了在交换机的 gigabitethernet 0/1 接口上配置的“cdp enable”命令。在图 3 中，CDP 通过“no cdp run”命令全局禁用。然后，“show cdp”验证它是否已禁用。最后，全局重新启用 CDP。在图 4 中，“show cdp neighbors”命令的输出显示路由器没有 CDP 邻居。在图 5 中，“show cdp interface”命令的输出突出显示了 gigabitethernet 0/1 为 up 状态。所有接口都启用了 CDP。

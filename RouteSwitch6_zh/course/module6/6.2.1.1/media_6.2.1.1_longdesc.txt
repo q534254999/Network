@@ -1,0 +1,1 @@
+图中显示将交换机端口配置为中继以及将本征 VLAN 配置为 VLAN 99 的语法。还显示了“show interfaces trunk”命令的输出。

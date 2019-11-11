@@ -1,0 +1,1 @@
+图 1 显示 show ip protocols 命令的输出，并突出显示说明自动网络汇总已生效的行。图 2 显示如何对运行 RIP 的路由器禁用路由汇总。命令行以全局配置模式开始，第一个命令 router rip 启用 RIP。下一命令为 no auto hyphen summary。此命令使用命令 show ip protocols | section Automatic 验证，且输出声明自动网络汇总无效。图 3 是允许学生在路由器上配置 RIP 路由并禁用自动汇总的互动媒体元素。

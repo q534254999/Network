@@ -1,0 +1,12 @@
+﻿<textcomponents><!-- slide 1 --><component id="ID_title">
+<text><![CDATA[<b>容错能力</b>]]></text> 
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Internet]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[冗余连接可以在设备或链路发生故障时提供备用路径。 用户体验不会受到影响。]]></text> 
+</component>
+</textcomponents>

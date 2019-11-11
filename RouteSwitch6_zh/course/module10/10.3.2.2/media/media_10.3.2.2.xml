@@ -1,0 +1,53 @@
+<textcomponents><!--SLIDE 1 --><component id="ID_s1_title">
+<text><![CDATA[<b>显示 Cisco IOS 映像</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+</component><!--SLIDE 2 --><component id="ID_s3_title">
+<text><![CDATA[<b>ISR G2 设备上的思科 IOS 15.2 软件映像<br>名称示例</b>]]></text>
+</component>
+<component id="ID_s3_txt01">
+<text><![CDATA[<b>硬件</b>]]></text>
+</component>
+
+<component id="ID_s3_txt02">
+<text><![CDATA[<b>映像标识</b>]]></text>
+</component>
+
+<component id="ID_s3_txt03">
+<text><![CDATA[<b>内存位置</b>]]></text>
+</component>
+
+<component id="ID_s3_txt04">
+<text><![CDATA[<b>压缩格式</b>]]></text>
+</component>
+
+<component id="ID_s3_txt05">
+<text><![CDATA[<b>数字签名指示符</b>]]></text>
+</component>
+
+<component id="ID_s3_txt06">
+<text><![CDATA[<b>主要版本</b>]]></text>
+</component>
+
+<component id="ID_s3_txt07">
+<text><![CDATA[<b>次要版本</b>]]></text>
+</component>
+
+<component id="ID_s3_txt08">
+<text><![CDATA[<b>新功能版本</b>]]></text>
+</component>
+
+<component id="ID_s3_txt09">
+<text><![CDATA[<b>扩展维护版本</b>]]></text>
+</component>
+
+<component id="ID_s3_txt10">
+<text><![CDATA[<b>维护重建版本</b>]]></text>
+</component>
+
+<component id="ID_s3_txt11">
+<text><![CDATA[<b>文件扩展名</b>]]></text>
+</component>
+
+</textcomponents>

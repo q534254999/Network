@@ -1,0 +1,51 @@
+<textcomponents>
+
+	<component id="ID_title">
+		<text><![CDATA[<b>默认静态 IPv6 路由语法</b>]]></text>
+	</component>
+	
+	<component id='ID_table'>
+		<text><![CDATA[
+						 <table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+						 	
+
+							
+								<tr>
+									<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+								</tr> 
+							  
+								<tr>
+								  <td width='100px' bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>参数</b></font></td>
+								  <td  bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>说明</b></font></td>
+								</tr>
+
+								<tr>
+
+								  <td bgcolor='#E9E7E8' valign="top"><font color='#393536' face="_typewriter">::/0</font></td>
+								  <td bgcolor='#E9E7E8' valign="top"><font color='#393536'>匹配任何 IPv6 前缀，而无论前缀长度。</font></td>
+								</tr>
+								
+								<tr>
+								  <td bgcolor='#F2F2F2' valign="top"><font color='#393536' face="_typewriter">ipv6-address</font></td>
+								  <td bgcolor='#F2F2F2' valign="top"><font color='#393536'><textformat blockindent='-14'>
+										<li>通常称为下一跳路由器的 IPv6 地址。</li>
+										<li>一般在连接到广播介质（即以太网）时使用。</li>
+										<li>通常创建递归查询。</li>
+									</textformat></font></td>
+								</tr>
+								<tr>
+								  <td bgcolor='#E9E7E8' valign="top"><font color='#393536' face="_typewriter">exit-intf</font></td>
+								  <td bgcolor='#E9E7E8' valign="top"><font color='#393536'><textformat blockindent='-14'>
+										<li>使用传出接口，将数据包转发到目标网络。</li>
+										<li>也称为直连静态路由。</li>
+										<li>一般在点对点配置中连接时使用。</li>
+									</textformat></font></td>
+								</tr>      
+							  </table>
+					]]>
+		</text>
+</component>
+
+
+</textcomponents>

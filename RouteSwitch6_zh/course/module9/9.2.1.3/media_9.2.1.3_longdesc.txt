@@ -1,0 +1,1 @@
+图 1 显示没有任何活动会话时“show ip nat translations”命令的输出。外部地址为空。此外，还显示了有一个活动会话时“show ip nat translations”命令的输出。存在外部地址。这表明静态 NAT 始终存在 NAT 转换。图 2 显示了“clear ip nat statistics”命令以及紧跟的“show ip nat statistics”命令的输出，显示无点击。当 PC 与 Web 服务器建立会话时，“show ip nat statistics”命令的输出中显示了五个点击。

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.5.3 测试 IPv4 浮动静态路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.5.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>测试 IPv4 浮动静态路由</h1>
+        <div>
+          <p>由于 R1 到 R2 的默认静态路由的管理距离为 1，从 R1 到 R3 的流量都通过 R2。图 1 中的输出确认 R1 和 R3 之间的流量流经 R2。 </p>
+          <p></p>
+          <p>如果 R2 失败，将会发生什么情况？要模拟此故障，R2 的两个串行接口均要关闭，如图 2 所示。</p>
+          <p></p>
+          <p>注意在图 3 中，R1 自动生成一则消息，指示到 R2 的串行接口已关闭。查看路由表验证默认路由现是否使用采用 AD 值 5 和下一跳 10.10.10.2 配置的浮动静态默认路由指向 R3。</p>
+          <p></p>
+          <p>图 4 中的输出确认流量现在在 R1 和 R3 之间直接传输。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">这些图基于标准实验图，其具有路由器 1 与路由器 3 之间的额外链路。图 1 显示路由器 1 上“trace route”命令到路由器 3 上的 LAN 的输出，采用两跳。图 2 显示要关闭的路由器 2 上的 serial0/0/0 和 serial0/0/1。这会导致浮动静态路由成为路由器 1 的首选路由。图 3 显示路由器 1 上“show ip route static”命令的输出，确认浮动静态路由已成为首选路由。图 4 显示路由器 1 上“trace route”命令到路由器 3 上的 LAN 的输出，采用一跳。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

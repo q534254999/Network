@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.2.2 子网掩码</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>子网掩码</h1>
+        <div>
+          <p>如图 1 所示，在向主机分配 IPv4 配置时，必须配置三个点分十进制 IPv4 地址：</p>
+          <p>
+            <ul>
+              <li>
+                <b>IPv4 地址</b> – 主机唯一的 IPv4 地址 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>子网掩码</b>- 用于标识 IPv4 地址的网络部分/主机部分</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>默认网关</b> – 确定到达远程网络所需的本地网关（例如本地路由器接口 IPv4 地址） </li>
+            </ul>
+          </p>
+          <p>当把 IPv4 地址分配给一台设备时，该设备使用子网掩码来确定自身所属的网络地址。网络地址代表同一网络中的所有设备的地址。 </p>
+          <p>图 2 为点分十进制地址和 32 位子网掩码。注意子网掩码本质上是一个 1 位序列后接 0 位序列的序列。 </p>
+          <p>为了确定 IPv4 地址的网络部分和主机部分，要将子网掩码与 IPv4 地址进行从左到右逐位比较（如图 3 所示）。子网掩码中的 1 代表网络部分，而 0 则代表主机部分。注意，子网掩码实际上不包含 IPv4 地址的网络部分或主机部分，它仅通知计算机如何在给定的 IPv4 地址中查找这些部分。</p>
+          <p>用于确定网络部分和主机部分的实际流程叫做 AND 运算。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the Windows IPv4 Properties window with the IP address, subnet mask, and default gateway address statically configured. Figure 2 shows the dotted decimal format for the subnet mask 255.255.255.0 and the binary format below it. The octets are divided between the third and fourth octet. Figure 3 adds the IP address 192.168.10.10 above the subnet mask from Figure 2. The subnet mask is what determines which bits are network and which bits are host.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

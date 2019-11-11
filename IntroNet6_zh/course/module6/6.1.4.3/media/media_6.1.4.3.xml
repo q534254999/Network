@@ -1,0 +1,103 @@
+<textcomponents><!-- Common Text --><component id="ID_txt06">
+		<text><![CDATA[- IPv6 从 IPv4 保留的字段名称]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[- IPv6 未保留的字段]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[- 在 IPv6 中更改的名称和位置]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[- IPv6 中的新字段]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[<b>图例</b>]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[<b>图例</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[- IPv6 从 IPv4 保留的字段名称]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[- 在 IPv6 中更改的名称和位置]]></text>
+	</component><!-- Slide 1 text --><component id="ID_s1_title">
+		<text><![CDATA[<b>IPv4 报头</b>]]></text>
+	</component>
+	<component id="ID_s2_txt05">
+		<text><![CDATA[版本]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[IHL]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[服务类型]]></text>
+	</component>
+	<component id="ID_s1_txt04">
+		<text><![CDATA[总长度]]></text>
+	</component>
+	<component id="ID_s1_txt05">
+		<text><![CDATA[标识]]></text>
+	</component>
+	<component id="ID_s1_txt06">
+		<text><![CDATA[标志]]></text>
+	</component>
+	<component id="ID_s1_txt07">
+		<text><![CDATA[片偏移量]]></text>
+	</component>
+	<component id="ID_s1_txt08">
+		<text><![CDATA[生存时间]]></text>
+	</component>
+	<component id="ID_s1_txt09">
+		<text><![CDATA[协议]]></text>
+	</component>
+	<component id="ID_s1_txt10">
+		<text><![CDATA[报头校验和]]></text>
+	</component>
+	<component id="ID_s1_txt11">
+		<text><![CDATA[源地址]]></text>
+	</component>
+	<component id="ID_s1_txt12">
+		<text><![CDATA[目标地址]]></text>
+	</component>
+	<component id="ID_s1_txt13">
+		<text><![CDATA[选项]]></text>
+	</component>
+	<component id="ID_s1_txt14">
+		<text><![CDATA[填充]]></text>
+	</component><!-- Slide 2 text --><component id="ID_s2_title">
+		<text><![CDATA[<b>IPv6 报头</b>]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[版本]]></text>
+	</component>
+	<component id="ID_s2_txt06">
+		<text><![CDATA[流量类别]]></text>
+	</component>
+	<component id="ID_s2_txt07">
+		<text><![CDATA[流标签]]></text>
+	</component>
+	<component id="ID_s2_txt08">
+		<text><![CDATA[负载长度]]></text>
+	</component>
+	<component id="ID_s2_txt09">
+		<text><![CDATA[下一报头]]></text>
+	</component>
+	<component id="ID_s2_txt10">
+		<text><![CDATA[跳数限制]]></text>
+	</component>
+	<component id="ID_s2_txt11">
+		<text><![CDATA[源 IP 地址]]></text>
+	</component>
+	<component id="ID_s2_txt12">
+		<text><![CDATA[目的 IP 地址]]></text>
+	</component>
+	<!-- Slide 3 text -->
+	<component id="ID_titleTxt01">
+		<text><![CDATA[<b>IPv6 优势</b>]]></text>
+	</component>
+
+	<component id="ID_bodyTxt01">
+		<text><![CDATA[<textformat blockindent='-17'><ul><li>报头格式更简单，处理数据包更高效</li><br><li>负载更大，增加了吞吐量和传输效率</li><br><li>分层网络体系结构增加了路由效率</li><br><li>自动配置地址</li><br><li>私有和公有地址之间不再需要网络地址转换 (NAT)</li></ul></textformat>]]></text>
+	</component>
+</textcomponents>

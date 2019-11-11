@@ -1,0 +1,12 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>思科发现协议操作</b>]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[CDP 通告]]></text> 
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[思科设备会将定期 CDP 通告发送到相连设备。]]></text> 
+  </component>
+  
+</textcomponents>

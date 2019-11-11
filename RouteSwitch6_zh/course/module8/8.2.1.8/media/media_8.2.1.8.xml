@@ -1,0 +1,71 @@
+﻿<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>活动 - 标识 DHCPv6 操作中的步骤</b><br><br>将发起 DHCPv6 租赁的步骤说明排序。<br/>根据图中带圆圈的数字，将每个 DHCPv6 租赁发起步骤拖到相应的字段。]]></text>
+</component>
+
+<component id='ID_txt01'>
+	<text><![CDATA[<b>SLAAC 操作</b>]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[DHCPv6 客户端]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[DHCPv6 服务器]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[路由器请求]]></text>
+</component>
+
+<component id='ID_txt05'>
+	<text><![CDATA[路由器通告]]></text>
+</component>
+
+<component id='ID_txt06'>
+	<text><![CDATA[<b>有状态 DHCPv6 操作</b>]]></text>
+</component><!--Drag and Drop--><component id='ID_ip1_DS'>
+	<text><![CDATA[<font color="#393536">REQUEST</font>]]></text>
+</component>
+
+<component id='ID_ip2_DS'>
+	<text><![CDATA[<font color="#393536">应答</font>]]></text>
+</component>
+
+<component id='ID_ip3_DS'>
+	<text><![CDATA[<font color="#393536">通告</font>]]></text>
+</component>
+
+<component id='ID_ip4_DS'>
+	<text><![CDATA[<font color="#393536">征集</font>]]></text>
+</component>
+
+
+<component id='ID_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_CORRECT_BODY'>
+	<text><![CDATA[您已成功排列发起有状态 DHCPv6 租用的步骤。]]></text>
+</component>
+
+
+<component id='ID_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_INCORRECT_BODY'>
+	<text><![CDATA[您未成功排列发起有状态 DHCPv6 租用的步骤。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>重置</b>]]></text>
+</component>
+
+</textcomponents>

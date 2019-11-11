@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.2.5 IP - 介质无关性</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IP - 介质无关性</h1>
+        <div>
+          <p>IP 的运作与在协议栈低层传送数据的介质无关。如图所示，IP 数据包既可以作为电信号通过铜缆传送，也可以作为光信号通过光纤传送或作为无线电信号无线传送。</p>
+          <p>OSI 数据链路层负责接收 IP 数据包并准备在通信介质上传输它。这就意味着 IP 数据包的传输不限于任何特定的介质。</p>
+          <p>但是，网络层会考虑介质的一个重要特征：每种介质可以传输的最大 PDU 大小。此特征称为最大传输单位 (MTU)。数据链路层和网络层之间的部分控制通信就是确定数据包的最大尺寸。数据链路层将 MTU 值向上传送到网络层。网络层会由此确定可以传送的数据包的大小。 </p>
+          <p>有时，中间设备（通常是路由器），在将数据包从一个介质转发到具有更小 MTU 的介质时，必须分割数据包。此过程称为数据包分段或分段。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a network with different media at each hop.  An IP packet has no trouble with this because IP is media independent.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

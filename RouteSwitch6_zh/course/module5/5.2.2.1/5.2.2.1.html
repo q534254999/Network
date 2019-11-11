@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.2.1 保护未使用端口的安全</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>保护未使用端口的安全</h1>
+        <div>
+          <p>
+            <b>禁用未使用的端口</b>
+          </p>
+          <p></p>
+          <p>很多管理员所采用的一种简单方法是禁用交换机上所有未使用的端口，这样做可帮助他们保护网络，使其免受未经授权的访问。例如，如果 Catalyst 2960 交换机有 24 个端口，并且有三个快速以太网连接正在使用，那么比较好的做法就是禁用其他 21 个未使用的端口。切换到每一个未使用的端口，然后发出思科 IOS <b>shutdown</b> 命令即可。如果稍后必须重新激活端口，可使用<b> no shutdown </b>命令激活。图中显示了此配置的部分输出。</p>
+          <p></p>
+          <p>对交换机多个端口进行配置更改很简单。如果必须配置端口范围，则请使用<b> interface range </b>命令。</p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch(config)# </span>
+            <span class="cmd">
+              <b>interface range</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>type module/first-number – last-number</i>
+            </span>
+          </p>
+          <p></p>
+          <p>启用和禁用端口的过程比较耗时，但它可以加强网络安全，是值得付出的工作。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示 show run 命令的输出。为增加安全性，显示交换机上的许多处于关闭状态的端口接口部分突出显示。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<textcomponents><!-- Slide 1--><component id="ID_s1_title">
+		<text><![CDATA[<b>排列配置注意事项</b>]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[Range (network) 语句]]></text> 
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[Host 语句]]></text> 
+	</component><!-- Slide 2--><component id="ID_s2_title">
+		<text><![CDATA[<b>重新加载后的序列号</b>]]></text>
+	</component>
+	<component id="ID_s2_txt01">
+		<text><![CDATA[Host 语句列在前面，以便通过 IOS 高效处理。]]></text> 
+	</component>
+	<component id="ID_s2_txt02">
+		<text><![CDATA[Range 语句按其输入顺序列在 host 语句后面。]]></text> 
+	</component>
+</textcomponents>

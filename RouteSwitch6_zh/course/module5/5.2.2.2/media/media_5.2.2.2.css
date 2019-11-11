@@ -1,0 +1,12 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+/*#span1{margin-left: 3px;}*/
+
+.align
+{
+	margin-left: 15px !important;
+}

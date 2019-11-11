@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.3.2.6 从 ARP 表中删除条目</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.3.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>从 ARP 表中删除条目</h1>
+        <div>
+          <p>对于每台设备，ARP 缓存定时器将会删除在指定时间内未使用的 ARP 条目。具体时间取决于设备及其操作系统。例如，如图所示，有些 Windows 操作系统存储 ARP 缓存条目的时间为 2 分钟。 </p>
+          <p>也可以使用命令来手动删除 ARP 表中的全部或部分条目。当条目被删除之后，要想在 ARP 表中输入映射，必须重复一次发送 ARP 请求和接收 ARP 回复的过程。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows three PCs connected to a switch. The switch is connected to router 1. Router 1 is connected to a cloud labeled “network” PC A has sent data in the past to router 1 and has an entry for R1 in its ARP cache. PC A will remove the ARP entry in 2 minutes if it has not used it.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

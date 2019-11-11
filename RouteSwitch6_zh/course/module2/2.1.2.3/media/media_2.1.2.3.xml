@@ -1,0 +1,23 @@
+<textcomponents>
+
+<component id="ID_title">
+	<text><![CDATA[<b>连接末节路由器</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+  <text><![CDATA[末节网络]]></text> 
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[网络</b>]]></text> 
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[末节路由器</b>]]></text> 
+</component>
+
+<component id="ID_txt04">
+   <text><![CDATA[我需要了解的所有内容是我直连的网络。 对于所有其他网络，我可以使用指向 R2 的默认静态路由。]]></text>
+</component>
+
+</textcomponents>

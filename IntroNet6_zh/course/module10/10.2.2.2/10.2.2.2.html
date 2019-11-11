@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.2.2 DNS 消息格式</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>DNS 消息格式</h1>
+        <div>
+          <p>DNS 服务器中存储不同类型的资源记录，用来解析域名。这些记录中包含域名、地址以及记录的类型。这些记录中有以下类型：</p>
+          <p>
+            <ul>
+              <li>
+                <b>A</b> - 终端设备 IPv4 地址</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>NS</b> - 权威域名服务器</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>AAAA</b> - 终端设备 IPv6 地址（读作“四 A”）</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>MX</b> - 邮件交换记录。</li>
+            </ul>
+          </p>
+          <p>在客户端进行查询时，服务器的 DNS 进程首先会查看自己的记录以解析名称。如果服务器不能通过自身存储的记录解析域名，它将联系其他服务器对该域名进行解析。在检索到匹配信息并将其返回到原始请求服务器后，服务器临时存储数字地址，以供再次请求同一域名时使用。 </p>
+          <p>Windows PC 上的 DNS 客户端服务还可存储以前在内存中解析的域名。<b>ipconfig /displaydns </b>命令可以显示所有 DNS 缓存条目。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows the DNS message format.  It includes the header, question, answer, authority, and additional information.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

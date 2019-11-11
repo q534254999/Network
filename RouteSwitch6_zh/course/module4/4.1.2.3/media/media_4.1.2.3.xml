@@ -1,0 +1,132 @@
+<textcomponents>
+
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>练习 - 选择交换机硬件</b>]]></text>
+	</component>
+
+	<component id='ID_s1_instr_title'>
+		<text><![CDATA[说明]]></text>
+	</component>
+
+	<component id='ID_s1_instr_body'>
+		<text><![CDATA[阅读交换机选择条件并找到最能代表它们的交换机类别名称。 将代表条件的类别名称拖动到相应字段。]]></text>
+	</component><!--Drag and Drop--><component id='ID_drag01'>
+	<text><![CDATA[<font color="#393536">可堆叠</font>]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[<font color="#393536">电源</font>]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[<font color="#393536">可靠性</font>]]></text>
+</component>
+
+<component id='ID_drag04'>
+	<text><![CDATA[<font color="#393536">可扩展性</font>]]></text>
+</component>
+
+<component id='ID_drag05'>
+	<text><![CDATA[<font color="#393536">端口密度</font>]]></text>
+</component>
+
+<component id='ID_drag06'>
+	<text><![CDATA[<font color="#393536">价格</font>]]></text>
+</component>
+
+<component id='ID_drag07'>
+	<text><![CDATA[<font color="#393536">模块化</font>]]></text>
+</component>
+
+<component id='ID_drag08'>
+	<text><![CDATA[<font color="#393536">端口速度</font>]]></text>
+</component>
+
+<component id='ID_drag09'>
+	<text><![CDATA[<font color="#393536">帧缓冲区</font>]]></text>
+</component>
+
+<component id='ID_drag10'>
+	<text><![CDATA[<font color="#393536">固定配置</font>]]></text>
+</component>
+
+
+
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[您已正确选择交换机选择条件类别名称。]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[您尚未正确选择交换机选择条件类别名称。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>重置</b>]]></text>
+</component>
+
+
+<component id='ID_target_header'>
+	<text><![CDATA[<b>类别名称</b>]]></text>
+</component>
+<component id='ID_text_header'>
+	<text><![CDATA[<b>交换机选择条件</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+	<text><![CDATA[受支持的网络设备数量影响]]></text>
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[通过 PoE 的冗余]]></text> 
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[接口处理网络数据的速度]]></text> 
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[继续访问网络]]></text> 
+</component>
+
+<component id="ID_txt05">
+  <text><![CDATA[受接口数量、功能和可扩展性影响]]></text> 
+</component>
+
+<component id="ID_txt06">
+  <text><![CDATA[在缓存中存储帧的功能]]></text> 
+</component>
+
+<component id="ID_txt07">
+  <text><![CDATA[调整网络用户增长的功能]]></text> 
+</component>
+
+<component id="ID_txt08">
+  <text><![CDATA[具有可调整的交换线路/端口卡的交换机]]></text> 
+</component>
+
+<component id="ID_txt09">
+  <text><![CDATA[具有预先设置的功能或选项的交换机]]></text> 
+</component>
+
+<component id="ID_txt10">
+  <text><![CDATA[具有高带宽吞吐量的菊花链交换机]]></text> 
+</component>
+
+  
+</textcomponents>

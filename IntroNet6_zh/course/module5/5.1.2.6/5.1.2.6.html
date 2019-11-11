@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.6 广播 MAC 地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>广播 MAC 地址</h1>
+        <div>
+          <p>广播数据包以主机部分全部为一 (1) 的地址作为目的 IPv4 地址。这种地址计数法表示本地网络（广播域）中的所有主机都将接收和处理该数据包。ARP 和 DHCP 等许多网络协议都使用广播。 </p>
+          <p>如动画所示，源主机向其网络中的所有设备发送 IPv4 广播数据包。IPv4 目的地址为广播地址 192.168.1.255。如果 IPv4 广播数据包被封装在以太网帧内，则目的 MAC 地址为十六进制（在二进制中是 48 个 1）的 FF-FF-FF-FF-FF-FF 广播 MAC 地址。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">This animation shows several computers connected to a switch.  Host 1 wants to send a packet to all other hosts (a broadcast).  The diagram shows the MAC address and IP address of host 1.  The graphic also shows the frame with source and destination MAC address and the encapsulated packet with source and destination IP address.  The destination MAC address is formed by all Fs (the broadcast MAC address).  When the animation plays, the frame travels from host 1 to all other hosts connected to the switch.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

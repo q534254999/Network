@@ -1,0 +1,51 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>动态与静态路由</b>]]></text> 
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'  cellspacing="2" class="mtable">
+	<tr class="mtable_title">
+		<td colspan='3' bgcolor='#FFFFFF' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr class="mtable_top">
+			<td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr>
+		<td bgcolor='#666263' valign="top" width='105'><font bgcolor='#097A76' color='#EFF8F7'> </font></td>
+		<td bgcolor='#666263' valign="top" width='175'><font bgcolor='#097A76' color='#EFF8F7'><b>动态路由</b></font></td>
+		<td bgcolor='#666263' valign="top" width='175'><font bgcolor='#097A76' color='#EFF8F7'><b>静态路由</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263'><b><font color='#FFFFFF'>配置复杂性</font></b></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>通常不受网络规模限制</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>随着网络规模的增大而愈趋复杂</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263'><b><font color='#FFFFFF'>拓扑结构变化</font></b></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>自动根据拓扑结构变化进行调整</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>需要管理员参与</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263'><b><font color='#FFFFFF'>可扩展性</font></b></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>简单拓扑结构和复杂拓扑结构均适合</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>适合简单的网络拓扑结构</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263'><b><font color='#FFFFFF'>安全</font></b></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>不够安全</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>更安全</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263'><b><font color='#FFFFFF'>资源使用率</font></b></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>占用 CPU、内存和链路带宽</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>不需要额外的资源</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263'><b><font color='#FFFFFF'>可预测性</font></b></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>根据当前网络拓扑结构确定路径</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>总是通过同一路径到达目的网络</font></td>
+	</tr>
+</table>]]></text>
+</component>
+</textcomponents>

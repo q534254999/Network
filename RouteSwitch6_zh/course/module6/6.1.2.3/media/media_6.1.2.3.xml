@@ -1,0 +1,68 @@
+<textcomponents>
+   <component id="ID_title"><text><![CDATA[<b>以太网 802.1Q 帧中的字段</b>]]></text></component>
+
+<component id="ID_txt01">
+	<text><![CDATA[以太帧]]></text>
+</component>
+<component id="ID_txt02">
+	<text><![CDATA[Dst MAC]]></text> 
+</component>
+<component id="ID_txt03">
+	<text><![CDATA[源 MAC]]></text> 
+</component>
+<component id="ID_txt04">
+	<text><![CDATA[类型/长度]]></text> 
+</component>
+<component id="ID_txt05">
+	<text><![CDATA[数据]]></text> 
+</component>
+<component id="ID_txt06">
+	<text><![CDATA[FCS]]></text> 
+</component>
+<component id="ID_txt07">
+	<text><![CDATA[802.1Q 帧]]></text>
+</component>
+<component id="ID_txt08">
+	<text><![CDATA[Dst MAC]]></text> 
+</component>
+<component id="ID_txt09">
+	<text><![CDATA[源 MAC]]></text> 
+</component>
+<component id="ID_txt10">
+	<text><![CDATA[标签]]></text> 
+</component>
+<component id="ID_txt11">
+	<text><![CDATA[类型/长度]]></text> 
+</component>
+<component id="ID_txt12">
+	<text><![CDATA[数据]]></text> 
+</component>
+<component id="ID_txt13">
+	<text><![CDATA[FCS]]></text>
+</component>
+<component id="ID_txt14">
+	<text><![CDATA[类型 (0x8100)]]></text> 
+</component>
+<component id="ID_txt15">
+	<text><![CDATA[Pri]]></text> 
+</component>
+<component id="ID_txt16">
+	<text><![CDATA[CFI]]></text> 
+</component>
+<component id="ID_txt17">
+	<text><![CDATA[VID]]></text> 
+</component>
+<component id="ID_txt18">
+	<text><![CDATA[2 字节]]></text> 
+</component>
+<component id="ID_txt19">
+	<text><![CDATA[3 位]]></text> 
+</component>
+<component id="ID_txt20">
+	<text><![CDATA[1 位]]></text> 
+</component>
+<component id="ID_txt21">
+	<text><![CDATA[12 位]]></text> 
+</component>
+
+</textcomponents>

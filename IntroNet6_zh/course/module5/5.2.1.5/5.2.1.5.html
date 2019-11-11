@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.1.5 视频演示 - 将帧发送到默认网关</title>
+    <!-- Activity / Other / Flash PnC -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>视频演示 - 将帧发送到默认网关</h1>
+        <div>
+          <p>如果一台设备的 IP 地址在远程网络上，则不能将以太网帧直接发送到目的设备。而是将以太网帧发送到默认网关（路由器）的 MAC 地址。 </p>
+          <p>单击图中的“播放”，观看 PC-A 与其默认网关通信的演示。</p>
+          <p>
+            <b>注意</b>：在视频中，从 PC-A 发送到远程网络中的目的地的 IP 数据包具有 PC-A 的源 IP 地址和远程主机的目的 IP 地址。返回的 IP 数据包将具有远程主机的源 IP 地址和 PC-A 的目的 IP 地址。</p>
+          <p>单击<a href="../../files/5.2.1.5%20Video%20Slides%20-%20Sending%20a%20Frame%20to%20the%20Default%20Gateway.pdf" target="_blank">此处</a>从演示文稿中下载视频幻灯片。</p>
+          <p>单击<a href="../../files/5.2.1.5%20Video%20-%20Sending%20a%20Frame%20to%20the%20Default%20Gateway.pdf" target="_blank">此处</a>可阅读本视频的脚本。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" src="media/index.html" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is a video with the title "Sending a Frame to the Default Gateway".</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

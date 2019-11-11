@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.3.3.2 静态路由示例</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.3.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>静态路由示例</h1>
+        <div>
+          <p>图 1 显示了 R1 的 Serial 0/0/0 接口上 IPv4 默认静态路由的配置。请注意，路由的配置在路由表中生成一个“<span class="cmd">S*</span>”条目。“<span class="cmd">S</span>”表示路由源为静态路由，而星号 (<b>*</b>) 将此路由标识为可能的候选默认路由。事实上已将该路由选为默认路由，由这一行信息可以看出：“Gateway of Last Resort is 0.0.0.0 to network 0.0.0.0”。 </p>
+          <p></p>
+          <p>图 2 显示了从 R2 到达 R1 的两个 LAN 的两条静态路由的配置。使用送出接口配置通往 192.168.10.0/24 的路由，而使用下一跳 IPv4 地址配置通往 192.168.11.0/24 的路由。尽管两者均可接受，但它们在运行方式上略有差异。例如，注意它们在路由表中的不同之处。另请注意，由于这些静态路由是指向特定网络的，因此输出中表明没有设置最后选用网关。</p>
+          <p></p>
+          <p>
+            <b>注</b>：下一章将详细讨论静态路由和默认静态路由。</p>
+          <p></p>
+          <p>使用图 3 中的语法检查器配置路由器 R1 上通往 R2 的默认静态路由。</p>
+          <p></p>
+          <p>使用图 4 中的语法检查器配置路由器 R2 上到达 R1 LAN 的静态路由。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示路由器上 IPv4 默认静态路由的配置。该命令为 ip route 0.0.0.0.0.0.0.0.serial 0/0/0。这是将接口配置为路由的退出接口。然后，图中显示 show ip route | begin Gateway 命令的输出。这将显示整个路由表，其中包括静态默认路由。图 2 显示在第二个路由器配置两个静态路由以到达第一个路由器的两个 LAN。第一个静态路由命令为 ip route 192.168.10.0 255.255.255.0 s0/0/0。第二个静态路由命令为 ip route 192.168.11.0 255.255.255.0 209.165.200.225。然后，图中显示 show ip route | begin gateway 命令的输出，这显示整个路由表并包括静态默认路由。图 3 是允许学生使用下一跳 IP 地址在路由器上配置默认静态路由的互动媒体元素。图 4 是允许学生使用下一跳 IP 地址在路由器上配置静态路由的互动媒体元素。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

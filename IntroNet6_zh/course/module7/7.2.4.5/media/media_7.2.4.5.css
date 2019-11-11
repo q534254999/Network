@@ -1,0 +1,38 @@
+/*   load the main media CSS file    */
+@import url('../../../common/styles/media2.css');
+
+.blueColor {
+    color: #46a040;
+}
+
+.orangeColor {
+    color: #F26200;
+}
+#ID_s2_txt11{
+	font-weight: bold;
+}
+
+#ID_router_txt1, #ID_router_txt2 {
+    letter-spacing: -0.66px;
+    line-height: 18px;
+}
+
+#ID_bubble01{
+	color: #fff !important;
+}
+
+@media only screen and (device-width: 768px) {
+#ID_bubble01{
+	color: #fff !important;
+}
+
+.blueColor{
+	margin-left: 10px !important;
+}
+.spacetext{
+	margin-left: 10px !important;
+}
+.orangeColor{
+	margin-left: 8px !important;
+}
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.2.1 静态 NAT</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>静态 NAT</h1>
+        <div>
+          <p>NAT 转换有三种类型： </p>
+          <p>
+            <ul>
+              <li>
+                <b>静态地址转换（静态 NAT）</b>- 本地地址和全局地址之间的一对一地址映射。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>动态地址转换（动态 NAT）</b>- 本地地址和全局地址之间的多对多地址映射。转换在可用的基础上进行：例如，如果有 100 个内部本地地址和 10 个内部全局地址，则任何时候都只能转换 100 个内部本地地址中的 10 个地址。动态 NAT 的这种限制使得它在用于生产网络时没有端口地址转换那么实用。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>端口地址转换 (PAT)</b> - 本地地址和全局地址之间的多对一地址映射。此方法也称为过载（NAT 过载）。例如，如果有 100 个内部本地地址以及 10 个内部全局地址，PAT 使用端口作为附加参数来提供乘数效应，从而支持重复使用 10 个内部全局地址中的任何一个地址，重复次数高达 65,536 次（这取决于通信流是基于 UDP、TCP 还是 ICMP）。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>静态 NAT</b>
+          </p>
+          <p></p>
+          <p>静态 NAT 使用本地地址和全局地址的一对一映射。这些映射由网络管理员进行配置，并保持不变。</p>
+          <p></p>
+          <p>在图中，R2 上配置了 Svr1、PC2 和 PC3 的内部本地地址的静态映射。当这些设备向互联网发送流量时，它们的内部本地地址将转换为已配置的内部全局地址。对外部网络而言，这些设备具有公有 IPv4 地址。</p>
+          <p></p>
+          <p>静态 NAT 对于必须具有可从互联网访问的一致地址的 Web 服务器或设备特别有用。而且对于必须支持授权人员离线访问而不支持互联网上的普通大众访问的设备也很有用。例如，来自 PC4 的网络管理员可以使用 SSH 连接到 Svr1 的内部全局地址（209.165.200.226）。R2 将此内部全局地址转换为内部本地地址，并将管理员的会话连接到 Svr1。 </p>
+          <p></p>
+          <p>为了满足所有同时发生的用户会话需要，静态 NAT 要求有足够的公有地址可用。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图显示包含三台计算机的网络。网络连接到 NAT 路由器，后者连接到互联网。有一个将内部私有地址映射到外部公共地址的表。这演示了静态 NAT。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

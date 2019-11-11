@@ -1,0 +1,73 @@
+﻿<textcomponents><!--Slide 1--><component id='ID_s1_title'>
+	<text><![CDATA[<b>扩展 <font face="_typewriter">traceroute</font> 选项</b>]]></text>
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+		<tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="16"></font></td>
+		</tr>
+		
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+		
+		<tr>
+			<td width="200" bgcolor='#666263'  valign="top"><font color='#FFFFFF' ><b>选项</b></font></td>
+			<td bgcolor='#666263'  valign="top"><font color='#FFFFFF' ><b>说明</b></font></td>
+		</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'><font face="_typewriter" color='#000000'>Protocol [ip]:</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>提示支持的协议。 默认为 IPv4。</font></td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'><font face="_typewriter" color='#000000'>Target IP address:</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>您必须输入一个主机名或 IPv4 地址。 无默认值。</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'><font face="_typewriter" color='#000000'>Source address:</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>用作探测的源地址的路由器接口或 IPv4 地址。 路由器通常选用出站接口的 IPv4 地址。</font></td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'><font face="_typewriter" color='#000000'>Numeric display [n]:</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>默认同时显示符号和数字；但是您可以抑制符号显示。</font></td>
+	</tr>	
+	<tr>
+		<td bgcolor='#E9E7E8'><font face="_typewriter" color='#000000'>Timeout in seconds [3]:</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>等待向探测包做出响应的秒数。 默认值为 3 秒。</font></td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'><font face="_typewriter" color='#000000'>Probe count [3]:</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>在每个 TTL 级别要发送的探测次数。 默认计数为 3。</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'><font face="_typewriter" color='#000000'>Minimum Time to Live [1]:</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>第一次探测的 TTL 值。 默认值为 1，但也可以设置为更高的值来抑制已知跃点的显示。</font></td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'><font face="_typewriter" color='#000000'>Maximum Time to Live [30]:</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>可以使用的最大 TTL 值。 默认值为 30。 当达到目的地或达到该值时，traceroute 命令将终止。</font></td>
+	</tr>
+	
+	<tr>
+		<td bgcolor='#E9E7E8'><font face="_typewriter" color='#000000'>Port Number [33434]:</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>UDP 探测消息使用的目的端口。 默认值为 33434。</font></td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'><font face="_typewriter" color='#000000'>Loose, Strict, Record, Timestamp, Verbose [none]:</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>IP 报头选项。 您可以指定任意组合。 traceroute 命令发出有关所需字段的提示。 注意，traceroute 命令会在每次探测中放置所请求的选项；但不能保证所有路由器（或终端节点）都会处理这些选项。</font></td>
+	</tr>
+
+</table>]]></text>
+</component><!--End Slide 1--><!--Slide 2--><component id='ID_s2_title'>
+	<text><![CDATA[<b>Windows <font face="_typewriter">tracert</font> 选项</b>]]></text>
+</component>
+
+
+
+</textcomponents>

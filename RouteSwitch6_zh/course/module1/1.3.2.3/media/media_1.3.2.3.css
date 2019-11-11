@@ -1,0 +1,10 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+
+.orange1{color:#f68026 !important;}
+.yellow1{color:#FFE773 !important;}
+.green1{color:#3F863A !important;}

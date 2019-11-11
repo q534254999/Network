@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.4.3 调试 DHCPv4</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>调试 DHCPv4</h1>
+        <div>
+          <p>在配置为 DHCPv4 服务器的路由器上，如果路由器不接收来自客户端的请求，则 DHCPv4 过程将失败。作为故障排除任务，请验证路由器是否正在接收来自客户端的 DHCPv4 请求。此故障排除步骤涉及配置调试输出的 ACL。</p>
+          <p></p>
+          <p>
+            <b>注</b>：虽然您可以复制图中显示的扩展 ACL 并使用它来过滤 DHCP 消息，但是扩展 ACL 的配置超出了本课程的讨论范围。</p>
+          <p></p>
+          <p>图中显示的扩展 ACL 只允许包含 UDP 目标端口 67 或 68 的数据包。以下是发送 DHCPv4 消息时，DHCPv4 客户端和服务器通常使用的端口。将扩展 ACL 和 <b>debug ip packet</b> 命令一同使用以仅显示 DHCPv4 消息。</p>
+          <p></p>
+          <p>图中的输出显示路由器正在接收来自客户端的 DHCP 请求。源 IP 地址为 0.0.0.0，因为客户端还不具有 IP 地址。因为来自客户端的 DHCP 发现消息是作为广播发送的，所以目的地为 255.255.255.255。该输出仅显示数据包摘要信息，而不是 DHCPv4 消息本身。然而，路由器的确收到了广播数据包，其源 IP 地址、目标 IP 地址、源 UDP 端口和目标 UDP 端口对于 DHCPv4 来说是正确的。完全调试输出显示了 DHCPv4 服务器和客户端之间 DHCPv4 通信中的所有数据包。</p>
+          <p></p>
+          <p>用来排除 DHCPv4 运行故障的另一个有用命令是 <b>debug ip dhcp server events</b> 命令。此命令报告服务器事件，例如地址分配和数据库更新。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示的扩展 ACL 只允许包含 UDP 目标端口 67 或 68 的数据包。第一个命令是 access-list 100 permit udp any eq67。ACL 的第二行是 access-list 100 permit udp any eq68。图中接着运行命令 debug ip packet 100。这用于查看与 ACL100 也就是配置为允许 DHCP 的 ACL 匹配的练习。图中显示路由器从源 IP255.255.255.255 接收两个广播数据包，也就是 DHCP 请求。图中的最后一个命令是 debug ip dhcp server events。此命令将报告服务器事件，在图中将显示服务器上的 DHCP 活动。此练习包括将一个 IP 地址返回到池中，并且分配一个 IP 地址。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

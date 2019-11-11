@@ -1,0 +1,55 @@
+<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[IPv6 本地链路地址]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[接口 ID]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[64 位]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt03">
+        <text>
+            <![CDATA[EUI-64 流程]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt04">
+        <text>
+            <![CDATA[随机生成的数字]]>
+        </text>
+    </component>
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[动态创建的本地链路地址]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[<b>EUI-64 生成的接口 ID</b>]]></text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[<b>随机生成的 64 位接口 ID</b>]]></text>
+    </component>
+    <component id="ID_s3_title">
+        <text>
+            <![CDATA[路由器的 EUI-64 生成的本地链路地址]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt01">
+        <text>
+            <![CDATA[使用 EUI-64 的本地链路地址]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt02">
+        <text>
+            <![CDATA[&lt;省略部分输出&gt;]]>
+        </text>
+    </component>
+</textcomponents>

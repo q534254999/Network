@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.1.1 ICMPv4 和 ICMPv6</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>ICMPv4 和 ICMPv6</h1>
+        <div>
+          <p>虽然 IP 并非尽力传输协议，TCP/IP 协议簇却会在发生某些错误时提供要发送的消息。这些消息使用 ICMP 服务发送。其用途是就特定情况下处理 IP 数据包的相关问题提供反馈，而并非是使 IP 可靠。ICMP 消息并非必需的，而且在网络内通常出于安全原因而被禁止。</p>
+          <p>ICMP 可同时用于 IPv4 和 IPv6。ICMPv4 是 IPv4 的消息协议。ICMPv6 为 IPv6 提供相同的服务，此外，还包括其他功能。在本课程中，涉及 ICMPv4 和 ICMPv6 时均会使用术语 ICMP。</p>
+          <p>ICMP 消息的类型及其发送原因非常多。我们将介绍其中比较常见的一些消息。</p>
+          <p>ICMPv4 和 ICMPv6 通用的 ICMP 消息包括：</p>
+          <p>
+            <ul>
+              <li>主机确认</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>目标或服务不可达</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>超时</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>路由重定向</li>
+            </ul>
+          </p>
+          <p>
+            <b>主机确认</b>
+          </p>
+          <p>ICMP 回应消息可用于确定主机是否运行正常。本地主机向一台主机发送 ICMP 回应请求。如果主机可用，目的主机会回应以响应应答。在图中，请单击“播放”按钮观看 ICMP 响应请求/响应应答动画。如此使用 ICMP 回应消息是 ping 实用程序的基础。 </p>
+          <p>
+            <b>目标或服务不可达</b>
+          </p>
+          <p>当主机或网关收到无法传送的数据包时，它会使用 ICMP 目的地不可达消息通知源主机，目标或服务无法到达。消息包括指示数据包为何无法传送的代码。</p>
+          <p>ICMPv4 的目的地不可达代码示例有：</p>
+          <p>
+            <ul>
+              <li>0 - 网络不可达。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>1 - 主机不可达。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2 - 协议不可达。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>3 - 端口不可达。</li>
+            </ul>
+          </p>
+          <p>
+            <b>注意</b>：ICMPv6 的目的地不可达消息代码与此类似，但是也稍有不同。</p>
+          <p>
+            <b>超时</b>
+          </p>
+          <p>路由器使用 ICMPv4 超时消息表明，因为数据包的生存时间 (TTL) 字段递减到 0 而不能转发数据包。如果路由器接收数据包并且将 IPv4 数据包的 TTL 字段的值递减为零，则它会丢弃数据包并向源主机发送超时消息。</p>
+          <p>如果路由器因数据包过期而无法转发 IPv6 数据包，ICMPv6 也会发送超时消息。IPv6 没有 TTL 字段；它使用跳数限制字段来确定数据包是否过期。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is an animation that shows a computer with an IPv4 address of 192.168.10.1 sending an ICMP echo request to a computer with an IPv4 address of 192.168.30.1.  The message travels from the sending computer through a switch to a router.  That router sends the request to another router, then to a switch, and finally to the destination computer.  The receiving computer sends back an ICMP echo reply.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

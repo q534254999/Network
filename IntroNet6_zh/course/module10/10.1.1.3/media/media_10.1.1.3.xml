@@ -1,0 +1,166 @@
+<textcomponents>
+    <component id="ID_s1_text01">
+        <text>
+            <![CDATA[<b>应用层</b>]]></text>
+    </component>
+    <component id="ID_s1_text02">
+        <text>
+            <![CDATA[域名系统]]>
+        </text>
+    </component>
+    <component id="ID_s1_text03">
+        <text>
+            <![CDATA[主机配置]]>
+        </text>
+    </component>
+    <component id="ID_s1_text04">
+        <text>
+            <![CDATA[电子邮件]]>
+        </text>
+    </component>
+    <component id="ID_s1_text05">
+        <text>
+            <![CDATA[文件传输]]>
+        </text>
+    </component>
+    <component id="ID_s1_text06">
+        <text>
+            <![CDATA[Web]]>
+        </text>
+    </component>
+    <component id="ID_s1_text07REMOVED">
+        <text>
+            <![CDATA[单击每个应用协议了解详细信息。]]>
+        </text>
+    </component>
+    <component id="ID_btn01">
+        <text>
+            <![CDATA[DNS]]></text>
+    </component>
+    <component id="ID_btn02">
+        <text>
+            <![CDATA[BOOTP]]></text>
+    </component>
+    <component id="ID_btn03">
+        <text>
+            <![CDATA[DHCP]]></text>
+    </component>
+    <component id="ID_btn04">
+        <text>
+            <![CDATA[SMTP]]></text>
+    </component>
+    <component id="ID_btn05">
+        <text>
+            <![CDATA[POP]]></text>
+    </component>
+    <component id="ID_btn06">
+        <text>
+            <![CDATA[IMAP]]></text>
+    </component>
+    <component id="ID_btn07">
+        <text>
+            <![CDATA[FTP]]></text>
+    </component>
+    <component id="ID_btn08">
+        <text>
+            <![CDATA[TFTP]]></text>
+    </component>
+    <component id="ID_btn09">
+        <text>
+            <![CDATA[HTTP]]></text>
+    </component>
+    <component id="ID_btn10">
+        <text>
+            <![CDATA[<b>HTTPS</b>]]></text>
+    </component>
+    <component id="ID_titleTxt01">
+        <text>
+            <![CDATA[域名系统（或服务） - TCP、UDP 53]]></text>
+    </component>
+    <component id="ID_bodyTxt01">
+        <text>
+            <![CDATA[将域名（例如 cisco.com）转换为 IP 地址]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt02">
+        <text>
+            <![CDATA[引导程序协议 - UDP 客户端 68，服务器 67]]></text>
+    </component>
+    <component id="ID_bodyTxt02">
+        <text>
+            <![CDATA[<textformat blockindent="-14"><ul><li>允许无盘工作站探查其 IP 地址、网络中 BOOTP 服务器的 IP 地址以及要加载到内存中以引导机器的文件</li><li>BOOTP 正在被 DHCP 所取代</li></ul></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt03">
+        <text>
+            <![CDATA[动态主机配置协议 - UDP 客户端 68，服务器 67]]></text>
+    </component>
+    <component id="ID_bodyTxt03">
+        <text>
+            <![CDATA[<textformat blockindent="-14"><ul><li>启动时向客户端工作站动态分配 IP 地址</li><li>允许重复使用不再需要的地址</li></ul>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt04">
+        <text>
+            <![CDATA[简单邮件传输协议 - TCP 25]]></text>
+    </component>
+    <component id="ID_bodyTxt04">
+        <text>
+            <![CDATA[<textformat blockindent="-14"><ul><li>允许客户端向邮件服务器发送电子邮件</li><li>允许服务器向其他服务器发送电子邮件</li></ul>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt05">
+        <text>
+            <![CDATA[邮局协议 - TCP 110]]></text>
+    </component>
+    <component id="ID_bodyTxt05">
+        <text>
+            <![CDATA[<textformat blockindent="-14"><ul><li>允许客户端从邮件服务器检索电子邮件</li><li>将电子邮件从邮件服务器下载到桌面</li></ul>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt06">
+        <text>
+            <![CDATA[互联网消息访问协议 - TCP 143]]></text>
+    </component>
+    <component id="ID_bodyTxt06">
+        <text>
+            <![CDATA[<textformat blockindent="-14"><ul><li>允许客户端访问存储在邮件服务器中的电子邮件</li><li>在服务器上维护电子邮件</li></ul>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt07">
+        <text>
+            <![CDATA[文件传输协议 - TCP 20-21]]></text>
+    </component>
+    <component id="ID_bodyTxt07">
+        <text>
+            <![CDATA[<textformat blockindent="-14"><ul><li>设置规则，使得一台主机上的用户能够通过网络访问另一台主机或向其传输文件</li><li>一种可靠、面向连接且进行确认的文件传输协议</li></ul>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt08">
+        <text>
+            <![CDATA[简单文件传输协议 - UDP 69]]></text>
+    </component>
+    <component id="ID_bodyTxt08">
+        <text>
+            <![CDATA[<textformat blockindent="-14"><ul><li>一种简单、无连接的文件传输协议</li><li>一种尽力而为、无确认的文件传输协议</li><li>比 FTP 的开销少</li></ul>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt09">
+        <text>
+            <![CDATA[超文本传输协议 - TCP 80、8080]]></text>
+    </component>
+    <component id="ID_bodyTxt09">
+        <text>
+            <![CDATA[有关在万维网上交换文本、图形图像、音频、视频以及其他多媒体文件的一组规则集]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt10">
+        <text>
+            <![CDATA[安全超文本传输协议 - TCP、UDP 443]]></text>
+    </component>
+    <component id="ID_bodyTxt10">
+        <text>
+            <![CDATA[<li>浏览器使用加密技术保护 HTTP 通信</li><li>验证您的浏览器连接的网站</li>]]>
+        </text>
+    </component>
+</textcomponents>

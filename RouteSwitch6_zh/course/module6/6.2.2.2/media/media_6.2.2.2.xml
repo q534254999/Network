@@ -1,0 +1,59 @@
+<textcomponents><!--SLIDE 1--><component id="ID_s1_title">
+<text><![CDATA[<b>在 TRUNK 链路上重置配置的值</b>]]></text>
+</component>
+
+<component id="ID_table01">
+<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td colspan='2' bgcolor='#98D3D1' class="mtitle"><font size='11' color='#1C3635'><b>思科交换机 IOS 命令</b></font></td>
+</tr>
+
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#eff8f7' width="100" valign="top"><font color='#393536'>进入全局配置模式。</font></td>
+<td bgcolor='#eff8f7' valign="top"><font face="_typewriter" color='#393536'>S1# <b>configure terminal</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#ffffff' valign="top"><font color='#393536'>进入接口配置模式。</font></td>
+<td bgcolor='#ffffff' valign="top"><font face="_typewriter" color='#393536'>S1(config)# <b>interface </b><i>interface_id</i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#eff8f7' valign="top"><font color='#393536'>将 TRUNK 设置为允许所有 VLAN。</font></td>
+<td  bgcolor='#eff8f7' valign="top"><font face="_typewriter" color='#393536'>S1(config-if)# <b>no switchport trunk allowed vlan</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#ffffff' valign="top"><font color='#393536'>将原生 VLAN 重置为默认值。</font></td>
+<td  bgcolor='#ffffff' valign="top"><font face="_typewriter" color='#393536'>S1(config-if)# <b>no switchport trunk native vlan</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#eff8f7' valign="top"><font color='#393536'>返回到特权 EXEC 模式。</font></td>
+<td  bgcolor='#eff8f7' valign="top"><font face="_typewriter" color='#393536'>S1(config-if)# <b>end</b></font></td>
+</tr>
+
+</table>]]></text> 
+</component><!--SLIDE 2--><component id="ID_s2_title">
+<text><![CDATA[<b>重置 TRUNK 链路示例</b>]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+</component><!--SLIDE 3--><component id="ID_s3_title">
+<text><![CDATA[<b>将端口返回到接入模式</b>]]></text>
+</component>
+
+<component id="ID_s3_txt02">
+<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+</component>
+
+</textcomponents>

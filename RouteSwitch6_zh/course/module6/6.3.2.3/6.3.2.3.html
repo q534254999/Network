@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.2.3 配置传统 VLAN 间路由：路由器接口配置</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置传统 VLAN 间路由：路由器接口配置</h1>
+        <div>
+          <p>此时，配置路由器以执行 VLAN 间路由。</p>
+          <p></p>
+          <p>路由器接口配置的操作类似于在交换机上配置 VLAN 接口。从全局配置模式切换到接口配置模式以配置特定接口。 </p>
+          <p></p>
+          <p>如图 1 所示，在接口配置模式下使用<span class="cmd"><b></b></span><b>ip address </b><i>ip_address subnet_mask</i><span class="cmd"><i></i></span>命令配置每个接口的 IPv4 地址。 </p>
+          <p></p>
+          <p>在本示例中，使用<span class="cmd"><b></b></span><b>ip address 172.17.10.1 255.255.255.0 </b>命令将接口 G0/0 的 IPv4 地址配置为 172.17.10.1。 </p>
+          <p></p>
+          <p>默认情况下禁用路由器接口，使用前必须使用<span class="cmd"><b></b></span><b>no shutdown</b><span class="cmd"><b></b></span>命令启用。在发出<span class="cmd"><b></b></span><b>no shutdown</b><span class="cmd"><b></b></span>接口配置模式命令后，会显示一条通知，指示接口状态已更改为打开。这说明接口现在已启用。</p>
+          <p></p>
+          <p>对所有路由器接口重复此步骤。需分配给各路由器接口实现路由的唯一子网。在本示例中，另一个路由器接口 G0/1 配置了 IPv4 地址 172.17.30.1，其子网与接口 G0/0 的子网不同。</p>
+          <p></p>
+          <p>为物理接口分配 IPv4 地址后，该接口即处于启用状态，路由器可执行 VLAN 间路由。</p>
+          <p></p>
+          <p>使用<span class="cmd"><b></b></span><b>show ip route</b><span class="cmd"><b></b></span>命令从端口中删除该 VLAN。 </p>
+          <p></p>
+          <p>在图 2 中，路由表显示了两个路由。一条通往连接到本地接口 G0/0 的子网 172.17.10.0。另一条通往连接到本地接口 G0/1 的子网 172.17.30.0。路由器通过路由表确定所接收流量的发送位置。例如，如果在接口 G0/0 上接收到发往子网 172.17.30.0 的数据包，路由器将判断出，它需要将该数据包从接口 G0/1 发送到子网 172.17.30.0 中的主机。</p>
+          <p></p>
+          <p>请注意 VLAN 的每个路由器条目左侧的字母<span class="cmd"><b></b></span><b>C</b>。该字母表示与接口相连的本地路由，相应的接口同时也显示在路由条目中。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 展示了为传统 VLAN 间路由配置路由器上的两个物理接口所需的命令。图 2 显示具有参与传统 VLAN 间路由配置的两个物理接口的路由器的 IP 路由表。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

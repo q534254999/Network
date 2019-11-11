@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.1.2 创建 VLAN</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>创建 VLAN</h1>
+        <div>
+          <p>当配置普通范围的 VLAN 时，配置详细信息存储在交换机闪存中名为 vlan.dat 的文件中。闪存是永久性的，不需要使用 <b>copy running-config startup-config </b>命令。但是，由于在创建 VLAN 的同时通常也在思科交换机上配置了其他详细信息，比较好的做法是将运行配置更改保存到启动配置。</p>
+          <p></p>
+          <p>图 1 显示了用于将 VLAN 添加到交换机并为其命名的思科 IOS 命令语法。在交换机配置中，最好为每个 VLAN 命名。</p>
+          <p></p>
+          <p>图 2 显示了如何在交换机 S1 上配置学生 VLAN (VLAN 20)。在拓扑示例中，学生计算机 (PC2) 没有与 VLAN 关联，但是它有 IP 地址 172.17.20.22。</p>
+          <p></p>
+          <p>使用图 3 中的语法检查程序创建一个 VLAN，并使用 <b>show vlan brief </b>命令显示 vlan.dat 文件的内容。 </p>
+          <p></p>
+          <p>您不仅可以输入单个的 VLAN ID，还可以使用 <b>vlan</b><i> vlan-id </i>命令，输入以逗号分隔的一系列 VLAN ID 或以连字符分隔的 VLAN ID 范围。例如，使用以下命令创建 VLAN 100、102、105、106 和 107：</p>
+          <p></p>
+          <p></p>
+          <p>
+            <span class="cmd">S1(config)#</span>
+            <span class="cmd">
+              <b> vlan 100,102,105-107</b>
+            </span>
+          </p>
+          <p></p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示带用于创建 VLAN 编号和名称的思科 IOS 命令的表。图 2 显示一个小型 LAN 和t用于配置 VLAN 20 并将其命名为“student”的语法。图 3 是让学生练习创建 VlAN 的互动练习。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

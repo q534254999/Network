@@ -1,0 +1,19 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>语音 VLAN</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+   <text><![CDATA[配置支持语音流量的交换机端口：<textformat blockindent="-14"><li>端口发送 CDP 帧以提供 IP 电话使用的信息</li><li>端口转发与 VLAN 150 相关的帧</li></textformat>]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+   <text><![CDATA[<b>学生<br/>VLAN 20 - 172.17.20.25</b>]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+   <text><![CDATA[配置为支持语音流量的交换机：<textformat blockindent="-14"><li>为语音 VLAN 使用 VLAN 150</li><li>优先处理语音流量</li></textformat>]]></text>
+</component>
+
+</textcomponents>

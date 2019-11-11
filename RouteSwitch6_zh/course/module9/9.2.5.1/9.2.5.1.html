@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.5.1 用于 IPv6 的 NAT？</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.5.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>用于 IPv6 的 NAT？</h1>
+        <div>
+          <p>自 20 世纪 90 年代早期开始，有关 IPv4 地址空间消耗的问题就已成为 IETF 首要关注的问题。RFC 1918 私有 IPv4 地址和 NAT 的结合有力地减缓了地址消耗的速度。但是 NAT 有很大的弊端，在 2011 年 1 月，IANA 将它的最后一个 IPv4 地址分配给了 RIR。 </p>
+          <p></p>
+          <p>用于 IPv4 的 NAT 的一个优点是它无意中对公有互联网隐藏了私有网络。NAT 的优势在于它通过拒绝公有互联网上的计算机访问内部主机，从而提供了一定级别的安全性。但是，不应将其视为适当网络安全设置（例如防火墙提供的安全设置）的替代物。</p>
+          <p></p>
+          <p>在 RFC 5902 中，互联网基础架构委员会 (IAB) 对于 IPv6 网络地址转换包含以下引述：</p>
+          <p></p>
+          <p>“通常认为 NAT 进程可以提供一定级别的保护，因为外部主机无法直接与 NAT 后面的主机发起通信。然而，不应将 NAT 进程与防火墙相混淆。如 RFC4864 中的第 2.2 部分所述，转换行为本身并不提供安全性。有状态过滤功能可以提供相同级别的保护，而无需具备转换功能”。</p>
+          <p></p>
+          <p>具有 128 位地址的 IPv6 可以提供 340 涧（10 的 36 次方）个地址。因此，不会出现地址空间耗尽问题。IPv6 的开发使用于 IPv4 的 NAT 以及公有和私有 IPv4 地址之间的转换不再必要。不过，IPv6 确实会实施一种形式的 NAT。IPv6 同时包括其自身的 IPv6 私有地址空间和 NAT，其实施与在 IPv4 中的实施方式不同。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了标记为互联网的云。该云使用不同类别的私有编址连接到三个不同的私有网络。一个使用 A 类私有网络，另一个使用 B 类私有网络，第三个使用 C 类私有网络。所有私有网络都在它们的边界路由器上使用 NAT。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

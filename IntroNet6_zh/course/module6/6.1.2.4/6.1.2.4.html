@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.2.4 IP - 尽力交付</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IP - 尽力交付</h1>
+        <div>
+          <p>图中显示了 IP 协议不可靠或尽力交付的特征。IP 协议不保证交付的所有数据包都能收到。 </p>
+          <p>不可靠表示 IP 不具备管理和恢复未送达数据包或已损坏数据包的能力。这是因为，在根据传输位置信息传输 IP 数据包时，数据包不包含可以经过处理以通知发送方信息交付是否成功的消息。传送到时，数据包可能已经损坏或顺序错乱，或者根本就没有传送成功。如果出错，IP 无法重新传输数据包。 </p>
+          <p>如果数据包顺序错乱或丢失，则使用数据或上层服务的应用程序必须解决这些问题。这让 IP 可以非常有效地发挥作用。在 TCP/IP 协议簇中，传输层负责保证可靠性。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows 2 computers connected to a cloud.  The sender is placing 3 packets on the wire, however, only 2 packets arrive at the destination.  This demonstrates that some packets may get lost in the process.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

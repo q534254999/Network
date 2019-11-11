@@ -1,0 +1,7 @@
+﻿<textcomponents><!-- slide 1 --><component id="ID_s1_title">
+		<text><![CDATA[<b>将时间戳添加到系统日志消息</b>]]></text>
+	</component>
+	
+	<component id='ID_s1_txt01'>
+		<text><![CDATA[ ]]></text>
+	</component><!-- end slide 1 --></textcomponents>

@@ -1,0 +1,41 @@
+<textcomponents>
+	<component id="ID_caption01">
+		<text><![CDATA[邮件分发代理进程控制服务器与客户端之间的电子邮件分发。]]></text>
+	</component>
+	<component id="ID_title">
+		<text><![CDATA[<b>POP3</b>]]></text>
+	</component>
+	<component id="ID_txt09REMOVED">
+		<text><![CDATA[<b>邮件用户代理<br>(MUA)</b>]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[收件人]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[SMTP/POP3<br>服务器]]></text>
+	</component>
+	<component id="ID_txt05REMOVED">
+		<text><![CDATA[<b>邮件分发代理 (MDA)</b>]]></text>
+	</component>
+	<component id="ID_txt06REMOVED">
+		<text><![CDATA[<b>邮件传送代理<br>(MTA)</b>]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[SMTP/POP3<br>服务器]]></text>
+	</component>
+	<component id="ID_txt01REMOVED">
+		<text><![CDATA[<b>邮件用户代理<br>(MUA)</b>]]></text>
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[发件人]]></text>
+	</component>
+	<component id="ID_txt12">
+		<text><![CDATA[<b>发送电子邮件</b>]]></text>
+	</component>
+	<component id="ID_bubble01">
+		<text><![CDATA[<p class="ID_bubble01">我没有列出此收件人。<br/>我已将电子邮件转发到另一个服务器。</p>]]></text>
+	</component>
+	<component id="ID_bubble02">
+		<text><![CDATA[<p class="ID_bubble02 left">我列出了 recipient@domain.com。<br/>我会将此电子邮件投到此收件人的信箱。</p>]]></text>
+	</component>
+</textcomponents>

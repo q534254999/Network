@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.2.4 汇总静态路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>汇总静态路由</h1>
+        <div>
+          <p>要减少路由表条目的数量，多条静态路由可以汇总成一条静态路由，条件如下：</p>
+          <p>
+            <ul>
+              <li>目标网络是连续的，并且可以汇总成一个网络地址。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>多条静态路由都使用相同的送出接口或下一跳 IP 地址。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>在图中，R1 将需要四个不同的静态路由到达 172.20.0.0/16 到 172.23.0.0/16 网络。相反，可以配置一条汇总静态路由，并且仍然提供到这些网络的连接。</p>
+          <p></p>
+          <p>
+            <b>注</b>：有关计算和配置汇总静态路由的更多信息，请参阅章节附录。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示路由器 (R1) 连接到另一个连接了 4 个网络的路由器。R1 可以使用单个汇总路由指向连接到另一个路由器的网络。汇总路由为静态路由。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

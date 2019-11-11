@@ -1,0 +1,18 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>端口安全</b>]]></text>
+</component>
+<component id="ID_s2_title">
+  <text><![CDATA[<b>粘性安全</b>]]></text> 
+  </component>
+   <component id="ID_Body_title01">
+  <text><![CDATA[<b>在所有交换机端口上实施安全性，以便：</b>]]></text> 
+  </component>
+<component id="ID_Body_txt01">
+		<text><![CDATA[<textformat blockindent='-14' ><li>指定端口上允许的单个 MAC 地址或有效 MAC 地址组。</li><li>指定在检测到未授权 MAC 地址时自动关闭端口。</li></textformat>]]></text>
+	</component>	
+ 
+  <component id="ID_Body_txt02">
+ <text><![CDATA[<textformat blockindent='-14' ><li>转换为存储在运行配置中的粘性安全 MAC 地址，它是动态获取的。</li><li>如果禁用端口安全，则从运行配置删除。</li><li>当交换机重新启动（重新加电）时会丢失。</li><li>在启动配置文件中保存的粘性安全 MAC 地址是永久保存的地址 <span class="align">在交换机重新启动后仍保留。</span></li><li>禁用粘性获取会将粘性 MAC 地址转换为动态安全地址，并从运行配置删除它们。</li></textformat>]]></text>
+  </component>
+</textcomponents>

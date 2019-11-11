@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.3.3 介质访问控制方法</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>介质访问控制方法</h1>
+        <div>
+          <p>在某些网络拓扑中，多个节点共享一个公共介质。这些称为多路访问网络。以太网 LAN 和 WLAN 都是多路访问网络的示例。在某一时刻，可能有多个设备尝试通过同一网络介质发送和接收数据。</p>
+          <p>某些多路访问网络需要使用规则来管理设备共享物理介质的方式。对于共享介质，有两种基本的访问控制方法： </p>
+          <p>
+            <ul>
+              <li>
+                <b>争用访问</b> - 在半双工模式下运行的所有节点争用介质，但一次只有一台设备可以发送。但是，当多台设备同时传输时，会使用一个进程。使用集线器的以太网 LAN 和 WLAN 都是这种访问控制类型的示例。图 1 显示争用访问。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>受控访问</b> - 每个节点都有各自使用介质的时间。这种确定性的网络类型效率很低，因为设备必须等到轮到自己才能访问介质。传统令牌环 LAN 就是这种访问控制类型的示例。图 2 显示受控访问。</li>
+            </ul>
+          </p>
+          <p>默认情况下，以太网交换机在全双工模式下运行。这允许交换机和全双工连接的设备同时发送和接收。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows three computers connected to the same media.  Each has a call out displaying "I try to send when I am ready". Figure 2 shows four computers connected to a ring topology. One says "My turn to send". All the others say “Not my turn yet".</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

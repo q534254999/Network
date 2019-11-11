@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.3.3 IPv6 单播地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv6 单播地址</h1>
+        <div>
+          <p>IPv6 单播地址用于唯一标识支持 IPv6 的设备上的接口。发送到单播地址的数据包由分配有该地址的接口接收。与 IPv4 类似，源 IPv6 地址必须是单播地址。目的 IPv6 地址可以是单播地址也可以是组播地址。</p>
+          <p>IPv6 单播地址的最常见类型是全局单播地址 (GUA) 和本地链路单播地址。</p>
+          <p>
+            <b>全局单播</b>
+          </p>
+          <p>全局单播地址类似于公有 IPv4 地址。这些地址具有全局唯一性，是 Internet 可路由的地址。全局单播地址可以静态配置也可动态分配。 </p>
+          <p>
+            <b>本地链路</b>
+          </p>
+          <p>本地链路地址用于与同一链路中的其他设备通信。在 IPv6 中，术语链路是指子网。本地链路地址仅限于单个链路。它们的唯一性仅在该链路上得到保证，因为它们在该链路之外不具有可路由性。换句话说，路由器不会转发具有本地链路源地址或目的地址的数据包。 </p>
+          <p>
+            <b>唯一本地</b>
+          </p>
+          <p>单播地址的另一种类型是唯一本地单播地址。IPv6 唯一本地地址与 IPv4 的 RFC 1918 私有地址具有相似之处，但是也有着重大差异。唯一本地地址用于一个站点内或数量有限的站点之间的本地编址。这些地址在全局 IPv6 上不可路由，不应转换为全局 IPv6 地址。唯一本地地址的范围是从 FC00::/7 到 FDFF::/7。 </p>
+          <p>使用 IPv4，私有地址与 NAT/PAT 一起为私有到公有地址提供多对一转换。这样做是由于 IPv4 地址空间的有限性。许多站点也使用 RFC 1918 地址的私有性质来帮助保护或隐藏其网络，使其免遭潜在的安全风险。但是，这绝不是这些技术的既定用途，IETF 始终推荐各站点在面向 Internet 的路由器上采取妥善的安全预防措施。唯一本地地址可用于从来不需要访问其他网络或具有其他网络访问权的设备。 </p>
+          
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows the six types of IPv6 unicast addresses including: Global Unicast; link-local; the loopback addreress, which is ::1/128; the unspecified address, which is ::/128; unique local with a range from FC00::/7 to FDFF::/7; and embedded IPv4.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

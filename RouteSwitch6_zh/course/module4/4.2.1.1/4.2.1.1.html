@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.1.1 作为网络与通信基本概念的交换</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>作为网络与通信基本概念的交换</h1>
+        <div>
+          <p>交换和转发帧的概念在网络和电信中是通用的。各类交换机将会在 LAN、WAN 和公共交换电话网 (PSTN) 中使用。交换的基本概念是指设备根据两个标准进行决策：</p>
+          <p>
+            <ul>
+              <li>入口端口 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>目标地址</li>
+            </ul>
+          </p>
+          <p>关于交换机如何转发流量的决策与该流量的传输有关。术语“入口”用于描述帧由何处进入端口上的设备。术语“出口”用于描述帧从特定端口离开设备。 </p>
+          <p></p>
+          <p></p>
+          <p>LAN 交换机会维护一个表，用它来确定通过交换机转发流量的方式。点击图中的“播放”观看有关交换过程的动画。在本例中：  </p>
+          <p>
+            <ul>
+              <li>如果消息进入交换机端口 1 且目标地址为 Ea，则交换机将流量转发到端口 4。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>如果消息进入交换机端口 5 而且目标地址为 EE，则交换机会将流量从端口 1 转发出去。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>如果消息进入交换机端口 3 而且目标地址为 AB，则交换机会将流量从端口 6 转发出去。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>LAN 交换机唯一智能化的地方是它能够使用自己的表根据入口端口和消息的目标地址来转发流量。使用 LAN 交换机时，只有一个主交换表用于描述地址和端口之间的严格对应；因此，已给定目标地址的消息无论从哪个入口端口进入，始终都会从同一出口端口退出。 </p>
+          <p></p>
+          <p>第 2 层以太网交换机根据帧的目标 MAC 地址转发以太网帧。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">该图是展示 LAN 交换机如何根据传入帧的目标地址作出转发决策的动画。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

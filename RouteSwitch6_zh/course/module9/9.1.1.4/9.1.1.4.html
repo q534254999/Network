@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.1.4 NAT 术语（续）</title>
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>NAT 术语（续）</h1>
+        <div>
+          <p>将术语“内部和外部”与术语“本地和全局”组合起来表示特定地址.图中，已将路由器 R2 配置为提供 NAT。它具有可以为内部主机分配的公有地址池。 </p>
+          <p>
+            <ul>
+              <li>
+                <b>内部本地地址</b> - 从网络内部看到的源地址。图中，IPv4 地址 192.168.10.10 分配给了 PC1。这是 PC1 的内部本地地址。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>内部全局地址</b> - 从外部网络看到的源地址。图中，当流量从 PC1 发送到位于 209.165.201.1 的 Web 服务器时，R2 会将内部本地地址转换为内部全局地址。在本例中，R2 将 IPv4 源地址从 192.168.10.10 转变成 209.165.200.226。使用 NAT 术语就是，内部本地地址 192.168.10.10 将转换为内部全局地址 209.165.200.226。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>外部全局地址</b> - 从外部网络看到的目标地址。它是分配给互联网上的主机的全局可路由 IPv4 地址。例如，Web 服务器的可达 IPv4 地址为 209.165.201.1。大多数情况下，外部本地地址和外部全局地址是相同的。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>外部本地地址</b> - 从网络内部看到的目标地址。在本示例中，PC1 将流量发送到 IPv4 地址为 209.165.201.1 的 Web 服务器上。虽然不常见，但该地址也可能与目标设备的全局可路由地址不同。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>图中显示了如何为从内部 PC 通过启用 NAT 的路由器发送到外部 Web 服务器的流量分配地址。还显示了如何对返回的流量进行初步的地址分配和转换。</p>
+          <p></p>
+          <p>
+            <b>注</b>：外部本地地址的使用超出了本课程的范围。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了路由器 2，左侧是连接 PC 的内部网络，右侧是连接 ISP 的外部网络。其中列出了 PC 和 Web 服务器的内部本地地址、外部本地地址、内部全局地址和外部全局地址。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>删除 VLAN 分配</b>]]></text>
+	</component>
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>示例配置</b>]]></text>
+	</component>
+	<component id="ID_s3_title">
+		<text><![CDATA[<b>验证</b>]]></text>
+	</component>
+	<component id="ID_s3_txt01">
+		<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+	</component>
+	<component id="ID_s4_title">
+		<text><![CDATA[<b>将端口分配到 VLAN</b>]]></text>
+	</component>
+	<component id="ID_s5_title">
+		<text><![CDATA[<b>更改 VLAN 端口成员</b>]]></text>
+	</component>
+	<component id="ID_table">
+		<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+		<tr>
+			<td colspan="2" bgcolor='#98D3D1' valign="top"><font color='#1C3635'><b>思科交换机 IOS 命令</b></font></td>
+		</tr>
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#0E6360' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+		</tr>
+		
+		<tr>		
+			<td  bgcolor="#EFF8F7" valign="top"><font color='#393536'>进入全局配置模式。</font></td>
+			<td  bgcolor="#EFF8F7" valign="top"><font face="_typewriter" color='#393536'>S1# <b class="command">configure terminal</b></font></td>			
+		</tr>
+
+		<tr>		
+			<td  bgcolor="#FFFFFF" valign="top"><font color='#393536'>从端口删除 VLAN 分配。</font></td>
+			<td  bgcolor="#FFFFFF" valign="top"><font face="_typewriter" color='#393536'>S1(config-if)# <b class="command">no switchport access vlan</b></font></td>			
+		</tr>
+		
+		<tr>	
+			<td  bgcolor="#EFF8F7" valign="top"><font color='#393536'>返回到特权 EXEC 模式。</font></td>
+			<td  bgcolor="#EFF8F7" valign="top"><font face="_typewriter" color='#393536'>S1(config-if)# <b class="command">end</b></font></td> 
+		</tr>
+		
+	</table>]]></text>
+	</component>
+	<component id="ID_SC" fontSize="12" fontFace="_typewriter" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b><font face="_sans" color="#FFFFFF">***您必须输入确切完整的命令。 包含名称或密码的命令区分大小写。***</font></b>]]></feedback>
+		<existingcommands><![CDATA[<font face="_sans"><b>显示 VLAN 摘要信息。</b></font>]]></existingcommands>
+		<command prompt="S1#">
+			<correctresponse><![CDATA[show vlan brief]]></correctresponse>
+			<deviceresponse><![CDATA[<br>VLAN Name Status Ports <br>---- -------------------- ------- ------------ <br>1 default active Fa0/1, Fa0/2, Fa0/3, Fa0/4 <br>                                  Fa0/5, Fa0/6, Fa0/7, Fa0/8 <br>                                  Fa0/9, Fa0/10, Fa0/11, Fa0/12 <br>                                  Fa0/13, Fa0/14, Fa0/15, Fa0/16 <br>                                  Fa0/17, Fa0/19, Fa0/20, Fa0/21 <br>                                  Fa0/22, Fa0/23, Fa0/24, Gig0/1 <br>                                  Gig0/2 <br>20 Student active Fa0/18 <br>1002 fddi-default active   <br>1003 token-ring-default active   <br>1004 fddinet-default active   <br>1005 trnet-default active   <br>S1#]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>从 VLAN 20 删除 F0/18。 使用 show 命令的 do 形式显示删除之后的 VLAN 摘要信息。</font>]]></instruction>
+		</command>
+		<command prompt="S1#">
+			<correctresponse><![CDATA[configure terminal]]></correctresponse>
+			<deviceresponse><![CDATA[Enter configuration commands, one per line. End with CNTL/Z.]]></deviceresponse>
+		</command>
+		<command prompt="S1(config)#">
+			<correctresponse><![CDATA[interface F0/18]]></correctresponse>
+		</command>
+		<command prompt="S1(config-if)#">
+			<correctresponse><![CDATA[no switchport access vlan]]></correctresponse>
+		</command>
+		<command prompt="S1(config-if)#">
+			<correctresponse><![CDATA[do show vlan brief]]></correctresponse>
+			<deviceresponse><![CDATA[<br>VLAN Name Status Ports <br>---- ------------------- ------- --------------------<br>1 default active Fa0/1, Fa0/2, Fa0/3, Fa0/4 <br>                                 Fa0/5, Fa0/6, Fa0/7, Fa0/8 <br>                                 Fa0/9, Fa0/10, Fa0/11, Fa0/12 <br>                                 Fa0/13, Fa0/14, Fa0/15, Fa0/16 <br>                                 Fa0/17, Fa0/19, Fa0/20, Fa0/21 <br>                                 Fa0/22, Fa0/23, Fa0/24, Gig0/1 <br>                                 Gig0/2 <br>20 Student active <br>1002 fddi-default active <br>1003 token-ring-default active <br>1004 fddinet-default active <br>1005 trnet-default active ]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>将 F0/11 设置为接入模式并将其分配给 VLAN 20。 在完成时，直接返回特权执行模式。</b></font>]]></instruction>
+		</command>
+		<command prompt="S1(config-if)#">
+			<correctresponse><![CDATA[interface F0/11]]></correctresponse>
+		</command>
+		<command prompt="S1(config-if)#">
+			<correctresponse><![CDATA[switchport mode access]]></correctresponse>
+		</command>
+		<command prompt="S1(config-if)#">
+			<correctresponse><![CDATA[switchport access vlan 20]]></correctresponse>
+		</command>
+		<command prompt="S1(config-if)#">
+			<correctresponse><![CDATA[end]]></correctresponse>
+			<deviceresponse><![CDATA[S1#<br>*Mar 31, 09:34:24.3434: %SYS-5-CONFIG_I: Configured from console by console<br>S1#]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>显示 VLAN 摘要信息。</b></font>]]></instruction>
+		</command>
+		<command prompt="S1#">
+			<correctresponse><![CDATA[show vlan brief]]></correctresponse>
+			<deviceresponse><![CDATA[<br>VLAN Name Status Ports <br>---- -------------------- ------- -------------------------<br>1 default active Fa0/1, Fa0/2, Fa0/3, Fa0/4 <br>                                  Fa0/5, Fa0/6, Fa0/7, Fa0/8 <br>                                  Fa0/9, Fa0/10, Fa0/11, Fa0/12 <br>                                  Fa0/13, Fa0/14, Fa0/15, Fa0/16 <br>                                  Fa0/17, Fa0/19, Fa0/20, Fa0/21 <br>                                  Fa0/22, Fa0/23, Fa0/24, Gig0/1 <br>                                  Gig0/2 <br>20 Student active Fa0/11 <br>1002 fddi-default active  <br>1003 token-ring-default active  <br>1004 fddinet-default active  <br>1005 trnet-default active  <br>S1#]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>验证 F0/18 交换机端口的状态。</font>]]></instruction>
+		</command>
+		<command prompt="S1#">
+			<correctresponse><![CDATA[show interfaces F0/18 switchport]]></correctresponse>
+			<deviceresponse><![CDATA[Name: Fa0/18 <br>Switchport: Enabled <br>Administrative Mode: static access <br>Operational Mode: down <br>Administrative Trunking Encapsulation: dot1q <br>Negotiation of Trunking: Off <br>Access Mode VLAN: 1 (default) <br>Trunking Native Mode VLAN: 1 (default)]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>您已成功更改 VLAN 端口成员。</font>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+	<component id="ID_sc_reset">
+		<text><![CDATA[重置]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[看答案]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[全部显示]]></text>
+	</component>
+</textcomponents>

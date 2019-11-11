@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.1.7 十进制到二进制的转换示例</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.1.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>十进制到二进制的转换示例</h1>
+        <div>
+          <p>为了帮您了解这个过程，设想 IP 地址为 192.168.11.10。使用以前介绍过的过程，检查二进制位置值表，第一个十进制数字为 192。</p>
+          <p>图 1 举例说明如何比较 192，以看其是否等于或大于最高位 128。因为 192 大于 128，在高位位置值中添加一个 1 代表 128。然后 192 减去 128，差数为 64。图 2 比较 64 和次最高位 64。因为它们相等，在次最高位位置值中添加一个 1。根据图 3 所示，在位置值的差数处输入二进制 0。第一个二进制八位数的二进制值为 11000000。</p>
+          <p>下一个二进制八位数为 168。图 4 比较 168 与高位的 128。因为 168 大于 128，在高位位置值中添加一个 1。然后 168 减去 128，差数为40。图 5 比较 40 和下一个高位 64。因为 40 小，在 64 的下一个高位位置值中添加一个 0。图 6 比较下一个高位 32。因为 40 大于 32，在位置值中添加一个 1，然后 40 减去 32，差数为 8。8 与特定的位置值匹配。因此，在 16 的位置值中输入 0，并在 8 的位置值中添加 1（如图 7 所示）。在所有剩余的位置值中添加 0。如图 8 所示，第三个二进制八位数的二进制值为 <b>10101000</b>。</p>
+          <p>第三个二进制八位数为 11。对于较简单或较小的十进制数字可以忽略减法步骤。例如，图 9 展示转换的二进制数字。请注意，不实际经过减法过程 (8 + 2 + 1 = 11) 计算这个数字很简单。第二个二进制八位数的二进制值为 00001011。 </p>
+          <p>第四个二进制八位数为 10 (8 + 2)。如图 10 所示，第四个二进制八位数的二进制值为 00001010。</p>
+          <p>二进制和十进制之间的转换最初可能比较难，但通过练习它会变得越来越容易。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figures 1 through 10 show an example of determining the binary value for an IP address. Converting the first octet is shown in the first seven figures. Figure 8 shows the conversion of the second octet. Figure 9 shows the conversion of the third octet. Figure 10 shows the conversion of the fourth octet.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

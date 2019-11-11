@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.1.6 十进制到二进制的转换</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>十进制到二进制的转换</h1>
+        <div>
+          <p>了解点分十进制 IPv4 地址到二进制的转换同样很有必要。二进制位置值表就是一个很有用的工具。下面举例说明如何使用这个表格进行十进制到二进制的转换：</p>
+          <p>
+            <ul>
+              <li>图 1 研究二进制八位数 (<i>n</i>) 的十进制数字是否等于或大于最高有效位 (128)。如果不等于或大于，在 128 位置值中输入二进制 0。如果等于或大于，在 128 位置值中添加一个二进制 1 并从十进制数字中减去 128。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>图 2 研究差数 (<i>n</i>) 是否等于或大于次最高有效位 (64)。如果不等于或大于，在 64 位置值中添加二进制 0，否则添加一个二进制 1 并从十进制数字中减去 64。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>图 3 研究差数 (<i>n</i>) 是否等于或大于次最高有效位 (32)。如果不等于或大于，在 32 位置值中添加二进制 0，否则添加一个二进制 1 并从十进制数字中减去 32。 </li>
+            </ul>
+          </p>
+          <p>图 4 至 图 8 继续计算十进制数字直到输入的所有位置值都已产生对应的二进制值。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figures 1 through 8 are a series of graphics highlighting the positional value of an octet starting with the highest order 128 bit in Figure 1 and ending with the lowest order 1 bit in Figure 8.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

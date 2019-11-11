@@ -1,0 +1,1 @@
+ 图 1 显示用于创建命名 ACL 的命令。第一个命令是 ip access-list，后接 standard 或 extended，然后再接 ACL 的名称。这会将路由器设置移入新的模式 config-std-nacl。接下来输入允许或拒绝语句，以及可选的注释语句。此语句后接 ip 地址和可选命令 log。最后一步是将 ACL 应用于接口的指定方向。图 2 配置了一个命名 ACL。第一个命令是 ip access-list standard no_access。下一个命令是 deny host 192.168.11.10。下一条命令是 permit any。然后，通过命令 interface gigabit Ethernet 0/0 将路由器移入指定接口。最后一步是通过命令 ip access-group no_access out 应用 ACL。

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.4.2.2 检验接口配置</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.4.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>检验接口配置</h1>
+        <div>
+          <p>有多条命令可用于检验接口配置。其中最常用的是 <b>show ip interface brief</b> 命令。生成的输出显示所有接口、其 IPv4 地址和当前状态。已配置和连接的接口的状态和协议均会显示“up”。显示任何其他内容均表示配置或布线出现问题。</p>
+          <p>您可以使用<b> ping</b> 命令验证接口的连通性。思科路由器发送五个连续的 ping，并测量最小、平均和最大往返时间。感叹号用于验证连通性。</p>
+          <p>图 1 显示了 <b>show ip interface brief</b> 命令的输出，这表示 LAN 接口和 WAN 链路均已激活并可以运行。注意，<b>ping</b> 命令生成的五个感叹号可以验证到 R2 的连通性。</p>
+          <p>其他接口验证命令包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip route</b>
+                <b>- </b>显示存储在 RAM 中的 IPv4 路由表的内容。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show interfaces</b>
+                <b>- </b>显示设备上所有接口的统计信息。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip interface</b>
+                <b>- </b>显示路由器上所有接口的 IPv4 统计信息。</li>
+            </ul>
+          </p>
+          <p>图 2 显示的是 <b>show ip route</b> 命令的输出。注意三个直连网络条目及其本地接口 IPv4 地址。</p>
+          <p>记住使用<b> copy running-config startup-config </b>命令来保存配置。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows output from the “show ip interface brief” command and a successful ping. Figure 2 shows the output from the “show ip route” command verifying that the router has a entries in the routing table for all directly connected networks.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

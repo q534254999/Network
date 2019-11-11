@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.1.2.2 配置和验证 LLDP</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置和验证 LLDP</h1>
+        <div>
+          <p>根据不同设备，LLDP 可能默认启用。要在思科网络设备上全局启用 LLDP，请在全局配置模式下输入 <b>lldp run</b> 命令。要禁用 LLDP，请在全局配置模式下输入 <b>no lldp run</b> 命令。</p>
+          <p></p>
+          <p>与 CDP 类似，可以在特定接口上配置 LLDP。但是，如图 1 所示，LLDP 必须单独配置以收发 LLDP 数据包。</p>
+          <p></p>
+          <p>要验证设备是否启用了 LLDP，请在特权 EXEC 模式下输入 <b>show lldp</b> 命令。</p>
+          <p></p>
+          <p>使用图 2 中的语法检查程序来练习配置和验证 LLDP。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中的命令行首先显示通过“lldp run”命令全局启用了 LLDP。然后，在接口 g0/1 上，输入了“lldp transmit”和“lldp receive”命令。最后，显示“show lldp”命令的输出，显示 LLDP 处于活动状态，每 30 秒发送一次更新，保持时间为 120 秒，接口再初始化延迟为 2 秒。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

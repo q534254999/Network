@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.1.4 存储转发交换</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>存储转发交换</h1>
+        <div>
+          <p>存储转发交换有两个主要特性使其区别于直通交换：错误检查和自动缓冲。</p>
+          <p></p>
+          <p>
+            <b>错误检查</b>
+          </p>
+          <p></p>
+          <p>使用存储转发交换的交换机对传入的帧执行错误检查。如图所示，在入口端口收到整个帧后，交换机将数据报最后一个字段中的帧校验序列 (FCS) 值与其自身的 FCS 计算进行比较。FCS 是一个错误检查过程，有助于确保帧中没有物理和数据链路错误。如果帧中没有错误，则交换机会转发帧。否则，该帧将被丢弃。</p>
+          <p></p>
+          <p>
+            <b>自动缓冲</b>
+          </p>
+          <p></p>
+          <p>存储转发交换机使用入口端口缓冲进程以灵活支持任意组合的以太网速度。例如，处理进入 100 Mb/s 以太网端口而必须从 1 Gb/s 接口发送出去的传入帧时将要求使用存储转发方法。如果入口端口和出口端口的速度不匹配，则交换机会将整个帧存储在缓冲区，计算 FCS 检查，将其转发到出口端口缓冲区，然后将其发送出去。</p>
+          <p></p>
+          <p>存储转发交换是思科主要的 LAN 交换方法。</p>
+          <p></p>
+          <p>存储转发交换机将丢弃未通过 FCS 检查的帧；因此并不转发无效帧。相反，直通交换机可能会转发无效帧，因为它并不执行 FCS 检查。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图显示整个帧，包括页眉和页脚。在作出任何转发决策之前，存储转发交换会接收整个帧。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

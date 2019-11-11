@@ -1,0 +1,39 @@
+<textcomponents>
+<component id="ID_title">
+  <text><![CDATA[<b>什么是 ACL？</b>]]></text> 
+</component>
+<component id="ID_txt01">
+<text><![CDATA[允许传入电子邮件<br/>拒绝传入 Telnet]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[互联网]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[拒绝视频传输到 S1<br/>拒绝 S1 访问 S2。]]></text> 
+</component>
+<component id="ID_txt04">
+  <text><![CDATA[拒绝 HR 访问]]></text> 
+</component>
+<component id="ID_txt05">
+  <text><![CDATA[HR 子网<br/>172.17.0.0/20]]></text> 
+</component>
+<component id="ID_txt06">
+  <text><![CDATA[拒绝更新<br/>拒绝 FTP<br/>拒绝 Web]]></text> 
+</component>
+
+
+
+<component id="ID_acl_txt01">
+  <text><![CDATA[ACL]]></text> 
+</component>
+<component id="ID_acl_txt02">
+  <text><![CDATA[ACL]]></text> 
+</component>
+<component id="ID_acl_txt03">
+  <text><![CDATA[ACL]]></text> 
+</component>
+<component id="ID_acl_txt04">
+  <text><![CDATA[ACL]]></text> 
+</component>
+
+</textcomponents>

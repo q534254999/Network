@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.3.3 验证有状态 DHCPv6 </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证有状态 DHCPv6 </h1>
+        <div>
+          <p>
+            <b>验证有状态 DHCPv6 服务器</b>
+          </p>
+          <p></p>
+          <p>在图 1 中，<b>show ipv6 dhcp pool</b> 命令验证 DHCPv6 池及其参数的名称。活动客户端的数量为 1，表明客户端 R3 从该服务器接收 IPv6 全局单播地址。</p>
+          <p></p>
+          <p>如图 2 所示，<b>show ipv6 dhcp binding</b> 命令显示客户端的本地链路地址与服务器分配的地址之间的自动绑定。FE80::32F7:DFF:FE25:2DE1 是客户端的本地链路地址。在本示例中，这是 R3 的 G0/1 接口。将该地址绑定到由 R1（DHCPv6 服务器）分配的 IPv6 全局单播地址 2001:DB8:CAFE:1:5844:47B2:2603:C171。此信息由有状态 DHCPv6 服务器维护，而不是无状态 DHCPv6 服务器。</p>
+          <p></p>
+          <p>
+            <b>验证有状态 DHCPv6 客户端</b>
+          </p>
+          <p></p>
+          <p>图 3 显示的 <b>show ipv6 interface</b> 命令输出验证 DHCPv6 客户端 R3 上由 DHCPv6 服务器分配的 IPv6 全局单播地址。默认路由器信息并不来自 DHCPv6 服务器，而是通过使用 RA 消息的源 IPv6 地址确定的。虽然客户端不使用 RA 消息中包含的信息，但是它可以使用其默认网关信息的源 IPv6 地址。</p>
+          <p></p>
+          <p>使用图 4 中的语法检查器配置和验证无状态 DHCPv6。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示两台路由器连接到同一台交换机。路由器 1 配置为有状态 DHCPv6 服务器，路由器 3 是 DHCPv6 客户端。该图显示了路由器 1 的 CLI，并且显示了命令 show ipv6 dhcp pool 的输出。在图中突出显示了地址分配前缀以及列出了一个活动客户端的行。图 2 显示命令 show ipv6 dhcp binding 的输出。在此图中突出显示了路由器 3 的链路本地地址以及为路由器 1 分配的 DHCPv6 地址。图 3 显示运行命令 show ipv6 interface g 0/1 的路由器 3。在此图中突出显示了 DHCPv6 服务器分配的 IPv6 地址以及默认路由器地址。图 4 是交互练习，使学习者可以在路由器上配置并验证无状态 DHCP V6。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

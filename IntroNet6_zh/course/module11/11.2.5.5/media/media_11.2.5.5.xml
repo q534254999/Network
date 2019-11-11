@@ -1,0 +1,11 @@
+<textcomponents>
+
+	<component id='ID_title'>
+		<text><![CDATA[<b>Cisco 1941 路由器 USB 端口</b>]]></text>
+	</component>
+
+	<component id="ID_txt01">
+		<text><![CDATA[USB 端口]]></text>
+	</component>
+
+</textcomponents>

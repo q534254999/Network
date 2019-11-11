@@ -1,0 +1,237 @@
+﻿<textcomponents>
+
+<component id='ID_s1_title'>
+	<text><![CDATA[<b>活动 - 将数据包转发流程中的步骤排序<b>]]></text>
+</component>
+
+<component id='ID_s1_instr_title'>
+	<text><![CDATA[说明]]></text>
+</component>
+
+<component id='ID_s1_instr_body'>
+	<text><![CDATA[在本练习中，向您提供了四种数据包转发场景。 将最佳地完成每个场景的数据包转发流程的回答语句拖动到相应字段。使用“选中”按钮来选中您的回答 - 如果正确，选择右侧的按钮来移到下一个场景。 如果错误，请点击“重置”然后重试。]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[<b>数据包转发场景 1</b>]]></text>
+</component>
+
+<component id='ID_s1_txt03'>
+	<text><![CDATA[<b>下一步</b>]]></text>
+</component>
+
+<component id='ID_s1_txt04'>
+	<text><![CDATA[您的路由器收到前往另一网络上的 IP 地址的数据包。 目标 IP 地址不在本地网络上，并且与路由表中内容不匹配。 没有最后选用网关。]]></text>
+</component><!--Drag and Drop--><component id='ID_s1_target01'>
+	<text><![CDATA[<font color="#393536">封装该帧，然后从退出接口转发到下一个跳</font>]]></text>
+</component>
+
+<component id='ID_s1_target02'>
+	<text><![CDATA[<font color="#393536">检查 ARP 缓存并转发到本地子网上的主机</font>]]></text>
+</component>
+
+<component id='ID_s1_target03'>
+	<text><![CDATA[<font color="#393536">丢弃该数据包，然后将 ICMP 消息送回源 IP 地址</font>]]></text>
+</component>
+
+
+
+ 
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[正确！ 请点击“按钮 2”以进入新场景。]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[不正确。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[检查]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[重置]]></text>
+</component><!--slide02--><component id='ID_s2_instr_title'>
+	<text><![CDATA[说明]]></text>
+</component>
+
+<component id='ID_s2_instr_body'>
+	<text><![CDATA[将数据包转发流程中的步骤排序</b><br><br>在本活动中，向您提供四个数据包转发场景。 将最佳地完成每个场景的数据包转发流程的回答语句拖动到相应字段。使用“选中”按钮来选中您的回答 - 如果正确，选择右侧的按钮来移到下一个场景。 如果错误，请点击“重置”然后重试。]]></text>
+</component>
+
+<component id='ID_s2_txt02'>
+	<text><![CDATA[<b>数据包转发场景 2</b>]]></text>
+</component>
+
+<component id='ID_s2_txt03'>
+	<text><![CDATA[<b>下一步</b>]]></text>
+</component>
+
+<component id='ID_s2_txt04'>
+	<text><![CDATA[您的路由器收到以远程网络中的 IP 地址为目的地的数据包。 您的路由器具有远程网络的路由表条目。]]></text>
+</component><!--Drag and Drop--><component id='ID_s2_target01'>
+	<text><![CDATA[<font color="#393536">封装该帧，然后从退出接口转发到下一个跳</font>]]></text>
+</component>
+
+<component id='ID_s2_target02'>
+	<text><![CDATA[<font color="#393536">检查 ARP 缓存并转发到本地子网上的主机</font>]]></text>
+</component>
+
+<component id='ID_s2_target03'>
+	<text><![CDATA[<font color="#393536">丢弃该数据包，然后将 ICMP 消息送回源 IP 地址</font>]]></text>
+</component>
+
+
+
+ 
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[正确！ 请点击“按钮 3”以进入新场景。]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[不正确。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[检查]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[重置]]></text>
+</component><!--slide03--><component id='ID_s3_instr_title'>
+	<text><![CDATA[说明]]></text>
+</component>
+
+<component id='ID_s3_instr_body'>
+	<text><![CDATA[将数据包转发流程中的步骤排序</b><br><br>在本活动中，向您提供四个数据包转发场景。 将最佳地完成每个场景的数据包转发流程的回答语句拖动到相应字段。使用“选中”按钮来选中您的回答 - 如果正确，选择右侧的按钮来移到下一个场景。 如果错误，请点击“重置”然后重试。]]></text>
+</component>
+
+<component id='ID_s3_txt02'>
+	<text><![CDATA[<b>数据包转发场景 3</b>]]></text>
+</component>
+
+<component id='ID_s3_txt03'>
+	<text><![CDATA[<b>下一步</b>]]></text>
+</component>
+
+<component id='ID_s3_txt04'>
+	<text><![CDATA[您的路由器收到前往另一网络上的 IP 地址的数据包。 目标 IP 地址不在本地网络，且与路由表中的内容不匹配，但是存在最后选用网关。]]></text>
+</component><!--Drag and Drop--><component id='ID_s3_target01'>
+	<text><![CDATA[<font color="#393536">封装该帧，然后从退出接口转发到下一个跳</font>]]></text>
+</component>
+
+<component id='ID_s3_target02'>
+	<text><![CDATA[<font color="#393536">检查 ARP 缓存并转发到本地子网上的主机</font>]]></text>
+</component>
+
+<component id='ID_s3_target03'>
+	<text><![CDATA[<font color="#393536">丢弃该数据包，然后将 ICMP 消息送回源 IP 地址</font>]]></text>
+</component>
+
+
+
+ 
+
+<component id='ID_s3_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确]]></text>
+</component>
+
+<component id='ID_s3_CORRECT_BODY'>
+	<text><![CDATA[正确！ 请点击“按钮 4”以进入新场景。]]></text>
+</component>
+
+
+<component id='ID_s3_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确]]></text>
+</component>
+
+<component id='ID_s3_INCORRECT_BODY'>
+	<text><![CDATA[不正确。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_s3_CHECK'>
+	<text><![CDATA[检查]]></text>
+</component>
+
+<component id='ID_s3_RESET'>
+	<text><![CDATA[重置]]></text>
+</component><!--slide03--><component id='ID_s4_instr_title'>
+	<text><![CDATA[说明]]></text>
+</component>
+
+<component id='ID_s4_instr_body'>
+	<text><![CDATA[将数据包转发流程中的步骤排序</b><br><br>在本活动中，向您提供四个数据包转发场景。 将最佳地完成每个场景的数据包转发流程的回答语句拖动到相应字段。使用“选中”按钮来选中您的回答 - 如果正确，选择右侧的按钮来移到下一个场景。 如果错误，请点击“重置”然后重试。]]></text>
+</component>
+
+<component id='ID_s4_txt02'>
+	<text><![CDATA[<b>数据包转发场景 4</b>]]></text>
+</component>
+
+<component id='ID_s4_txt03'>
+	<text><![CDATA[<b>下一步</b>]]></text>
+</component>
+
+<component id='ID_s4_txt04'>
+	<text><![CDATA[您的路由器收到以本地网络中的 IP 地址为目的地的数据包。 您的路由器具有此子网的记录路由表条目，且它位于直连接口上。]]></text>
+</component><!--Drag and Drop--><component id='ID_s4_target01'>
+	<text><![CDATA[<font color="#393536">封装该帧，然后从退出接口转发到下一个跳</font>]]></text>
+</component>
+
+<component id='ID_s4_target02'>
+	<text><![CDATA[<font color="#393536">检查 ARP 缓存并转发到本地子网上的主机</font>]]></text>
+</component>
+
+<component id='ID_s4_target03'>
+	<text><![CDATA[<font color="#393536">丢弃该数据包，然后将 ICMP 消息送回源 IP 地址</font>]]></text>
+</component>
+
+
+
+ 
+
+<component id='ID_s4_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确]]></text>
+</component>
+
+<component id='ID_s4_CORRECT_BODY'>
+	<text><![CDATA[正确！]]></text>
+</component>
+
+
+<component id='ID_s4_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确]]></text>
+</component>
+
+<component id='ID_s4_INCORRECT_BODY'>
+	<text><![CDATA[不正确。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_s4_CHECK'>
+	<text><![CDATA[检查]]></text>
+</component>
+
+<component id='ID_s4_RESET'>
+	<text><![CDATA[重置]]></text>
+</component>
+
+</textcomponents>

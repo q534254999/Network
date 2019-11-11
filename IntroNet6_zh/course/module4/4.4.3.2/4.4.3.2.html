@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.3.2 半双工和全双工</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>半双工和全双工</h1>
+        <div>
+          <p>双工通信是指两台设备之间数据传输的方向。半双工通信会将每次的数据交换限制为一个方向，而全双工允许同时发送和接收数据。</p>
+          <p>
+            <ul>
+              <li>
+                <b>半双工通信</b> - 两台设备都可以通过该介质发送和接收，但无法同时执行这两个操作。半双工模式在传统总线拓扑中与以太网集线器配合使用。WLAN 也在半双工模式下运行。半双工每次只允许一台设备通过共享介质发送或接收，而且会与争用访问方法结合使用。图 1 显示半双工通信。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>全双工通信</b> - 两台设备均可同时通过介质进行发送和接收。数据链路层假定介质随时可供两个节点实现传输。默认情况下，以太网交换机在全双工模式下运行，但是如果与以太网集线器等设备连接，则可以在半双工模式下运行。图 2 显示了全双工通信。</li>
+            </ul>
+          </p>
+          <p>两个互连设备，比如一个主机网卡和以太网交换机上的一个接口，必须采用同一双工模式运行。否则，将会出现双工不匹配，导致链路上效率低下和延时。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 is a video that shows a switch and server connected.  This video demonstrates half duplex connections where data can only flow in one direction at a time. Figure 2 is a video that shows a switch and server connected.  This video demonstrates full duplex connections where data can flow in both directions at the same time.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.5 网络接入层问题</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>网络接入层问题</h1>
+        <div>
+          <p><b>show interfaces </b>命令的输出可用于检测常见介质问题。该输出的一个最重要部分就是显示线路和数据链路协议的状态。图 1 表示用于查看接口状态的摘要行。</p>
+          <p></p>
+          <p>第一个参数 (FastEthernet0/1 is up) 代表硬件层，并指示接口是否在接收运营商检测信号。第二个参数 (line protocol is up) 代表数据链路层，指示是否收到数据链路层协议 keepalive。</p>
+          <p></p>
+          <p>根据<b> show interfaces </b>命令的输出，可按如下方法解决可能存在的问题：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>如果接口运行正常而线路协议停止运行，那么一定存在问题。可能存在封装类型不匹配问题，而另一端的接口可能处于错误禁用状态，或者可能存在硬件问题。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>如果线路协议和接口都存在故障，则电缆未连接或存在某些其他接口问题。例如，在背靠背连接中，连接的其他端可能管理性关闭。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>如果接口管理性关闭，则其已在活动配置中被手动禁用（已发出<b> shutdown </b>命令）。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>图 2 显示了<b> show interfaces </b>命令输出的示例。示例显示了 FastEthernet0/1 接口的计数和统计信息。</p>
+          <p></p>
+          <p>有些介质错误不太严重，不至于引起电路故障，但会导致网络性能问题。图 3 说明了一些可以使用 <b>show interfaces </b>命令检测的常见错误。 </p>
+          <p></p>
+          <p>“输入错误”是正在接受检查的接口上收到的数据报中所有错误总和。它包括残帧、超长帧、CRC、无缓冲区、帧、溢出和被忽略的计数。已报告的<b> show interfaces </b>命令输入错误包括以下各项：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>残帧</b> - 小于最小允许长度 64 个字节的以太网帧称为残帧。NIC 故障是超短帧过多的常见原因，但它们也可能是由冲突导致的。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>超长帧</b> - 大于最大允许大小的以太网帧称为超长帧。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>CRC 错误</b> - 在以太网和串行接口上，CRC 错误通常表示存在介质或电缆错误。常见的原因包括电气干扰、连接松动或损坏或电缆不正确。如果看到许多 CRC 错误，且链路上噪声过多，您应该检查电缆。还应搜索并消除噪声源。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p></p>
+          <p>“输出错误”是阻碍从正在接受检查的接口最终传输数据报的所有错误总和。已报告的<b> show interfaces </b>命令输出错误包括以下各项：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>冲突</b> - 在半双工模式下运行发生冲突是正常的。但是，您永远不会在为全双工通信配置的接口上看到冲突。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>延迟冲突</b> - 延迟冲突是指在传输了 512 位的帧之后发生冲突。电缆过长是造成延迟冲突的最常见原因。另一个常见原因是双工配置错误。例如，您可能将连接的一端配置为全双工，而将另一端配置为半双工。您会看到配置为半双工的接口发生延迟冲突。在这种情况下，两端必须配置为相同的双工设置。正确设计和配置的网络永远不会出现延迟冲突。</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示 show interface fastEthernet 0/1 命令的输出。运行状态行突出显示。该行说明 fastEthernet 0/1 为 up，线路协议为 up。图 2 显示 show interface 命令的输出。FastEthernet 0/1 接口的计数器和统计信息突出显示。计数器列出统计信息，如 0 个超短帧、0 个超长帧、3 个输入错误和 8 个输出错误。图 3 显示一个列出网络接入层错误及其说明的表。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

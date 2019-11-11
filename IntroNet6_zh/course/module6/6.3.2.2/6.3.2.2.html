@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.2.2 路由器启动过程</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>路由器启动过程</h1>
+        <div>
+          <p>启动过程分为三个主要阶段。如图 1 所示，这三个阶段为：</p>
+          <p>1.执行 POST 并加载引导程序。</p>
+          <p>2.查找并加载 Cisco IOS 软件。</p>
+          <p>3.查找并加载启动配置文件，或进入设置模式。</p>
+          <p>
+            <b>1.执行 POST 和加载引导程序（图 2）</b>
+          </p>
+          <p>在加电自检 (POST) 过程中，路由器会通过 ROM 对若干硬件组件进行诊断，包括 CPU、RAM 和 NVRAM。POST 完成后，引导程序将从 ROM 复制到 RAM。引导程序的主要任务是查找 Cisco IOS 并将其加载到 RAM。</p>
+          <p>
+            <b>注意</b>：此时，如果有控制台与此路由器连接，您会看到屏幕上开始出现输出内容。</p>
+          <p>
+            <b>2.查找并加载 Cisco IOS（图 3）</b>
+          </p>
+          <p>IOS 通常存储在闪存中，由 CPU 将其复制到 RAM 进行执行。如果闪存中没有找到 IOS 映像，则路由器可以使用简单文件传输协议 (TFTP) 服务器进行查找。如果找不到完整的 IOS 映像，有限的 IOS 将复制到 RAM，这可用于诊断问题并将完整的 IOS 传输到闪存中。</p>
+          <p>
+            <b>3.查找并加载配置文件（图 4）</b>
+          </p>
+          <p>引导程序将启动配置文件从 NVRAM 复制到 RAM 中。该文件随即成为运行配置。如果 NVRAM 中不存在启动配置文件，则路由器可能会配置为搜索 TFTP 服务器。如果未找到 TFTP 服务器，则路由器显示设置模式提示。 </p>
+          <p>
+            <b>注意</b>：本课程不使用设置模式配置路由器。当提示进入设置模式时，请始终回答 <b>no</b>。如果回答 yes 并进入设置模式，可随时按 <b>Ctrl</b>+<b>C</b> 终止设置过程。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the boot up process.  First the router performs a POST and loads the bootstrap.  Both are found in ROM.  Secondly the router loads the IOS found in flash or by TFTP. Finally the router loads the startup configuration, found in NVRAM or by TFTP or console. Figure 2 highlights the POST section. Figure 3 highlights the loading of the IOS section. Figure 4 highlights the loading of the startup configuration section.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

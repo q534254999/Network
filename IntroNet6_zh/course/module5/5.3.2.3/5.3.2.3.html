@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.3.2.3 视频演示 - ARP 请求</title>
+    <!-- Activity / Other / Flash PnC -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.3.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>视频演示 - ARP 请求</h1>
+        <div>
+          <p>当设备需要与 IPv4 地址关联的 MAC 地址，而它的 ARP 表中没有 IPv4 地址条目时，会发送一个 ARP 请求。 </p>
+          <p>ARP 消息直接封装到以太网帧中。没有 IPv4 报头。ARP 请求消息包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>目的 IPv4 地址</b> – 这是需要相应的 MAC 地址的 IPv4 地址。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>目的 MAC 地址</b> – 这是未知 MAC 地址，并在 ARP 请求消息中为空。</li>
+            </ul>
+          </p>
+          <p>ARP 请求使用以下报头信息封装在以太网帧中：</p>
+          <p>
+            <ul>
+              <li>
+                <b>目的 MAC 地址</b> – 这是一种要求 LAN 上的所有以太网网卡接受并处理 ARP 请求的广播地址。  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>源 MAC 地址</b> – 这是 ARP 请求发送方的 MAC 地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>类型</b> - ARP 消息的类型字段为 0x806。该类型字段会通知接收网卡需要将帧的数据部分传递给 ARP 处理。</li>
+            </ul>
+          </p>
+          <p>因为 ARP 请求属于广播，交换机会将其泛洪到除接收端口外的其他所有端口。LAN 上的所有以太网网卡会处理广播。每台设备必须处理 ARP 请求，以检查目的 IPv4 地址是否与其自己的地址相匹配。路由器不会将广播转发到其他接口。</p>
+          <p>LAN 上只有一台设备的 IPv4 地址与 ARP 请求中的目的 IPv4 地址相匹配。所有其他设备将不应答。</p>
+          <p>单击图中的“播放”，观看 ARP 从本地网络中请求目的 IPv4 地址的演示。</p>
+          <p>单击<a href="../../files/5.3.2.3%20Video%20Slides%20-%20ARP%20Operation%20-%20ARP%20Request.pdf" target="_blank">此处</a>从演示文稿中下载视频幻灯片。</p>
+          <p>单击<a href="../../files/5.3.2.3%20Video%20-%20ARP%20Operation%20-%20ARP%20Request.pdf" target="_blank">此处</a>可阅读本视频的脚本。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" src="media/index.html" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is a video with the title "ARP Request".</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

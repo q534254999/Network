@@ -1,0 +1,19 @@
+﻿<textcomponents><component id="ID_inst"><text><![CDATA[<b>练习 – 练习 IPv6 地址表示方法</b>]]></text></component>
+
+
+	<component id='ID_s1_instr_title'>
+		<text><![CDATA[说明]]></text>
+	</component>
+
+	<component id='ID_s1_instr_body'>
+		<text><![CDATA[将 IPv6 地址转换为简短（省略前导零）形式和压缩形式。请使用页面底部的数字继续完成本练习。]]></text>
+	</component>
+
+<component id="ID_txt01"><text><![CDATA[IPv6 转换]]></text></component>
+<component id="ID_txt02"><text><![CDATA[首选格式]]></text></component>
+<component id="ID_txt03"><text><![CDATA[省略前导零]]></text></component><component id="ID_txt004"><text><![CDATA[压缩格式]]></text></component><component id="ID_s2_reset"><text><![CDATA[<b>重置</b>]]></text></component><component id="ID_s1_reset"><text><![CDATA[<b>重置</b>]]></text></component><component id="ID_s4_reset"><text><![CDATA[<b>重置</b>]]></text></component><component id="ID_s3_reset"><text><![CDATA[<b>重置</b>]]></text></component><component id="ID_s6_reset"><text><![CDATA[<b>重置</b>]]></text></component><component id="ID_s5_reset"><text><![CDATA[<b>重置</b>]]></text></component><component id="ID_s8_reset"><text><![CDATA[<b>重置</b>]]></text></component><component id="ID_s7_reset"><text><![CDATA[<b>重置</b>]]></text></component><component id="ID_s10_reset"><text><![CDATA[<b>重置</b>]]></text></component>
+
+
+
+<component id="ID_s9_reset"><text><![CDATA[<b>重置</b>]]></text></component>
+<component id="ID_s2_check"><text><![CDATA[<b>检查</b>]]></text></component><component id="ID_s1_check"><text><![CDATA[<b>检查</b>]]></text></component><component id="ID_s4_check"><text><![CDATA[<b>检查</b>]]></text></component><component id="ID_s3_check"><text><![CDATA[<b>检查</b>]]></text></component><component id="ID_s6_check"><text><![CDATA[<b>检查</b>]]></text></component><component id="ID_s5_check"><text><![CDATA[<b>检查</b>]]></text></component><component id="ID_s8_check"><text><![CDATA[<b>检查</b>]]></text></component><component id="ID_s7_check"><text><![CDATA[<b>检查</b>]]></text></component><component id="ID_s10_check"><text><![CDATA[<b>检查</b>]]></text></component><component id="ID_s9_check"><text><![CDATA[<b>检查</b>]]></text></component><!--feedback--><component id="ID_correctTitle"><text><![CDATA[<b>正确</b>]]></text></component><component id="ID_correctBody"><text><![CDATA[恭喜，您全部答对了。]]></text></component></textcomponents>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.3.1.1 路由表</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>路由表</h1>
+        <div>
+          <p>路由器的路由表存储下列信息：</p>
+          <p>
+            <ul>
+              <li>
+                <b>直连路由</b> - 这些路由来自于活动的路由器接口。当接口配置了 IP 地址并激活时，路由器会添加直连路由。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>远程路由</b> - 这些路由是连接到其他路由器的远程网络。通向这些网络的路由可以静态配置，也可以通过动态路由协议动态获取。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>具体而言，路由表是保存在 RAM 中的数据文件，其中存储了与直连网络以及远程网络相关的信息。路由表包含网络或下一跳的关联信息。这些关联告知路由器：要以最佳方式到达某一目的地，可以将数据包发送到特定路由器（即在到达最终目的地的途中的下一跳）。下一跳也可以关联到通向下一目的地的传出或送出接口。 </p>
+          <p></p>
+          <p>该图用于确定路由器 R1 的直连网络和远程网络。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示通过 WAN 串行链路连接在一起的两个路由器。每个路由器都具有连接到 LAN 接口的两个本地网络。分配给路由器本地接口的所有网络均视为直连网络，连接到其他路由器的所有网络均视为远程网络。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

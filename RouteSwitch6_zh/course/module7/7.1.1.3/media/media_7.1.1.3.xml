@@ -1,0 +1,17 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>入站和出站 ACL</b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[入站 ACL]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[出站 ACL]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[在数据包被路由到出站接口之前，入站 ACL 过滤流入特定接口的数据包。]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[在数据包被路由之后，出站 ACL 过滤流入任意入站接口的数据包。]]></text> 
+  </component>
+</textcomponents>

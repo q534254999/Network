@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.4.2.1 配置路由器接口</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.4.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置路由器接口</h1>
+        <div>
+          <p>要使路由器可访问，必须配置带内路由器接口。思科路由器上有许多不同类型的接口。此示例中，Cisco 1941 路由器配备以下接口：</p>
+          <p>
+            <ul>
+              <li>
+                <b>两个千兆以太网接口</b> - GigabitEthernet 0/0 (G0/0) 和 GigabitEthernet 0/1 (G0/1)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>由两个接口组成的一个串行 WAN 接口卡 (WIC)</b> - Serial 0/0/0 (S0/0/0) 和 Serial 0/0/1 (S0/0/1)</li>
+            </ul>
+          </p>
+          <p>
+            <b>注意</b>：单击<a href="http://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html" target="_blank">此处</a>了解有关接口缩写和编号的详细信息。</p>
+          <p>图 1 中列出了用于配置路由器接口的任务。注意它们与在交换机上配置管理 SVI 的相似之处。 </p>
+          <p>尽管不必要，仍建议为每个接口配置说明文字，以帮助记录网络信息。说明文字最长不能超过 240 个字符。在生产网络中，在说明文字中提供接口所连接的网络类型以及此网络中是否还有其他路由器等信息的做法在故障排除中很实用。如果接口连接到 ISP 或服务运营商，输入第三方连接信息和联系信息的做法也很实用。</p>
+          <p>使用 <b>no shutdown</b> 命令可激活接口，类似于启动接口。接口还必须连接到另一台设备（交换机或路由器），才能使物理层处于活动状态。</p>
+          <p>图 2 显示了连接 R1 的 LAN 接口的配置。 </p>
+          <p>使用图 3 中的语法检查器练习配置 LAN 接口</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the commands to configure a router interface including: interface type and number; ip address; description; and the no shutdown command. Figure 2 show an example of configuring these commands. Figure 3 is a Syntax Checker allowing the learner to practice configuring router interfaces.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

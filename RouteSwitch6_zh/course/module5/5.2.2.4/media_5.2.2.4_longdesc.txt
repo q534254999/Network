@@ -1,0 +1,1 @@
+图 1 总结了思科 Catalyst 交换机的默认端口安全配置。端口安全禁用，当设置端口时，最大安全 MAC 地址数设置为 1，违规模式关闭，并禁用粘性 MAC 地址获取。图 2 显示在交换机端口接口上配置端口安全所需的 CLI 命令。第一个命令为 interface fastEthernet 0/18。此命令从全局配置模式切换到特定接口。下一命令为 switchport mode access，该命令将端口严格设置为终端设备的接入端口。最后一个命令为 switchport port-security。图 3 继续上一示例并添加命令 switchport port-security maximum 50。最后一个命令为 switchport port-security mac-address sticky。

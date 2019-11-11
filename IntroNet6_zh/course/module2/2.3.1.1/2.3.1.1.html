@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.1.1 IP 地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IP 地址</h1>
+        <div>
+          <p>使用 IP 地址，是设备能够相互查找并在 Internet 上建立端到端通信的主要方式。网络中的每个终端设备都必须配置 IP 地址。终端设备的示例如图 1 所列。</p>
+          <p></p>
+          <p>IPv4 地址的结构称为点分十进制记法，用 0 到 255 之间的四个十进制数字表示。IPv4 地址会分配给连接到网络的各个设备。 </p>
+          <p></p>
+          <p>
+            <b>注意</b>：本课程中的 IP 同时包括 IPv4 和 IPv6 协议。IPv6 是 IP 的最新版本，用于替换更常见的 IPv4。</p>
+          <p></p>
+          <p>对于 IPv4 地址，子网掩码也是必要设置。IPv4 子网掩码是将地址的网络部分与主机部分区分开来的 32 位值。子网掩码，与 IPv4 地址相结合，可用于确定设备属于哪个特定子网。 </p>
+          <p></p>
+          <p>图 2 中的示例显示了分配给一台主机的 IPv4 地址 (192.168.1.10)、子网掩码 (255.255.255.0) 和默认网关 (192.168.1.1)。默认网关地址是主机将用于访问远程网络（包括 Internet）的路由器的 IP 地址。 </p>
+          <p></p>
+          <p>IIP 地址可以分配给设备的物理端口和虚拟接口。虚拟接口表示设备没有关联任何物理硬件。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 lists some devices that require IP addresses including: computers (work stations, laptops, file servers, web servers); network printers; VoIP phones; security cameras; smart phones; mobile handheld devices (such as wireless barcode scanners). Figure 2 shows the Windows TCP/IPv4 Properties window with IP address information statically configured.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

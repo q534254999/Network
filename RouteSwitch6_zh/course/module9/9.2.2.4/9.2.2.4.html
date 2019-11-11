@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.2.4 验证动态 NAT</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证动态 NAT</h1>
+        <div>
+          <p>图 1 所示 <b>show ip nat translations</b> 命令的输出显示了之前两个 NAT 分配的细节。该命令显示所有已配置的静态转换和所有由流量创建的动态转换。 </p>
+          <p></p>
+          <p>增加 <b>verbose</b> 关键字可显示关于每个转换的附加信息，包括创建和使用条目的时间长短。 </p>
+          <p></p>
+          <p>转换条目默认超时时间为 24 小时，在全局配置模式下使用 <b>ip nat translation timeout </b><i>timeout-seconds</i> 命令可重新配置超时时间。</p>
+          <p></p>
+          <p>要在超时之前清除动态条目，请使用 <b>clear ip nat translation</b> 特权 EXEC 模式命令（图 2）。在测试 NAT 配置时清除动态条目非常有用。如表中所示，该命令可以与关键字和变量一起使用以控制清除哪些条目。可以清除特定条目以避免活动会话中断。使用 <b>clear ip nat translation *</b> 特权 EXEC 命令清除表中的所有转换。 </p>
+          <p></p>
+          <p>
+            <b>注</b>：该命令只会清除表中的动态转换。而不会删除转换表中的静态转换。</p>
+          <p></p>
+          <p>在图 3 中，<b>show ip nat statistics</b> 命令显示有关总活动转换数、NAT 配置参数、地址池中地址数量和已分配地址数量的信息。</p>
+          <p></p>
+          <p>或者使用 <b>show running-config</b> 命令查看 NAT、ACL、接口或池命令。仔细检查，纠正所发现的任何错误。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了“show ip nat translations”命令和“show ip nat translations verbose”命令的输出。图 2 显示了“clear ip nat translations”命令和“show ip nat translations”命令的输出。没有转换，因为它们刚刚被清除。以下表中列出了“clear ip nat translations”命令的语法以及所有选项。图 3 显示了“clear ip nat statistics”命令的输出。PC1 和 PC2 与 Web 服务器建立会话。此时会显示“show ip statistics”命令的输出。突出显示池信息。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

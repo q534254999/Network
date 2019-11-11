@@ -1,0 +1,1 @@
+图中显示了命令 show running-config | section interface gigabit Ethernet 0/0 的输出。输出将列出指定接口的配置设置，其中包括所有 DHCP 设置。在图中，输出将列出 IP 地址以及 IP helper 地址。该图 2 还显示了命令 show running-config | include no service dhcp 的输出。在示例中，输出为空。

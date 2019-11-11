@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.4.2 验证路由器 DHCPv4 配置</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证路由器 DHCPv4 配置</h1>
+        <div>
+          <p>当 DHCPv4 服务器处在与客户端不同的 LAN 上时，必须配置朝向客户端的路由器接口以通过配置 IPv4 Helper 地址中继 DHCPv4 请求。如果 IPv4 Helper 地址配置不正确，客户端 DHCPv4 请求将不能被转发给 DHCPv4 服务器。</p>
+          <p></p>
+          <p>请执行下面的步骤验证路由器配置：</p>
+          <p></p>
+          <p>
+            <b>步骤 1.</b>验证 <b>ip helper-address</b> 命令配置在正确的接口上。它必须存在于包含 DHCPv4 客户端工作站的 LAN 的入站接口上，并且必须指向正确的 DHCPv4 服务器。在图中，<b>show running-config</b> 命令的输出验证 DHCPv4 中继 IPv4 地址正在引用 DHCPv4 服务器地址 192.168.11.6。</p>
+          <p></p>
+          <p><b>show ip interface</b> 命令还可用于验证接口上的 DHCPv4 中继。</p>
+          <p></p>
+          <p>
+            <b>步骤 2.</b>验证还没有配置全局配置命令 <b>no service dhcp</b>。此命令会禁用路由器上的所有 DHCP 服务器和中继功能。命令 <b>service dhcp</b> 没有出现在运行配置中，因为它是默认配置。</p>
+          <p></p>
+          <p>在图中，<b>show running-config | include no service dhcp</b> 命令验证因为没有 <b>show running-config | include no service dhcp</b> 命令的匹配项，所以启用了 DHCPv4 服务。如果服务已禁用，输出会显示 <b>no service dhcp</b> 命令。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了命令 show running-config | section interface gigabit Ethernet 0/0 的输出。输出将列出指定接口的配置设置，其中包括所有 DHCP 设置。在图中，输出将列出 IP 地址以及 IP helper 地址。该图 2 还显示了命令 show running-config | include no service dhcp 的输出。在示例中，输出为空。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

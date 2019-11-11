@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.1.1 静态路由和数据包转发</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>静态路由和数据包转发</h1>
+        <div>
+          <p>以下示例说明了使用静态路由的数据包转发过程。 </p>
+          <p></p>
+          <p>在图中，请点击“播放”按钮观看动画，PC1 向 PC3 发送数据包：</p>
+          <p>1.数据包到达 R1 的 GigabitEthernet 0/0 接口。</p>
+          <p>2.R1 没有一条具体的路由通往目标网络 192.168.2.0/24；因此 R1 使用默认静态路由。</p>
+          <p>3.R1 将数据包封装成新的帧。因为到 R2 的链路为点到点链路，所以 R1 添加了“全 1”的地址作为第 2 层目标地址。</p>
+          <p>4.该帧已转发到 Serial 0/0/0 接口之外。数据包到达 R2 的 Serial 0/0/0 接口。</p>
+          <p>5.R2 将该帧解封，然后查找到目标的路由。R2 有一条到 192.168.2.0/24 的静态路由，从 Serial 0/0/1 接口发出。</p>
+          <p>6.R2 将数据包封装在新的帧中。因为到 R3 的链路是点对点链路，所以 R2 为第 2 层目标地址增加“all 1s”地址。</p>
+          <p>7.该帧已转发到 Serial 0/0/1 接口之外。数据包到达 R3 上的 Serial 0/0/1 接口。</p>
+          <p>8.R3 将该帧解封，然后查找到目标的路由。R3 有一条到 192.168.2.0/24 的相连路由，从 GigabitEthernet 0/0 接口发出。</p>
+          <p>9.R3 在 ARP 表中查找与 192.168.2.10 匹配的条目，目的是找出 PC3 的第 2 层介质访问控制 (MAC) 地址。如果没有条目，R3 会从 GigabitEthernet 0/0 接口发出地址解析协议 (ARP) 请求，然后 PC3 发送 ARP 应答，应答中包括 PC3 的 MAC 地址。</p>
+          <p>10.R3 将数据包封装成新的帧。在该帧中，接口 GigabitEthernet 0/0 的 MAC 地址为第 2 层源地址，PC3 的 MAC 地址为目标 MAC 地址。</p>
+          <p>11.帧从 GigabitEthernet 0/0 接口转发出去。数据包到达 PC3 的网络接口卡 (NIC) 接口。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">此动画显示标准实验图。当您点击播放时，数据包会从 PC1 传输到 PC3。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

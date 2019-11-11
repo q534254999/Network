@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.3.2 服务器消息块</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>服务器消息块</h1>
+        <div>
+          <p>服务器消息块 (SMB) 是一种客户端/服务器文件共享协议，用于规范共享网络资源（如目录、文件、打印机以及串行端口）结构。这是一种请求-响应协议。所有的 SMB 消息都采用一种常用格式。该格式采用固定大小的文件头，后跟可变大小的参数以及数据组件。</p>
+          <p>SMB 消息可以：</p>
+          <p>
+            <ul>
+              <li>启动、身份验证以及终止会话</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>控制文件和打印机的访问</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>允许应用程序向任何设备收发消息 </li>
+            </ul>
+          </p>
+          <p>Microsoft 网络配置中主要采用 SMB 形式实现文件共享和打印服务。随着 Windows 2000 软件系列的推出，Microsoft 更改了基础结构以使用 SMB。而在以前的 Microsoft 产品中，SMB 服务需要使用非 TCP/IP 协议来执行域名解析。从 Windows 2000 开始，之后的所有 Microsoft 产品都使用 DNS 命名，使 TCP/IP 协议能够直接支持 SMB 资源共享，如图 1 所示。Windows PC 之间的 SMB 文件交换过程如图 2 所示。</p>
+          <p>与 FTP 协议支持的文件共享不同，SMB 协议中的客户端要与服务器建立长期连接。一旦建立连接，客户端用户就可以访问服务器上的资源，就如同资源位于客户端主机上一样。 </p>
+          <p>在 LINUX 和 UNIX 操作系统中，通过 SAMBA（SMB 的一个版本）可以实现与 Microsoft 网络的资源共享。在 Apple Macintosh 操作系统中，通过 SMB 协议也可以实现资源共享。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a client computer using SMB protocol to access documents on a remote Windows server and a printer connected to the remote Windows server. Figure 2 shows two clients using SMB to share files.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

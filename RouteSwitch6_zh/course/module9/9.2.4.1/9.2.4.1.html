@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.4.1 端口转发</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>端口转发</h1>
+        <div>
+          <p>端口转发是将发送到特定网络端口的流量从一个网络节点转发到另一个网络节点的行为。这种技术允许外部用户从外部网络通过启用 NAT 的路由器到达私有 IPv4 地址（LAN 内部）上的端口。 </p>
+          <p></p>
+          <p>通常来说，为了让点对点文件共享程序以及 Web 服务和送出 FTP 等操作能够工作，需要转发或打开路由器端口，如图 1 所示。因为 NAT 隐藏了内部地址，所以点对点只能以从内到外的方式工作，NAT 在外部可以建立送出请求与传入回复之间的映射。 </p>
+          <p></p>
+          <p>问题是，NAT 不允许从外部发起请求。通过手动干预可以解决这个问题。可以配置端口转发来标识可转发到内部主机的特定端口。</p>
+          <p></p>
+          <p>回忆一下，互联网软件应用程序与用户端口互动时，用户端口需打开或可供应用程序使用。不同的应用程序使用不同的端口。这样可以预测应用程序并可以使路由器确定网络服务。例如，HTTP 在公认端口 80 上运行。当有人输入地址 <b>http://cisco.com</b> 时，浏览器将显示 Cisco Systems, Inc. 网站。注意，我们无需指定网页请求的 HTTP 端口号，因为应用程序假定端口号为 80。 </p>
+          <p></p>
+          <p>如果需要不同端口号，可将其附加到 URL 上，以冒号 (:) 进行分隔。例如，如果 Web 服务器是在端口 8080 上侦听，则用户将键入 <b>http://www.example.com:8080</b>。</p>
+          <p></p>
+          <p>利用端口转发，互联网上的用户能够使用路由器的 WAN 端口地址和相匹配的外部端口号来访问内部服务器。通常为内部服务器配置 RFC 1918 私有 IPv4 地址。当一个请求通过互联网发送到 WAN 端口的 IPv4 地址时，路由器会将该请求转发到 LAN 上的相应服务器。为安全起见，宽带路由器默认不允许转发任何外部网络请求转发到内部主机。 </p>
+          <p></p>
+          <p>图 2 显示一个小型企业主使用销售点 (PoS) 服务器来跟踪店里的销售和库存。可以在店内访问服务器，但由于它具有私有 IPv4 地址，因此无法从互联网公开访问。启用本地路由器以进行端口转发，使店主可以从任何地点在互联网上访问销售点服务器。使用销售点服务器的目标端口号和私有 IPv4 地址配置路由器上的端口转发。为了访问服务器，客户端软件将使用路由器的公有 IPv4 地址和服务器的目标端口。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了一个云，左侧是三台服务器，右侧是一台 PC。有三个箭头从该 PC 指向每台服务器。上边的服务器是 telnet，中间服务器是 FTP，下边的服务器是 Web。图 2 显示了一个 SOHO 路由器，内部网络在左侧，外部网络在右侧。该图描绘了用户通过外部网络、SOHO 路由器和内部网络发送数据到 POS 服务器。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

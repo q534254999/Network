@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.2.6 端口号</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>端口号</h1>
+        <div>
+          <p>源端口号与本地主机上的始发应用程序相关联；而目的端口号则与远程主机上的目的应用程序相关联。</p>
+          <p>
+            <b>源端口</b>
+          </p>
+          <p>源端口号由发送方设备动态生成，用于标识两台设备之间的会话。这就使多个会话能够同时发生。设备通常可以同时发送多个 HTTP 服务请求到 Web 服务器。根据源端口号可以跟踪每个单独的 HTTP 会话。</p>
+          <p>
+            <b>目的端口</b>
+          </p>
+          <p>如图所示，客户端将目的端口号放到数据段内，以此通知目的服务器请求的是什么服务。例如，当客户端在目的端口中指定端口 80 时，接收该消息的服务器就知道请求的是 Web 服务。服务器可同时提供多个服务，例如在端口 80 上提供 Web 服务，并同时在端口 21 上提供建立文件传输协议 (FTP) 连接的服务。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a computer with three different applications open and the port number associated with each.  Below each application is the specific protocol in use and the transport layer adds the proper port number to form the segment.  POPv3 uses port 110, HTTP uses port 80 and Instant Messaging uses port 531.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

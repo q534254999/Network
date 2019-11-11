@@ -1,0 +1,94 @@
+<textcomponents><!--  Slide 1  --><component id="ID_s1_title">
+<text><![CDATA[<b>控制台连接要求</b>]]></text>
+</component>
+
+<component id="ID_s1_header1">
+  <text><![CDATA[<b>计算机上的端口</b>]]></text> 
+</component>
+<component id="ID_s1_header2">
+  <text><![CDATA[<b>所需的电缆</b>]]></text> 
+</component>
+<component id="ID_s1_header3">
+  <text><![CDATA[<b>ISR 上的端口</b>]]></text> 
+</component>
+<component id="ID_s1_header4">
+  <text><![CDATA[<b>终端仿真</b>]]></text> 
+</component>
+
+
+<component id="ID_s1_txt01">
+  <text><![CDATA[串口]]></text> 
+  </component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[USB <br>A 型端口]]></text> 
+  </component>
+<component id="ID_s1_txt03">
+  <text><![CDATA[<textformat blockindent="-14">RJ-45-to-DB-9 控制台电缆</textformat>]]></text> 
+</component>
+<component id="ID_s1_txt04">
+  <text><![CDATA[<ul><textformat blockindent="-14"><li>USB-to-RS-232 兼容串行端口适配器</li><li>适配器可能需要软件驱动程序</li><li>RJ-45-to-DB-9 控制台电缆</li></textformat></ul>]]></text> 
+</component>
+<component id="ID_s1_txt05">
+  <text><![CDATA[<ul><textformat blockindent="-14"><li>USB A 型到 USB B 型 (Mini-B USB)</li><li>需要设备驱动程序，可从 cisco.com 下载。</li></textformat></ul>]]></text> 
+</component>
+<component id="ID_s1_txt06">
+  <text><![CDATA[RJ-45 控制台端口]]></text> 
+</component>
+<component id="ID_s1_txt07">
+  <text><![CDATA[USB B 型<br>(Mini-B USB)]]></text> 
+</component>
+<component id="ID_s1_txt08">
+  <text><![CDATA[Tera Term]]></text> 
+</component>
+<component id="ID_s1_txt09">
+  <text><![CDATA[PuTTY]]></text> 
+</component><!--  Slide 2  --><component id="ID_s2_title">
+<text><![CDATA[<b>端口和电缆</b>]]></text>
+</component>
+
+<component id="ID_s2_header1">
+  <text><![CDATA[<b>计算机上的端口</b>]]></text> 
+</component>
+<component id="ID_s2_header2">
+  <text><![CDATA[<b>所需的电缆</b>]]></text> 
+</component>
+<component id="ID_s2_header3">
+  <text><![CDATA[<b>ISR 上的端口</b>]]></text> 
+</component>
+<component id="ID_s2_header4">
+  <text><![CDATA[<b>终端仿真</b>]]></text> 
+</component>
+
+
+<component id="ID_s2_txt01">
+  <text><![CDATA[串口]]></text> 
+  </component>
+<component id="ID_s2_txt02">
+  <text><![CDATA[USB <br>A 型端口]]></text> 
+  </component>
+<component id="ID_s2_txt03">
+  <text><![CDATA[控制台电缆]]></text> 
+</component>
+<component id="ID_s2_txt04">
+  <text><![CDATA[连接 USB 与 RS-232 的<br>串行端口适配器]]></text> 
+</component>
+<component id="ID_s2_txt04A">
+  <text><![CDATA[控制台电缆]]></text> 
+</component>
+<component id="ID_s2_txt05">
+  <text><![CDATA[连接 USB A 型与 USB B 型的<br>(Mini-B) 电缆]]></text> 
+</component>
+<component id="ID_s2_txt06">
+  <text><![CDATA[RJ-45 控制台端口]]></text> 
+</component>
+<component id="ID_s2_txt07">
+  <text><![CDATA[USB B 型<br>(Mini-B USB) 控制台端口]]></text> 
+</component>
+<component id="ID_s2_txt08">
+  <text><![CDATA[Tera Term]]></text> 
+</component>
+<component id="ID_s2_txt09">
+  <text><![CDATA[PuTTY]]></text> 
+</component>
+
+</textcomponents>

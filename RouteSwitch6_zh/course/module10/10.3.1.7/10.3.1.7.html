@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.1.7 密码恢复</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.1.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>密码恢复</h1>
+        <div>
+          <p>设备上的密码用于阻止未经授权的访问。对于加密密码，比如使能加密密码，密码在恢复后必须进行更换。根据不同的设备，密码恢复的详细程序有所不同；但所有密码恢复程序遵循相同的原则：</p>
+          <p></p>
+          <p>
+            <b>步骤 1</b>.进入 ROMMON 模式。</p>
+          <p></p>
+          <p>
+            <b>步骤 2</b>.将配置寄存器更改为 0x2142 以忽略启动配置文件。</p>
+          <p></p>
+          <p>
+            <b>步骤 3</b>.对原始启动配置文件做出必要的更改。</p>
+          <p></p>
+          <p>
+            <b>步骤 4</b>.保存新配置。</p>
+          <p></p>
+          <p>实施密码恢复时，需要通过终端或 PC 上的终端仿真软件对设备进行控制台访问。访问设备的终端设置如下：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>9600 波特率</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>无奇偶校验</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>8 个数据位</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>1 个停止位</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>无流量控制</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>借助控制台访问，在启动过程中或在设备断电时删除外部闪存的过程中，用户可以使用中断序列访问 ROMMON 模式。</p>
+          <p></p>
+          <p>
+            <b>注</b>：PuTTY 的中断序列是 Ctrl+Break。其他终端仿真程序和操作系统的标准中断键序列列表可从以下网址找到： <a href="http://www.cisco.com/c/en/us/support/docs/routers/10000-series-routers/12818-61.html" target="_blank">http://www.cisco.com/c/en/us/support/docs/routers/10000-series-routers/12818-61.html</a></p>
+          <p></p>
+          <p>ROMMON 软件支持某些基本命令，例如 <b>confreg</b>。<b>confreg 0x2142</b> 命令允许用户将配置寄存器设置为 0x2142。配置寄存器为 0x2142 时，设备将在启动期间忽略启动配置文件。启动配置文件是保存被遗忘密码的地方。将配置寄存器设置为 0x2142 后，请在提示符下键入 <b>reset </b>以重新启动设备。当设备重新启动并解压 IOS 时，请输入中断序列。图 1 显示 ROMMON 模式下在启动过程中使用中断序列后 1941 路由器的终端输出。</p>
+          <p></p>
+          <p>在设备完成重新加载后，将启动配置复制到运行配置，如图 2 所示。</p>
+          <p></p>
+          <p>注意：不 <i>要</i> 输入 <b>copy running-config startup-config</b>。此命令会清除您的原始启动配置。</p>
+          <p></p>
+          <p>由于您处于特权 EXEC 模式，您现在可以配置所有必要的密码。配置了新密码后，在全局配置模式下使用 <b>config-register 0x2102</b> 命令将配置寄存器更改回 0x2102。如图 2 所示，将运行配置保存到启动配置中并重新加载设备。</p>
+          <p></p>
+          <p>
+            <b>注</b>：密码 <b>cisco</b> 并不是一个强密码，此处仅作为示例使用。</p>
+          <p></p>
+          <p>现在设备将使用新配置的密码进行身份验证。请务必使用 <b>show</b> 命令验证所有配置仍部署适当。例如，验证密码恢复后相应接口没有关闭。</p>
+          <p></p>
+          <p>以下链接提供有关特定设备密码恢复程序的详细说明：</p>
+          <p></p>
+          <p>
+            <a href="http://www.cisco.com/c/en/us/support/docs/ios-nx-os-software/ios-software-releases-121-mainline/6130-index.html" target="_blank">http://www.cisco.com/c/en/us/support/docs/ios-nx-os-software/ios-software-releases-121-mainline/6130-index.html</a>
+          </p>
+          <p></p>
+          <p>使用图 3 中的语法检查程序练习在路由器上恢复密码。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">添加媒体脚本</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

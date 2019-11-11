@@ -1,0 +1,112 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+	<text><![CDATA[<b>练习 – 将管理距离与其路由源匹配</b>]]></text>
+</component>
+
+<component id='ID_s1_instr_title'>
+	<text><![CDATA[说明]]></text>
+</component>
+
+<component id='ID_s1_instr_body'>
+	<text><![CDATA[将管理距离与其路由源匹配。]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[正确]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[您已成功将每个管理距离与其路由源匹配。]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[不正确]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[您尚未成功将每个管理距离与其路由源匹配。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[检查]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[重置]]></text>
+</component><!--Drag Items--><component id='ID_s1_drag_header'>
+	<text><![CDATA[<font color="#FFFFFF"><b>步骤</b></font>]]></text>
+</component>
+
+<component id='ID_s1_drag01'>
+	<text><![CDATA[<font color="#393536"><b>0</b></font>]]></text>
+</component>
+
+<component id='ID_s1_drag02'>
+	<text><![CDATA[<font color="#393536"><b>1</b></font>]]></text>
+</component>
+
+<component id='ID_s1_drag03'>
+	<text><![CDATA[<font color="#393536"><b>5</b></font>]]></text>
+</component>
+
+<component id='ID_s1_drag04'>
+	<text><![CDATA[<font color="#393536"><b>20</b></font>]]></text>
+</component>
+
+<component id='ID_s1_drag05'>
+	<text><![CDATA[<font color="#393536"><b>90</b></font>]]></text>
+</component>
+
+<component id='ID_s1_drag06'>
+	<text><![CDATA[<font color="#393536"><b>100</b></font>]]></text>
+</component>
+
+<component id='ID_s1_drag07'>
+	<text><![CDATA[<font color="#393536"><b>110</b></font>]]></text>
+</component>
+
+<component id='ID_s1_drag08'>
+	<text><![CDATA[<font color="#393536"><b>115</b></font>]]></text>
+</component>
+
+<component id='ID_s1_drag09'>
+	<text><![CDATA[<font color="#393536"><b>120</b></font>]]></text>
+</component>
+
+<component id='ID_s1_drag10'>
+	<text><![CDATA[<font color="#393536"><b>170</b></font>]]></text>
+</component><!--Questions--><component id='ID_s1_text_header01'>
+	<text><![CDATA[<b>管理距离</b>]]></text>
+</component>
+
+<component id='ID_s1_text_header02'>
+	<text><![CDATA[<b>路由源</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+	<text><![CDATA[RIP]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+  <text><![CDATA[静态]]></text> 
+</component>
+
+<component id="ID_s1_txt03">
+  <text><![CDATA[内部 EIGRP]]></text> 
+</component>
+
+<component id="ID_s1_txt04">
+	<text><![CDATA[OSPF]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+  <text><![CDATA[已连接]]></text> 
+</component>
+
+<component id="ID_s1_txt06">
+  <text><![CDATA[外部 BGP]]></text> 
+</component>
+
+</textcomponents>

@@ -1,0 +1,136 @@
+<textcomponents>
+
+    <component id="ID_title">
+      <text><![CDATA[<b>R2 将数据包转发到 R3</b>]]></text>
+   </component>
+   
+    <component id="ID_header01">
+      <text><![CDATA[<b>第 2 层数据链路帧</b>]]></text>
+   </component>
+
+   <component id="ID_header02">
+      <text><![CDATA[<b>数据包的第 3 层数据</b>]]></text>
+   </component>
+   
+   
+    <component id="ID_txt01">
+      <text><![CDATA[目标 MAC 00-10]]></text>
+   </component>
+
+   <component id="ID_txt02">
+      <text><![CDATA[源 MAC 0A-10]]></text>
+   </component> 
+  
+   <component id="ID_txt03">
+      <text><![CDATA[目标 MAC]]></text>
+   </component>  
+
+   <component id="ID_txt04">
+      <text><![CDATA[<b>目标 MAC 0B-31</b>]]></text>
+   </component>
+   
+      <component id="ID_txt05">
+      <text><![CDATA[<b>源 MAC 00-20</b>]]></text>
+   </component>
+
+    <component id="ID_txt08">
+      <text><![CDATA[<b>源 IP 192.168.1.10</b>]]></text>
+   </component>
+
+   <component id="ID_txt06">
+      <text><![CDATA[0X800 类型]]></text>
+   </component>
+
+   <component id="ID_txt07">
+      <text><![CDATA[<b>目标 IP 192.168.4.10</b>]]></text>
+   </component>
+    <component id="ID_txt09">
+      <text><![CDATA[IP 字段]]></text>
+   </component>
+   
+     <component id="ID_txt10">
+      <text><![CDATA[数据]]></text>
+   </component>
+   
+   <component id="ID_txt11">
+      <text><![CDATA[帧尾]]></text>
+   </component>
+   
+   
+   <component id="ID_txt12">
+      <text><![CDATA[<b>地址 0x8F</b>]]></text>
+   </component>  
+   
+   <component id="ID_txt13">
+      <text><![CDATA[源 MAC]]></text>
+   </component>
+       <component id="ID_txt14">
+      <text><![CDATA[<b>控制<br/>0x00</b>]]></text>
+   </component><!--R1 ROUTING TABLE--><component id="ID_txt15">
+      <text><![CDATA[<b>R2 的路由表</b>]]></text>
+   </component>
+   <component id="ID_txt16">
+      <text><![CDATA[网络]]></text>
+   </component>
+   <component id="ID_txt17">
+      <text><![CDATA[跳数]]></text>
+   </component>
+   <component id="ID_txt18">
+      <text><![CDATA[下一跳 IP]]></text>
+   </component>
+   <component id="ID_txt19">
+      <text><![CDATA[退出接口]]></text>
+   </component>
+         <component id="ID_txt20">
+      <text><![CDATA[直接 连接]]></text>
+   </component>
+
+   <component id="ID_txt21">
+      <text><![CDATA[直接 连接]]></text>
+   </component><!-- SPEECH BUBBLES --><component id="ID_speech01">
+      <text><![CDATA[通过 MAC 地址向我发送帧。 让我进一步研究。]]></text>
+   </component>
+
+   <component id="ID_speech02">
+      <text><![CDATA[我可以从类型和目标 IP 地址看出需要转发此数据包。]]></text>
+   </component>
+
+   <component id="ID_speech03">
+      <text><![CDATA[从我的 S0/0/0 接口有一条路由输出可以到达 PC2。]]></text>
+   </component>
+
+   <component id="ID_speech04">
+      <text><![CDATA[让我重新构建帧中的信息。]]></text>
+   </component>
+
+   <component id="ID_speech05">
+      <text><![CDATA[数据包将通过串行连接发送；因此，我必须使用第 2 层广播目标地址。]]></text>
+   </component>
+
+   <component id="ID_speech06">
+      <text><![CDATA[这是 P2P 串行连接，因此不需要源地址。]]></text>
+   </component><!-- controller --><component id="end">
+<text><![CDATA[结束]]></text>
+</component>
+
+<component id="fforward">
+<text><![CDATA[快进]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[暂停]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[播放]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[快退]]></text>
+</component>
+
+<component id="start">
+<text><![CDATA[开始]]></text>
+</component>
+
+</textcomponents>

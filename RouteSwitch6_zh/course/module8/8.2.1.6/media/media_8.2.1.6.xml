@@ -1,0 +1,30 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>有状态 DHCPv6 选项</b>]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[RA 消息提示我必须联系 DHCPv6 服务器来获取所有编址信息。]]></text> 
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[路由器请求]]></text> 
+</component>
+  
+<component id="ID_txt03">
+<text><![CDATA[路由器通告]]></text> 
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[M 标志 = 1]]></text> 
+</component>
+
+<component id="ID_txt05">
+  <text><![CDATA[DHCPv6 操作 ]]></text> 
+</component>
+
+<component id="ID_txt06">
+  <text><![CDATA[DHCPv6 服务器 ]]></text> 
+</component>
+
+
+</textcomponents>

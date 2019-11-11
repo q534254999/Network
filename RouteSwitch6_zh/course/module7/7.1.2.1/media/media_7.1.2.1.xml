@@ -1,0 +1,71 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>通配符掩码</b>]]></text>
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>通配符掩码示例</b>]]></text>
+</component><!-- slide 1 --><component id="ID_txt_01">
+<text><![CDATA[八位组位的位置和位的地址值]]></text>
+</component>
+
+<component id="ID_txt_02">
+<text><![CDATA[<b>示例</b>]]></text> 
+</component>
+
+<component id="ID_txt_03">
+<text><![CDATA[匹配所有地址位（匹配所有）]]></text> 
+</component>
+
+<component id="ID_txt_04">
+<text><![CDATA[忽略最后 6 个地址位]]></text>
+</component>
+
+<component id="ID_txt_05">
+<text><![CDATA[忽略最后 4 个地址位]]></text> 
+</component>
+
+<component id="ID_txt_06">
+<text><![CDATA[忽略开头 6 个地址位]]></text> 
+</component>
+
+<component id="ID_txt_07">
+<text><![CDATA[忽略二进制八位数的所有位]]></text> 
+</component>
+
+<component id="ID_txt_08">
+<text><![CDATA[0 表示匹配对应地址位的值<br/>1 表示忽略对应地址位的值]]></text> 
+</component><!-- slide 2 --><component id="ID_Table_01">
+<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr class="liner">
+		<td colspan='3' bgcolor='#0E6360' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+
+	<tr>
+		<td   width="110" bgcolor='#077A77' valign="top"><font color='#ffffff'><b></b></font></td>
+		<td   width="85"  bgcolor='#077A77' valign="top"><font color='#ffffff'><b>十进制地址</b></font></td>
+		<td  width="235"  bgcolor='#077A77' valign="top"><font color='#ffffff'><b>二进制地址</b></font></td>
+	</tr>
+	
+	<tr>
+		<td bgcolor="#EFF8F7" valign="top"><font color='#393536'>要处理的 IP 地址</font></td>
+		<td bgcolor="#EFF8F7" valign="top"><font color='#393536'>192.168.10.0</font></td>	
+		<td bgcolor="#EFF8F7" valign="top"><font color='#393536'>11000000.10101000.00001010.00000000</font></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="#ffffff" valign="top"><font color='#393536'>通配符掩码</font></td>
+		<td bgcolor="#ffffff" valign="top"><font color='#393536'>0.0.255.255</font></td>	
+		<td bgcolor="#ffffff" valign="top"><font color='#393536'>00000000.00000000.11111111.11111111</font></td>
+	</tr>
+	
+	<tr>
+		<td bgcolor="#EFF8F7" valign="top"><font color='#393536'>结果 IP 地址</font></td>
+		<td bgcolor="#EFF8F7" valign="top"><font color='#393536'>192.168.0.0</font></td>	
+		<td bgcolor="#EFF8F7" valign="top"><font color='#393536'>11000000.10101000.00000000.00000000</font></td>
+	</tr>
+</table>]]></text> 
+</component>
+
+</textcomponents>

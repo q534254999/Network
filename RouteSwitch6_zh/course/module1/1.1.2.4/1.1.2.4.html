@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.2.4 在主机上启用 IP</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>在主机上启用 IP</h1>
+        <div>
+          <p>也可以为主机分配 IP 地址信息：</p>
+          <p>
+            <ul>
+              <li>
+                <b>静态</b> - 为主机手动分配正确的 IP 地址、子网掩码和默认网关。还可以配置 DNS 服务器 IP 地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>动态</b> - 由服务器使用动态主机配置协议 (DHCP) 提供 IP 地址信息。DHCP 服务器提供终端设备的有效 IP 地址、子网掩码和默认网关。其他信息可由服务器提供。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>图1 和图 2 提供静态和动态 IPv4 地址配置示例。 </p>
+          <p></p>
+          <p>静态分配的地址通常用于标识特定的网络资源，例如网络服务器和打印机。它们还可用在拥有少量主机的小型网络中。但大多数主机设备通过访问 DHCPv4 服务器获取其 IPv4 地址信息。在大型企业中，将会使用专用 DHCPv4 服务器向许多 LAN 提供服务。在较小的分支机构或小型办公室设置中，DHCPv4 服务可由思科 Catalyst 交换机或思科 ISR 提供。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示本地连接的 Windows 小应用程序。互联网协议选项已选择。在图中，IP 地址的设置随子网掩码和默认网关静态分配。图 2 显示设置为自动获取 IP 地址和 DNS 服务器的地址选项。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

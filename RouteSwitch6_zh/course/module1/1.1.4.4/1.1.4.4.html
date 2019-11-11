@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.4.4 命令历史记录功能</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.4.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>命令历史记录功能</h1>
+        <div>
+          <p>命令历史记录功能非常有用，因为它可以临时存储已执行命令的列表，以便重新调用。 </p>
+          <p></p>
+          <p>要调出历史记录缓冲区中的命令，请按 <b>Ctrl</b>+<b>P</b> 或<b>向上箭头</b>键。命令输出从最近输入的命令开始。重复该按键序列，逐一调出之前执行的命令。要返回到历史记录缓冲区中较新的命令，可以按 <b>Ctrl</b>+<b>N</b> 或<b>向下箭头</b>键。重复该按键序列，逐一调出最近的命令。</p>
+          <p></p>
+          <p>默认情况下，启用 history 命令，且系统会获取其历史记录缓冲区中最新输入的 10 条命令。使用 <b>show history</b> 特权执行命令显示缓冲区的内容。</p>
+          <p></p>
+          <p>而且仅在当前终端会话中增加历史缓冲区记录的命令行数目是比较实用的。使用 <b>terminal history size </b>用户执行命令来增加或减小缓冲区的大小。</p>
+          <p></p>
+          <p>图 1 显示了 <b>terminal history size</b> 和 <b>show history</b> 命令的示例。</p>
+          <p></p>
+          <p>使用图 2 中的语法检查器来练习这两个 EXEC 命令。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示在路由器上输入的命令 terminal history size 200，因此将历史记录设置为记住 200 个最近的命令。然后 show history 命令在路由器上运行，且输出列出最近在路由器上输入的命令。图 2 是允许学生练习使用 terminal history size 和 show history 命令的互动媒体元素。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

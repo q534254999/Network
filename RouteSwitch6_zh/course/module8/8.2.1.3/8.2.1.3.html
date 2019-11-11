@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.1.3 SLAAC 和 DHCPv6</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>SLAAC 和 DHCPv6</h1>
+        <div>
+          <p>是否要配置客户端以使用 SLAAC、DHCPv6 或两者的组合来自动获取其 IPv6 地址信息取决于 RA 消息中的设置。 </p>
+          <p></p>
+          <p>这两个标记是管理地址配置标记（M 标记）和其他配置标记（O 标记）。 </p>
+          <p></p>
+          <p>如图所示，如果使用 M 标记和 O 标记的不同组合，RA 消息会包含 IPv6 设备的三个编址选项之一。</p>
+          <p>
+            <ul>
+              <li>SLAAC（仅路由器通告）</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>无状态 DHCPv6（路由器通告和 DHCPv6）</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>有状态 DHCPv6（仅限 DHCPv6）</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>无论使用哪个选项，RFC 4861 建议所有 IPv6 设备在所有单播地址（包括使用 SLAAC 或 DHCPv6 配置的地址）上执行重复地址检测 (DAD)。DAD 使用 ICMPv6 执行，这通过 RFC 4443 来指定。</p>
+          <p></p>
+          <p>
+            <b>注</b>：虽然 RA 消息指定了客户端在动态获取 IPv6 地址时应使用的过程，但是客户端操作系统也可能选择忽略 RA 消息，并且只使用 DHCPv6 服务器的服务。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了三个路由器通告选项。第一个选项是 SLAAC，路由器指示计算机仅使用 RA 消息中的信息。这是默认设置。第二个选项是无状态 DHCPv6，同时使用 SLAAC 和 DHCP。使用此选项时，路由器在路由器通告消息中提供信息，同时还指示计算机从 DHCPv6 服务器中获取一些信息。第三个选项是有状态 DHCP。使用此选项时，路由器指示计算机从 DHCPv6 服务器获取所有信息。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.1.2 IPv4 和 IPv6 共存</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv4 和 IPv6 共存</h1>
+        <div>
+          <p>过渡到 IPv6 不是一朝一夕可以完成的。在可预测的未来，IPv4 和 IPv6 将共存。该过渡预计会花费数年时间。IETF 已经创建了各种协议和工具来协助网络管理员将网络迁移到 IPv6。迁移技术可分为三类：</p>
+          <p>
+            <ul>
+              <li>
+                <b>双堆栈 </b>– 如图 1 所示，双堆栈允许 IPv4 和 IPv6 在同一网络中共存。双堆栈设备同时运行 IPv4 和 IPv6 协议栈。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>隧道 </b>– 如图 2 所示，隧道是在 IPv4 网络中传输 IPv6 数据包的一种方法。IPv6 数据包封装在 IPv4 数据包中，类似于其他类型的数据。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>转换 </b>–如图 3 所示，网络地址转换 64 (NAT64) 允许支持 IPv6 的设备使用与 IPv4 NAT 类似的方法与支持 IPv4 的设备通信。IPv6 数据包转换为 IPv4 数据包，反之亦然。 </li>
+            </ul>
+          </p>
+          <p>
+            <b>注意：</b>隧道和转换仅在需要时使用。目标是从源到目的地进行本地 IPv6 通信。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a router connected to three network segments. Each has a computer running IPv4 and IPv6 in dual-stack mode, which allows the two protocols to co-exist. Figure 2 shows two routers. Each router has a network segment on one of the Fast Ethernet ports.  There is a computer on each network segment that is running only IPv6.  There is an IPv4 only tunnel connecting the two routers. The tunnel encapsulates the IPv6 packet within an IPv4 packet for transmission. Figure 3 shows a router that has an IPv6 only segment on one Fast Ethernet port and an IPv4 only segment on another Fast Ethernet port.  The router is serving as a Network Address Translation 64 device allowing IPv6 enabled devices to communicate with IPv4 enabled devices.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

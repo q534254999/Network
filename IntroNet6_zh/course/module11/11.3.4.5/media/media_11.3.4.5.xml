@@ -1,0 +1,103 @@
+<textcomponents>
+   
+    <component id='ID_title'>
+        <text>
+            <![CDATA[<b>Activity – <font face="_typewriter">show</font> Commands</b>]]></text>
+    </component>
+    <component id='ID_s1_instr_title'>
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id='ID_s1_instr_body'>
+        <text>
+            <![CDATA[了解<b> <font face="_typewriter">show</font> </b>命令场景。 将每个 <b><font face="_typewriter">show</font></b> 命令拖到适当场景旁的字段。]]></text>
+    </component>
+    <component id='ID_txt01'>
+        <text>
+            <![CDATA[<b><font face="_typewriter">show</font> 命令场景</b>]]></text>
+    </component>
+    <component id='ID_txt02'>
+        <text>
+            <![CDATA[<b><font face="_typewriter">show</font> 命令</b>]]></text>
+    </component>
+    <component id='ID_txt03'>
+        <text>
+            <![CDATA[您怀疑当前交换机配置有问题。 您想要查看保存的配置，以便能够将其与当前的运行配置进行比较。]]>
+        </text>
+    </component>
+    <component id='ID_txt04'>
+        <text>
+            <![CDATA[您正在与 Cisco 技术支持人员进行通话。 他们需要让您提供交换机 IOS 名称、RAM、NVRAM 和闪存。 他们还需要十六进制引导位置。]]>
+        </text>
+    </component>
+    <component id='ID_txt05'>
+        <text>
+            <![CDATA[您正运行 EIGRP 路由协议，需要知道更新间隔以及哪些活动接口和网络由您的路由器通告。]]>
+        </text>
+    </component>
+    <component id='ID_txt06'>
+        <text>
+            <![CDATA[您无法连接到 Internet。 您需要了解您的路由器是否有连接到 Internet 的路径，以及用于提供路径的协议。]]>
+        </text>
+    </component>
+    <component id='ID_txt07'>
+        <text>
+            <![CDATA[您的网络文档确实需要更新。 快速列出与 MAC 地址相关的路由器 IP 地址有助于您完成记录用途的任务。]]>
+        </text>
+    </component>
+    <component id='ID_txt08'>
+        <text>
+            <![CDATA[交换机是与您最接近的中间设备。 它有 24 个端口。 您想要查看所用端口的简单列表、端口状态和交换机的 VLAN IP 地址。]]>
+        </text>
+    </component>
+    <!--Drag and Drop-->
+    <component id='ID_drag01'>
+        <text>
+            <![CDATA[<b><font face="_typewriter" color="#393536">show version</font></b>]]></text>
+    </component>
+    <component id='ID_drag02'>
+        <text>
+            <![CDATA[<b><font face="_typewriter" color="#393536">show <br>startup-config</font></b>]]></text>
+    </component>
+    <component id='ID_drag03'>
+        <text>
+            <![CDATA[<b><font face="_typewriter" color="#393536">show ip <br>protocols</font></b>]]></text>
+    </component>
+    <component id='ID_drag04'>
+        <text>
+            <![CDATA[<b><font face="_typewriter" color="#393536">show ip route</font></b>]]></text>
+    </component>
+    <component id='ID_drag05'>
+        <text>
+            <![CDATA[<b><font face="_typewriter" color="#393536">show arp</font></b>]]></text>
+    </component>
+    <component id='ID_drag06'>
+        <text>
+            <![CDATA[<b><font face="_typewriter" color="#393536">show ip int <br>brief</font></b>]]></text>
+    </component>
+    <component id='ID_s1_CORRECT_TITLE'>
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id='ID_s1_CORRECT_BODY'>
+        <text>
+            <![CDATA[您已成功将每个 <b><font face="_typewriter">show</font></b> 命令与其场景相匹配。]]></text>
+    </component>
+    <component id='ID_s1_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id='ID_s1_INCORRECT_BODY'>
+        <text>
+            <![CDATA[您尚未成功将每个 <b><font face="_typewriter">show</font></b> 命令与其场景相匹配。 请单击“重置”重试。]]></text>
+    </component>
+    <component id='ID_CHECK'>
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id='ID_RESET'>
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+</textcomponents>

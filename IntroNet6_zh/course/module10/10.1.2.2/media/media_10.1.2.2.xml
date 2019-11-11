@@ -1,0 +1,34 @@
+<textcomponents>
+  <component id="ID_title">
+		<text><![CDATA[<b>对等网络 </b>]]></text> 
+	</component>
+	
+	<component id="ID_bubble_txt01">
+		<text><![CDATA[<p id="ID_bubble_txt01">我的硬盘驱动器中有文件需要与 Peer2 共享。 我也有一个页面需要通过 Peer2 打印。</p>]]></text>
+	</component>
+	
+	<component id="ID_bubble_txt02">
+	  <text><![CDATA[<p id="ID_bubble_txt02" >我需要访问 Peer1 上硬盘驱动器的文件。 我还需要通过打印请求来打印从 Peer1 收到的文件。</p>]]></text> 
+	</component>
+	
+	<component id="ID_txt01">
+	  <text><![CDATA[Peer1<br/><br/><b>打印客户端<br/>文件服务器</b>]]></text> 
+	</component>
+	
+	<component id="ID_txt02">
+	  <text><![CDATA[Peer2<br/><br/><b>打印服务器<br/>文件客户端</b>]]></text> 
+	</component>
+	
+	<component id="ID_txt03">
+		<text><![CDATA[打印机]]></text>
+	</component>
+		
+	<component id="ID_txt04">
+		<text><![CDATA[直连<br/>打印机]]></text>
+	</component>
+		
+	<component id="ID_txt05">
+		<text><![CDATA[在对等交换中，两台设备在通信过程中处于平等地位。]]></text>
+	</component>
+	
+</textcomponents>

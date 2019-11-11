@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.4.3.2 终端设备的 IP 寻址问题</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.4.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>终端设备的 IP 寻址问题</h1>
+        <div>
+          <p>在基于 Windows 的计算机中，当设备无法与 DHCP 服务器通信时，Windows 将自动分配一个属于 169.254.0.0/16 范围内的地址。此过程旨在简化本地网络内的通信。可以将其想象成 Windows 发声说“我将使用 169.254.0.0/16 范围内的这个地址，因为我无法获得任何其他地址”。通常，地址为 169.254.0.0/16 的计算机无法与网络中的其他设备通信，因为这些设备很可能不属于 169.254.0.0/16 网络。这种情况表示，应对 IPv4 地址自动分配问题进行修复。</p>
+          <p></p>
+          <p>
+            <b>注意：</b>如果与 DHCP 服务器的通信失败，其他操作系统（例如 Linux 和 OS X）不会将 IPv4 地址分配给网络接口。</p>
+          <p></p>
+          <p>大多数终端设备配置为依赖于 DHCP 服务器来实现 IPv4 地址的自动分配。如果设备无法与 DHCP 服务器通信，则服务器不会为该特定网络分配 IPv4 地址，而且设备将无法通信。</p>
+          <p></p>
+          <p>如图所示，要验证 IP 地址是否分配到基于 Windows 的计算机，请使用 <b>ipconfig</b> 命令。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a topology with a PC, a switch, and three routers. The PC is connected to the switch, which is connected to router R1, which is connected to router R2, which is connected to router R3. Below the topology is the command output for ‘ipconfig’ with the IP address highlighted.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

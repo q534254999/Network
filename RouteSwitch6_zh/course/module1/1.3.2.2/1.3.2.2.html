@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.3.2.2 直连路由表条目</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>直连路由表条目</h1>
+        <div>
+          <p>一个处于活动状态并已配置正确的直连接口实际上会创建两个路由表条目。图中所示为 R1 上直连网络 192.168.10.0 的 IPv4 路由表条目。 </p>
+          <p></p>
+          <p>直连接口的路由表条目比远程网络的条目简单。这些条目包含以下信息:</p>
+          <p>
+            <ul>
+              <li>
+                <b>路由源</b>- 标识如何获知该路由。直连接口有两个路由的来源代码。“<b>C</b>”用于标识直连网络。“<b>L</b>”用于标识为路由器接口分配的 IPv4 地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>目标网络</b> - 远程网络的地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>传出接口 </b>- 标识在将数据包转发到目标网络时使用的退出接口。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>注</b>：在 IOS 15 之前的版本中，IPv4 路由表中不显示本地路由路由表条目 (<b>L</b>)。本地路由 (<b>L</b>) 条目始终是 IPv6 路由表的一部分。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示路由器上的直连路由的两个路由源码。图中显示路由的获取方式、目标网络和连接到目标网络的路由器接口。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

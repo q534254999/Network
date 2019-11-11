@@ -1,0 +1,8 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>VLAN 1</b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[<textformat blockindent="-14"><ul><li>默认情况下，所有端口都分配给 VLAN 1。</li><li>默认情况下原生 VLAN 为 VLAN 1。</li><li>默认情况下管理 VLAN 是 VLAN 1。</li><li>VLAN 1 不能重命名或删除。</li></ul></textformat>]]></text>
+</component>
+</textcomponents>

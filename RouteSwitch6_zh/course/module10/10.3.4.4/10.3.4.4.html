@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.4.4 步骤 2.获取许可证</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.4.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>步骤 2.获取许可证</h1>
+        <div>
+          <p>下一步是获取许可证，实际上是许可文件。使用以下选项之一来获取许可文件，也称为软件激活许可证：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>思科 License Manager (CLM)</b> - 这是一个免费的软件应用程序，可从以下网址下载： <a href="http://www.cisco.com/go/clm" target="_blank">http://www.cisco.com/go/clm</a>。思科 License Manager 是一个思科的独立应用程序，帮助网络管理员在其网络中快速部署多个思科软件许可证。思科 License Manager 可以发现网络设备，查看其许可证信息和从思科获取并部署许可证。该应用程序将提供可简化安装的 GUI，帮助实现许可证获取的自动化，并可从中心机构执行多个许可任务。CLM 是免费的，可从 CCO 下载。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>思科许可证注册门户</b> - 这是获取和注册单个软件许可证的基于 Web 的门户，可从以下网址访问： <a href="http://www.cisco.com/go/license" target="_blank">http://www.cisco.com/go/license</a>。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>这两个过程都需要使用 PAK 编号和唯一设备标识符 (UDI)。 </p>
+          <p></p>
+          <p>购买时会收到 PAK。 </p>
+          <p></p>
+          <p>UDI 是产品 ID (PID)、序列号 (SN) 和硬件版本的组合。SN 是唯一标识设备的 11 位数字。PID 将标识设备的类型。只有 PID 和 SN 用于许可证的创建。此 UDI 可通过使用图 1 所示的 <b>show license udi</b> 命令来显示。此信息也可在设备上的可拆除标签的托盘中找到。图 2 显示思科 1941 路由器上可拆除标签的示例。</p>
+          <p></p>
+          <p>在输入相应信息后，客户将收到一份包含用于安装许可文件的许可信息的电子邮件。许可文件是带有 .lic 扩展名的 XML 文本文件。 </p>
+          <p></p>
+          <p>使用图 3 中的语法检查器确定路由器 R2 的 UDI。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示路由器 1 上“show license udi”命令的输出。图 2 显示了一个路由器，上面有一个可拆除标签显示路由器的 UDI 和 PID。图 3 是一个互动练习，让学生练习在命令行显示路由器的 UDI。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

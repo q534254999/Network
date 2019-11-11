@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.1.4 以太网帧字段</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>以太网帧字段</h1>
+        <div>
+          <p>以太网帧大小的最小值为 64 个字节，最大值为 1518 个字节。这包括从“目的 MAC 地址”字段到“帧校验序列 (FCS)”字段的所有字节。在描述帧的大小时，不包含“前导码”字段。 </p>
+          <p>任何长度小于 64 个字节的帧都被接收站点视为“冲突碎片”或“残帧”而自动丢弃。超过 1500 个字节的数据帧被视为“巨帧”或“小型巨型帧”。</p>
+          <p>如果发送的帧小于最小值或者大于最大值，接收设备将会丢弃该帧。帧之所以被丢弃，可能是因为冲突或其他多余信号而被视为无效。</p>
+          <p>在图中，单击以太网帧的每一个字段了解其更多功能。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the Ethernet frame format. Clicking on each field opens a text box for more information.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

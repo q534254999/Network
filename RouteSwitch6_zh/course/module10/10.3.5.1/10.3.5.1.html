@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.5.1 许可证验证</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.5.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>许可证验证</h1>
+        <div>
+          <p>在安装了新的许可证后，必须使用 <b>reload</b> 命令重新启动路由器。如图 1 所示，在重新加载路由器后，使用 <b>show version</b> 命令来验证许可证是否已安装。</p>
+          <p></p>
+          <p>图 2 中的 <b>show license</b> 命令用于显示有关思科 IOS 软件许可证的其他信息。此命令显示的许可证信息有助于解决与思科 IOS 软件许可证相关的问题。此命令将显示系统中安装的所有许可证。在本示例中，IP Base 和安全许可证都已安装。此命令还会显示可供使用但未授权执行的功能，例如数据功能集。根据功能在许可证存储中的存储方式对输出进行分组。</p>
+          <p></p>
+          <p>以下是有关输出的简短说明：</p>
+          <p>
+            <ul>
+              <li>
+                <b>功能</b> - 功能的名称</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>许可证类型</b> - 许可证的类型；例如永久或评估</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>许可证状态</b> - 许可证的状态；例如激活或使用中 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>许可证计数</b> - 可用且正在使用的许可证的数量（如果计数的话）。如果表明非计数，则许可证不受限制。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>许可证优先级</b> - 许可证的优先级；例如高或低 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>注</b>：请参阅思科IOS 15 命令参考指南以了解有关 <b>show license</b> 命令中所显示信息的完整细节。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示路由器 1 上“show version”命令的输出。突出显示了安全功能。图 2 显示路由器 1 上“show license”命令的输出。突出显示了不同功能及其类型。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.3.1 通过 /16 前缀创建子网</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>通过 /16 前缀创建子网</h1>
+        <div>
+          <p>在要求较多子网的情况下，需要 IPv4 网络有更多主机位可以借用。例如，网络地址 172.16.0.0 具有默认掩码 255.255.0.0 或 /16。该地址的网络部分有 16 位，主机部分也有 16 位。主机部分的这 16 位可借用来创建子网。图中的表突出显示了对 /16 前缀进行子网划分的所有可能的场景。 </p>
+          <p></p>
+          <p>虽然不需要记忆整个表，但是建议您能很好地理解表中的每个值是如何生成的。不要让表的大小吓着了你。变大的原因是因为它有 8 个能借用的额外位，因此子网和主机的数量只能是变大。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a table. The first column lists the fourteen prefix lengths from /27 to /30. The second column lists the fourteen subnet masks from 255.255.128.0 to 255.255.255.252. The third column shows the subnet mask in binary with the letter “n” above one bits and the letter “h” above zero bits. The effect is to show the borrowing of bits into the third and fourth octet from borrowing one bit in the first row (/17) to borrowing fourteen bits in the last row (/30). The fourth and fifth columns show the number of subnets and hosts respectively. For example, borrowing 5 bits gets you 32 subnets with 2046 hosts per subnet.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

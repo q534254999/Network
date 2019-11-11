@@ -1,0 +1,46 @@
+<textcomponents><component id="ID_s1_title"><text><![CDATA[<B>人际交流</B>]]></text></component><component id="ID_s1_txt01"><text><![CDATA[<p id="move">您好！我今天在这里看到了最美丽的日落，您应该来我们的小镇感受一下，让自己远离寒冷的天气。<p>]]></text></component><component id="ID_s1_txt02"><text><![CDATA[我不明白您的意思。]]></text></component><component id="ID_s1_txt03"><text><![CDATA[您应该来看看这里的日落，绚丽夺目的样子，简直太美了！]]></text></component><component id="ID_s1_txt04"><text><![CDATA[。]]></text></component><component id="ID_s2_title"><text><![CDATA[<B>计算机通信</B>]]></text></component><component id="end"><text><![CDATA[结束]]></text></component><component id="fforward"><text><![CDATA[快进]]></text></component><component id="pause"><text><![CDATA[暂停]]></text></component><component id="play"><text><![CDATA[播放]]></text></component>
+
+<component id="rewind">
+	<text><![CDATA[快退]]></text>
+</component>
+<component id="start">
+	<text><![CDATA[开始]]></text>
+</component>
+<component id="ID_s2_end">
+	<text><![CDATA[结束]]></text>
+</component>
+<component id="ID_s2_fforward">
+	<text><![CDATA[快进]]></text>
+</component>
+<component id="ID_s2_pause">
+	<text><![CDATA[暂停]]></text>
+</component>
+<component id="ID_s2_play"><text>
+	<![CDATA[播放]]></text>
+</component>
+<component id="ID_s2_rewind">
+	<text><![CDATA[快退]]></text>
+</component>
+<component id="ID_s2_start">
+	<text><![CDATA[开始]]></text>
+</component>
+<component id="end">
+	<text><![CDATA[结束]]></text>
+</component>
+<component id="fforward">
+	<text><![CDATA[快进]]></text>
+</component>
+<component id="pause">
+	<text><![CDATA[暂停]]></text>
+</component>
+<component id="play">
+	<text><![CDATA[播放]]></text>
+</component>
+<component id="rewind">
+	<text><![CDATA[快退]]></text>
+</component>
+<component id="start">
+	<text><![CDATA[开始]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.1.7 消息传输选项</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.1.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>消息传输选项</h1>
+        <div>
+          <p>可以通过不同的方式传输消息，如图 1 所示。有时候，我们需要传达信息给某个人。而在另一些时候，我们需要同时向一群人甚至同一区域的所有人发送信息。 </p>
+          <p></p>
+          <p>有时消息的发送方还要确认消息是否成功发送到目的地址。此时接收方需要向发送方发送确认回执。不需要确认的消息传输选项称为“无确认”。</p>
+          <p></p>
+          <p>网络中的主机使用类似的传输选项进行通信，如图 2 所示。</p>
+          <p></p>
+          <p>一对一传输选项称为单播，即消息只有一个目的地址。 </p>
+          <p></p>
+          <p>如果主机需要用一对多传输选项发送消息，则称为“组播”。组播是指同时发送同一条消息到一组目的主机。 </p>
+          <p></p>
+          <p>如果网络上所有主机都需要同时接收该消息，可以使用广播。广播代表一对全体的消息传输选项。某些协议会使用一种向所有设备发送的特殊组播消息，使其本质上与广播相同。此外，主机可能需要对某些消息确认接收，而对某些消息则无需确认。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows three ways of sending a message.  A woman is talking towards a group of people and is speaking only to one person in the group, this is a unicast.  When she speaks to more than one member of the group, but not the whole group she is sending a multicast message.  Lastly when she speaks to the group as a whole she is sending a broadcast message. Figure 2 shows a computer sending a message to a switch that has four other computers connected to it.  The unicast message is delivered to one specific host, the multicast message is delivered to two of the four computers, and the broadcast message is delivered to all of the other computers.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

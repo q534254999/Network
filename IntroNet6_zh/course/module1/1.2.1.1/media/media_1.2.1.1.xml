@@ -1,0 +1,117 @@
+<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>Components of a Network - Devices</b>]]></text>
+    </component>
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>Components of a Network - Media</b>]]></text>
+    </component>
+    <component id="ID_s3_title">
+        <text>
+            <![CDATA[<b>Components of a Network – Services & Processes</b>]]></text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[设备]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt03">
+        <text>
+            <![CDATA[介质]]>
+        </text>
+    </component>
+    <component id="ID_btn03">
+        <text>
+            <![CDATA[<b>服务</b>]]></text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[设备]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt05">
+        <text>
+            <![CDATA[设备]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt04">
+        <text>
+            <![CDATA[LAN]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt03">
+        <text>
+            <![CDATA[LAN]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt06">
+        <text>
+            <![CDATA[设备]]>
+        </text>
+    </component>
+    
+    <component id="ID_s2_txt06">
+        <text>
+            <![CDATA[<b>网际网络</b>]]></text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[LAN]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[LAN]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt04">
+        <text>
+            <![CDATA[介质]]>
+        </text>
+    </component>
+  
+    <component id="ID_s2_txt05">
+        <text>
+            <![CDATA[]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt07">
+        <text>
+            <![CDATA[<b>网际网络</b>]]></text>
+    </component>
+    <component id="ID_s3_txt02">
+        <text>
+            <![CDATA[LAN]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt01">
+        <text>
+            <![CDATA[LAN]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt03">
+        <text>
+            <![CDATA[规则 1 规则 2 规则 3]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt04">
+        <text>
+            <![CDATA[流程和<br/>服务]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt05">
+        <text>
+            <![CDATA[<b>网际网络</b>]]></text>
+    </component>
+    <component id="ID_s3_txt07">
+        <text>
+            <![CDATA[服务<br/>（软件）]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt06">
+        <text>
+            <![CDATA[服务<br/>（软件）]]>
+        </text>
+    </component>
+</textcomponents>

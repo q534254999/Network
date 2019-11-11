@@ -1,0 +1,63 @@
+<textcomponents>
+    <component id="ID_titleTxt01">
+        <text>
+            <![CDATA[思科安全设备]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt03">
+        <text>
+            <![CDATA[基于服务器的防火墙]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[Cisco WRP500 无线宽带路由器]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt04">
+        <text>
+            <![CDATA[个人防火墙]]>
+        </text>
+    </component>
+    <component id="ID_inst">
+        <text>
+            <![CDATA[将鼠标指针置于每个设备之上，以了解详细信息。]]>
+        </text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[<b>思科安全设备</b>]]></text>
+    </component>
+    <component id="ID_bodyTxt01">
+        <text>
+            <![CDATA[专用的防火墙设备是不含外围设备或硬盘的特殊计算机。基于设备的防火墙可更快速地检测流量，出现故障的可能性也更低。]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt02">
+        <text>
+            <![CDATA[集成防火墙的 Linksys 无线路由器]]></text>
+    </component>
+    <component id="ID_bodyTxt02">
+        <text>
+            <![CDATA[大多数家用集成路由器具有内置的基本防火墙功能，可支持数据包、应用程序和网站过滤。运行思科互联网络操作系统 (IOS) 之类特殊操作系统的高端路由器也具有用户可配置的防火墙功能。]]>
+        </text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[<b>基于服务器的防火墙</b>]]></text>
+    </component>
+    <component id="ID_bodyTxt03">
+        <text>
+            <![CDATA[此类防火墙应用程序通常结合了 SPI 防火墙和基于 IP 地址或应用程序的访问控制。由于一般用途的操作系统的安全弱点，基于服务器的防火墙安全性低于基于设备的专用防火墙。]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[<b>个人防火墙</b>]]></text>
+    </component>
+    <component id="ID_bodyTxt04">
+        <text>
+            <![CDATA[一般使用 SPI 进行过滤的客户端防火墙。用户可能会收到提示以允许特定应用程序进行连接，或者可以定义自动例外列表。当主机设备直接连接到 ISP 调制解调器时，一般使用个人防火墙。若配置不当，此类防火墙可能会对 Internet 访问造成干扰。不建议同时使用多个个人防火墙，因为这些防火墙可能会彼此冲突。]]>
+        </text>
+    </component>
+</textcomponents>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.3.1 路由查找过程</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>路由查找过程</h1>
+        <div>
+          <p>数据包到达路由器接口时，路由器会检查 IPv4 报头，确定目标 IPv4 地址，并继续该路由器查找过程。</p>
+          <p></p>
+          <p>在图 1 中，路由器检查含有 IPv4 数据包目标地址最佳匹配项的 1 级网络路由：</p>
+          <p>1.如果最佳匹配是 1 级最终路由，则使用该路由转发数据包。</p>
+          <p>2.如果最佳匹配是 1 级父路由，则继续下一步。</p>
+          <p></p>
+          <p>在图 2 中，路由器检查该父路由的子路由（子网路由）以查找最佳匹配项。</p>
+          <p>3.如果在 2 级路由中存在匹配的路由，则使用该子网转发数据包。</p>
+          <p>4.如果所有 2 级子路由都不符合匹配条件，则会继续执行下一步。</p>
+          <p></p>
+          <p>在图 3 中，路由器继续在路由表中搜索 1 级超网路由以寻找匹配项，如果存在默认路由，也会对其进行搜索。</p>
+          <p>5.如果此时存在匹配位数相对较少的 1 级超网路由或默认路由，那么路由器会使用该路由转发数据包。</p>
+          <p>6.如果路由表中没有匹配的路由，则路由器会丢弃数据包。</p>
+          <p></p>
+          <p>
+            <b>注</b>：如果未使用思科快速转发 (CEF)，仅引用下一跳 IP 地址而不引用退出接口的路由必须解析为具有退出接口的路由。在没有 CEF 的情况下，会对下一跳 IP 地址执行递归查找，直到将该路由解析为某个退出接口。默认情况下，启用 CEF。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示匹配路由的流程图。在图中，如果 1 级最终路由是最佳匹配项，则遵循下一跳 IP 地址或退出接口路由数据包。图 2 显示数据包的最佳匹配项为 1 级父路由时的流程。如果发现与 2 级子路由匹配，则遵循下一跳 IP 地址或退出接口路由数据包。图 3 显示如果 2 级路由不符合匹配条件时的流程，这是搜索超网路由，包括路由表中的默认路由。如果未找到匹配项，则丢弃数据包。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.4.1.2 第 2 章：静态路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.4.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>第 2 章：静态路由</h1>
+        <div>
+          <p>在本章中，我们学习了如何使用 IPv4 和 IPv6 静态路由连接远程网络。远程网络是指只有通过将数据包转发至另一台路由器才能到达的网络。静态路由配置很简单。但是，在大型网络中，这种手动操作可能会造成很大的麻烦。即使实施了动态路由协议，仍要使用静态路由。</p>
+          <p></p>
+          <p>静态路由可以配置为使用下一跳 IP 地址，通常是下一跳路由器的 IP 地址。当使用下一跳 IP 地址时，路由表过程必须将该地址解析到送出接口。在点对点串行链路上，使用退出接口来配置静态路由通常更为有效。在类似以太网之类的多路访问网络中，可以同时为静态路由配置下一跳 IP 地址和退出接口。</p>
+          <p></p>
+          <p>静态路由具有的默认管理距离为 1。该管理距离同样适用于同时配置有下一跳地址和送出接口的静态路由。 </p>
+          <p></p>
+          <p>只有当静态路由中的下一跳 IP 地址能够解析到退出接口时，该路由才能输入路由表中。无论使用下一跳 IP 地址还是退出接口配置静态路由，如果用于转发数据包的退出接口不在路由表中，则路由表不会包含该静态路由。</p>
+          <p></p>
+          <p></p>
+          <p>对于 IPv4，默认路由配置为 0.0.0.0 网络地址和 0.0.0.0 子网掩码，对于 IPv6，默认路由配置为 prefix/prefix-length ::/0。如果路由表中没有更加精确的匹配条目，路由表将使用默认路由将数据包转发到另一个路由器。 </p>
+          <p></p>
+          <p>浮动静态路由可配置为通过控制管理距离值来备份主链路。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">该图是本章总结图形。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

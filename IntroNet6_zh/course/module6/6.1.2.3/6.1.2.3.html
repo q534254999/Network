@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.2.3 IP - 无连接</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IP - 无连接</h1>
+        <div>
+          <p>IP 是无连接协议，这意味着发送数据前没有创建专用的端到端连接。如图 1 所示，无连接通信概念类似于不事先通知收件人就邮寄信件。</p>
+          <p></p>
+          <p>无连接数据通信按照同样的原理工作。如图 2 所示，IP 在转发数据包前，并不需要初步交换控制信息来创建端到端连接。IP 也不需要报头中包含其他字段来维持建立的连接。此过程显著降低了 IP 的开销。但是，由于没有预先建立端到端连接，发送数据包时，发送方不知道目的设备是否存在和正常运行，同时发送数据包时，也不会知道目标设备是否接收数据包，或者，目标设备是否可以访问并读取数据包。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a standard letter being placed into a mailbox with a truck delivering the letter to a house.  This demonstrates the similarities between Internet communications and the postal service. Figure 2 shows 2 computers connected to a network and a layer 3 packet traversing the network.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

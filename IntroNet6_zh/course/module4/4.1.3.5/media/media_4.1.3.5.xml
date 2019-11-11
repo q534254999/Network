@@ -1,0 +1,98 @@
+﻿<textcomponents>
+    <component id='ID_s1_inst'>
+        <text>
+            <![CDATA[<b>练习 - 物理层术语</b>]]></text>
+    </component>
+    <component id='ID_s1_instr_title'>
+		<text><![CDATA[说明]]></text>
+	</component>
+
+	<component id='ID_s1_instr_body'>
+		<text><![CDATA[物理层的说明在下表中提供。将每个物理层术语拖动到其描述下。]]></text>
+	</component>
+    <component id='ID_s1_txt01'>
+        <text>
+            <![CDATA[传输和承载位信号的硬件设备、介质和连接器]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt02'>
+        <text>
+            <![CDATA[1 和 0 在介质中的表示方式取决于编码方案]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt03'>
+        <text>
+            <![CDATA[信号的平均时间间隔]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt04'>
+        <text>
+            <![CDATA[将数据位流转换为位组的方法 - 预定义]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt05'>
+        <text>
+            <![CDATA[信号的任意时间间隔]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt06'>
+        <text>
+            <![CDATA[术语]]></text>
+    </component>
+    <component id='ID_s1_txt07'>
+        <text>
+            <![CDATA[物理层描述]]></text>
+    </component>
+    <!--Drag and Drop-->
+    <component id='ID_s1_traget01'>
+        <text>
+            <![CDATA[<font color="#393536">同步</font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_traget02'>
+        <text>
+            <![CDATA[<font color="#393536">信令方法</font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_traget03'>
+        <text>
+            <![CDATA[<font color="#393536">帧编码</font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_traget04'>
+        <text>
+            <![CDATA[<font color="#393536">异步</font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_traget05'>
+        <text>
+            <![CDATA[<font color="#393536">物理组件</font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_CORRECT_TITLE'>
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id='ID_s1_CORRECT_BODY'>
+        <text>
+            <![CDATA[您已成功地将每个物理层术语与其描述相匹配。]]>
+        </text>
+    </component>
+    <component id='ID_s1_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id='ID_s1_INCORRECT_BODY'>
+        <text>
+            <![CDATA[您尚未成功地将每个物理层术语与其描述相匹配。请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id='ID_s1_CHECK'>
+        <text>
+            <![CDATA[检查</b>]]></text>
+    </component>
+    <component id='ID_s1_RESET'>
+        <text>
+            <![CDATA[重置</b>]]></text>
+    </component>
+</textcomponents>

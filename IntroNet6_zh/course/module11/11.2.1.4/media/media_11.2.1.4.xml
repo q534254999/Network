@@ -1,0 +1,200 @@
+<textcomponents>
+    <!--slide01-->
+    
+    <component id='ID_s1_title'>
+        <text>
+            <![CDATA[<b>练习 - 第 1 部分：安全威胁和漏洞</b>]]></text>
+    </component>
+    <component id='ID_s1_instr_title'>
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id='ID_s1_instr_body'>
+        <text>
+            <![CDATA[了解安全威胁和漏洞场景。将每种场景拖到相应类型的安全威胁。]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[<b>信息盗窃</b>]]></text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[<b>身份盗窃</b>]]></text>
+    </component>
+    <component id="ID_s1_txt03">
+        <text>
+            <![CDATA[<b>数据丢失/操纵</b>]]></text>
+    </component>
+    <component id="ID_s1_txt04">
+        <text>
+            <![CDATA[<b>服务中断</b>]]></text>
+    </component>
+    <!--Drag and Drop-->
+    <component id="ID_s1_drag01">
+        <text>
+            <![CDATA[窃取公司的<br/>用户数据库]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag02">
+        <text>
+            <![CDATA[窃取科学<br/>研究报告]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag03">
+        <text>
+            <![CDATA[伪装用户<br/>获取信用]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag04">
+        <text>
+            <![CDATA[进行非法在线购物]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag05">
+        <text>
+            <![CDATA[更改数据记录]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag06">
+        <text>
+            <![CDATA[发送重新格式化<br/>硬盘的病毒]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag07">
+        <text>
+            <![CDATA[使网络过载<br/>导致用户无法联网]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag08">
+        <text>
+            <![CDATA[阻止合法用户访问数据服务]]>
+        </text>
+    </component>
+    <component id="ID_s2_CORRECT_TITLE">
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id="ID_s1_CORRECT_BODY">
+        <text>
+            <![CDATA[您已成功将每个场景与其安全威胁类型相匹配。]]>
+        </text>
+    </component>
+    <component id="ID_s2_INCORRECT_TITLE">
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id="ID_s1_INCORRECT_BODY">
+        <text>
+            <![CDATA[您尚未成功将每个场景与其安全威胁类型相匹配。请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id="ID_s2_CHECK">
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id="ID_s2_RESET">
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+    <!--slide02-->
+   
+     <component id='ID_s2_title'>
+        <text>
+            <![CDATA[<b>练习 - 第 2 部分：安全威胁和漏洞</b>]]></text>
+    </component>
+    <component id='ID_s2_instr_title'>
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id='ID_s2_instr_body'>
+        <text>
+            <![CDATA[了解安全管理实践。将每个管理实践拖到相应的安全管理类型。]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[<b>硬件</b>]]></text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[<b>环境</b>]]></text>
+    </component>
+    <component id="ID_s2_txt03">
+        <text>
+            <![CDATA[<b>电力</b>]]></text>
+    </component>
+    <component id="ID_s2_txt04">
+        <text>
+            <![CDATA[<b>维护</b>]]></text>
+    </component>
+    <!--Drag and Drop-->
+    <component id="ID_s2_drag01">
+        <text>
+            <![CDATA[锁定设备 - 防止未经授权的访问。]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag02">
+        <text>
+            <![CDATA[使用安全摄像头]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag03">
+        <text>
+            <![CDATA[控制温度和湿度]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag04">
+        <text>
+            <![CDATA[创建良好的气流]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag05">
+        <text>
+            <![CDATA[安装 UPS 系统]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag06">
+        <text>
+            <![CDATA[安装冗余电源]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag07">
+        <text>
+            <![CDATA[控制对控制台端口的访问]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag08">
+        <text>
+            <![CDATA[标记重要电缆和组件]]>
+        </text>
+    </component>
+    <component id="ID_s1_CORRECT_TITLE">
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id="ID_s2_CORRECT_BODY">
+        <text>
+            <![CDATA[您已成功将每个安全实践与其安全管理类型相匹配。]]>
+        </text>
+    </component>
+    <component id="ID_s1_INCORRECT_TITLE">
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id="ID_s2_INCORRECT_BODY">
+        <text>
+            <![CDATA[您尚未成功将每个安全实践与其安全管理类型相匹配。请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id="ID_s1_CHECK">
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id="ID_s1_RESET">
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+</textcomponents>

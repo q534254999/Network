@@ -1,0 +1,159 @@
+<textcomponents>
+
+<component id='ID_main_txt01'>
+	<text><![CDATA[服务器]]></text>
+</component>
+
+<component id='ID_main_txt02'>
+	<text><![CDATA[客户端]]></text>
+</component><!-- Slide 1 --><component id='ID_s1_title'>
+	<text><![CDATA[<b>DHCPv4 操作</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+   <text><![CDATA[我可以为 DHCP 客户端提供 IP 地址。]]></text>
+</component>
+<component id="ID_s1_txt02">
+   <text><![CDATA[我需要从 DHCP 服务器租用 IP 地址。]]></text>
+</component><!-- Slide 2 --><component id='ID_s2_title'>
+	<text><![CDATA[<b>DHCPv4 操作</b>]]></text>
+</component>
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[<b>租赁发起</b>]]></text>
+</component>
+
+<component id='ID_s2_txt02'>
+	<text><![CDATA[<b>DHCPDISCOVER</b><br/>广播]]></text>
+</component>
+
+<component id='ID_s2_txt03'>
+	<text><![CDATA[“我想请求一个地址。”]]></text>
+</component><!-- Slide 3 --><component id='ID_s3_title'>
+	<text><![CDATA[<b>DHCPv4 操作</b>]]></text>
+</component>
+
+<component id='ID_s3_txt01'>
+	<text><![CDATA[<b>租赁发起</b>]]></text>
+</component>
+
+<component id='ID_s3_txt02'>
+	<text><![CDATA[<b>DHCPDISCOVER</b><br/>广播]]></text>
+</component>
+
+<component id='ID_s3_txt03'>
+	<text><![CDATA[“我想请求一个地址。”]]></text>
+</component>
+
+<component id='ID_s3_txt04'>
+	<text><![CDATA[<b>DHCPOFFER</b><br/>单播]]></text>
+</component>
+
+<component id='ID_s3_txt05'>
+	<text><![CDATA[“我是 DHCPsvr1。 这是我可以提供的<br>地址。”]]></text>
+</component><!-- Slide 4 --><component id='ID_s4_title'>
+	<text><![CDATA[<b>DHCPv4 操作</b>]]></text>
+</component>
+
+<component id='ID_s4_txt01'>
+	<text><![CDATA[<b>租赁发起</b>]]></text>
+</component>
+
+<component id='ID_s4_txt02'>
+	<text><![CDATA[<b>DHCPDISCOVER</b><br/>广播]]></text>
+</component>
+
+<component id='ID_s4_txt03'>
+	<text><![CDATA[“我想请求一个地址。”]]></text>
+</component>
+
+<component id='ID_s4_txt04'>
+	<text><![CDATA[<b>DHCPOFFER</b><br/>单播]]></text>
+</component>
+
+<component id='ID_s4_txt05'>
+	<text><![CDATA[“我是 DHCPsvr1。 这是我可以提供的<br>地址。”]]></text>
+</component>
+
+<component id='ID_s4_txt06'>
+	<text><![CDATA[<b>DHCPREQUEST</b><br/>广播]]></text>
+</component>
+
+<component id='ID_s4_txt07'>
+	<text><![CDATA[“我接受提供的 IP 地址。”]]></text>
+</component><!-- Slide 5 --><component id='ID_s5_title'>
+	<text><![CDATA[<b>DHCPv4 操作</b>]]></text>
+</component>
+
+<component id='ID_s5_txt01'>
+	<text><![CDATA[<b>租赁发起</b>]]></text>
+</component>
+
+<component id='ID_s5_txt02'>
+	<text><![CDATA[<b>DHCPDISCOVER</b><br/>广播]]></text>
+</component>
+
+<component id='ID_s5_txt03'>
+	<text><![CDATA[“我想请求一个地址。”]]></text>
+</component>
+
+<component id='ID_s5_txt04'>
+	<text><![CDATA[<b>DHCPOFFER</b><br/>单播]]></text>
+</component>
+
+<component id='ID_s5_txt05'>
+	<text><![CDATA[“我是 DHCPsvr1。 这是我可以提供的<br>地址。”]]></text>
+</component>
+
+<component id='ID_s5_txt06'>
+	<text><![CDATA[<b>DHCPREQUEST</b><br/>广播]]></text>
+</component>
+
+<component id='ID_s5_txt07'>
+	<text><![CDATA[“我接受提供的 IP 地址。”]]></text>
+</component>
+
+<component id='ID_s5_txt08'>
+	<text><![CDATA[<b>DHCPACK</b><br/>单播]]></text>
+</component>
+
+<component id='ID_s5_txt09'>
+	<text><![CDATA[“您的接收已确认”。]]></text>
+</component><!-- Slide 6 --><component id='ID_s6_title'>
+	<text><![CDATA[<b>DHCPv4 操作</b>]]></text>
+</component>
+
+<component id='ID_s6_txt01'>
+	<text><![CDATA[<b>租赁续约</b>]]></text>
+</component>
+
+<component id='ID_s6_txt02'>
+	<text><![CDATA[<b>DHCPREQUEST</b><br/>单播]]></text>
+</component>
+
+<component id='ID_s6_txt03'>
+	<text><![CDATA[“我想续签租约。”]]></text>
+</component><!-- Slide 7 --><component id='ID_s7_title'>
+	<text><![CDATA[<b>DHCPv4 操作</b>]]></text>
+</component>
+
+<component id='ID_s7_txt01'>
+	<text><![CDATA[<b>租赁续约</b>]]></text>
+</component>
+
+<component id='ID_s7_txt02'>
+	<text><![CDATA[<b>DHCPREQUEST</b><br/>单播]]></text>
+</component>
+
+<component id='ID_s7_txt03'>
+	<text><![CDATA[“我想续签租约。”]]></text>
+</component>
+
+<component id='ID_s7_txt04'>
+	<text><![CDATA[<b>DHCPACK</b><br/>单播]]></text>
+</component>
+
+<component id='ID_s7_txt05'>
+	<text><![CDATA[“您的请求已确认”。]]></text>
+</component>
+
+</textcomponents>

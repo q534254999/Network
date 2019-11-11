@@ -1,0 +1,110 @@
+﻿<textcomponents><component id="ID_title"><text><![CDATA[<b>CLI 热键和快捷方式</b>]]></text></component><component id="ID_txt01"><text><![CDATA[（注意：终端仿真程序无法识别用于删除光标右边内容的“<b>Delete</b>”键。）]]></text></component><component id="ID_txt02"><text><![CDATA[注意：<b>Control</b> 键 - 按住 <Ctrl> 键，然后按指定的字母键。<br/><b>Escape</b> 命令序列 - 按下 <Esc> 键再释放，然后按字母键。]]></text></component><component id="ID_table01"><text><![CDATA[<table header="none" bordercolor="#FFFFFF" borderwidth="3" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4" class="mtable">
+	<tr class="mtable_title">
+		<td colspan="2" bgcolor="#FFFFFF"><font size="12">CLI 行编辑</font></td>
+	</tr>
+	<tr class="mtable_top">
+		<td colspan="2" bgcolor="#4E4C4D"><font size="1" color="#4E4C4D">.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" width="135">Tab</td>
+		<td bgcolor="#E9E7E8">补全部分输入的命令项。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2">Backspace</td>
+		<td bgcolor="#F2F2F2">删除光标左边的字符。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8">Ctrl-D</td>
+		<td bgcolor="#E9E7E8">删除光标所在的字符。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2">Ctrl-K</td>
+		<td bgcolor="#F2F2F2">删除从光标到命令行尾的所有字符。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8">Esc D</td>
+		<td bgcolor="#E9E7E8">删除从光标到词尾的所有字符。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2">Ctrl-U 或 Ctrl-X</td>
+		<td bgcolor="#F2F2F2">删除从光标到命令行首的所有字符。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8">Ctrl-W</td>
+		<td bgcolor="#E9E7E8">删除光标左边的单词。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2">Ctrl-A</td>
+		<td bgcolor="#F2F2F2">将光标移至行首。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8">向左键或 Ctrl-B</td>
+		<td bgcolor="#E9E7E8">将光标左移一个字符。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2">Esc B</td>
+		<td bgcolor="#F2F2F2">将光标向后左移一个单词。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8">Esc F</td>
+		<td bgcolor="#E9E7E8">将光标向前右移一个单词。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2">向右键或 Ctrl-F</td>
+		<td bgcolor="#F2F2F2">将光标右移一个字符。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8">Ctrl-E</td>
+		<td bgcolor="#E9E7E8">将光标移至命令行尾。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2">向上键或 Ctrl-P</td>
+		<td bgcolor="#F2F2F2">调出历史记录缓冲区中的命令，从最近输入的命令开始。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8">Ctrl-R、Ctrl-I 或 Ctrl-L</td>
+		<td bgcolor="#E9E7E8">收到控制台消息后重新显示系统提示符和命令行。</td>
+	</tr>
+</table>
+]]></text></component>
+<component id="ID_table02"><text><![CDATA[<table width="600" header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">	 
+	<tr class="mtable_title">
+		<td colspan="2" bgcolor='#FFFFFF'><font size="12"><b>At the "-----More-----" prompt</b></font></td>
+	</tr>
+	<tr class="mtable_top">
+		<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  width='135'><b>Enter 键</b></td>
+		<td bgcolor='#E9E7E8'>显示下一行。</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'><b>空格键</b></td>
+		<td bgcolor='#F2F2F2'>显示下一屏。</td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'><b>任意键</b></td>
+		<td bgcolor='#E9E7E8'>结束显示字符串，返回特权 EXEC 模式。</td>
+	</tr>
+</table>]]></text></component>
+<component id="ID_table03"><text><![CDATA[<table header="none" bordercolor="#FFFFFF" borderwidth="3" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4" class="mtable">
+	<tr class="mtable_title">
+		<td colspan="2" bgcolor="#FFFFFF"><font size="12">Break 键</font></td>
+	</tr>
+	<tr class="mtable_top">
+		<td colspan="2" bgcolor="#4E4C4D"><font size="1" color="#4E4C4D">.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" width="135">Ctrl-C</td>
+		<td bgcolor="#E9E7E8">处于任何配置模式下时，用于结束该配置模式并返回特权执行模式。 处于设置模式下时，用于中止并返回命令提示符。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2">Ctrl-Z</td>
+		<td bgcolor="#F2F2F2">处于任何配置模式下时，用于结束该配置模式并返回特权执行模式。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8">Ctrl-Shift-6</td>
+		<td bgcolor="#E9E7E8">全能的中止命令序列。用于中止 DNS lookup、traceroute 和 ping 命令。</td>
+	</tr>
+</table>
+]]></text></component></textcomponents>

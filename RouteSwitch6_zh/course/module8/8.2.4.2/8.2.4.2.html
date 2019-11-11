@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.4.2 验证路由器 DHCPv6 配置</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证路由器 DHCPv6 配置</h1>
+        <div>
+          <p>无状态和有状态 DHCPv6 服务的路由器配置有很多相似之处，但也包括明显的差异。图 1 显示了这两类 DHCPv6 服务的配置命令。</p>
+          <p></p>
+          <p>
+            <b>有状态 DHCPv6 </b>
+          </p>
+          <p></p>
+          <p>配置在有状态 DHCPv6 服务上的路由器使用 <b>address prefix</b> 命令提供编址信息。</p>
+          <p>对于有状态 DHCPv6 服务，使用 <b>ipv6 nd managed-config-flag</b> 接口配置模式命令。在本示例中，客户端忽略了 RA 消息中的编址信息，并与 DHCPv6 服务器通信以获取编址信息和其他信息。</p>
+          <p></p>
+          <p>
+            <b>无状态 DHCPv6</b>
+          </p>
+          <p></p>
+          <p>对于无状态 DHCPv6 服务，使用 <b>ipv6 nd other-config-flag</b> 接口配置模式命令。这会通知设备使用 SLAAC 获取编址信息，使用无状态 DHCPv6 服务器获取其它配置参数。</p>
+          <p></p>
+          <p>可使用 <b>show ipv6 interface</b> 命令查看当前配置以确定分配方法。如图 2 所示，输出的最后一行表明客户端如何获取地址和其他参数。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 列出了用来在路由器上配置有状态 DHCPv6 的命令。该示例以全局配置模式开始，命令如下所示。第一个命令是 ipv6 unicast-routing。下一命令是 dhcp pool ipv6-stateful。下一命令是，address prefix 2 0 0 1:d b 8:c a f e:1::/64 lifetime infinite。下一命令是 d.n.s.-server 2 0 0 1:d b 8:c a f e:a a a a :: 5。下一命令是 domain-name example.com。已配置 DHCP v6 池，下一组命令将池绑定到接口。示例中的 CLI 首先使用命令 exit 转移到本地接口。Exit  命令之后是 interface g 0/1 命令。下一命令是 i.p.v.6. address 2 0 0 1:d b 8:c a f e:1:: 1/64。下一命令是 dhcp pool ipv6-stateful。最后一个命令 i.p.v.6. n.d. managed-config-flag。突出显示了 address prefix 命令和 ipv6 nd managed 命令，以表示这些命令特定于有状态配置。该图还列出了用来配置无状态 DHCPv6 服务的命令。该示例以全局配置模式开始，命令如下所示。第一个命令是 ipv6 unicast-routing。下一个命令是 dhcp pool ipv6-stateless。下一命令是 d.n.s.-server 2 0 0 1:d b 8:c a f e:a a a a :: 5。下一命令是 domain-name example.com。已配置 DHCP v6 池，下一组命令将池绑定到接口。示例中的 CLI 首先使用命令 exit 转移到本地接口。Exit  命令之后是 interface g 0/1 命令。下一命令是 i.p.v.6. address 2 0 0 1:d b 8:c a f e:1:: 1/64。下一个命令是 dhcp pool ipv6-stateless。最后一个命令是 i.p.v.6. n.d. other-config-flag。在图中突出显示了命令 ipv6 nd other-config-flag，以表示它特定于无状态 DHCPv6 配置。图 2 显示了三种不同配置在特定路由器接口上运行 show ipv6 interface 命令的输出。第一个是 SLAAC 的输出，该图突出显示了指出“hosts use stateless autoconfig for address”（主机使用无状态地址自动配置）的行。接着是无状态 DHCPv6 的输出，该图突出显示了指出“hosts use DHCP to obtain other configuration”（主机使用 DHCP 获取其他配置）的行。第三个是有状态 DHCPv6 的输出，该图突出显示了指出“Hosts use DHCP to obtain routable addresses”（主机使用 DHCP 获取可路由地址）的行。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

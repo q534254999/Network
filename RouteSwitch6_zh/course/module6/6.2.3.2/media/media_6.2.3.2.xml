@@ -1,0 +1,53 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>缺失的 VLAN</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+<text><![CDATA[<font face="_typewriter"><b>show vlan<br/>show mac address-table</b></font>]]></text>
+</component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[<font face="_typewriter"><b>show vlan<br/>show interfaces<br/>show interfaces switchport</b></font>]]></text> 
+  </component>
+<component id="ID_s1_txt03">
+  <text><![CDATA[同一 VLAN 中的设备之间无连接。]]></text> 
+  </component>
+<component id="ID_s1_txt04">
+<text><![CDATA[端口是否在正确的 VLAN 中？?]]></text>
+</component>
+<component id="ID_s1_txt05">
+  <text><![CDATA[是]]></text> 
+  </component>
+<component id="ID_s1_txt06">
+  <text><![CDATA[VLAN 数据库中是否存在 VLAN？]]></text> 
+  </component>
+<component id="ID_s1_txt07">
+<text><![CDATA[是]]></text>
+</component>
+<component id="ID_s1_txt08">
+  <text><![CDATA[检验同一 VLAN 中设备间的连接。]]></text> 
+  </component>
+<component id="ID_s1_txt09">
+  <text><![CDATA[否]]></text> 
+  </component>
+<component id="ID_s1_txt10">
+<text><![CDATA[否]]></text>
+</component>
+<component id="ID_s1_txt11">
+  <text><![CDATA[将端口分配给正确的 VLAN.]]></text> 
+  </component>
+<component id="ID_s1_txt12">
+  <text><![CDATA[在 VLAN 数据库中创建 VLAN.]]></text> 
+  </component>
+  
+  
+  
+  
+<component id="ID_s2_title">
+<text><![CDATA[<b>缺失的 VLAN</b>]]></text>
+</component>
+<component id="ID_s2_txt01">
+<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+</component>
+
+
+</textcomponents>

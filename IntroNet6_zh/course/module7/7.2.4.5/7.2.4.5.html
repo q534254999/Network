@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.4.5 EUI-64 流程和随机生成</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.4.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EUI-64 流程和随机生成</h1>
+        <div>
+          <p>当 RA 消息为 SLAAC 或 SLAAC 和无状态 DHCPv6 时，客户端必须生成自己的接口 ID。客户端从 RA 消息中获知地址的前缀部分，但必须创建自己的接口 ID。如图 1 所示，接口 ID 可使用 EUI-64 流程或随机生成的 64 位数字创建。</p>
+          <p>
+            <b>EUI-64 流程</b>
+          </p>
+          <p>IEEE 定义了扩展唯一标识符 (EUI) 或修改的 EUI-64 流程。该流程使用客户端的 48 位以太网 MAC 地址，并在该 48 位 MAC 地址的中间插入另外 16 位来创建 64 位接口 ID。 </p>
+          <p>以太网 MAC 地址一般使用十六进制表示，由两部分组成： </p>
+          <p>
+            <ul>
+              <li>
+                <b>组织唯一标识符 (OUI)</b> – OUI 为 IEEE 分配的 24 位（6 个十六进制数字）厂商代码。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>设备标识符 </b>– 设备标识符是通用 OUI 内的唯一 24 位（6 个十六进制数字）值。 </li>
+            </ul>
+          </p>
+          <p>EUI-64 接口 ID 以二进制表示，共分三个部分：</p>
+          <p>
+            <ul>
+              <li>客户端 MAC 地址的 24 位 OUI，但是第 7 位（通用/本地 (U/L) 位）颠倒。这意味着，如果第 7 位是 0，则它会变为 1，反之亦然。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>插入的 16 位值 FFFE（十六进制）</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>客户端 MAC 地址的 24 位设备标识符</li>
+            </ul>
+          </p>
+          <p>图 2 是 EUI-64 流程图，它使用 R1 千兆以太网 MAC 地址，即 FC99:4775:CEE0。</p>
+          <p>
+            <b>第 1 步：</b>划分 OUI 和设备标识符之间的 MAC 地址。</p>
+          <p>
+            <b>第 2 步：</b>插入十六进制值 FFFE（二进制形式为 1111 1111 1111 1110）。 </p>
+          <p>
+            <b>第 3 步：</b>将 OUI 的前 2 个十六进制值转换为二进制值，并颠倒 U/L 位（第 7 位）。在该示例中，第 7 位的 0 变为 1。</p>
+          <p>结果即是 EUI-64 生成的接口 ID：FE99:47FF:FE75:CEE0。 </p>
+          <p>
+            <b>注意</b>：U/L 位的用途和该位值的翻转原因会在 RFC 5342 中讨论。</p>
+          <p>图 3 显示使用 SLAAC 和 EUI-64 流程动态生成的 PCA 的 IPv6 全局单播地址。确定更可能使用 EUI-64 创建地址的简单方法是接口 ID 中间的 FFFE，如图 3 所示。</p>
+          <p>EUI-64 优势在于可以使用以太网 MAC 地址确定接口 ID。这也允许网络管理员使用唯一 MAC 地址轻松跟踪终端设备的 IPv6 地址。但是，这却为很多客户带来了隐私忧虑。他们担心他们的数据包可以追溯到实际物理计算机。出于这些顾虑，可以转而使用随机生成的接口 ID。</p>
+          <p>
+            <b>随机生成的接口 ID</b>
+          </p>
+          <p>根据操作系统，设备可以使用随机生成的接口 ID，而不使用 MAC 地址和 EUI-64 流程。例如，从 Windows Vista 开始，Windows 使用随机生成的接口 ID，而不是 EUI-64 创建的接口 ID。Windows XP 和之前的 Windows 操作系统均使用 EUI-64。</p>
+          <p>如图 4 所示，接口 ID 创建后（无论是使用 EUI-64 流程还是通过随机生成），它都可以在 RA 消息中结合 IPv6 前缀来创建全局单播地址。 </p>
+          <p>
+            <b>注意</b>：为确保任何 IPv6 单播地址的唯一性，客户端可以使用重复地址检测 (DAD) 流程。这与 ARP 请求其地址的流程相似。如该请求没有响应，则地址是唯一的。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows an example of EUI-64. A computer uses the IPv6 global unicast of the router to construct its own global unicast  address. The computer uses the prefix from the router's address, which is 2001:DB8:ACAD:1 in the example. And then the computer uses EUI-64 to fill in the interface ID portion of the address. Figure 2 shows the E.U.I.-64 process for creating a 64 bit interface ID.  Step one begins with the example MAC address, FC:99:47:75:CE:E0.  The MAC address is split between the OUI and the device ID, and converted into binary.  In step two, the hexadecimal value FFFE is inserted between the OUI and the device ID. This makes converts the 48 bit MAC address into 64 bits.  In step three, the seventh high order bit is flipped from 0 to 1.  The modified MAC address is now the EUI-64 interface ID, FE:00:47:FF:FE:75:CE:E0. Figure 3 shows the Windows command line with the command "ipconfig" entered. The IPv6 global unicast address was generated using EUI-64. Figure 4 shows the Windows command line with the command "ipconfig" entered. The IPv6 global unicast address was created by generating a random 64-bit number for the interface ID.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

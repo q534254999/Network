@@ -1,0 +1,90 @@
+<textcomponents>
+
+<component id='ID_title'>
+	<text><![CDATA[<b>练习 - 确定正确的通配符掩码</b><br><br>将通配符掩码拖放到相应的 ACL 语句。 有些答案可能多次用到，而有些答案可能不会用到。 ]]></text>
+</component>
+
+<component id='ID_drag_header01'>
+	<text><![CDATA[<b>ACL 语句</b>]]></text>
+</component>
+<component id='ID_drag_header02'>
+	<text><![CDATA[<b>通配符掩码</b>]]></text>
+</component>
+
+<component id='ID_txt01'>
+	<text><![CDATA[拒绝所有来自 10.10.10.0/24 网络的主机。]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[拒绝主机 192.168.5.7。]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[允许来自 172.18.15.0/24 子网的所有主机。]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[允许主机 10.10.10.1。]]></text>
+</component>
+
+<component id='ID_txt05'>
+	<text><![CDATA[允许所有来自 10.0.0.0/8 网络的主机.]]></text>
+</component>
+
+<component id='ID_txt06'>
+	<text><![CDATA[拒绝主机 172.18.33.1。]]></text>
+</component>
+
+<component id='ID_txt07'>
+	<text><![CDATA[允许来自 192.168.5.0/27 子网的所有主机。]]></text>
+</component>
+
+<component id='ID_txt08'>
+	<text><![CDATA[拒绝 172.18.0.0/16 网络的所有主机。]]></text>
+</component><!--Drag and Drop--><component id='ID_ip1_DS'>
+	<text><![CDATA[0.0.0.255]]></text>
+</component>
+
+<component id='ID_ip2_DS'>
+	<text><![CDATA[0.0.0.0]]></text>
+</component>
+
+<component id='ID_ip3_DS'>
+	<text><![CDATA[0.255.255.255]]></text>
+</component>
+
+<component id='ID_ip4_DS'>
+	<text><![CDATA[0.0.0.31]]></text>
+</component>
+
+<component id='ID_ip5_DS'>
+	<text><![CDATA[0.0.255.255]]></text>
+</component>
+
+
+<component id='ID_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_CORRECT_BODY'>
+	<text><![CDATA[您已成功确定每个 ACL 语句中的通配符掩码。]]></text>
+</component>
+
+
+<component id='ID_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_INCORRECT_BODY'>
+	<text><![CDATA[您未成功确定每个 ACL 语句中的通配符掩码。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>重置</b>]]></text>
+</component>
+
+</textcomponents>

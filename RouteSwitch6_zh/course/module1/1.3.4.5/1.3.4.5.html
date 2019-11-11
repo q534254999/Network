@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.3.4.5 IPv6 动态路由示例</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.3.4.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv6 动态路由示例</h1>
+        <div>
+          <p>已使用动态路由协议 IPv6 之 EIGRP 配置路由器 R1 和 R2。（这是用于 IPv4 的 EIGRP 的 IPv6 对应物。）</p>
+          <p></p>
+          <p>要查看 R1 上的路由表，请输入 <b>show ipv6 route </b>命令，如图所示。图中的输出显示路由器已交换更新并融合之后 R1 的路由表。加上连接路由和本地路由，路由表中共有两个“<b>D</b>”条目（EIGRP 路由）。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示通过 WAN 链路连接到互联网云的两个路由器的网络，且每个路由器都在千兆位以太网端口上有两个活动网络。显示的结果是在其中一个路由器上运行 show i.p.v.6. route 命令的输出。该列表包括三个本地路由、三个接口 IP 地址和两个从 EIGRP 获取的路由。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>配置 G0/0 接口</b>]]></text>
+	</component>
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>配置 G0/1 接口</b>]]></text>
+	</component>
+	<component id="ID_s3_title">
+		<text><![CDATA[<b>配置 Serial 0/0/0 接口</b>]]></text>
+	</component>
+	<component id="ID_sc_reset">
+		<text><![CDATA[重置]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[看答案]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[全部显示]]></text>
+	</component>
+	<component id="ID_SC_title" fontFace="_typewriter" fontSize="12" fontColor="#ffffff">
+		<text><![CDATA[<b>配置 R2 接口</b>]]></text>
+	</component>
+	<component id="ID_SC5" fontSize="12" fontFace="_typewriter" fontColor="#ffffff">
+		<text></text>
+		<feedback id="fb"><![CDATA[<b>***</b><font face="_sans"   color="#FFFFFF">您必须输入准确而完整的命令。</font><b>***</b>]]></feedback>
+		<existingcommands><![CDATA[<font face="_sans"><b>使用 IP 地址“10.1.1.1”和子网掩码“255.255.255.0”来配置 GigabitEthernet 0/0 接口。 将此链路描述为“LAN 3 的链路”并激活该接口。</b></font>]]></existingcommands>
+		<command prompt="R2(config)#">
+			<correctresponse><![CDATA[interface gigabitethernet 0/0]]></correctresponse>
+		</command>
+		<command prompt="R2(config-if)#">
+			<correctresponse><![CDATA[ip address 10.1.1.1 255.255.255.0]]></correctresponse>
+		</command>
+		<command prompt="R2(config-if)#">
+			<correctresponse><![CDATA[description Link to LAN 3]]></correctresponse>
+		</command>
+		<command prompt="R2(config-if)#">
+			<correctresponse><![CDATA[no shutdown]]></correctresponse>
+			<deviceresponse><![CDATA[%LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to up<br>%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up<br>]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>使用 IP 地址“10.1.2.1”和子网掩码“255.255.255.0”来配置 GigabitEthernet 0/1 接口。 将此链路描述为“LAN 4 的链路”并激活该接口。</b></font>]]></instruction>
+		</command>
+		<command prompt="R2(config-if)#">
+			<correctresponse><![CDATA[interface gigabitethernet 0/1]]></correctresponse>
+		</command>
+		<command prompt="R2(config-if)#">
+			<correctresponse><![CDATA[ip address 10.1.2.1 255.255.255.0]]></correctresponse>
+		</command>
+		<command prompt="R2(config-if)#">
+			<correctresponse><![CDATA[description Link to LAN 4]]></correctresponse>
+		</command>
+		<command prompt="R2(config-if)#">
+			<correctresponse><![CDATA[no shutdown]]></correctresponse>
+			<deviceresponse><![CDATA[%LINK-5-CHANGED: Interface GigabitEthernet0/1, changed state to up<br>%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up<br><br>]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>使用 IP 地址“209.165.200.226”和子网掩码“255.255.255.252”配置 Serial 0/0/0 接口。 将此链路描述为“R1 的链路”并激活该接口。</b></font>]]></instruction>
+		</command>
+		<command prompt="R2(config-if)#">
+			<correctresponse><![CDATA[interface Serial 0/0/0]]></correctresponse>
+		</command>
+		<command prompt="R2(config-if)#">
+			<correctresponse><![CDATA[ip address 209.165.200.226 255.255.255.252]]></correctresponse>
+		</command>
+		<command prompt="R2(config-if)#">
+			<correctresponse><![CDATA[description Link to R1]]></correctresponse>
+		</command>
+		<command prompt="R2(config-if)#">
+			<correctresponse><![CDATA[no shutdown]]></correctresponse>
+			<deviceresponse><![CDATA[%LINK-5-CHANGED: Interface Serial0/0/0, changed state to up<br>%LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/0, changed state to up<br><br>]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"  class="syntaxBottomLine"><b>您已成功配置 R2 路由器接口。</b></font>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+</textcomponents>

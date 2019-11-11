@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.4.1.3 第 9 章：IPv4 NAT</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.4.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>第 9 章：IPv4 NAT</h1>
+        <div>
+          <p>本章概述如何使用 NAT 帮助缓解 IPv4 地址空间耗尽的问题。用于 IPv4 的 NAT 允许网络管理员使用 RFC 1918 私有地址空间，同时使用单个或数量有限的公有地址提供互联网连接。</p>
+          <p></p>
+          <p>NAT 可以节约公有地址空间，并节省相当大的添加、移动和更改等管理开销。可实施 NAT 和 PAT 来节约公共地址空间，而不会影响 ISP 连接。但是，NAT 的缺点在于它对设备性能、移动性和端到端连通性产生的负面影响，因此应将其视为针对地址耗尽问题采取的短期实施，而长期解决方案是使用 IPv6。</p>
+          <p></p>
+          <p>本章讨论用于 IPv4 的 NAT，包括：</p>
+          <p>
+            <ul>
+              <li>NAT 特性、术语和一般操作</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>不同类型的 NAT，包括静态 NAT，动态 NAT 和 PAT</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>NAT 优势和缺点</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>配置、验证和分析静态 PAT、动态 NAT 和 PAT</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>如何使用端口转发从互联网访问内部设备</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>为什么 NAT 可用但不是 IPv6 网络所必需的</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>使用 <b> show </b>和<b> debug </b>命令对 NAT 进行故障排除</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图显示连接了两个 LAN 的路由器 1。路由器 1 也通过串行链路连接到路由器 2。路由器 2 也连接到 ISP。连接到路由器 1 的网络是内部网络，它们使用专用编址。有一个标注，表明这是末端网络。路由器 2 有一个标注，表明这是支持 NAT 的边界路由器。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

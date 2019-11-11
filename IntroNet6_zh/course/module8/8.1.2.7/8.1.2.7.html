@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.2.7 创建 2 个子网</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.2.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>创建 2 个子网</h1>
+        <div>
+          <p>要了解如何在网络中应用 /25 子网，请考虑图 1 中的拓扑。R1 的两个 LAN 网段连接到其千兆以太网接口。每个 LAN 分配有一个子网。</p>
+          <p>图 2 显示了第一个子网的重要地址 192.168.1.0/25。注意： </p>
+          <p>
+            <ul>
+              <li>
+                <b>IPv4 网络地址</b>是 192.168.1.0，且包含该地址的主机部分的全部 0 位。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>第一个 IPv4 主机地址</b>是 192.168.1.1，且包含全部 0 位加上该地址的主机部分最右边的 1 位。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>最后一个 IPv4 主机地址</b>是 192.168.1.126，且包含全部 1 位加上该地址的主机部分最右边的 0 位。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>IPv4 广播地址</b>是 192.168.1.127 且包含该地址的主机部分的全部 1 位。</li>
+            </ul>
+          </p>
+          <p>图 3 显示了第二个子网的重要地址 192.168.1.128/25。</p>
+          <p>路由器接口必须在分配的子网的有效主机范围内分配 IP 地址。网络上的主机会将该地址用作其默认网关。一般将网络范围内的第一个或最后一个可用地址用作路由器接口地址。图 4 显示如何使用 <b>ip address </b>接口配置命令将 R1 的接口配置为各自子网的第一个 IPv4 地址。</p>
+          <p>每个子网中的主机必须使用 IPv4 地址和默认网关进行配置。图 5 显示 192.168.1.128/25 网络上 PC2 主机的 IPv4 配置。注意，默认网关 IPv4 地址是 R1 的接口 G0/1 上配置的地址 192.168.1.129，子网掩码为 255.255.255.128。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a topology with one router connected to two switches to create two LANs. The subnets 192.168.1.0/25 and 192.168.1.128/25 are assigned to the two LANs. Figure 2 shows the network address, first host address, last host address, and broadcast address for the 192.168.1.0/25 subnet. The last octet is in binary to show that a network address is all zeros in the host portion. The first host address is all zeros except the least significant bit in the host portion. The last host address is all ones except for the least significant bit in the host portion. And the broadcast address is all ones in the host portion. Similar to Figure 2, Figure 3 shows the network address, first host address, last host address, and broadcast address for the 192.168.1.128/25 subnet with the last octet shown in binary. Figure 4 shows the topology from Figure 1 with IP addresses assigned to the devices from the appropriate subnets. Figure 5 shows the TCP/IP Properties settings for Windows with static IP addressing assigned to one of the PCs from the second subnet.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

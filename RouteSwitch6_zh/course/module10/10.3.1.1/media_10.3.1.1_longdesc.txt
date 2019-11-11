@@ -1,0 +1,1 @@
+图 1 显示路由器上 show file systems 命令的输出。图 1 显示了路由器上 dir 命令的输出。The output displays the contents of flash.图 3 显示了 cd nvram: 命令后紧跟 pwd 命令时的输出。pwd 命令将打印工作目录。然后，发出 dir 命令，列出 NVRAM 的内容。

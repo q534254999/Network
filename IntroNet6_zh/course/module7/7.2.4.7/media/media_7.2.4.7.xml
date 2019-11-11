@@ -1,0 +1,1 @@
+﻿<textcomponents><component id="ID_title"><text><![CDATA[<b>在 R1 上配置本地链路地址</b>]]></text></component><component id='ID_txt01'><text><![CDATA[Router(config-if)#]]></text></component><component id='ID_txt02'><text><![CDATA[<b>ipv6 address</b><i>link-local-address</i> link-local]]></text></component></textcomponents>

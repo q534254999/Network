@@ -1,0 +1,43 @@
+<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>DHCPv6 中继代理</b>]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[<b>DHCPv6 中继代理</b>]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[<b>DHCPv6 服务器</b>]]></text>
+	</component>
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>DHCPv6 中继代理命令</b>]]></text>
+	</component>
+	<component id="ID_s3_title"><!--text><![CDATA[<b>DHCPv6 Relay Agent</b>]]></text--></component>
+	<component id="ID_s3_SC5" fontSize="12" fontFace="_typewriter" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b><font face="_sans" color="#FFFFFF">***您必须输入确切完整的命令。 包含名称或密码的命令区分大小写。***</font></b>]]></feedback>
+		<existingcommands><![CDATA[<font face="_sans"><b>在正确的路由器上配置 DHCPv6 中继命令从而让 PC3 接收来自 DHCPv6 服务器的 IPv4 地址和其他参数。 在无需配置的任何设备上退出配置模式。</b></font>]]></existingcommands>
+		<command prompt="R1(config)#">
+			<correctresponse><![CDATA[exit]]></correctresponse>
+		</command>
+		<command prompt="R2(config)#">
+			<correctresponse><![CDATA[exit]]></correctresponse>
+		</command>
+		<command prompt="R3(config)#">
+			<correctresponse><![CDATA[interface g0/0]]></correctresponse>
+		</command>
+		<command prompt="R3(config-if)#">
+			<correctresponse><![CDATA[ipv6 dhcp relay destination 2001:db8:cafe:1::6]]></correctresponse>
+			<deviceresponse><![CDATA[<span class="command">R3(config-if)#</span>]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans" class="syntaxBottomLine"><b>您已成功配置 DHCPv6 中继。</b></font>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+	<component id="ID_sc_reset">
+		<text><![CDATA[重置]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[看答案]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[全部显示]]></text>
+	</component>
+</textcomponents>

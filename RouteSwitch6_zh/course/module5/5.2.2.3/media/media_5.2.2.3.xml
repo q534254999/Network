@@ -1,0 +1,61 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>安全违规模式</b>]]></text>
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' class="mtable" glowcolor='#808080' cellpadding='4'>
+<tr>
+<td bgcolor='#98D3D1' colspan='6'><font class="mtitle" size='11' color='#0E6360'><b>安全违规模式</b></font></td>
+</tr>
+<tr class="mtable_top">
+<td colspan='6' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#0E6360'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+<tr>
+<td bgcolor='#077A77'  valign="top" class="tit"><font color='#ffffff' size="11"><b>违规模式</b></font></td>
+<td bgcolor='#077A77'  valign="top" class="tit"><font color='#ffffff' size="11"><b>转发流量</b></font></td>
+<td bgcolor='#077A77'  valign="top" class="tit"><font color='#ffffff' size="11"><b>发出系统日志消息</b></font></td>
+<td bgcolor='#077A77'  valign="top" class="tit"><font color='#ffffff' size="11"><b>显示错误消息</b></font></td>
+<td bgcolor='#077A77'  valign="top" class="tit"><font color='#ffffff' size="11"><b>增加违规计数器</b></font></td>
+<td bgcolor='#077A77'  valign="top" class="tit"><font color='#ffffff' size="11"><b>关闭端口</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#FFFFFF'>保护</td>
+<td bgcolor='#FFFFFF'>否</td>
+<td bgcolor='#FFFFFF'>否</td>
+<td bgcolor='#FFFFFF'>否</td>
+<td bgcolor='#FFFFFF'>否</td>
+<td bgcolor='#FFFFFF'>否</td>
+</tr>
+<tr>
+<td bgcolor='#EFF8F7'>限制</td>
+<td bgcolor='#EFF8F7'>否</td>
+<td bgcolor='#EFF8F7'>是</td>
+<td bgcolor='#EFF8F7'>否</td>
+<td bgcolor='#EFF8F7'>是</td>
+<td bgcolor='#EFF8F7'>否</td>
+</tr>
+<tr>
+<td bgcolor='#FFFFFF'>关闭</td>
+<td bgcolor='#FFFFFF'>否</td>
+<td bgcolor='#FFFFFF'>否</td>
+<td bgcolor='#FFFFFF'>否</td>
+<td bgcolor='#FFFFFF'>是</td>
+<td bgcolor='#FFFFFF'>是</td>
+</tr></table>]]></text>
+</component>
+
+<component id="ID_Title_txt01">
+<text><![CDATA[<b>安全违规在以下情况下发生：</b>]]></text>
+</component>
+
+<component id="ID_Body_txt01">
+<text><![CDATA[<textformat blockindent='-14'><ul><li>当地址表填满时，某个其 MAC 地址不在该地址表中的工作站试图访问该接口。</li><li>在同一个 VLAN 中的两个安全接口上使用一个地址。</li></ul></textformat>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[安全违规模式包括：保护、限制和关闭。 ]]></text>
+</component>
+
+</textcomponents>

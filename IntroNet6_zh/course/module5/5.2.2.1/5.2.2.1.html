@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.2.1 思科交换机上的帧转发方法</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>思科交换机上的帧转发方法</h1>
+        <div>
+          <p>在过去，交换机使用下面的两种转发方法之一来进行网络端口间的数据交换： </p>
+          <p>
+            <ul>
+              <li>存储转发交换</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>直通交换</li>
+            </ul>
+          </p>
+          <p>图 1 显示这两种方法之间的差异。 </p>
+          <p>在存储转发交换中，当交换机收到帧时，它将数据存储在缓冲区中，直到收下完整的帧。存储过程期间，交换机分析帧以获得有关其目的地的信息。在此过程中，交换机还将使用以太网帧的循环冗余校验 (CRC) 帧尾部分来执行错误检查。 </p>
+          <p>CRC 根据帧中的位数（即 1 位的数量），使用数学公式来确定收到的帧是否有错。在确认帧的完整性之后，帧将从对应的端口转发到其目的地。当在帧中检测到错误时，交换机放弃该帧。放弃有错的帧可减少损坏的数据所耗用的带宽量。存储转发交换对于融合网络中的服务质量 (QoS) 分析是必需的，在融合网络中，必须对帧进行分类以划分流量优先级。例如，IP 语音数据流的优先级需要高于 Web 浏览流量。 </p>
+          <p>在图 2 中，播放存储转发过程的演示动画。 </p>
+          <p>单击<a href="http://www.cisco.com/c/en/us/products/collateral/switches/nexus-5020-switch/white_paper_c11-465436.html" target="_blank">此处</a>以了解存储转发交换和直通交换的详细信息。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows 2 switches.  One is set to store and forward and the other is set to cut through. Figure 2 is an animation demonstrating that a switch receives an entire frame and checks the CRC value before forwarding the frame.  This is known as store and forward.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

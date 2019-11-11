@@ -1,0 +1,1 @@
+图 1 显示了在路由器上“show logging | include changed state to up”命令的输出。图 2 是一个互动练习，允许学生练习使用命令配置系统日志服务器并确认正确运行。

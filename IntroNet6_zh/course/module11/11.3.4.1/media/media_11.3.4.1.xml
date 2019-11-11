@@ -1,0 +1,34 @@
+<textcomponents><!--Slide 1--><component id="ID_s1_title">
+<text><![CDATA[<b>ipconfig</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+   <text><![CDATA[显示默认网关地址的 <b><font face="_typewriter" class="new">ipconfig</font></b> 命令输出示例]]></text>
+   </component>
+
+<component id="ID_s1_txt02">
+	<text><![CDATA[<b>图例</b>]]></text>
+</component>
+
+<component id="ID_s1_sub01">
+   <text><![CDATA[此主机计算机的 IP 地址]]></text>
+</component>
+
+<component id="ID_s1_sub02">
+   <text><![CDATA[本地网络子网掩码]]></text>
+</component>
+
+<component id="ID_s1_sub03">
+   <text><![CDATA[此主机计算机的默认网关地址]]></text>
+</component><!--Slide 2--><component id="ID_s2_title">
+<text><![CDATA[<b>ipconfig /all</b>]]></text>
+</component>
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>ipconfig /displaydns</b>]]></text>
+</component>
+
+<component id="ID_s3_txt01">
+<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+</component>
+
+</textcomponents>

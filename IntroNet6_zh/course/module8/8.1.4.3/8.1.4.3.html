@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.4.3 网络要求示例</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>网络要求示例</h1>
+        <div>
+          <p>网络管理员必须设计网络编址方案，以满足每个网络的最大主机数量和子网数量需求。编址方案应允许每个子网的主机地址数量和子网的总数量的增长。</p>
+          <p>在本示例中，公司总部已向分支机构所在地分配了私有网络地址 172.16.0.0/22（10 个主机位）。如图 1 所示，这将提供 1022 个主机地址。</p>
+          <p>如图 2 所示，分支机构所在地的拓扑由 5 个 LAN 网段和 4 个路由器之间的网际连接组成。因此，需要 9 个子网。最大子网需要 40 台主机。 </p>
+          <p>172.16.0.0/22 网络地址有 10 个主机位，如图 3 所示。由于最大子网需要 40 台主机，为 40 台主机提供编址至少需要 6 个主机位。这根据以下公式确定：2^6 - 2 = 62 台主机。 </p>
+          <p>使用公式确定子网数，结果为 16 个子网：2^4 = 16。由于示例中网际网络要求 9 个子网，这一数量可以满足其要求而且允许增加一定数量的子网。 </p>
+          <p>因此，前 4 个主机位可用于分配子网，如图 4 所示。当借用 4 个位时，新的前缀长度为 /26，子网掩码为 255.255.255.192。</p>
+          <p>如图 5 所示，子网可以分配给 LAN 网段和路由器到路由器的连接。</p>
+          <p>本主题以四个子网划分练习告终。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows how a slash 22 has ten host bits which allows for 1022 valid hosts. Figure 2 shows a corporate network divided by department. The host requirements for each department are listed. Figure 3 shows the 172.16.0.0/22 address in binary. The network portion is highlighted in green and the host portion is highlighted in orange. Figure 4 shows the 16 subnets that are formed when creating borrowing four bits from 172.16.0.0/22.  You can see that by alternating bits 23, 24, 25, and 26 in a logical order, you can easily determine the network IDs for all sixteen subnets. Figure 5 shows how these subnets might be assigned to the departments in a corporate network.  Each subnet is the same size.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

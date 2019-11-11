@@ -1,0 +1,9 @@
+<textcomponents><!-- slide 1 --><component id="ID_title">
+		<text><![CDATA[<b>成功的全双工自动协商</b>]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[全双工]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[全双工]]></text>
+	</component><!-- end slide 1 --></textcomponents>

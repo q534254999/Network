@@ -1,0 +1,225 @@
+<textcomponents>
+    <!-- Slide 1 -->
+    <component id="ID_s1_txt04">
+        <text>
+            <![CDATA[<B>消息</B>]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt03">
+        <text>
+            <![CDATA[<B>信号</B>]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[<B>信号</B>]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[<B>消息</B>]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt05">
+        <text>
+            <![CDATA[消息来源]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt06">
+        <text>
+            <![CDATA[编码器]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt07">
+        <text>
+            <![CDATA[发送方]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt08">
+        <text>
+            <![CDATA[传输<br/>介质<br/>“通道”]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt09">
+        <text>
+            <![CDATA[接收方]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt10">
+        <text>
+            <![CDATA[解码器]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt11">
+        <text>
+            <![CDATA[消息目的地]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt12">
+        <text>
+            <![CDATA[源 已编码]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt13">
+        <text>
+            <![CDATA[目的地 已解码]]>
+        </text>
+    </component>
+    <!-- Slide 2 -->
+    <component id="ID_s2_txt04">
+        <text>
+            <![CDATA[<B>消息</B>]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt03">
+        <text>
+            <![CDATA[<B>信号</B>]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[<B>信号</B>]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[<B>消息</B>]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt05">
+        <text>
+            <![CDATA[消息来源]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt06">
+        <text>
+            <![CDATA[编码器]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt07">
+        <text>
+            <![CDATA[发送方]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt08">
+        <text>
+            <![CDATA[传输<br/>介质<br/>“通道”]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt09">
+        <text>
+            <![CDATA[接收方]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt10">
+        <text>
+            <![CDATA[解码器]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt11">
+        <text>
+            <![CDATA[消息目的地]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt12">
+        <text>
+            <![CDATA[源<br>已编码]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt13">
+        <text>
+            <![CDATA[目的地<br>已解码]]>
+        </text>
+    </component>
+    <!-- controller -->
+    <component id="ID_s2_end">
+        <text>
+            <![CDATA[结束]]>
+        </text>
+    </component>
+    <component id="ID_s2_fforward">
+        <text>
+            <![CDATA[快进]]>
+        </text>
+    </component>
+    <component id="ID_s2_pause">
+        <text>
+            <![CDATA[暂停]]>
+        </text>
+    </component>
+    <component id="ID_s2_play">
+        <text>
+            <![CDATA[播放]]>
+        </text>
+    </component>
+    <component id="ID_s2_rewind">
+        <text>
+            <![CDATA[快退]]>
+        </text>
+    </component>
+    <component id="ID_s2_start">
+        <text>
+            <![CDATA[开始]]>
+        </text>
+    </component>
+    <component id="ID_s1_end">
+        <text>
+            <![CDATA[结束]]>
+        </text>
+    </component>
+    <component id="ID_s1_fforward">
+        <text>
+            <![CDATA[快进]]>
+        </text>
+    </component>
+    <component id="ID_s1_pause">
+        <text>
+            <![CDATA[暂停]]>
+        </text>
+    </component>
+    <component id="ID_s1_play">
+        <text>
+            <![CDATA[播放]]>
+        </text>
+    </component>
+    <component id="ID_s1_rewind">
+        <text>
+            <![CDATA[快退]]>
+        </text>
+    </component>
+    <component id="ID_s1_start">
+        <text>
+            <![CDATA[开始]]>
+        </text>
+    </component>
+    <component id="end">
+        <text>
+            <![CDATA[结束]]>
+        </text>
+    </component>
+    <component id="fforward">
+        <text>
+            <![CDATA[快进]]>
+        </text>
+    </component>
+    <component id="pause">
+        <text>
+            <![CDATA[暂停]]>
+        </text>
+    </component>
+    <component id="play">
+        <text>
+            <![CDATA[播放]]>
+        </text>
+    </component>
+    <component id="rewind">
+        <text>
+            <![CDATA[快退]]>
+        </text>
+    </component>
+    <component id="start">
+        <text>
+            <![CDATA[开始]]>
+        </text>
+    </component>
+</textcomponents>

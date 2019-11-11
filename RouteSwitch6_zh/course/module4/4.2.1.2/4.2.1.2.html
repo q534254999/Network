@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.1.2 动态填充交换机 MAC 地址表</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>动态填充交换机 MAC 地址表</h1>
+        <div>
+          <p>交换机使用 MAC 地址通过指向相应端口的交换机将网络通信转向目标。交换机是由集成电路以及相应软件组成的，这些软件控制经过交换机的数据通路。交换机为了知道要使用哪个端口来传送帧，它必须首先知道每个端口上存在哪些设备。当交换机获知端口与设备的关系后，就会构建一个 MAC 地址表或内容可编址内存 (CAM) 表。CAM 是一种特殊类型的内存，用于高速搜索应用程序。</p>
+          <p></p>
+          <p>LAN 交换机将通过维护 MAC 地址表来确定如何处理传入的数据帧。交换机通过记录与其每个端口相连的每个设备的 MAC 地址来构建其 MAC 地址表。交换机使用 MAC 地址表中的信息将指向特定设备的帧从为此设备分配的端口发送出去。</p>
+          <p></p>
+          <p>对进入交换机的每个以太网帧执行下列两步式流程。</p>
+          <p></p>
+          <p>
+            <b>步骤 1.学习 – 检查源 MAC 地址</b>
+          </p>
+          <p></p>
+          <p>检查进入交换机的每个帧的新信息进行学习。它是通过检查帧的源 MAC 地址和帧进入交换机的端口号来完成这一步的：</p>
+          <p>
+            <ul>
+              <li>如果源 MAC 地址不存在，会将其和传入端口号一并添加到表中。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>如果源 MAC 地址已存在于表中，则交换机会更新该条目的刷新计时器。默认情况下，大多数以太网交换机将条目在表中保留五分钟。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>注意</b>：如果源 MAC 地址已存在于表中，但是在不同的端口上，交换机会将该地址视为一个新的条目。使用相同的 MAC 地址和最新的端口号来替换该条目。</p>
+          <p></p>
+          <p>
+            <b>步骤 2.转发 – 检查目标 MAC 地址</b>
+          </p>
+          <p></p>
+          <p>如果目标 MAC 地址为单播地址，该交换机会看帧中的目标 MAC 地址与 MAC 地址表中的条目是否匹配：</p>
+          <p>
+            <ul>
+              <li>如果表中存在该地址，交换机会从指定端口转发帧。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>如果表中不存在该地址，交换机会从除传入端口外的所有端口转发帧。这称为未知单播。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>注意</b>：如果目标 MAC 地址为广播或组播，该帧将泛洪到除传入端口外的所有端口。</p>
+          <p></p>
+          <p>点击图中的“播放”，观看两台连接的交换机构建 MAC 地址表的演示。</p>
+          <p></p>
+          <p>点击 <a href="../../files/5.2.1.4%20Video%20Slides%20-%20MAC%20Address%20Tables%20on%20Connected%20Switches.pdf" target="_blank">此处</a> 从演示文稿中下载视频幻灯片。</p>
+          <p></p>
+          <p>点击 <a href="../../files/5.2.1.4%20Video%20-%20MAC%20Address%20Tables%20on%20Connected%20Switches.pdf" target="_blank">此处</a> 阅读此视频的文字记录。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示三台 PC。每个 PC 连接到一台交换机。帧从一台 PC 发送到交换机。图 2 显示三台 PC。每个 PC 连接到一台交换机。帧从 PC 1 发送到交换机。图中的文本指出，交换机 MAC 表创建了新条目以指示端口 1 已获取 PC 1 的 MAC 地址，且所有其他端口均为空。图 3 显示交换机将帧从端口 2 和端口 3 转发到 PC3 和 PC2。交换机不知道 PC3 和 PC2 的 MAC 地址。图 4 显示 PC3 通过向交换机发送帧作出响应。图 5 显示交换机已处理它从 PC3 接收的帧。MAC 地址选项卡现在包含 PC3 的 MAC 地址。图 6 显示帧从交换机返回到 PC 1。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

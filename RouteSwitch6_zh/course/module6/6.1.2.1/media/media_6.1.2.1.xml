@@ -1,0 +1,37 @@
+<textcomponents>
+<component id="ID_title">
+   <text><![CDATA[<b>VLAN 中继</b>]]></text>
+   </component>
+
+   
+<component id="ID_txt01">
+   <text><![CDATA[F0/1-5 是具有原生 VLAN 99 的 802.1Q TRUNK 接口。<br/>F0/11-17 位于 VLAN 10 中。<br/>F0/18-24 位于 VLAN 20 中。<br/>F0/6-10 位于 VLAN 30 中。]]></text>
+   </component>
+<component id="ID_txt02">
+   <text><![CDATA[VLAN 10 教师/员工 - 172.17.10.0/24<br/>VLAN 20 学生 - 172.17.20.0/24<br/>VLAN 30 访客 - 172.17.30.0/24<br/>VLAN 99 管理和原生 - 172.17.99.0/24]]></text>
+   </component>
+<component id="ID_txt03">
+   <text><![CDATA[配置为支持的 VLAN TRUNK：VLAN 10、20、30 和 VLAN 99。]]></text>
+   </component>
+<component id="ID_txt04">
+   <text><![CDATA[<b>访客 <br/>VLAN 30 -<br/>172.17.30.26</b>]]></text>
+   </component>
+<component id="ID_txt05">
+   <text><![CDATA[<b>访客 <br/>VLAN 30 -<br/>172.17.30.23</b>]]></text>
+   </component>
+<component id="ID_txt06">
+   <text><![CDATA[<b>学员 <br/>VLAN 20 -<br/>172.17.20.25</b>]]></text>
+   </component>
+<component id="ID_txt07">
+   <text><![CDATA[<b>学员 <br/>VLAN 20 -<br/>172.17.20.22</b>]]></text>
+   </component>
+<component id="ID_txt08">
+   <text><![CDATA[<b>教师<br/>VLAN 10 -<br/>172.17.10.24</b>]]></text>
+   </component>
+<component id="ID_txt09">
+   <text><![CDATA[<b>教师<br/>VLAN 10 -<br/>172.17.10.21</b>]]></text>
+   </component>
+<component id="ID_txt10">
+   <text><![CDATA[网关<br/>VLAN 30<br/>172.17.30.1]]></text>
+   </component>   
+</textcomponents>

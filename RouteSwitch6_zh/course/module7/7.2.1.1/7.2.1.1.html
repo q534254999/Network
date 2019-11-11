@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.1.1 编号标准 IPv4 ACL 语法</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>编号标准 IPv4 ACL 语法</h1>
+        <div>
+          <p>要在思科路由器上使用编号标准 ACL，您必须先创建标准 ACL，然后在接口上激活 ACL。</p>
+          <p></p>
+          <p><b>access-list</b> 全局配置命令使用 1 到 99 范围内的一个数字定义标准 ACL。思科 IOS 软件 12.0.1 版扩展了这些编号，允许将 1300 到 1999 之间的数字用于定义标准 ACL。这最多可能产生 798 个标准 ACL。这些附加编号的 ACL 称为扩展 IPv4 ACL。</p>
+          <p></p>
+          <p>标准 ACL 命令的完整语法如下：</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config)# </span>
+            <span class="cmd">
+              <b>access-list</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>access-list-number</i>
+            </span>
+            <span class="cmd"> {</span>
+            <span class="cmd">
+              <b>deny</b>
+            </span>
+            <span class="cmd"> | </span>
+            <span class="cmd">
+              <b>permit</b>
+            </span>
+            <span class="cmd"> | </span>
+            <span class="cmd">
+              <b>remark</b>
+            </span>
+            <span class="cmd"> } </span>
+            <span class="cmd">
+              <i>source</i>
+            </span>
+            <span class="cmd"> [ </span>
+            <span class="cmd">
+              <i>source-wildcard</i>
+            </span>
+            <span class="cmd"> ][ </span>
+            <span class="cmd">
+              <b>log</b>
+            </span>
+            <span class="cmd"> ]</span>
+          </p>
+          <p></p>
+          <p>图 1 详细介绍了标准 ACL 的语法。</p>
+          <p></p>
+          <p>ACE 可用于允许或拒绝单个主机或一组主机地址。要在编号 ACL 10 中创建一条 host 语句以允许 IPv4 地址为 192.168.10.10 的特定主机，您应该输入：</p>
+          <p></p>
+          <p>
+            <span class="cmd">R1(config)# </span>
+            <span class="cmd">
+              <b>access-list 10 permit host 192.168.10.10</b>
+            </span>
+          </p>
+          <p></p>
+          <p>如图 2 所示，要在允许 192.168.10.0/24 网络中所有 IPv4 地址的编号 ACL 10 中创建一条允许一组 IPv4 地址的语句，您应该输入：</p>
+          <p></p>
+          <p>
+            <span class="cmd">R1(config)# </span>
+            <span class="cmd">
+              <b>access-list 10 permit 192.168.10.0 0.0.0.255</b>
+            </span>
+          </p>
+          <p></p>
+          <p>要删除 ACL，使用全局配置命令 <b>no access-list</b>。发出 <b>show access-list</b> 命令确认访问列表 10 已删除。</p>
+          <p></p>
+          <p>通常，当管理员创建 ACL 时，已经知道并理解每条语句的用途。但是，为了确保管理员和其他人能够回想起语句的用途，还应当包含注释。<b>remark</b> 关键字用于记录信息，使访问列表更易于理解。每条注释限制在 100 个字符以内。图 3 的 ACL 相当简单，仅用作示例。当使用 <b>show running-config</b> 命令查看配置中的 ACL 时，注释也会显示。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description"> 图 1 列出标准 ACL 的命令语法。主要参数为后接一个数字的 access-list 命令、permit 或 deny 语句、源和目标 IP 地址，以及可选通配符掩码。其他选项包括用于记录 ACL 的注释语句，以及用于发送数据包相关消息的关键字日志，其中的消息将 ACL 与控制台匹配。图 2 显示如何创建标准 ACL access-list 10 permit 192.168.10.0 0 0 0 255.IOS 有一个在特权 EXEC 模式下运行的命令，可以显示路由器上的所有访问列表。这个命令就是 show access-list。从路由器上移除 ACL 的过程在全局配置模式下完成。命令是 no access-list，后接要移除的 ACL 编号。图 3 显示关键字 remark 的使用。命令是 access-list 10 remark permit hosts from 192.168.10.0 LAN。此命令后接 ACL 配置命令 access-list 10 permit 192.168.10.0 0.0.0.255。此图显示最终 ACL，并且显示此注释已经列入配置文件中作为关于 ACL 用途的记录。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

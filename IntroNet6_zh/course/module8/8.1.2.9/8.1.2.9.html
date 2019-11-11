@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.2.9 子网划分公式</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.2.9_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>子网划分公式</h1>
+        <div>
+          <p>要从借用位计算可创建的子网数，请使用图 1 中显示的公式。图 2 显示了当借用 1、2、3、4、5 或 6 位时可创建的子网数。 </p>
+          <p>
+            <b>注意</b>：最后两位不能从最后一个二进制八位数借用，因为没有可用的主机地址。因此，划分子网时最长的前缀长度是 /30 或 255.255.255.252。</p>
+          <p>要计算可支持的主机数，请使用图 3 中显示的公式。有两个子网地址无法分配到主机，分别是网络地址和广播地址，所以我们必须减去 2。</p>
+          <p>如图 4所示，还有 7 个主机位，所以计算公式是 2^7 = 128-2 = 126。这意味着每个子网有 126 个有效主机地址。</p>
+          <p>因此，给网络借用 1 个主机位可以创建 2 个子网，每个子网总共可以分配 126 个主机。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the formula “2 to the power of n” where “n” is the number of bits borrowed. Figure 2 shows the formula calculation from 1 bit borrowed up to 6 bits borrowed. 2 to the 1 power equals 1, 2 to the 2 power equals four, and so on until 2 to the 6 power equals 64. Figure 3 shows the formula “2 to power of n minus 2” where “ne” is the number bits remaining in the host portion. Figure 4 shows the 192.168.1.0/25 subnet. The host bits are highlighted. The formula for the number of valid hosts per subnet is 2 to the 7 minus 2 which equals 126.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

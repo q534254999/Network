@@ -1,0 +1,24 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>直连网络和远程网络路由</b>]]></text>
+	</component>
+	
+	<component id="ID_txt01">
+		<text><![CDATA[<b>直连网络</b>]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[<b>直连网络</b>]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[<b>直连网络</b>]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[<b>远程网络</b/&gt;]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[<b>远程网络</b/&gt;]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[R1 有三个直连网络：192.168.10.0/24、192.168.11.0/24 和 209.165.200.224/30。 R1 还有从 R2 获知的两个远程网络：10.1.1.0/24 和 10.1.2.0/24。]]></text>
+	</component>
+</textcomponents>

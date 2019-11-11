@@ -1,0 +1,15 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[显示 USB 端口和名称：“usbflash0:”]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[复制到 USB 闪存驱动器且之前没有文件存在。]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[复制到 USB 闪存驱动器且相同的配置文件在驱动器上已存在。]]></text>
+</component>
+
+</textcomponents>

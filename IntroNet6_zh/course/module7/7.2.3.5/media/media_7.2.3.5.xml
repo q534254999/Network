@@ -1,0 +1,90 @@
+<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>练习 – 识别 IPv6 地址类型</b>]]></text>
+    </component>
+     <component id="ID_s1_instr_title">
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id="ID_s1_instr_body">
+        <text>
+            <![CDATA[请将 IPv6 地址类型与最恰当的描述配对。]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[唯一的 Internet 可路由 IPv6 地址（动态或静态）]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[FE80::1]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt03">
+        <text>
+            <![CDATA[2001:db8:ACAD::1/64]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt04">
+        <text>
+            <![CDATA[用于表示地址网络部分的典型 IPv6 前缀]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt05">
+        <text>
+            <![CDATA[用于与同一 IPv6 子网中的其他设备通信]]>
+        </text>
+    </component>
+    <!--Drag and Drop-->
+    <component id="ID_s1_drag01">
+        <text>
+            <![CDATA[<font color="#393536">全局单播</font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag02">
+        <text>
+            <![CDATA[<font color="#393536">本地链路</font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag03">
+        <text>
+            <![CDATA[<font color="#393536">/64</font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_CORRECT_TITLE">
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id="ID_s1_CORRECT_BODY">
+        <text>
+            <![CDATA[您已成功地将 IPv6 地址类型与其描述配对。]]>
+        </text>
+    </component>
+    <component id="ID_s1_INCORRECT_TITLE">
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id="ID_s1_INCORRECT_BODY">
+        <text>
+            <![CDATA[您未成功将 IPv6 地址类型与其描述配对。请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id="ID_s1_CHECK">
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id="ID_s1_RESET">
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+    <component id='ID_s1_target_header'>
+        <text><![CDATA[术语]]></text>
+    </component>
+
+    <component id='ID_s1_text_header'>
+        <text><![CDATA[功能/描述]]></text>
+    </component>
+</textcomponents>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.3.3 配置 IPv6 路由器接口</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置 IPv6 路由器接口</h1>
+        <div>
+          <p>配置 IPv6 接口与配置 IPv4 接口相似。在思科 IOS 中，大多数 IPv6 的配置和验证命令与 IPv4 的极为相似。在多数情况下，唯一区别是命令中使用 <b>ipv6</b> 取代 <b>ip</b>。</p>
+          <p></p>
+          <p>IPv6 接口必须： </p>
+          <p>
+            <ul>
+              <li>
+                <b>配置 IPv6 地址和子网掩码 </b>- 使用<b> ipv6 address </b><i>ipv6-address</i>/<i>prefix-length </i><b>[link-local | eui-64] </b>接口配置命令。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>激活</b> - 必须使用 <b>no shutdown</b> 命令激活接口。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>注</b>：通过使用 <b>ipv6 enable</b> 接口配置命令，接口可以生成自己的 IPv6 本地链路地址，而无需使用全局单播地址。 </p>
+          <p></p>
+          <p>与 IPv4 不同，IPv6 接口通常会有多个 IPv6 地址。IPv6 设备至少必须具有 IPv6 本地链路地址，但很有可能还具有 IPv6 全局单播地址。IPv6 还支持接口配有来自同一子网的多个 IPv6 全局单播地址。以下命令可用于静态创建全局单播或本地链路 IPv6 地址：</p>
+          <p>
+            <ul>
+              <li>
+                <b>ipv6 address </b>
+                <i>ipv6-address</i>/<i>prefix-length </i>- 按照指定长度创建全局单播 IPv6 地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ipv6 address </b>
+                <i>ipv6-address</i>/<i>prefix-length </i><b>eui-64 </b>- 使用 EUI-64 流程，根据 IPv6 地址低位 64 位中的接口标识符 (ID) 配置全局单播 IPv6 地址。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ipv6 address </b>
+                <i>ipv6-address</i>/<i>prefix-length </i><b>link-local </b>- 在将全局单播 IPv6 地址分配给接口时或使用 <b>ipv6 enable</b> 命令将其启用时，在需要使用的接口上配置静态本地链路地址而不是自动配置本地链路地址。回想一下，<b>ipv6 enable</b> 接口命令可用于自动创建 IPv6 本地链路地址，而不管是否已分配了 IPv6 全局单播地址。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>在图 1 所示的示例拓扑中，必须将 R1 配置为支持以下 IPv6 网络地址： </p>
+          <p>
+            <ul>
+              <li>2001:0DB8:ACAD:0001:/64 或同等 2001:DB8:ACAD:1::/64</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:0DB8:ACAD:0002:/64 或同等 2001:DB8:ACAD:2::/64</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:0DB8:ACAD:0003:/64 或同等 2001:DB8:ACAD:3::/64</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>当使用 <b>ipv6 unicast-routing </b>全局配置命令配置路由器时，路由器开始从接口发送 ICMPv6 路由器通告消息。这可启用与接口相连的 PC，以自动配置 IPv6 地址并设置默认网关，而无需使用 DHCPv6 服务器的服务。连接到 IPv6 网路的 PC 也可具有手动配置的 IPv6 地址，如图 2 所示。注意，为 PC1 配置的默认网关地址是 R1 GigabitEthernet 0/0 接口的 IPv6 全局单播地址。</p>
+          <p></p>
+          <p>示例拓扑中的路由器接口必须如图 3 至图 5 所示进行配置和启用。 </p>
+          <p></p>
+          <p>使用图 6 中的语法检查器配置路由器 R2 上的 IPv6 全局单播地址。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示由一个串行接口连接到互联网的路由器和两个配置了本地网络的本地千兆以太网接口组成的网络。所有网络均为 IPv6 地址。图 2 显示 Windows 小应用程序以便在计算机上静态分配 IPv6 地址。图 3 显示路由器 IOS。用于在接口上配置 IPv6 的 CLI 命令。该命令以全局配置模式开始。使用第一个命令可进入接口配置模式，它为 interface gigabitethernet 0/0。下一命令配置该描述，这是 LAN 1 链接描述。图中的下一个命令在接口上分配 IP 地址，这是 IPV6 地址 2001:db8:acad:1::1/64。使用 no shutdown 命令开启此接口。图 4 配置下一个接口并以全局配置模式开始。使用第一个命令可进入接口配置模式，它为 interface gigabitethernet 0/1。下一命令配置该描述，这是 LAN 2 链接描述。图中的下一个命令在接口上分配 IP 地址，这是 IPV6 地址 2001:db8:acad:1::2/64。使用 no shutdown 命令开启此接口。图 5 配置下一个接口并以全局配置模式开始。该命令为 interface serial 0/0/0。下一命令配置该描述，它为 description Link to R2。图中的下一个命令在接口上分配 IP 地址，该 IP 地址为 2001:db8:acad:3::1/64。下一命令在串行接口上配置时钟速率，该命令是 clock rate 128,000。使用 no shutdown 命令开启此接口。图 6 是允许学生配置并激活路由器上的三个接口的交互练习。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

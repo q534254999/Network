@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.2.2 方法 2 - 使用序号</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>方法 2 - 使用序号</h1>
+        <div>
+          <p>如图所示，ACL 1 的初始配置包括主机 192.168.10.99 的一条 host 语句。此配置有误。应当将该主机配置为 192.168.10.10。按照以下步骤，使用序号编辑 ACL：</p>
+          <p></p>
+          <p>
+            <b>步骤 1.</b>使用 <b>show access-lists 1</b> 命令显示当前 ACL。此命令的输出将在本节的后续部分详细讨论。序号在每条语句的开头显示。在输入访问列表语句时，系统会自动分配序号。注意配置有误的语句，其序号为 10。</p>
+          <p></p>
+          <p>
+            <b>步骤 2.</b>输入用于配置命名 ACL 的 <b>ip access-lists standard</b> 命令。将 ACL 的编号 1 用作 ACL 的名称。首先，需要使用 <b>no 10</b> 命令（其中 10 为序号）删除配置有误的语句。然后，使用命令 <b>10 deny host 192.168.10.10</b> 添加一条新的序号为 10 的语句。  </p>
+          <p></p>
+          <p>
+            <b>注</b>：使用与现有语句相同的序号并不能覆盖语句。必须先删除当前语句，然后才能添加新语句。</p>
+          <p></p>
+          <p>
+            <b>步骤 3.</b>使用 <b>show access-lists</b> 命令验证更改。</p>
+          <p></p>
+          <p>如前所述，思科 IOS 对标准访问列表实施一种内部逻辑。标准 ACE 的输入顺序可能不是路由器对其进行存储、显示和处理的顺序。<b>show access-lists</b> 命令可用于将 ACE 与其序号一起显示。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示使用序号编辑编号 ACL 的过程。此图在全局配置模式下开始，第一个命令创建 ACL。此命令是 access-list 1 deny host 192.168.10.99。下一条命令是 access-list 1 permit 192.168.0.0 0.0.255.255。通过命令 show access-lists 显示 ACL 的内容。该图高亮显示了不正确的行。此 ACL 可以使用命令 ip access-list standard 1 访问。此行通过命令 no 10 移除。使用命令 10 deny host 192.168.10.10 添加新的第 10 行。ACL 的内容可使用命令 show access-lists 显示。图中高亮显示了现在已纠正的行。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

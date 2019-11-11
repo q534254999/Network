@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.2.3 默认静态路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>默认静态路由</h1>
+        <div>
+          <p>默认路由是匹配所有数据包的路由，在数据包与路由表中的任何其他更有针对性的路由不匹配时使用。默认路由可以动态获取，也可以静态配置。默认静态路由仅是 0.0.0.0/0 作为目标 IPv4 地址的静态路由。配置默认静态路由将创建最后选用网关。 </p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p>出现以下情况时，便会用到默认静态路由：</p>
+          <p>
+            <ul>
+              <li>路由表中没有其他路由与数据包的目标 IP 地址匹配。也就是说，路由表中不存在更为精确的匹配。在公司网络中，连接到 ISP 网络的边缘路由器上往往会配置默认静态路由。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>如果一台路由器仅有另外一台路由器与之相连，在这种情况下，路由器称为末节路由器。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>请参见末节网络默认路由场景的图。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示互联网上的路由器 (R2) 连接到末节路由器 (R1)。R1 使用指向 R2 的默认静态路由连接到外界。  </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

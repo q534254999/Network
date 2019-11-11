@@ -1,0 +1,87 @@
+<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>对等应用程序</b>]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[网络]]>
+        </text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[在同一次通信中既是客户端也是服务器]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[<b>客户端和服务器</b>]]></text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[<b>客户端和服务器</b>]]></text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[两个客户端同时<br/><textformat blockindent='-11'><ul><li class="first">启动消息</li><li class="second">接收消息</li></ul></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_txt11">
+        <text>
+            <![CDATA[发送]]>
+        </text>
+    </component>
+    <component id="ID_txt10">
+        <text>
+            <![CDATA[接收]]>
+        </text>
+    </component>
+    <component id="ID_txt09">
+        <text>
+            <![CDATA[<b>即时消息]]></text>
+    </component>
+    <component id="ID_txt08">
+        <text>
+            <![CDATA[<b>即时消息</b>]]></text>
+    </component>
+    <component id="ID_txt07">
+        <text>
+            <![CDATA[接收]]>
+        </text>
+    </component>
+    <component id="ID_txt06">
+        <text>
+            <![CDATA[发送]]>
+        </text>
+    </component>
+    <component id="ID_txt14">
+        <text>
+            <![CDATA[<font color="#FFFFFF">晚上见。</font>]]>
+        </text>
+    </component>
+    <component id="ID_txt15">
+        <text>
+            <![CDATA[<font color="#FFFFFF">到时见。</font>]]>
+        </text>
+    </component>
+    <component id="ID_txt12">
+        <text>
+            <![CDATA[<font color="#FFFFFF">晚上见。</font>]]>
+        </text>
+    </component>
+    <component id="ID_txt13">
+        <text>
+            <![CDATA[<font color="#FFFFFF">到时见。</font>]]>
+        </text>
+    </component>
+    <component id="ID_txt17">
+        <text>
+            <![CDATA[<font color="#FFFFFF">好。</font>]]>
+        </text>
+    </component>
+    <component id="ID_txt16">
+        <text>
+            <![CDATA[<font color="#FFFFFF">好。</font>]]>
+        </text>
+    </component>
+</textcomponents>

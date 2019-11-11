@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.3.3.2 ARP 欺骗</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.3.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>ARP 欺骗</h1>
+        <div>
+          <p>有时，使用 ARP 可能会造成潜在的安全风险，称为 ARP 欺骗或 ARP 毒害。如图所示，这种技术由攻击者用来应答属于另一台设备（例如默认网关）的 IPv4 地址的 ARP 请求。攻击者会发送一个带有其 MAC 地址的 ARP 应答。ARP 应答的接收方会将错误的 MAC 地址添加到其 ARP 表中，并将这些数据包发送给攻击者。 </p>
+          <p></p>
+          <p>企业级别的交换机包含称为动态 ARP 检查 (DAI) 的缓解技术。DAI 不在本课程的讨论范围之内。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows three PCs connected to a switch. The switch is connected to router 1. Router 1 is connected to a cloud labeled “network”. PC A is sending an ARP request for the MAC address of the default gateway. PC C intercepts the request and sends back an ARP reply, pretending to be the default gateway, router 1.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

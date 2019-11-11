@@ -1,0 +1,378 @@
+<textcomponents><!--slide 1--><component id="ID_s1_inst">
+<text><![CDATA[<b>练习 - 确定每一跳的地址信息</b><br><br>PC1 将通过支持 NAT 的路由器 (R1) 与 Web 服务器通信。 查看此通信的每一跳，确定源地址 (SA)、目的地址 (DA) 和端口号的变化过程。 选择“按钮 2”立即开始。]]></text>
+</component>
+
+<component id='ID_s1_top01'>
+	<text><![CDATA[网络拓扑]]></text>
+</component>
+
+<component id="ID_s1_top02">
+<text><![CDATA[ISP]]></text> 
+</component>
+
+<component id="ID_s1_top03">
+<text><![CDATA[互联网]]></text> 
+</component>
+
+<component id="ID_s1_top04">
+<text><![CDATA[Web 服务器]]></text> 
+</component><!--slide 2--><component id='ID_s2_inst'>
+	<text><![CDATA[<b>练习 - 确定每一跳的地址信息<br>第 1 跳：PC 1 至支持 NAT 的路由器 (R1)</b><br><br>将相应的源 NAT IP 数据包编址和目标 NAT IP 数据包编址拖放到这一跳通信的相应字段。]]></text>
+</component>
+
+<component id="ID_s2_top01">
+<text><![CDATA[ISP]]></text> 
+</component>
+
+<component id="ID_s2_top02">
+<text><![CDATA[互联网]]></text> 
+</component>
+
+<component id="ID_s2_top03">
+<text><![CDATA[Web 服务器]]></text> 
+</component>
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[SA]]></text>
+</component>
+
+<component id='ID_s2_txt02'>
+	<text><![CDATA[DA]]></text>
+</component>
+
+<component id='ID_s2_txt03'>
+	<text><![CDATA[源端口]]></text>
+</component>
+
+<component id='ID_s2_txt04'>
+	<text><![CDATA[目的端口]]></text>
+</component>
+
+<component id='ID_s2_txt05'>
+	<text><![CDATA[1150]]></text>
+</component>
+
+<component id='ID_s2_txt06'>
+	<text><![CDATA[80]]></text>
+</component>
+
+<component id='ID_s2_dragsrc01'>
+	<text><![CDATA[64.100.10.2]]></text>
+</component>
+
+<component id='ID_s2_dragsrc02'>
+	<text><![CDATA[192.168.51.5]]></text>
+</component>
+
+<component id='ID_s2_dragsrc03'>
+	<text><![CDATA[1268]]></text>
+</component>
+
+<component id='ID_s2_dragsrc04'>
+	<text><![CDATA[209.165.201.11]]></text>
+</component>
+
+<component id='ID_s2_dragsrc05'>
+	<text><![CDATA[1150]]></text>
+</component>
+
+<component id='ID_s2_dragsrc06'>
+	<text><![CDATA[53]]></text>
+</component>
+
+<component id='ID_s2_dragsrc07'>
+	<text><![CDATA[192.168.51.1]]></text>
+</component>
+
+<component id='ID_s2_dragsrc08'>
+	<text><![CDATA[80]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[您已成功标识此通信跳的 NAT IP 数据包编址。 点击“按钮 3”以继续。]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[您尚未成功标识此通信跳的 NAT IP 数据包地址。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[<b>重置</b>]]></text>
+</component><!--slide 3--><component id='ID_s3_inst'>
+	<text><![CDATA[<b>练习 - 确定每一跳的地址信息<br>第 2 跳：支持 NAT 的路由器 (R1) 至 Web 服务器</b><br><br>将相应的 SA、DA 和目标端口编址拖放到这一跳通信的相应字段。]]></text>
+</component>
+
+<component id="ID_s3_top01">
+<text><![CDATA[ISP]]></text> 
+</component>
+
+<component id="ID_s3_top02">
+<text><![CDATA[互联网]]></text> 
+</component>
+
+<component id="ID_s3_top03">
+<text><![CDATA[Web 服务器]]></text> 
+</component>
+
+<component id='ID_s3_txt01'>
+	<text><![CDATA[SA]]></text>
+</component>
+
+<component id='ID_s3_txt02'>
+	<text><![CDATA[DA]]></text>
+</component>
+
+<component id='ID_s3_txt03'>
+	<text><![CDATA[源端口]]></text>
+</component>
+
+<component id='ID_s3_txt04'>
+	<text><![CDATA[目的端口]]></text>
+</component>
+
+<component id='ID_s3_txt05'>
+	<text><![CDATA[1268]]></text>
+</component>
+
+<component id='ID_s3_dragsrc01'>
+	<text><![CDATA[64.100.10.2 ]]></text>
+</component>
+
+<component id='ID_s3_dragsrc02'>
+	<text><![CDATA[192.168.51.5]]></text>
+</component>
+
+<component id='ID_s3_dragsrc03'>
+	<text><![CDATA[1268]]></text>
+</component>
+
+<component id='ID_s3_dragsrc04'>
+	<text><![CDATA[209.165.201.11]]></text>
+</component>
+
+<component id='ID_s3_dragsrc05'>
+	<text><![CDATA[1150]]></text>
+</component>
+
+<component id='ID_s3_dragsrc06'>
+	<text><![CDATA[53]]></text>
+</component>
+
+<component id='ID_s3_dragsrc07'>
+	<text><![CDATA[192.168.51.1]]></text>
+</component>
+
+<component id='ID_s3_dragsrc08'>
+	<text><![CDATA[80]]></text>
+</component>
+
+<component id='ID_s3_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_s3_CORRECT_BODY'>
+	<text><![CDATA[您已成功标识此通信跳的 NAT IP 数据包编址。 点击“按钮 4”以继续。]]></text>
+</component>
+
+<component id='ID_s3_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_s3_INCORRECT_BODY'>
+	<text><![CDATA[您尚未成功标识此通信跳的 NAT IP 数据包地址。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_s3_CHECK'>
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id='ID_s3_RESET'>
+	<text><![CDATA[<b>重置</b>]]></text>
+</component><!--slide 4--><component id='ID_s4_inst'>
+	<text><![CDATA[<b>练习 - 确定每一跳的地址信息<br>第 3 跳：Web 服务器至支持 NAT 的路由器 (R1)</b><br><br>将相应的 SA、DA、源端口编址和目标端口编址拖放到这一跳通信的相应字段。]]></text>
+</component>
+
+<component id="ID_s4_top01">
+<text><![CDATA[ISP]]></text> 
+</component>
+
+<component id="ID_s4_top02">
+<text><![CDATA[互联网]]></text> 
+</component>
+
+<component id="ID_s4_top03">
+<text><![CDATA[Web 服务器]]></text> 
+</component>
+
+<component id='ID_s4_txt01'>
+	<text><![CDATA[SA]]></text>
+</component>
+
+<component id='ID_s4_txt02'>
+	<text><![CDATA[DA]]></text>
+</component>
+
+<component id='ID_s4_txt03'>
+	<text><![CDATA[源端口]]></text>
+</component>
+
+<component id='ID_s4_txt04'>
+	<text><![CDATA[目的端口]]></text>
+</component>
+
+<component id='ID_s4_dragsrc01'>
+	<text><![CDATA[64.100.10.2 ]]></text>
+</component>
+
+<component id='ID_s4_dragsrc02'>
+	<text><![CDATA[192.168.51.5]]></text>
+</component>
+
+<component id='ID_s4_dragsrc03'>
+	<text><![CDATA[1268]]></text>
+</component>
+
+<component id='ID_s4_dragsrc04'>
+	<text><![CDATA[209.165.201.11]]></text>
+</component>
+
+<component id='ID_s4_dragsrc05'>
+	<text><![CDATA[1150]]></text>
+</component>
+
+<component id='ID_s4_dragsrc06'>
+	<text><![CDATA[53]]></text>
+</component>
+
+<component id='ID_s4_dragsrc07'>
+	<text><![CDATA[192.168.51.1]]></text>
+</component>
+
+<component id='ID_s4_dragsrc08'>
+	<text><![CDATA[80]]></text>
+</component>
+
+<component id='ID_s4_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_s4_CORRECT_BODY'>
+	<text><![CDATA[您已成功标识此通信跳的 NAT IP 数据包编址。 点击“按钮 5”以继续。]]></text>
+</component>
+
+<component id='ID_s4_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_s4_INCORRECT_BODY'>
+	<text><![CDATA[您尚未成功标识此通信跳的 NAT IP 数据包地址。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_s4_CHECK'>
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id='ID_s4_RESET'>
+	<text><![CDATA[<b>重置</b>]]></text>
+</component><!--slide 5--><component id='ID_s5_inst'>
+	<text><![CDATA[<b>练习 - 确定每一跳的地址信息<br>第 4 跳：支持 NAT 的路由器 (R1) 至 PC 1</b><br><br>将相应的 SA、DA、源端口编址和目标端口编址拖放到这一跳通信的相应字段。]]></text>
+</component>
+
+<component id="ID_s5_top01">
+<text><![CDATA[ISP]]></text> 
+</component>
+
+<component id="ID_s5_top02">
+<text><![CDATA[互联网]]></text> 
+</component>
+
+<component id="ID_s5_top03">
+<text><![CDATA[Web 服务器]]></text> 
+</component>
+
+<component id='ID_s5_txt01'>
+	<text><![CDATA[SA]]></text>
+</component>
+
+<component id='ID_s5_txt02'>
+	<text><![CDATA[DA]]></text>
+</component>
+
+<component id='ID_s5_txt03'>
+	<text><![CDATA[源端口]]></text>
+</component>
+
+<component id='ID_s5_txt04'>
+	<text><![CDATA[目的端口]]></text>
+</component>
+
+<component id='ID_s5_dragsrc01'>
+	<text><![CDATA[64.100.10.2 ]]></text>
+</component>
+
+<component id='ID_s5_dragsrc02'>
+	<text><![CDATA[192.168.51.5]]></text>
+</component>
+
+<component id='ID_s5_dragsrc03'>
+	<text><![CDATA[1268]]></text>
+</component>
+
+<component id='ID_s5_dragsrc04'>
+	<text><![CDATA[209.165.201.11]]></text>
+</component>
+
+<component id='ID_s5_dragsrc05'>
+	<text><![CDATA[1150]]></text>
+</component>
+
+<component id='ID_s5_dragsrc06'>
+	<text><![CDATA[53]]></text>
+</component>
+
+<component id='ID_s5_dragsrc07'>
+	<text><![CDATA[192.168.51.1]]></text>
+</component>
+
+<component id='ID_s5_dragsrc08'>
+	<text><![CDATA[80]]></text>
+</component>
+
+<component id='ID_s5_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_s5_CORRECT_BODY'>
+	<text><![CDATA[您已成功标识此通信跳的 NAT IP 数据包编址。]]></text>
+</component>
+
+<component id='ID_s5_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_s5_INCORRECT_BODY'>
+	<text><![CDATA[您尚未成功标识此通信跳的 NAT IP 数据包地址。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_s5_CHECK'>
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id='ID_s5_RESET'>
+	<text><![CDATA[<b>重置</b>]]></text>
+</component>
+
+
+</textcomponents>

@@ -1,0 +1,101 @@
+<textcomponents>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[电压]]>
+        </text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[电压]]>
+        </text>
+    </component>
+    <component id="ID_txt08">
+        <text>
+            <![CDATA[电压]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[时间]]>
+        </text>
+    </component>
+     <component id="ID_txt06">
+        <text>
+            <![CDATA[时间]]>
+        </text>
+    </component>
+     <component id="ID_txt09">
+        <text>
+            <![CDATA[时间]]>
+        </text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[纯数字信号]]>
+        </text>
+    </component>
+    <component id="ID_txt01b">
+        <text>
+            <![CDATA[纯数字信号]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[干扰信号]]>
+        </text>
+    </component>
+    <component id="ID_txt02b">
+        <text>
+            <![CDATA[干扰信号]]>
+        </text>
+    </component>
+    <component id="ID_txt07">
+        <text>
+            <![CDATA[被干扰的数字信号]]>
+        </text>
+    </component>
+    <component id="ID_txt03b">
+        <text>
+            <![CDATA[被干扰的数字信号]]>
+        </text>
+    </component>
+    <component id="ID_txt10">
+        <text>
+            <![CDATA[计算机读取的内容]]>
+        </text>
+    </component>
+    <component id="ID_txt04b">
+        <text>
+            <![CDATA[计算机读取的内容]]>
+        </text>
+    </component>
+    <component id="ID_txt12">
+        <text>
+            <![CDATA[已改变的信号]]>
+        </text>
+    </component>
+    <component id="ID_txt05b">
+        <text>
+            <![CDATA[已改变的信号]]>
+        </text>
+    </component>
+    <!--Controller-->
+    <component id="play">
+        <text>播放</text>
+    </component>
+    <component id="pause">
+        <text>暂停</text>
+    </component>
+    <component id="rewind">
+        <text>快退</text>
+    </component>
+    <component id="fforward">
+        <text>快进</text>
+    </component>
+    <component id="start">
+        <text>开始</text>
+    </component>
+    <component id="end">
+        <text>结束</text>
+    </component>
+</textcomponents>

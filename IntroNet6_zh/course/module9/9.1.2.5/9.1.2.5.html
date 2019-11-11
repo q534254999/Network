@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.2.5 多个单独会话</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>多个单独会话</h1>
+        <div>
+          <p>传输层必须能够划分和管理具有不同传输要求的多个通信。用户希望能够同时收发电子邮件和即时消息、浏览网站和进行 VoIP 电话呼叫。尽管可靠性要求不同，这些应用程序仍将同时通过网络发送和接收数据。此外，电话呼叫的数据不会传送到 Web 浏览器上；同样，即时消息的内容也不会显示在电子邮件中。</p>
+          <p>TCP 和 UDP 通过使用唯一标识应用程序的报头字段来管理这些多个同时进行的会话。这些唯一标识符就是端口号。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a computer with three different applications open and the port number associated with each.  Some email applications will use port 110, an HTTP page may use port 80, and an Internet chat window will use port 531.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

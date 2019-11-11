@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.2.1 为终端设备进行手动 IP 地址配置</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>为终端设备进行手动 IP 地址配置</h1>
+        <div>
+          <p>为使终端设备能够通过网络通信，必须配置唯一的 IPv4 地址和子网掩码。IP 地址信息可以手动输入到终端设备中或使用动态主机配置协议 (DHCP) 自动分配。 </p>
+          <p></p>
+          <p>要在 Windows 主机上手动配置 IPv4 地址，请打开<b>控制面板 > 网络共享中心 > 更改适配器设置</b>，然后选择适配器。接下来右键单击并选择“<b>属性</b>”以显示“<b>本地连接属性</b>”，如图 1 所示。 </p>
+          <p></p>
+          <p>突出显示 Internet 协议版本 4 (TCP/IPv4)，并单击“<b>属性</b>”以打开“<b>Internet 协议版本 4 (TCP/IPv4) 属性</b>”窗口，如图 2 所示。配置 IPv4 地址和子网掩码信息，以及默认网关。 </p>
+          <p></p>
+          <p>
+            <b>注意</b>：DNS 服务器地址是域名系统 (DNS) 服务器的 IPv4 地址，用于将 IP 地址转换为域名，例如 <a href="http://www.cisco.com/" target="_blank">www.cisco.com</a>。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the Windows Local Area Connection Properties window with “Internet Protocol Version 4 (TCP/IPv4)” selected. Figure 2 shows the Windows TCP/IPv4 Properties window with IP address information statically configured</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

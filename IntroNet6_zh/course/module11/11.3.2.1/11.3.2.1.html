@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.3.2.1 解释 Trace 消息</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.3.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>解释 Trace 消息</h1>
+        <div>
+          <p>追踪可用于返回数据包在网络中传输时沿途经过的跳的列表。该命令的形式取决于发出命令的位置。若从 Windows 计算机上执行追踪，请使用 <b>tracert</b>。如图 1 所示，若从路由器 CLI 上执行追踪，请使用 <b>traceroute</b>。</p>
+          <p>图 2 显示了在主机 1 上输入 <b>tracert</b> 命令追踪通往主机 2 的路由的输出。仅路由器 A 上的网关响应成功，通向下一跳的追踪请求超时，表明下一跳路由器未响应。追踪结果表明，LAN 以外的网际网络中有错误，或者这些路由已经配置为不响应追踪中使用的响应请求。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows four routers connected one after the other via WAN links. Router A and Router D each have a switch and two PCs connected. Router A is entering the “traceroute 10.1.0.2” command to trace the route to Host 2 connected to Router D. Host 1 is entering the “tracert 10.1.0.2” command to also trace the same route. Figure 2 shows the command output for Host 1’s command. The trace failed after Router A.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

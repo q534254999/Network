@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.4.2.1 双工操作</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.4.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>双工操作</h1>
+        <div>
+          <p>在数据通信中，双工是指两台设备之间数据传输的方向。如果通信限制为每次在一个方向进行数据交换，则此连接称为半双工。全双工允许同时发送和接收数据。</p>
+          <p></p>
+          <p>为了达到最佳通信性能，两个连接的以太网网络接口必须在同一双工模式下运行，以避免低效和链路延迟。</p>
+          <p></p>
+          <p>以太网自动协商旨在简化配置，最大限度地减少问题，并提高链路性能。连接的设备首先通告其支持的功能，然后选择两端所支持的最高性能模式。例如，图中的交换机和路由器已成功自动协商全双工模式。</p>
+          <p></p>
+          <p>如果两个连接的设备，一个在全双工模式下运行，另一个在半双工模式下运行，就会出现双工不匹配。当数据通过双工不匹配的链路通信时，链路性能就会很差。双工不匹配可能由手动配置不正确导致，即两个连接的设备手动设置成了不同的双工模式。双工不匹配也可能由于将执行自动协商的设备连接到另一个手动设置为全双工的设备而导致。虽然少见，但自动协商失败也可能导致双工不匹配。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a switch connected to a router. The devices have autonegotiated full-duplex.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

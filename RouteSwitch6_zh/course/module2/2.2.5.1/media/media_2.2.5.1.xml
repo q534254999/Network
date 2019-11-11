@@ -1,0 +1,35 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>为什么要配置浮动静态路由？</b>]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[<b>专用 WAN</b>]]></text> 
+  </component>
+
+  <component id="ID_txt02">
+  <text><![CDATA[<b>互联网</b>]]></text> 
+  </component>
+
+    <component id="ID_txt03">
+  <text><![CDATA[<b>分支机构</b>]]></text> 
+  </component>
+
+      <component id="ID_txt04">
+  <text><![CDATA[<b>ISP</b>]]></text> 
+  </component>
+
+   <component id="ID_txt05">
+  <text><![CDATA[<b>HQ</b>]]></text> 
+  </component>
+
+   <component id="ID_speech01">
+  <text><![CDATA[我首选使用专用 WAN 链路访问 HQ 路由器。]]></text> 
+  </component>
+
+   <component id="ID_speech02">
+  <text><![CDATA[但是，如果该链路出现故障，我可以使用连接到互联网的浮动静态路由作为备份。]]></text> 
+  </component>
+
+
+
+</textcomponents>

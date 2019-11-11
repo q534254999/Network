@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.2.1 介绍 ACL 通配符掩码</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>介绍 ACL 通配符掩码</h1>
+        <div>
+          <p>
+            <b>通配符掩码</b>
+          </p>
+          <p></p>
+          <p>IPv4 ACE 包括通配符掩码。通配符掩码是由 32 个二进制数字组成的字符串，路由器使用它来确定检查地址的哪些位以确定匹配项。 </p>
+          <p></p>
+          <p>和子网掩码一样，通配符掩码中的数字 1 和 0 用于标识如何处理相应的 IPv4 地址位。但是，在通配符掩码中，这些位的用途不同，所遵循的规则也不同。 </p>
+          <p></p>
+          <p>子网掩码使用二进制 1 和 0 标识 IPv4 地址的网络、子网和主机部分。通配符掩码使用二进制 1 和 0 过滤单个 IPv4 地址或一组 IPv4 地址，以便允许或拒绝对资源的访问。 </p>
+          <p></p>
+          <p>通配符掩码和子网掩码之间的差异在于它们匹配二进制 1 和 0 的方式。通配符掩码使用以下规则匹配二进制 1 和 0：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>通配符掩码位 0 - 匹配地址中对应位的值。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>通配符掩码位 1 - 忽略地址中对应位的值。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>图 1 显示不同通配符掩码过滤 IPv4 地址的方式。在本示例中，请记住，二进制 0 表示必须匹配的位，而二进制 1 表示可以忽略的位。 </p>
+          <p></p>
+          <p>通配符掩码通常也称为反码。原因在于，子网掩码采用二进制 1 表示匹配，二进制 0 表示不匹配；而在通配符掩码中则正好相反。 </p>
+          <p></p>
+          <p>
+            <b>使用通配符掩码</b>
+          </p>
+          <p></p>
+          <p>图 2 中的表格显示了将 0.0.255.255 通配符掩码应用到 32 位 IPv4 地址中的结果。请记住二进制 0 表示应匹配的值。</p>
+          <p></p>
+          <p>
+            <b>注</b>：不同于 IPv4 ACL，IPv6 ACL 不使用通配符掩码，而使用前缀长度表示应匹配 IPv6 源地址或目标地址的多少位。IPv6 ACL 不在本课程的讨论范围之内。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示五个 8 位数通配符掩码。示例 1 是 00000000，该掩码将匹配八位数的所有地址位。示例 2 是 00111111，该掩码将匹配八位数的前两位，而忽略最后六个地址位。示例 3 是 00001111，该掩码将匹配八位数的前四位，而忽略最后四个地址位。示例 4 是 11111100，该掩码将忽略八位数的前六个地址位，而匹配最后两个地址位。示例 5 是 11111111，该掩码将忽略八位数的所有位。图 2 显示向 32 位 IPv4 地址应用通配符掩码 0.0.255.255 之后的结果。该通配符掩码被列为16 个 0 位，后面加上 16 个 1 位。这会导致匹配地址中的前两个八位数，而忽略最后两个八位数。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,269 @@
+<textcomponents>
+  <!-- <component id="ID_title">
+  <text><![CDATA[<b>>练习 - 第 3 部分：网络组件名</b>]]></text> 
+  </component> --> 
+    <component id="ID_table01">
+        <text>
+            <![CDATA[<b>设备类别</b>]]>
+        </text>
+    </component>
+    <component id="ID_table02">
+        <text>
+            <![CDATA[<b>功能</b>]]>
+        </text>
+    </component>
+    <component id="ID_table03">
+        <text>
+            <![CDATA[<b>表示方法</b>]]>
+        </text>
+    </component>
+    <component id="ID_table04">
+        <text>
+            <![CDATA[<b>终端设备</b>]]>
+        </text>
+    </component>
+    <component id="ID_table05">
+        <text>
+            <![CDATA[<b>中间设备</b>]]>
+        </text>
+    </component>
+    <component id="ID_table06">
+        <text>
+            <![CDATA[<b>网络介质</b>]]>
+        </text>
+    </component>
+    <component id="ID_s2_CHECK">
+        <text>
+            <![CDATA[检查]]>
+        </text>
+    </component>
+    <component id="ID_s2_RESET">
+        <text>
+            <![CDATA[重置]]>
+        </text>
+    </component>
+    <component id="ID_s1_CHECK">
+        <text>
+            <![CDATA[检查]]>
+        </text>
+    </component>
+    <component id="ID_s1_RESET">
+        <text>
+            <![CDATA[重置]]>
+        </text>
+    </component>
+    <component id="ID_s3_CHECK">
+        <text>
+            <![CDATA[检查]]>
+        </text>
+    </component>
+    <component id="ID_s3_RESET">
+        <text>
+            <![CDATA[重置]]>
+        </text>
+    </component>
+    <component id="ID_s2_INCORRECT_TITLE">
+        <text>
+            <![CDATA[<FONT FACE="_sans"><b>不正确</b></FONT>]]>
+        </text>
+    </component>
+    <component id="ID_s1_INCORRECT_BODY">
+        <text>
+            <![CDATA[<FONT FACE="_sans">您尚未成功地将网络组件功能与设备类别进行匹配。请单击“重置”重试。</FONT>]]>
+        </text>
+    </component>
+    <component id="ID_s1_INCORRECT_TITLE">
+        <text>
+            <![CDATA[<FONT FACE="_sans"><b>不正确</b></FONT>]]>
+        </text>
+    </component>
+    <component id="ID_s2_INCORRECT_BODY">
+        <text>
+            <![CDATA[<FONT FACE="_sans">您尚未成功地将网络组件图标与设备类别进行匹配。请单击“重置”重试。</FONT>]]>
+        </text>
+    </component>
+    <component id="ID_s3_INCORRECT_TITLE">
+        <text>
+            <![CDATA[<FONT FACE="_sans"><b>不正确</b></FONT>]]>
+        </text>
+    </component>
+    <component id="ID_s3_INCORRECT_BODY">
+        <text>
+            <![CDATA[<FONT FACE="_sans">您尚未成功地将网络组件名与图标进行匹配。请单击“重置”重试。</FONT>]]>
+        </text>
+    </component>
+    <component id="ID_s3_CORRECT_TITLE">
+        <text>
+            <![CDATA[<FONT FACE="_sans"><b>正确</b></FONT>]]>
+        </text>
+    </component>
+    <component id="ID_s3_CORRECT_BODY">
+        <text>
+            <![CDATA[<FONT FACE="_sans">您已成功地将网络组件名与图标进行匹配。</FONT>]]>
+        </text>
+    </component>
+    <component id="ID_s1_inst">
+        <text>
+            <![CDATA[<font size='10'><b>练习 - 第 1 部分：网络组件功能</b><br/>将网络组件功能拖动到其设备类别。</font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_existing01">
+        <text>
+            <![CDATA[在人与<br>网络之间提供接口。]]>
+        </text>
+    </component>
+    <component id="ID_s2_existing02">
+        <text>
+            <![CDATA[提供连接<br>并确保数据<br>在网络中传输。]]>
+        </text>
+    </component>
+    <component id="ID_s2_existing03">
+        <text>
+            <![CDATA[为消息从源设备传送到目的设备提供通道。]]>
+        </text>
+    </component>
+    <component id="ID_s2_inst">
+        <text>
+            <![CDATA[<font size='10'><b>练习 - 第 2 部分：网络组件图标</b><br/>将网络组件图标拖动到其设备类别。</font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag01">
+        <text>
+            <![CDATA[在人与<br>网络之间提供接口。]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag02">
+        <text>
+            <![CDATA[提供连接<br>并确保数据<br>在网络中传输。]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag03">
+        <text>
+            <![CDATA[为消息从源设备传送到目的设备提供通道。]]>
+        </text>
+    </component>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>练习 - 第 3 部分：网络组件名</b>]]></text>
+    </component>
+    <component id="ID_s1_instr_title">
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id="ID_s1_instr_body">
+        <text>
+            <![CDATA[将网络组件名拖动到与其匹配的图标。]]>
+        </text>
+    </component>
+    <component id="ID_s2_instr_title">
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id="ID_s2_instr_body">
+        <text>
+            <![CDATA[将网络组件名拖动到与其匹配的图标。]]>
+        </text>
+    </component>
+    <component id="ID_s3_instr_title">
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id="ID_s3_instr_body">
+        <text>
+            <![CDATA[将网络组件名拖动到与其匹配的图标。]]>
+        </text>
+    </component>
+    <component id="ID_s3_existing01">
+        <text>
+            <![CDATA[在人与<br>网络之间提供接口。]]>
+        </text>
+    </component>
+    <component id="ID_s3_existing02">
+        <text>
+            <![CDATA[提供连接<br>并确保数据<br>在网络中传输。]]>
+        </text>
+    </component>
+    <component id="ID_s3_existing03">
+        <text>
+            <![CDATA[为消息从源设备传送到目的设备提供通道。]]>
+        </text>
+    </component>
+    <component id="ID_s3_drag01">
+        <text>
+            <![CDATA[笔记本电脑]]>
+        </text>
+    </component>
+    <component id="ID_s3_drag02">
+        <text>
+            <![CDATA[打印机]]>
+        </text>
+    </component>
+    <component id="ID_s3_drag03">
+        <text>
+            <![CDATA[无线平板电脑]]>
+        </text>
+    </component>
+    <component id="ID_s3_drag04">
+        <text>
+            <![CDATA[台式计算机]]>
+        </text>
+    </component>
+    <component id="ID_s3_drag05">
+        <text>
+            <![CDATA[IP 电话]]>
+        </text>
+    </component>
+    <component id="ID_s3_drag06">
+        <text>
+            <![CDATA[网真端点]]>
+        </text>
+    </component>
+    <component id="ID_s3_drag07">
+        <text>
+            <![CDATA[无线路由器]]>
+        </text>
+    </component>
+    <component id="ID_s3_drag08">
+        <text>
+            <![CDATA[路由器]]>
+        </text>
+    </component>
+    <component id="ID_s3_drag09">
+        <text>
+            <![CDATA[防火墙<br/>设备]]>
+        </text>
+    </component>
+    <component id="ID_s3_drag10">
+        <text>
+            <![CDATA[LAN 交换机]]>
+        </text>
+    </component>
+    <component id="ID_s3_drag11">
+        <text>
+            <![CDATA[多层交换机]]>
+        </text>
+    </component>
+    <component id="ID_s3_drag12">
+        <text>
+            <![CDATA[WAN 介质]]>
+        </text>
+    </component>
+    <component id="ID_s3_drag13">
+        <text>
+            <![CDATA[无线介质]]>
+        </text>
+    </component>
+    <component id="ID_s3_drag14">
+        <text>
+            <![CDATA[LAN 介质]]>
+        </text>
+    </component>
+    <component id="transcript">
+        <text>
+            <![CDATA[<b>此处显示脚本</b>]]>
+        </text>
+    </component>
+</textcomponents>

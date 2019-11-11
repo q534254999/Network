@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.2.3 标记以太网帧以便识别 VLAN</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>标记以太网帧以便识别 VLAN</h1>
+        <div>
+          <p>Catalyst 2960 系列交换机是第 2 层设备。它们根据以太网帧头信息来转发数据包。它们没有路由表。标准以太网帧头不包含有关帧所属的 VLAN 的信息；因此，当以太网帧置于 TRUNK 时，必须添加帧所属的 VLAN 的信息。这一过程称为标记，使用 IEEE 802.1Q 标准中指定的 IEEE 802.1Q 报头完成。802.1Q 报头在原始的以太网帧头中插入 4 字节标记，从而指定帧所属的 VLAN。</p>
+          <p></p>
+          <p>当交换机在已配置为接入模式且分配了 VLAN 的端口上收到帧时，交换机会在帧头中插入 VLAN 标记，重新计算帧检查序列 (FCS)，然后将标记的帧通过中继端口转发出去。</p>
+          <p></p>
+          <p>
+            <b>VLAN 标记字段详细信息</b>
+          </p>
+          <p></p>
+          <p>VLAN 标记字段包含“类型”字段、“优先级”字段、“规范格式标识符”字段和“VLAN ID”字段。</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>类型</b> - 2 字节值，称为标记协议 ID (TPID) 值。对于以太网，它设置为十六进制 0x8100。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>用户优先级</b> - 3 位值，支持级别或服务实施。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>规范格式标识符 (CFI)</b> - 1 位标识符，便于在以太网链路上传输令牌环帧。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>VLAN ID (VID)</b> - 12 位 VLAN 标识号，最多支持 4096 个 VLAN ID。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>交换机插入类型字段和标记控制信息字段后，它会重新计算 FCS 值并将新的 FCS 插入帧。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示以太网帧和 802.1Q 帧之间的差异。第二个帧具有添加到帧头的 .1Q 标记。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

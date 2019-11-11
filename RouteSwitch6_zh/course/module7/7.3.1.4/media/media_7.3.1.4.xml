@@ -1,0 +1,118 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>路由器中的 ACL 和路由进程</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[第 2 层地址匹配？]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[接口上的 ACL？]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[语句列表匹配？]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[允许数据包？]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[将数据包转发到出站接口]]></text> 
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[默认拒绝]]></text> 
+</component>
+<component id="ID_txt07">
+<text><![CDATA[接口上的 ACL？]]></text> 
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[语句列表匹配？]]></text> 
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[允许数据包？]]></text> 
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[默认拒绝]]></text> 
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[发送到设备]]></text> 
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>路由器中的路由和 ACL 进程</b>]]></text> 
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<b>路由器中的路由和 ACL 进程</b>]]></text> 
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[是]]></text> 
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[是]]></text> 
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[是]]></text> 
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[是]]></text> 
+</component>
+
+<component id="ID_txt18">
+<text><![CDATA[是]]></text> 
+</component>
+
+<component id="ID_txt19">
+<text><![CDATA[是]]></text> 
+</component>
+
+<component id="ID_txt20">
+<text><![CDATA[否]]></text> 
+</component>
+
+<component id="ID_txt21">
+<text><![CDATA[否]]></text> 
+</component>
+
+<component id="ID_txt22">
+<text><![CDATA[否]]></text> 
+</component>
+
+<component id="ID_txt23">
+<text><![CDATA[否]]></text> 
+</component>
+
+<component id="ID_txt24">
+<text><![CDATA[否]]></text> 
+</component>
+
+<component id="ID_txt25">
+<text><![CDATA[帧到达路由器接口]]></text> 
+</component>
+
+<component id="ID_txt26">
+<text><![CDATA[否]]></text> 
+</component>
+
+<component id="ID_txt27">
+<text><![CDATA[否]]></text> 
+</component>
+
+<component id="ID_txt28">
+<text><![CDATA[是]]></text> 
+</component>
+
+</textcomponents>

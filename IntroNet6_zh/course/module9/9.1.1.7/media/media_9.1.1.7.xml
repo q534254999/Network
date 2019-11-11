@@ -1,0 +1,102 @@
+<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>传输层协议</b>]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[应用层]]>
+        </text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[传输层]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[互联网层]]>
+        </text>
+    </component>
+    
+   
+    
+    
+    <component id="ID_txt08a">
+        <text>
+            <![CDATA[会话层]]>
+        </text>
+    </component>
+    <component id="ID_txt09">
+        <text>
+            <![CDATA[传输层]]>
+        </text>
+    </component>
+    <component id="ID_txt10">
+        <text>
+            <![CDATA[网络层]]>
+        </text>
+    </component>
+    <component id="ID_txt11">
+        <text>
+            <![CDATA[数据链路层]]>
+        </text>
+    </component>
+    <component id="ID_txt12">
+        <text>
+            <![CDATA[物理层]]>
+        </text>
+    </component>
+    <component id="ID_txt13">
+        <text>
+            <![CDATA[应用程序开发人员根据应用程序的性质选择适合的传输层协议。]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[IP 电话]]>
+        </text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[流实时视频]]>
+        </text>
+    </component>
+    <component id="ID_txt06">
+        <text>
+            <![CDATA[SMTP/POP（电子邮件）]]>
+        </text>
+    </component>
+    <component id="ID_txt07">
+        <text>
+            <![CDATA[HTTP]]>
+        </text>
+    </component>
+    <component id="ID_txt08">
+        <text>
+            <![CDATA[所需的协议属性：<br/><textformat blockindent='-18'><ul class="bulletIndent15"><li>快速</li><li>开销低</li><li>不需要确认</li><li>不重新发送丢失的数据</li><li>在数据到达时交付数据</li></ul></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_txt09">
+        <text>
+            <![CDATA[所需的协议属性：<br/><textformat blockindent='-18'><ul class="bulletIndent15"><li>可靠</li><li>确认数据</li><li>重新发送丢失的数据</li><li>以数据发送的顺序交付数据</li></ul></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_txt18">
+        <text>
+            <![CDATA[<b>OSI 模型</b>]]></text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[电子邮件]]>
+        </text>
+    </component>
+    <!-- <component id="ID_txt02">
+        <text>
+            <![CDATA[<b>UDP</b>]]></text>
+    </component> -->
+   <!--  <component id="ID_txt01">
+        <text>
+            <![CDATA[<b>TCP</b>]]></text>
+    </component> -->
+</textcomponents>

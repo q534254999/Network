@@ -1,0 +1,84 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>DHCPv4 发现消息</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+  <text><![CDATA[<b>DHCPv4 客户端 A<br/>IP：<font color="#F68026">??</font></b>]]></text> 
+  </component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[<b>DHCPv4 服务器<br/>192.168.1.254/24</b>]]></text> 
+  </component>
+  <component id="ID_s1_txt03">
+  <text><![CDATA[<b>以太帧</b>]]></text>
+  </component>
+   <component id="ID_s1_txt04">
+  <text><![CDATA[<b>IP</b>]]></text>
+  </component>
+   <component id="ID_s1_txt05">
+  <text><![CDATA[<b>UDP</b>]]></text>
+  </component>
+   <component id="ID_s1_txt06">
+  <text><![CDATA[<b>DHCPDISCOVER</b>]]></text>
+   </component>
+  <component id="ID_s1_txt07">
+  <text><![CDATA[<class="font10px">DST MAC: FF:FF:FF:FF:FF:FF<br/>SRC MAC: MAC A</font>]]></text>
+  </component>
+   <component id="ID_s1_txt08">
+  <text><![CDATA[<class="font10px">IP SRC: 0.0.0.0<br/>IP DST: 255.255.255.255</font>]]></text>
+  </component>
+   <component id="ID_s1_txt09">
+  <text><![CDATA[UDP 67]]></text>
+  </component>
+   <component id="ID_s1_txt10">
+  <text><![CDATA[<class="font10px">CIADDR：0.0.0.0<br/>GIADDR：0.0.0.0<br/>掩码：0.0.0.0<br/>CHADDR：MAC A</font>]]></text>
+  </component>
+   <component id="ID_s1_txt11">
+  <text><![CDATA[<class="font10px">MAC：介质访问控制地址<br/>CIADDR：客户端：IP 地址<br/>GIADDR：网关 IP 地址<br/>CHADDR：客户端硬件地址</font>]]></text>
+  </component>
+  <component id="ID_s1_Body_txt01">
+		<text><![CDATA[<class="font10px">DHCP 客户端会发送带 DHCPDISCOVER 数据包的 IP 广播。 在本例中，DHCP 服务器在同一网段，它将处理此请求。 服务器注意到 GIADDR 字段为空白；因此得知客户端位于同一网段上。 服务器还会记录请求数据包中的客户端的硬件地址。</font>]]></text>
+	</component>	
+ 
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>DHCPv4 提供消息</b>]]></text>
+</component>
+<component id="ID_s2_txt01">
+  <text><![CDATA[<b>DHCPv4 客户端 A<br/>IP：<font color="#F68026">??</font></b>]]></text> 
+  </component>
+<component id="ID_s2_txt02">
+  <text><![CDATA[<b>DHCPv4 服务器<br/>192.168.1.254/24</b>]]></text> 
+  </component>
+  <component id="ID_s2_txt03">
+  <text><![CDATA[<b>以太帧</b>]]></text>
+  </component>
+   <component id="ID_s2_txt04">
+  <text><![CDATA[<b>IP</b>]]></text>
+  </component>
+   <component id="ID_s2_txt05">
+  <text><![CDATA[<b>UDP</b>]]></text>
+  </component>
+   <component id="ID_s2_txt06">
+  <text><![CDATA[<b>DHCP 应答</b>]]></text>
+   </component>
+  <component id="ID_s2_txt07">
+  <text><![CDATA[DST MAC: MAC A<br/>SRC MAC: MAC Serv]]></text>
+  </component>
+   <component id="ID_s2_txt08">
+  <text><![CDATA[<class="font10px">IP SRC: 192.168.1.254<br/>IP DST: 192.168.1.10</font>]]></text>
+  </component>
+   <component id="ID_s2_txt09">
+  <text><![CDATA[UDP 68]]></text>
+  </component>
+   <component id="ID_s2_txt10">
+  <text><![CDATA[<class="font10px">CIADDR：192.168.1.10<br/>GIADDR：0.0.0.0<br/>掩码：255.255.255.0<br/>CHADDR：MAC A</font>]]></text>
+  </component>
+   <component id="ID_s2_txt11">
+  <text><![CDATA[<class="font10px">MAC：介质访问控制地址<br/>CIADDR：客户端：IP 地址<br/>GIADDR：网关 IP 地址<br/>CHADDR：客户端硬件地址</font>]]></text>
+  </component>
+  <component id="ID_s2_Body_txt01">
+		<text><![CDATA[<class="font10px">DHCP 服务器从该网段的可用地址池中选取一个 IP 地址，以及与网段有关的参数和其他全局参数。 DHCP 服务器将它们放入 DHCP 数据包的相应字段。 DHCP 服务器会使用 A 的硬件地址（在 CHADDR 中）构造一个适当的帧发送到客户端。</font>]]></text>
+	</component>	
+	
+</textcomponents>

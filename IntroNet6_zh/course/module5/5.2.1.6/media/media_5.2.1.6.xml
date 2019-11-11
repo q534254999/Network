@@ -1,0 +1,151 @@
+<textcomponents>
+    <component id="ID_inst">
+        <text>
+            <![CDATA[<b>练习</b>]]></text>
+    </component>
+
+	<component id='ID_instr_title'>
+		<text><![CDATA[说明]]></text>
+	</component>
+
+	<component id='ID_instr_body'>
+		<text><![CDATA[确定交换机如何根据源 MAC 地址和目的 MAC 地址以及交换机 MAC 表中的信息转发帧。使用提供的信息回答下列问题。]]></text>
+	</component>
+    <component id="ID_HELP">
+        <text>
+            <![CDATA[帮助]]></text>
+    </component>
+    <component id="ID_HELP_BODY">
+        <text>
+            <![CDATA[本次练习将检验您对交换机如何转发帧的理解。<br /><br />单击“检查”按钮检查您的答案。单击“新问题”按钮，让计算机生成新的练习题。<br /><br />已给出交换机的物理拓扑和 MAC 地址表，以及一个包含源 MAC 地址和目的 MAC 地址的帧。这些计算机生成的题目以拓扑地址中的两个分别作为源 IP 地址和目的 IP 地址。自定义练习中可以使用两个 MAC 表中的任何地址和帧。<br /><br />1.<textformat blockindent="20">您的目标是确定交换机如何根据所示 MAC 地址表处理此帧。</textformat><br />2.<textformat blockindent="20">对于第一个问题，请检查表明交换机会将此帧转发到何处（如果有转发）的端口号。</textformat><br />3.<textformat blockindent="20">对于第二个问题，请检查表明交换机将如何处理该帧的相应选项。</textformat><br />4.<textformat blockindent="20">单击“检查”按钮，检查您的答案是否正确。</textformat><br /><br /><b>其他帮助：</b><br />“FF”是广播 MAC 地址，将转发到除原始端口外的所有端口。<br /><br />仅当交换机在 MAC 表中没有目的 MAC 时，帧才会<b>泛洪</b>到所有端口（原始端口除外）。<br /><br />交换机只根据源 MAC 地址判断是否将某个新的 MAC 地址添加到 MAC 表。如果源 MAC 地址已在表中，则不会添加或获取任何地址。如果源 MAC 地址不在表中，则会添加该地址。<br /><br />如果目的设备和源设备连接到同一个端口，并且交换机的 MAC 表中存在目的 MAC 地址，则交换机将丢弃该帧。在本练习中，当一个端口连接到有 2 台主机设备的集线器时，就会发生这种情况。<br />]]>
+        </text>
+    </component>
+    <component id="ID_CHECK">
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id="ID_NEW">
+        <text>
+            <![CDATA[新问题]]></text>
+    </component>
+    <component id="ID_HELP_TITLE">
+        <text>
+            <![CDATA[帮助]]></text>
+    </component>
+    <component id="ID_hub">
+        <text>
+            <![CDATA[集线器]]>
+        </text>
+    </component>
+    <!--Frame Table-->
+    <component id="ID_table1_title">
+        <text>
+            <![CDATA[<b>帧</b>]]></text>
+    </component>
+    <component id="ID_table1_txt01">
+        <text>
+            <![CDATA[前导码]]>
+        </text>
+    </component>
+    <component id="ID_table1_txt02">
+        <text>
+            <![CDATA[目的 MAC]]>
+        </text>
+    </component>
+    <component id="ID_table1_txt03">
+        <text>
+            <![CDATA[源 MAC]]>
+        </text>
+    </component>
+    <component id="ID_table1_txt04">
+        <text>
+            <![CDATA[长度/类型]]>
+        </text>
+    </component>
+    <component id="ID_table1_txt05">
+        <text>
+            <![CDATA[封装的数据]]>
+        </text>
+    </component>
+    <component id="ID_table1_txt06">
+        <text>
+            <![CDATA[帧尾]]>
+        </text>
+    </component>
+    <!--MAC Table-->
+    <component id="ID_table2_title">
+        <text>
+            <![CDATA[<b>MAC 表</b>]]></text>
+    </component>
+    <!--Questions-->
+    <component id="ID_question1">
+        <text>
+            <![CDATA[<b>问题 1 </b>- 交换机会将帧转发到哪个端口？]]></text>
+    </component>
+    <component id="ID_question2">
+        <text>
+            <![CDATA[<b>问题 2 </b>- 当交换机转发该帧时，下列哪一项陈述正确？]]></text>
+    </component>
+    <component id="ID_Q2_choice1">
+        <text>
+            <![CDATA[交换机将源 MAC 地址添加到 MAC 表中。]]>
+        </text>
+    </component>
+    <component id="ID_Q2_choice2">
+        <text>
+            <![CDATA[这是一个广播帧，将转发到所有端口。]]>
+        </text>
+    </component>
+    <component id="ID_Q2_choice3">
+        <text>
+            <![CDATA[这是一个单播帧，只发送到一个特定的端口。]]>
+        </text>
+    </component>
+    <component id="ID_Q2_choice4">
+        <text>
+            <![CDATA[这是一个单播帧，将同时发送到所有端口。]]>
+        </text>
+    </component>
+    <component id="ID_Q2_choice5">
+        <text>
+            <![CDATA[这是一个单播帧，但会在交换机中丢弃。]]>
+        </text>
+    </component>
+    <!--Feedback text-->
+    <component id="ID_correctHeader">
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id="ID_correct">
+        <text>
+            <![CDATA[您根据帧和 MAC 表中的信息正确回答了所有问题。]]>
+        </text>
+    </component>
+    <component id="ID_feedback2Header">
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id="ID_feedback1">
+        <text>
+            <![CDATA[在问题 1 中，您选择的端口不正确。]]>
+        </text>
+    </component>
+    <component id="ID_feedback1Header">
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id="ID_feedback2">
+        <text>
+            <![CDATA[在问题 2 中，您对交换机将如何处理源 MAC 地址的回答不正确。]]>
+        </text>
+    </component>
+    <component id="ID_feedback3Header">
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id="ID_feedback3">
+        <text>
+            <![CDATA[在问题 2 中，您对交换机如何根据目的地址处理帧的回答不正确。]]>
+        </text>
+    </component>
+</textcomponents>

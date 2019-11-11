@@ -1,0 +1,23 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>UDP 低开销数据传输</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[网络]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[发送方]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[接收方]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[<b>UDP 在发送数据前不建立连接。</b>]]></text>
+	</component>
+	<component id="ID_s1_instr_body">
+		<text><![CDATA[因为 UDP 的数据报头较小而且没有网络管理流量，因此可以提供低开销数据传输。]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[数据]]></text>
+	</component>
+</textcomponents>

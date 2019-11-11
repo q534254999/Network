@@ -1,0 +1,7 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[<i><b>TCP 和 UDP 是传输层协议工具，用于确保...</b><br/><br/><textformat blockindent="-14"><ul><li>数据类型将影响使用 TCP 还是 UDP 作为交付方法。</li><li>时间也是需要考虑的一个因素，它将影响发送/接收 TCP/UDP 数据传输所需的时间。</li></ul></textformat></i>]]></text>
+</component>
+
+</textcomponents>

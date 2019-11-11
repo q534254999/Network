@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.1.4 准备基本交换机管理</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>准备基本交换机管理</h1>
+        <div>
+          <p>要准备用于远程管理访问的交换机，就必须为交换机配置 IP 地址和子网掩码。请记住，要从远程网络管理交换机，则必须为交换机配置默认网关。这与在主机设备上配置 IP 地址信息非常相似。在图中，应当为 S1 上的交换机虚拟接口 (SVI) 分配 IP 地址。SVI 是虚拟接口，而不是交换机上的物理端口。 </p>
+          <p></p>
+          <p>SVI 是一个与 VLAN 相关联的概念。VLAN 是采用数字编号的逻辑分组，可以为其分配物理端口。应用于 VLAN 的配置和设置也可以应用于为该 VLAN 分配的所有端口。 </p>
+          <p></p>
+          <p>默认情况下，将交换机配置为通过 VLAN 1 控制交换机的管理。默认情况下，所有端口都分配给 VLAN 1。为安全起见，使用除 VLAN 1 之外的 VLAN 作为管理 VLAN 被视为是最佳做法。  </p>
+          <p></p>
+          <p>注意，这些 IP 设置只用于交换机的远程管理访问；IP 设置不允许交换机路由第 3 层数据包。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示一台交换机在以太网端口上通过以太网电缆连接到路由器上的 LAN 端口。有一台计算机使用控制台电缆连接到控制台端口。为能够远程管理交换机，开始时必须通过控制台端口配置交换机。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

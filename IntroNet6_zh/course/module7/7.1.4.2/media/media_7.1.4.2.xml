@@ -1,0 +1,86 @@
+<textcomponents>
+    <component id="ID_Pass">
+        <text>
+            <![CDATA[通过]]>
+        </text>
+    </component>
+    <component id="ID_Block">
+        <text>
+            <![CDATA[阻止]]>
+        </text>
+    </component>
+    <component id="ID_Start">
+        <text>
+            <![CDATA[开始]]>
+        </text>
+    </component>
+    <component id="ID_Reset">
+        <text>
+            <![CDATA[重置]]>
+        </text>
+    </component>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>练习</b>]]></text>
+    </component>
+    <component id='ID_s1_instr_title'>
+    <text><![CDATA[说明]]></text>
+  </component>
+
+  <component id='ID_s1_instr_body'>
+    <text><![CDATA[根据每个 IP 地址是公有 (互联网) 还是私有（小型本地网络）地址，决定让其“通过”或“阻止”。单击“开始”开始练习，然后单击“通过”或“阻止”。]]></text>
+  </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[得分]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[ISP]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[互联网]]>
+        </text>
+    </component>
+    <component id="ID_btn03">
+        <text>
+            <![CDATA[开始]]>
+        </text>
+    </component>
+    <component id="ID_btn04">
+        <text>
+            <![CDATA[重置]]>
+        </text>
+    </component>
+    <component id="ID_btn01">
+        <text>
+            <![CDATA[通过]]>
+        </text>
+    </component>
+    <component id="ID_btn02">
+        <text>
+            <![CDATA[阻止]]>
+        </text>
+    </component>
+    <component id="ID_MsgBadBody">
+        <text>
+            <![CDATA[您尚未成功确定公有 IP 地址和私有 IP 地址。]]>
+        </text>
+    </component>
+    <component id="ID_MsgBadTitle">
+        <text>
+            <![CDATA[<b>不正确</b>]]></text>
+    </component>
+    <component id="ID_MsgGoodBody">
+        <text>
+            <![CDATA[您已成功确定公有 IP 地址和私有 IP 地址。]]>
+        </text>
+    </component>
+    <component id="ID_MsgGoodTitle">
+        <text>
+            <![CDATA[<b>正确</b>]]></text>
+    </component>
+</textcomponents>

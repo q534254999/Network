@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.1.5 配置完全指定静态路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置完全指定静态路由</h1>
+        <div>
+          <p>
+            <b>完全指定静态路由</b>
+          </p>
+          <p>在完全指定静态路由中，同时指定退出接口和下一跳 IP 地址。这是在 CEF 之前的早期 IOS 版本中使用的另一种静态路由。当退出接口是多路访问接口时，则使用这种形式的静态路由，并且需要明确标识下一跳。下一跳必须直接连接到指定的送出接口。</p>
+          <p></p>
+          <p>假设 R1 和 R2 之间的网络链路为以太网链路，并且 R1 的 GigabitEthernet 0/1 接口连接到该网络，如图 1 所示。没有启用 CEF。为避免递归查找，可以使用以下命令实施直连静态路由：</p>
+          <p></p>
+          <p>
+            <span class="cmd">R1(config)# </span>
+            <span class="cmd">
+              <b>ip route 192.168.2.0 255.255.255.0 GigabitEthernet 0/1</b>
+            </span>
+          </p>
+          <p></p>
+          <p>但是，这可能导致意外或不一致的结果。以太网多路访问网络和点对点串行网络之间的区别在于，点对点串行网络只有一台其他设备位于该网络中，即链路另一端的路由器。而对于以太网络，可能会有许多不同的设备共享相同的多路访问网络，包括主机甚至多台路由器。如果仅仅在静态路由中指定以太网送出接口，路由器就没有充足的信息来决定哪台设备是下一跳设备。 </p>
+          <p></p>
+          <p>R1 知道数据包需要封装成以太网帧并从 GigabitEthernet 0/1 接口发送出去。但是，R1 不知道下一跳 IPv4 地址，因此它无法确定该以太网帧的目标 MAC 地址。</p>
+          <p></p>
+          <p>根据拓扑结构和其它路由器上的配置，该静态路由或许能正常工作，也或许不能。我们建议，当退出接口是以太网络时，完全指定静态路由同时使用退出接口和下一跳地址。 </p>
+          <p></p>
+          <p>如图 2 所示，当将数据包转发到 R2 时，送出接口是 GigabitEthernet 0/1，而下一跳 IPv4 地址是 172.16.2.2。</p>
+          <p></p>
+          <p>
+            <b>注</b>：使用 CEF 时不需要完全指定静态路由。应采用使用下一跳地址的静态路由。</p>
+          <p></p>
+          <p>使用图 3 和图 4 中的语法检查器配置并验证 R2 和 R3 的完全指定静态路由。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">这些图基于标准实验图。R1，有 LAN 连接到 R2，还有一个 LAN 使用一个 LAN 连接到 R3。图 1 显示路由器 1 未连接到的两个 LAN 的配置、路由器 2 LAN和路由器 3 LAN 以及路由器 2 与路由器 3 之间的 WAN。静态路由是使用完全限定静态路由配置的。此类路由具有退出接口和下一跳地址。图 2 演示路由器 1 访问路由器 3 上的 LAN 的查找过程。图 3 是允许学生将路由器 2 上的完全限定静态路由配置为到达路由器 3 的 LAN 的互动练习。图 4 是一个交互练习，允许学习者在路由器 3 上配置指向路由器 2 的另一端的网络的静态路由。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<textcomponents><!-- btns --><component id="ID_title">
+		<text><![CDATA[<b>解析 DNS 地址</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[DNS 服务器]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[网络]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[198.133.219.25]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[客户端]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[域名由 DNS 协议解析为网络设备的数字地址。]]></text>
+	</component>
+	<component id="ID_title1">
+		<text><![CDATA[<b>解析 DNS 地址第 1 步</b>]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[域名易于为人们所使用。]]></text>
+	</component>
+	<component id="ID_title2">
+		<text><![CDATA[<b>解析 DNS 地址第 2 步</b>]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[<b>名称</b>]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[<b>地址</b>]]></text>
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[www.cisco.com]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[198.133.219.25]]></text>
+	</component>
+	<component id="ID_bubble">
+		<text><![CDATA[<p id="ID_bubble" class="arrow">DNS 服务器将域名与数字地址进行匹配。</p>]]></text>
+	</component>
+	<component id="ID_bubble1">
+		<text><![CDATA[<p id="ID_bubble1" class="arrow">设备使用数字。</p>]]></text>
+	</component>
+	<component id="ID_title3">
+		<text><![CDATA[<b>解析 DNS 地址第 3 步</b>]]></text>
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[www.cisco.com]]></text>
+	</component>
+	<component id="ID_txt14">
+		<text><![CDATA[DNS 查询]]></text>
+	</component>
+	<component id="ID_title4">
+		<text><![CDATA[<b>解析 DNS 地址第 4 步</b>]]></text>
+	</component>
+	<component id="ID_txt12">
+		<text><![CDATA[DNS 查询响应<br/><br/>198.133.219.25]]></text>
+	</component>
+	<component id="ID_txt13">
+		<text><![CDATA[数字返回到客户端，以便用于发出服务器请求。]]></text>
+	</component>
+	<component id="ID_title5">
+		<text><![CDATA[<b>解析 DNS 地址第 5 步</b>]]></text>
+	</component>
+</textcomponents>

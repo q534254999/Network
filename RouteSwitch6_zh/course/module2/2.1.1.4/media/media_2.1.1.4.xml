@@ -1,0 +1,92 @@
+﻿<textcomponents><component id="MCTable_title"><text><![CDATA[ ]]></text></component><!-- instructions --><component id="ID_inst">
+	<text><![CDATA[<b>练习 - 确定静态路由的优点和缺点</b><br><br>确定静态路由描述符是静态路由的优点还是缺点。<br><br>点击每个描述符旁的相应字段以显示答案。]]></text>
+</component>
+
+<component id="ID_s1_title">
+	<text><![CDATA[<b>练习 - 确定静态路由的优点和缺点</b>]]></text>
+</component><!-- instructions --><component id="ID_instr_title">
+	<text><![CDATA[说明]]></text>
+</component>
+
+<component id="ID_instr_body">
+	<text><![CDATA[确定静态路由描述符是静态路由的优点还是缺点。<br><br>点击每个描述符旁的相应字段以显示答案。]]></text>
+</component><!-- buttons --><component id="ID_s1_CHECK">
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id="ID_s1_RESET">
+	<text><![CDATA[<b>重置</b>]]></text>
+</component><!--Number of rows in the table--><component id="txt_numrows">
+	<text><![CDATA[6]]></text>
+</component><!--Number of columns for the answers in the table. Do not count the question column--><component id="txt_numcols">
+	<text><![CDATA[2]]></text>
+</component>
+
+
+<component id="MCTable_title">
+    <text><![CDATA[ ]]></text>
+</component><!--Answer column headers--><component id="txt_col1">
+	<text><![CDATA[<b>优势</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>缺点</b>]]></text>
+</component><!--Question text - blockindent code moves the text away from the left edge a bit--><!--Question text - If questions are numbered, use blockindent for hanging indents--><component id="txt_q1">
+	<text><![CDATA[配置复杂性增加了网络规模。]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[不需要额外的资源（CPU、带宽等）。]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[拓扑更改会影响配置。]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[总是通过同一路径到达目的网络]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[路由表比较小，维护工作很少。]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[拓扑更改后，不会对路由表进行自动更新。]]></text>
+</component><!--Answers - Give the column number(s), column numbering start with 1 not 0--><!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] --><component id="txt_a1">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[2]]></text>
+</component><!-- Correct Feedback --><component id="ID_titleCorrect">
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[您已成功确定静态路由的优点和缺点。]]></text>
+</component><!-- Incorrect Feedback --><component id="ID_titleIncorrect">
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[您尚未成功确定静态路由的优点和缺点。 请单击“重置”重试。]]></text>
+</component>
+
+</textcomponents>

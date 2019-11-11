@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.3.2 将 IOS 映像备份到 TFTP 服务器的步骤</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>将 IOS 映像备份到 TFTP 服务器的步骤</h1>
+        <div>
+          <p>要将网络运行的停机时间保持到最短，需要拥有备份思科 IOS 映像的程序。这使网络管理员能够在出现已损坏或已清除映像时将映像快速复制回路由器。</p>
+          <p></p>
+          <p>在图 1 中，网络管理员希望在位于 172.16.1.100 的 TFTP 服务器中创建路由器上当前映像文件的备份 (c1900-universalk9-mz.SPA.152-4.M3.bin)。</p>
+          <p></p>
+          <p>要在 TFTP 服务器中创建思科 IOS 映像的备份，请执行以下三个步骤：</p>
+          <p></p>
+          <p>
+            <b>步骤 1.</b>确保可以访问网络 TFTP 服务器。如图 2 所示，对 TFTP 服务器执行 ping 操作以测试连通性。</p>
+          <p></p>
+          <p>
+            <b>步骤 2.</b> 检查 TFTP 服务器的磁盘空间是否足以容纳思科 IOS 软件映像。在路由器上使用 <b>show flash0:</b> 命令确定思科 IOS 映像文件的大小。本示例中的文件长度为 68831808 字节。</p>
+          <p></p>
+          <p>
+            <b>步骤 3.</b>使用 <b>copy </b><i>source-url destination-url </i>命令将映像复制到 TFTP 服务器，如图 3 所示。</p>
+          <p></p>
+          <p>在使用指定的源和目标 URL 发出命令后，系统将提示用户输入源文件名、远程主机的 IP 地址和目标文件名。然后将开始传输。</p>
+          <p></p>
+          <p>使用图 4 中的语法检查器在 R2 上将 IOS 复制到 TFTP 服务器。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了一个路由器和一个服务器，演示可以将 IOS 备份到 TFTP 服务器。图 2 显示从路由器对服务器进行 ping 操作的成功结果。它还显示了在路由器上“show flash:0”命令的输出。图 3 显示了将 IOS 从闪存驱动器复制到 TFTP 服务器的语法。图 4 是一个互动练习，让学生练习将 IOS 文件备份到 TFTP 服务器。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

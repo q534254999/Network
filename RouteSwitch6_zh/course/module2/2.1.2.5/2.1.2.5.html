@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.2.5 浮动静态路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>浮动静态路由</h1>
+        <div>
+          <p>另一种静态路由是浮动静态路由。如果链路发生故障，浮动静态路由即为主要静态或动态路由提供备份路径的静态路由。浮动静态路由仅在主路由不可用时使用。</p>
+          <p></p>
+          <p>因此，浮动静态路由的管理距离比主路由的管理距离要大。管理距离代表路由的可信度。如果有多条路径可以到达目的地，路由器会选择管理距离最小的路径。 </p>
+          <p></p>
+          <p>例如，假设管理员想创建浮动静态路由，作为 EIGRP 获知的路由的备用路由。浮动静态路由必须配置一个比 EIGRP 更大的管理距离。EIGRP 的管理距离为 90。如果浮动静态路由的管理距离配置为 95，通过 EIGRP 获知的动态路由将优先于浮动静态路由。如果 EIGRP 获知的路由丢失，浮动静态路由将取代其位置。 </p>
+          <p></p>
+          <p>在图中，分支机构路由器通常会通过专用 WAN 链路将所有流量转发到 HQ 路由器。在本例中，路由器使用 EIGRP 交换路由信息。管理距离为 91 或更大值的浮动静态路由可以作为备用路由。如果专用 WAN 链路发生故障，并且 EIGRP 路由从路由表中消失，则路由器会选择浮动静态路由作为到达 HQ LAN 的最佳路径。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示两个路由器，各自有两条路径相互连接。一条通过内部网络，另一条可以通过互联网。它们之间可能有一个 E. I. G. R. P 主路由。在另一路径发生故障的情况下，管理员可以将浮动静态路由配置为备用路径。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

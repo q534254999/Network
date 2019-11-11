@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.2.5 二级子路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>二级子路由</h1>
+        <div>
+          <p>2 级子路由是指有类网络地址的子网路由。如图 1 所示，1 级父路由是划分子网的 1 级网络路由。如图 2 所示，1 级父路由包含 2 级子路由。</p>
+          <p></p>
+          <p>与 1 级路由一样，2 级路由的来源可以是直连网络、静态路由或动态获知的路由。2 级子路由也是最终路由。</p>
+          <p></p>
+          <p>
+            <b>注</b>：思科 IOS 中的路由表层次结构包含有类路由方案。1 级父路由是子网路由的有类网络地址。即使子网路由的来源是无类路由协议也同样如此。</p>
+          <p></p>
+          <p>图 3 突出显示了 R1 的路由表中的子路由。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示 1 级路由、2 级子路由和父路由之间的关系。图 2 列出 1 级路由 172.16.0.0，后跟四个 2 级路由 172.16.1.0/24、172.16.2.0/24、172.16.3.0/24 和 172.16.4.0/2。图 3 显示 show ip route | begin Gateway 命令的输出。突出显示子路由。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

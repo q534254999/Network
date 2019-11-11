@@ -1,0 +1,62 @@
+﻿<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>恶意软件的类型</b>]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[<font color="#FFFFFF">最终用户工作站最容易遭受的是病毒、蠕虫和特洛伊木马攻击。</font>]]>
+        </text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[<font color="#FFFFFF">蠕虫会执行任意代码，并将自身的副本安装到受感染计算机的内存中。蠕虫的主要目的在于自动自我复制，并跨网络将其副本在系统之间传播。</font>]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[<font color="#FFFFFF">病毒是在计算机上执行特定的、不需要的（通常为有害的）功能的恶意软件。</font>]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[<font color="#FFFFFF">特洛伊木马是非自我复制类型的恶意软件。特洛伊木马通常包含伪装成别的东西（例如合法的应用程序或文件）的恶意代码。当下载或打开受感染的应用程序或文件时，特洛伊木马可从内部攻击终端设备。</font>]]>
+        </text>
+    </component>
+    <!--ANIMATION CONTROLLER-->
+    <component id="end">
+        <text>
+            <![CDATA[结束]]>
+        </text>
+    </component>
+    <component id="fforward">
+        <text>
+            <![CDATA[快进]]>
+        </text>
+    </component>
+    <component id="pause">
+        <text>
+            <![CDATA[暂停]]>
+        </text>
+    </component>
+    <component id="play">
+        <text>
+            <![CDATA[播放]]>
+        </text>
+    </component>
+    <component id="rewind">
+        <text>
+            <![CDATA[快退]]>
+        </text>
+    </component>
+    <component id="start">
+        <text>
+            <![CDATA[开始]]>
+        </text>
+    </component>
+    <component id="transcript">
+        <text>
+            <![CDATA[文字说明]]>
+        </text>
+    </component>
+</textcomponents>

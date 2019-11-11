@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.4.1 公有 IPv4 地址和私有 IPv4 地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>公有 IPv4 地址和私有 IPv4 地址</h1>
+        <div>
+          <p>公有 IPv4 地址是在 ISP（互联网服务提供商）路由器之间全面路由的地址。但是，并非所有可用的 IPv4 地址都可用于互联网。大多数组织使用称为<i>私有地址</i>的地址块向内部主机分配 IPv4 地址。 </p>
+          <p>20 世纪 90 年代中期，由于 IPv4 地址空间耗尽，引入了私有 IPv4 地址。私有 IPv4 地址并不是唯一的，内部网络可以使用它。</p>
+          <p>具体来说，私有地址块为：</p>
+          <p>
+            <ul>
+              <li>
+                <b>10.0.0.0 /8</b> 或 <b>10.0.0.0</b> 到 <b>10.255.255.</b><b>255</b></li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>172.16.0.0 /12</b> 或 <b>172.16.0.0 到 172.31.255.255</b></li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>192.168.0.0 /16</b> 或 <b>192.168.0.0 到 192.168.255.255</b></li>
+            </ul>
+          </p>
+          <p>必须知道这些地址块中的地址不能用于互联网，必须由互联网路由器过滤（丢弃）。例如，如图所示，网络 1、2 或 3 中的用户正在向远程目的地发送数据包。互联网服务提供商 (ISP) 路由器将看到数据包中的源 IPv4 地址属于私有地址，因此会丢弃该数据包。</p>
+          <p>
+            <b>注意</b>：在 <a href="https://tools.ietf.org/html/rfc1918" target="_blank">RFC 1918</a>中定义了私有地址。 </p>
+          <p>大多数组织将私有 IPv4 地址用于其内部主机。但是，这些 RFC 1918 地址在互联网上不可路由，必须转换为公有 IPv4 地址。网络地址转换 (NAT) 用于私有 IPv4 地址和公有 IPv4 地址间的转换。这通常是在将内部网络连接到 ISP 网络的路由器上完成。 </p>
+          <p>家庭路由器可提供同样的功能。例如，大多数家庭路由器是从私有地址 192.168.1.0 /24 将 IPv4 地址分配给其有线及无线主机。为连接互联网服务提供商 (ISP) 网络的家庭路由器接口分配了在互联网上使用的公有 IPv4 地址。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows three separate networks. Each is connected to its own ISP router. The ISP routers are connected to the Internet. The networks are privately addressed. In the figure, each router is sending a privately addressed packet to its ISP router. Each ISP router has a red X over the link signifying that the router will not accept the packet.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

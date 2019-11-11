@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.1.2 动态路由协议组件</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>动态路由协议组件</h1>
+        <div>
+          <p>路由协议是用于路由器之间交换路由信息的协议。路由协议由一组处理进程、算法和消息组成，用于交换路由信息，并将其选择的最佳路径添加到路由表中。动态路由协议的用途包括：</p>
+          <p>
+            <ul>
+              <li>发现远程网络</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>维护最新路由信息</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>选择通往目标网络的最佳路径</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>当前路径无法使用时找出新的最佳路径</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>动态路由协议的主要组件包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>数据结构</b> - 路由协议通常使用路由表或数据库来完成路由过程。此类信息保存在内存中。  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>路由协议消息</b> - 路由协议使用各种消息找出邻近的路由器，交换路由信息，并通过其他一些任务来获取和维护准确的网络信息。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>算法</b> - 算法是指用于完成某个任务的一定数量的步骤。路由协议使用算法来路由信息并确定最佳路径。  </li>
+            </ul>
+          </p>
+          <p></p>
+          <p></p>
+          <p>通过路由协议，路由器可以动态共享有关远程网络的信息，并为各自的路由表自动提供此信息。点击图中的“播放”，观看有关此流程的动画。</p>
+          <p></p>
+          <p>路由协议确定每个网络的最佳路径或路由。然后将该路由提供给路由表。如果没有管理距离较短的另一路由源，路由将安装在路由表中。例如，管理距离为 1 的静态路由优先于动态路由协议获取的同一网络。动态路由协议的主要优点是，当拓扑结构发生变化时，路由器会交换路由信息。通过这种信息交换，路由器不仅能够自动获知新增加的网络，还可以在当前网络连接失败时找出备用路径。  </p>
+          <p></p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">该图是三个路由器以三角形布局连接的动画。每个路由器都与另外两个路由器相连。该动画显示所有三个路由器都会将更新数据包发送到其他两个路由器</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

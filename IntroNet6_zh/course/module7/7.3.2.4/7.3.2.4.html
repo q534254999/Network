@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.2.4 Traceroute - 测试路径</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Traceroute - 测试路径</h1>
+        <div>
+          <p>Ping 用于测试两台主机之间的连接，但是不提供关于主机之间设备的详细信息。Traceroute (tracert) 实用程序可以生成沿着路径成功到达的跳数列表。此列表可以提供重要的验证和故障排除信息。如果数据到达目的地，则 Trace 就会列出主机之间的路径中每台路由器上的接口。如果数据在沿途的某一跳上失败，则回应 Trace 的最后一个路由器的地址可以提供指示，说明发现问题或有安全限制的地方。</p>
+          <p>
+            <b>往返时间 (RTT)</b>
+          </p>
+          <p>Traceroute 可提供沿路径每一跳的往返时间并指示是否有某一跳未响应。往返时间是数据包到达远程主机以及从该主机返回响应所花费的时间。星号 (*) 用于表示丢失的或无应答的数据包。 </p>
+          <p>此信息可用于确定路径中存在问题的路由器。如果显示器显示特定的某一跳响应时间长或数据丢失，这表示该路由器的资源或其连接可能压力过大。</p>
+          <p>
+            <b>IPv4 TTL 和 IPv6 跳数限制</b>
+          </p>
+          <p>Traceroute 使用第 3 层报头中的 IPv4 TTL 字段功能和 IPv6 跳数限制字段功能以及 ICMP 超时消息。 </p>
+          <p>播放图中的动画，观看 Traceroute 如何利用 TTL 功能。 </p>
+          <p>从 Traceroute 发送的第一个消息序列的 TTL 字段值为 1。这会导致此 TTL 使 IPv4 数据包在第一台路由器处超时。然后，此路由器用 ICMPv4 消息做出响应。现在，Traceroute 知道了第一跳的地址。</p>
+          <p>随后，Traceroute 逐渐增加每个消息系列的 TTL 字段值（2、3、4...）。这可为 Trace 提供数据包在该路径沿途再次超时所经过的每一跳的地址。TTL 字段的值将不断增加，直至到达目的主机或增至预定义的最大值。</p>
+          <p>到达最终目的主机后，该主机将不再以 ICMP 超时消息做出应答，而会以 ICMP 端口无法到达消息或 ICMP 回应应答消息做出应答。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is an animation of the trace route process.  A host forms an echo request with a TTL of one and a destination IP address and sends the packet.  The command line syntax for the example is trace r t one hundred ninety two dot one hundred sixty eight dot one dot two.  The first router receives this packet and it decrements the TTL by one since it is a hop.  The TTL is now zero so the packet is returned to the sender.  The sending host does not receive the expected echo reply so it increases the TTL to a value of two and resends the packet.  The first router receives the packet and decrements the TTL by one.  The TTL now has a value of one so the router sends the packet to the next router, and this router will decrement the TTL by one.  Now that the TTL is zero the router returns the packet to the sender.  The sender increments the TTL to three and again sends the packet through the network.  When the third router receives the packet the TTL is decremented to zero and the packet is returned to the sender.  Still not receiving an echo reply, the sender increases the TTL to four and sends it across the network.  The packet moves through three routers and now has a TTL of one.  The receiving host receives the packet and sends back the echo reply to the sender.  </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

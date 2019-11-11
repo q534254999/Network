@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.2.2 通过 VLAN 控制广播域</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>通过 VLAN 控制广播域</h1>
+        <div>
+          <p>
+            <b>没有 VLAN 的网络 </b>
+          </p>
+          <p></p>
+          <p>在常规操作中，如果交换机在某个端口上收到广播帧，它会将该帧从除接收该帧的端口之外的所有其他端口上转发出去。在图 1 的动画中，整个网络配置在相同子网中 (172.17.40.0/24)，并且没有配置 VLAN。因此，当 Faculty 计算机 (PC1) 发出广播帧时，交换机 S2 将该广播帧从所有端口发出。最后，由于该网络是广播域，整个网络都会收到广播。 </p>
+          <p></p>
+          <p>在本示例中，所有设备都位于同一 IPv4 子网中。如果有设备位于其他 IPv4 子网中，它们也会接收同一广播帧。诸如 ARP 请求之类的广播仅用于同一子网上的设备。</p>
+          <p></p>
+          <p>
+            <b>有 VLAN 的网络 </b>
+          </p>
+          <p></p>
+          <p>如图 2 中的动画所示，网络已使用两个 VLAN 划分。Faculty 设备已分配给 VLAN 10，而学生设备已分配给 VLAN 20。当广播帧从 Faculty 计算机 PC1 发送到交换机 S2 时，交换机仅向配置为支持 VLAN 10 的交换机端口转发广播帧。</p>
+          <p></p>
+          <p>交换机 S2 和 S1 相连的端口（端口 F0/1）以及 S1 和 S3 相连的端口（端口 F0/3）均是 TRUNK，都已配置为支持网络中的所有 VLAN。  </p>
+          <p></p>
+          <p>当 S1 在端口 F0/1 上收到广播帧时，S1 会将该广播帧通过支持 VLAN 10 的另一个端口转发出去，即端口 F0/3。当 S3 在端口 F0/3 上收到广播帧时，它会将该广播帧通过支持 VLAN 10 的另一个端口转发出去，即端口 F0/11。广播帧到达 VLAN 10 中配置的网络上的另一个计算机，即 Faculty 计算机 PC4。</p>
+          <p></p>
+          <p>为交换机配置 VLAN 后，特定 VLAN 中的主机所发出的单播流量、组播流量和广播流量，其传输均仅限于该 VLAN 中的设备。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 是证明当计算机发送广播数据包时，若无 LAN 分段，则所有其他计算机都会接收数据包的动画。图 2 是证明当计算机发送广播数据包时，若有 LAN 分段，则仅同一 VLAN 中的计算机会接收数据包的动画。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

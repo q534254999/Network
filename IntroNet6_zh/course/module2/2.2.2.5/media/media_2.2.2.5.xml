@@ -1,0 +1,63 @@
+<textcomponents>
+
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>限制对交换机的访问</b>]]></text>
+	</component><!--Syntax Checker Button Text--><component id="ID_s1_reset">
+		<text><![CDATA[重置]]></text>
+	</component>
+	
+	<component id="ID_s1_showme">
+		<text><![CDATA[看答案]]></text>
+	</component>
+	
+	<component id="ID_s1_showall">
+		<text><![CDATA[全部显示]]></text>
+	</component><!--End Syntax Checker Button Text--><component id="ID_s1_SC" fontSize="12" fontFace='_typewriter'  fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b><font face="_sans" color="#FFFFFF">***您必须输入确切完整的命令。 包含名称或密码的命令区分大小写。***</font></b> ]]></feedback>
+		
+		<existingcommands><![CDATA[<font face="_sans"><b><ul>限制对交换机的访问。<li>加密所有密码。</li><li>保护特权 EXEC 访问。</li><li>保护控制台访问。</li><li>保护 VTY 访问。</li><br>加密所有密码。</b></font>]]></existingcommands>
+		
+		<command prompt="Sw-Floor-1(config)#">
+			<correctresponse><![CDATA[ service password-encryption]]></correctresponse>
+			<deviceresponse><![CDATA[Sw-Floor-1(config)#<br>]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>使用密码保护特权 EXEC 访问。 Cla55.</font>]]></instruction>
+		</command>
+		
+		<command prompt="Sw-Floor-1(config)#">
+			<correctresponse><![CDATA[ enable secret Cla55]]></correctresponse>
+			<deviceresponse><![CDATA[Sw-Floor-1(config)#<br>]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b><ul>保护控制台线路。<li>使用密码 Cisc0。</li><li>允许登录。</li></font>]]></instruction>
+		</command>
+		
+		<command prompt="Sw-Floor-1(config)#">
+			<correctresponse><![CDATA[ line console 0]]></correctresponse>
+		</command>
+		
+		<command prompt="Sw-Floor-1(config-line)#">
+			<correctresponse><![CDATA[ password Cisc0]]></correctresponse>
+		</command>
+		
+		<command prompt="Sw-Floor-1(config-line)#">
+			<correctresponse><![CDATA[ login]]></correctresponse>
+			<deviceresponse><![CDATA[SW-Floor-1(config-line)#<br>]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b><ul>保护前 16 条 VTY 线路。<li>使用密码 Cisc0。</li><li>允许登录。</li></font>]]></instruction>
+		</command>
+		
+		<command prompt="Sw-Floor-1(config)#">
+			<correctresponse><![CDATA[ line vty 0 15]]></correctresponse>
+		</command>
+		
+		<command prompt="Sw-Floor-1(config-line)#">
+			<correctresponse><![CDATA[ password Cisc0]]></correctresponse>
+		</command>
+		
+		<command prompt="Sw-Floor-1(config-line)#">
+			<correctresponse><![CDATA[ login]]></correctresponse>
+			<deviceresponse><![CDATA[Sw-Floor-1(config-line)#<br>]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>您已成功限制对交换机的访问。</font>]]></instruction>
+		</command>
+		
+		<command prompt=""/>
+	</component>
+
+</textcomponents>

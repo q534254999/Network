@@ -1,0 +1,5 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>配置 Loopback0 接口</b>]]></text>
+	</component>
+</textcomponents>

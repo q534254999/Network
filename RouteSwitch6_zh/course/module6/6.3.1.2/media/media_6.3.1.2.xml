@@ -1,0 +1,60 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>传统 VLAN 间路由</b>]]></text>
+</component>
+
+<component id="ID_bubble01">
+<text><![CDATA[<b>中继</b>]]></text>
+</component>
+
+<component id="ID_bubble02">
+<text><![CDATA[<b>中继</b>]]></text>
+</component>
+
+<component id="ID_bubble03">
+<text><![CDATA[<b>中继</b>]]></text>
+</component>
+
+<component id="ID_bubble04">
+<text><![CDATA[<b>交换机 S1 端口</b><br/>F0/3 = VLAN 10<br/>F0/4 = VLAN 30<br/>F0/1-F0/2 = 中继<br/><br/><b>交换机 S2 端口</b><br/>F0/11 = VLAN 10<br/>F0/18 = VLAN 20<br/>F0/23 = VLAN 30<br/>F0/1-F0/2 = 中继]]></text>
+</component>
+
+<component id="ID_bubble05">
+<text><![CDATA[VLAN<br/>标记的帧]]></text>
+</component>
+
+<component id="ID_frame01">
+<text><![CDATA[<b>单播</b>]]></text>
+</component>
+
+<component id="ID_frame02">
+<text><![CDATA[<b>单播 VLAN 10</b>]]></text>
+</component>
+
+<component id="ID_frame03">
+<text><![CDATA[<b>单播 VLAN 30</b>]]></text>
+</component><!-- controller --><component id="end">
+<text><![CDATA[结束]]></text>
+</component>
+
+<component id="fforward">
+<text><![CDATA[快进]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[暂停]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[播放]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[快退]]></text>
+</component>
+
+<component id="start">
+<text><![CDATA[开始]]></text>
+</component>
+</textcomponents>

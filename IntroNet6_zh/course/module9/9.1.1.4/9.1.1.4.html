@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.1.4 传输层可靠性</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>传输层可靠性</h1>
+        <div>
+          <p>传输层还负责管理会话的可靠性要求。不同的应用程序有不同的传输可靠性要求。 </p>
+          <p>IP 只涉及数据包的结构、地址分配和路由。IP 不指定数据包的传送或传输方式。传输协议则指定在主机之间传输报文的方式。如图所示，TCP/IP 提供两种传输层协议，即传输控制协议 (TCP) 和用户数据报协议 (UDP)。IP 使用这些传输协议来实现主机的数据通信和传输。</p>
+          <p>TCP 被认为是可靠且功能齐全的传输层协议，用于确保所有数据到达目的设备。但是，这需要 TCP 报头中包含其他字段，这会增加数据包的大小，同时也会增加延迟。相反，UDP 是不提供可靠性的一个比较简单的传输层协议。因此，UDP 的字段较少而且比 TCP 更快。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows the four layers of the TCP/IP model and lists protocols that work at each of the layers.  At the Application layer there is FTP, HTTP, SMTP, DNS, and TFTP.  At the Transport layer there is both TCP and UDP.  The Internet layer has IP and the Network Access layer has LAN and WAN connections.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

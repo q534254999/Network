@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.4.1.2 第 5 章：以太网</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.4.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>第 5 章：以太网</h1>
+        <div>
+          <p>以太网是当前使用最广泛的 LAN 技术。以太网是 IEEE 802.2 和 802.3 标准中定义的一系列网络技术。以太网标准定义第 2 层协议和第 1 层技术。对于第 2 层协议，正如所有 802 IEEE 标准一样，以太网依靠数据链路层的两个单独子层运行，即逻辑链路控制 (LLC) 和 MAC 子层。</p>
+          <p></p>
+          <p>在数据链路层中，所有带宽的以太网的帧结构都几乎相同。以太网帧结构向第 3 层 PDU 添加帧头和帧尾来封装所发送的报文。 </p>
+          <p></p>
+          <p>以太网成帧有两种样式：IEEE 802.3 以太网标准和 DIX 以太网标准（现在称为以太网 II）。两种标准之间最大的差异是 802.3 中增加了起始帧分界符 (SFD)，并且“类型”字段变为“长度”字段。Ethernet II 是 TCP/IP 网络中使用的以太网帧格式。作为 IEEE 802.2/3 标准的一种实现形式，以太网帧提供 MAC 编址和错误检测功能。 </p>
+          <p></p>
+          <p>以太网提供的第 2 层编址支持单播、组播和广播通信。以太网使用地址解析协议来确定目的设备的 MAC 地址，并针对已知的 IPv4 地址映射它们。</p>
+          <p></p>
+          <p>IPv4 网络中的每个节点都有 MAC 地址和 IPv4 地址。IP 地址用于标识数据包的原始源和最终目的地。以太网 MAC 地址用于将数据包从一个以太网网卡发送到同一个 IP 网络中的另一个以太网网卡。ARP 用于将已知 IPv4 地址映射到 MAC 地址，以便通过正确的第 2 层地址将数据包封装到以太网帧中。</p>
+          <p></p>
+          <p>ARP 依赖特定类型的以太网广播消息和以太网单播消息（称为 ARP 请求和 ARP 应答）。ARP 协议将 IPv4 地址解析为 MAC 地址并维护映射表。</p>
+          <p></p>
+          <p>在大多数以太网网络中，终端设备通常以点对点的方式连接到第 2 层全双工交换机。第 2 层 LAN 交换机只根据 OSI 数据链路层（第 2 层）MAC 地址执行交换和过滤。第 2 层交换机建立了一个 MAC 地址表，它使用该表来作出转发决策。第 2 层交换机依靠路由器来传递各个 IP 子网之间的数据。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is a standard graphic for the introduction and conclusion pages.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

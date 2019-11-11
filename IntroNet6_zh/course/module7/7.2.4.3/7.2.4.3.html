@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.4.3 动态配置 - SLAAC</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>动态配置 - SLAAC</h1>
+        <div>
+          <p>无状态地址自动配置 (SLAAC) 是允许设备从 <i>IPv6 路由器</i>获取 IPv6 前缀、前缀长度、默认网关地址及其他信息，而无需使用 DHCPv6 服务器的方法。使用 SLAAC，设备根据本地路由器的 ICMPv6 路由器通告 (RA) 消息获取必要信息。</p>
+          <p>IPv6 路由器每 200 秒定期将 ICMPv6 RA 消息发送到网络上所有支持 IPv6 的设备。在响应发送 ICMPv6 路由器请求 (RS) 消息的主机时，也会发送 RA 消息。</p>
+          <p>默认情况下未启用 IPv6 路由。要将路由器启用为 IPv6 路由器，必须使用 <b>ipv6 unicast-routing</b> 全局配置命令。 </p>
+          <p>
+            <b>注意</b>：IPv6 地址也可在未启用为 IPv6 路由器的路由器上配置。</p>
+          <p>ICMPv6 RA 消息提示设备获取 IPv6 全局单播地址的方式。最终决定取决于设备的操作系统。ICMPv6 RA 消息包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>网络前缀和前缀长度</b> – 告知设备其所属的网络。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>默认网关</b> – IPv6 本地链路地址，RA 消息的源 IPv6 地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>DNS 地址和域名</b> – DNS 服务器的地址和域名。</li>
+            </ul>
+          </p>
+          <p>如图 1 所示，RA 消息具有三个选项：</p>
+          <p>
+            <ul>
+              <li>选项 1：SLAAC</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>选项 2：无状态 DHCPv6 服务器的 SLAAC</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>选项 3：有状态 DHCPv6（无 SLAAC）</li>
+            </ul>
+          </p>
+          <p>
+            <b>RA 选项 1：SLAAC</b>
+          </p>
+          <p>默认情况下，RA 消息会提示接收设备使用 RA 消息中的信息创建其自己的 IPv6 全局单播地址及其他信息。DHCPv6 服务器的服务不是必需项。 </p>
+          <p>SLAAC 是无状态的，也就是说没有中央服务器（例如有状态DHCPv6 服务器）来分配全局单播地址和维持设备及其地址的清单。借助 SLAAC，客户端设备使用 RA 消息中的信息创建其自己的全局单播地址。如图 2 所示，地址的两部分生成如下：</p>
+          <p>
+            <ul>
+              <li>
+                <b>前缀</b> – RA 消息中接收</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>接口 ID</b> – 使用 EUI-64 流程或通过生成一个随机 64 位数字产生。</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the router solicitation process by displaying a computer sending a request for IPv6 addressing information from all IPv6 routers.  The figure also shows a router advertisement message being sent by a router.  This message can have one of three options configured, option one gives all the necessary addressing information, option two sets some addressing options but relies on a DHCPv6 server for some settings, and option three relies solely on a DHCPv6 server for all addressing information.  The router advertisement in the figure is using option one and it is telling the computer the prefix, prefix-length, and default gateway to use. Figure 2 shows an example of SLAAC. A computer uses the IPv6 global unicast of the router to construct its own global unicast  address. The computer uses the prefix from the router's address, which is 2001:DB8:ACAD:1 in the example. And then the computer either uses EUI-64 or generates a random 64-bit number to fill in the interface ID portion of the address.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

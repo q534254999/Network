@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.5.1.2 第 4 章：网络访问</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.5.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>第 4 章：网络访问</h1>
+        <div>
+          <p>TCP/IP 网络接入层相当于 OSI 的数据链路层（第 2 层）和物理层（第 1 层）。 </p>
+          <p>OSI 物理层通过网络介质传输构成数据链路层帧的位。物理组件是电子硬件设备、介质和其他连接器，它们用于传输和承载用于表示位的信号。网络适配器 (NIC)、接口和连接器、电缆材料和电缆设计等硬件组件都是按照与物理层关联的标准规定的。物理层标准负责三个功能区：物理组件、帧编码技术和信令方法。</p>
+          <p>使用适当介质是网络通信的一个重要组成部分。如果没有适当的物理连接（有线或无线），任何设备之间都不会发生通信。 </p>
+          <p>有线通信包含铜介质和光缆： </p>
+          <p>
+            <ul>
+              <li>网络中使用的铜介质有三种主要类型：非屏蔽双绞线 (UTP)、屏蔽双绞线 (STP) 和同轴电缆。UTP 布线是最常见的铜缆网络介质。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>光缆在互联基础设施网络设备时使用非常普遍。与其他网络介质相比，它能够以更远的距离和更高的带宽（数据速率）传输数据。不同于铜线，光缆传输信号的衰减更少，并且完全不受 EMI 和 RFI 影响。 </li>
+            </ul>
+          </p>
+          <p>无线介质使用无线电或微波频率来承载代表数据通信二进制数字的电磁信号。 </p>
+          <p>启用无线的设备数量不断增加。因此，无线已经成为家用网络的首选介质，而且正在迅速普及到企业网络中。 </p>
+          <p>数据链路层负责处理物理网络介质中节点之间的帧交换。它允许上层访问介质并控制介质上存储和接收数据的方式。 </p>
+          <p>在数据链路层协议的各种实施中，有多种控制介质访问的方法。这些介质访问控制技术定义了节点是否以及如何共享介质。实际使用的介质访问控制方法取决于拓扑和介质共享。LAN 和 WAN 拓扑可以是物理的或逻辑的。正是逻辑拓扑在影响网络成帧和介质访问控制的类型。WAN 通常使用点对点、集中星型或网状物理拓扑互连。在共享介质 LAN 中，终端设备可以通过星型、总线、环或扩展星型物理拓扑互连。</p>
+          <p>所有数据链路层协议均将第 3 层 PDU 封装于帧的数据字段内。但是，由于协议的不同，帧结构以及帧头和帧尾中包含的字段会存在差异。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Add the media transcript</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

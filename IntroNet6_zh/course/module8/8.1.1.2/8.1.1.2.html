@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.1.2 大型广播域存在的问题</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>大型广播域存在的问题</h1>
+        <div>
+          <p>大型广播域是连接很多主机的网络。大型广播域的一个问题是这些主机会生成太多广播，这会对网络造成不良影响。在图 1 中，LAN1 连接了 400 个用户，这产生的广播流量可能会导致：</p>
+          <p>
+            <ul>
+              <li>网络运行缓慢，原因是它导致的流量太大 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>设备运行缓慢，原因是设备必须接受和处理每个广播数据包</li>
+            </ul>
+          </p>
+          <p>解决方案是使用称为<i>子网划分</i>的过程缩减网络的规模以创建更小的广播域。这些小型网络空间通常称为<i>子网</i>。 </p>
+          <p>例如，在图 2 中，网络地址为 172.16.0.0 /16 的 LAN 1 中的 400 个用户被划分到两个子网中，每个子网包含 200 个用户，网络地址分别为 172.16.0.0 /24 和 172.16.1.0 /24。广播仅在更小的网络域内传播。因此，LAN 1 中的广播不会传播到 LAN 2。 </p>
+          <p>注意，前缀长度如何从 16 变为 24。这是基本的子网划分；使用主机位可以创建其他子网。 </p>
+          <p>
+            <b>注意</b>：术语<i>子网</i>和<i>网络</i>经常互换使用。大多数网络是一些较大地址块的子网。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a router connected to the Internet and to another switch. The switch is connected to three other switches. A box encompasses all the switches and the router interface and is labeled “LAN1: 172.16.0.0/16 (400 users)”. Figure 2 shows a router connected to the Internet and two switches. Each switch is its on LAN with 200 users each.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

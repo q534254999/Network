@@ -1,0 +1,1 @@
+图中显示了带两个活动千兆接口的一个路由器。拓扑下列出了两个 ACL 的语法。第一个 ACL 语法是 access-list 1 permit ip192.168.10.0 0.0.0.255。第二个 ACL 命令是 access-list 2 permit ip192.168.10.0 0.0.0.255，后接 access-list 2 deny any。

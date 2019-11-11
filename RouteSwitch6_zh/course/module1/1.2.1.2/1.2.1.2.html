@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.2.1.2 发送数据包</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>发送数据包</h1>
+        <div>
+          <p>在图中的动画中，PC1 正在向 PC2 发送数据包。PC1 必须确定目的 IPv4 地址是否位于同一网络中。PC1 通过对其自身的 IPv4 地址和子网掩码执行 <b>AND</b> 运算来确定自己的子网。这将得出 PC1 所属的网络地址。接下来，PC1 对数据包的目标 IPv4 地址和自己的子网掩码执行相同的 <b>AND </b>运算。 </p>
+          <p></p>
+          <p>如果目标网络地址和 PC1 在相同网络中，则 PC1 不使用默认网关。相反，则 PC1 参考其 ARP 缓存，查找使用此目的 IPv4 地址的设备的 MAC 地址。如果 MAC 地址不在缓存中，那么 PC1 将生成一个 ARP 请求来获取地址以补全数据包，并将其发送到目的地。如果目标网络地址在另一网络中，则 PC1 会将数据包转发到其默认网关。</p>
+          <p></p>
+          <p>为了确定默认网关的 MAC 地址，PC1 将在其 ARP 表中查找默认网关的 IPv4 地址及其关联的 MAC 地址。</p>
+          <p></p>
+          <p>如果 ARP 表中不存在默认网关的 ARP 条目，则 PC1 将发送 ARP 请求。路由器 R1 以 ARP 回复应答。然后 PC1 可以将数据包转发到默认网关的 MAC 地址，路由器 R1 的 Fa0/0 接口。</p>
+          <p></p>
+          <p>IPv6 数据包使用一个类似的过程。但 IPv6 地址解析不使用 ARP 进程，而是使用 ICMPv6 邻居请求和邻居通告消息。IPv6 到 MAC 地址的映射保存在一个类似于 ARP 缓存的表中，称为邻居缓存。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">该图是一台计算机通过三个路由器将数据包发送到另一台计算机的动画。图中显示发送计算机认识到目标计算机位于其他网络上，因此必须将数据包发送到默认网关。计算机查看其 ARP 缓存以确定默认网关的 MAC 地址，并使用网关的 MAC 地址将数据封装到数据包中。  </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

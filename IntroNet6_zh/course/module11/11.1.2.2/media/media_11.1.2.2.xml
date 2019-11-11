@@ -1,0 +1,95 @@
+<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>网络服务</b>]]></text>
+    </component>
+    <component id="ID_titleTxt01">
+        <text>
+            <![CDATA[域名系统 (DNS)]]></text>
+    </component>
+    <component id="ID_bodyTxt01">
+        <text>
+            <![CDATA[提供网站的 IP 地址或域名、以便主机能与其连接的服务]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt02">
+        <text>
+            <![CDATA[SSH 服务器]]></text>
+    </component>
+    <component id="ID_bodyTxt02">
+        <text>
+            <![CDATA[允许管理员从远程位置登录到主机，然后以如同本地登录的方式控制主机的服务]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt03">
+        <text>
+            <![CDATA[电子邮件服务器]]></text>
+    </component>
+    <component id="ID_bodyTxt03">
+        <text>
+            <![CDATA[<textformat blockindent="-14"><ul><li>使用简单邮件传输协议 (SMTP)、邮局协议 (POP3) 或互联网邮件访问协议 (IMAP)</li><li>用于在 Internet 上将电子邮件从客户端发送到服务器</li><li>使用 user@xyz 格式指定收件人</li></ul></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt04">
+        <text>
+            <![CDATA[动态主机配置协议 (DHCP) 服务器]]></text>
+    </component>
+    <component id="ID_bodyTxt04">
+        <text>
+            <![CDATA[为客户端分配 IP 地址、子网掩码、默认网关和其他信息的服务]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt05">
+        <text>
+            <![CDATA[Web 服务器]]></text>
+    </component>
+    <component id="ID_bodyTxt05">
+        <text>
+            <![CDATA[<textformat blockindent="-14"><li>用于在 web 客户端和 web 服务器之间传输信息</li><li>大多数网页使用超文本传输协议 (HTTP) 进行访问</li></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt06">
+        <text>
+            <![CDATA[文件传输协议 (FTP) 服务器]]></text>
+    </component>
+    <component id="ID_bodyTxt06">
+        <text>
+            <![CDATA[供客户端和服务器之间下载和上传文件的服务]]>
+        </text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[DNS 服务器]]>
+        </text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[SSH 服务器]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[电子邮件服务器]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[DHCP 服务器]]>
+        </text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[Web 服务器]]>
+        </text>
+    </component>
+    <component id="ID_txt06">
+        <text>
+            <![CDATA[FTP 服务器]]>
+        </text>
+    </component>
+    <component id="ID_inst">
+        <text>
+            <![CDATA[单击每台服务器可查看所提供网络服务的简短说明。]]>
+        </text>
+    </component>
+</textcomponents>

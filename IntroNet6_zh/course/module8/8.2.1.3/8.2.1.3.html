@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.1.3 为设备分配地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>为设备分配地址</h1>
+        <div>
+          <p>在一个网络中，有不同类型的设备需要分配地址，包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>终端用户客户端</b> – 大部分网络使用动态主机配置协议 (DHCP) 动态分配地址。这能减少网络支持人员的负担，并显著减少输入错误。另外，地址仅仅被租用一段时间。更改子网划分方案意味着 DHCP 服务器需要进行重新配置，并且客户端必须续订其 IP 地址。IPv6 客户端可以使用 DHCPv6 或 SLAAC 获取地址信息。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>服务器和外围设备</b> – 这些应具有可预测的静态 IP 地址。对这些设备使用统一的编号系统。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>可从互联网访问的服务器</b> – 在许多网络中，服务器必须能让远程用户访问。在大多数情况下，这些服务器在内部都分配了私有地址，且位于该网络边界的路由器或防火墙必须配置为将内部地址转换为公有地址。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>中间设备</b> – 这些设备出于网络管理、监视和安全目的分配了地址。因为我们必须知道如何与中间设备通信，所以它们应当具有可以预测的静态地址。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>网关</b> - 路由器和防火墙设备给每个接口分配一个 IP 地址，用作该网络中主机的网关。路由器接口一般使用网络中的最小地址或最大地址。</li>
+            </ul>
+          </p>
+          <p>图中的表提供了小型网络中地址分配的示例。</p>
+          <p>在制定 IP 编址方案时，通常建议使用一种固定模式为各类设备分配地址。这样有益于管理员添加和删除设备、根据 IP 过滤流量和简化文档。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows a table with a breakdown of IP address assignment based on network design.  This table shows a /24 with breakdown as follows: 1 through 229 for hosts, 230 through 239 for servers, 240 through 249 for printers, 250 through 253 for intermediary devices, and 254 for the gateway.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

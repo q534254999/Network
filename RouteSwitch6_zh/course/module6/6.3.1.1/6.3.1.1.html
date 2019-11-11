@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.1.1 什么是 VLAN 间路由？</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>什么是 VLAN 间路由？</h1>
+        <div>
+          <p>VLAN 用于分段交换网络。第 2 层交换机（如，Catalyst 2960 系列）可配置具有超过 4,000 个 VLAN。因为 VLAN 是广播域，所以如果没有路由设备的参与，不同 VLAN 上的计算机就无法通信。由于第 2 层交换机的 IPv4 和 IPv6 功能非常有限，所以无法执行路由器的动态路由功能。虽然第 2 层交换机获得的 IP 功能更多，如能够执行静态路由，但这不足以处理这些大量 VLAN。</p>
+          <p></p>
+          <p>任何支持第 3 层路由的设备（例如路由器或多层交换机），都可以用于执行必要的路由功能。无论使用何种设备，使用路由将网络流量从一个 VLAN 转发至另一个 VLAN 的过程统称为 VLAN 间路由。 </p>
+          <p></p>
+          <p>VLAN 间路由有三种选项：</p>
+          <p>
+            <ul>
+              <li>传统 VLAN 间路由 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>单臂路由器</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>使用 SVI 进行第 3 层交换</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>注</b>：本章重点介绍前两个选项。使用 SVI 进行第 3 层交换不在本课程的讨论范围之内。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示具有两个连接到交换机的主机的拓扑。然后，交换机通过两条电缆连接到路由器。一个主机通过 VLAN 10 上的一个子网连接，另一个主机通过 VLAN 30 上的另一个子网连接。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

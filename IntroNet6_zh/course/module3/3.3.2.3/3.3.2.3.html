@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.2.3 同一网络中的设备</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>同一网络中的设备</h1>
+        <div>
+          <p>要了解设备在网络内如何通信，理解网络层地址和数据链路地址的作用是非常重要的。</p>
+          <p></p>
+          <p>
+            <b>网络层地址的作用</b>
+          </p>
+          <p></p>
+          <p>网络层地址，或 IP 地址，表示原始源地址和最终目的地址。IP 地址包含两部分：</p>
+          <p>
+            <ul>
+              <li>
+                <b>网络部分</b> – 地址最左边的部分，表示 IP 地址是哪个网络的成员。同一网络中所有设备的地址都有相同的网络部分。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>主机部分</b> – 地址的其余部分，标识网络中的特定设备。主机部分对于网络中的每个设备都是唯一的。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>注意</b>：子网掩码用于将地址的网络部分与主机部分区分开来。子网掩码将在后面的章节中进行讨论。</p>
+          <p></p>
+          <p>在本示例中，客户端计算机 PC1 与同一 IP 网络中的 FTP 服务器进行通信。</p>
+          <p>
+            <ul>
+              <li>
+                <b>源 IP 地址</b> - 发送设备（客户端计算机 PC1）的 IP 地址：192.168.1.110。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>目的 IP 地址</b> - 接收设备（FTP 服务器）的 IP 地址：192.168.1.9。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>注意图中源 IP 地址和目的 IP 地址的网络部分在同一网络中。</p>
+          <p></p>
+          <p>
+            <b>数据链路层地址的作用</b>
+          </p>
+          <p></p>
+          <p>当 IP 数据包的发送方和接收方处于同一网络中时，数据链路帧将直接发送到接收设备。在以太网中，数据链路地址称为以太网（介质访问控制）地址。MAC 地址是以太网网卡的物理内嵌地址。 </p>
+          <p>
+            <ul>
+              <li>
+                <b>源 MAC 地址</b> - 这是发送封装有 IP 数据包的数据链路帧的设备的数据链路地址，或以太网 MAC 地址。PC1 以太网网卡的 MAC 地址为 AA-AA-AA-AA-AA-AA，以十六进制表示法表示。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>目的 MAC 地址</b> - 当接收设备与发送设备处于同一网络中时，这是指接收设备的数据链路地址。在本示例中，目的 MAC 地址是 FTP 服务器的 MAC 地址：CC-CC-CC-CC-CC-CC，以十六进制表示法表示。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>现在可以将封装有 IP 数据包的帧从 PC1 直接传送到 FTP 服务器。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the source and destination MAC addresses being added to an Ethernet frame.  PC 1 is the source and the server is the destination.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

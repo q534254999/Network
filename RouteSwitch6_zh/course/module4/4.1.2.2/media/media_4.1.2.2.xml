@@ -1,0 +1,30 @@
+<textcomponents><!-- SLIDE 1 --><component id="ID_s1_title">
+		<text><![CDATA[<b></b>]]></text>
+	</component>
+	
+	<component id="ID_Title_txt01">
+		<text><![CDATA[<b>选择交换机设备时通常会考虑的商业问题：</b>]]></text>
+	</component>
+	
+	<component id="ID_Body_txt01">
+		<text><![CDATA[<textformat blockindent='-14' ><ul><li><b>成本</b> - 交换机的成本取决于接口的数量和速度、支持的功能和扩展能力。</li><li><b>端口密度</b> - 网络交换机必须支持网络中相应数量的设备。</li><li><b>电源</b> - 通过以太网供电 (PoE) 为接入点、IP 电话，甚至紧凑型交换机供电现在都很常见。 除了考虑使用 PoE 外，一些机箱式交换机支持冗余电源。 </li><li><b>可靠性</b> - 交换机应提供对网络的持续访问。</li><li><b>端口速度</b> - 网络连接的速度是最终用户关注的主要问题。</li><li><b>帧缓冲区</b> - 交换机存储帧的能力在可能存在通往服务器或网络其他区域的拥塞端口的网络中非常重要。</li><li><b>可扩展性</b> - 网络中的用户数量通常随时间增长；因此，交换机应提供增长的机会。</li></ul></textformat>]]></text>
+	</component><!-- SLIDE 2 --><component id="ID_s2_title">
+		<text><![CDATA[<b>固定配置交换机</b>]]></text>
+	</component>
+	
+	<component id="ID_s2_txt01">
+	  <text><![CDATA[功能和选件限于交换机的出厂配置。]]></text> 
+	</component><!-- SLIDE 3 --><component id="ID_s3_title">
+		<text><![CDATA[<b>模块化配置交换机</b>]]></text> 
+	</component>
+	
+	<component id="ID_s3_txt01">
+	  <text><![CDATA[机箱接受包含端口的线路卡。]]></text> 
+	</component><!-- SLIDE 4 --><component id="ID_s4_title">
+		<text><![CDATA[<b>堆叠式配置交换机</b>]]></text> 
+	</component>
+	
+	<component id="ID_s4_txt01">
+	  <text><![CDATA[采用专用电缆连接的可堆叠交换机可以作为一台大型交换机有效地运行。]]></text> 
+	</component>
+</textcomponents>

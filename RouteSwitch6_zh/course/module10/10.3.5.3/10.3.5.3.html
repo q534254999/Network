@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.5.3 备份许可证</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.5.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>备份许可证</h1>
+        <div>
+          <p><b>license save</b> 命令用于复制设备中的所有许可证，并以指定存储位置所要求的格式存储它们。使用 <b>license install</b> 命令可恢复已保存的许可证。</p>
+          <p></p>
+          <p>可将一份许可证备份到设备上的命令是：</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router#</span>
+            <span class="cmd">
+              <b> license save </b>
+            </span>
+            <span class="cmd">
+              <i>file-sys://lic-location</i>
+            </span>
+            <span class="cmd"></span>
+          </p>
+          <p></p>
+          <p>使用 <b>show flash0:</b> 命令验证许可证是否已保存（图 1）。</p>
+          <p></p>
+          <p>许可证的存储位置可以是指向文件系统的目录或 URL。使用 <b> ? </b>命令查看设备所支持的存储位置。 </p>
+          <p></p>
+          <p>使用图 2 中的语法检查器将所有许可文件保存到路由器 R2 上。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了一名工作人员以及将许可证备份到闪存的语法。图 2 是互动练习，让学生练习备份许可证。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

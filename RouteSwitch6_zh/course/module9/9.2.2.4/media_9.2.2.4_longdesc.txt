@@ -1,0 +1,1 @@
+图 1 显示了“show ip nat translations”命令和“show ip nat translations verbose”命令的输出。图 2 显示了“clear ip nat translations”命令和“show ip nat translations”命令的输出。没有转换，因为它们刚刚被清除。以下表中列出了“clear ip nat translations”命令的语法以及所有选项。图 3 显示了“clear ip nat statistics”命令的输出。PC1 和 PC2 与 Web 服务器建立会话。此时会显示“show ip statistics”命令的输出。突出显示池信息。

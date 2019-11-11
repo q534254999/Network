@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.4.1.2 第 1 章：路由概念</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.4.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>第 1 章：路由概念</h1>
+        <div>
+          <p>在讨论网络时会涉及许多关键结构以及与性能相关的特征：拓扑、速度、成本、安全性、可用性、可扩展性和可靠性。</p>
+          <p></p>
+          <p>思科路由器和思科交换机有许多相似之处。其支持相似的模式操作系统、相似的命令结构以及许多相同的命令。交换机与路由器之间的一个明显区别是其各自所支持的接口类型。一旦两个设备上配置了接口，就需要使用相应的 <b>show</b> 命令来验证接口是否处于工作状态。</p>
+          <p></p>
+          <p>路由器的主要目的在于连接多个网络，并将数据包从一个网络转发到下一个网络。这表示路由器通常都有多个接口。每个接口都是不同 IP 网络的成员或主机。 </p>
+          <p></p>
+          <p>思科 IOS 使用称为管理距离 (AD) 的工具来确定安装到 IP 路由表的路由。路由表是一个由路由器获知的网络列表。路由表包含其自身接口的网络地址（直连网络）和远程网络的网络地址。远程网络是只能通过将数据包转发至其它路由器才能到达的网络。</p>
+          <p></p>
+          <p>远程网络可以通过两种方式添加到路由表中：由网络管理员手动配置静态路由，或者通过实施动态路由协议实现。静态路由的开销小于动态路由协议；但如果拓扑结构经常发生变化或不稳定，则静态路由将需要更多的维护工作。 </p>
+          <p></p>
+          <p>动态路由协议能够自动调整以适应网络变化，无需网络管理员干预。动态路由协议要求更多的 CPU 处理工作，并且还需要使用一定量的链路资源用于路由更新和通信。在许多情况中，路由表同时包含静态和动态路由。 </p>
+          <p></p>
+          <p>路由器主要在第 3 层（网络层）做出转发决定。但是，路由器接口将参与第 1 层、第 2 层和第 3 层。第 3 层 IP 数据包将封装到第 2 层数据链路帧中，并编码为第 1 层中的位。路由器接口参与与其封装相关联的第 2 层进程。例如，路由器的以太网接口会像 LAN 内的其它主机一样参与 ARP 过程。</p>
+          <p></p>
+          <p>思科 IP 路由表并不是一个平面数据库。路由表实际上是一个分层结构，在查找路由并转发数据包时，这样的结构可加快查找进程。</p>
+          <p></p>
+          <p>IPv6 路由表的组件与 IPv4 路由表非常相似。例如，它是使用直连接口、静态路由和动态获取的路由填写的。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中列出网络的以下关键结构和性能相关特性：拓扑、速度、成本、安全性、可用性、可扩展性和可靠性。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

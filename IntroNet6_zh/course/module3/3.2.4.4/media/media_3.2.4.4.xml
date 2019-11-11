@@ -1,0 +1,70 @@
+<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>比较 OSI 模型与 TCP/IP 模型</b>]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[<b>OSI 模型</b>]]></text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[应用层]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[表示层]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[会话层]]>
+        </text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[传输层]]>
+        </text>
+    </component>
+    <component id="ID_txt06">
+        <text>
+            <![CDATA[网络层]]>
+        </text>
+    </component>
+    <component id="ID_txt07">
+        <text>
+            <![CDATA[数据链路层]]>
+        </text>
+    </component>
+    <component id="ID_txt08">
+        <text>
+            <![CDATA[物理层]]>
+        </text>
+    </component>
+    <component id="ID_txt09">
+        <text>
+            <![CDATA[<b>TCP/IP 模型</b>]]></text>
+    </component>
+    <component id="ID_txt10">
+        <text>
+            <![CDATA[应用层]]>
+        </text>
+    </component>
+    
+    <component id="ID_txt12">
+        <text>
+            <![CDATA[互联网层]]>
+        </text>
+    </component>
+    <component id="ID_txt13">
+        <text>
+            <![CDATA[网络接入层]]>
+        </text>
+    </component>
+    <component id="ID_txt14">
+        <text>
+            <![CDATA[主要相似性在于传输层和网络层；然而，这两种模型在与每层的上下层的相关方式上不同。]]>
+        </text>
+    </component>
+</textcomponents>

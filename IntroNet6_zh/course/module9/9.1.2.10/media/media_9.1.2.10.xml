@@ -1,0 +1,118 @@
+﻿<textcomponents>
+    <!--Slide 1-->
+  
+     <component id='ID_inst'>
+        <text>
+            <![CDATA[<b>练习 – TCP 和 UDP 特征</b>]]></text>
+    </component>
+    <component id='ID_s1_instr_title'>
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id='ID_s1_instr_body'>
+        <text>
+            <![CDATA[将每个特征与其 TCP 或 UDP 传输方式配对。]]>
+        </text>
+    </component>
+    <component id='ID_drag_header'>
+        <text>
+            <![CDATA[<b>特征</b>]]></text>
+    </component>
+    <component id='ID_header01'>
+        <text>
+            <![CDATA[<b>TCP</b>]]></text>
+    </component>
+    <component id='ID_header02'>
+        <text>
+            <![CDATA[<b>UDP</b>]]></text>
+    </component>
+    <component id='ID_header03'>
+        <text>
+            <![CDATA[<b>两者</b>]]></text>
+    </component>
+    <component id='ID_drop_header'>
+        <text>
+            <![CDATA[<b>传输方式</b>]]></text>
+    </component>
+    <!--Drag and Drop -->
+    <component id='ID_a01_DS'>
+        <text>
+            <![CDATA[<font color="#393536">会话创建</font>]]>
+        </text>
+    </component>
+    <component id='ID_a02_DS'>
+        <text>
+            <![CDATA[<font color="#393536">有序报文数据段</font>]]>
+        </text>
+    </component>
+    <component id='ID_a03_DS'>
+        <text>
+            <![CDATA[<font color="#393536">有保证的传输</font>]]>
+        </text>
+    </component>
+    <component id='ID_a04_DS'>
+        <text>
+            <![CDATA[<font color="#393536">流量控制</font>]]>
+        </text>
+    </component>
+    <component id='ID_a05_DS'>
+        <text>
+            <![CDATA[<font color="#393536">按序传输</font>]]>
+        </text>
+    </component>
+    <component id='ID_b01_DS'>
+        <text>
+            <![CDATA[<font color="#393536">无连接</font>]]>
+        </text>
+    </component>
+    <component id='ID_b02_DS'>
+        <text>
+            <![CDATA[<font color="#393536">开销较低</font>]]>
+        </text>
+    </component>
+    <component id='ID_b03_DS'>
+        <text>
+            <![CDATA[<font color="#393536">不确认接收</font>]]>
+        </text>
+    </component>
+    <component id='ID_b04_DS'>
+        <text>
+            <![CDATA[<font color="#393536">无序传输</font>]]>
+        </text>
+    </component>
+    <component id='ID_b05_DS'>
+        <text>
+            <![CDATA[<font color="#393536">快速传输要求</font>]]>
+        </text>
+    </component>
+    <!--Drag and Drop-->
+    <component id='ID_s1_CORRECT_TITLE'>
+        <text>
+            <![CDATA[正确]]>
+        </text>
+    </component>
+    <component id='ID_s1_CORRECT_BODY'>
+        <text>
+            <![CDATA[您已成功将每个特征与其 TCP 或 UDP 传输方式配对。]]>
+        </text>
+    </component>
+    <component id='ID_s1_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[不正确]]>
+        </text>
+    </component>
+    <component id='ID_s1_INCORRECT_BODY'>
+        <text>
+            <![CDATA[您未成功将每个特征与其 TCP 或 UDP 传输方式配对。请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id='ID_CHECK'>
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id='ID_RESET'>
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+</textcomponents>

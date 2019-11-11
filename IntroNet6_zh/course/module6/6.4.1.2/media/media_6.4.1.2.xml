@@ -1,0 +1,105 @@
+﻿<textcomponents><!--Slide 1--><component id="ID_s1_title">
+  <text><![CDATA[<b>限制设备访问</b>]]></text>
+</component>
+
+<component id="ID_s01_txt01">
+  <text><![CDATA[<textformat blockindent='-20'><ul><li><b>配置设备名称</b></textformat></li></ul><textformat blockindent='1'><ul><li id="space"><b>hostname</b> <i>name</i></li></ul></textformat><br><textformat blockindent='-20'><ul><li><b>保护用户 EXEC 模式</b></textformat></li></ul><textformat blockindent='1'><ul><li id="space"><b>line console 0</b></li><li id="space"><b>password</b> <i>password</i></li><li id="space"><b>login</b></li></ul></textformat><br><textformat blockindent='-20'><ul><li><b>保护远程 Telnet / SSH 访问</b></textformat></li></ul><textformat blockindent='1'><ul><li id="space"><b>line vty 0 15</b></li><li id="space"><b>password</b> <i>password</i></li><li id="space"><b>login</b></li></ul></textformat><br><textformat blockindent='-20'><ul><li><b>保护特权 EXEC 模式</b></textformat></li></ul><textformat blockindent='1'><ul><li id="space"><b>enable secret</b> <i>password</i></li></ul></textformat><br><textformat blockindent='-20'><ul><li><b>保护配置文件中的所有密码</b></textformat></li></ul><textformat blockindent='1'><ul><li id="space"><b>service password-encryption</b></li></ul></textformat><br><textformat blockindent='-20'><ul><li><b>提供约定通知</b></textformat></li></ul><textformat blockindent='1'><ul><li id="space"><b>banner motd</b> <i>delimiter message delimiter</i></li></ul></textformat><br><textformat blockindent='-20'><ul><li><b>保存配置</b></textformat></li></ul><textformat blockindent='1'><ul><li id="space"><b>copy running-config startup-config</b></li></ul></textformat>]]></text>
+</component><!--End Slide 1--><component id="ID_txt01">
+		<text><![CDATA[或者]]></text>
+	</component>
+	 <component id="ID_title02">
+    <text><![CDATA[<b>配置主机名</b>]]></text>
+  </component>
+     <component id="ID_title03">
+    <text><![CDATA[<b>保护管理访问</b>]]></text>
+  </component>
+	  <component id="ID_title04">
+    <text><![CDATA[<b>提供约定通知</b>]]></text>
+  </component>
+  <component id="ID_title05">
+    <text><![CDATA[<b>保存配置</b>]]></text>
+  </component><!--Slide 6--><component id="ID_s6_title">
+        <text><![CDATA[<b>路由器基本配置任务</b>]]></text>
+	</component><!--Syntax Checker Button Text--><component id="ID_s6_reset">
+		<text><![CDATA[重置]]></text>
+	</component>
+	
+	<component id="ID_s6_showme">
+		<text><![CDATA[看答案]]></text>
+	</component>
+	
+	<component id="ID_s6_showall">
+		<text><![CDATA[全部显示]]></text>
+	</component><!--End Syntax Checker Button Text--><!--Syntax Checker Body Text--><component id="ID_s6_SC" fontSize="12" fontFace='_typewriter'  fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b><font face="_sans" color="#FFFFFF">***您必须输入确切完整的命令。 包含名称或密码的命令区分大小写。***</font></b> ]]></feedback>
+		
+		<existingcommands><![CDATA[<font face="_sans"><b><ul>路由器基本配置<li>配置设备名称</li><li>保护特权 EXEC 模式</li><li>保护远程 Telnet 和 SSH 访问</li><li>保护配置文件中的所有密码</li><li>提供约定通知</li><br>进入全局配置模式来将路由器名称配置为“R1”。</b></font>]]></existingcommands>
+		
+		<command prompt="Router>">
+			<correctresponse><![CDATA[ enable]]></correctresponse>
+		</command>
+		
+		<command prompt="Router#">
+			<correctresponse><![CDATA[ configure terminal]]></correctresponse>
+			<deviceresponse><![CDATA[Enter configuration commands, one per line. End with CNTL/Z.]]></deviceresponse>
+		</command>
+
+		<command prompt="Router(config)#">
+			<correctresponse><![CDATA[ hostname R1]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>将加密密码配置为“class”。</font>]]></instruction>
+		</command>
+
+		<command prompt="R1(config)#">
+			<correctresponse><![CDATA[ enable secret class]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>将控制台线路密码配置为“cisco”并要求用户登录。</font>]]></instruction>
+		</command>
+
+		<command prompt="R1(config)#">
+			<correctresponse><![CDATA[ line console 0]]></correctresponse>
+		</command>
+
+		<command prompt="R1(config-line)#">
+			<correctresponse><![CDATA[ password cisco]]></correctresponse>
+		</command>
+
+		<command prompt="R1(config-line)#">
+			<correctresponse><![CDATA[ login]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>将线路 0 到 4 的 vty 密码配置为“cisco”并要求用户登录。 然后退出线路配置模式。</font>]]></instruction>
+		</command>
+
+		<command prompt="R1(config-line)#">
+			<correctresponse><![CDATA[ line vty 0 4]]></correctresponse>
+		</command>
+
+		<command prompt="R1(config-line)#">
+			<correctresponse><![CDATA[ password cisco]]></correctresponse>
+		</command>
+
+		<command prompt="R1(config-line)#">
+			<correctresponse><![CDATA[ login]]></correctresponse>
+		</command>
+
+		<command prompt="R1(config-line)#">
+			<correctresponse><![CDATA[ exit]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>加密所有明文密码</font>]]></instruction>
+		</command>
+
+		<command prompt="R1(config)#">
+			<correctresponse><![CDATA[ service password-encryption]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>输入提示语“Authorized Access Only!”并使用 # 作为定界符。</font>]]></instruction>
+		</command>
+
+		<command prompt="R1(config)#">
+			<correctresponse><![CDATA[ banner motd #Authorized Access Only!#]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>退出全局配置模式。</font>]]></instruction>
+		</command>
+
+		<command prompt="R1(config)#">
+			<correctresponse><![CDATA[ exit]]></correctresponse>
+			<deviceresponse><![CDATA[R1#<br>]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>您已成功配置 R1 的初始设置。</font>]]></instruction>
+		</command>
+
+		<command prompt=""/>
+
+	</component><!--End Syntax Checker Body Text--><!--End Slide 6--></textcomponents>

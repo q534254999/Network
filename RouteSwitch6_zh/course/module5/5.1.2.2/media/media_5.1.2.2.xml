@@ -1,0 +1,84 @@
+<textcomponents><!--Slide 1--><component id="ID_s1_title">
+		<text><![CDATA[<b>配置双工和速率</b>]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[双工模式<br/>100 Mb/s]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[双工模式<br/>100 Mb/s]]></text>
+	</component>
+	<component id="ID_s1_table01">
+		<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	
+
+	<tr>
+	 <td colspan='2' bgcolor='#98D3D1' class="title"><font size='12' class="font12px" color='#393536'><b>思科交换机 IOS 命令</b></font></td>
+	</tr>
+	<tr>
+		<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#0E6360'><span style="color:#98D3D1">.</span></font></td>
+	</tr>
+		<tr>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11" class="font11px">进入全局配置模式。</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font face="_typewriter" color='#393536' size="11" class="font11px">S1#  <b>configure terminal</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11" class="font11px">进入接口配置模式。</font></td>
+		<td bgcolor='#ffffff' valign="top"><font face="_typewriter" color='#393536' size="11" class="font11px">S1(config)#  <b>interface FastEthernet 0/1</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11" class="font11px">配置接口双工。</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font face="_typewriter" color='#393536' size="11" class="font11px">S1(config-if)#  <b>duplex full</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11" class="font11px">配置接口速度。</font></td>
+		<td bgcolor='#ffffff' valign="top"><font face="_typewriter" color='#393536' size="11" class="font11px">S1(config-if)#  <b>speed 100</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11" class="font11px">返回到特权 EXEC 模式。</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font face="_typewriter" color='#393536' size="11" class="font11px">S1(config-if)#  <b>end</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11" class="font11px">将运行配置保存到启动配置中。</font></td>
+		<td bgcolor='#ffffff' valign="top"><font face="_typewriter" color='#393536' size="11" class="font11px">S1#  <b>copy running-config startup-config</b></font></td>
+	</tr>
+	</table>]]></text>
+	</component>
+	<component id="ID_sc_reset">
+		<text><![CDATA[重置]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[看答案]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[全部显示]]></text>
+	</component><!--Slide 2--><component id="ID_s2_title">
+		<text><![CDATA[<b></b>]]></text>
+	</component>
+	<component id="ID_s2_SC01" fontSize="12" fontFace="_typewriter" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b><font face="_sans" color="#FFFFFF">***您必须输入确切完整的命令。 包含名称或密码的命令区分大小写。***</font></b>]]></feedback>
+		<existingcommands><![CDATA[<font face="_sans"><b>进入配置模式并将 FastEthernet0/1 设置为全双工，速度设置为 100。</b></font>]]></existingcommands>
+		<command prompt="S1#">
+			<correctresponse><![CDATA[configure terminal]]></correctresponse>
+			<deviceresponse><![CDATA[Enter configuration commands, one per line. End with CNTL/Z.]]></deviceresponse>
+		</command>
+		<command prompt="S1(config)#">
+			<correctresponse><![CDATA[interface FastEthernet0/1]]></correctresponse>
+		</command>
+		<command prompt="S1(config-if)#">
+			<correctresponse><![CDATA[duplex full]]></correctresponse>
+		</command>
+		<command prompt="S1(config-if)#">
+			<correctresponse><![CDATA[speed 100]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>结束配置外模式，然后将配置保存到 NVRAM。</b></font>]]></instruction>
+		</command>
+		<command prompt="S1(config-if)#">
+			<correctresponse><![CDATA[end]]></correctresponse>
+			<deviceresponse><![CDATA[S1#<br>%SYS-5-CONFIG_I: 从控制台配置]]></deviceresponse>
+		</command>
+		<command prompt="S1#">
+			<correctresponse><![CDATA[copy running-config startup-config]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>您已成功配置交换机端口的双工和速度设置。</b></font>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+</textcomponents>

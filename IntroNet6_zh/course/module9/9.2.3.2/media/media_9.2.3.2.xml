@@ -1,0 +1,53 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>UDP：无连接和不可靠</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[不同数据报可能采用不同的路由。]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[<b>数据</b><br/><br/>数据<br/>被划分为<br/>多个数据报。]]></text>
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[数据报 1]]></text>
+	</component>
+	<component id="ID_txt12">
+		<text><![CDATA[数据报 2]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[数据报 3]]></text>
+	</component>
+	<component id="ID_txt15">
+		<text><![CDATA[数据报 4]]></text>
+	</component>
+	<component id="ID_txt14">
+		<text><![CDATA[数据报 5]]></text>
+	</component>
+	<component id="ID_txt13">
+		<text><![CDATA[数据报 6]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[由于采用不同路由到达目的设备，因此数据报到达的顺序混乱。]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[数据报 1]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[数据报 2]]></text>
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[数据报 6]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[数据报 5]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[数据报 4]]></text>
+	</component>
+	<component id="ID_txt16">
+		<text><![CDATA[不对<br/>顺序混乱的数据报<br/>重新排序。]]></text>
+	</component>
+	<component id="ID_txt17">
+		<text><![CDATA[不<br/>重新发送丢失的数据报。]]></text>
+	</component>
+</textcomponents>

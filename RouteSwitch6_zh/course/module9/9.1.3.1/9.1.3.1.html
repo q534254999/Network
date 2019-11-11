@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.3.1 NAT 的优势</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>NAT 的优势</h1>
+        <div>
+          <p>NAT 有许多优点，包括：</p>
+          <p>
+            <ul>
+              <li>NAT 允许对内联网实行私有编址，从而维护合法注册的公有编址方案。NAT 通过应用程序端口级别的多路复用节省了地址。利用 NAT 过载，对于所有外部通信，内部主机可以共享一个公有 IPv4 地址。在这种配置类型中，支持很多内部主机只需极少的外部地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>NAT 增强了与公有网络连接的灵活性。为了确保可靠的公有网络连接，可以实施多池、备用池和负载均衡池。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>NAT 为内部网络编址方案提供了一致性。在不使用私有 IPv4 地址和 NAT 的网络上，更改公有 IPv4 地址方案时需要对现有网络上的所有主机重新编址。主机重新编址的成本会非常高。NAT 允许维持现有的私有 IPv4 地址方案，同时能够很容易地更换为新的公有编址方案。这意味着，组织可以更换 ISP 而不需要更改任何内部客户端。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>NAT 隐藏用户 IPv4 地址。使用 RFC 1918 IPv4 地址时，NAT 具有隐藏用户和其他设备的 IPv4 地址的副作用。有些人认为这是一种安全功能，但是大多数专家都认为 NAT 并不提供安全性。有状态防火墙才会在网络边缘提供安全性。</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中列出了 NAT 的优势。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

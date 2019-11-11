@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.2.5 设备 LED</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>设备 LED</h1>
+        <div>
+          <p>主机计算机使用网络接口和 RJ-45 以太网电缆连接到有线网络。大多数网络接口在接口旁配有一个或两个 LED 链路指示灯。通常，绿色 LED 表示连接良好，而呈绿色闪烁的 LEB 表示存在网络活动。 </p>
+          <p></p>
+          <p>如果链路指示灯不亮，则网络电缆或网络本身可能存在问题。连接两端的交换机端口也将有 LED 指示灯亮起。如果一端或两端都没有亮，则请尝试其他网络电缆。</p>
+          <p></p>
+          <p>
+            <b>注</b>：LED 的实际功能因计算机制造商不同而有所不同。</p>
+          <p></p>
+          <p>同样，网络基础架构设备通常会使用多个 LED 指示灯来提供快速状态查看。例如，思科 Catalyst 2960 交换机使用多个状态 LED 来帮助监控系统活动和性能。这些 LED 通常在交换机运行正常时呈绿色，而在出现故障时呈琥珀色。</p>
+          <p></p>
+          <p>思科 ISR 使用各种 LED 指示灯来提供状态信息。思科 1941 路由器如图所示。路由器上的 LED 可以帮助网络管理员执行一些基本的故障排除。每台设备都有唯一的一组 LED。查询特定设备的文档以获得 LED 的准确描述。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示思科 1941 系列路由器上的 LED 的特写图。该图下方是解释每个 LED 用途的说明。例如，有两个 LED 用于千兆以太网端口。一标有字母 S，另一个标有字母 L。当链路处于活动状态时，L 代表链路并会呈绿色。如果端口处于非活动状态，LED 将熄灭。S 代表速度。一次闪烁加暂停表示该端口正以 10 Mb/秒的速度运行。两次闪烁随后暂停表示该端口正以 100 Mb/秒的速度运行。三次闪烁随后暂停表示该端口正以 1000 Mb/秒的速度运行。   </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

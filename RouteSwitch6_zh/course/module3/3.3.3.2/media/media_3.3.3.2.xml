@@ -1,0 +1,27 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>匹配发送到 172.16.0.10 的数据包</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>路由 1</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>路由 2</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>路由 3</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>IP 数据包目的地</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[与 IP 数据包目的地址的最长匹配]]></text>
+</component>
+
+</textcomponents>

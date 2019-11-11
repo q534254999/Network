@@ -1,0 +1,50 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>IMAP</b>]]></text>
+	</component>
+	<component id="ID_txt14REMOVED">
+		<text><![CDATA[<b>邮件用户代理<br>(MUA)</b>]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[<b>收件方</b>]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[IMAP<br>分发电子邮件]]></text>
+	</component>
+	<component id="ID_txt09REMOVED">
+		<text><![CDATA[<b>邮件传送代理<br>(MTA)</b>]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[转发电子邮件]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[SMTP]]></text>
+	</component>
+	<component id="ID_txt06REMOVED">
+		<text><![CDATA[<b>邮件传送代理<br>(MTA)</b>]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[SMTP]]></text>
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[发送电子邮件]]></text>
+	</component>
+	<component id="ID_txt12">
+		<text><![CDATA[<b>发送方</b>]]></text>
+	</component>
+	<component id="ID_txt01REMOVED">
+		<text><![CDATA[<b>邮件用户代理<br>(MUA)</b>]]></text>
+	</component>
+	<component id="ID_txt15REMOVED">
+		<text><![CDATA[SMTP 用于将电子邮件从客户端发送到服务器以及在电子邮件服务器之间转发电子邮件。]]></text>
+	</component>
+	<component id="ID_txt16REMOVED">
+		<text><![CDATA[POP 用于分发电子邮件。]]></text>
+	</component>
+	<component id="ID_txt17REMOVED">
+		<text><![CDATA[<b>邮件分发代理<br>(MDA)</b>]]></text>
+	</component>
+	<component id="ID_bubble1">
+		<text><![CDATA[]]></text>
+	</component>
+</textcomponents>

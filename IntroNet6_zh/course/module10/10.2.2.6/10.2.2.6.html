@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.2.6 DHCP 工作原理</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>DHCP 工作原理</h1>
+        <div>
+          <p>如图所示，配置了 DHCP 的 IPv4 设备在启动或连接到网络时，客户端将广播一条 DHCP 发现 (DHCPDISCOVER) 消息以确定网络上是否有可用 DHCP 服务器。DHCP 服务器回复 DHCP 服务 (DHCPOFFER) 消息，为客户端提供租赁服务。该服务消息包含为其分配的 IPv4 地址和子网掩码、DNS 服务器的 IPv4 地址和默认网关的 IPv4 地址。租赁服务还包括租用期限。</p>
+          <p>如果本地网络中有超过一台 DHCP 服务器，客户端可能会收到多条 DHCPOFFER 消息。此时，客户端必须在这些服务器中进行选择，并且将包含服务器标识信息及客户端所接受的租赁服务的 DHCP 请求 (DHCPREQUEST) 消息发送出去。客户端还可选择向服务器请求分配以前分配过的地址。 </p>
+          <p>如果客户端请求的 IPv4 地址（或者服务器提供的 IPv4 地址）仍然可用，服务器将返回 DHCP 确认 (DHCPACK) 消息，向客户端确认地址租赁。如果请求的地址不再有效，则所选服务器将回复一条 DHCP 否定确认 (DHCPNAK) 消息。一旦返回 DHCP NAK 消息，应重新启动选择进程，并重新发送新的 DHCP 发现消息。客户端租赁到地址后，应在租期结束前发送 DHCPREQUEST 消息进行续期。</p>
+          <p>DHCP 服务器确保每个 IP 地址都是唯一的（一个 IP 地址不能同时分配到不同的网络设备上）。因此，大多数 Internet 提供商往往使用 DHCP 为其客户分配地址。</p>
+          <p>DHCPv6 有一组与如图所示 IPv4 的 DHCP 类似的消息。DHCPv6 消息是 SOLICIT、ADVERTISE、INFORMATION REQUEST 和 REPLY</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows the DHCP conversation between a host and a server.  There are 4 steps listed.  DHCP Discover, DHCP offer, DHCP request, and DHCP acknowledgment.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

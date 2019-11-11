@@ -1,0 +1,1 @@
+该图显示了交换机上 show file systems 命令的输出。

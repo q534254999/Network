@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.2.2.3 访问攻击</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>访问攻击</h1>
+        <div>
+          <p>访问攻击利用身份验证服务、FTP 服务和 Web 服务的已知漏洞，获取对 Web 帐户、机密数据库和其他敏感信息的访问。访问攻击使个人能够对他们无权查阅的信息进行未经授权访问。访问攻击可分为四种类型： </p>
+          <p>
+            <ul>
+              <li>密码攻击（图 1）</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>信任利用（图 2）</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>端口重定向（图 3）</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>中间人（图 4）</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 is an example of a password attack.  The user authentication dialog box is shown. Figure 2 is a video showing how a trust exploitation works.  An attacker on a host cannot get access to system A, but can get access to system B.  Since system B can access system A, the attacker can now access system A. Figure 3 shows a complex network.  There is an attacker on a host.  The attacker cannot access a device on the inside of a firewall.  However, the attacker can access a host that can access devices inside the firewall.  This is a form of a trust exploitation using port redirection.  Now packets can be forwarded to the trusted host to be redirected into the network. Figure 4 is an example of a man in the middle attack.  There is a laptop connected to a switch. The switch connects to a router and then to the Internet.  The attacker convinces the laptop to forward all traffic to his computer.  The attacker forwards the traffic correctly and returns it to the laptop. However, as a result, the attacker can inspect all packets to and from the laptop.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

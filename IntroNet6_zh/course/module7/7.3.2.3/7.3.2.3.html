@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.2.3 ping - 测试远程连接</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>ping - 测试远程连接</h1>
+        <div>
+          <p>Ping 也可用于测试本地主机跨网际网络通信的能力。如图所示，本地主机可以 ping 远程网络中运行正常的 IPv4 主机。</p>
+          <p>如果 ping 成功，则说明网际网络大部分运行正常。在网际网络上成功 ping 通即确认本地网络上的通信正常，充当网关的路由器运行正常，且可能位于本地网络和远程主机网络之间路径上的所有其他路由器运行正常。</p>
+          <p>此外，还可以验证远程主机的功能性。如果远程主机无法在其本地网络外通信，则它不会响应。 </p>
+          <p>
+            <b>注意</b>：许多网络管理员限制或禁止 ICMP 消息进入企业网络；因此，没有收到 ping 响应可能是由于安全限制。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is an animation that shows a computer sending an echo request to a remote host.  The echo request is sent to a switch, and is then forwarded to a router.  The receiving router sends the request to a switch, which then directs it to the destination host.  The host will respond by sending an echo reply back to the sender.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

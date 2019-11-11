@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.6 对网络接入层问题进行故障排除</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>对网络接入层问题进行故障排除</h1>
+        <div>
+          <p>大多数影响交换网络的问题发生在最初的实施期间。理论上，在安装之后，网络可以继续正常运行。但是，情况经常发生变化；例如，电缆遭到损坏、配置发生更改、新设备被连接到需要更改交换机配置的交换机。要求进行网络基础设施的持续维护和故障排除。 </p>
+          <p></p>
+          <p>要对涉及交换机和其他设备之间未连接或连接不佳的场景进行故障排除，请遵循以下常规流程：</p>
+          <p></p>
+          <p>使用<b> show interfaces </b>命令检查接口状态。</p>
+          <p></p>
+          <p>如果接口为关闭状态： </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>进行检查，以确保使用了正确电缆。此外，检查电缆和连接器是否损坏。如果怀疑电缆已损坏或不正确，请更换电缆。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>如果接口仍处于关闭状态，则问题可能是因速度设置不匹配而引起的。接口速度通常是自动协商的；因此，即使在一个接口上进行手动配置，相连接口也应该会相应地自动协商。如果由于配置错误、硬件或软件问题确实造成速度不匹配，则可能导致接口关闭。如果怀疑有问题，则请在连接两端手动设置相同速度。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>如果接口已启用，但仍存在连接问题： </p>
+          <p>
+            <ul>
+              <li>使用<b> show interfaces </b>命令检查是否存在过多噪声。噪声过多的标志可能包括残帧、超长帧和 CRC 错误计数的增加。如果噪声过多，则尽可能找到并移除噪声源。还要确认电缆不超出最大电缆长度并检查所使用的电缆类型。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>如果不存在噪声问题，则请检查是否冲突过多。如果存在冲突或延迟冲突，请验证连接两端的双工设置。就像速度设置一样，双工设置通常也是自动协商的。如果显示双工不匹配，则在连接的两端手动将双工设置为全双工。</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">该图是代表对交换机上的连接问题进行故障排除的流程图。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

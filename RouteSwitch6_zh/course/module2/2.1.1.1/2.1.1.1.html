@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.1.1 到达远程网络</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>到达远程网络</h1>
+        <div>
+          <p>路由器可通过两种方式获知远程网络：</p>
+          <p>
+            <ul>
+              <li>
+                <b>手动</b> - 使用静态路由将远程网络手动输入到路由表中。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>动态</b> - 使用动态路由协议自动获取远程路由。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>图 1 显示了静态路由的示例场景。图 2 显示了使用 EIGRP 的动态路由的示例场景。</p>
+          <p></p>
+          <p>网络管理员可以手动配置通往特定网络的静态路由。不同于动态路由协议，静态路由不会自动更新，并且必须在网络拓扑发生变化时手动重新配置。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示一个具有 2 个相连路由器的网络。每个路由器有两个 LAN，一个路由器也连接到互联网。此示例表明，我们可以使用静态路由指向另一个路由器上的 LAN 以及指向互联网。图 2 显示一个具有 2 个相连路由器的网络。每个路由器有两个 LAN，一个路由器也连接到互联网。此示例使用 EIGRP 与相邻路由器共享路由。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

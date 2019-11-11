@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.1.2 分析静态 NAT</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>分析静态 NAT</h1>
+        <div>
+          <p>使用上述配置，该图说明了客户端和 Web 服务器之间的静态 NAT 转换过程。当外部网络（互联网）上的客户端需要到达内部（内联网）网络上的服务器时，通常使用静态转换。</p>
+          <p></p>
+          <p>1.客户端想要打开与 Web 服务器的连接。客户端使用公有 IPv4 目标地址 209.165.201.5 将数据包发送到 Web 服务器。该地址是 Web 服务器的内部全局地址。</p>
+          <p>2.R2 在其 NAT 外部接口上收到来自客户端的第一个数据包，这使得 R2 开始检查 NAT 表。目标 IPv4 地址位于 NAT 表中，因此对其进行转换。</p>
+          <p>3.R2 使用内部本地地址 192.168.10.254 替换内部全局地址 209.165.201.5。R2 随后将数据包转发到 Web 服务器。</p>
+          <p>4.Web 服务器接收数据包，并使用内部本地地址 192.168.10.254 对客户端做出响应。</p>
+          <p>5a.R2 在其 NAT 内部接口上接收来自 Web 服务器的数据包，该 NAT 内部接口具有 Web 服务器内部本地地址（192.168.10.254）的源地址。 </p>
+          <p>5b.R2 检查 NAT 表，以便进行内部本地地址的转换。该地址可在 NAT 表中找到。R2 将源地址转换为内部全局地址 209.165.201.5，并转发以客户端为目标的数据包。</p>
+          <p>6.客户端接收数据包并继续会话。NAT 路由器对每个数据包执行步骤 2 到步骤 5b。（图中未显示步骤 6。）</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示路由器 2，与 Web 服务器连接的内部网络在左侧，与 PC 连接的外部网络在右侧。有数据包在 PC 和 Web 服务器之间来回传输。项目旁边的编号指明了在静态 NAT 的转换过程中的顺序。在图像下方列出了静态 NAT 表。  </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+图中显示标准 Packet Tracer 实验图形，其中指示了存在用于此部分课程的 Packet Tracer 实验。

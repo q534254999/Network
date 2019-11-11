@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.3.2 更改运行配置</title>
+    <!-- Activity / Other / Flash PnC -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>更改运行配置</h1>
+        <div>
+          <p>如果对运行配置所作的更改未达到预期效果，而且运行配置文件尚未保存，您可以单独删除已更改的命令，以将设备恢复到之前的配置，或者使用 <b>reload</b> 特权 EXEC 模式命令重新加载设备，以恢复启动配置。</p>
+          <p></p>
+          <p>使用 reload 命令删除未保存的运行配置的缺点是，在一段很短的时间内设备将会离线，导致网络中断。</p>
+          <p></p>
+          <p>当开始重新加载时，IOS 会检测到发生更改的运行配置没有保存到启动配置中。因此，它将显示一则提示消息，询问是否保存更改。要放弃更改，请输入 <b>n</b> 或 <b>no</b>。</p>
+          <p></p>
+          <p>或者，如果将不理想的更改保存到了启动配置中，则可能需要清除所有配置。这需要删除启动配置并重新启动设备。使用 <b>erase startup-config</b> 特权 EXEC 模式命令可删除启动配置。在发出此命令后，交换机将提示您确认。按 <b>Enter </b>键接受。</p>
+          <p></p>
+          <p>从 NVRAM 中删除启动配置后，请重新加载设备以从内存中清除当前的运行配置文件。重新加载时，交换机将会加载设备出厂默认的启动配置。  </p>
+          <p></p>
+          <p>单击图中的“播放”，观看有关如何保存交换机配置文件的视频演示。</p>
+          <p></p>
+          <p>单击<a href="../../files/2.2.3.2%20Video%20-%20Saving%20Configurations.pdf" target="_blank">此处</a>可阅读本视频的脚本。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" src="media/index.html" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is a video with the title "Saving Configurations".</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<textcomponents>
+	<component id="ID_txt01">
+		<text><![CDATA[<font color="#ffffff">我有要共享的打印机。</font>]]></text> 
+	</component>
+	
+	<component id="ID_txt02">
+		<text><![CDATA[<font color="#ffffff">我有要共享的文件。</font>]]></text> 
+	</component>
+	
+	<component id="ID_txt03">
+		<text><![CDATA[打印机共享]]></text> 
+	</component>
+	
+	<component id="ID_txt04">
+		<text><![CDATA[文件共享]]></text> 
+	</component>
+
+	<component id="ID_table01">
+		<text><![CDATA[<font size="13"><b>对等网络的优点：</b></font><br /><textformat blockindent="-14"><ul><li>易于安装</li><li>复杂性更低</li><li>成本更低，因为可能不需要网络设备和专用服务器</li><li>可用于简单的任务，例如传输文件和共享打印机</li></textformat><br/><font size="13"><b>对等网络的缺点：</b></font><br /><textformat blockindent="-14"><li>无集中管理</li><li>不是很安全</li><li>不可扩展</li><li>所有设备皆可用作客户端和服务器，这会降低其性能</li></ul></textformat>]]></text>
+	</component>
+
+</textcomponents>

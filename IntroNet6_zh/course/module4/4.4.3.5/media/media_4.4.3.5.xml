@@ -1,0 +1,1 @@
+<textcomponents><component id="ID_title"><text><![CDATA[<b>CSMA/CA</b>]]></text></component><component id="ID_bubble02"><text><![CDATA[我在无线帧中看到该通道在一段特定的时间内不可用，因此我无法发送。]]></text></component><component id="ID_bubble01"><text><![CDATA[我在无线帧中看到该通道在一段特定的时间内不可用，因此我无法发送。]]></text></component><component id="ID_bubble03"><text><![CDATA[我正在接收此无线帧。]]></text></component></textcomponents>

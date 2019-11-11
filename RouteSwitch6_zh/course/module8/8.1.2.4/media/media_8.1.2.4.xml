@@ -1,0 +1,10 @@
+﻿<textcomponents>
+	
+	<component id="ID_type">
+		<text><![CDATA[实验]]></text>
+	</component>
+	<component id="ID_title">
+		<text><![CDATA[在路由器上配置基本 DHCPv4]]></text>
+	</component>
+	
+</textcomponents>

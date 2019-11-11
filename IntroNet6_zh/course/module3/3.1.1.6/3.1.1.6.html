@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.1.6 消息时序</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>消息时序</h1>
+        <div>
+          <p>这些都是消息时序的约定规则。</p>
+          <p></p>
+          <p>
+            <b>访问方法</b>
+          </p>
+          <p></p>
+          <p>访问方法决定人们可以发送消息的时间。如果两个人同时讲话，就会发生信息冲突，两人必须作出让步，重新开始，如图 1 所示。同样，计算机也必须定义访问方法。网络主机需要访问方法来了解开始发送消息的时间以及在发生冲突时响应的方式。 </p>
+          <p></p>
+          <p>
+            <b>流量控制</b>
+          </p>
+          <p></p>
+          <p>时序还影响着可以发送的信息量和发送速度。如果一个人讲话太快，对方就难以听清和理解，如图 2 所示。在网络通信中，源主机和目的主机使用流量控制方法来协商成功通信的正确时序。 </p>
+          <p></p>
+          <p>
+            <b>响应超时</b>
+          </p>
+          <p></p>
+          <p>如果一个人提问之后在合理的时间内没有得到回答，就会认为没有获得回答并作出相应的反应，如图 3 所示。此人可能会重复这个问题，也可能继续谈话。网络主机也会使用规则来指定等待响应的时长，以及在响应超时的情况下执行什么操作。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a woman calling a man on the phone and each is asking the other a question at the same time.  Neither one can understand the other.  This represents access method. Figure 2 shows the woman asking if the man can hear her, and the man doesn’t answer because he cannot understand the woman.  This represents the need for flow control. Figure 3 shows the man not answering her, so she repeats the question.  This is representing the response timeout of a communication.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.4.4 OSI 模型与 TCP/IP 模型对比</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.4.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>OSI 模型与 TCP/IP 模型对比</h1>
+        <div>
+          <p>还可以根据 OSI 参考模型描述构成 TCP/IP 协议簇的协议。在 OSI 模型中，TCP/IP 模型的网络接入层和应用层被进一步划分，用于描述这些协议层需要实现的不同功能。 </p>
+          <p></p>
+          <p>TCP/IP 协议簇在网络接入层并没有指定通过物理介质传输时使用的协议，而只是描述了从互联网层到物理网络协议的传递。而 OSI 模型第 1 层和第 2 层则论述了接入介质所需的步骤以及通过网络发送数据的物理手段。</p>
+          <p></p>
+          <p>OSI 模型第 3 层是网络层，与 TCP/IP 的互联网层形成直接映射。该层用于描述通过网际网络编址并路由消息的协议。</p>
+          <p></p>
+          <p>OSI 模型第 4 层是传输层，与 TCP/IP 的传输层形成直接映射。该层描述了可以在源主机和目的主机之间提供有序可靠的数据传输的常用服务和功能。</p>
+          <p></p>
+          <p>TCP/IP 应用层包括许多协议，为各种最终用户应用程序提供特定功能。OSI 模型第 5 层、第 6 层和第 7 层供应用程序软件开发人员和厂商参考，用于生产需要在网络上运行的产品。</p>
+          <p></p>
+          <p>当涉及各层的协议时，TCP/IP 和 OSI 模型都很常用。由于 OSI 模型将数据链路层与物理层区分开来，当涉及这些较低层时通常使用这种模型。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure lines up the two models and shows the correlation between layers.  The application, presentation and session layers of the OSI model line up with the Application layer of TCP/IP model.  The Transport layers align together.  The OSI network layer aligns with the Internet layer of TCP/IP and the OSI data link and physical align with the TCP/IP network access layer.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

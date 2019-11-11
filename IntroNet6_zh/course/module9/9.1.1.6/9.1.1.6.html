@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.1.6 UDP</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>UDP</h1>
+        <div>
+          <p>TCP 可靠性功能在应用程序之间实现更强大的通信，与此同时，也会在传输过程中带来额外的开销和可能的延迟。这样，可靠性和网络资源负载之间就达成了平衡。通过增加负载来确保某些应用程序的可靠性会降低应用程序的有效性，甚至会有损应用程序。在这种情况下，更适合用 UDP 传输协议。 </p>
+          <p>UDP 仅提供在相应应用程序之间传输数据段的基本功能，需要很少的开销和数据检查。UDP 是一种尽力传输协议。在网络环境中，尽力传输被称为不可靠传输，因为它缺乏目的设备对所收到数据的确认机制。UDP 中没有通知发送方是否成功传输的传输层流程。</p>
+          <p>UDP 类似于邮寄未挂号的常规信件。发件人不知道收件人是否能够接收信件。邮局也不负责跟踪信件或在信件未到达最终目的地时通知发件人。 </p>
+          <p>单击图中的“播放”，观看 UDP 数据段从发送方传输到接收方的动画。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is an animation that shows a computer sending a file to a server using the TFTP application, which utilizes the UDP at the transport layer.  The data is segmented into six segments and all packets leave the computer and are sent to a router and then directed to the TFTP server on a remote server farm network.  The server receives all the packets, but since it is using UDP no acknowledgment packet is sent from the server.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

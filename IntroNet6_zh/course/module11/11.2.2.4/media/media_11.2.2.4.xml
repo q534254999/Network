@@ -1,0 +1,192 @@
+<textcomponents>
+    <!--Slide 1-->
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>DoS 攻击</b>]]></text>
+    </component>
+    <component id="ID_s2__title">
+        <text>
+            <![CDATA[<b>信任利用</b>]]></text>
+    </component>
+   <component id='ID_s1_table'>
+<text><![CDATA[
+<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+</tr>				
+<tr>
+<td bgcolor='#666263' width='300' valign="top"><font size='11' color='#ffffff'><b>资源过载</b></font></td>
+<td bgcolor='#666263' width='300' valign="top"><font size='11' color='#ffffff'><b>畸形数据</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font size='11'color='#393536'>磁盘空间、带宽、缓冲区</font></td>
+<td bgcolor='#E9E7E8' valign="top"><font size='11' color='#393536'>数据包尺寸过大，例如死亡之 ping</font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font size='11' color='#393536'>Ping 泛洪，例如 smurf</font></td>
+<td bgcolor='#F2F2F2' valign="top"><font size='11' color='#393536'>数据包重叠，例如 winuke</font></td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font size='11'color='#393536'>数据包风暴，例如 UDP 炸弹和 fraggle</font></td>
+<td bgcolor='#E9E7E8' valign="top"><font size='11' color='#393536'>无法处理的数据，例如 teardrop</font></td>
+</tr>				
+</table>]]>
+</text>
+</component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[DoS 攻击通过耗尽系统资源来阻止授权用户使用服务。]]>
+        </text>
+    </component>
+    <!--Slide 2-->
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>死亡之 ping</b>]]></text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[互联网]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[攻击计算机]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt03">
+        <text>
+            <![CDATA[攻击者发送畸形或非常大的 ping 数据包。]]>
+        </text>
+    </component>
+    <!--Slide 3-->
+    <component id="ID_s3_title">
+        <text>
+            <![CDATA[<b>SYN 泛洪</b>]]></text>
+    </component>
+    <component id="ID_s3_txt01">
+        <text>
+            <![CDATA[攻击者向 Web 服务器发出大量 SYN 请求]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt02">
+        <text>
+            <![CDATA[Web 服务器发送 SYN-ACK 应答]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt03">
+        <text>
+            <![CDATA[Web 服务器等待完成三次握手]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt04">
+        <text>
+            <![CDATA[有效用户发送 SYN 请求]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt05">
+        <text>
+            <![CDATA[Web 服务器不可用]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt07">
+        <text>
+            <![CDATA[Web 服务器]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt06">
+        <text>
+            <![CDATA[Web 服务器]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt08">
+        <text>
+            <![CDATA[Web 服务器]]>
+        </text>
+    </component>
+    <!--Slide 4-->
+    <component id="ID_s4_title">
+        <text>
+            <![CDATA[<b>DDoS</b>]]></text>
+    </component>
+    <component id="ID_s4_txt01">
+        <text>
+            <![CDATA[客户端/攻击者]]>
+        </text>
+    </component>
+    <component id="ID_s4_txt02">
+        <text>
+            <![CDATA[处理程序]]>
+        </text>
+    </component>
+    <component id="ID_s4_txt03">
+        <text>
+            <![CDATA[代理/<br/>僵尸计算机]]>
+        </text>
+    </component>
+    <component id="ID_s5_txt02">
+        <text>
+            <![CDATA[受害者]]>
+        </text>
+    </component>
+    <component id="ID_s4_txt05">
+        <text>
+            <![CDATA[攻击者使用多个中间主机（称为僵尸计算机），发动攻击。]]>
+        </text>
+    </component>
+    <!--Slide 5-->
+    <component id="ID_s5_title">
+        <text>
+            <![CDATA[<b>Smurf 攻击</b>]]></text>
+    </component>
+    <component id="ID_s5_txt01">
+        <text>
+            <![CDATA[僵尸计算机]]>
+        </text>
+    </component>
+    <component id="ID_s4_txt04">
+        <text>
+            <![CDATA[受害者]]>
+        </text>
+    </component>
+    <component id="ID_s5_txt03">
+        <text>
+            <![CDATA[Smurf 放大器]]>
+        </text>
+    </component>
+    <component id="ID_s5_txt04">
+        <text>
+            <![CDATA[试图淹没到目的地的 WAN 链路]]>
+        </text>
+    </component>
+    <!--ANIMATION CONTROLLER-->
+    <component id="end">
+        <text>
+            <![CDATA[结束]]>
+        </text>
+    </component>
+    <component id="fforward">
+        <text>
+            <![CDATA[快进]]>
+        </text>
+    </component>
+    <component id="pause">
+        <text>
+            <![CDATA[暂停]]>
+        </text>
+    </component>
+    <component id="play">
+        <text>
+            <![CDATA[播放]]>
+        </text>
+    </component>
+    <component id="rewind">
+        <text>
+            <![CDATA[快退]]>
+        </text>
+    </component>
+    <component id="start">
+        <text>
+            <![CDATA[开始]]>
+        </text>
+    </component>
+</textcomponents>

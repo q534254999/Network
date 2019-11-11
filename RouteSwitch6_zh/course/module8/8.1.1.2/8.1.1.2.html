@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.1.2 DHCPv4 操作</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>DHCPv4 操作</h1>
+        <div>
+          <p>如图 1 所示，DHCPv4 在客户端/服务器模式下工作。当客户端与 DHCPv4 服务器通信时，服务器会将 IPv4 地址分配或出租给该客户端。然后客户端使用租用的 IP 地址连接到网络，直到租期届满。客户端必须定期联系 DHCP 服务器以续展租期。这种租用机制确保移动或关闭的客户端不保留它们不再需要的地址。租期届满后，DHCP 服务器会将地址返回地址池，如有必要，可将其再次分配。</p>
+          <p></p>
+          <p>
+            <b>租赁发起</b>
+          </p>
+          <p></p>
+          <p>当客户端启动时（或要连接网络），它开始进行四步过程以获取租约。如图 2 所示，客户端使用包含自己 MAC 地址的广播 DHCPDISCOVER 消息开始该过程以查找可用 DHCPv4 服务器。</p>
+          <p></p>
+          <p>
+            <b>DHCP 发现 (DHCPDISCOVER)</b>
+          </p>
+          <p>DHCPDISCOVER 消息在网络上查找 DHCPv4 服务器。由于客户端启动时没有有效的 IPv4 信息，因此，它将使用第 2 层和第 3 层广播地址与服务器通信。 </p>
+          <p></p>
+          <p>
+            <b>DHCP 提供 (DHCPOFFER)</b>
+          </p>
+          <p>当 DHCPv4 服务器收到 DHCPDISCOVER 消息时，会保留一个可用 IPv4 地址以租赁给客户端。服务器还会创建一个 ARP 条目，该条目包含请求客户端的 MAC 地址和客户端的租用 IPv4 地址。如图 3 所示，DHCPv4 服务器将绑定 DHCPOFFER 消息发送到请求客户端。以服务器的第 2 层 MAC 地址为源地址，以客户端的第 2 层 MAC 地址为目标地址将 DHCPOFFER 消息作为单播发送。</p>
+          <p></p>
+          <p>
+            <b>DHCP 请求 (DHCPREQUEST)</b>
+          </p>
+          <p>如图 4 所示，当客户端从服务器收到 DHCPOFFER 时，会发回一条 DHCPREQUEST 消息。此消息用于发起租用和租约更新。用于发起租用时，将 DHCPREQUEST 用作已提供参数所选定服务器的绑定接受通知，并隐式拒绝任何其他可能已为客户端提供了绑定服务的服务器。</p>
+          <p></p>
+          <p>许多企业网络使用多台 DHCPv4 服务器。DHCPREQUEST 消息以广播的形式发送，将已接受提供的情况告知此 DHCPv4 服务器和任何其它 DHCPv4 服务器。 </p>
+          <p></p>
+          <p>
+            <b>DHCP 确认 (DHCPACK)</b>
+          </p>
+          <p>如图 5 所示，收到 DHCPREQUEST 消息后，服务器使用 ICMP ping 验证该地址的租用信息以确保该地址尚未使用，为客户端租用创建新的 ARP 条目，并以单播 DHCPACK 消息作为回复。.除消息类型字段不同外，DHCPACK 消息与 DHCPOFFER 消息别无二致。客户端收到 DHCPACK 消息后，记录下配置信息，并为所分配的地址执行 APR 查找。如果没有对 ARP 的应答，客户端就会知道 IPv4 地址是有效的，并开始像使用自己的地址一样使用该地址。 </p>
+          <p></p>
+          <p>
+            <b>租赁续约</b>
+          </p>
+          <p></p>
+          <p>
+            <b>DHCP 请求 (DHCPREQUEST)</b>
+          </p>
+          <p>如图 6 所示，租期届满后，客户端将 DHCPREQUEST 消息直接发送到最初提供 IPv4 地址的 DHCPv4 服务器。如果在指定的时间内没有收到 DHCPACK，客户端会广播另一个 DHCPREQUEST，这样，另外一个 DHCPv4 服务器便可续展租期。 </p>
+          <p></p>
+          <p>
+            <b>DHCP 确认 (DHCPACK)</b>
+          </p>
+          <p>如图 7 所示，收到 DHCPREQUEST 消息后，服务器通过返回一个 DHCPACK 来验证租用信息。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示 DHCP 流程，包括配置为 DHCP 的客户端查找地址，DHCP 服务器则为客户端提供地址。图 2 显示了该流程的步骤 1，即客户端将发出一条广播消息，用来询问 IP 地址。这就是 DHCP 发现。图 3 显出了该流程的步骤 2，即服务器将自身标识为 DHCP 服务器并为客户端提供 IP 地址。这是单播消息，也就是 DHCP 提供。图 4 显示步骤 3，即客户端发送一条广播消息，接受提供的 IP 地址。这就是 DHCP 请求。图 5 显示最后一步，即服务器向客户端发送单播消息，确认客户端接受该地址。这就是 DHCP 确认。图 6 显示客户端向服务器发送单播消息，请求更新当前租约。图 7 显示服务器确认租约更新请求。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

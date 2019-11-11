@@ -1,0 +1,6 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>静态路由 . . .</b><br/> <br/><textformat blockindent='-10'><ul class="bubbleBullets"><li>不通过网络通告，从而能够提高安全性。</li><li>相比动态路由协议占用更少的带宽。</li><li>使用已知路径发送数据。</li></ul></textformat>]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,235 @@
+﻿<textcomponents>
+    
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>练习 - 第 1 部分：TCP 连接和终止过程</b>]]></text>
+    </component>
+    <component id='ID_s1_instr_title'>
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id='ID_s1_instr_body'>
+        <text>
+            <![CDATA[将每个描述符拖动到演示 TCP <b>建立</b>会话三次握手的图像中的相应位置。]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag_header">
+        <text>
+            <![CDATA[<b>描述符</b>]]></text>
+    </component>
+    <component id="ID_s1_drop_header">
+        <text>
+            <![CDATA[<b>TCP 建立会话的三次握手</b>]]></text>
+    </component>
+    <component id="ID_s1_txt01A">
+        <text>
+            <![CDATA[发送 SYN]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt01B">
+        <text>
+            <![CDATA[SEQ = 600]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt01C">
+        <text>
+            <![CDATA[CTL = SYN]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[已接收 SYN]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt03A">
+        <text>
+            <![CDATA[建立]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt03B">
+        <text>
+            <![CDATA[SEQ = 601]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt03C">
+        <text>
+            <![CDATA[ACK = 401]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt04">
+        <text>
+            <![CDATA[已接收]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt05A">
+        <text>
+            <![CDATA[发送]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt05B">
+        <text>
+            <![CDATA[已接收]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt05C">
+        <text>
+            <![CDATA[已接收]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt05D">
+        <text>
+            <![CDATA[发送]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag01">
+        <text>
+            <![CDATA[SYN]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag02">
+        <text>
+            <![CDATA[SYN，ACK]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag03">
+        <text>
+            <![CDATA[400]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag04">
+        <text>
+            <![CDATA[601]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag05">
+        <text>
+            <![CDATA[ACK]]>
+        </text>
+    </component>
+    <component id="ID_s1_CORRECT_TITLE">
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id="ID_s1_CORRECT_BODY">
+        <text>
+            <![CDATA[您已成功演示了 TCP<b> 建立</b>会话的三次握手要求。]]></text>
+    </component>
+    <component id="ID_s1_INCORRECT_TITLE">
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id="ID_s1_INCORRECT_BODY">
+        <text>
+            <![CDATA[您未成功演示 TCP<b> 建立</b>会话的三次握手要求。请单击“重置”重试。]]></text>
+    </component>
+    <component id="ID_s1_CHECK">
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id="ID_s1_RESET">
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+   
+     <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>练习 - 第 2 部分：TCP 连接和终止过程</b>]]></text>
+    </component>
+    <component id='ID_s2_instr_title'>
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id='ID_s2_instr_body'>
+        <text>
+            <![CDATA[将每个描述符拖动到演示 TCP<b> 终止</b>会话 4 步流程的图像中的相应位置。]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag_header">
+        <text>
+            <![CDATA[<b>描述符</b>]]></text>
+    </component>
+    <component id="ID_s2_drop_header">
+        <text>
+            <![CDATA[<b>TCP 终止会话的 4 步流程</b>]]></text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[发送 FIN]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[已接收]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt03">
+        <text>
+            <![CDATA[已接收]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt04">
+        <text>
+            <![CDATA[发送]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt05">
+        <text>
+            <![CDATA[已接收]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt06">
+        <text>
+            <![CDATA[发送]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt07">
+        <text>
+            <![CDATA[发送]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt08">
+        <text>
+            <![CDATA[已接收]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag01">
+        <text>
+            <![CDATA[FIN]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag02">
+        <text>
+            <![CDATA[ACK]]>
+        </text>
+    </component>
+    <component id="ID_s2_CORRECT_TITLE">
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id="ID_s2_CORRECT_BODY">
+        <text>
+            <![CDATA[您已成功演示了 TCP<b> 终止</b>会话的 4 步流程。]]></text>
+    </component>
+    <component id="ID_s2_INCORRECT_TITLE">
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id="ID_s2_INCORRECT_BODY">
+        <text>
+            <![CDATA[您未成功演示 TCP<b> 终止</b>会话的 4 步流程。请单击“重置”重试。]]></text>
+    </component>
+    <component id="ID_s2_CHECK">
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id="ID_s2_RESET">
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+    <component id="transcript">
+        <text>
+            <![CDATA[<b>此处显示脚本</b>]]></text>
+    </component>
+</textcomponents>

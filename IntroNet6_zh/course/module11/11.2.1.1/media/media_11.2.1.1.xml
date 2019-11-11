@@ -1,0 +1,41 @@
+<textcomponents>
+	<component id="ID_titleTxt01">
+		<text><![CDATA[信息盗窃]]></text>
+	</component>
+	<component id="ID_titleTxt02">
+		<text><![CDATA[数据丢失和操纵]]></text>
+	</component>
+	<component id="ID_titleTxt03">
+		<text><![CDATA[身份盗窃]]></text>
+	</component>
+	<component id="ID_titleTxt04">
+		<text><![CDATA[服务中断]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[<b>404<br>页面<br>未找到</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[<b>信息盗窃</b>]]></text>
+	</component>
+	<component id="ID_bodyTxt01">
+		<text><![CDATA[这是指闯入计算机盗取机密信息。所盗取的信息可能用于各种目的或出售。示例：盗窃某公司在研究和开发等方面的专利信息。]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[<b>数据丢失和操纵</b>]]></text>
+	</component>
+	<component id="ID_bodyTxt02">
+		<text><![CDATA[这是指闯入计算机破坏或更改数据记录。数据丢失示例：发送可重新格式化计算机硬盘的病毒。数据操纵示例：闯入记录系统来更改信息（例如物品价格）。]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[<b>身份盗窃</b>]]></text>
+	</component>
+	<component id="ID_bodyTxt03">
+		<text><![CDATA[这是一种信息盗窃形式，以冒用他人的身份为目的窃取个人信息。利用此类信息，便可以非法获取文件、申请信用贷款或者进行未经授权的在线购物。身份盗窃案件日渐增多，每年造成的损失达数十亿之多。]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[<b>服务中断</b>]]></text>
+	</component>
+	<component id="ID_bodyTxt04">
+		<text><![CDATA[这是指阻止合法用户访问其有权使用的服务。<br/>示例：对服务器、网络设备或网络通信链路的拒绝服务 (DoS) 攻击]]></text>
+	</component>
+</textcomponents>

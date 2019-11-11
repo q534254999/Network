@@ -1,0 +1,1 @@
+图 1 显示 show ipv 6 interface brief 命令的输出。其中仅列出接口的地址和状态信息。图 2 显示show i.p.v.6. interface gigabit ethernet 命令的输出。其中列出更加详细的信息，如分配给接口的组播地址。图 3 显示 ipv6 route 命令的输出，这是路由器的 IPv6 路由表。图 4 显示 ping 命令在 IPv6 接口上的用法和输出。该命令为 ping 2001:db8:acad:1::10。  

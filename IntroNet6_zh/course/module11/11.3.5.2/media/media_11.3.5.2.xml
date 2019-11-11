@@ -1,0 +1,36 @@
+﻿<textcomponents>
+        <component id="ID_s1_title">
+        <text><![CDATA[<b>使用 terminal monitor 和 debug 排除故障</b>]]></text>
+	</component><!--Syntax Checker Button Text--><component id="ID_s1_reset">
+			<text><![CDATA[重置]]></text>
+		</component>
+
+        <component id="ID_s1_showme">
+			<text><![CDATA[看答案]]></text>
+		</component>
+
+        <component id="ID_s1_showall">
+			<text><![CDATA[全部显示]]></text>
+		</component><!--End Syntax Checker Button Text--><component id="ID_s1_SC" fontSize="12" fontFace='_typewriter'  fontColor="#ffffff">
+                <feedback id="fb"><![CDATA[<b><font face="_sans" color="#0000FF">***您必须输入确切完整的命令。 包含名称或密码的命令区分大小写。***</font></b> ]]></feedback>
+              <existingcommands><![CDATA[<font face="_sans"><b>发出命令，以允许将日志消息发送到远程会话。</b></font>]]></existingcommands>
+                <command prompt="R1#">
+                       <correctresponse><![CDATA[ terminal monitor]]></correctresponse>
+                                <deviceresponse><![CDATA[R1#]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b><ul>发出以下故障排除命令：<li>发出调试命令，以监控 R1 上的 ICMP 消息状态。</li><li>对 IP 地址为 10.0.0.10 的设备执行 ping 操作。</li><li>关闭所有调试。</li></font>]]></instruction>
+              </command>
+                <command prompt="R1#">
+                       <correctresponse><![CDATA[ debug ip icmp]]></correctresponse>
+              </command>
+                <command prompt="R1#">
+                       <correctresponse><![CDATA[ ping 10.0.0.10]]></correctresponse>
+                                <deviceresponse><![CDATA[Type escape sequence to abort.<br>Sending 5, 100-byte ICMP Echos to 10.0.0.10, timeout is 2 seconds:<br>!!!!!<br>Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/4 ms<br>*Nov 13 12:56:08.147: ICMP: echo reply rcvd, src 10.0.0.10, dst 10.0.0.1, <br>topology BASE, dscp 0 topoid 0<br>*Nov 13 12:56:08.151: ICMP: echo reply rcvd, src 10.0.0.10, dst 10.0.0.1, <br>topology BASE, dscp 0 topoid 0<br>*Nov 13 12:56:08.151: ICMP: echo reply rcvd, src 10.0.0.10, dst 10.0.0.1, <br>topology BASE, dscp 0 topoid 0<br>*Nov 13 12:56:08.151: ICMP: echo reply rcvd, src 10.0.0.10, dst 10.0.0.1, <br>topology BASE, dscp 0 topoid 0<br>*Nov 13 12:56:08.151: ICMP: echo reply rcvd, src 10.0.0.10, dst 10.0.0.1, <br>topology BASE, dscp 0 topoid 0]]></deviceresponse>
+              </command>
+                <command prompt="R1#">
+                       <correctresponse><![CDATA[ undebug all]]></correctresponse>
+                                <deviceresponse><![CDATA[All possible debugging has been turned off<br>R1#<br>]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b>您已成功使用 terminal monitor 和调试命令排除故障。</font>]]></instruction>
+              </command>
+<command prompt=""/>
+ </component>
+</textcomponents>

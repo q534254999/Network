@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.4.6 无类编址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.4.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>无类编址</h1>
+        <div>
+          <p>如图所示，有类系统将 50% 的可用 IPv4 地址分配给 128 个 A 类网络，25% 的可用 IPv4 地址分配给 B 类网络，D 类和 E 类共享剩余的 25% 的可用 IPv4 地址。问题是，这浪费了大量的地址并耗费了 IPv4 地址的可用性。有些组织的要求与这三类地址中任何一类都不太相符。例如，当一家公司的网络有 260 台主机时，就需要分配给其具有 65,000 多个地址的 B 类地址，因此浪费了 64,740 个地址。 </p>
+          <p>二十世纪九十年代末，人们不再使用有类编址，而采用新的、当前采用的无类编址系统。不过，现今的网络中仍存在少量的有类编址。例如，为计算机分配 IPv4 地址时，操作系统会通过检查分配的地址来确定此地址是 A 类、B 类还是 C 类地址。然后，操作系统采用该类使用的前缀来分配默认子网掩码。 </p>
+          <p>我们目前使用的系统称为<i>无类编址</i>。正式名称是无类域间路由（CIDR，发音与“cider”相同）。1993 年，IETF 创建了一组新标准，允许服务提供商根据任意地址位边界（前缀长度）来分配 IPv4 地址，而不只是使用 A 类、B 类或 C 类地址。此种做法是为了帮助延迟 IPv4 地址的消耗和最终耗尽。</p>
+          <p>IETF 知道 CIDR 仅是临时解决方案，必须开发新的 IP 协议来应对 Internet 用户数量的快速增长。1994 年，IETF 开始研究 IPv4 的后继版本，最终开发出 IPv6。</p>
+          <p>那么这些 IP 地址由谁来管理和分配呢？</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a pie chart. Class A addresses are 50%. Class B addresses are 25%. Class C addresses are 12.5%. And Class D and E make up the remaining 12.5%.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

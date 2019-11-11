@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.3.1 保存运行配置文件</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>保存运行配置文件</h1>
+        <div>
+          <p>有两种系统文件用于存储设备配置：</p>
+          <p>
+            <ul>
+              <li>
+                <b>启动配置 </b>- 该文件存储在非易失性随机访问存储器 (NVRAM) 中，包含设备在启动或重启时将会使用的所有命令。设备断电后，NVRAM 中的内容不会丢失。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>运行配置</b> - 该文件存储在随机访问存储器 (RAM) 中，反映当前配置。修改运行配置会立即影响思科设备的运行。RAM 是易失性存储器。如果设备断电或重新启动，则它会丢失所有内容。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>如图所示，使用 <b>show running-config</b> 特权 EXEC 模式命令查看运行配置文件。要查看启动配置文件，请使用 <b>show startup-config</b> 特权 EXEC 命令。</p>
+          <p></p>
+          <p>如果设备断电或重新启动，所有未保存的配置更改都会丢失。要将对运行配置所作的更改保存到启动配置文件中，请使用 <b>copy running-config startup-config</b> 特权 EXEC 模式命令。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows how to display the current running configuration as well as how to save the current running configuration to the startup configuration in NVRAM.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

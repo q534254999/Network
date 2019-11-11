@@ -1,0 +1,33 @@
+<textcomponents><component id="ID_title"><text><![CDATA[<b>在二进制八位数边界上对网络划分子网</b>]]></text></component><component id="ID_table"><text><![CDATA[<table header="none" bordercolor="#FFFFFF" borderwidth="3" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4" class="mtable">
+	<tr class="mtable_title">
+		<td colspan="4" bgcolor="#FFFFFF"><font size="5"></font></td>
+	</tr>
+	<tr class="mtable_top">
+		<td colspan="4" bgcolor="#4E4C4D"><font size="1" color="#4E4C4D">.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="80" valign="top"><font color="#FFFFFF">前缀长度</font></td>
+		<td bgcolor="#666263" width="90" valign="top"><font color="#FFFFFF">子网掩码</font></td>
+		<td bgcolor="#666263" valign="top" ><font color="#FFFFFF">子网掩码（二进制）（n = 网络，h = 主机）</font></td>
+		<td bgcolor="#666263" width="80" valign="top"><font color="#FFFFFF">主机数量</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="middle" ><p align="center">/8</p></td>
+		<td bgcolor="#E9E7E8" valign="middle"><p align="center">255.0.0.0</p></td>
+		<td bgcolor="#E9E7E8" valign="middle"><p align="center">nnnnnnnn.hhhhhhhh.hhhhhhhh.hhhhhhhh11111111.0000<br/>0000.00000000.00000000</p></td>
+		<td bgcolor="#E9E7E8" valign="middle"><p align="center">16,777,214</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="middle"><p align="center">/16</p></td>
+		<td bgcolor="#F2F2F2" valign="middle"><p align="center">255.255.0.0</p></td>
+		<td bgcolor="#F2F2F2" valign="middle"><p align="center">nnnnnnnn.nnnnnnnn.hhhhhhhh.hhhhhhhh11111<br/>111.11111111.00000000.00000000</p></td>
+		<td bgcolor="#F2F2F2" valign="middle"><p align="center">65,534</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="middle"><p align="center">/24</p></td>
+		<td bgcolor="#E9E7E8" valign="middle"><p align="center">255.255.255.0</p></td>
+		<td bgcolor="#E9E7E8" valign="middle"><p align="center">nnnnnnnn.nnnnnnnn.nnnnnnnn.hhhhhhhh11111111.111111<br/>11.11111111.00000000</p></td>
+		<td bgcolor="#E9E7E8" valign="middle"><p align="center">254</p></td>
+	</tr>
+</table>
+]]></text></component></textcomponents>

@@ -1,0 +1,210 @@
+<textcomponents>
+
+
+
+<component id="ID_s1_inst">
+<text><![CDATA[<b>活动</b><br/>在本活动中，系统向您提供空白帧以根据场景进行构建。 确定目标和源 MAC 地址，以及将按规定正确构建帧的源 IP 和目标 IP 地址。 将 MAC 和 IP 地址拖动到相应字段来输入答案。<br/><br/><b>场景 1</b> - PC1 正在向 PC2 发送数据 - 所有设备都是完整的 ARP。 在此帧中，指示构建帧的起始数据流量。 不会用到所有答案。]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[第 2 层数据链路帧]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[第 3 层数据包]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[<b>目标 <br/>MAC</b>]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[<b>源 <br/>MAC</b>]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+<text><![CDATA[<br/>0X800 类型]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[<b>源 IP</b>]]></text>
+</component>
+
+<component id="ID_s1_txt07">
+<text><![CDATA[<b>目标<br/>IP</b>]]></text>
+</component>
+
+<component id="ID_s1_txt08">
+<text><![CDATA[IP 字段]]></text>
+</component>
+
+<component id="ID_s1_txt09">
+<text><![CDATA[数据]]></text>
+</component>
+
+<component id="ID_s1_txt10">
+<text><![CDATA[帧尾]]></text>
+</component>
+
+<component id="ID_s1_drag01">
+<text><![CDATA[192.168.4.10]]></text>
+</component>
+
+<component id="ID_s1_drag02">
+<text><![CDATA[192.168.1.10]]></text>
+</component>
+
+<component id="ID_s1_drag03">
+<text><![CDATA[192.168.1.20]]></text>
+</component>
+
+<component id="ID_s1_drag04">
+<text><![CDATA[192.168.1.1]]></text>
+</component>
+
+<component id="ID_s1_drag05">
+<text><![CDATA[0B:02]]></text>
+</component>
+
+<component id="ID_s1_drag06">
+<text><![CDATA[0C:03]]></text>
+</component>
+
+<component id="ID_s1_drag07">
+<text><![CDATA[0A:10]]></text>
+</component>
+
+<component id="ID_s1_drag08">
+<text><![CDATA[0F:08]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[您已成功确定源和目标 MAC 与 IP 地址来根据拓扑构建帧。 点击“按钮 2”以继续。 ]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[您未成功确定源和目标 MAC 与 IP 地址来根据拓扑构建帧。 点击“按钮 2”以继续。 ]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[检查]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[重置]]></text>
+</component>
+
+
+
+<component id="ID_s2_inst">
+<text><![CDATA[<b>活动</b><br/>在本活动中，系统向您提供空白帧以根据场景进行构建。 确定目标和源 MAC 地址，以及将按规定正确构建帧的源 IP 和目标 IP 地址。 将 MAC 和 IP 地址拖动到相应字段来输入答案。<br/><br/><b>场景 2</b> – R2 收到来自 PC1 的帧，且现在需要将其发送到 PC2。 所有设备仍然是完整的 ARP。 在此帧中，构建帧以将数据从 R2 传输到 PC2。 不会用到所有答案。]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[第 2 层数据链路帧]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[第 3 层数据包]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[<b>目标 <br/>MAC</b>]]></text>
+</component>
+
+<component id="ID_s2_txt04">
+<text><![CDATA[<b>源 <br/>MAC</b>]]></text>
+</component>
+
+<component id="ID_s2_txt05">
+<text><![CDATA[<br/>0X800 类型]]></text>
+</component>
+
+<component id="ID_s2_txt06">
+<text><![CDATA[<b>源 IP</b>]]></text>
+</component>
+
+<component id="ID_s2_txt07">
+<text><![CDATA[<b>目标<br/>IP</b>]]></text>
+</component>
+
+<component id="ID_s2_txt08">
+<text><![CDATA[IP 字段]]></text>
+</component>
+
+<component id="ID_s2_txt09">
+<text><![CDATA[数据]]></text>
+</component>
+
+<component id="ID_s2_txt10">
+<text><![CDATA[帧尾]]></text>
+</component>
+
+<component id="ID_s2_drag01">
+<text><![CDATA[192.168.4.10]]></text>
+</component>
+
+<component id="ID_s2_drag02">
+<text><![CDATA[192.168.1.10]]></text>
+</component>
+
+<component id="ID_s2_drag03">
+<text><![CDATA[192.168.4.20]]></text>
+</component>
+
+<component id="ID_s2_drag04">
+<text><![CDATA[192.168.3.2]]></text>
+</component>
+
+<component id="ID_s2_drag05">
+<text><![CDATA[0E:07]]></text>
+</component>
+
+<component id="ID_s2_drag06">
+<text><![CDATA[0D:06]]></text>
+</component>
+
+<component id="ID_s2_drag07">
+<text><![CDATA[0A:10]]></text>
+</component>
+
+<component id="ID_s2_drag08">
+<text><![CDATA[0F:08]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[您已成功确定源和目标 MAC 与 IP 地址来根据拓扑构建帧。 点击“按钮 2”以继续。 ]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[您未成功确定源和目标 MAC 与 IP 地址来根据拓扑构建帧。 点击“按钮 2”以继续。 ]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[检查]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[重置]]></text>
+</component>
+
+
+</textcomponents>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.1.1 配置静态 NAT</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置静态 NAT</h1>
+        <div>
+          <p>静态 NAT 是内部地址与外部地址之间的一对一映射。静态 NAT 允许外部设备使用静态分配的公有地址发起与内部设备的连接。例如，可以将内部 Web 服务器映射到特定的内部全局地址，以便从外部网络对其进行访问。 </p>
+          <p></p>
+          <p>图 1 显示了一个包含具有私有 IPv4 地址的 Web 服务器的内部网络。路由器 R2 上配置了静态 NAT，以允许外部网络（互联网）上的设备访问 Web 服务器。外部网络中的客户端使用公有 IPv4 地址访问 Web 服务器。静态 NAT 可以将公有 IPv4 地址转换为私有 IPv4 地址。</p>
+          <p></p>
+          <p>在配置静态 NAT 转换时，有两个基本任务。 </p>
+          <p></p>
+          <p>
+            <b>步骤 1.</b>第一个任务是建立内部本地地址与内部全局地址之间的映射。例如，图 1 中的内部本地地址 192.168.10.254 和内部全局地址 209.165.201.5 已配置为静态 NAT 转换。 </p>
+          <p></p>
+          <p>
+            <b>步骤 2.</b>在配置了映射后，将参与转换的接口配置为内部或外部接口（相对于 NAT 而言）。在本示例中，R2 的 Serial 0/0/0 接口为内部接口，而 Serial 0/1/0 为外部接口。</p>
+          <p></p>
+          <p>对经过已配置的内部本地 IPv4 地址 (192.168.10.254) 到达 R2 的内部接口 (Serial 0/0/0) 的数据包进行转换，然后将其转发到外部网络。到达 R2 的外部接口 (Serial 0/1/0) 的数据包，其目标地址是已配置的内部全局 IPv4 地址 (209.165.201.5)，将该目标地址转换为内部本地地址 (192.168.10.254)，然后将数据包转发到内部网络。</p>
+          <p></p>
+          <p>图 2 列出了配置静态 NAT 所需的命令。 </p>
+          <p></p>
+          <p>图 3 显示的是在示例拓扑中 R2 在创建与 Web 服务器的静态 NAT 映射时所需的命令。通过所示配置，R2 将来自具有地址 192.168.10.254 的 Web 服务器的数据包转换到公有 IPv4 地址 209.165.201.5。互联网客户端向公有 IPv4 地址 209.165.201.5 发送网页请求。R2 将此流量转发到位于 192.168.10.254 的 Web 服务器。</p>
+          <p></p>
+          <p>使用图 4 中的语法检查器在 R2 上配置另一个静态 NAT 条目。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示路由器 2，与 Web 服务器连接的内部网络在左侧，与 PC 连接的外部网络在右侧。在图像下方列出了静态 NAT 表。图 2 所显示的表列出了用于配置静态 NAT 的命令和描述。图 3 显示了用于配置静态 NAT 的语法。图 4 是一个互动练习，允许学生练习配置静态 NAT。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

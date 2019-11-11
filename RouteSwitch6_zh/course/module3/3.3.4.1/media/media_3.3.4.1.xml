@@ -1,0 +1,15 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>参考 IPv6 拓扑</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+  <text><![CDATA[<b>IPv6 之 EIGRP 路由域</b>]]></text> 
+  </component>
+  
+<component id="ID_txt02">
+  <text><![CDATA[FE80 地址代表分配给每台路由器的本地路由地址。]]></text> 
+  </component>  
+  
+</textcomponents>

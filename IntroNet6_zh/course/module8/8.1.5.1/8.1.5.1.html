@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.5.1 传统的子网划分浪费地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.5.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>传统的子网划分浪费地址</h1>
+        <div>
+          <p>使用传统子网划分，为每个子网分配相同数量的地址。如果所有子网对主机数量的要求相同，这些固定大小的地址块效率就会很高。但是，绝大多数情况并非如此。 </p>
+          <p>例如，图 1 显示的拓扑要求七个子网，其中四个子网分别用于四个 LAN，而另外三个分别用于路由器之间的三个 WAN 连接。对指定地址 192.168.20.0/24 进行传统子网划分，从最后一个二进制八位数的主机部分可以借用 3 个位，以满足其七个子网的要求。如图 2 所示，借用 3 个位可以创建 8 个子网，剩余 5 个主机位，每个子网有 30 个可用主机。该方案创建了所需子网，并且满足其最大 LAN 对主机的要求。</p>
+          <p>虽然该传统子网划分满足最大 LAN 的需要，并将地址空间划分为足够的子网，但它产生了大量未使用地址，造成地址浪费。 </p>
+          <p>例如，这三个 WAN 链路的每个子网中仅仅需要两个地址。由于每个子网有 30 个可用地址，这些子网中每个子网有 28 个未使用地址。如图 3 所示，这将产生 84 个未使用地址 (28x3)。 </p>
+          <p>此外，这样做还减少了可用子网的总数，从而限制了未来的发展。这种低效的地址使用率正是传统子网划分的缺点。对示例场景采用传统子网划分方案，效率并不是非常高，而且比较浪费。 </p>
+          <p>细分子网即使用可变长子网掩码 (VLSM)，其目的是避免地址浪费。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows four routers with different host requirements.  Each router is connected to the adjacent router with a WAN link.  This shows a need for seven subnets. Figure 2 shows that by borrowing three host bits from a slash twenty four, we can create 8 subnets.  These subnets will be a slash twenty seven. Figure 3 shows that with the remaining five bits we will have 30 valid hosts on each of the subnets.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

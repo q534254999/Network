@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.1.5 无状态 DHCPv6 选项</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>无状态 DHCPv6 选项</h1>
+        <div>
+          <p>虽然在所提供的功能上，DHCPv6 和 DHCPv4 是类似的，但这两个协议是相互独立的。RFC 3315 中对 DHCPv6 进行了定义。DHCPv6 RFC 包含所有互联网草案的最多修订本，这表明多年来使用该规范已完成了很多工作。 </p>
+          <p></p>
+          <p>
+            <b>无状态 DHCPv6 选项（路由器通告和 DHCPv6）</b>
+          </p>
+          <p></p>
+          <p>无状态 DHCPv6 选项通知客户端使用 RA 消息中的信息来编址，但是从 DHCPv6 服务器提供额外配置参数。 </p>
+          <p></p>
+          <p>客户端使用 RA 消息中的前缀和前缀长度，以及 EUI-64 或随机生成的 IID 创建其 IPv6 全局单播地址。</p>
+          <p></p>
+          <p>客户端随后会与无状态 DHCPv6 服务器通信以获取 RA 消息中未提供的其他信息。例如，这可能是 DNS 服务器 IPv6 地址列表。此过程称为无状态 DHCPv6，因为服务器不维护任何客户端状态信息（例如，可用的和已分配的 IPv6 地址列表）。无状态 DHCPv6 服务器只提供客户端的配置参数，不提供 IPv6 地址的配置参数。</p>
+          <p></p>
+          <p>对于无状态 DHCPv6，将 O 标记设置为 1，而 M 标记保留默认设置 0。O 标记的 1 值用于通知客户端无状态 DHCPv6 服务器提供其他配置信息。 </p>
+          <p></p>
+          <p>要修改路由器接口上发送的 RA 消息以表示无状态 DHCPv6，请使用以下命令：</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-if)# </span>
+            <span class="cmd">
+              <b>ipv6 nd other-config-flag</b>
+            </span>
+            <span class="cmd"></span>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了计算机的无状态 DHCPv6 过程。路由器发送一条包含计算机所需的一些编址信息的路由器通告消息，还发送一条计算机必须在 DHCPv6 服务器中查找剩余信息的指令。这是对计算机发送的路由器请求消息的响应。  </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

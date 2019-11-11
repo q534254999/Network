@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.1.4 使用 TFTP 备份和恢复</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>使用 TFTP 备份和恢复</h1>
+        <div>
+          <p>
+            <b>使用 TFTP 备份配置</b>
+          </p>
+          <p></p>
+          <p>应将配置文件的副本存储为备份文件，以防出现问题。配置文件可存储在简单文件传输协议 (TFTP) 服务器或 USB 驱动器上。还应将配置文件记录到网络文档中。 </p>
+          <p></p>
+          <p>要将运行配置或启动配置保存到 TFTP 服务器，请使用 <b>copy running-config tftp</b> 或 <b>copy startup-config tftp</b> 命令，如图所示。按照以下步骤将运行配置备份到 TFTP 服务器：</p>
+          <p></p>
+          <p>
+            <b>步骤 1</b>.输入 <b>copy running-config tftp</b> 命令。</p>
+          <p></p>
+          <p>
+            <b>步骤 2</b>.输入要存储配置文件的主机的 IP 地址。</p>
+          <p></p>
+          <p>
+            <b>步骤 3</b>.输入要为配置文件指定的名称。</p>
+          <p></p>
+          <p>
+            <b>步骤 4</b>.按 Enter 确认每次选择。</p>
+          <p></p>
+          <p>
+            <b>使用 TFTP 恢复配置</b>
+          </p>
+          <p></p>
+          <p>要从 TFTP 服务器恢复运行配置或启动配置，请使用 <b>copy tftp running-config</b> 或 <b>copy tftp startup-config</b> 命令。使用以下步骤从 TFTP 服务器恢复运行配置：</p>
+          <p></p>
+          <p>
+            <b>步骤 1</b>.输入 <b>copy tftp running-config</b> 命令。</p>
+          <p></p>
+          <p>
+            <b>步骤 2</b>.输入配置文件存储主机的 IP 地址。</p>
+          <p></p>
+          <p>
+            <b>步骤 3</b>.输入要为配置文件指定的名称。</p>
+          <p></p>
+          <p>
+            <b>步骤 4</b>.按 <b>Enter</b> 确认每次选择。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">该图显示了路由器上 copy running-config tftp 命令的输出。这将允许客户将当前配置备份到网络上的 TFTP 服务器。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

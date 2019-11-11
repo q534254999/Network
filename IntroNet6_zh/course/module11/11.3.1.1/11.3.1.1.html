@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.3.1.1 解释 Ping 结果</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>解释 Ping 结果</h1>
+        <div>
+          <p>使用 <b>ping </b>命令是测试连接的有效方法。<b>ping</b> 命令使用 Internet 控制消息协议 (ICMP)，并验证第 3 层的连接。<b>ping</b> 命令并不总能精确确定问题的本质，但可帮助确定问题的来源，这是排除网络故障时重要的第一步。</p>
+          <p></p>
+          <p>
+            <b>IOS Ping 指示符</b>
+          </p>
+          <p></p>
+          <p>从 IOS 发出的一个 ping 命令将为发送的每个 ICMP 回应生成一个指示符。最常见的指示符有：</p>
+          <p>
+            <ul>
+              <li>
+                <b>!</b> - 表示收到一个 ICMP 应答消息，如图 1 所示。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>.</b>- 表示超时，正在等待 ICMP 应答消息</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>U</b> — 表示收到了一个 ICMP 无法到达报文 </li>
+            </ul>
+          </p>
+          <p>“<b>.</b>”（句点）它表示网络路径中某处可能存在连接问题。它也可能表示沿途的某个路由器没有通往目的地的路由或未发送 ICMP 目的地无法到达报文。它还可能表示 ping 命令被设备安全功能拦截。当将 ping 发送到以太网 LAN 时，如果必须执行 ARP 流程，则第一个响应请求通常超时。</p>
+          <p>“<b>U</b>”表示沿途的某个路由器发回了一个 ICMP 无法到达报文。该路由器没有通往目的地址的路由，或者 ping 请求被拦截。  </p>
+          <p>
+            <b>测试环回</b>
+          </p>
+          <p>ping 命令也可通过对环回地址 127.0.0.1 执行 ping 来验证本地主机上的内部 IP 配置，如图 2 所示。这将验证从网络层到物理层再返回网络层的协议栈是否工作正常，而不会向网络介质发送任何信号。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figures 1 and 2 show the same topology. R1 and R2 are connected through a WAN link. Each router has two LANs with a PC and a switch connected to each LAN. In Figure 1, output is shown for a successful ping from R1 to R2. In Figure 2, output is shown for a successful ping from PC2 to its loopback address, 127.0.0.1.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

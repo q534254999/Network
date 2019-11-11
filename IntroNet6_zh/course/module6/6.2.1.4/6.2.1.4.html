@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.1.4 主机路由表</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>主机路由表</h1>
+        <div>
+          <p>在 Windows 主机上，使用 <b>route print</b> 或<b> netstat - r</b> 命令可以显示主机路由表。这两个命令生成相同的输出。输出可能乍一看很晦涩，但是实际上相当容易理解。</p>
+          <p>输入<b> netstat -r</b> 命令或等效的<b> route print </b>命令，显示有关当前 TCP/IP 网络连接的三个部分：</p>
+          <p>
+            <ul>
+              <li>
+                <b>接口列表 -</b> 列出主机上的介质访问控制 (MAC) 地址和每个网络接口的已分配接口编号，包括以太网、Wi-Fi 和蓝牙适配器。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>IPv4 路由表 -</b> 列出所有已知的 IPv4 路由，包括直接连接、本地网络和本地默认路由。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>IPv6 路由表 -</b> 列出所有已知的 IPv6 路由，包括直接连接、本地网络和本地默认路由。</li>
+            </ul>
+          </p>
+          
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a network with the output of "netstat -r" command on a P.C.  This command shows the routing table for the PC.  The IPv4 routing table displays five columns: Network Destination, Netmask, Gateway, Interface and Metric.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

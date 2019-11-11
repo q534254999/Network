@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.2.2 自动配置终端设备的 IP 地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>自动配置终端设备的 IP 地址</h1>
+        <div>
+          <p>PC 通常默认使用 DHCP 进行 IPv4 地址自动配置。DHCP 是用于几乎每个网络的技术。要想理解 DHCP 为什么如此普遍，最好的方法是想象一下如果没有它，我们需要做的所有额外工作。</p>
+          <p></p>
+          <p>在网络中，DHCP 可以为每台启用 DHCP 的终端设备自动配置 IPv4 地址。如果每次连接到网络都必须手动输入 IPv4 地址、子网掩码、默认网关和 DNS 服务器，想象一下要消耗的时间。将这个时间乘以组织中的所有用户和所有设备，您就会看到问题。手动配置还可能因复制另一设备的 IPv4 地址而增加配置错误的风险。 </p>
+          <p></p>
+          <p>如图 1 所示，要在 Windows PC 上配置 DHCP，只需选择“自动获取 IP 地址”和“自动获取 DNS 服务器地址”。您的 PC 将会找到 DHCP 服务器，并为其分配在网络上通信所需的地址设置。</p>
+          <p></p>
+          <p>在命令提示符下使用 <b>ipconfig</b> 命令，可以显示 Windows PC 上的 IP 配置设置。输出将显示从 DHCP 服务器接收的 IPv4 地址、子网掩码和网关信息。</p>
+          <p></p>
+          <p>使用图 2 中的语法检查器练习在 Windows PC 上显示 IPv4 地址。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the Windows TCP/IPv4 Properties window with “Obtain an IP address automatically” and “Obtain DNS server address automatically” selected. Figure 2 is a Syntax Checker allowing the learner to practice verifying Windows PC IP configuration.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

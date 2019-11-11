@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.4.3.1 IOS 设备的 IP 寻址问题</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.4.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IOS 设备的 IP 寻址问题</h1>
+        <div>
+          <p>与 IP 地址相关的问题可能会阻止远程网络设备进行通信。由于 IP 地址是分层的，分配给网络设备的任何 IP 地址都必须符合该网络地址范围。错误分配的 IP 地址会导致很多问题，包括 IP 地址冲突和路由问题。</p>
+          <p></p>
+          <p>IPv4 分配不正确的两个常见原因是手动分配错误或与 DHCP 相关的问题。</p>
+          <p></p>
+          <p>网络管理员通常必须手动将 IP 地址分配到设备，比如服务器和路由器。如果在分配期间出现错误，则很可能引发设备的通信问题。</p>
+          <p></p>
+          <p>在 IOS 设备上，请使用 <b>show ip interface</b> 或 <b>show ip interface brief</b> 命令验证哪些 IPv4 地址分配给了网络接口。图中显示了在 R1 上发出的 <b>show ip interface</b> 命令的输出。注意该输出显示 IPv4 信息（OSI 第 3 层），而先前提到的 <b>show interfaces</b> 命令显示接口的物理和数据链路详细信息。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description"> Figure shows a topology with a PC, a switch, and three routers. The PC is connected to the switch, which is connected to router R1, which is connected to router R2, which is connected to router R3. Below the topology is the command output for ‘show ip interface gigabitethernet0/0’ with the IP address highlighted. </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

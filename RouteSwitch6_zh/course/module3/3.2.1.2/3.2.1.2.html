@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.1.2 通告网络</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>通告网络</h1>
+        <div>
+          <p>进入 RIP 路由器配置模式后，路由器便按照指示开始运行 RIPv1。但路由器还需了解应该使用哪个本地接口与其它路由器通信，以及需要向其它路由器通告哪些本地连接的网络。  </p>
+          <p></p>
+          <p>要为网络启用 RIP 路由，请使用网络<b> network </b><i>network-address </i>路由器配置模式命令。输入每个直连网络的有类网络地址。此命令：</p>
+          <p>
+            <ul>
+              <li>在属于某个指定网络的所有接口上启用 RIP。相关接口现在开始发送和接收 RIP 更新。  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>在每 30 秒一次的 RIP 路由更新中向其它路由器通告该指定网络。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>注</b>：RIPv1 是 IPv4 的一个有类路由协议。因此，如果输入子网地址，IOS 会自动将其转换到有类网络地址。例如，输入 <b>network 192.168.1.32 </b>命令会在运行配置文件中自动转换到 <b>network 192.168.1.0</b>。IOS 不提示错误消息，而会纠正该输入，并输入有类网路地址。  </p>
+          <p></p>
+          <p>在图 1 中，使用 <b>network </b>命令通告 R1 直连网络。  </p>
+          <p></p>
+          <p>使用图 2 中的语法检查程序在 R2 和 R3 上配置类似配置。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示用于为路由器上的指定网络启用 RIPv1 路由的命令行命令。该图以全局配置模式开始。第一个命令为 router rip。下一命令使用关键字 network，后跟网络地址。图中在路由器上配置了两个网络，第一个命令为 network 192.168.1.0。第二个命令为 192.168.2.0。请注意，在使用 RIPv1 时，不会在命令中列出子网掩码。图 2 是允许学生输入在路由器上配置 RIP 和通告相应网络所需的命令的互动媒体元素。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

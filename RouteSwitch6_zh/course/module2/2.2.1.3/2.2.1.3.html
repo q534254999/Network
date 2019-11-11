@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.1.3 配置下一跳静态路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置下一跳静态路由</h1>
+        <div>
+          <p>在下一跳静态路由中，仅指定下一跳 IP 地址。退出接口派生自下一跳。例如，在图 1 中，R1 使用下一跳 (R2) 的 IP 地址配置了三条静态路由。</p>
+          <p></p>
+          <p>在路由器转发任何数据包之前，路由表过程必须确定用于转发数据包的送出接口。我们将此过程称为路由解析。 </p>
+          <p></p>
+          <p>图 2 详细介绍 R1 路由表中的基本数据包转发流程。当数据包指向 192.168.2.0/24 网络时，R1 将：</p>
+          <p></p>
+          <p>1.在路由表中搜索匹配项，发现它必须将数据包转发到下一跳 IPv4 地址 172.16.2.2，如图中的标签 1 所示。仅引用下一跳 IPv4 地址而没有引用退出接口的每个路由必须使用路由表中的另一路由以及退出接口来解析下一跳 IPv4 地址。</p>
+          <p></p>
+          <p>2.R1 现在必须确定如何到达 172.16.2.2；因此，它第二次搜索 172.16.2.2 的匹配项。在这种情况下，IPv4 地址匹配送出接口为 Serial 0/0/0 的直连网络 172.16.2.0/24 的路由，如图中的标签 2 所示。此查找告知路由表过程：此数据包已转发到该接口之外。 </p>
+          <p></p>
+          <p>将任何数据包转发到 192.168.2.0/24 网络实际上经过了两次路由表查找过程。如果路由器在转发数据包前需要执行多次路由表查找，那么它的查找过程就是一种递归查找。由于递归查找占用路由器资源，应尽可能避免发生这种情况。</p>
+          <p></p>
+          <p>只有指定的下一跳地址直接或间接地解析为有效退出接口，递归静态路由才有效（即它是要插入到路由表中的候选路由）。如果退出接口为“关闭”或“管理性关闭”状态，则将不会在路由表中安装静态路由。</p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p>使用图 3 和图 4 中的语法检查器配置并验证 R2 和 R3 的下一跳静态路由。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">这些图基于标准实验图。R1，有 LAN 连接到 R2，还有一个 LAN 使用一个 LAN 连接到 R3。图 1 显示路由器 1 未连接到的两个 LAN 的配置、路由器 2 LAN和路由器 3 LAN 以及路由器 2 与路由器 3 之间的 WAN。使用下一跳地址配置静态路由。图 2 演示路由器 1 访问路由器 3 上的 LAN 的递归查找过程。只要使用下一跳与退出接口进入静态路由，就需要进行此过程。图 3 是允许学生将路由器 2 上的静态路由配置为使用下一跳地址到达路由器 3 的 LAN 的互动练习。图 4 是一个交互练习，允许学习者在路由器 3 上配置指向路由器 2 的另一端的网络的静态路由。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.3.5 争用访问 – CSMA/CA</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.3.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>争用访问 – CSMA/CA</h1>
+        <div>
+          <p>IEEE 802.11 WLAN 所使用的另一种 CSMA 形式为载波侦听多路访问/冲突避免 (CSMA/CA)。CMSA/CA 采用一种与 CSMA/CD 类似的方法来检测介质是否畅通。CMSA/CA 还采用其他技术。CMSA/CA 不会检测冲突，但会通过在传输之前等待来尝试避免冲突。要进行传输的每台设备都包含传输所需的持续时间。所有其他无线设备都会收到此信息，知道介质将有多长时间不可用，如图所示。当无线设备发送 802.11 帧后，接收方会返回确认，以使发送方知道帧已到达。 </p>
+          <p>不管是使用集线器的以太网 LAN，还是 WLAN，争用系统在介质使用率高的情况下都无法很好地扩展。一定要注意，使用交换机的以太网 LAN 不使用争用系统，因为交换机和主机网卡在全双工模式下运行。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows three laptops wireless connected to a wireless router. One laptop says “I’m receiving this wireless frame.” The other two laptops say “I see in the wireless frame that the channel is going to be unavailable for a specific amount of time so I can not send.”</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

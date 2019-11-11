@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.1.1 主机转发决策</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>主机转发决策</h1>
+        <div>
+          <p>网络层的另一个作用是在主机之间转发数据包。主机可以将数据包发送至：</p>
+          <p>
+            <ul>
+              <li>
+                <b>自身</b> - 主机会将数据包发送到一个称作环回接口的特殊 IPv4 地址 127.0.0.1，以对自身执行 ping 操作。对环回接口执行 ping 操作可以测试主机上的 TCP/IP 协议堆栈。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>本地主机</b> - 该主机与发送主机位于同一本地网络。这些主机共享同一个网络地址。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>远程主机</b> - 这是位于远程网络上的主机。这些主机不共享同一个网络地址。 </li>
+            </ul>
+          </p>
+          <p>源（或发送）设备 IPv4 地址和子网掩码的组合以及目的设备的 IPv4 地址和子网掩码确定了数据包是发送给本地主机还是远程主机。</p>
+          <p>在家庭或企业网络中，您可能有若干通过中间设备（LAN 交换机和/或无线接入点 (WAP) 等）互联的有线和无线设备。这种中间设备在本地网络上的本地主机之间提供互联服务。本地主机可以互相访问和共享信息，无需任何附加设备。如果主机发送数据包到与主机设备配置有相同 IP 网络的设备，则数据包仅是转发出主机接口，然后经过中间设备即可直接到达目的设备。 </p>
+          <p>当然，在大多数情况下我们希望我们的设备不仅仅能够连接本地网段，还能连接其他家庭、企业和 Internet。位于本地网段外的设备称为远程主机。如果源设备发送数据包到远程目的设备，则需要借助路由器和路由。路由是确定到达目的之最佳路径的过程。连接到本地网段的路由器称为<b>默认网关</b>。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a router connected to a LAN with two hosts and the Internet with a remote server.  There is an arrow from one host to another host on the same network.  There is also an arrow from one host to the remote server.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

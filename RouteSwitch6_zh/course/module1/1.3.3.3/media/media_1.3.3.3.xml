@@ -1,0 +1,17 @@
+<textcomponents>
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>输入并验证 Ipv6 静态默认路由</b>]]></text>
+</component>
+<component id="ID_s2_txt01">
+  <text><![CDATA[<b>输入并验证 Ipv6 静态默认路由</b>]]></text> 
+  </component>
+<component id="ID_s3_txt01">
+  <text><![CDATA[<b>输入并验证 IPv6 静态路由</b>]]></text> 
+  </component>
+<component id="ID_s4_txt01">
+  <text><![CDATA[<b>输入并验证 IPv6 静态路由</b>]]></text> 
+  </component>
+  <component id="ID_s5_txt01">
+  <text><![CDATA[<b>检验远程网络连接</b>]]></text> 
+  </component>
+</textcomponents>

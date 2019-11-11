@@ -1,0 +1,24 @@
+﻿<textcomponents>
+    <!-- Slide 1 -->
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>连接终端设备</b>]]></text>
+    </component>
+      <component id="ID_ins_title">
+        <text>
+            <![CDATA[需要 IP 地址的设备]]>
+        </text>
+    </component>
+    <component id="ID_ins_body">
+        <text>
+            <![CDATA[<textformat blockindent='-16'><ul><LI>计算机（工作站、笔记本电脑、文件服务器、Web 服务器）</LI><LI>网络打印机</LI><LI>VoIP 电话</LI><LI>安全摄像头</LI><LI>智能手机</LI><LI>移动手持设备（如无线条码扫描仪）</LI></ul></textformat>]]>
+        </text>
+    </component>
+    <!-- End Slide 1 -->
+    <!-- Slide 2 -->
+    <component id='ID_s2_title'>
+        <text>
+            <![CDATA[<b>在主机上配置静态 IP 地址</b>]]></text>
+    </component>
+    <!-- End Slide 2 -->
+</textcomponents>

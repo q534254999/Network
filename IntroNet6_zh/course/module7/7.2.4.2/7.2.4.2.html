@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.4.2 全局单播地址的静态配置</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>全局单播地址的静态配置</h1>
+        <div>
+          <p>
+            <b>路由器配置</b>
+          </p>
+          <p>在 思科 IOS 中，大多数 IPv6 的配置和验证命令与 IPv4 的相似。在多数情况下，唯一区别是命令中使用 <b>ipv6 </b>取代 <b>ip</b>。 </p>
+          <p>用于为接口配置 IPv6 全局单播地址的命令是 <b>ipv6 address</b><i> ipv6-address/prefix-length</i>。</p>
+          <p>注意 <i>ipv6-address </i>和 <i>prefix-length</i><i></i>之间没有空格。</p>
+          <p>配置示例使用图 1 中的拓扑和下列 IPv6 子网： </p>
+          <p>
+            <ul>
+              <li>2001:0DB8:ACAD:0001:/64（<i>或</i> 2001:DB8:ACAD:1::/64）</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:0DB8:ACAD:0002:/64（<i>或</i> 2001:DB8:ACAD:2::/64）</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:0DB8:ACAD:0003:/64（<i>或</i> 2001:DB8:ACAD:3::/64）</li>
+            </ul>
+          </p>
+          <p>图 1 也列出在 R1 的 GigabitEthernet 0/0、GigabitEthernet 0/1 和 Serial 0/0/0 接口上配置 IPv6 全局单播地址所需的命令。</p>
+          <p>
+            <b>主机配置</b>
+          </p>
+          <p>在主机上手动配置 IPv6 地址与配置 IPv4 地址相似。</p>
+          <p>如图 2 所示，为 PC1 配置的默认网关地址为 2001:DB8:ACAD:1::1。该地址是同一网络中 R1 GigabitEthernet 接口的全局单播地址。或者，也可以配置默认网关地址以与 GigabitEthernet 接口的本地链路地址相匹配。任一配置都可以。</p>
+          <p>使用图 3 中的语法检查器配置 IPv6 全局单播地址。</p>
+          <p>与使用 IPv4 一样，在客户端配置静态地址并不能扩展至更大的环境。因此，多数 IPv6 网络的管理员会启用 IPv6 地址的动态分配。 </p>
+          <p>设备可以通过两种方法自动获取 IPv6 全局单播地址：</p>
+          <p>
+            <ul>
+              <li>无状态地址自动配置 (SLAAC)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>有状态 DHCPv6</li>
+            </ul>
+          </p>
+          <p>
+            <b>注意</b>：使用 DHCPv6 或 SLAAC 时，本地路由器的本地链路地址将自动指定为默认网关地址。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a topology with a router with two LANs and a connection to a WAN.  Each network is labeled with an IPv6 network address. A command window below the topology shows the configuration of the router interfaces with IPv6 addresses: 2001:db8:acad:1::1/64, 2001:db8:acad:2::1/64, and 2001:db8:acad:3::1/64. Figure 2 shows the Windows TCP/IPv6 Properties windows. Thg IPv6 address, subnet prefix length, and default gateway are configured. Figure 3 is a Syntax Checker in which the learner can practice configuring the router with IPv6 addressing.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

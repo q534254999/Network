@@ -1,0 +1,68 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>端口编址</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[收件人：you@example.com<br>发件人：me@example.com<br>主题：电子邮件]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[电子邮件]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[HTML 页面]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[互联网聊天]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[不同的应用程序]]></text>
+	</component><!--<component id="ID_txt06"><text><![CDATA[Applications]]></text>
+</component>--><component id="ID_txt07">
+		<text><![CDATA[协议]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[端口号]]></text>
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[POP3]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[HTTP]]></text>
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[IM]]></text>
+	</component>
+	<component id="ID_txt12">
+		<text><![CDATA[传输]]></text>
+	</component>
+	<component id="ID_txt15">
+		<text><![CDATA[应用程序<br>端口</br>]]></text>
+	</component>
+	<component id="ID_txt16">
+		<text><![CDATA[数据]]></text>
+	</component>
+	<component id="ID_txt13">
+		<text><![CDATA[应用程序<br>端口</br>]]></text>
+	</component>
+	<component id="ID_txt14">
+		<text><![CDATA[数据]]></text>
+	</component>
+	<component id="ID_txt17">
+		<text><![CDATA[应用程序<br>端口</br>]]></text>
+	</component>
+	<component id="ID_txt18">
+		<text><![CDATA[数据]]></text>
+	</component>
+	<component id="ID_txt19">
+		<text><![CDATA[110]]></text>
+	</component>
+	<component id="ID_txt20">
+		<text><![CDATA[80]]></text>
+	</component>
+	<component id="ID_txt21">
+		<text><![CDATA[531]]></text>
+	</component>
+	<component id="ID_txt22">
+		<text><![CDATA[因为每种应用程序都有唯一的端口号，所以可将不同应用程序的数据转发到正确的应用程序。]]></text>
+	</component>
+</textcomponents>

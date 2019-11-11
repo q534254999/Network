@@ -1,0 +1,10 @@
+﻿<textcomponents>
+	
+	<component id="ID_type">
+		<text><![CDATA[实验]]></text>
+	</component>
+	<component id="ID_title">
+		<text><![CDATA[配置 801.2Q 基于 TRUNK 的 VLAN 间路由]]></text>
+	</component>
+	
+</textcomponents>

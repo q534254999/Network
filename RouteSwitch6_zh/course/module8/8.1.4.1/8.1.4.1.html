@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.4.1 故障排除任务</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>故障排除任务</h1>
+        <div>
+          <p>DHCPv4 问题可能有多种起因，例如操作系统、网卡驱动程序或 DHCP 中继代理的软件缺陷等，但是最常见的原因是配置问题。如图 1 所示，由于有多处可能发生问题的地方，因此需要采取系统化的方法来排除故障。</p>
+          <p></p>
+          <p>
+            <b>故障排除任务 1：解决 IPv4 地址冲突</b>
+          </p>
+          <p></p>
+          <p>客户端虽然仍与网络连接，但它的 IPv4 地址租期可能已届满。如果客户端不续租，DHCPv4 服务器可以把该 IPv4 地址重新分配给另一客户端。当客户端重新启动时，它便需要一个 IPv4 地址。如果 DHCPv4 服务器没有快速做出响应，客户端将使用最近用过的 IPv4 地址。这样便会发生两台客户端使用同一 IPv4 地址的情况，造成冲突。</p>
+          <p></p>
+          <p>如图 2 所示，<b>show ip dhcp conflict </b>命令显示 DHCPv4 服务器记录的所有地址冲突。服务器使用 <b>ping</b> 命令检测客户端。客户端使用地址解析协议 (ARP) 检测冲突。如果检测到地址冲突，冲突地址将从池中删除，在管理员解决此冲突问题之前不予分配。 </p>
+          <p></p>
+          <p>此输出显示与 DHCP 服务器发生冲突的 IP 地址。它显示检测 DHCP 服务器提供的冲突 IP 地址的方法和时间。</p>
+          <p></p>
+          <p></p>
+          <p>
+            <b>故障排除任务 2：验证物理连接</b>
+          </p>
+          <p></p>
+          <p>首先，使用 <b>show interfaces </b><i>interface </i>命令确认充当客户端默认网关的路由器接口工作正常。如果接口状态不是开启，则该端口不传输流量，包括 DHCP 客户端请求。 </p>
+          <p></p>
+          <p>
+            <b>故障排除任务 3：使用静态 IP 地址测试连接</b>
+          </p>
+          <p></p>
+          <p>排除任何 DHCPv4 故障时，请在一台客户端工作站上配置静态 IPv4 地址信息来验证网络连接。如果工作站不能利用静态配置的 IPv4 地址访问网络资源，则问题的根源不是 DHCPv4。此时，需要排除网络连接故障。</p>
+          <p></p>
+          <p>
+            <b>故障排除任务 4：验证交换机端口配置</b>
+          </p>
+          <p></p>
+          <p>如果 DHCPv4 客户端在启动时无法从 DHCPv4 服务器获得 IPv4 地址，请手动强制客户端发送 DHCPv4 请求，以尝试从 DHCPv4 服务器获得 IPv4 地址。</p>
+          <p></p>
+          <p>
+            <b>注</b>：如果客户端与 DHCPv4 服务器之间有交换机，且客户端无法获取 DHCP 配置，则交换机端口配置问题可能是原因。这些原因可能包括来自中继与信道、STP 和 RSTP 的问题。PortFast 和边缘端口配置解决在思科交换机的初始安装中发生的最常见 DHCPv4 客户端问题。 </p>
+          <p></p>
+          <p>
+            <b>故障排除任务 5：在相同子网或 VLAN 上测试 DHCPv4 操作</b>
+          </p>
+          <p></p>
+          <p>辨别当客户端与 DHCPv4 服务器处于同一子网或 VLAN 时 DHCPv4 能否正常工作十分必要。当客户端位于同一子网或 VLAN 时，如果 DHCPv4 正常工作，那么问题可能出在 DHCP 中继代理上。如果在 DHCPv4 服务器所处的子网或 VLAN 上测试 DHCPv4 后，问题仍然存在，则真正的问题可能是在 DHCPv4 服务器。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了用于 DHCP 版本 4 故障排除的五个任务的表格。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

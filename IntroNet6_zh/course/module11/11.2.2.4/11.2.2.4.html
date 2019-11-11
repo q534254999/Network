@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.2.2.4 拒绝服务攻击</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.2.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>拒绝服务攻击</h1>
+        <div>
+          <p>拒绝服务 (DoS) 攻击是知名度最高的攻击，并且也是最难防范的攻击。即使在攻击者社区中，DoS 攻击也被认为是虽然简单但十分恶劣的方式，因为发起这种攻击非常容易。由于其实施简单、破坏力强大，安全管理员需要特别关注 DoS 攻击。</p>
+          <p>DoS 攻击的方式多种多样。不过其目的都是通过消耗系统资源使授权用户无法正常使用服务。</p>
+          <p>单击图中的按钮查看 DoS 和 DDoS 攻击的示例。</p>
+          <p>为了帮助防止 DoS 攻击，必须使操作系统和应用程序与最新的安全更新保持同步。例如，死亡之 ping 不再是一个威胁，因为对操作系统的更新已经修复了它利用的漏洞。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows different Denial of Service attacks and shows how the resource overload affects the data. Figure 2 shows an attacker sending a ping of death packet to a host.  The malformed packet overloads the host and renders the host unresponsive. Figure 3 demonstrates a syn flood attack.  In this figure the attacker is sending multiple syn packets to a web server.  The attacker does not complete the transaction and when a valid user sends a syn request, the server is unavailable. Figure 4 shows an attacker connected to many servers acting as zombies or agents for a denial of service attack.  The agents launch the attack on a single host and render it unavailable. Figure 5 shows an attacker connected to a router acting as a smurf amplifier.  The amplifier tells many zombie computers to send an ICMP reply to a single host.  This overwhelms the destination.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

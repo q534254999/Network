@@ -1,0 +1,1 @@
+图 1 显示了交换机 S1 连接到两个云，还显示了“show lldp neighbors”命令的输出，其中显示交换机 S1 有两个邻居：路由器 R1 和交换机 S2。路由器 R1 连接到本地 fastethernet 0/5 接口，交换机 S2 连接到本地 fastethernet 0/4 接口。图 2 显示路由器 R1 连接到交换机 S1，交换机 S1 又连接到另一台交换机 S2。“show lldp neighbors detail”命令的输出突出显示路由器 R1 的管理 IP 地址为 192.168.1.1。

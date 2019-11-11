@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.1.2 将标准 IPv4 ACL 应用于接口</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>将标准 IPv4 ACL 应用于接口</h1>
+        <div>
+          <p>配置标准 IPv4 ACL 之后，可以在接口配置模式下使用 <b>ip access-group</b> 命令将其关联到接口：</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-if)# </span>
+            <span class="cmd">
+              <b>ip access-group</b>
+            </span>
+            <span class="cmd"> { </span>
+            <span class="cmd">
+              <i>access-list-number</i>
+            </span>
+            <span class="cmd"> | </span>
+            <span class="cmd">
+              <i>access-list-name</i>
+            </span>
+            <span class="cmd"> } { </span>
+            <span class="cmd">
+              <b>in</b>
+            </span>
+            <span class="cmd"> | </span>
+            <span class="cmd">
+              <b>out</b>
+            </span>
+            <span class="cmd"> }</span>
+          </p>
+          <p></p>
+          <p>要从接口上删除 ACL，首先在接口上输入 <b>no ip access-group</b> 命令，然后输入全局命令 <b>no access-list</b> 删除整个 ACL。</p>
+          <p></p>
+          <p>图 1 列出了在路由器上配置和应用编号标准 ACL 的步骤和语法。</p>
+          <p></p>
+          <p>图 2 显示了一个用于允许单个网络的 ACL 示例。</p>
+          <p></p>
+          <p>此 ACL 仅允许来自源网络 192.168.10.0 的流量从接口 S0/0/0 转发。来自 192.168.10.0 之外网络的流量会被阻止。</p>
+          <p></p>
+          <p>第一条语句将 ACL 标识为访问列表 1。它将允许匹配选定参数的流量。在本例中，IPv4 地址和通配符掩码确定的源网络为 192.168.10.0 0.0.0.255。请回想一下有一条隐式拒绝全部网络的语句，等同于向 ACL 末尾添加 <b>access-list 1 deny 0.0.0.0 255.255.255.255</b> 或 <b>access-list deny any</b>。</p>
+          <p></p>
+          <p><b>ip access-group 1 out</b> 接口配置命令将 ACL 1 关联到 Serial 0/0/0 接口上，将其作为出站过滤器。</p>
+          <p></p>
+          <p>因此，ACL 1 仅允许来自 192.168.10.0/24 网络的主机通过路由器 R1。它拒绝任何其他网络，包括 192.168.11.0 网络</p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description"> 图 1 显示将 ACL 应用于接口。第一行创建一个 ACL。下一条命令进入将要放置 ACL 的接口。命令是 interface serial 0/0/0。进入接口配置模式之后，用于向接口应用 ACL 的命令是 ip access-group 1 out。图 2 显示的拓扑描述了图 1 中列出的步骤和命令。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

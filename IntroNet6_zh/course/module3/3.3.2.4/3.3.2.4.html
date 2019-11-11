@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.2.4 远程网络中的设备</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>远程网络中的设备</h1>
+        <div>
+          <p>但是当设备与远程网络中的另一设备通信时，网络层地址和数据链路层地址的作用是什么？在本示例中，客户端计算机 PC1 与另一 IP 网络中名为 Web 服务器的服务器进行通信。</p>
+          <p></p>
+          <p>
+            <b>网络层地址的作用</b>
+          </p>
+          <p></p>
+          <p>当数据包的发送方与接收方位于不同网络时，源 IP 地址和目的 IP 地址将代表位于不同网络的主机。这将由目的主机 IP 地址的网络部分来表明。</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>源 IP 地址</b> - 发送设备（客户端计算机 PC1）的 IP 地址：192.168.1.110。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>目的 IP 地址</b> - 接收设备，服务器（即 Web 服务器）的 IP 地址：172.16.1.99。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>注意图中源 IP 地址和目的 IP 地址的网络部分在不同的网络中。</p>
+          <p></p>
+          <p>
+            <b>数据链路层地址的作用</b>
+          </p>
+          <p></p>
+          <p>当 IP 数据包的发送方和接收方位于不同网络时，以太网数据链路帧不能直接发送到目的主机，因为在发送方的网络中无法直接到达该主机。必须将以太网帧发送到称为路由器或默认网关的另一设备。在我们的示例中，默认网关是 R1。R1 有一个以太网数据链路地址与 PC1 位于同一网络中。这使 PC1 能够直接到达路由器。 </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>源 MAC 地址</b> - 发送设备 PC1 的以太网 MAC 地址。PC1 以太网接口的 MAC 地址是 AA-AA-AA-AA-AA-AA。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>目的 MAC 地址</b> - 当接收设备（目的 IP 地址）与发送设备位于不同网络时，发送设备使用默认网关或路由器的以太网 MAC 地址。在本示例中，目的 MAC 地址是 R1 的以太网接口的 MAC 地址：11-11-11-11-11-11。这是连接到 PC1 所在网络的接口。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>现在可以将封装有 IP 数据包的以太网帧传送到 R1。R1 将数据包转发到目的地（Web 服务器）。这可能意味着 R1 会将数据包转发到另一个路由器，或者如果目的地所在的网络与 R1 相连的话直接转发到 Web 服务器。 </p>
+          <p></p>
+          <p>必须在本地网络的每台主机上配置默认网关的 IP 地址。所有指向远程网络中目的地的数据包都会发送到默认网关。以太网 MAC 地址和默认网关将在后面的章节中讨论。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the details of a packet header with source and destination IP address on separate networks.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

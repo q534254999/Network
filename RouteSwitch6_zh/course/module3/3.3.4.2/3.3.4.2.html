@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.4.2 直连条目</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>直连条目</h1>
+        <div>
+          <p>图 1 中使用 <b>show ipv6 route </b>命令显示 R1 的路由表。虽然命令输出在 IPv4 版本中的显示略有不同，但是仍包含相关路由信息。 </p>
+          <p></p>
+          <p>图 2 突出显示所连网络和直连接口的本地路由表条目。配置和激活该接口时会添加三个条目。 </p>
+          <p></p>
+          <p>如图 3 所示，直连路由条目显示以下信息：</p>
+          <p>
+            <ul>
+              <li>
+                <b>路由源</b>- 标识如何获知该路由。直连接口包含两个路由来源代码（C 确定直连网络，而 L 确定此网络为本地路由）。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>直连网络</b> - 直连网络的 IPv6 地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>管理距离</b>- 标识路由源的可信度。IPv6 使用与 IPv4 相同的距离。值为 0 表示最好最具可信度的来源。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>指标 </b>- 标识分配用来访问远程网络的值。值越低表示此路由越佳。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>传出接口 </b>- 标识在将数据包转发到目标网络时使用的退出接口。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>注</b>：串行链路配置有参考带宽以观察 EIGRP 指标如何选择最佳路由。参考带宽不是现代网络的真实表现。它只用于使链路速度可视化。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示 show i.p. Route 命令为路由器 R-1 生成的 IPv6 路由表。该表包括三个直连路由、三个接口 IP 地址和三个通过 EIGRP 获取的网络。图 2 突出显示三个直连网络和三个接口 IP 地址。图 3 列出其中一个条目并标识各个条目。该行输出 C 代表直连路由，2001:DB8:CAFE:A001::/64 代表网络地址，0/0 代表管理距离和指标。该行以 via Serial 0/0/0（代表传出接口）结束。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

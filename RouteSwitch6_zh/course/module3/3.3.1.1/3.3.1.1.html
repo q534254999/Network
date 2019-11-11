@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.1.1 路由表条目</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>路由表条目</h1>
+        <div>
+          <p>将图 1 所示的拓扑用作本部分的参考拓扑。在拓扑中注意：</p>
+          <p>
+            <ul>
+              <li>R1 是连接到互联网的边缘路由器；因此，它会将默认静态路由传播到 R2 和 R3。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>R1、R2 和 R3 包含另一个有类网络分隔开的不连续网络。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>R3 还引入 192.168.0.0/16 超网路由。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>图 2 显示了包含直连路由、静态路由和动态路由的 R1 的 IPv4 路由表。</p>
+          <p></p>
+          <p>
+            <b>注</b>：思科 IOS 中的路由表层次结构最初建立在有类路由方案基础上。虽然路由表同时包括有类和无类编址方式，但其整体结构仍遵循有类方案。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示通过 WAN 链路线性连接的三个路由器。R1 通过 WAN 串行链路连接到 R2，它在以太网接口上有一个 LAN。R2 通过 WAN 串行链路连接到 R1 和 R3，在以太网接口上有一个 LAN。R3 通过 WAN 串行链路连接到 R2，它在以太网接口上有两个 LAN。R1 具有通往互联网的 WAN 串行链路，路由器 R3 具有通往另一个云网络的 WAN 串行链路。图 2 显示来自命令 show i.p. route pipe begin Gateway 的输出。这显示路由器 R-1 的路由表，该路由器有三条直连路由，这些路由具有三个接口 IP 地址，该路由器通过 RIP 获知五条路由，一条候选默认路由以及配置的一个最后选用网关。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

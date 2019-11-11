@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.4.1 帧</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>帧</h1>
+        <div>
+          <p>数据链路层使用帧头和帧尾将数据包封装成帧，以便经本地介质传输数据包。帧是每个数据链路层协议的关键要素。虽然有许多描述数据链路层帧的不同数据链路层协议，但每种帧均有三个基本组成部分：</p>
+          <p>
+            <ul>
+              <li>帧头</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>数据</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>帧尾</li>
+            </ul>
+          </p>
+          <p>所有数据链路层协议均将第 3 层 PDU 封装于帧的数据字段内。但是，由于协议的不同，帧结构以及帧头和帧尾中包含的字段会存在差异。 </p>
+          <p>没有一种帧结构能满足通过所有类型介质的全部数据传输需求。根据环境的不同，帧中所需的控制信息量也相应变化，以匹配介质和逻辑拓扑的访问控制需求。 </p>
+          <p>如图所示，脆弱的环境需要更多的控制。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows two routers connected by a satellite network connection.  This figure demonstrates the need for more controls over a fragile environment.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

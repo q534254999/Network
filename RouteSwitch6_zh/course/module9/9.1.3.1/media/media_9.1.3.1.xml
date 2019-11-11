@@ -1,0 +1,12 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b></b>]]></text>
+</component>
+<component id="ID_title_txt">
+  <text><![CDATA[<b>NAT 的优势</b>]]></text> 
+  </component>
+<component id="ID_body_txt">
+  <text><![CDATA[<textformat blockindent='-14'><ul><li>保护合法注册的编址方案</li><li>增强了与公有网络连接的灵活性</li><li>为内部网络编址方案提供了一致性</li><li>提供网络安全</li></ul></textformat>]]></text>
+</component>
+
+</textcomponents>

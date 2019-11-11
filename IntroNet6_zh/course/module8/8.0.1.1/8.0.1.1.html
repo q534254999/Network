@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.0.1.1 第 8 章：对 IP 网络划分子网</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.0.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>第 8 章：对 IP 网络划分子网</h1>
+        <div>
+          <p>设计、实施和管理有效的 IP 编址规划能确保网络高效率地有效运行。随着连接到网络的主机数的增加，情况更是如此。理解 IP 地址的分层结构和如何修改该分层结构以更有效地满足路由要求，对于制定 IP 编址方案非常重要。</p>
+          <p>原始 IPv4 地址中有两级分层结构：网络和主机。这两级编址可以提供基础网络分组，便于将数据包路由到目的网络。路由器根据 IP 地址的网络部分转发数据包。一旦确定了网络位置，则地址的主机部分就可以标识目的设备。 </p>
+          <p>但是，随着网络不断扩大，许多组织将数百甚至数千台主机添加到其网络中，两级分层结构就显得不足。 </p>
+          <p>将网络细分，在网络分层结构中添加一个级别，实际上是创建三个级别：网络、子网和主机。分层结构中另一级别的引入在 IP 网络中创建了额外的子分组，使数据传输更快并且通过帮助最小化“本地”流量增加了过滤。 </p>
+          <p>本章将通过子网掩码的使用详细分析 IP 网络和子网地址的创建和分配。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is a standard graphic for the introduction and conclusion pages.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

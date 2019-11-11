@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.3.1.3 第 9 章：传输层</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.3.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>第 9 章：传输层</h1>
+        <div>
+          <p>传输层提供传输相关的服务：</p>
+          <p>
+            <ul>
+              <li>将从应用程序接收到的数据分成数据段</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>添加报头来标识和管理每个数据段</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>使用报头信息将数据段重组成应用程序数据</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>将组装后的数据传递到正确的应用程序</li>
+            </ul>
+          </p>
+          <p>UDP 与 TCP 是常见的传输层协议。</p>
+          <p>UDP 数据报与 TCP 数据段在数据的前面都有报头，包含源端口号和目的端口号。通过使用端口号，数据就可以准确发送到目的计算机的特定应用程序。</p>
+          <p>TCP 在目的主机没有确定可以接收数据时不会向网络发送数据。TCP 管理数据流，并会重新发送目的主机没有确认收到的数据。TCP 使用握手、计时器、确认消息和动态窗口机制实现可靠性。但是，当源和目的地之间的数据段报头增加和网络流量增多时，可靠性流程会增加网络开销。</p>
+          <p>如果应用程序数据需要在网络上快速传输，或者网络带宽无法支持源端和目的端系统之间交换的控制信息带来的开销，那么 UDP 无疑是开发人员作为传输层协议的优先选择。UDP 不具备 TCP 的可靠性功能。但是，这并不意味着这种通信方式不可靠。因为应用层协议和服务中有一些机制，可以根据应用程序的要求处理丢失或延迟的数据报。</p>
+          <p>应用程序开发人员会决定最适合应用程序要求的传输层协议。切记，其他层在数据网络通信过程中均有一定作用且会影响通信性能。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is a standard graphic for the introduction and conclusion pages.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

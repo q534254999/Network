@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.3.1 物理 LAN 拓扑</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>物理 LAN 拓扑</h1>
+        <div>
+          <p>物理拓扑定义了终端系统的物理互连方式。在共享介质 LAN 上，终端设备可以使用以下物理拓扑互连：</p>
+          <p>
+            <ul>
+              <li>
+                <b>星型</b> - 将终端设备连接到中心中间设备。早期的星型拓扑使用以太网集线器互连终端设备。但现在，星型拓扑使用以太网交换机。星型拓扑安装简易、扩展性好（易于添加和删除终端设备），而且故障排除容易。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>扩展星型</b> - 在扩展星型拓扑中，额外的以太网交换机与其他星型拓扑互连。扩展星型是一种混合拓扑。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>总线</b> - 所有终端系统都相互连接，并在两端以某种形式端接。终端设备互连时不需要基础设施设备（例如交换机）。因为总线拓扑价格低廉而且安装简易，所以传统的以太网络中会使用采用同轴电缆的总线拓扑。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>环</b> - 终端系统与其各自的邻居相连，形成一个环状。与总线拓扑不同，环拓扑不需要端接。环拓扑用于传统的光纤分布式数据接口 (FDDI) 和令牌环网络。 </li>
+            </ul>
+          </p>
+          <p>该图说明终端设备如何在 LAN 中互连。网络图形中经常用直线来代表包含一个简单星型和一个扩展星型的以太网 LAN。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows four physical topologies.  The star topology, the extended star topology, which looks like 2 start topologies connected, the bus topology, which is several computers connected to the same media and the ring topology, which is several computers connected to the same media that runs in a circle.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

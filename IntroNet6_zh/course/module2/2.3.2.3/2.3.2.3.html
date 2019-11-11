@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.2.3 交换机虚拟接口配置</title>
+    <!-- Activity / Other / Flash PnC -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>交换机虚拟接口配置</h1>
+        <div>
+          <p>要远程访问交换机，SVI 上必须配置 IP 地址和子网掩码。要在交换机上配置 SVI，请使用 <b>interface vlan 1</b> 全局配置命令。Vlan 1 并不是一个实际物理接口，而是一个虚拟接口。然后使用<b> ip address </b><i>ip-address subnet-mask </i> 接口配置命令分配 IPv4 地址。最后，使用 <b>no shutdown</b> 接口配置命令启用虚拟接口。 </p>
+          <p></p>
+          <p>在这些命令配置后，交换机即可使用所有 IPv4 要素进行网络通信。 </p>
+          <p></p>
+          <p>单击图中的“播放”，观看有关如何配置交换机虚拟接口的视频演示。</p>
+          <p></p>
+          <p>单击<a href="../../files/2.3.2.3%20Video%20-%20Configuring%20a%20Switch%20Virtual%20Interface.pdf" target="_blank">此处</a>可阅读本视频的脚本。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" src="media/index.html" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is a video with the title "Configuring a Switch Virtual Interface".</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

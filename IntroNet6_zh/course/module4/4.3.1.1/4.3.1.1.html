@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.3.1.1 数据链路层</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>数据链路层</h1>
+        <div>
+          <p>OSI 模型的数据链路层（第 2 层），如图 1 所示，负责以下事项：</p>
+          <p>
+            <ul>
+              <li>允许上层访问介质 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>接受第 3 层数据包，并将它们打包为帧</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>为物理网络准备网络数据</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>控制数据在介质中的放置和接收方式</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>在物理网络介质（例如 UTP 或光纤）中的节点之间交换帧</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>接收数据包并将其传输给上层协议</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>执行错误检测</li>
+            </ul>
+          </p>
+          <p>在第 2 层中连接到公共介质的网络设备称为节点。节点将生成并转发帧。如图 2 所示，OSI 数据链路层负责帧在物理网络介质中源节点和目的节点之间的交换。 </p>
+          <p>数据链路层有效分隔在数据包通过上层通信进程转发时出现的介质转换。数据链路层接收数据包并将数据包传输到上层协议，本例中为 IPv4 或 IPv6。该上层协议无需知道通信使用何种介质。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a user at a computer.  Below is the OSI model with layer two highlighted.  There is a line, representing a connection, going from the user to a router connected to the Internet. Figure 2 shows a PC adding layer 2 source and destination addresses to a frame.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

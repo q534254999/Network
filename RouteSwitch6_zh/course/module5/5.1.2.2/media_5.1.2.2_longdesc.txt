@@ -1,0 +1,1 @@
+图 1 显示一个表，其中列出交换机接口的基本配置命令。CLI 以特权 EXEC 模式启动，且第一条命令是，configure terminal。这将进入全局配置模式。下一命令是 interface fast Ethernet zero slash one，然后交换机提示符变为配置 - if，并且放在括号内。这会进入指定接口的配置模式。下一命令为 duplex full。此命令将双工选项设置为全双工。下一命令为 speed 100。此命令将接口上的速度设置为 100 Mb/秒。使用 copy running - config startup - config 命令将运行配置复制到启动配置文件中。图 2 是允许学生配置交换机端口接口的互动练习。

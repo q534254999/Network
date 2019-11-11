@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.2.2 配置动态 NAT</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置动态 NAT</h1>
+        <div>
+          <p>图 1 显示用于配置动态 NAT 的步骤和命令。  </p>
+          <p></p>
+          <p>
+            <b>步骤 1.</b>使用 <b>ip nat pool</b> 命令定义将会用于转换的地址池。该地址池通常是一组公有地址。这些地址是通过指明池中的起始 IPv4 地址和结束 IPv4 地址而定义的。<b>netmask<b> 或 </b>prefix-length</b> 关键字指示哪些地址位属于网络，哪些位属于该地址范围内的主机。 </p>
+          <p></p>
+          <p>
+            <b>步骤 2.</b>配置一个标准 ACL，用于仅标识（允许）那些将要进行转换的地址。范围太宽的 ACL 可能会导致意料之外的后果。请记住，每个 ACL 的末尾都有一条隐式的 <b>deny all</b> 语句。</p>
+          <p></p>
+          <p>
+            <b>步骤 3.</b>绑定 ACL 与地址池。<b>ip nat inside source list </b><i>access-list-number </i><b>pool </b><i>pool name </i>命令用于绑定 ACL 与地址池。路由器使用该配置来确定哪些设备（<b>列表</b>）接收哪些地址（<b>池</b>）。</p>
+          <p></p>
+          <p>
+            <b>步骤 4.</b>确定对于 NAT 哪些接口是内部接口；即任何与内部网络连接的接口。</p>
+          <p></p>
+          <p>
+            <b>步骤 5.</b>确定对于 NAT 哪些接口是外部接口；即任何与外部网络连接的接口。</p>
+          <p></p>
+          <p>图 2 显示了一个示例拓扑以及配置。当 192.168.0.0/16 网络上所有主机（包括 192.168.10.0 LAN 和 192.168.11.0 LAN）生成的流量进入 S0/0/0 而退出 S0/1/0 时，这一配置将允许对其进行转换。这些主机将转换为范围为 209.165.200.226 - 209.165.200.240 的地址池中的一个可用地址。</p>
+          <p></p>
+          <p>图 3 显示了用于进行语法检查器配置的拓扑。使用图 4 中的语法检查器在 R2 上配置动态 NAT。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示的表格列出了配置动态 NAT 的步骤。图 2 显示了 NAT 拓扑。在拓扑下方，配置 NAT 池的语法以及创建访问控制列表的语法定义可以转换哪些地址.图 3 显示了下一个互动练习中使用的拓扑。图 4 是互动练习，使学习者可以练习配置动态 NAT。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

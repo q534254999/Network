@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.1.1 VLAN 定义</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>VLAN 定义</h1>
+        <div>
+          <p>在交换网际网络内，通过 VLAN 可灵活地进行分段和组织。VLAN 能够将 LAN 中的设备分组。VLAN 中的一组设备通信时就如同连接到同一条电缆。VLAN 基于逻辑连接，而不是物理连接。 </p>
+          <p></p>
+          <p>VLAN 允许管理员根据功能、项目组或应用程序等因素划分网络，而不考虑用户或设备的物理位置。虽然 VLAN 中的设备与其他 VLAN 共享通用基础设施，但它们的运行与在自己的独立网络上运行一样。所有交换机端口可以同属一个 VLAN，并且单播、广播和组播数据包仅转发并泛洪至数据包源 VLAN 中的终端。每个 VLAN 都被视为一个独立的逻辑网络。发往不属于 VLAN 的电台的数据包必须通过支持路由的设备转发。 </p>
+          <p></p>
+          <p>交换网络上可存在多个 IP 子网，无需使用多个 VLAN。但是，设备将位于同一第 2 层广播域中。这意味着任何第 2 层广播（如 ARP 请求）将由交换网络上的所有设备接收，即使是并不用于接收广播的交换网络也会接收。 </p>
+          <p></p>
+          <p>VLAN 创建逻辑广播域，可以跨越多个物理 LAN 网段。VLAN 通过将大型广播域细分为较小网段来提高网络性能。如果一个 VLAN 中的设备发送广播以太网帧，该 VLAN 中的所有设备都会收到该帧，但是其他 VLAN 中的设备收不到。 </p>
+          <p></p>
+          <p>VLAN 根据特定用户分组实施访问和安全策略。每台交换机端口只能分配给一个 VLAN（连接到 IP 电话或另一台交换机的端口除外）。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示一栋三层的写字楼，每层都有工作站位于每个 WLAN 上。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

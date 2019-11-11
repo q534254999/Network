@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.1.1 介绍 DHCPv4</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>介绍 DHCPv4</h1>
+        <div>
+          <p>DHCPv4 动态分配 IPv4 地址和其他网络配置信息。由于网络节点大多都是由桌面客户端构成，因此对于网络管理员来说，DHCPv4 是一个非常有用和省时的工具。</p>
+          <p></p>
+          <p>专用 DHCPv4 服务器具有可扩展性，且相对容易管理。但对于小的分支办公室或 SOHO 族，不妨配置一台思科路由器来提供 DHCPv4 服务，而不必使用专用服务器。思科 IOS 软件支持可选的全功能 DHCPv4 服务器。</p>
+          <p></p>
+          <p>DHCPv4 服务器动态地从地址池中分配或出租 IPv4 地址，使用期限为服务器选择的一段有限时间，或者直到客户端不再需要该地址为止。 </p>
+          <p></p>
+          <p>客户端的租用期限由管理员确定。管理员在配置 DHCPv4 服务器时，可为其设定不同的租期届满时间。租用时间在任何地方通常都是 24 小时到一周或更长时间。租期届满后，客户端必须申请另一地址，但通常是把同一地址重新分配给客户端。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图显示已连接路由器和计算机的交换机。路由器配置为 DHCP 服务器，计算机配置为 DHCP 客户端。路由器可以向客户端提供 IP 地址和其他信息。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

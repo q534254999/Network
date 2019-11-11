@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.2.2 端口安全：操作</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>端口安全：操作</h1>
+        <div>
+          <p>
+            <b>端口安全</b>
+          </p>
+          <p></p>
+          <p>在部署交换机以用于生产之前，应保护所有交换机端口（接口）。一种保护端口的方法就是实施称为“端口安全”的功能。端口安全限制端口上所允许的有效 MAC 地址的数量。允许合法设备的 MAC 地址进行访问，而拒绝其他 MAC 地址。</p>
+          <p></p>
+          <p>可以配置端口安全以允许一个或多个 MAC 地址。如果将端口允许的 MAC 地址数量限制为一，则只有具有该特定 MAC 地址的设备才能成功连接到端口。</p>
+          <p></p>
+          <p>如果端口已配置为安全端口，并且 MAC 地址的数量已达到最大值，那么任何其他未知 MAC 地址的连接尝试都将产生安全违规。图 1 总结了这些要点。</p>
+          <p></p>
+          <p>
+            <b>安全 MAC 地址类型</b>
+          </p>
+          <p></p>
+          <p>配置端口安全有很多方法。安全地址的类型取决于配置，包括：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>静态安全 MAC 地址</b> - 使用 <b>switchport port-security mac-address </b><i>mac-address </i>接口配置模式命令在端口上手动配置的 MAC 地址。以此方法配置的 MAC 地址存储在地址表中，并添加到交换机的运行配置中。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>动态安全 MAC 地址 </b>- 通过动态获取并只存储在地址表中的 MAC 地址。以此方式配置的 MAC 地址在交换机重新启动时将被移除。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>粘性安全 MAC 地址 </b>- 可以通过动态获取或手动配置，然后存储到地址表中并添加到运行配置中的 MAC 地址。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>粘性安全 MAC 地址 </b>
+          </p>
+          <p>要将接口配置为可以将动态获取的 MAC 地址转换为粘滞安全 MAC 地址并将其添加到运行配置，您必须启用粘滞获取。使用<b> switchport port-security mac-address sticky </b>接口配置模式命令在接口上启用粘性获取。 </p>
+          <p></p>
+          <p>当输入此命令时，交换机会将所有动态获取的 MAC 地址（包括在启用粘性获取之前动态获取的 MAC 地址）转换为粘性安全 MAC 地址。所有粘性安全 MAC 地址都会添加到地址表和运行配置中。 </p>
+          <p></p>
+          <p>还可以手动定义粘性安全 MAC 地址。当使用<b> switchport port-security mac-address sticky </b><i>mac-address </i>接口配置模式命令配置粘性安全 MAC 地址时，会将所有指定地址添加到地址表和运行配置中。 </p>
+          <p></p>
+          <p>如果将粘性安全 MAC 地址保存到启动配置文件中，则当交换机重新启动或接口关闭时，接口无需重新获取地址。如果粘性安全地址未保存，则这些地址将会丢失。 </p>
+          <p></p>
+          <p>如果使用<b> no switchport port-security mac-address sticky </b>接口配置模式命令禁用粘性获取，则粘性安全 MAC 地址仍作为地址表的一部分，但会从运行配置中移除。 </p>
+          <p></p>
+          <p>图 2 显示了粘性安全 MAC 地址的特性。</p>
+          <p></p>
+          <p>
+            <b>注</b>：在使用 <b>switchport port-security </b>命令在接口上启用端口安全之前，端口安全功能无法正常工作。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示旁边有安全防护的以太网端口。这代表保护交换机端口的概念。图中列出有关交换机端口安全性的两个点。第一个用于指定端口上允许的单个 MAC 地址或一组有效 MAC 地址。第二个用于指定在检测到未授权 MAC 地址时应自动关闭端口。图 2 列出粘性安全交换机端口的特性。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.3.2.2 容错能力</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>容错能力</h1>
+        <div>
+          <p>人们期望的结果是，Internet 能始终为依赖于它的数百万用户提供服务。这就要求网络架构具有容错能力。容错网络能够降低故障影响，从而保证让受影响的设备数量降至最低。这种网络还能够在发生此类故障时快速恢复。这些网络依赖于消息的源地址与目的地址之间的多条路径。如果一条路径失败，消息可以立即通过不同的链路发送。有多条路径到达目的地被称为冗余。 </p>
+          <p></p>
+          <p>可靠网络提供冗余的一种方法就是实施分组交换网络。分组交换将流量分割成通过共享网络发送的数据包。单个消息，例如一份电子邮件或一段视频流，会分割成多个消息块，称为数据包。每个数据包拥有所需的消息源和目的地的编址信息。网络内的路由器基于当时的网络状况交换数据包。这意味着，单个消息中的所有数据包，可能会采用完全不同的路径到达目的地。在图中，当一条链路发生故障，路由器动态改变路由时，用户并没有发觉而且没有受到影响。</p>
+          <p></p>
+          <p>对于通常用于语音通信的电路交换网络而言，情况并非如此。电路交换网络是指在用户通信之前在源和目的地之间建立专用电路的网络。如果呼叫意外终止，则用户必须发起新连接。 </p>
+          <p></p>
+                  </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows redundant links between routers which allow for alternate paths providing fault tolerance.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

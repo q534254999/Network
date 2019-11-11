@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.2.2.3 负载均衡</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>负载均衡</h1>
+        <div>
+          <p>如果路由表中通往同一目标网络的两条或多条路径的度量相同，会发生什么情况？ </p>
+          <p></p>
+          <p>当路由器有两个或多个路径通往目的地的成本度量都相等时，路由器会同时使用两条路径转发数据包。这称为等价负载均衡。对于同一个目标网络，路由表将提供多个送出接口，每个出口对应一条等价路径。路由器将通过路由表中列出的这些送出接口转发数据包。 </p>
+          <p></p>
+          <p>如果配置正确，负载均衡能够提高网络的效率和性能。等价负载均衡可配置为使用动态路由协议和静态路由。 </p>
+          <p></p>
+          <p>
+            <b>注</b>：只有 EIGRP 支持非等价负载均衡。</p>
+          <p></p>
+          <p>图中的动画提供了有关等价负载均衡的示例。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">该图是路由器完成的等价负载均衡的动画。显示的网络具有四个连接成正方形图案的路由器，每个角上一个路由器，四个边中的每一个都是一个链路。与左上角的路由器相连的计算机将数据发送到连接到右下角的路由器上的计算机上。形成正方形可为数据提供两个路径，且在相等的负载均衡下，大约一半的数据将通过每个路径发送。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

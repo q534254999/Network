@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.1.1 设备名称</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>设备名称</h1>
+        <div>
+          <p>在配置网络设备时，第一步是配置唯一的设备名称或主机名。主机名显示在 CLI 提示符中，可用于设备之间的各种身份验证过程，并且会用于拓扑图。</p>
+          <p></p>
+          <p>如果没有明确配置设备名称，Cisco IOS 将使用出厂时指定的默认名称。Cisco IOS 交换机的默认名称是“Switch”。如果所有网络设备都采用其默认名称，则很难识别特定设备。例如，当使用 SSH 访问远程设备时，必须确认您已连接到正确的设备。</p>
+          <p></p>
+          <p>通过审慎地选择名称，就很容易记住、记录和鉴别网络设备。有关主机名配置的指南在图 1 中列出。</p>
+          <p></p>
+          <p>IOS 设备中所用的主机名会保留字母的大小写状态。因此，您可以象平常那样采用大写字母表示名称。这与大多数 Internet 命名方案不同，这些 Internet 命名方案不区分大小写字母。 </p>
+          <p></p>
+          <p>例如，在图 2 中，三台交换机，跨越三个不同的楼层，在网络中互连起来。所使用的命名约定中，考虑了每台设备的位置和用途。网络文档中应该说明这些名称是如何选出的，以便其他设备可按相应方法命名。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the guidelines for choosing a hostname. Hostnames should: start with a letter; contain no spaces; end with a letter or digit; use only letters, digits, and dashes; and be less than 64 characters in length. Figure 2 a technician connected to a switch that is part of a network of three switches. Each switch is named with a descriptive name so it is easy to know which device you are configuring.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+图 1 显示用于配置交换机以使用 SSH 进行远程管理的命令。该图以特权 EXEC 模式开始。第一个命令为 configure terminal。下一命令为 ip domain-name cisco.com，其中 cisco.com 是示例域名。下一命令为 crypto key generate rsa。交换机将询问模数的大小，默认值为 512。图中使用 1,024。下一命令是 username admin password ccna，其中 admin 和 ccna 都是示例。使用此命令可创建用户名和密码。下一步是将 VTY 线路配置为仅接受 SSH 连接。命令为 line vty0 15。下一命令为 transport input ssh。最后一个命令为 login local。图 2 是允许学生在交换机上配置 SSH 的互动练习。

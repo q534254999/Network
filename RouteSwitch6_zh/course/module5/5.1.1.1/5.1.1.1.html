@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.1.1 交换机启动顺序</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>交换机启动顺序</h1>
+        <div>
+          <p>在思科交换机开启之后，它将经过以下启动顺序：</p>
+          <p></p>
+          <p>1.首先，交换机将加载存储在 ROM 中的加电自检 (POST) 程序。POST 会检查 CPU 子系统。它会测试 CPU、DRAM 以及构成闪存文件系统的闪存设备部分。</p>
+          <p>2.接下来，交换机加载启动加载程序软件。启动加载程序是存储在 ROM 中并在 POST 成功完成后立即运行的小程序。</p>
+          <p>3.启动加载程序执行低级 CPU 初始化。启动加载程序初始化 CPU 寄存器，寄存器控制物理内存的映射位置、内存量以及内存速度。 </p>
+          <p>4.启动加载程序初始化系统主板上的闪存文件系统。 </p>
+          <p>5.最后，启动加载程序找到并将默认的 IOS 操作系统软件映像加载到内存，并将对交换机的控制权转交给 IOS。 </p>
+          <p></p>
+          <p>启动加载程序发现交换机的思科 IOS 映像如下：交换机尝试使用 BOOT 环境变量中的信息自动启动。如果没有设置此变量，则交换机尝试通过在闪存文件系统中执行递归的深度优先搜索来加载并执行第一个可执行文件。在目录的深度优先搜索中，在继续源目录中的搜索之前，对遇到的每个子目录都会进行完全搜索。在 Catalyst 2960 系列交换机上，映像文件通常包含在与映像文件同名（不包括 .bin 文件扩展名）的目录中。 </p>
+          <p></p>
+          <p>然后 IOS 操作系统使用在 startup-config 文件（存储在 NVRAM 中的启动配置）中找到的思科 IOS 命令初始化接口。</p>
+          <p></p>
+          <p>在图中，使用<b> boot system </b>全局配置模式命令设置 BOOT 环境变量。注意，IOS 位于一个不同的文件夹中，而且文件夹路径已指定。使用<b></b>命令 <b>show boot</b> 来查看当前 IOS 启动文件的设置。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示用于将 BOOT 环境变量设置为以全局配置模式开始的交换机上的 IOS 的命令。该命令为 boot system flash:/c2960-lanbase k9-mz.150-2.SE/c2960-lanbase k9-mz.150-2.SE.bin。存储位置是闪存，第一个斜杠后的名称是闪存中的一个文件夹，第二个斜杠后的名称是 IOS 文件名。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

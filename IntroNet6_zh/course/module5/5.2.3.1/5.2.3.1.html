@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.3.1 双工和速率设置</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>双工和速率设置</h1>
+        <div>
+          <p>交换机上的两个最基本设置为每个交换端口的带宽设置和双工设置。交换机端口和连接的设备（例如计算机或另一台交换机）的双工设置和带宽设置必须匹配。 </p>
+          <p>用于以太网通信的双工设置有两种：半双工和全双工。</p>
+          <p>
+            <ul>
+              <li>
+                <b>全双工</b> – 连接的两端均可同时收发信息。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>半双工</b> – 一次只能是连接的两端中其中一端发送信息。 </li>
+            </ul>
+          </p>
+          <p>自动协调是大多数以太网交换机和网卡的一项可选功能。自动协调使两台设备能够自动交换有关速率和双工功能的信息。交换机和连接的设备会选择最高性能模式。如果两台设备具有最高常见带宽的功能，则会选择全双工。</p>
+          <p>例如，在图 1 中，PC-A 的以太网网卡可在全双工或半双工模式下运行以及以 10 Mb/s 或 100 Mb/s 的速度运行。PC-A 连接到交换机 S1 的端口 1 上，可在全双工或半双工模式下运行以及以 10 Mb/s、100 Mb/s 或 1000 Mb/s (1 Gb/s) 的速度运行。如果两台设备使用自动协调，则工作模式为全双工和 100 Mb/s。</p>
+          <p>
+            <b>注意</b>：大多数思科交换机和以太网网卡默认采用自动协调功能，以提高速率和实现双工。千兆以太网端口仅以全双工模式运行。</p>
+          <p>
+            <b>双工不匹配</b>
+          </p>
+          <p>10/100 Mb/s 以太网链路的性能问题的最常见原因之一就是链路上的一个端口使用半双工而另一个端口使用全双工（如图 2 所示）。链路上的一个或两个端口重置后会出现这样的情况，自动协调过程并不会使链路上的两个端口的配置相同。当用户重新配置链路的一端而忘记重新配置另一端时，也会出现这样的情况。链路的两端均应都使用或都不使用自动协调。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a PC connected to a switch. The two devices have autonegotiated to operate at full duplex and at 100 Mb/s. Figure 2 shows a PC connected to a switch. The PC is operating at full duplex but the switch is operating at half-duplex and is getting collisions.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

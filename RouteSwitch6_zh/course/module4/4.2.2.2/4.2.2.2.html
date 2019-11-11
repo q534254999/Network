@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.2.2 广播域</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>广播域</h1>
+        <div>
+          <p>相连交换机的集合构成了一个广播域。只有网络层设备（例如路由器）可以划分第 2 层广播域。路由器用于分割广播域，但也将分割冲突域。</p>
+          <p></p>
+          <p>当设备发出第 2 层广播时，帧中的目标 MAC 地址将设置为二进制全 1。 </p>
+          <p></p>
+          <p>第 2 层广播域称为 MAC 广播域。MAC 广播域由 LAN 上接收来自主机的广播帧的所有设备组成。 </p>
+          <p></p>
+          <p>点击图中的“播放”观看前半部分动画演示中有关这一部分的动画。</p>
+          <p></p>
+          <p>当交换机收到广播帧时，它将从自己的每一个端口转发该帧（接收该广播帧的入口端口除外）。与交换机连接的每个设备都会收到广播帧的副本并对其进行处理。有时在最初定位其他设备和网络服务时广播是必要的，但是它们也会降低网络效率。网络带宽用于传播广播流量。网络上广播过多和流量负载较重可导致拥塞，这会使网络性能下降。</p>
+          <p></p>
+          <p>如动画的后半部分所示，当两台交换机连接时，广播域增加。在本示例中，广播帧将转发到交换机 S1 上所有的已连接端口。交换机 S1 与交换机 S2 相连。该帧随后会传播到与交换机 S2 相连的所有设备。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">该图是显示一台交换机从源接收广播消息，然后将广播转发到连接到交换机的所有其他成员的动画。交换机将转发广播，这会使所有设备都连接到同一个广播域中的交换机部分。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

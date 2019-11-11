@@ -1,0 +1,17 @@
+<textcomponents>
+<component id='ID_s1_title'>
+	<text><![CDATA[<b>配置 R1 直连 IPv6 接口</b>]]></text>
+</component>
+<component id='ID_s2_title'>
+	<text><![CDATA[<b>显示 IPv6 路由表</b>]]></text>
+</component>
+<component id='ID_s3_title'>
+	<text><![CDATA[<b>显示 IPv6 路由条目</b>]]></text>
+</component>
+<component id='ID_s4_title'>
+	<text><![CDATA[<b>测试到 R2 S0/0/0 的连接</b>]]></text>
+</component>
+<component id='ID_s5_title'>
+	<text><![CDATA[<b>测试到 R2 G0/0 的连接</b>]]></text>
+</component>
+</textcomponents>

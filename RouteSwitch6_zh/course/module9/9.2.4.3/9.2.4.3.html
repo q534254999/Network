@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.4.3 使用 IOS 配置端口转发</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>使用 IOS 配置端口转发</h1>
+        <div>
+          <p>使用 IOS 命令实施端口转发与用于配置静态 NAT 的命令类似。端口转发实质上是与已指定 TCP 或 UDP 端口号的静态 NAT 转换。</p>
+          <p></p>
+          <p>图 1 显示了在使用 IOS 配置端口转发时使用的静态 NAT 命令。 </p>
+          <p></p>
+          <p>图 2 显示了在路由器 R2 上使用 IOS 命令配置端口转发的示例。192.168.10.254 是在端口 80 上侦听的 Web 服务器的内部本地 IPv4 地址。用户将使用全局 IPv4 地址 209.165.200.225（全局唯一公有 IPv4 地址）访问此内部 Web 服务器。在本例中，这一地址为 R2 上 Serial 0/1/0 接口的地址。全局端口已配置为 8080。这是目标端口，与 209.165.200.225 的全局 IPv4 地址一起用于访问内部 Web 服务器。在 NAT 配置中注意以下命令参数：</p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <i>local-ip</i>
+                </span> = 192.168.10.254</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <i>local-port</i>
+                </span> = 80</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <i>global-ip</i>
+                </span> = 209.165.200.225</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <i>global-port</i>
+                </span> = 8080</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>如果没有使用公认端口号，则客户端必须在应用程序中指定端口号。</p>
+          <p></p>
+          <p>与 NAT 的其他类型类似，端口转发要求同时配置内部和外部 NAT 接口。</p>
+          <p></p>
+          <p>与静态 NAT 相似，<b>show ip nat translations</b> 命令可用于验证端口转发，如图 3 所示。 </p>
+          <p></p>
+          <p>在本示例中，当路由器接收内部全局 IPv4 地址为 209.165.200.225 并且 TCP 目标端口为 8080 的数据包时，路由器将使用目标 IPv4 地址和目标端口作为索引来执行 NAT 表查找。然后路由器将该地址转换为主机的内部本地地址 192.168.10.254 和目标端口 80。R2 随后将数据包转发到 Web 服务器。对于从 Web 服务器返回到客户端的数据包，此过程正好相反。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了使用思科 IOS 配置端口转发的语法。有一个表格描述了命令选项。图 2 显示了一个路由器，内部网络在左侧，外部网络在右侧。这可使用静态 NAT 实现。在图像下方列出了配置端口转发的命令。图 3 显示了一个 SOHO 路由器，内部网络在左侧，外部网络在右侧。在图像下方列出了“show ip nat translations”命令的输出。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

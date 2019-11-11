@@ -1,0 +1,17 @@
+<textcomponents>
+	<component id="ID_s1_title">
+	<text><![CDATA[<b>发现 S1</b>]]></text>
+	</component>
+
+	<component id="ID_s2_title">
+	<text><![CDATA[<b>显示详细的 CDP 信息</b>]]></text>
+	</component>
+
+	<component id="ID_s3_title">
+	<text><![CDATA[<b>发现 S2</b>]]></text>
+	</component>
+
+	<component id="ID_s4_title">
+	<text><![CDATA[<b>最后确定拓扑</b>]]></text>
+	</component>
+</textcomponents>

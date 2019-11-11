@@ -1,0 +1,92 @@
+﻿
+<textcomponents>
+
+<component id="ID_s1_title">
+	<text><![CDATA[<font size="17"><b>练习 - 比较 CDP 和 LLDP</b></font>]]></text>
+</component>
+
+<component id="MCTable_title">
+	<text><![CDATA[协议特征]]></text>
+</component>
+
+<component id='ID_instr_title'>
+	<text><![CDATA[说明]]></text>
+</component>
+
+<component id='ID_instr_body'>
+	<text><![CDATA[请选中每个特征旁的相应字段以显示答案。]]></text>
+</component><!-- buttons --><component id="ID_s1_CHECK">
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id="ID_s1_RESET">
+	<text><![CDATA[<b>重置</b>]]></text>
+</component><!--Number of rows in the table--><component id="txt_numrows">
+	<text><![CDATA[6]]></text>
+</component><!--Number of columns for the answers in the table. Do not count the question column--><component id="txt_numcols">
+	<text><![CDATA[2]]></text>
+</component><!--Answer column headers--><component id="txt_col1">
+	<text><![CDATA[<b>CDP</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>LLDP</b>]]></text>
+</component><!--Question text - blockindent code moves the text away from the left edge a bit--><!--Question text - If questions are numbered, use blockindent for hanging indents--><component id="txt_q1">
+	<text><![CDATA[用于收集关于共享同一数据链路的思科设备的信息]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[关于已发现的设备类型、设备名称及接口的数量和类型的通告共享信息]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[与网络设备一起使用，例如路由器、交换机和跨多个制造商设备的无线 LAN 接入点]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[在局域网上运行供应商中立的邻居发现协议]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[与介质和协议无关，在所有思科设备上运行]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[此协议将其身份和功能通告给其他设备，并从来自多个制造商的以物理方式连接的第 2 层设备获取信息]]></text>
+</component><!--Answers - Give the column number(s), column numbering start with 1 not 0--><!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] --><component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[2]]></text>
+</component><!-- Correct Feedback --><component id="ID_titleCorrect">
+	<text><![CDATA[<font size="17">正确</font>]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[您已成功将设备发现协议分类。]]></text>
+</component><!-- Incorrect Feedback --><component id="ID_titleIncorrect">
+	<text><![CDATA[<font size="17">不正确</font>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[您未成功将设备发现协议分类。 请单击“重置”重试。]]></text>
+</component>
+
+</textcomponents>

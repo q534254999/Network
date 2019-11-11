@@ -1,0 +1,246 @@
+<textcomponents>
+   
+<component id="ID_s1_title">
+    <text><![CDATA[<b>练习</b>]]></text>
+</component>
+
+<component id="MCTable_title">
+    <text><![CDATA[描述]]></text>
+</component>
+
+<component id='ID_instr_title'>
+    <text><![CDATA[说明]]></text>
+</component>
+
+<component id='ID_instr_body'>
+    <text><![CDATA[表中提供了交换机的帧转发方法的描述。在存储转发或直通字段中单击以将方法与其描述配对。]]></text>
+</component>
+
+
+<!-- buttons -->
+<component id="ID_s1_CHECK">
+    <text><![CDATA[检查]]></text>
+</component>
+
+<component id="ID_s1_RESET">
+    <text><![CDATA[重置]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+    <text><![CDATA[6]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+    <text><![CDATA[2]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+    <text><![CDATA[<b>存储转发</b>]]></text>
+</component>
+
+<component id="txt_col2">
+    <text><![CDATA[<b>直通</b>]]></text>
+</component>
+
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+
+<component id="txt_q1">
+    <text><![CDATA[1.<textformat blockindent='13'>缓冲帧直到交换机 接收完整的帧。</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+    <text><![CDATA[2.<textformat blockindent='13'>在将帧从交换机端口转发出去之前检测 帧中的错误 - 如果未收到完整帧， 则交换机将丢弃该帧。</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+    <text><![CDATA[3.<textformat blockindent='13'>交换机在将帧从其端口转发出去之前 不对该帧执行错误检测。</textformat>]]></text>
+</component>
+
+<component id="txt_q4">
+    <text><![CDATA[4.<textformat blockindent='13'>一个用于节省 网络 中带宽的好方法。</textformat>]]></text>
+</component>
+
+<component id="txt_q5">
+    <text><![CDATA[5.<textformat blockindent='13'>使用该帧转发方法，目的 网络接口卡 (NIC) 将丢弃 所有不完整帧。</textformat>]]></text>
+</component>
+
+<component id="txt_q6">
+    <text><![CDATA[6.<textformat blockindent='13'>但是更快的交换方式可能导致 更多的数据完整性错误， 因此可能会消耗更多带宽。</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+    <text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+    <text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a3">
+    <text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a4">
+    <text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a5">
+    <text><![CDATA[2s]]></text>
+</component>
+
+<component id="txt_a6">
+    <text><![CDATA[2]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+    <text><![CDATA[正确]]></text>
+</component>
+
+<component id="ID_correctText">
+    <text><![CDATA[您已成功将物理层描述与其术语名称相匹配。]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+    <text><![CDATA[不正确]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+    <text><![CDATA[您尚未成功将物理层描述与其术语名称相匹配。请单击“重置”重试。]]></text>
+</component>
+
+ 
+    <component id="ID_s2_inst">
+        <text>
+            <![CDATA[<b>练习</b>]]></text>
+    </component>
+    <component id='ID_s2_instr_title'>
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id='ID_s2_instr_body'>
+        <text>
+            <![CDATA[阅读基于所示拓扑的场景。通过将您的答案拖动到表中的相应字段来标识如何处理帧。不会用到所有答案。]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[该拓扑中使用的布线是____。]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[要查找 PC2 的位置，PC1 将发出一个____数据帧。]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt03">
+        <text>
+            <![CDATA[PC2 通过发送回一个____消息来回复 PC1。]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt04">
+        <text>
+            <![CDATA[如果 PC2 只收到帧的部分数据，它将____。]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt05">
+        <text>
+            <![CDATA[如果 PC2 在端口 3 上收到许多损坏的帧，S1 可能会改回____交换。]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt07">
+        <text>
+            <![CDATA[端口 1]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt08">
+        <text>
+            <![CDATA[端口 2]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt09">
+        <text>
+            <![CDATA[端口 3]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt10">
+        <text>
+            <![CDATA[<textformat blockindent="-18"><ul><li>S1 是一台全新的交换机。PC1 正在向 PC2 发送数据。</li><li>S1 使用全双工、MDIX 和快速转发作为帧交换方法。</li></ul></textformat>]]>
+        </text>
+    </component>
+  
+    <component id="ID_s2_drag01">
+        <text>
+            <![CDATA[<font color="#393536">直通电缆</font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag02">
+        <text>
+            <![CDATA[<font color="#393536">直通</font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag03">
+        <text>
+            <![CDATA[<font color="#393536">单播</font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag04">
+        <text>
+            <![CDATA[<font color="#393536">存储转发</font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag05">
+        <text>
+            <![CDATA[<font color="#393536">广播</font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag06">
+        <text>
+            <![CDATA[<font color="#393536">丢弃该帧</font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag007">
+        <text>
+            <![CDATA[<font color="#393536">回复 PC1</font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_CORRECT_TITLE">
+        <text>
+            <![CDATA[正确]]>
+        </text>
+    </component>
+    <component id="ID_s2_CORRECT_BODY">
+        <text>
+            <![CDATA[您已成功地将网络访问、帧-场景进程与其描述配对。]]>
+        </text>
+    </component>
+    <component id="ID_s2_INCORRECT_TITLE">
+        <text>
+            <![CDATA[不正确]]>
+        </text>
+    </component>
+    <component id="ID_s2_INCORRECT_BODY">
+        <text>
+            <![CDATA[您未成功将网络访问、帧-场景进程与其描述配对。请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id="ID_s2_CHECK">
+        <text>
+            <![CDATA[检查]]>
+        </text>
+    </component>
+    <component id="ID_s2_RESET">
+        <text>
+            <![CDATA[重置]]>
+        </text>
+    </component>
+</textcomponents>

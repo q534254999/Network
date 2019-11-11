@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.1.2 协议数据单元</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>协议数据单元</h1>
+        <div>
+          <p>在通过网络介质传输应用程序数据的过程中，随着数据沿协议栈向下传递，每层都要添加各种协议信息。此过程称为封装。 </p>
+          <p></p>
+          <p>一段数据在任意协议层的表示形式称为协议数据单元 (PDU)。在封装过程中，后续的每一层都根据使用的协议封装其从上一层接收的 PDU。在该过程的每个阶段，PDU 都以不同的名称来反映其新功能。尽管目前对 PDU 的命名没有通用约定，但本课程中根据 TCP/IP 协议簇的协议来命名 PDU，如图所示。单击图中的每个 PDU 以了解更多信息。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the data encapsulation process as a message is passed down the protocol stack.  The example is an e-mail and it starts as data at layer seven.  The PDU is a segment when it acquires the transport layer header, then it becomes a packet when it receives the network header.  When the frame header and trailer are added the PDU becomes a frame.  As it moves to transmission across the medium it is in bits.  </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

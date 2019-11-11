@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.2.1 路由器数据包转发决策</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>路由器数据包转发决策</h1>
+        <div>
+          <p>当一台主机发送数据包到另一台主机时，它将使用路由表来确定将数据包发送到哪里。如果目的主机位于远程网络，则数据包会转发到默认网关。 </p>
+          <p>数据包到达默认网关（通常是路由器）时会发生什么情况？路由器会查看路由表来确定将数据包转发到哪里。</p>
+          <p>路由器的路由表存储下列信息：</p>
+          <p>
+            <ul>
+              <li>
+                <b>直连路由 -</b> 这些路由来自于活动的路由器接口。当接口配置了 IP 地址并激活时，路由器会添加直连路由。路由器的每个接口均连接到一个不同的网段。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>远程路由 -</b> 这些路由来自连接到其他路由器的远程网络。通向这些网络的路由可以由网络管理员在本地路由器上手动配置，也可动态配置，后者的方法是启用本地路由器，使其与其他使用动态路由协议的路由器交换信息。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>默认路由 - </b>与主机一样，如果路由表中没有通向目标网络的其他路由，路由器也会将默认路由作为最后选用网关。    </li>
+            </ul>
+          </p>
+          <p>该图用于确定路由器 R1 的直连网络和远程网络。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows two routers connected by a serial connection.  Each router has two LANs attached.  This figure shows that a router has its own routing table to consult should a packet be destined for a remote network.  The routing table consists of directly connected networks and remote networks.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

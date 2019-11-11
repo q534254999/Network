@@ -1,0 +1,28 @@
+<textcomponents>
+	<component id="ID_title"><text><![CDATA[<b>删除 MAC 到 IP 地址的映射</b>]]></text></component>
+	<component id="ID_txt01"><text><![CDATA[192.168.1.110<br/>MAC 00-0A]]></text></component>
+	<component id="ID_txt02"><text><![CDATA[192.168.1.120<br/>MAC 00-0B]]></text></component>
+	<component id="ID_txt03"><text><![CDATA[192.168.1.50<br/>MAC 00-0C]]></text></component>
+	<component id="ID_txt04"><text><![CDATA[192.168.1.1<br/>MAC 00-0D]]></text></component>
+	<component id="ID_bubble01"><text><![CDATA[如果我两分钟内不使用 ARP 条目，我将删除该 ARP 条目。]]></text></component>
+	<component id="ID_table">
+		<text><![CDATA[<table header="none" bordercolor="#FFFFFF" borderwidth="2" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4" class="mtable">
+	<tr class="mtable_title">
+		<td colspan="2" bgcolor="#FFFFFF"><font size="13">PC A 的 ARP 缓存</font></td>
+	</tr>
+	<tr class="mtable_top">
+		<td colspan="2" bgcolor="#4E4C4D"><font size="1" color="#4E4C4D">.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" class="msubtitle" width="130"><font color="#FFFFFF">IPv4 地址</font></td>
+		<td bgcolor="#666263" class="msubtitle" width="130"><font color="#FFFFFF">MAC 地址</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top"><font size="11">192.168.1.1</font></td>
+		<td bgcolor="#E9E7E8" valign="top"><font size="11">00-0D</font></td>
+	</tr>
+</table>
+]]></text></component>
+	<component id="ID_txt06"><text><![CDATA[网络]]></text></component>
+	<component id="ID_txt07"><text><![CDATA[缩短 MAC 地址是为了进行演示。]]></text></component>
+</textcomponents>

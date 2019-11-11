@@ -1,0 +1,25 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+.colorr{
+color:#f68026 !important;
+}
+
+.command { font-family:"Courier New";}
+pre{
+	/*letter-spacing:-0.5px;*/
+}
+
+#ID_SC pre{
+	letter-spacing:-0.3px !important;
+}
+#staticTxt{padding-left:4px !important;}
+#staticTxt{letter-spacing:-0.7px !important;}
+#staticTxt2{padding-left:4px !important;}
+
+#ID_s3_txt01{
+	color: #ffffff !important;
+}

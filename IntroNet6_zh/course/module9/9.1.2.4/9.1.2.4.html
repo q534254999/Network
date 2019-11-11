@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.2.4 UDP 报头</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>UDP 报头</h1>
+        <div>
+          <p>UDP 是无状态协议，这意味着客户端和服务器都不会跟踪通信会话的状态。如果使用 UDP 作为传输协议时要求可靠性，必须由应用程序来处理可靠性。</p>
+          <p>通过网络传输实时视频和语音的一个最重要的要求是数据持续高速传输。实时视频和语音应用程序能够容忍具有极小或没有明显影响的一些数据丢失，非常适合于 UDP。。 </p>
+          <p>如图所示，UDP 中的通信数据段称为数据报。这些数据报通过传输层协议尽力传送。UDP 具有 8 字节的低开销</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows fields of the UPD header including source and destination port numbers, length, and checksum.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

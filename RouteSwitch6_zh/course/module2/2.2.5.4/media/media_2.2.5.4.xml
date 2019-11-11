@@ -1,0 +1,12 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>配置通往 R3 的 IPv6 浮动静态路由</b>]]></text>
+</component>
+<component id="ID_s2_title">
+  <text><![CDATA[<b>验证是否已配置 IPv6 静态路由</b>]]></text> 
+  </component>
+<component id="ID_s3_title">
+  <text><![CDATA[<b>验证 IPv6 浮动静态路由是否不在路由表中</b>]]></text> 
+  </component>
+
+</textcomponents>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.1.2 获知 MAC 地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>获知 MAC 地址</h1>
+        <div>
+          <p>交换机通过检查端口传入帧的源 MAC 地址来动态构建 MAC 地址表。交换机通过匹配帧中的目的 MAC 地址与 MAC 地址表中的条目来转发帧。 </p>
+          <p>对进入交换机的每个以太网帧执行下列流程。</p>
+          <p>
+            <b>学习 – 检查源 MAC 地址</b>
+          </p>
+          <p>检查进入交换机的每个帧的新信息进行学习。它是通过检查帧的源 MAC 地址和帧进入交换机的端口号来完成这一步的。</p>
+          <p>
+            <ul>
+              <li>如果源 MAC 地址不存在，会将其和传入端口号一并添加到表中。如图 1 所示，PC-A 正在向 PC-D 发送以太网帧。该交换机将 PC-A 的 MAC 地址添加到表中。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>如果源 MAC 地址已存在于表中，则交换机会更新该条目的刷新计时器。默认情况下，大多数以太网交换机将条目在表中保留 5 分钟。 </li>
+            </ul>
+          </p>
+          <p>
+            <b>注意</b>：如果源 MAC 地址已存在于表中，但是在不同的端口上，交换机会将该地址视为一个新的条目。使用相同的 MAC 地址和最新的端口号来替换该条目。 </p>
+          <p>
+            <b>转发 – 检查目的 MAC 地址</b>
+          </p>
+          <p>接下来，如果目的 MAC 地址为单播地址，该交换机会看帧中的目的 MAC 地址与 MAC 地址表中的条目是否匹配。 </p>
+          <p>
+            <ul>
+              <li>如果表中存在该地址，交换机会从指定端口转发帧。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>如果表中不存在该地址，交换机会从除传入端口外的所有端口转发帧。我们将这称为未知单播。如图 2 所示，交换机的 PC-D 表中没有目的 MAC 地址，因此交换机会从除端口 1 外的所有端口转发帧。 </li>
+            </ul>
+          </p>
+          <p>
+            <b>注意</b>：如果目的 MAC 地址为广播或组播，该帧将泛洪到除传入端口外的所有端口。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a four port switch with four PCs attached one to each port. The PCs are named A, B, C, and D. The abbreviated MAC addresses are 00-0A, 00-0B, 00-0C, and 00-0D. The switch MAC address table is also shown. A is sending a frame to D. The switch enters the source MAC address for A in the MAC address table. In Figure 2, the switch doesn’t have the MAC address for D in the MAC address table, so it forwards the frame from A out all other ports (2, 3, and 4).</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.2.2 二进制八位数边界上的子网划分</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>二进制八位数边界上的子网划分</h1>
+        <div>
+          <p>为了理解如何在二进制八位数边界上进行子网划分，请考虑以下示例。假设企业选择了私有地址 10.0.0.0/8 作为其内部网络地址。该网络地址可以在一个广播域中连接 16,777,214 个主机。很明显，这并不理想。 </p>
+          <p>企业可以进一步在二进制八位数边界 /16 处对 10.0.0.0/8 地址进行子网划分，如图 1 所示。这能让企业定义多达 256 个子网（例如，10.0.0.0/16 – 10.255.0.0/16），每个子网可以连接 65,534 个主机。注意，前两个二进制八位数标识地址的网络部分，而后两个二进制八位数用于标识主机 IP 地址。</p>
+          <p>另外，企业也可以选择在 /24 二进制八位数边界处划分子网，如图 2 所示。这将让企业能定义 65,536 个子网，每个子网能连接 254 个主机。/24 边界在子网划分中使用非常广泛，因为它在这个二进制八位数边界处可以容纳足够多的主机，并且子网划分也很方便。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a table with all the possible subnets for 10.x.0.0/16. The first column is the subnet address. Although there are 256 possibilities, only the first seven and the last subnet are shown. The second column shows the host range for each subnet. Each subnet can support 65,534 hosts. The third column shows the broadcast address for each subnet. Figure 2 shows a table with all the possible subnets for 10.x.x.0/24. Although there are 65,536 possibilities, only nine are shown. The second column shows the host range for each subnet. Each subnet can support 254 hosts. The third column shows the broadcast address for each subnet.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

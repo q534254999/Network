@@ -1,0 +1,50 @@
+<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>将路由器配置为 DHCP 客户端</b>]]></text>
+	</component>
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>将路由器配置为 DHCP 客户端</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[<b>SOHO</b>]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[<b>ISP</b>]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+	</component>
+	<component id="ID_sc_reset">
+		<text><![CDATA[重置]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[看答案]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[全部显示]]></text>
+	</component>
+	<component id="ID_SC2" fontSize="12" fontFace="_typewriter" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b>***</b><font face="_sans" color="#FFFFFF">***您必须输入准确而完整的命令。 包含名称或密码的命令区分大小写。</font><b>***</b>]]></feedback>
+		<existingcommands><![CDATA[<font  face="_sans"><b>配置连接到 ISP 的接口从 DHCP 服务器获取地址。</b></font>]]></existingcommands>
+		<command prompt="SOHO(config)#">
+			<correctresponse><![CDATA[interface g0/1]]></correctresponse>
+		</command>
+		<command prompt="SOHO(config-if)#">
+			<correctresponse><![CDATA[ip address dhcp]]></correctresponse>
+		</command>
+		<command prompt="SOHO(config-if)#">
+			<correctresponse><![CDATA[no shutdown]]></correctresponse>
+			<deviceresponse><![CDATA[<pre>SOHO(config-if)#<br/>*Jan 31 17:31:11.507: %DHCP-6-ADDRESS_ASSIGN: Interface <br/>GigabitEthernet0/1 assigned DHCP address 209.165.201.12, mask <br/>255.255.255.224, hostname SOHO <br></pre>]]></deviceresponse>
+			<instruction><![CDATA[<font  face="_sans"><b>完全退出配置模式并检验接口 g0/1 的 IP 信息。</b></font>]]></instruction>
+		</command>
+		<command prompt="SOHO(config-if)#">
+			<correctresponse><![CDATA[end]]></correctresponse>
+		</command>
+		<command prompt="SOHO#">
+			<correctresponse><![CDATA[show ip interface g0/1]]></correctresponse>
+			<deviceresponse><![CDATA[<pre>GigabitEthernet0/1 is up, line protocol is up <br>  Internet address is 209.165.201.12/27 <br>  Broadcast address is 255.255.255.255 <br>  Address determined by DHCP <br> &lt;省略部分输出&gt;</pre>]]></deviceresponse>
+			<instruction><![CDATA[<font  face="_sans"><b>您已成功将路由器配置为 DHCP 客户端。</b></font>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+</textcomponents>

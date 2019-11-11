@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.1.1 ip route 命令</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>ip route 命令</h1>
+        <div>
+          <p>静态路由使用 <b>ip route </b>全局配置命令进行配置。该命令的基本语法如图所示。</p>
+          <p></p>
+          <p>配置静态路由需要使用以下参数：</p>
+          <p>
+            <ul>
+              <li>
+                <i>network-address</i>
+                <b></b>- 要加入路由表的远程网络的目标网络地址，通常称为“前缀”。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <i>subnet-mask</i>
+                <b></b>- 要加入路由表的远程网络的子网掩码或仅掩码。可对此子网掩码进行修改，以汇总一组网络。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>此外，还必须使用以下一个或两个参数：</p>
+          <p>
+            <ul>
+              <li>
+                <i>ip-address</i>
+                <b></b>- 相连路由器将数据包转发到远程目标网络所用的 IP 地址。一般称为“下一跳”。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <i>exit-intf</i>
+                <b></b>- 用于将数据包转发到下一跳的送出接口。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p></p>
+          <p> <i>distance</i> 参数用于通过设置比动态获取的路由更大的管理距离来创建浮动静态路由。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示配置静态路由的语法。语法为“i p route”，后跟目标网络地址，随后是目标网络掩码，最后是退出接口或下一跳 IP 地址。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.1.2 HTTP 和 HTTPS</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>HTTP 和 HTTPS</h1>
+        <div>
+          <p>HTTP 是一种请求/响应协议。当客户端，尤其是 Web 浏览器，发送请求到 Web 服务器时，HTTP 将指定用于该通信的消息类型。常用的三种消息类型包括 GET、POST 和 PUT（如图所示）。</p>
+          <p>
+            <ul>
+              <li>
+                <b>GET</b> - 一种客户端数据请求消息。客户端（Web 浏览器）向 Web 服务器发送 GET 消息以请求 HTML 页面。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>POST</b> - 上传数据文件到 Web 服务器，例如表单数据。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>PUT</b> - 用于向 Web 服务器上传资源或内容，例如图像。 </li>
+            </ul>
+          </p>
+          <p>尽管 HTTP 灵活性相当高，但它不是一个安全协议。由于请求消息以明文形式向服务器发送信息，它非常容易被拦截和解读。服务器的响应（尤其是 HTML 页面）也不加密。 </p>
+          <p>为了在 Internet 中进行安全通信，人们使用 HTTP 安全（HTTPS）协议。HTTPS 借助身份验证和加密来保护数据，使数据得以安全地在客户端与服务器之间传输。HTTPS 使用的客户端请求服务器响应过程与 HTTP 相同，但在数据流通过网络传输以前会使用安全套接字层 (SSL) 加密。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows an HTTP GET request between a client and server.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

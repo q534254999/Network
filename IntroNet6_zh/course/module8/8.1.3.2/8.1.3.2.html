@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.3.2 使用 /16 网络创建 100 个子网</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>使用 /16 网络创建 100 个子网</h1>
+        <div>
+          <p>假设一家大型企业需要至少 100 个子网，并且已选择私有地址 172.16.0.0/16 作为其内部网络地址。 </p>
+          <p>当从 /16 地址借用位时，从借用第三个二进制八位数开始，并遵循从左向右的顺序。一次借用一个位直至所需的位数能创建 100 个子网。 </p>
+          <p>图 1 显示了当从第三个二进制八位数和第四个二进制八位数借用位时能创建的子网数。注意，现在可以借用的主机位多达 14 个。</p>
+          <p>要满足企业的要求，需要借用 7 位（即 2^7 = 128 个子网），如图 2 所示。 </p>
+          <p>回想一下，子网掩码必须作出更改以反映借用的位。在本示例中，当借用 7 个位时，掩码将扩展 7 个位到第三个二进制八位数。该掩码以十进制表示为 255.255.254.0，或者 /23 前缀，因为，第三个二进制八位数以二进制表示为 11111110，第四个二进制八位数以二进制表示为 00000000。 </p>
+          <p>图 3 显示生成的子网范围从 172.16.0.0 /23 到 172.16.254.0 /23。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the formula for calculating the number of subnets based on the bits borrowed from 1 bit borrowed all the way to 14 bits borrowed. For example borrowing 7 bits gets you 2 to the power of 7 or 128 subnets. Figure 2 shows the network address 172.16.0.0/23. The last two octets are in binary. The subnet mask is shown below the network address with the seven bits borrowed now as one bits. Figure 3 shows the first three subnets and the last subnet created by borrowing 7 bits. The last two octets are shown in binary.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.5.4 卸载许可证</title>
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.5.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>卸载许可证</h1>
+        <div>
+          <p>要清除思科 1900 系列、2900 系列和 3900 系列路由器上已激活的永久许可证，请执行以下步骤：</p>
+          <p></p>
+          <p>
+            <b>步骤 1.禁用技术包。</b>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>使用以下命令禁用已激活的许可证：</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config)# </span>
+            <span class="cmd">
+              <b>license boot module</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>模块名称</i>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <b>技术包</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>包名称 </i>
+            </span>
+            <span class="cmd">
+              <b>disable</b>
+            </span>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>使用 <b>reload</b> 命令重新加载路由器。需要重新加载才能禁用软件包。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>步骤 2.清除许可证。</b>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>清除许可证存储中的技术包许可证。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <span class="cmd">Router# </span>
+            <span class="cmd">
+              <b>license clear</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>feature-name</i>
+            </span>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>清除用于禁用已激活许可证的 <b>license boot module</b> 命令：</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config)# </span>
+            <span class="cmd">
+              <b>no license boot module </b>
+            </span>
+            <span class="cmd">
+              <i>模块名称</i>
+            </span>
+            <span class="cmd">
+              <b> 技术包 </b>
+            </span>
+            <span class="cmd">
+              <i>包名称</i>
+            </span>
+            <span class="cmd">
+              <b> disable</b>
+            </span>
+          </p>
+          <p></p>
+          <p>
+            <b>注</b>：有些许可证不能清除，例如内置许可证。只能移除通过使用 <b>license install</b> 命令添加的许可证。不能删除评估许可证。</p>
+          <p></p>
+          <p>图 1 显示清除已激活许可证的示例。 </p>
+          <p></p>
+          <p>使用图 2 中的语法检查器卸载路由器 R2 上的安全许可证。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了禁用技术包以及清除许可证的语法。图 2 是互动练习，让学生练习禁用技术包以及清除许可证。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

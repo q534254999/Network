@@ -1,0 +1,32 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>介质无关性流程</b>]]></text>
+	</component>
+	<component id="ID_bodyTxt01">
+		<text><![CDATA[可以通过不同介质传送 IP 数据包。]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[IP 数据包]]></text>
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[铜缆以太网]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[铜缆串行介质]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[光纤]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[IP 数据包]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[铜缆以太网]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[无线]]></text>
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[IP 数据包]]></text>
+	</component>
+</textcomponents>

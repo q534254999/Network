@@ -1,0 +1,1 @@
+图 1 是显示在使用 VLAN 时诊断连接问题所涉及步骤的流程图。图 2 显示交换机 1 上“show mac address-table interface fastEthernet 0/1”命令的输出和交换机 1 上“show interfaces fastEthernet 0/1 switchport”命令的输出。

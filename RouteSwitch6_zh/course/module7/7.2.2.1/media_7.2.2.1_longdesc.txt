@@ -1,0 +1,1 @@
+图中显示了使用文本编辑器编辑编号 ACL 的过程。第一个命令创建一个编号为 1 的编号 ACL。此 ACL 可以使用命令 show running-config | include access-list 1 查看。此 ACL 可以复制并粘贴到文本编辑器中并进行编辑。使用关键字 no 从接口上移除当前 ACL。然后，将新 ACL 复制粘贴到路由器上，并且可以使用命令 show running-config | include access-list 1 验证此新 ACL。

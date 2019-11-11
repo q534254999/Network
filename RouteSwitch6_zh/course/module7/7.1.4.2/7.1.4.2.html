@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.4.2 标准 ACL 放置</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>标准 ACL 放置</h1>
+        <div>
+          <p>图中的拓扑用于演示可以如何放置标准 ACL。管理员想要防止 192.168.10.0/24 网络中产生的流量到达 192.168.30.0/24 网络。 </p>
+          <p></p>
+          <p></p>
+          <p>根据将标准 ACL 置于靠近目标位置的基本放置原则，右图显示了 R3 上可能应用标准 ACL 的接口： </p>
+          <p>
+            <ul>
+              <li>
+                <b>R3 S0/0/1 接口</b> - 应用标准 ACL 以阻止来自 192.168.10.0/24 的流量进入 S0/0/1 接口，将会阻止该流量到达 192.168.30.0/24 以及通过 R3 可到达的所有其他网络。这将包括 192.168.31.0/24 网络。由于 ACL 的意图是只过滤指向 192.168.30.0/24 的流量，因此不应将标准 ACL 应用到此接口。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>R3 G0/0 接口</b> - 将标准 ACL 应用于从 G0/0 接口流出的流量，可以过滤从 192.168.10.0/24 发送到 192.168.30.0/24 的数据包。这不会影响通过 R3 可到达的其他网络。来自 192.168.10.0/24 的数据包仍可到达 192.168.31.0/24。</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中以三角形的形式显示了一个由三台路由器组成的网络。R-2 位于此三角形顶部，与 R-1 和 R-3 有一条串行广域网连接。R1 与 R3 之间没有直接连接。路由器 R-1 和 R-3 分别有两条用于本地网段的活动千兆接口。其目标是阻止来自 R-1 的所有流量到达 R-3。ACL 放置在路由器 R-3 退出接口的出站方向上。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

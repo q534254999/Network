@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.2.4 验证 ACL</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证 ACL</h1>
+        <div>
+          <p>如图 1 所示，<b>show ip interface</b> 命令用于验证接口上的 ACL。此命令的输出包括访问列表的编号或名称以及应用 ACL 的方向。输出显示，路由器 R1 上的访问列表 1 应用于其 S0/0/0 出站接口，而访问列表 NO_ACCESS 应用于其 g0/0 接口，也是在出站方向上。</p>
+          <p></p>
+          <p>图 2 中的示例显示了在路由器 R1 上发出 <b>show access-lists</b> 命令后得到的结果。要查看单个访问列表，请使用 <b>show access-lists</b> 命令，然后使用访问列表的编号或名称。NO_ACCESS 语句可能看起来比较奇怪。注意，序号 15 在序号 10 前面显示。这是由于路由器的内部进程而产生的结果，本部分稍后将进行讨论。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图一显示使用命令 show ip interface 显示已应用的任何 ACL。图中显示命令 show ip interface serial 0/0/0 的输出。以下行高亮显示，其中出站访问列表是 1。对千兆以太网接口再次运行该命令，然后输出中会列出出站访问列表为 no_access list，这是一个命名 ACL。图 2 显示 show access-lists 命令的输出。这将显示路由器上所有 ACL 的完整内容，但是不会指明每个 ACL 放置在什么位置。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

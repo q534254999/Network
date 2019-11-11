@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.3.4 中继的常见问题</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>中继的常见问题</h1>
+        <div>
+          <p>中继问题通常由错误配置导致。当在交换基础设施上配置 VLAN 和 TRUNK 时，以下类型的配置错误最为常见：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>本征 VLAN 不匹配</b> - TRUNK 端口配置了不同的本征 VLAN。此配置错误会生成控制台通知，且除其他问题外，还可导致 VLAN 间路由问题。这会造成安全威胁。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>TRUNK 模式不匹配</b> - 一个 TRUNK 端口配置为与相应对等端口上的中继不兼容的模式。这种配置错误会导致中继链路停止工作。请确保使用 <b>switchport mode trunk</b> 命令配置中继的两端。其他中继配置命令不在本课程的讨论范围之内。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>TRUNK 上允许的 VLAN</b> - TRUNK 上允许的 VLAN 列表没有根据当前的 VLAN 中继需求进行更新。在这种情况下，中继上会发送意外的流量（或没有流量）。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>如果发现 TRUNK 问题，并且如果原因未知，首先要检查 TRUNK 是否存在本征 VLAN 不匹配的问题。如果不是这个原因，请检查 TRUNK 模式不匹配问题，最后检查 TRUNK 上允许的 VLAN 列表。下面两页将探讨如何解决 TRUNK 的常见问题。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示列出中继链路常见问题、其结果和示例的表。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

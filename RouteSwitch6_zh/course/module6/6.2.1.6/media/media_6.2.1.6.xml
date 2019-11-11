@@ -1,0 +1,178 @@
+<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b></b>]]></text>
+    </component>
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>使用<font face="_typewriter"> show vlan </font>命令</b>]]></text>
+    </component>
+    <component id="ID_s3_title">
+        <text>
+            <![CDATA[<b>使用<font face="_typewriter"> show interfaces vlan </font>命令</b>]]></text>
+    </component>
+    <component id="ID_s4_title">
+        <text>
+            <![CDATA[<b>使用<font face="_typewriter"> show interfaces </font>命令</b>]]></text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[<font face="_typewriter"><b>show vlan </b></font>命令]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[<font face="_typewriter"><b>show interfaces </b></font>命令]]>
+        </text>
+    </component>
+    <component id="ID_s1_table01">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' 
+glow='true' glowcolor='#808080' cellpadding='4'>
+
+
+<tr>
+<td colspan='2' bgcolor='#98D3D1' class="title"><font size='12'  color='#393536'><b>思科 IOS CLI 命令语法</b></font></td>
+</tr>
+<tr>
+<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#0E6360' ><span 
+style="color:#98D3D1">.</span></font></td>
+</tr>
+<tr>
+<td bgcolor='#EFF8F7' valign="top" width="300" ><font face='_typewriter' size="11" color='#393536'><b>show vlan </b>[<b>brief </b> | <b>id </b><i> vlan-id </i> | <b>name </b><i> vlan-name </i> | <b>summary</b>]</font></td>
+<td bgcolor='#EFF8F7' valign="top"><font face='_typewriter'><b></b></font></td>
+</tr>
+<tr>
+<td bgcolor='#ffffff' valign="top" width="300" ><font color='#393536' size="11">在一行中显示每个 VLAN 的 VLAN 名称、状态及其端口。 </font></td>
+<td bgcolor='#ffffff' valign="top"><font face='_typewriter' size="11" color='#393536'><b>brief</b></font></td>
+</tr>
+
+
+
+<tr>
+<td bgcolor='#EFF8F7' valign="top" width="300" ><font color='#393536' size="11" >显示由 VLAN ID 号标识的某个 VLAN 的相关信息。<br/>对于 vlan-id，其范围为 1 至 4094。 </font></td>
+<td bgcolor='#EFF8F7' valign="top"><font face='_typewriter' size="11" color='#393536'><b>id </b><i>vlan-id</i></font></td>
+</tr>
+<tr>
+<td bgcolor='#ffffff' valign="top" width="300" ><font color='#393536' size="11" >显示由 VLAN 名称标识的某个 VLAN 的相关信息。 VLAN 名称是长度介于 1 到 32 个字符之间的 ASCII 字符串。</font></td>
+<td bgcolor='#ffffff' valign="top"><font face='_typewriter' size="11" color='#393536'><b>name </b><i>vlan-name</i></font></td>
+</tr>
+
+
+
+
+<tr>
+<td bgcolor='#EFF8F7' valign="top" width="300"><font color='#393536' size="11">显示 VLAN 摘要信息。</font></td>
+<td bgcolor='#EFF8F7' valign="top"><font face='_typewriter'size="11" color='#393536'><b>summary</b></font></td>
+</tr>
+
+
+
+</table>]]>
+        </text>
+    </component>
+    <component id="ID_s1_table02">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' 
+glow='true' glowcolor='#808080' cellpadding='4'>
+
+<tr>
+<td colspan='2' bgcolor='#98D3D1' class="title"><font size='12' color='#393536'><b>思科 IOS CLI 命令语法</b></font></td>
+</tr>
+
+<tr>
+<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#0E6360'><span 
+style="color:#98D3D1">.</span></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#EFF8F7' valign="top" width="300" ><font face='_typewriter' size="11" color='#393536'><b>show interfaces </b>[<i>interface-id </i> <b> | vlan </b><i>vlan-id</i>] <b> | switchport</b> </font></td>
+<td bgcolor='#EFF8F7' valign="top"><font face='_typewriter' size="11" color='#393536'><b></b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#ffffff' valign="top" width="300" ><font color='#393536' size="11">有效的接口包含物理端口（包括类型、模块和端口号）和端口通道。 端口通道的范围是 1 到 6。</font></td>
+<td bgcolor='#ffffff' valign="top"><font face='_typewriter' size="11" color='#393536'><i>interface-id </i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#EFF8F7' valign="top" width="300" ><font color='#393536' size="11" >VLAN 标识。 范围为 1 到 4094。 </font></td>
+<td bgcolor='#EFF8F7' valign="top"><font face='_typewriter' size="11" color='#393536'><b>vlan </b><i>vlan-id</i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#ffffff' valign="top" width="300" ><font color='#393536' size="11" >显示交换端口的管理状态和运行状态，包括端口阻塞设置和端口保护设置。</font></td>
+<td bgcolor='#ffffff' valign="top"><font face='_typewriter' size="11" color='#393536'><b>switchport</b></font></td>
+</tr>
+
+</table>]]>
+        </text>
+    </component>
+    <component id="ID_sc_reset">
+        <text>
+            <![CDATA[重置]]>
+        </text>
+    </component>
+    <component id="ID_sc_showme">
+        <text>
+            <![CDATA[看答案]]>
+        </text>
+    </component>
+    <component id="ID_sc_showall">
+        <text>
+            <![CDATA[全部显示]]>
+        </text>
+    </component>
+    <component id="ID_SC5" fontSize="12" fontFace="_typewriter" fontColor="#ffffff">
+        <feedback id="fb">
+            <![CDATA[<b><font face="_sans" color="#FFFFFF">***您必须输入确切完整的命令。 包含名称或密码的命令区分大小写。***</font></b>]]></feedback>
+        <existingcommands>
+            <![CDATA[<font face="_sans"><b>已将端口 F0/11 和 F0/18 分配给 VLAN 20。 为 Student VLAN 具体显示 VLAN 信息。</b></font>]]>
+        </existingcommands>
+        <command prompt="S1#">
+            <correctresponse>
+                <![CDATA[show vlan name student]]>
+            </correctresponse>
+            <deviceresponse>
+                <![CDATA[<br>VLAN Name Status Ports <br>---- -------------------------------- --------- ------------------------------- <br>20 student active Fa0/11, Fa0/18 <br> <br>VLAN Type SAID MTU Parent RingNo BridgeNo Stp BrdgMode Trans1 Trans2 <br>---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------ <br>20 enet 100020 1500 - - - - - 0 0   <br> <br>Remote SPAN VLAN <br>---------------- <br>Disabled <br> <br>Primary Secondary Type Ports <br>------- --------- ----------------- ------------------------------------------<br>S1#]]>
+            </deviceresponse>
+            <instruction>
+                <![CDATA[<font face="_sans"><b>显示 VLAN 的概要信息。</font>]]>
+            </instruction>
+        </command>
+        <command prompt="S1#">
+            <correctresponse>
+                <![CDATA[show vlan summary]]>
+            </correctresponse>
+            <deviceresponse>
+                <![CDATA[ Number of existing VLANs : 7 <br> Number of existing VTP VLANs : 7 <br> Number of existing extended VLANS : 0 <br> <br>S1#]]>
+            </deviceresponse>
+            <instruction>
+                <![CDATA[<font face="_sans"><b>显示 VLAN 20 的接口信息。</font>]]>
+            </instruction>
+        </command>
+        <command prompt="S1#">
+            <correctresponse>
+                <![CDATA[show interfaces vlan 20]]>
+            </correctresponse>
+            <deviceresponse>
+                <![CDATA[Vlan20 is up, line protocol is up <br>  Hardware is CPU Interface, address is 0007.ec74.61d3 (bia <br>  0007.ec74.61d3) <br>  MTU 1500 bytes, BW 100000 Kbit, DLY 1000000 usec, <br>     reliability 255/255, txload 1/255, rxload 1/255 <br>  Encapsulation ARPA, loopback not set <br>  ARP type: ARPA, ARP Timeout 04:00:00 <br>  Last input 21:40:21, output never, output hang never <br>  Last clearing of &quot;show interface&quot; counters never <br>  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output <br>  drops: 0 <br>  Queueing strategy: fifo <br>  Output queue: 0/40 (size/max) <br>  5 minute input rate 0 bits/sec, 0 packets/sec <br>  5 minute output rate 0 bits/sec, 0 packets/sec <br>     1682 packets input, 530955 bytes, 0 no buffer <br>     Received 0 broadcasts (0 IP multicast) <br>     0 runts, 0 giants, 0 throttles <br>     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored <br>     563859 packets output, 0 bytes, 0 underruns <br>     0 output errors, 23 interface resets <br>     0 output buffer failures, 0 output buffers swapped out <br>S1#]]>
+            </deviceresponse>
+            <instruction>
+                <![CDATA[<font face="_sans"><b>显示 F0/18 交换机端口的信息。</font>]]>
+            </instruction>
+        </command>
+        <command prompt="S1#">
+            <correctresponse>
+                <![CDATA[show interfaces F0/18 switchport]]>
+            </correctresponse>
+            <deviceresponse>
+                <![CDATA[Name: Fa0/18 <br>Switchport: Enabled <br>Administrative Mode: static access <br>Operational Mode: down <br>Administrative Trunking Encapsulation: dot1q <br>Operational Trunking Encapsulation: native <br>Negotiation of Trunking: Off <br>Access Mode VLAN: 20 (Students) <br>Trunking Native Mode VLAN: 1 (default) <br>Voice VLAN: none <br> <br><font face="_sans">&lt;省略部分输出&gt;</font>]]>
+            </deviceresponse>
+            <instruction>
+                <![CDATA[<font face="_sans"><b>您已成功检验 VLAN 信息。</font>]]>
+            </instruction>
+        </command>
+        <command prompt="" />
+    </component>
+</textcomponents>

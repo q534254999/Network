@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.2.1 域名服务</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>域名服务</h1>
+        <div>
+          <p>在数据网络中，使用数字 IP 地址标记设备以便通过网络发送和接收数据。人们创建了可以将数字地址转换为简单易记名称的域名系统。</p>
+          <p>在 Internet 上，更便于人们记忆的是 <a href="http://www.cisco.com/" target="_blank">http://www.cisco.com</a> 这样的域名，而不是该服务器的实际数字地址 198.133.219.25。如果思科决定更改 <a href="http://www.cisco.com/" target="_blank">www.cisco.com</a> 的数字地址，那么更改对用户是透明的，因为域名将保持不变。公司只需要将新地址与现有域名链接起来即可保证连通性。 </p>
+          <p>DNS 协议定义了一套自动化服务，该服务将资源名称与所需的数字网络地址匹配。协议涵盖了查询格式、响应格式及数据格式。DNS 协议通信采用单一格式，即消息格式。该格式用于所有类型的客户端查询和服务器响应、报错消息、以及服务器间的资源记录信息的传输。</p>
+          <p>图 1 至图 5 显示 DNS 解析的相关步骤。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a client computer and a server connected to a network.  The client is attempting to reach Cisco’s website using a web browser.  The client makes a DNS query to a DNS server. Figure 2 shows an NS record matching www dot cisco dot com to an IP address Figure 3 shows the client sending the DNS request to the server. Figure 4 shows the DNS server responding to the DNS query with the IP address for www dot cisco dot com Figure 5 shows the client now has the IP address to put in the layer 3 header as the destination IP for the HTTP request.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

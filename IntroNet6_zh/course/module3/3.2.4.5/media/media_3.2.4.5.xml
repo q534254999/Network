@@ -1,0 +1,271 @@
+<textcomponents>
+	 <component id='ID_s1_title'>
+        <text>
+            <![CDATA[<b>练习 – 第 1 部分：OSI 层的功能</b>]]></text>
+    </component>
+    <component id='ID_s1_instr_title'>
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id='ID_s1_instr_body'>
+        <text>
+            <![CDATA[将 OSI 层拖放到其功能描述下。]]>
+        </text>
+    </component>
+    <component id="ID_s1_layer07">
+        <text>
+            <![CDATA[<b>7</b>]]></text>
+    </component>
+    <component id="ID_s1_layer06">
+        <text>
+            <![CDATA[<b>6</b>]]></text>
+    </component>
+    <component id="ID_s1_layer05">
+        <text>
+            <![CDATA[<b>5</b>]]></text>
+    </component>
+    <component id="ID_s1_layer04">
+        <text>
+            <![CDATA[<b>4</b>]]></text>
+    </component>
+    <component id="ID_s1_layer03">
+        <text>
+            <![CDATA[<b>3</b>]]></text>
+    </component>
+    <component id="ID_s1_layer02">
+        <text>
+            <![CDATA[<b>2</b>]]></text>
+    </component>
+    <component id="ID_s1_layer01">
+        <text>
+            <![CDATA[<b>1</b>]]></text>
+    </component>
+    <component id='ID_s1_osi_txt07'>
+        <text>
+            <![CDATA[应用层]]>
+        </text>
+    </component>
+    <component id='ID_s1_osi_txt06'>
+        <text>
+            <![CDATA[表示层]]>
+        </text>
+    </component>
+    <component id='ID_s1_osi_txt05'>
+        <text>
+            <![CDATA[会话层]]>
+        </text>
+    </component>
+    <component id='ID_s1_osi_txt04'>
+        <text>
+            <![CDATA[传输层]]>
+        </text>
+    </component>
+    <component id='ID_s1_osi_txt03'>
+        <text>
+            <![CDATA[网络层]]>
+        </text>
+    </component>
+    <component id='ID_s1_osi_txt02'>
+        <text>
+            <![CDATA[数据链路层]]>
+        </text>
+    </component>
+    <component id='ID_s1_osi_txt01'>
+        <text>
+            <![CDATA[物理层]]>
+        </text>
+    </component>
+    <component id='ID_s1_target_header'>
+        <text>
+            <![CDATA[<b>层</b>]]></text>
+    </component>
+    <component id='ID_s1_text_header'>
+        <text>
+            <![CDATA[<b>OSI 层功能描述</b>]]></text>
+    </component>
+    <component id='ID_s1_txt01'>
+        <text>
+            <![CDATA[分段、传输和重组数据]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt02'>
+        <text>
+            <![CDATA[在设备之间交换帧]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt03'>
+        <text>
+            <![CDATA[包含用于进程间通信的协议]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt04'>
+        <text>
+            <![CDATA[提供数据路径或路由]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt05'>
+        <text>
+            <![CDATA[位传输]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag07'>
+        <text>
+            <![CDATA[应用层]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag06'>
+        <text>
+            <![CDATA[表示层]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag05'>
+        <text>
+            <![CDATA[会话层]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag04'>
+        <text>
+            <![CDATA[传输层]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag03'>
+        <text>
+            <![CDATA[网络层]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag02'>
+        <text>
+            <![CDATA[数据链路层]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag01'>
+        <text>
+            <![CDATA[物理层]]>
+        </text>
+    </component>
+    <component id='ID_s1_CORRECT_TITLE'>
+        <text>
+            <![CDATA[正确]]>
+        </text>
+    </component>
+    <component id='ID_s1_CORRECT_BODY'>
+        <text>
+            <![CDATA[您已成功地将 OSI 层与其功能描述相匹配。]]>
+        </text>
+    </component>
+    <component id='ID_s1_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[不正确]]>
+        </text>
+    </component>
+    <component id='ID_s1_INCORRECT_BODY'>
+        <text>
+            <![CDATA[您尚未成功地将 OSI 层与其功能描述相匹配。请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id='ID_s1_CHECK'>
+        <text>
+            <![CDATA[检查]]>
+        </text>
+    </component>
+    <component id='ID_s1_RESET'>
+        <text>
+            <![CDATA[重置]]>
+        </text>
+    </component>
+    <!--slide 2-->
+     <component id='ID_s2_title'>
+        <text>
+            <![CDATA[<b>练习 – 第 2 部分：TCP/IP 层的功能</b>]]></text>
+    </component>
+    <component id='ID_s2_instr_title'>
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id='ID_s2_instr_body'>
+        <text>
+            <![CDATA[将 TCP/IP 层拖放到其功能描述下。]]>
+        </text>
+    </component>
+   
+    <component id="ID_s2_text_header">
+        <text>
+            <![CDATA[<b>TCP/IP 层功能描述</b>]]></text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[组织对话框 - 管理数据交换]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[在设备之间交换帧]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt03">
+        <text>
+            <![CDATA[向用户和控制对话框提供数据]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt04">
+        <text>
+            <![CDATA[确定通过网络的最佳路径]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt05">
+        <text>
+            <![CDATA[分段、传输和重组数据]]>
+        </text>
+    </component>
+    <!--Drag and Drop -->
+    <component id="ID_s2_drag04">
+        <text>
+            <![CDATA[应用层]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag03">
+        <text>
+            <![CDATA[传输层]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag02">
+        <text>
+            <![CDATA[互联网层]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag01">
+        <text>
+            <![CDATA[网络接入层]]>
+        </text>
+    </component>
+    <component id="ID_s2_CORRECT_TITLE">
+        <text>
+            <![CDATA[正确]]>
+        </text>
+    </component>
+    <component id="ID_s2_CORRECT_BODY">
+        <text>
+            <![CDATA[您已成功地将 TCP/IP 层与其功能描述相匹配。]]>
+        </text>
+    </component>
+    <component id="ID_s2_INCORRECT_TITLE">
+        <text>
+            <![CDATA[不正确]]>
+        </text>
+    </component>
+    <component id="ID_s2_INCORRECT_BODY">
+        <text>
+            <![CDATA[您尚未成功地将 TCP/IP 层与其功能描述相匹配。请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id="ID_s2_CHECK">
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id="ID_s2_RESET">
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+</textcomponents>

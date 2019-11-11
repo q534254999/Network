@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.2.4 TCP/IP 通信过程</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>TCP/IP 通信过程</h1>
+        <div>
+          <p>图 1 和图 2 通过一个从 web 服务器向客户端传输数据的示例来演示完整的通信过程。后面的章节中将更详细地介绍该过程和这些协议。</p>
+          <p>单击“<b>播放</b>”按钮来查看动画演示：</p>
+          <p>
+            <b>1</b>.图 1 中，动画首先演示的是 Web 服务器准备超文本标记语言 (HTML) 页面作为需要发送的数据。 </p>
+          <p>
+            <b>2</b>.将应用程序协议 HTTP 报头添加到 HTML 数据的前面。报头包含各种信息，包括服务器所使用的 HTTP 版本和指示它有信息需要传送给 Web 客户端的状态码。</p>
+          <p>
+            <b>3.</b>HTTP 应用层协议将 HTML 格式的网页数据传送到传输层。TCP 传输层协议用于管理单个会话，本示例中为 Web 服务器和 Web 客户端之间的单个会话。</p>
+          <p>
+            <b>4</b>.接下来将 IP 信息添加到 TCP 信息的前面。IP 分配合适的源和目的 IP 地址。此信息称为 IP 数据包。</p>
+          <p>
+            <b>5</b>.以太网协议将信息添加到 IP 数据包的两端，称为数据链路帧。将此帧传送到通往 Web 客户端的路径中最近的路由器上。该路由器将删除以太网信息，分析 IP 数据包，为该数据包确定最佳路径，将数据包插入新的帧中，并将其发送到通往目的地的下一个邻居路由器上。每台路由器在转发数据包之前都会删除旧的数据链路信息并添加新的数据链路信息。</p>
+          <p>
+            <b>6</b>.现在该数据在由介质和中间设备组成的网际网络中传输。 </p>
+          <p>
+            <b>7</b>.图 2 中，动画首先演示的是客户端收到包含数据的数据链路帧。每个协议报头都会得到处理，然后按与添加相反的顺序将其删除。将以太网信息处理并删除之后，接着处理并删除 IP 协议信息，然后是 TCP 信息，最后是 HTTP 信息。 </p>
+          <p>
+            <b>8</b>.然后网页信息将传递到客户端的 Web 浏览器软件。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 is an animation that shows the protocol encapsulation process involved when a web server sends a web page to a client across a network. Figure 2 is an animation that shows the protocol de-encapsulation process involved when a web client receives a web page from a web server across a network.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

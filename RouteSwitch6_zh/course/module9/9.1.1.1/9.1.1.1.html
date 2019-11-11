@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.1.1 IPv4 私有地址空间</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv4 私有地址空间</h1>
+        <div>
+          <p>公有 IPv4 地址不足以为每台设备分配一个唯一地址来进行互联网连接。通常使用 RFC 1918 中定义的私有 IPv4 地址来实施网络。图 1 显示了 RFC 1918 中所包含的地址范围。很可能为您用来观看本课程的计算机分配的就是一个私有地址。</p>
+          <p></p>
+          <p>这些私有地址可在企业或站点内使用，允许设备进行本地通信。但是，由于这些地址没有标识任何一个公司或企业，因此私有 IPv4 地址不能通过互联网路由。为了使具有私有 IPv4 地址的设备能够访问本地网络之外的设备和资源，必须首先将私有地址转换为公有地址。 </p>
+          <p></p>
+          <p>如图 2 所示，NAT 提供了私有地址到公有地址的转换。这使具有私有 IPv4 地址的设备能够访问其私有网络之外的资源，例如在互联网上找到的资源。NAT 与私有 IPv4 地址相结合，变为一个用于节约公有 IPv4 地址的有效方法。单个公有 IPv4 地址可以由数百甚至数千台设备共享，而为每台设备配置一个唯一的私有 IPv4 地址。</p>
+          <p></p>
+          <p>如果没有 NAT，则 IPv4 地址空间耗尽问题可能早在 2000 年之前就会出现。但是，NAT 也有一些限制，这将在本章后续部分探讨。为了应对 IPv4 地址空间耗尽问题以及 NAT 的局限性，最终需要向 IPv6 过渡。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 所显示的表列出了 IPv4 地址的三个主要类别、它们的私有编址以及默认的 cidr 前缀。图 2 显示了一个 NAT 路由器，两侧都有一个云。左侧的云标记为内部网络，右侧的云标记为互联网。内部网络使用私有编址，互联网使用公共编址。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

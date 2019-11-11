@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.4.1.3 第 7 章：IP 编址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.4.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>第 7 章：IP 编址</h1>
+        <div>
+          <p>IP 地址是分层地址，包含网络部分、子网部分和主机部分。IP 地址可以表示一个完整的网络、一台特定主机或者该网络的广播地址。</p>
+          <p>要确定两台主机是否位于相同网络，了解二进制记法非常必要。对于同一网络中的所有设备，IP 地址网络部分中的位必须完全相同。子网掩码或前缀用于确定 IP 地址的网络部分。可以静态或动态的方式分配 IP 地址。DHCP 可以自动分配 IP 地址、子网掩码、默认网关等地址信息和其他配置信息。</p>
+          <p>IPv4 主机可以采用以下三种方式之一进行通信：单播、广播或组播。此外，网络中需要有限或无 Internet 访问的地址块称为私有地址。私有 Ipv4 地址块包括：10.0.0.0/8、172.16.0.0/12 和 192.168.0.0/16。</p>
+          <p>IPv4 地址空间耗尽是迁移到 IPv6 的动因。每个 IPv6 地址有 128 位，而 IPv4 地址只有 32 位。IPv6 不使用点分十进制子网掩码记法。前缀长度用于表示 IPv6 地址的网络部分，通常采用以下格式：IPv6 地址/前缀长度。 </p>
+          <p>IPv6 地址分为三种类型：单播、组播和任播。IPv6 本地链路地址允许设备与同一链路上支持 IPv6 的其他设备通信，并且只能在该链路（子网）上通信。具有源或目标本地链路地址的数据包不能在数据包的源链路之外进行路由。IPv6 本地链路地址属于 FE80::/10 范围。</p>
+          <p>ICMP 可同时用于 IPv4 和 IPv6。ICMPv4 是 IPv4 的消息协议。ICMPv6 为 IPv6 提供相同的服务，此外，还包括其他功能。</p>
+          <p>IP 网络实施后需要经过测试，以检验其连接和工作性能。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is a standard graphic for the introduction and conclusion pages.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

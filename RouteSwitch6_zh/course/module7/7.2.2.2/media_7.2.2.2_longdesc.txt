@@ -1,0 +1,1 @@
+图中显示使用序号编辑编号 ACL 的过程。此图在全局配置模式下开始，第一个命令创建 ACL。此命令是 access-list 1 deny host 192.168.10.99。下一条命令是 access-list 1 permit 192.168.0.0 0.0.255.255。通过命令 show access-lists 显示 ACL 的内容。该图高亮显示了不正确的行。此 ACL 可以使用命令 ip access-list standard 1 访问。此行通过命令 no 10 移除。使用命令 10 deny host 192.168.10.10 添加新的第 10 行。ACL 的内容可使用命令 show access-lists 显示。图中高亮显示了现在已纠正的行。

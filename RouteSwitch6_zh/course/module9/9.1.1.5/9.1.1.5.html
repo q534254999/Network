@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.1.5 NAT 如何工作</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>NAT 如何工作</h1>
+        <div>
+          <p>在本示例中，具有私有地址 192.168.10.10 的 PC1 想要与具有公有地址 209.165.201.1 的外部 Web 服务器通信。</p>
+          <p></p>
+          <p>点击图中的“播放”按钮播放动画。</p>
+          <p></p>
+          <p>PC1 发送了一个目标地址为 Web 服务器的数据包。数据包由 R1 转发到 R2。</p>
+          <p></p>
+          <p>当数据包到达 R2（网络中启用 NAT 的路由器）时，R2 会读取数据包的源 IPv4 地址，以确定数据包是否符合规定的转换标准。 </p>
+          <p></p>
+          <p>在本例中，源 IPv4 地址确实符合标准，将其从 192.168.10.10（内部本地地址）转换为 209.165.200.226（内部全局地址）。R2 将此本地与全局地址映射关系添加到 NAT 表中。</p>
+          <p></p>
+          <p>R2 将具有转换后的源地址的数据包发送到目的地。 </p>
+          <p></p>
+          <p>Web 服务器以一个目标地址为 PC1 的内部全局地址（209.165.200.226）的数据包做出响应。</p>
+          <p></p>
+          <p>R2 将收到这个目标地址为 209.165.200.226 的数据包。R2 会检查 NAT 表，找出有关此映射的条目。R2 使用此信息，将内部全局地址（209.165.200.226）转换为内部本地地址（192.168.10.10），然后将数据包转发到 PC1。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">此动画演示了当数据包经由 NAT 边界路由器从源发送到目的地时如何设置编址。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

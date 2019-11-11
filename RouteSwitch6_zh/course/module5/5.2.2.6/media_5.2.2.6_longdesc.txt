@@ -1,0 +1,1 @@
+图 1 显示当端口进入错误禁用状态时发送到交换机控制台的错误消息。该消息包含大量有关违规的详细信息并包括导致冲突的 MAC 地址。图 2 显示 show interface fastEthernet 0/18 命令的输出。此输出列出有关端口的信息，包括错误禁用状态。图 2 还显示 show port-security interface fastEthernet 0/18 命令的输出。此输出显示有关指定端口安全性的附加信息，包括违规信息。图 3 显示重新启用由于安全违规而关闭端口的流程。该图以全局配置模式开始，并使用 interface fastEthernet 0 进入端口。使用 shutdown 命令关闭该端口。使用 no shut 命令关闭该端口。此时，该端口将再次工作。

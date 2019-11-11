@@ -1,0 +1,18 @@
+﻿<textcomponents>
+
+
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>PC 上的 DNS 服务器信息</b>]]></text>
+	</component>
+
+	<component id='ID_s1_txt01'>
+		<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+	</component>
+
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>nslookup 命令</b>]]></text>
+	</component>
+	
+
+	
+</textcomponents>

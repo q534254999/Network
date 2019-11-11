@@ -1,0 +1,23 @@
+<textcomponents>
+    <component id='ID_title'>
+        <text>
+            <![CDATA[网络介质]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[<b>铜缆</b>]]></text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[<b>光纤</b>]]></text>
+    </component>
+    <component id="ID_s1_txt03">
+        <text>
+            <![CDATA[<b>无线</b>]]></text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[<i><ul><textformat blockindent='-18'><li>介质可成功传送信号的最大距离是多少？</li><br/><li>介质将安装在什么类型的环境中？</li><br/><li>必须传输的数据量和传输速度是多少？</li><br/><li>介质和安装的成本是什么？</li><br/></textformat></ul></i>]]></text>
+    </component>
+</textcomponents>

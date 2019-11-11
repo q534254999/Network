@@ -1,0 +1,10 @@
+﻿<textcomponents>
+	
+	<component id="ID_type">
+		<text><![CDATA[实验]]></text>
+	</component>
+	<component id="ID_title">
+		<text><![CDATA[配置无状态和有状态 DHCPv6]]></text>
+	</component>
+	
+</textcomponents>

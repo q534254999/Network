@@ -1,0 +1,166 @@
+<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>练习 – 网络架构要求</b>]]></text>
+    </component>
+    <!-- instructions -->
+    <component id="ID_instr_title">
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id="ID_instr_body">
+        <text>
+            <![CDATA[选择相应的列来确定每项特性或功能所属的网络架构要求。]]>
+        </text>
+    </component>
+    <!-- buttons -->
+    <component id="ID_s1_CHECK">
+        <text>
+            <![CDATA[检查]]>
+        </text>
+    </component>
+    <component id="ID_s1_RESET">
+        <text>
+            <![CDATA[重置]]>
+        </text>
+    </component>
+    <!--Number of rows in the table-->
+    <component id="txt_numrows">
+        <text>
+            <![CDATA[8]]>
+        </text>
+    </component>
+    <!--Number of columns for the answers in the table. Do not count the question column-->
+    <component id="txt_a3">
+        <text>
+            <![CDATA[4]]>
+        </text>
+    </component>
+    <!--Answer column headers-->
+    <component id="MCTable_title">
+        <text>
+            <![CDATA[ ]]>
+        </text>
+    </component>
+    <component id="txt_col1">
+        <text>
+            <![CDATA[<b>容错<br/>能力</b>]]></text>
+    </component>
+    <component id="txt_col2">
+        <text>
+            <![CDATA[<b>可扩展性</b>]]></text>
+    </component>
+    <component id="txt_col3">
+        <text>
+            <![CDATA[<b>服务<br/>质量</b>]]></text>
+    </component>
+    <component id="txt_col4">
+        <text>
+            <![CDATA[<b>安全</b>]]></text>
+    </component>
+    <!--Question text - blockindent code moves the text away from the left edge a bit-->
+    <!--Question text - If questions are numbered, use blockindent for hanging indents-->
+    <component id="txt_q1">
+        <text>
+            <![CDATA[1. <textformat blockindent='12'>网络应该始终可用。</textformat>]]>
+        </text>
+    </component>
+    <component id="txt_q2">
+        <text>
+            <![CDATA[2. <textformat blockindent='12'>对网络带宽的需求超过提供的带宽时，实施优先级队列。</textformat>]]>
+        </text>
+    </component>
+    <component id="txt_q3">
+        <text>
+            <![CDATA[3. <textformat blockindent='12'>必须<span class="spaceLeft">保护企业和个人网络设备。</textformat>]]>
+        </text>
+    </component>
+    <component id="txt_q4">
+        <text>
+            <![CDATA[4. <textformat blockindent='12'>制定按优先级排队的计划是信息高质量传递的战略。</textformat>]]>
+        </text>
+    </component>
+    <component id="txt_q5">
+        <text>
+            <![CDATA[5. <textformat blockindent='12'>必须保护企业和个人数据。</textformat>]]>
+        </text>
+    </component>
+    <component id="txt_q6">
+        <text>
+            <![CDATA[6. <textformat blockindent='12'>网络在扩展时可以将对 性能的影响降至最低。</textformat>]]>
+        </text>
+    </component>
+    <component id="txt_q7">
+        <text>
+            <![CDATA[7. <textformat blockindent='12'>数据可以通过多个路由 从远程源进行传输。</textformat>]]>
+        </text>
+    </component>
+    <component id="txt_q8">
+        <text>
+            <![CDATA[8. <textformat blockindent='12'>常见网络标准允许硬件和软件 供应商专注于改善产品和服务。</textformat>]]>
+        </text>
+    </component>
+    <!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+    <!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+    <component id="txt_a7">
+        <text>
+            <![CDATA[1]]>
+        </text>
+    </component>
+    <component id="txt_a4">
+        <text>
+            <![CDATA[3]]>
+        </text>
+    </component>
+    <component id="txt_numcols">
+        <text>
+            <![CDATA[4]]>
+        </text>
+    </component>
+    <component id="txt_a2">
+        <text>
+            <![CDATA[3]]>
+        </text>
+    </component>
+    <component id="txt_a5">
+        <text>
+            <![CDATA[4]]>
+        </text>
+    </component>
+    <component id="txt_a8">
+        <text>
+            <![CDATA[2]]>
+        </text>
+    </component>
+    <component id="txt_a1">
+        <text>
+            <![CDATA[1]]>
+        </text>
+    </component>
+    <component id="txt_a6">
+        <text>
+            <![CDATA[2]]>
+        </text>
+    </component>
+    <!-- Correct Feedback -->
+    <component id="ID_titleCorrect">
+        <text>
+            <![CDATA[<b>正确</b>]]></text>
+    </component>
+    <component id="ID_correctText">
+        <text>
+            <![CDATA[您已成功将每个特征与其网络架构要求进行了匹配。]]>
+        </text>
+    </component>
+    <!-- Incorrect Feedback -->
+    <component id="ID_titleIncorrect">
+        <text>
+            <![CDATA[<b>不正确</b>]]></text>
+    </component>
+    <component id="ID_IncorrectText">
+        <text>
+            <![CDATA[您尚未成功将每个特征与其网络架构要求进行匹配。 请单击“重置”重试。]]>
+        </text>
+    </component>
+</textcomponents>

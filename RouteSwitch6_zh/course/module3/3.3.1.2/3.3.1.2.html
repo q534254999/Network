@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.1.2 直连条目</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>直连条目</h1>
+        <div>
+          <p>如图 1 中的突出显示部分，R1 的路由表中包含三个直连网络。请注意，为处于活动状态的路由器接口配置 IP 地址和子网掩码时，会自动创建两个路由表条目。 </p>
+          <p></p>
+          <p>图 2 显示了 R1 上的直连网络 172.16.1.0 的一个路由表条目。配置 GigabitEthernet 0/0 接口并激活时，这些条目会自动添加到路由表。这些条目包含以下信息:</p>
+          <p>
+            <ul>
+              <li>
+                <b>路由源</b>- 标识如何获知该路由。直连接口有两个路由的来源代码。<b>C</b> 用于标识直连网络。当某个接口配置了 IP 地址并激活时，将会自动创建直连网络。<b>L</b> 用于标识这是本地路由。为接口配置 IP 地址并激活时，会自动创建本地路由。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>目标网络</b> - 远程网络的地址和该网络的连接方式。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>传出接口 </b>- 标识在将数据包转发到目标网络时使用的退出接口。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>一个路由器通常配置有多个接口。路由表既储存直连路由信息，也储存远程路由信息。对于直连网络，路由来源用于确定获取路由的方式。例如，远程网络的通用代码包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>S</b> - 用于标识管理员手动创建的通往特定网络的路由。这是一种静态路由。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>D</b> - 用于标识使用 EIGRP 路由协议从另一个路由器动态获取的路由器。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>O</b> - 用于标识使用 OSPF 路由协议从另一个路由器动态获取的路由器。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>R</b> - 用于标识使用 RIP 路由协议从另一台路由器动态获取的路由器。</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示来自命令 show i.p. route pipe begin Gateway 的输出。该图突出显示三个直连路由和三个本地接口 IP 地址。图 2 是其中一个条目的特写图。突出显示路由源、目标网络和传出接口。第一行输出 C 代表直连，172.16.1.0/24 代表目标网络，传出接口为 gigabitEthernet0/0。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

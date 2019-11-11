@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.4.4 IPv6 数据包报头</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.4.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv6 数据包报头</h1>
+        <div>
+          <p>IPv6 数据包报头中的字段包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>版本 - </b>此字段包含一个 4 位二进制值 0110，用于标识这是 IPv6 数据包。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>流量类别 -</b> 此 8 位字段相当于“IPv4 区分服务 (DS)”字段。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>流量标签 - </b>此 20 位字段建议带有相同流量标签的所有数据包收到路由器的相同处理。<b></b></li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>负载长度 - </b>此 16 位字段表示 IPv6 数据包的数据部分或负载的长度。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>下一报头 -</b> 此 8 位字段相当于“IPv4 协议”字段。它表示数据包传送的数据负载类型，使网络层将数据传送到相应的上层协议。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>跳数限制</b> - 此 8 位字段取代 IPv4 的 TTL 字段。每个转发数据包的路由器均会使此数值减一。当跳数达到 0 时，会丢弃此数据包，并且会向发送主机转发 ICMPv6 超时消息来指明数据包未到达目的地，因为超过跳数限制。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>源 IPv6 地址 - </b>此 128 位字段用于确定发送主机的 IPv6 地址。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>目的 IPv6 地址 - </b>此 128 位字段用于确定接收主机的 IPv6 地址。</li>
+            </ul>
+          </p>
+          <p>IPv6 数据包还可能包含扩展报头 (EH)，以便提供可选的网络层信息。扩展报头为可选项，位于 IPv6 报头及负载之间。EH 用于分段、安全性、移动性支持等。</p>
+          <p>与 IPv4 不同，路由器不会对路由的 IPv6 数据包进行分段。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the IPv6 header with the following fields: Version, Traffic Class, Flow Label, Payload Length, Next Header, Hop Limit, Source Address and Destination Address.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

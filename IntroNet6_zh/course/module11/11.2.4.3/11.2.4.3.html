@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.2.4.3 基本安全实践</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.2.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>基本安全实践</h1>
+        <div>
+          <p>
+            <b>其他密码安全性</b>
+          </p>
+          <p>强密码只有保持其机密性才是有用的。可以采取几个步骤来帮助确保密码的机密性。如图所示，使用全局配置命令 <b>service password-encryption</b> 防止未经授权的个人在配置文件中查看明文形式的密码。该命令会将所有未加密密码进行加密。 </p>
+          <p>此外，为了确保配置的所有密码至少为指定的最小长度，请在全局配置模式下使用 <b>security passwords min-length</b> 命令。</p>
+          <p>黑客获取密码的另一种方式就是直接使用暴力攻击，尝试多个密码，直到试出正确密码。当指定时间段内出现多次密码输入错误时阻止登录尝试，由此可以防止此类攻击。 </p>
+          <p>Router(config)# <b>login block-for 120 attempts 3 within 60</b></p>
+          <p>这个命令是在 60 秒内有 3 次登录尝试失败时阻止登录尝试 120 秒。 </p>
+          <p>
+            <b>Exec 超时</b>
+          </p>
+          <p>另一个建议是设置执行超时。通过设置 Exec 超时，您将告知思科设备在用户闲置时间达到 Exec 超时时间值时自动断开线路上的用户。可以在线路配置模式下使用 <b>exec-timeout</b> 命令配置控制台、VTY 和辅助端口上的 Exec 超时。 </p>
+          <p>Router(config)# <b>line vty 0 4</b></p>
+          <p>Router(config-line)# <b>exec-timeout 10 </b></p>
+          <p>该命令配置设备在 10 分钟后断开空闲用户。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows router output for configuring encrypted line passwords and setting restrictions on password length or failed attempts. Commands entered include “security password-encryption”, “security password min-length 8”, login block-for 120 attempts 3 within 60”, and “exec-timeout 10” on the VTY lines.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

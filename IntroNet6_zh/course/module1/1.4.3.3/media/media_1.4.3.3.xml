@@ -1,0 +1,73 @@
+<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<font color='#FFFFFF'><b>练习 - 确定网络安全术语</b></font>]]></text>
+	</component>
+	<component id="ID_s1_instr_title">
+		<text><![CDATA[<b>说明</b>]]></text>
+	</component>
+	<component id="ID_s1_instr_body">
+		<text><![CDATA[将安全术语拖到正确的定义上。]]></text>
+	</component>
+	<component id="ID_drag_header">
+		<text><![CDATA[<b>安全术语</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[减慢或使设备和程序崩溃的攻击。]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[为远程员工创建安全连接。]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[阻止对您的网络进行未授权访问。]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[发现漏洞的第一天发生的网络攻击。]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[在用户设备上运行任意代码。]]></text>
+	</component>
+	<component id="ID_s1_target_header">
+		<text><![CDATA[<b>术语</b>]]></text>
+	</component>
+	<component id="ID_s1_text_header">
+		<text><![CDATA[<b>定义</b>]]></text>
+	</component><!--Drag and Drop--><component id="ID_ip1_DS">
+		<text><![CDATA[<font color="#393536">虚拟专用<br>网络 (VPN)</font>]]></text>
+	</component>
+	<component id="ID_ip2_DS">
+		<text><![CDATA[<font color="#393536">零日（小时）</font>]]></text>
+	</component>
+	<component id="ID_ip3_DS">
+		<text><![CDATA[<font color="#393536">拒绝服务</font>]]></text>
+	</component>
+	<component id="ID_ip4_DS">
+		<text><![CDATA[<font color="#393536">防火墙</font>]]></text>
+	</component>
+	<component id="ID_ip5_DS">
+		<text><![CDATA[<font color="#393536">病毒、蠕虫或<br/>特洛伊木马</font>]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[<b>定义</b>]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[<b>术语</b>]]></text>
+	</component>
+	<component id="ID_s1_CORRECT_TITLE">
+		<text><![CDATA[正确]]></text>
+	</component>
+	<component id="ID_s1_CORRECT_BODY">
+		<text><![CDATA[您已成功地按需要选择安全威胁和组件的术语。]]></text>
+	</component>
+	<component id="ID_s1_INCORRECT_TITLE">
+		<text><![CDATA[不正确]]></text>
+	</component>
+	<component id="ID_s1_INCORRECT_BODY">
+		<text><![CDATA[您尚未成功地按需要选择安全威胁和组件的术语。 请单击“重置”重试。]]></text>
+	</component>
+	<component id="ID_CHECK">
+		<text><![CDATA[检查]]></text>
+	</component>
+	<component id="ID_RESET">
+		<text><![CDATA[重置]]></text>
+	</component>
+</textcomponents>

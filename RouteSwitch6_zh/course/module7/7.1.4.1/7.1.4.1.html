@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.4.1 ACL 的放置位置</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>ACL 的放置位置</h1>
+        <div>
+          <p>正确放置 ACL 可以使网络更加高效地运行。可以放置 ACL 以减少不必要的流量。例如，会被远程目标拒绝的流量不应该消耗通往该目标的路由上的网络资源进行转发。 </p>
+          <p></p>
+          <p>每个 ACL 都应该放置在最能发挥作用的位置。如图所示，基本规则如下：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>扩展 ACL</b> - 将扩展 ACL 放置在尽可能靠近需要过滤的流量源的位置上。这样，不需要的流量会在靠近源网络的位置遭到拒绝，而无需通过网络基础设施。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>标准 ACL</b> - 由于标准 ACL 不会指定目标地址，所以其位置应该尽可能靠近目标。在流量源附近设置标准 ACL 可以有效阻止流量通过应用了 ACL 的接口到达任何其他网络。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>ACL 的位置以及使用的 ACL 类型还可能取决于：</p>
+          <p>
+            <ul>
+              <li>
+                <b>网络管理员的控制范围</b> - ACL 的位置可能取决于网络管理员是否能够同时控制源网络和目标网络。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>相关网络的带宽</b> - 在源上过滤不需要的流量，可以在流量消耗通往目标的路径上的带宽之前阻止流量传输。这对于带宽较低的网络尤为重要。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>配置的难易程度</b> - 如果网络管理员希望拒绝来自几个网络的流量，一种选择就是在靠近目标的路由器上使用单个标准 ACL。缺点是来自这些网络的流量将产生不必要的带宽使用。扩展 ACL 可以在每台发出流量的路由器上使用。这将通过在源上过滤流量而节省带宽，但需要在多台路由器上创建扩展 ACL。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>注</b>：虽然扩展 ACL 不属于 ICND1/CCENT 考试的范围，但是您应该了解放置标准 ACL 和扩展 ACL 的一般规则。对于 CCNA 认证考试，一般规则是将扩展 ACL 放在尽可能靠近源的位置上，而标准 ACL 放在尽可能靠近目标的位置上。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了三台路由器并描述了 ACL 的放置。标准 ACL 通常放置在靠近目标的位置。扩展 ACL 通常放置在靠近源的位置。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

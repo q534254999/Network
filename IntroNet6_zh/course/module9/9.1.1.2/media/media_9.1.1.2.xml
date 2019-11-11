@@ -1,0 +1,74 @@
+<textcomponents><!--SLIDE0 1--><component id="ID_s1_title">
+		<text><![CDATA[<b>跟踪会话</b>]]></text>
+	</component>
+	<component id="ID_s2_txt01">
+		<text><![CDATA[收件人：you@example.com<br>发件人：me@example.com<br>主题：假期]]></text>
+	</component>
+	<component id="ID_s2_txt02">
+		<text><![CDATA[电子邮件]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[即时<br/>消息]]></text>
+	</component>
+	<component id="ID_s2_txt04">
+		<text><![CDATA[多个网页]]></text>
+	</component>
+	<component id="ID_s1_txt05">
+		<text><![CDATA[IP 电话<br/>(VoIP)]]></text>
+	</component>
+	<component id="ID_s2_txt06">
+		<text><![CDATA[流视频]]></text>
+	</component>
+	<component id="ID_s1_txt08">
+		<text><![CDATA[<b>网络</b>]]></text>
+	</component>
+	<component id="ID_s1_txt07">
+		<text><![CDATA[传输层分别跟踪源应用程序和目的应用程序之间传输的每次会话。]]></text>
+	</component><!--SLIDE 02--><component id="ID_s2_title">
+		<text><![CDATA[<b>分段</b>]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[收件人：you@example.com<br>发件人：me@example.com<br>主题：假期]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[电子邮件]]></text>
+	</component>
+	<component id="ID_s2_txt03">
+		<text><![CDATA[即时<br/>消息]]></text>
+	</component>
+	<component id="ID_s1_txt04">
+		<text><![CDATA[多个网页]]></text>
+	</component>
+	<component id="ID_s2_txt05">
+		<text><![CDATA[IP 电话<br/>(VoIP)]]></text>
+	</component>
+	<component id="ID_s1_txt06">
+		<text><![CDATA[流视频]]></text>
+	</component>
+	<component id="ID_s2_txt07">
+		<text><![CDATA[传输层将数据划分为更易于管理和传输的多个数据段。]]></text>
+	</component><!--SLIDE 03--><component id="ID_s3_title">
+		<text><![CDATA[<b>标识应用程序</b>]]></text>
+	</component>
+	<component id="ID_s3_txt01">
+		<text><![CDATA[收件人：you@example.com<br>发件人：me@example.com<br>主题：假期]]></text>
+	</component>
+	<component id="ID_s3_txt02">
+		<text><![CDATA[电子邮件]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[即时消息<br/>]]></text>
+	</component>
+	<component id="ID_s3_txt04">
+		<text><![CDATA[多个网页]]></text>
+	</component>
+	<component id="ID_s3_txt05">
+		<text><![CDATA[IP<br/> 电话<br/>(VoIP)]]></text>
+	</component>
+	<component id="ID_s3_txt06">
+		<text><![CDATA[流视频]]></text>
+	</component>
+	<component id="ID_s3_txt07">
+		<text><![CDATA[传输层可以确保在设备上运行多个应用程序时，所有应用程序都能接收正确的数据。]]></text>
+	</component>
+</textcomponents>

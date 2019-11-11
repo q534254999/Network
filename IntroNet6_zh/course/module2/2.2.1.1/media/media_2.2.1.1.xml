@@ -1,0 +1,46 @@
+﻿<textcomponents>
+    <!-- Slide 1 -->
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>主机名选择指南</b>]]></text>
+    </component>
+     <component id="ID_ins_title">
+        <text>
+            <![CDATA[主机名应该：]]>
+        </text>
+    </component>
+
+
+    <component id="ID_ins_body">
+        <text>
+            <![CDATA[<textformat blockindent='-16'><ul><li>以字母开头</LI><LI>不包含空格</LI><LI>以字母或数字结尾</LI><LI>仅使用字母、数字和破折号</LI><LI>长度少于 64 个字符</LI></ul></textformat>]]>
+        </text>
+    </component>
+    <!-- End Slide 1 -->
+    <!-- Slide 2 -->
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>配置设备名称</b>]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[Sw-Floor-3]]>
+        </text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[Sw-Floor-2]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[Sw-Floor-1]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[通过名称可以轻松识别网络设备，从而进行配置。]]>
+        </text>
+    </component>
+    <!-- End Slide 2 -->
+</textcomponents>

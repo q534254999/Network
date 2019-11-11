@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.2.1 默认静态路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>默认静态路由</h1>
+        <div>
+          <p>路由器通常使用本地配置的默认路由，或者通过动态路由协议从其他路由器获知的默认路由。默认路由无需在默认路由与目标 IPv4 地址之间匹配任何最左位。在路由表中没有其他路由匹配数据包的目标 IP 地址时，则使用默认路由。换句话说，如果不存在更加精确的匹配，则默认路由用作最后选用网关。 </p>
+          <p></p>
+          <p>在连接时通常使用默认静态路由：</p>
+          <p>
+            <ul>
+              <li>边缘路由器到服务提供商网络</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>末节路由器（只有一个上游邻居路由器的路由器） </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>如图所示，配置默认静态路由的命令语法类似于配置任何其他静态路由，但网络地址是 <b>0.0.0.0</b>，子网掩码也是 <b>0.0.0.0</b>。 </p>
+          <p></p>
+          <p></p>
+          <p>
+            <b>注</b>：IPv4 默认静态路由通常称为“全零路由”。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示配置默认静态路由的语法。该语法类似于标准静态路由，但目标网络和子网掩码全部为 0。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

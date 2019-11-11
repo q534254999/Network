@@ -1,0 +1,44 @@
+<textcomponents>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[<b>互联网</b>]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[ISP 1]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[ISP 2]]></text>
+	</component>
+	<component id="ID_s1_txt04">
+		<text><![CDATA[ISP 3]]></text>
+	</component>
+	<component id="ID_s1_txt05">
+		<text><![CDATA[<b>ISP DHCP 服务器</b>]]></text>
+	</component>
+	<component id="ID_s1_txt06">
+		<text><![CDATA[<b>路由器 DHCP 服务器</b>]]></text>
+	</component>
+	<component id="ID_s1_txt07">
+		<text><![CDATA[DHCP 客户端]]></text>
+	</component>
+	<component id="ID_s1_txt08">
+		<text><![CDATA[DHCP 客户端]]></text>
+	</component>
+	<component id="ID_s1_txt09">
+		<text><![CDATA[DHCP 客户端]]></text>
+	</component>
+	<component id="ID_s1_txt10">
+		<text><![CDATA[<b>DHCP 服务器</b>]]></text>
+	</component>
+	<component id="ID_s1_txt11">
+		<text><![CDATA[<b>本地 DHCP 服务器</b>]]></text>
+	</component>
+	<component id="ID_s1_txt12">
+		<text><![CDATA[<b>企业网络</b>]]></text>
+	</component>
+	<component id="ID_s1_txt13">
+		<text><![CDATA[家庭和小型企业网络]]></text>
+	</component>
+	<component id="ID_s1_txt14">
+		<text><![CDATA[<b>移动办公员工</b>]]></text>
+	</component>
+</textcomponents>

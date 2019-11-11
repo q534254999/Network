@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.2.2 动态 NAT</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>动态 NAT</h1>
+        <div>
+          <p>动态 NAT 使用公有地址池，并以先到先得的原则分配这些地址。内部设备请求访问外部网络时，动态 NAT 分配该池中的可用公共 IPv4 地址。 </p>
+          <p></p>
+          <p>图中，PC3 已经使用了动态 NAT 池中的第一个可用地址访问互联网。而其他地址仍可供使用。与静态 NAT 类似，为了满足所有同时发生的用户会话需要，动态 NAT 要求有足够的公有地址可用。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图显示包含三台计算机的网络。网络连接到 NAT 路由器，后者连接到互联网。有一个表显示了可映到内部私有地址的可用外部公共地址范围。它演示了动态 NAT。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

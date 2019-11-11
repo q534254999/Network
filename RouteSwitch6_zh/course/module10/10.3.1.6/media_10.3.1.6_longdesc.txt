@@ -1,0 +1,1 @@
+图 1 显示路由器上 show file systems 命令的输出。突出显示了 usbflash0: 文件系统。图 2 显示了“copy running-config usbflash0:”命令的输出两次。一次是目标文件不存在，一次是目标文件存在。如果目标文件已存在，将提示用户覆盖此文件。图 3 显示了“dir usbflash0:/”命令的输出。它还证明了使用“more usbflash0:/R1-Config”命令可以查看闪存中的“R1-config”文件。

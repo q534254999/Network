@@ -1,0 +1,102 @@
+<textcomponents>
+    <!--slide 1-->
+    <component id='ID_title'>
+	<text><![CDATA[<b>练习 – IPv6 报头字段</b>]]></text>
+</component>
+
+<component id="ID_titleTxt01">
+<text><![CDATA[说明]]></text>
+</component>
+
+<component id="ID_bodyTxt01">
+<text><![CDATA[阅读每个 IPv6 报头说明，然后单击其归属的 IPv6 报头字段。]]></text>
+</component>
+   
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[IPv6 报头说明]]></text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[<b>IPv6 报头字段</b>]]></text>
+    </component>
+    <component id="ID_s1_field01">
+        <text>
+            <![CDATA[<b>版本</b>]]></text>
+    </component>
+    <component id="ID_s1_field02">
+        <text>
+            <![CDATA[<b>负载长度</b>]]></text>
+    </component>
+    <component id="ID_s1_field03">
+        <text>
+            <![CDATA[<b>流量类别</b>]]></text>
+    </component>
+    <component id="ID_s1_field04">
+        <text>
+            <![CDATA[<b>下一报头</b>]]></text>
+    </component>
+    <component id="ID_s1_field05">
+        <text>
+            <![CDATA[<b>流标签</b>]]></text>
+    </component>
+    <component id="ID_s1_field06">
+        <text>
+            <![CDATA[<b>跳数限制</b>]]></text>
+    </component>
+    <!--answers-->
+    <component id="ID_s1_ans01">
+        <text>
+            <![CDATA[始终设为 0110]]>
+        </text>
+    </component>
+    <component id="ID_s1_ans02">
+        <text>
+            <![CDATA[确定数据包的数据部分的大小]]>
+        </text>
+    </component>
+    <component id="ID_s1_ans03">
+        <text>
+            <![CDATA[将数据包分类以便进行拥塞控制]]>
+        </text>
+    </component>
+    <component id="ID_s1_ans04">
+        <text>
+            <![CDATA[确定上层协议的应用程序类型]]>
+        </text>
+    </component>
+    <component id="ID_s1_ans05">
+        <text>
+            <![CDATA[建议所有数据包获得 IPv6 路由器相同类型的处理]]>
+        </text>
+    </component>
+    <component id="ID_s1_ans06">
+        <text>
+            <![CDATA[当该值变为 0 时，将告知发送方数据包未递送成功]]>
+        </text>
+    </component>
+    <!--buttons-->
+    <component id="ID_s1_btn01">
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+    <!--feedback-->
+    <component id='ID_s1_titleCorrect'>
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id='ID_s1_correctText'>
+        <text>
+            <![CDATA[恭喜！您已将 IPv6 报头说明与其相应字段配对。]]>
+        </text>
+    </component>
+    <component id='ID_s1_titleIncorrect'>
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id='ID_s1_incorrectText'>
+        <text>
+            <![CDATA[请重试。]]>
+        </text>
+    </component>
+</textcomponents>

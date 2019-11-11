@@ -1,0 +1,34 @@
+﻿<textcomponents>
+    <!-- slide 1 -->
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>限制设备访问</b>]]></text>
+    </component>
+    <component id="ID_s1_ins_title01">
+		<text><![CDATA[保护管理访问]]></text>
+	</component>
+    <component id="ID_s1_ins_body01">
+        <text>
+            <![CDATA[<textformat blockindent='-17'><ul><li>使用密码保护特权 EXEC 访问</li><li>使用密码保护用户 EXEC 访问</li><li>使用密码保护远程 Telnet 访问</li></ul>]]></text>
+    </component>
+    <component id="ID_s1_ins_title02">
+		<text><![CDATA[其他任务]]></text>
+	</component>
+	<component id="ID_s1_ins_body02">
+		<text><![CDATA[<textformat blockindent='-17'><ul><li>加密所有密码</li><li>提供法律通知</li></ul></textformat>]]></text>
+	</component>
+    <!-- end slide 1-->
+    <!-- slide 2 -->
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>密码选择指南</b>]]></text>
+    </component>
+    <component id="ID_s2_ins_title">
+		<text><![CDATA[选择密码时，应注意]]></text>
+	</component>
+    <component id="ID_s2_ins_body">
+        <text>
+            <![CDATA[<textformat blockindent='-17'><ul><li>密码长度应大于 8 个字符。</li><li>使用大写字母、小写字母、数字、特殊字符和/或数字序列组合。</li><li>避免为所有设备使用同一个密码。</li><li>不要使用常用词语，因为这些词语容易被猜到。</li></ul></textformat>]]></text>
+    </component>
+    <!-- end slide 2-->
+</textcomponents>

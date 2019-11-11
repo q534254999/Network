@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.2.3 一级路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>一级路由</h1>
+        <div>
+          <p>1 级路由是指子网掩码等于或小于网络地址有类掩码的路由。因此，1 级路由可以是：</p>
+          <p>
+            <ul>
+              <li>
+                <b>网络路由</b> - 是指子网掩码等于有类掩码的路由。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>超网路由</b> - 是指掩码小于有类掩码（例如，汇总地址）的网络地址。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>默认路由</b> - 是指地址为 0.0.0.0/0 的静态路由。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>1 级路由的来源可以是直连网络、静态路由或动态路由协议。</p>
+          <p></p>
+          <p>图 1 突出显示了 1 级路由在什么情况下也是最终路由。 </p>
+          <p></p>
+          <p>图 2 突出显示了 1 级路由。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 列出三种 1 级路由类型，每种类型一个示例。第一个列出的是 192.168.1.0/24,，第二个是 192.168.0.0/16，第三个示例是默认路由 0.0.0.0/0。这些是当路由表中列出下一跳 IP 地址或退出接口时，路由表中的所有最终路由。图 2 显示来自命令 show i.p. route pipe begin Gateway 的输出。其中显示路由器 R1 的路由表并突出显示两个 1 级路由。一个路由是静态默认路由，另一个是可通过 209.165.200.226 到达的 192.168.0.0/16。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

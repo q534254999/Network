@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.3.2 Auto-MDIX</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Auto-MDIX</h1>
+        <div>
+          <p>除了使用正确的双工设置，为每个端口定义正确的电缆类型也是必要的。特定设备之间的连接，例如交换机到交换机、交换机到路由器、交换机到主机和路由器到主机设备，曾经要求使用特定类型的电缆（交叉电缆或直通电缆）。而现在，大多数交换机设备可以通过在 CLI 中使用 mdix auto 接口配置命令来启用自动介质相关接口交叉 (auto-MDIX) 功能。 </p>
+          <p>当 auto-MDIX 功能启用时，交换机可检测连接到端口的电缆类型，并相应地配置接口。因此，如果要连接到交换机上的铜缆 10/100/1000 端口，您既可以使用交叉电缆，也可以使用直通电缆，而无需考虑连接另一端的设备类型。 </p>
+          <p>
+            <b>注意</b>：在运行 Cisco IOS Release 12.2(18)SE 或更高版本的交换机上，默认启用 auto-MDIX 功能。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows 3 connections: switch to switch, switch to router, and switch to P.C.  Auto-MIDX auto detects the type of cable and configures the interface accordingly.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

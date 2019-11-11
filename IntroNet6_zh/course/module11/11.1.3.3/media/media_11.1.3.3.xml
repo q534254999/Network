@@ -1,0 +1,36 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>软件进程</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[进程是同时运行的一个个软件程序。<br/><br/><b>进程可以是：</b>]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[应用程序]]></text> 
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[服务]]></text> 
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[系统操作]]></text> 
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[一个程序可以多次运行，每次都有各自的进程。]]></text> 
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[Windows 操作系统中运行的典型进程]]></text> 
+	</component>		
+	
+	<component id="ID_1">
+		<text><![CDATA[<b>1</b>]]></text>
+	</component>
+	<component id="ID_2">
+		<text><![CDATA[<b>2</b>]]></text>
+	</component>
+	<component id="ID_3">
+		<text><![CDATA[<b>3</b>]]></text>
+	</component>
+	<component id="ID_4">
+		<text><![CDATA[<b>4</b>]]></text>
+	</component>
+</textcomponents>

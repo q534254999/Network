@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.1.4 TCP 三次握手分析</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>TCP 三次握手分析</h1>
+        <div>
+          <p>主机跟踪会话过程中的每个数据段，并使用 TCP 报头信息交换已接收数据的相关信息。TCP 是全双工协议，每个连接都代表两个单向通信数据流或会话。若要建立连接，主机应执行三次握手。TCP 报头中的控制位指出了连接的进度和状态。 </p>
+          <p>三次握手：</p>
+          <p>
+            <ul>
+              <li>确认目的设备存在于网络上；</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>确认目的设备有活动的服务，并且正在源客户端要使用的目的端口号上接受请求；</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>通知目的设备源客户端想要在该端口号上建立通信会话。</li>
+            </ul>
+          </p>
+          <p>通信完成后，将关闭会话并终止连接。连接和会话机制保障了 TCP 的可靠性功能。</p>
+          <p>TCP 数据段报头的控制位字段中的六位被称为标志。标志是设置为开启或关闭的位。请单击图中的控制位字段，查看所有六个标志。我们已经讨论过 SYN、ACK 和 FIN。RST 标志用于在出现错误或超时时重置连接。单击<a href="http://packetlife.net/blog/2011/mar/2/tcp-flags-psh-and-urg/" target="_blank">此处</a>了解 PSH 和 URG 标志的详细信息。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the TCP header. Clicking on the Control Bits field opens a text box listing the six different control bits.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

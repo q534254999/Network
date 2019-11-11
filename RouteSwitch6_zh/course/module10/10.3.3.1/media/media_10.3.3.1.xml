@@ -1,0 +1,16 @@
+<textcomponents>
+
+<component id="ID_title">
+  <text><![CDATA[<b>用作备份位置的中央 TFTP 服务器</b>]]></text> 
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[TFTP 服务器]]></text> 
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[闪存]]></text> 
+</component>
+<component id="ID_txt03">
+  <text><![CDATA[c1900-universalk9-mz.SPA.152-4.M3.bin]]></text> 
+</component>
+
+</textcomponents>

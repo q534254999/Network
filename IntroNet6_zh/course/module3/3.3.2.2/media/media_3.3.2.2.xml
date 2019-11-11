@@ -1,0 +1,189 @@
+<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>第 2 层数据链路地址</b>]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[原始源]]>
+        </text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[最终目的地]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[PC1 192.168.1.110]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[Web 服务器 172.16.1.99]]>
+        </text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[L2 = 第 2 层<br/>L3 = 第 3 层]]>
+        </text>
+    </component>
+    <component id="ID_txt06">
+        <text>
+            <![CDATA[L3 = 第 3 层]]>
+        </text>
+    </component>
+    <component id="ID_txt08">
+        <text>
+            <![CDATA[网卡]]>
+        </text>
+    </component>
+    <component id="ID_txt07">
+        <text>
+            <![CDATA[网卡]]>
+        </text>
+    </component>
+    <component id="ID_txt10">
+        <text>
+            <![CDATA[网卡]]>
+        </text>
+    </component>
+    <component id="ID_txt09">
+        <text>
+            <![CDATA[网卡]]>
+        </text>
+    </component>
+    <component id="ID_txt12">
+        <text>
+            <![CDATA[网卡]]>
+        </text>
+    </component>
+    <component id="ID_txt11">
+        <text>
+            <![CDATA[网卡]]>
+        </text>
+    </component>
+    <component id="ID_txt15">
+        <text>
+            <![CDATA[L2]]>
+        </text>
+    </component>
+    <component id="ID_txt16">
+        <text>
+            <![CDATA[L3]]>
+        </text>
+    </component>
+    <component id="ID_txt13">
+        <text>
+            <![CDATA[L2]]>
+        </text>
+    </component>
+    <component id="ID_txt14">
+        <text>
+            <![CDATA[L3]]>
+        </text>
+    </component>
+    <component id="ID_txt17">
+        <text>
+            <![CDATA[L2]]>
+        </text>
+    </component>
+    <component id="ID_txt18">
+        <text>
+            <![CDATA[L3]]>
+        </text>
+    </component>
+    <!-- Slide 1-->
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[目的网卡]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[源网卡]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt03">
+        <text>
+            <![CDATA[源 IP 192.168.1.110]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt04">
+        <text>
+            <![CDATA[目的 IP 172.16.1.99]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt05">
+        <text>
+            <![CDATA[L2 报头]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt06">
+        <text>
+            <![CDATA[L3 IP 数据包]]>
+        </text>
+    </component>
+    <!-- Slide 2-->
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[目的网卡]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[源网卡]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt03">
+        <text>
+            <![CDATA[源 IP 192.168.1.110]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt04">
+        <text>
+            <![CDATA[目的 IP 172.16.1.99]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt05">
+        <text>
+            <![CDATA[L2 报头]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt06">
+        <text>
+            <![CDATA[L3 IP 数据包]]>
+        </text>
+    </component>
+    <!-- Slide 3 -->
+    <component id="ID_s3_txt01">
+        <text>
+            <![CDATA[目的网卡]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt02">
+        <text>
+            <![CDATA[源网卡]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt03">
+        <text>
+            <![CDATA[源 IP 192.168.1.110]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt04">
+        <text>
+            <![CDATA[目的 IP 172.16.1.99]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt05">
+        <text>
+            <![CDATA[L2 报头]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt06">
+        <text>
+            <![CDATA[L3 IP 数据包]]>
+        </text>
+    </component>
+</textcomponents>

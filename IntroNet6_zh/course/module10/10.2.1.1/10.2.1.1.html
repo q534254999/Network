@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.1.1 超文本传输协议和超文本标记语言</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>超文本传输协议和超文本标记语言</h1>
+        <div>
+          <p>当在 Web 浏览器中输入一个 Web 地址或统一资源定位符 (URL) 时，Web 浏览器将通过 HTTP 协议建立与服务器上的 Web 服务之间的连接。一提到 Web 地址，大多数人往往想到 URL 以及统一资源标识符 (URI)。 </p>
+          <p>为了更好地理解 Web 浏览器和 Web 客户端的交互原理，我们可以研究一下浏览器是如何打开网页的。在本例中，请使用 http://www.cisco.com/index.html URL。</p>
+          <p>首先，如图 1 所示，浏览器对 URL 地址的三个组成部分进行分析： </p>
+          <p>1.<b>http</b>（协议或方案）</p>
+          <p>2.<b>www.cisco.com</b>（服务器名称）</p>
+          <p>3.<b>index.html</b>（所要请求的文件名称）</p>
+          <p>然后，如图 2 所示，浏览器将通过域名服务器将 www.cisco.com 转换成数字 IP 地址，用它连接到该服务器。根据 HTTP 协议的要求，浏览器向该服务器发送 GET 请求并请求 <b>index.html</b> 文件。服务器，如图 3 所示，将该网页的 HTML 代码发送到浏览器。最后，如图 4 所示，浏览器解密 HTML 代码并为浏览器窗口格式化页面。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a server and client connected to a network where the client is using HTTP Figure 2 shows step one, the client requesting a web page. Figure 3 shows step two, the server response with an example of the response header. Figure 4 shows the web page rendering in a browser on the client.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

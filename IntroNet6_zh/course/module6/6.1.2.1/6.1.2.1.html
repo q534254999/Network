@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.2.1 封装 IP</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>封装 IP</h1>
+        <div>
+          <p>IP 通过添加 IP 报头将传输层数据段或其他数据进行封装。此报头用于将数据包传送到目的主机。从数据包离开源主机直至其到达目的主机，IP 报头始终保持不变。</p>
+          <p>图 1 显示了创建传输层 PDU 的流程。图 2 显示了网络层 PDU 如何封装传输层 PDU 来创建 IP 数据包。</p>
+          <p>按层封装数据层的流程使我们可以开发和扩展位于不同层的服务而不影响其他层。这意味着传输层数据段可以随时通过 IPv4 或 IPv6 进行封装，或使用未来可能开发出的任何新协议进行封装。 </p>
+          <p>路由器可以实施这些不同的网络层协议，使其通过网络同时运行。这些中间设备所执行的路由只考虑网络层数据包报头的内容。在任何情况下，数据包的数据部分，即封装的传输层 PDU，在网络层的各个过程中都保持不变。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a Transport layer PDU, the segment, as the segment header and the data from the upper layers. Figure 2 shows how layer 3, the network layer, encapsulates the transport layer PDU into a packet and adds the IP Header</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

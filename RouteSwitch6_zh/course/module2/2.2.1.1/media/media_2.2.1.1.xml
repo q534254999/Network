@@ -1,0 +1,41 @@
+<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b><font face="_typewriter">ip route</font> 命令语法]]></text>
+    </component>
+    <component id="ID_table">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+  	
+	<tr>
+
+		<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+	</tr>
+	<tr>
+	
+		
+		<td width="110" bgcolor='#666263' valign="top" ><font color='#ffffff' ><b>参数</b></font></td>
+		<td bgcolor='#666263'  valign="top" class="mtitle"><font color='#ffffff' ><b>说明</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' face="_typewriter">network-address</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' ><textformat blockindent="-14">要添加到路由表的远程网络的目标网络地址</textformat></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536' face="_typewriter">subnet-mask</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536' ><textformat blockindent="-14"><li><span id="span1">要添加到路由表</span>的远程网络的子网掩码。</li><li>可对此子网掩码进行修改，以<span id="span1">汇总一组网络</span>。</li></textformat></font></td></tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' face="_typewriter">ip-address</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' ><textformat blockindent="-14"><li>通常称为下一跳路由器的 <span id="span1">IP 地址</span>。</li><li>一般在连接到广播<span id="span1">介质（即以太网）时使用。</span></li><li>通常创建递归查询</li></textformat></font></td>
+	</tr>
+	<tr><td bgcolor='#F2F2F2' valign="top"><font color='#393536' face="_typewriter">exit-intf</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536'  ><textformat blockindent="-14"><li>使用传出接口，将数据包转发到<span id="span1">目标网络。</span></li><li>也称为直连静态<span id="span1">路由。</span></li><li>一般在点<span id="span1">对点配置中连接时使用。</span></li></textformat></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' face="_typewriter">distance</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' ><textformat blockindent="-14"><li>（可选）配置管理<span id="span1">距离。</span></li><li>通常用于配置浮动静态<span id="span1">路由。</span></li></textformat></font></td>
+	</tr>
+	</table>]]>
+        </text>
+    </component>
+</textcomponents>

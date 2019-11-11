@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.3.4.4 show ip interface brief 命令</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.3.4.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>show ip interface brief 命令</h1>
+        <div>
+          <p>命令和工具可用于验证主机配置，同样，命令也可用于验证中间设备的接口。Cisco IOS 提供了用于验证路由器接口和交换机接口工作情况的命令。</p>
+          <p></p>
+          <p>
+            <b>验证路由器接口</b>
+          </p>
+          <p></p>
+          <p><b>show ip interface brief</b> 是最常用的命令之一。它提供的输出比 <b>show ip interface</b> 命令的输出更简略。它提供路由器上所有网络接口的重要信息摘要。</p>
+          <p></p>
+          <p>图 1 显示本示例中使用的拓扑。</p>
+          <p></p>
+          <p>在图 2 中，单击 R1 按钮。<b>show ip interface brief</b> 输出显示路由器的所有接口、分配给每个接口的 IP 地址（如果有）和接口的运行状态。</p>
+          <p></p>
+          <p>
+            <b>验证交换机接口</b>
+          </p>
+          <p></p>
+          <p>在图 2 中，单击 S1 按钮。<b>show ip interface brief</b> 命令也可用于验证交换机接口的状态。为 VLAN1 接口分配 IPv4 地址 192.168.254.250，并已将其启用而且运行正常。</p>
+          <p></p>
+          <p>输出还显示 FastEthernet0/1 接口已关闭。这表示没有设备连接到该接口或与该接口连接的设备中有一个网络接口不能正常运行。 </p>
+          <p></p>
+          <p>相反，输出显示 FastEthernet0/2 接口和 FastEthernet0/3 接口都运行正常。这通过 Status（状态）列和 Protocol（协议）列中的 up（工作）来表明。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a network consisting of a PC connected to a switch, which is connected to a router, which is connected to a cloud. Figure 2 shows the output of the show ip interface brief command on the router and on the switch. </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

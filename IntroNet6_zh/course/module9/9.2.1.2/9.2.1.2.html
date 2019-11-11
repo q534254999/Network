@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.1.2 TCP 连接的建立</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>TCP 连接的建立</h1>
+        <div>
+          <p>在一些文化中，两个人见面时常常通过握手来问好。双方都把握手的行为理解为友好问候的信号。网络中的连接是类似的。在 TCP 连接中，主机客户端与服务器建立连接。 </p>
+          <p>TCP 连接分三个步骤建立：</p>
+          <p>
+            <b>第 1 步</b> - 源客户端请求与服务器进行客户端-服务器通信会话。</p>
+          <p>
+            <b>第 2 步</b> - 服务器确认客户端-服务器通信会话，并请求服务器-客户端通信会话。 </p>
+          <p>
+            <b>第 3 步</b> - 源客户端确认服务器-客户端通信会话。</p>
+          <p>在图中，依次单击按钮 1 到 3，查看 TCP 连接的建立过程。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the steps involved in the three-way handshake during a TCP connection establishment.  Step one shows the initiating client forming a SYN packet with a sequence number of 100 and sends the SYN request to client B.  Step two shows client B receiving the SYN and setting the sequence number to 300 and sending the SYN along with an ACK packet back to client A.  Step three shows client A receiving the SYN and ACK sent by client B, this establishes the connection.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

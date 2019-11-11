@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.3.5.1 debug 命令</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.3.5.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>debug 命令</h1>
+        <div>
+          <p>IOS 进程、协议、机制和事件生成消息以告知它们的状态。在排除故障或验证系统操作时，这些消息可以提供有价值的信息。IOS <b>debug</b> 命令允许管理员实时显示这些消息，以便进行分析。它是 Cisco IOS 设备中用于监控事件的一个非常重要的工具。</p>
+          <p></p>
+          <p>所有 <b>debug</b> 命令都在特权 EXEC 模式下输入。Cisco IOS 允许缩小 <b>debug</b> 的输出，以便仅包含相关功能或子功能。这一点很重要，因为调试输出在 CPU 进程中享有高优先级，可能会导致系统不可用。因此，只在排查特定问题时才使用 <b>debug</b> 命令。如图所示，要监控思科路由器中 ICMP 消息的状态，请使用 <b>debug ip icmp</b>。</p>
+          <p></p>
+          <p>要列出所有调试命令选项的简短说明，请在特权 EXEC 模式下的命令行处使用 <b>debug ?</b> 命令。</p>
+          <p></p>
+          <p>要关闭特定调试功能，请在 <b>debug</b> 命令前添加关键字 <b>no</b>：</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router# </span>
+            <span class="cmd">
+              <b>no debug ip icmp</b>
+            </span>
+          </p>
+          <p></p>
+          <p>或者，您可以在特权 EXEC 模式中输入命令的 <b>undebug</b> 形式：</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router# </span>
+            <span class="cmd">
+              <b>undebug ip icmp</b>
+            </span>
+          </p>
+          <p></p>
+          <p>要同时关闭所有活动的 debug 命令，请使用 <b>undebug all</b> 命令：</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router# </span>
+            <span class="cmd">
+              <b>undebug all</b>
+            </span>
+          </p>
+          <p></p>
+          <p>某些 debug 命令（例如 <b>debug all</b> 和 <b>debug ip packet</b>）会生成大量输出，并使用大量系统资源。路由器会忙于显示 debug 消息，以至于没有足够的处理能力来执行其网络功能，或侦听关闭调试的命令。因此，不建议使用这些命令选项，应尽量避免。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the output of the ‘debug ip icmp’ command.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>练习 - ACL 操作</b><br/><br/>请拖动相应的单词或短语来完成 ACL 操作语句。 并非全部答案都要使用。 第一条语句需要两个单词或短语来完成。]]></text>
+</component><!--Drag and Drop--><component id='ID_drag01'>
+	<text><![CDATA[<font color="#393536">被丢弃</font>]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[<font color="#393536">过去</font>]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[<font color="#393536">四条</font>]]></text>
+</component>
+
+<component id='ID_drag04'>
+	<text><![CDATA[<font color="#393536">接口</font>]]></text>
+</component>
+
+<component id='ID_drag05'>
+	<text><![CDATA[<font color="#393536">路径</font>]]></text>
+</component>
+
+<component id='ID_drag06'>
+	<text><![CDATA[<font color="#393536">拒绝</font>]]></text>
+</component>
+
+<component id='ID_drag07'>
+	<text><![CDATA[<font color="#393536">之后</font>]]></text>
+</component>
+
+<component id='ID_drag08'>
+	<text><![CDATA[<font color="#393536">正在处理</font>]]></text>
+</component>
+
+<component id='ID_drag09'>
+	<text><![CDATA[<font color="#393536">六层</font>]]></text>
+</component>
+
+<component id='ID_drag10'>
+	<text><![CDATA[<font color="#393536">协议</font>]]></text>
+</component>
+<component id='ID_drag11'>
+	<text><![CDATA[<font color="#393536">防火墙</font>]]></text>
+</component>
+<component id='ID_drag12'>
+	<text><![CDATA[<font color="#393536">十二</font>]]></text>
+</component>
+<component id='ID_drag13'>
+	<text><![CDATA[<font color="#393536">被转发</font>]]></text>
+</component>
+<component id='ID_drag14'>
+	<text><![CDATA[<font color="#393536">允许</font>]]></text>
+</component>
+
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[您已成功完成与 ACL 工作原理相关的语句。]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[您未成功完成与 ACL 工作原理相关的语句。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>重置</b>]]></text>
+</component>
+
+
+
+<component id="ID_txt01">
+	<text><![CDATA[访问控制列表 (ACL) 根据数据包报头条件来控制路由器_____或_____数据包。]]></text>
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[内部网络和外部网络之间的路由器通常使用 ACL 来提供_____。]]></text> 
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[带有三个活动接口和两项网络协议（IPv4 和 IPv6）的路由器最多可以有_____个活动 ACL。]]></text> 
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[对于入站 ACL，传入数据包在它们发送到出站接口_____进行处理。]]></text> 
+</component>
+
+<component id="ID_txt05">
+  <text><![CDATA[对于出站 ACL，传入数据包在它们发送到出站接口_____进行处理。]]></text> 
+</component>
+
+<component id="ID_txt06">
+  <text><![CDATA[对于每个 ACL，都有一条隐含的 deny 语句。 如果数据包不匹配任何 ACL 条件，它将_____。]]></text> 
+</component>
+
+<component id="ID_txt07">
+  <text><![CDATA[ACL 可以根据每种协议、每个方向和每个_____过滤数据流。]]></text> 
+</component>
+
+<component id="ID_txt08">
+  <text><![CDATA[ACL 可以根据源/目的地址、_____和端口号过滤流量。]]></text> 
+</component>
+
+<component id="ID_txt09">
+  <text><![CDATA[<b>ACL 工作原理</b>]]></text> 
+</component>
+
+<component id="ID_txt10">
+  <text><![CDATA[<b>完成</b>]]></text> 
+</component>
+   
+</textcomponents>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.2.3 无类子网划分</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>无类子网划分</h1>
+        <div>
+          <p>目前的示例中都从常见的 /8、/16 和 /24 网络前缀借用了主机位。然而，子网可以从<i>任何</i>主机位借用位来创建其他掩码。</p>
+          <p>例如，/24 网络地址通常通过从第 4 个二进制八位数借用位来使用更长的前缀进行子网划分。这可以让管理员在将网络地址分配到更少数量的终端设备时具有很好的灵活性。  </p>
+          <p>如图所示： </p>
+          <p>
+            <ul>
+              <li>/25 行 - 从第 4 个二进制八位数借用 1 位可以创建每个能容纳 126 个主机的 2 个子网。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>/26 行 - 借用 2 位可以创建每个能容纳 62 个主机的 4 个子网。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>/27 行 - 借用 3 位可以创建每个能容纳 30 个主机的 8 个子网。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>/28 行 - 借用 4 位可以创建每个能容纳 14 个主机的 16 个子网。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>/29 行 - 借用 5 位可以创建每个能容纳 6 个主机的 32 个子网。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>/30 行 - 借用 6 位可以创建每个能容纳 2 个主机的 64 个子网。 </li>
+            </ul>
+          </p>
+          <p>对在第 4 个二进制八位数中借用的每个位，可用的子网数会加倍，同时每个子网的主机地址数会减少。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a table. The first column lists the six prefix lengths from /25 to /30. The second column lists the six subnet masks from 255.255.255.128 to 255.255.255.252. The third column shows the subnet mask in binary with the letter “n” above one bits and the letter “h” above zero bits. The effect is to show the borrowing of bits into the fourth octet from borrowing one bit in the first row (/25) to borrowing six bits in the last row (/30). The fourth and fifth columns show the number of subnets and hosts respectively. For example, borrowing 3 bits gets you 8 subnets with 30 hosts per subnet.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

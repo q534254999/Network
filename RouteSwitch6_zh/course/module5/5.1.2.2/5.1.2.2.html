@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.2 在物理层配置交换机端口</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>在物理层配置交换机端口</h1>
+        <div>
+          <p>
+            <b>双工和速度</b>
+          </p>
+          <p></p>
+          <p>可以使用特定的双工和速度设置手动配置交换机端口。使用 <b>duplex</b> 接口配置模式命令手动指定交换机端口的双工模式。使用 <b>speed</b> 接口配置模式命令手动指定交换机端口的速度。在图 1 中，使用 <b>duplex </b>命令的<b> full</b> 关键字和 <b>speed</b> 命令的 <b>100</b> 关键字手动配置交换机 S1 和 S2 上的端口 F0/1。 </p>
+          <p></p>
+          <p>思科 Catalyst 2960 和 3560 交换机上交换机端口双工和速度的默认设置都是 auto。当 10/100/1000 端口设置为 10Mb/s 或 100Mb/s 时，它们可在半双工或全双工模式下工作，而当设置为 1000 Mb/s (1 Gb/s) 时，它们只能在全双工模式下运行。当连接端口的设备的速度和双工设置未知或可能更改时，自动协商非常有用。当连接已知设备（例如服务器、专用工作站或网络设备）时，最佳做法是手动设置速度和双工设置。</p>
+          <p></p>
+          <p>在对交换机端口问题进行故障排除时，应当检查双工和速度设置。</p>
+          <p></p>
+          <p>
+            <b>注</b>：交换机端口的双工模式和速度设置不匹配可能会导致连接问题。自动协商失败将导致设置不匹配。</p>
+          <p></p>
+          <p>所有光纤端口（例如 1000BASE-SX 端口）都只能以一种预设速度运行，而且始终为全双工。   </p>
+          <p></p>
+          <p>使用图 2 中的语法检查器配置交换机 S1 的端口 F0/1。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示一个表，其中列出交换机接口的基本配置命令。CLI 以特权 EXEC 模式启动，且第一条命令是，configure terminal。这将进入全局配置模式。下一命令是 interface fast Ethernet zero slash one，然后交换机提示符变为配置 - if，并且放在括号内。这会进入指定接口的配置模式。下一命令为 duplex full。此命令将双工选项设置为全双工。下一命令为 speed 100。此命令将接口上的速度设置为 100 Mb/秒。使用 copy running - config startup - config 命令将运行配置复制到启动配置文件中。图 2 是允许学生配置交换机端口接口的互动练习。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

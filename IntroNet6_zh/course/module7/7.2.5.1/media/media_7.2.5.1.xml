@@ -1,0 +1,1 @@
+<textcomponents><component id="ID_title"><text><![CDATA[<b>IPv6 所有节点组播通信</b>]]></text></component><component id="ID_txt01"><text><![CDATA[<b>源 IPv6 地址</b><br/>2001:0DB8:ACAD:1::1]]></text></component><component id="ID_txt02"><text><![CDATA[<b>目的 IPv6 地址</b><br/>FF02::1]]></text></component></textcomponents>

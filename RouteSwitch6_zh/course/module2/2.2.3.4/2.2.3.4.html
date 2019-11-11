@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.3.4 配置直连静态 IPv6 路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置直连静态 IPv6 路由</h1>
+        <div>
+          <p>当配置点对点网络上的静态路由时，指定送出接口可以代替使用下一跳 IPv6 地址。这是早期 IOS 或禁用 CEF 时采用的做法，目的是避免递归查找问题。 </p>
+          <p></p>
+          <p>例如，在图 1 中，R1 使用送出接口配置了三条直连静态路由。 </p>
+          <p></p>
+          <p>如图 2 中 R1 的 IPv6 路由表所示，当数据包指向 2001:DB8:ACAD:3::/64 网络时，R1 在路由表中查找匹配，发现可以将数据包从 Serial 0/0/0 接口转发出去。无需其他任何查找。</p>
+          <p></p>
+          <p>注意使用送出接口配置的路由表与使用递归条目配置的路由表有什么不同之处。</p>
+          <p></p>
+          <p>通过配置带送出接口的直连静态路由，路由表搜索一次即可解析送出接口，而不需要搜索两次。回想一下，使用了 CEF 转发机制，就不必要使用带送出接口的静态路由。结合使用 FIB 和数据平面中存储的邻接表，只需要查找一次。</p>
+          <p></p>
+          <p>使用图 3 和图 4 中的语法检查器配置直连静态 IPv6 路由。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">这些图基于标准实验图。R1，有 LAN 连接到 R2，还有一个 LAN 使用一个 LAN 连接到 R3。图 1 显示在路由器 1 上使用 IPv6 来配置远程网络的静态路由。使用退出接口来配置静态路由。图 2 演示路由器 1 访问路由器 3 上的 LAN 的查找过程。图 3 是允许学生使用 ipv6 将路由器 2 上的静态路由配置为使用退出接口到达路由器 3 的 LAN 的互动练习。图 4 是一个交互练习，允许学习者在路由器 3 上使用 IPv6 配置指向路由器 2 的另一端的网络的静态路由。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.3.1 IPv4 数据包报头</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv4 数据包报头</h1>
+        <div>
+          <p>IPv4 数据包报头是由包含重要数据包信息的字段组成。这些字段中包含的二进制数字由第 3 层进程进行检查。每个字段的二进制值均用于确定 IP 数据包的各种设置。协议报头图（从左到右、从上到下阅读）可提供在讨论协议字段时参考的直观图。图中的 IP 协议报头图标识了 IPv4 数据包中的字段。</p>
+          <p>IPv4 报头中的重要字段包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>版本 - </b>包含一个 4 位二进制值 0100，用于标识这是 IPv4 数据包。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>区分服务或 DiffServ (DS) - </b>以前称为服务类型 (ToS) 字段，DS 字段是一个用于确定每个数据包优先级的 8 位字段。DiffServ 字段的六个最高有效位是区分服务代码点 (DSCP)，而后两位是显式拥塞通知 (ECN) 位。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>生存时间 (TTL) -</b> 包含用于限制数据包寿命的一个 8 位二进制值。数据包发送方设置初始 TTL 值，数据包每经过一次路由器处理，数值就减少一。如果 TTL 字段的值减为零，则路由器将丢弃该数据包并向源 IP 地址发送 Internet 控制消息协议 (ICMP) 超时消息。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>协议 - </b>字段用于确定下一级协议。此 8 位二进制值表示数据包包含的数据负载类型，使网络层将数据传送到相应的上层协议。常用的值包括 ICMP (1)、TCP (6) 和 UDP (17)。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>源 IPv4 地址 - </b>包含表示数据包源 IPv4 地址的 32 位二进制值。源 IPv4 地址始终为单播地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>目的 IPv4 地址 - </b>包含表示数据包目的 IPv4 地址的 32 位二进制值。目的 IPv4 地址为单播、组播或广播地址。</li>
+            </ul>
+          </p>
+          <p>两种最常参考的字段是源和目的 IP 地址。这些字段用于确定数据包的源位置和目的位置。通常，在从源传输到目的地期间，这些地址不会改变。</p>
+          <p>互联网报头长度 (IHL)、总长度和报头校验和字段用于识别和验证数据包。</p>
+          <p>其他字段用于重新排列分段的数据包。具体而言，IPv4 数据包使用标识符、标志和片偏移量字段跟踪分段。路由器从一种介质向具有较小 MTU 的另一种介质转发数据包时必须将数据包分段。 </p>
+          <p>注意：选项和填充字段很少使用，因此不在本章的介绍范围之内。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a sample IP Header with several fields Highlighted.  These include Version, Differentiated Services (comprised of a code and explicit congestion notification), Time to live,  protocol and the source and destination IP addresses.  There are other fields, but these are the important ones at this time.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

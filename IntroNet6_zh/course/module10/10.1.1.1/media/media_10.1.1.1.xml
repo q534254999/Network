@@ -1,0 +1,71 @@
+<textcomponents>
+	<component id="ID_OSInum01">
+		<text><![CDATA[<b>1</b>]]></text>
+	</component>
+	<component id="ID_OSInum02">
+		<text><![CDATA[<b>2</b>]]></text>
+	</component>
+	<component id="ID_OSInum03">
+		<text><![CDATA[<b>3</b>]]></text>
+	</component>
+	<component id="ID_OSInum04">
+		<text><![CDATA[<b>4</b>]]></text>
+	</component>
+	<component id="ID_OSInum05">
+		<text><![CDATA[<b>5</b>]]></text>
+	</component>
+	<component id="ID_OSInum06">
+		<text><![CDATA[<b>6</b>]]></text>
+	</component>
+	<component id="ID_OSInum07">
+		<text><![CDATA[<b>7</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[应用层]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[表示层]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[会话层]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[传输层]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[网络层]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[数据链路层]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[物理层]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[应用<br>层]]></text>
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[数据流<br>层]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[应用层]]></text>
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[传输层]]></text>
+	</component>
+	<component id="ID_txt12">
+		<text><![CDATA[互联网层]]></text>
+	</component>
+	<component id="ID_txt13">
+		<text><![CDATA[网络<br>接入层]]></text>
+	</component>
+	<component id="ID_txt14">
+		<text><![CDATA[域名系统<br/><br/>超文本传输协议<br/><br/>简单邮件传输协议<br/><br/>邮局协议<br/><br/>动态主机配置协议<br/><br/>文件传输协议<br/><br/>互联网消息访问协议]]></text>
+	</component>
+	<component id="ID_txt19">
+		<text><![CDATA[<b>OSI 模型</b>]]></text>
+	</component>
+	<component id="ID_txt20">
+		<text><![CDATA[<b>TCP/IP 模型</b>]]></text>
+	</component>
+</textcomponents>

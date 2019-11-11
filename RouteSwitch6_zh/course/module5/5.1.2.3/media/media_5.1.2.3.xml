@@ -1,0 +1,89 @@
+<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>配置自动 MDIX</b>]]></text>
+	</component>
+	<component id="ID_s1_table">
+		<text><![CDATA[
+	<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable"><tr>
+		<td colspan='2' bgcolor='#98D3D1' valign="top"><font size='12' class="font12px" color='#1C3635'><b>思科交换机 IOS 命令</b></font></td>					
+	</tr>
+	<tr class="liner">
+		<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536'>进入全局配置模式。</font></td>	
+		<td bgcolor='#EFF8F7' valign="top"><font face="_typewriter" color='#393536'>S1# <b class="command">configure terminal</b></font></td>		
+	</tr>
+	<tr>					
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>进入接口配置模式。</font></td>	
+		<td bgcolor='#FFFFFF' valign="top"><font face="_typewriter" color='#393536'>S1(config)# <b class="command">interface fastethernet 0/1</b></font></td>		
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536'>将接口配置为与所连接的设备自动协商双工。</font></td>	
+		<td bgcolor='#EFF8F7' valign="top"><font face="_typewriter" color='#393536'>S1(config-if)# <b class="command">duplex auto</b></font></td>		
+	</tr>
+	<tr>					
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>将接口配置为与相连设备自动协商速度。</font></td>	
+		<td bgcolor='#FFFFFF' valign="top"><font face="_typewriter" color='#393536'>S1(config-if)# <b class="command">speed auto</b></font></td>		
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536'>在接口上启用自动 MDIX。</font></td>	
+		<td bgcolor='#EFF8F7' valign="top"><font face="_typewriter" color='#393536'>S1(config-if)# <b class="command">mdix auto</b></font></td>		
+	</tr>
+	<tr>					
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>返回到特权 EXEC 模式。</font></td>	
+		<td bgcolor='#FFFFFF' valign="top"><font face="_typewriter" color='#393536'>S1(config-if)# <b class="command">end</b></font></td>		
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536'>将运行配置保存到启动配置中。</font></td>	
+		<td bgcolor='#EFF8F7' valign="top"><font face="_typewriter" color='#393536'>S1# <b class="command">copy running-config startup-config</b></font></td>		
+	</tr>
+	</table>]]></text>
+	</component>
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>检验自动 MDIX</b>]]></text>
+	</component>
+	<component id="ID_s3_title">
+		<text><![CDATA[<b>启用自动 MDIX</b>]]></text>
+	</component>
+	<component id="ID_sc_reset">
+		<text><![CDATA[重置]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[看答案]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[全部显示]]></text>
+	</component>
+	<component id="ID_s3_SC5" fontSize="12" fontFace="_typewriter" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b>***<font face="_sans" color="#FFFFFF">您必须输入确切完整的命令。 包含文件名的命令区分大小写。</font>***</b>]]></feedback>
+		<existingcommands><![CDATA[<font face="_sans"><b>进入配置模式并将 Fastethernet0/1 双工、速度和 MDIX 设置为自动。</b></font>]]></existingcommands>
+		<command prompt="S2#">
+			<correctresponse><![CDATA[configure terminal]]></correctresponse>
+			<deviceresponse><![CDATA[<span style="font-family:Courier New;">Enter configuration commands, one per line. End with CNTL/Z.</span>]]></deviceresponse>
+		</command>
+		<command prompt="S2(config)#">
+			<correctresponse><![CDATA[interface fastethernet0/1]]></correctresponse>
+		</command>
+		<command prompt="S2(config-if)#">
+			<correctresponse><![CDATA[duplex auto]]></correctresponse>
+		</command>
+		<command prompt="S2(config-if)#">
+			<correctresponse><![CDATA[speed auto]]></correctresponse>
+		</command>
+		<command prompt="S2(config-if)#">
+			<correctresponse><![CDATA[mdix auto]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>结束配置外模式，然后将配置保存到 NVRAM。</b></font>]]></instruction>
+		</command>
+		<command prompt="S2(config-if)#">
+			<correctresponse><![CDATA[end]]></correctresponse>
+			<deviceresponse><![CDATA[S2#<br><span style="font-family:Courier New;">%SYS-5-CONFIG_I: Configured from console by console<span>]]></deviceresponse>
+		</command>
+		<command prompt="S2#">
+			<correctresponse><![CDATA[copy running-config startup-config]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>您已成功配置了 MDIX 自动功能。</b></font>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+</textcomponents>

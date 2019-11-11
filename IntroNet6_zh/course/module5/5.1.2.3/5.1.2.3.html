@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.3 帧处理</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>帧处理</h1>
+        <div>
+          <p>MAC 地址通常称为烧录地址 (BIA)，因为传统上该地址被烧录到网卡的 ROM（只读存储器）中。这意味着该地址会永久编码到 ROM 芯片中。 </p>
+          <p>
+            <b>注意</b>：在现代 PC 操作系统和网卡中，可以更改软件中的 MAC 地址。当试图访问基于 BIA 进行过滤的网络时，这一点非常有用。因此，根据 MAC 地址来过滤或控制流量就不再安全了。 </p>
+          <p>当计算机启动时，网卡首先要做的就是将 MAC 地址从 ROM 复制到 RAM 中。设备在向以太网络转发消息时，会将报头信息附加到帧上。报头信息包含源 MAC 地址和目的 MAC 地址。</p>
+          <p>单击动画中的“播放”，观看帧转发流程。收到以太网帧时，网卡会查看帧中的目的 MAC 地址是否与设备 RAM 中存储的物理 MAC 地址匹配。如果不匹配，设备就会丢弃帧。如果与帧中的目的 MAC 匹配，则网卡会将帧向上传送到 OSI 层进行解封处理。</p>
+          <p>
+            <b>注意</b>：如果目的 MAC 地址是主机为其成员的广播或组播组时，以太网网卡也会接收帧。</p>
+          <p></p>
+          <p>必须为任何可能成为以太网帧的源或目的设备分配 MAC 地址。这些设备包括工作站、服务器、打印机、移动设备和路由器。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">This animation shows how a frame is forwarded.  There are four computers on shared media.  Each has a different MAC address.  Computer 1 sends a frame to Computer 3 using the correct MAC addresses for source and destination.  The frame is forwarded to all of the computers.  Computers 2 and 4 ignore the frame since the destination MAC address does not match their own.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

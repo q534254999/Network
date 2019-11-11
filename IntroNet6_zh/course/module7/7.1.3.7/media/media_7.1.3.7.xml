@@ -1,0 +1,99 @@
+<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>练习 – 单播、广播或组播？</b>]]></text>
+    </component>
+    <component id="ID_titleTxt01">
+    <text><![CDATA[说明]]></text>
+  </component>
+
+  <component id="ID_bodyTxt01">
+    <text><![CDATA[单击<b>“开始”</b>查看目的 IP 地址。然后单击根据地址类型（单播、广播或组播）接收数据包的主机。这是限时练习。]]></text>
+  </component>
+
+    <component id="ID_start">
+        <text>
+            <![CDATA[开始]]></text>
+    </component>
+    <component id="ID_stop">
+        <text>
+            <![CDATA[停止]]></text>
+    </component>
+    <component id="ID_reset">
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[<b>目的 IP 地址 =<b>]]></text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[源主机]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[<b>剩余时间</b>]]></text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[192.168.100.1<br> 225.5.77.126 组]]>
+        </text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[192.168.100.2<br> 237.192.126.17 组]]>
+        </text>
+    </component>
+    <component id="ID_txt06">
+        <text>
+            <![CDATA[192.168.100.3]]>
+        </text>
+    </component>
+    <component id="ID_txt07">
+        <text>
+            <![CDATA[192.168.100.4<br> 237.192.126.17 组]]>
+        </text>
+    </component>
+    <component id="ID_txt08">
+        <text>
+            <![CDATA[192.168.100.5<br> 225.5.77.126 组]]>
+        </text>
+    </component>
+    <component id="ID_cMulti">
+        <text>
+            <![CDATA[您已成功地识别传输类型。]]>
+        </text>
+    </component>
+    <component id="ID_iMulti">
+        <text>
+            <![CDATA[您未成功识别传输类型。请重试。]]>
+        </text>
+    </component>
+    <component id="ID_cBroad">
+        <text>
+            <![CDATA[您已成功地识别传输类型。]]>
+        </text>
+    </component>
+    <component id="ID_iBroad">
+        <text>
+            <![CDATA[您未成功识别传输类型。请重试。]]>
+        </text>
+    </component>
+    <component id="ID_cUni">
+        <text>
+            <![CDATA[您已成功地识别传输类型。]]>
+        </text>
+    </component>
+    <component id="ID_iUni">
+        <text>
+            <![CDATA[您未成功识别传输类型。请重试。]]>
+        </text>
+    </component>
+    <component id="ID_endGame">
+        <text>
+            <![CDATA[干得不错。单击“重置”继续。]]>
+        </text>
+    </component>
+</textcomponents>

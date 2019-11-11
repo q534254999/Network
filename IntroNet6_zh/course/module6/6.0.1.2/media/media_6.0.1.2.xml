@@ -1,0 +1,54 @@
+﻿<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>数据网络中的数据包交换</b>]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[将每个数据包路由到其目的设备时，单一通信可能会使用多条路径。]]>
+        </text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[不建立任何固定路径。根据当时可用的最佳路径路由数据包。]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[在传输之前，每个通信都会划分为多个数据包并注明其地址和编号。]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[在高峰期，通信可能会延迟，但却不会被拒绝。]]>
+        </text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[<b>互联网</b>]]></text>
+    </component>
+    <component id="ID_txt06">
+        <text>
+            <![CDATA[到达目的设备后，根据数据包的序列号将其重组为正确顺序。]]>
+        </text>
+    </component>
+    <component id="ID_box1">
+        <text>
+            <![CDATA[源地址]]>
+        </text>
+    </component>
+    <component id="ID_box2">
+        <text>
+            <![CDATA[目的地址]]>
+        </text>
+    </component>
+    <component id="ID_box3">
+        <text>
+            <![CDATA[序列号]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt06">
+        <text>
+            <![CDATA[网络层使用四个基本过程…<br/><ul class="bubbleBullets"><li>终端设备编址</li><li>封装</li><li>路由</li><li>解封</li></ul>]]></text>
+    </component>
+</textcomponents>

@@ -1,0 +1,183 @@
+<textcomponents>
+    <!--Slide 1-->
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>密码攻击</b>]]></text>
+    </component>
+    <component id="ID_s1_TB_header">
+        <text>
+            <![CDATA[攻击者可以使用多种方法实施密码攻击：]]>
+        </text>
+    </component>
+    <component id="ID_s1_TB_body">
+        <text>
+            <![CDATA[<textformat blockindent="-18"><li>暴力攻击</li><li>特洛伊木马程序</li><li>数据包嗅探</li></textformat>]]>
+        </text>
+    </component>
+    <!--Slide 2-->
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>信任利用</b>]]></text>
+    </component>
+    <component id='ID_s2_table'>
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+			<tr class="mtable_top">
+				<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+			</tr>				
+			<tr>
+				<td bgcolor='#666263' width='180' valign="top"><font size='11' color='#ffffff'><b>网络 OS</b></font></td>
+					<td bgcolor='#666263' width='410' valign="top"><font size='11' color='#ffffff'><b>信任模型</b></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#E9E7E8' valign="top"><font size='11'color='#393536'>Windows</font></td>
+					<td bgcolor='#E9E7E8' valign="top"><font size='11' color='#393536'>域 Active Directory (AD)</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F2F2F2' valign="top"><font size='11' color='#393536'>Linux 和 UNIX</font></td>
+					<td bgcolor='#F2F2F2' valign="top"><font size='11' color='#393536'>网络文件系统 (NFS) 网络信息服务扩充版 (NIS+)</font></td>
+				</tr>	
+			</table>]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt04">
+        <text>
+            <![CDATA[系统 A 信任系统 B]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[系统 A]]>
+        </text>
+    </component>
+   
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[系统 B]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt05">
+        <text>
+            <![CDATA[受到攻击者 <br/>user=psmith; Pat Smith 的入侵]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt06">
+        <text>
+            <![CDATA[攻击者获得系统 A 的访问权]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt07">
+        <text>
+            <![CDATA[user=psmith;<br/>Pat Smith]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt03">
+        <text>
+            <![CDATA[攻击者]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt09">
+        <text>
+            <![CDATA[目标：<br/>攻击者想要获得系统 A 的访问权。]]>
+        </text>
+    </component>
+    <component id="ID_s2_bubble02">
+        <text>
+            <![CDATA[<font color="#FFFFFF">我无法进入系统 A，但系统 B 是开放的。</font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt11">
+        <text>
+            <![CDATA[user=psmith; Pat Smith]]>
+        </text>
+    </component>
+    <component id="ID_s2_bubble01">
+        <text>
+            <![CDATA[<font color="#FFFFFF">我能进入系统 B，而且现在也能访问系统 A。</font>]]>
+        </text>
+    </component>
+    <!--Slide 3-->
+    <component id="ID_s3_title">
+        <text>
+            <![CDATA[<b>端口重定向</b>]]></text>
+    </component>
+    <component id="ID_s3_TB_body">
+        <text>
+            <![CDATA[端口重定向是信任利用攻击的一种，它使用被入侵的主机来传递正常情况下会被防火墙拦截的流量。它主要是使用适当的信任模型进行缓解。防病毒软件和基于主机的 IDS 可帮助检测并阻止攻击者在主机上安装端口重定向实用程序。]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt01">
+        <text>
+            <![CDATA[<b>攻击者</b>]]></text>
+    </component>
+    <component id="ID_s3_txt02">
+        <text>
+            <![CDATA[<b>攻击者在主机 A 上安装软件</b>]]></text>
+    </component>
+    <component id="ID_s3_txt03REMOVED">
+        <text>
+            <![CDATA[<b>来源：攻击者<br/>目的：B<br/>端口：23</b>]]></text>
+    </component>
+    <component id="ID_s3_txt04">
+        <text>
+            <![CDATA[<b>受到入侵的主机 A</b>]]></text>
+    </component>
+    <component id="ID_s3_txt05">
+        <text>
+            <![CDATA[<b>攻击者在不同的端口上访问主机 B</b>]]></text>
+    </component>
+    <component id="ID_s3_txt06">
+        <text>
+            <![CDATA[<b>主机 B</b>]]></text>
+    </component>
+    <!--Slide 4-->
+    <component id="ID_s4_title">
+        <text>
+            <![CDATA[<b>中间人</b>]]></text>
+    </component>
+    <component id="ID_s4_txt01">
+        <text>
+            <![CDATA[受害者]]>
+        </text>
+    </component>
+    <component id="ID_s4_txt02">
+        <text>
+            <![CDATA[受害者单击网络钓鱼电子邮件中的链接。]]>
+        </text>
+    </component>
+    <component id="ID_s4_txt03">
+        <text>
+            <![CDATA[Web 服务器]]>
+        </text>
+    </component>!--动画控制器--&gt;
+    <component id="end">
+        <text>
+            <![CDATA[结束]]>
+        </text>
+    </component>
+    <component id="fforward">
+        <text>
+            <![CDATA[快进]]>
+        </text>
+    </component>
+    <component id="pause">
+        <text>
+            <![CDATA[暂停]]>
+        </text>
+    </component>
+    <component id="play">
+        <text>
+            <![CDATA[播放]]>
+        </text>
+    </component>
+    <component id="rewind">
+        <text>
+            <![CDATA[快退]]>
+        </text>
+    </component>
+    <component id="start">
+        <text>
+            <![CDATA[开始]]>
+        </text>
+    </component>
+</textcomponents>

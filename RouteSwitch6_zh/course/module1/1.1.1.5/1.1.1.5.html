@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.1.5 路由器选择最佳路径</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>路由器选择最佳路径</h1>
+        <div>
+          <p>路由器的主要功能是：</p>
+          <p>
+            <ul>
+              <li>确定发送数据包的最佳路径 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>将数据包转发到其目的地</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>路由器使用路由表来确定用于转发数据包的最佳路径。当路由器收到数据包时，它会检查数据包的目标地址并使用路由表来查找通向该网络的最佳路径。路由表还包括用于转发每个已知网络的数据包的接口。当找到匹配条目时，路由器就会将数据包封装到传出接口或送出接口的数据链路帧中，并将数据包转发到其目的地。</p>
+          <p></p>
+          <p>可以使路由器接收封装到一种类型的数据链路帧中的数据包，而从使用另一种类型数据链路帧的接口将数据包转发出去。例如，路由器可能会在以太网接口接收数据包，但必须从配置了点对点协议 (PPP) 的接口将数据包转发出去。数据链路封装取决于路由器接口的类型及其连接的介质类型。路由器可以连接的不同数据链路技术包括以太网、PPP、帧中继、DSL、电缆和无线（802.11，蓝牙等）。</p>
+          <p></p>
+          <p>图中的动画演示了数据从源 PC 传输到目的 PC 的过程。请注意，路由器的责任是在其路由表中查找目标网络，然后将数据包转发到目的地。在本例中，路由器 R1 收到封装到以太网帧中的数据包。将数据包解封之后，R1 使用数据包的目标 IP 地址搜索路由表，查找匹配的网络地址。在路由表中找到目标网络地址后，R1 将数据包封装到 PPP 帧中，然后将数据包转发到 R2。R2 接着执行类似的过程。</p>
+          <p></p>
+          <p>
+            <b>注</b>：路由器使用静态路由和动态路由协议来获知远程网络和构建路由表。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示两个 LAN。每个 LAN 都有一台路由器。LAN 通过 WAN 链路相互连接。每台路由器通过以太网端口与一台交换机连接，每台交换机连接多台本地设备。动画显示数据包从一个 LAN 上的计算机发送到其他 LAN 上的计算机。该数据包首先传输到交换机，然后传输到路由器。当路由器收到数据包时，它会检查数据包并确定目标 IP 地址。然后，路由器查看其自己的路由表以确定使用哪个路径才能传输数据包。路由器将数据包传输到串行端口并将其发送到另一台路由器。该路由器会从串行接口收到数据包，还会执行 IP 检查步骤和路由表查找步骤。它会将数据包传输到所连接的以太网接口，然后将数据包发送到交换机，接下来交换机会将数据包传送到目标计算机。  </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

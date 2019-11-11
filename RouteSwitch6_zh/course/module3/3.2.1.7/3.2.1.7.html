@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.1.7 传播默认路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.1.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>传播默认路由</h1>
+        <div>
+          <p>请参阅图 1。在此场景中，R1 是边缘路由器，单宿主到运营商。因此，使 R1 到达互联网的所有要求是从 Serial 0/0/1 接口发出的默认静态路由。 </p>
+          <p></p>
+          <p>类似的默认静态路由可配置在 R2 和 R3 上，但是在边缘路由器 R1 上进入它一次，然后使 R1 通过 RIP 将其传播至所有其他路由器更具可扩展性。要在 RIP 路由域中为所有其它网络提供互联网连接，需要将默认静态路由通告给使用该动态路由协议的其它所有路由器。 </p>
+          <p></p>
+          <p>要在 RIP 中传播默认路由，边缘路由器必须配置：</p>
+          <p>
+            <ul>
+              <li>使用 <b>ip route 0.0.0.0 0.0.0.0 </b>命令的默认静态路由。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li><b>default-information originate</b> 路由器配置命令。这会指导 R1 通过在 RIP 更新中传播静态默认路由来产生默认信息。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>图 2 的示例中为运营商配置了完全指定默认静态路由，然后通过 RIP 传播该路由。请注意，现在 R1 在其路由表中安装有一个最后选用网关和默认路由。</p>
+          <p></p>
+          <p>使用图 3 中的语法检查器验证默认路由已传播至 R2 和 R3。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示通过 WAN 链路线性连接的三个路由器。R1 通过 WAN 串行链路连接到 R2，它在千兆以太网接口上有一个 LAN。R2 通过 WAN 串行链路连接到 R1 和 R3，在千兆位以太网接口上有一个 LAN。R3 仅通过 WAN 串行链路连接到 R2，在千兆位以太网接口上有一个 LAN。路由器 R1 配置了通往互联网云的 WAN 链路。图 2 使用命令 ip route 0.0.0.0.0.0.0.0. serial 0/0/1 209.165.200.226 在路由器上配置静态路由。然后，路由器配置为使用 router rip 命令运行 RIP。默认路由配置为使用命令 default-information originate 传播其默认路由。这将使用命令 show ip route | begin Gateway 进行验证，它显示随列出的默认路由一起列出的最后选用网关。默认路由标有大写字母 S，旁边带有星号以指示它是候选默认路由。图 3 是允许学生验证默认路由是否已传播到路由器 R2 和 R3 的互动媒体元素。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

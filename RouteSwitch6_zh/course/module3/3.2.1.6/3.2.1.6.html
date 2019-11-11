@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.1.6 配置被动接口</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置被动接口</h1>
+        <div>
+          <p>默认情况下，将 RIP 更新从所有启用 RIP 的接口发出。但是，RIP 更新实际上仅需要从连接到其他启用 RIP 路由器的接口发出。  </p>
+          <p></p>
+          <p>例如，请参考图 1 中的拓扑结构。即使此 LAN 上没有 RIP 设备，RIP 也会将更新通过其 G0/0 接口发送出去。R1 无法得知该 LAN 上是否有 RIP 设备，因此每 30 秒就会发送一次更新。在 LAN 上发送不需要的更新会在以下三个方面对网络造成影响：</p>
+          <p>
+            <ul>
+              <li>
+                <b>浪费带宽</b> - 带宽用于传输不必要的更新。因为可以广播或组播 RIP 更新，交换机也通过所有端口转发更新。  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>浪费资源</b> - LAN 中的所有设备都必须处理更新直到传输层，此时设备将丢弃此更新。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>安全风险</b> - 在广播网络上通告更新会带来安全风险。RIP 更新可能会被数据包嗅探软件中途截取。路由更新可能会被修改并重新发回该路由器，从而导致路由表根据错误度量误导流量。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>使用 <b>passive-interface</b> 路由器配置命令阻止通过路由器接口传输路由更新，但是仍然允许将该网络通告至其他路由器。该命令会停止指定接口的路由更新。但是，从其他接口发出的路由更新中仍通告指定接口所属的网络。  </p>
+          <p></p>
+          <p>R1、R2 和 R3 无需从各自 LAN 接口转发 RIP 更新。图 2 中的配置将 R1 G0/0 接口确定为被动接口。然后使用 <b>show ip protocols </b>命令验证千兆位以太网接口是否为被动接口。请注意，发送或接收版本 2 更新时不再列出 G0/0 接口，但是，现在将该接口列在“被动接口”部分之下。还请注意，网络 192.168.1.0 仍然列在“网络路由”之下，这表示该网络仍然作为路由条目包含在发送到 R2 的 RIP 更新中。 </p>
+          <p></p>
+          <p>
+            <b>注</b>：所有路由协议都支持 <b>passive-interface</b> 命令。  </p>
+          <p></p>
+          <p>使用图 3 中的语法检查器将 LAN 接口配置为 R2 和 R3 上的一个被动接口。</p>
+          <p></p>
+          <p>作为替代方案，可以使用 <b>passive-interface default </b>命令将所有接口设为被动。不能设为被动的接口可以使用 <b>no passive-interface</b> 命令重新启用。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示通过 WAN 链路线性连接的三个路由器。R1 通过 WAN 串行链路连接到 R2，它在千兆以太网接口上有一个 LAN。R2 通过 WAN 串行链路连接到 R1 和 R3，也在千兆以太网接口上有一个 LAN。R3 仅通过 WAN 串行链路连接到 R2，在千兆以太网接口上有一个 LAN。图中有五个不同的网络地址。图 2 显示设置被动接口所需的命令。这些命令以全局配置模式开始，然后启用 RIP 路由。下一命令禁用从指定接口发送出的 RIP 更新，使用的命令为 passive-interface g0/0。这使用 show ip protocols | begin Default 命令确认，标题为“Passive Interfaces”的部分突出显示，其中列出 GigabitEthernet0/0 接口。图 3 是允许学生在路由器上配置 RIP 路由并设置被动接口的互动媒体元素。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.5.1.4 第 11 章：构建小型网络</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.5.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>第 11 章：构建小型网络</h1>
+        <div>
+          <p>为了满足用户需求，小型网络也要求规划和设计。规划可以确保所有要求、成本因素和部署选项得到适当考虑。可靠性、可扩展性和可用性对网络设计非常重要。 </p>
+          <p></p>
+          <p>支持和发展小型网络需要熟悉网络上运行的协议和网络应用程序。协议分析器使网络专家能够快速编制有关网络流量的统计信息。协议分析器收集的信息根据流量的源和目标以及发送的流量类型进行分析。网络技术人员可以使用这种分析来决定提高流量管理效率的方法。常见网络协议包括：DNS、Telnet、SMTP、POP、DHCP、HTTP 和 FTP。</p>
+          <p></p>
+          <p>在规划网络实施时还需要考虑安全威胁和漏洞。所有网络设备都必须受到保护。这些设备包括路由器、交换机、最终用户设备，甚至安全设备。需要保护网络免遭病毒、特洛伊木马和蠕虫等恶意软件的威胁。防病毒软件可以检测到大多数病毒和许多特洛伊木马应用程序，并能防止它们在网络中传播。缓解蠕虫攻击的最有效方法是从操作系统厂商处下载安全更新，并为所有存在漏洞的系统应用补丁。 </p>
+          <p></p>
+          <p>还必须保护网络免遭网络攻击。网络攻击可分为三大类：侦察、访问攻击和拒绝服务。有几种方法可以防止网络遭受网络攻击。 </p>
+          <p>
+            <ul>
+              <li>身份验证、授权和记账（AAA 或“三 A”）网络安全服务提供了设置网络设备访问控制的主要框架。AAA 方法用于控制可以访问网络的用户（身份验证）、用户可以执行的操作（授权），以及用户在访问网络时的行为（记账）。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>防火墙是保护内部网络用户远离外部威胁的最为有效的安全工具之一。防火墙驻留在两个或多个网络之间，控制其间的流量并帮助阻止未授权的访问。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>为了保护网络设备，使用强密码非常重要。而且远程访问网络设备时，强烈建议启用 SSH 而不是启用不安全的 telnet。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>在网络实施后，网络管理员必须能够监控和维护网络连接。有几个命令可以用来实现以上目标。要测试与本地和远程目的设备的网络连接，通常使用 <b>ping</b>、<b>telnet</b> 和 <b>traceroute</b> 等命令。 </p>
+          <p></p>
+          <p>在 Cisco IOS 设备上，<b>show version</b> 命令可用于检验和检修启动过程中使用的一些基本硬件和软件组件。要查看路由器上所有网络接口的信息，请使用 <b>show ip interface</b> 命令。还可以使用 <b>show ip interface brief</b> 命令查看比 <b>show ip interface</b> 命令输出更简略的输出。思科发现协议 (CDP) 是思科专有协议，在数据链路层运行。由于 CDP 在数据链路层运行，即使不存在第 3 层连接，两台或多台思科网络设备（例如支持不同网络层协议的路由器）也可以互相获取信息。</p>
+          <p></p>
+          <p>Cisco IOS 配置文件（例如 startup-config 或 running-config）应当存档。这些文件可以保存到文本文件中或存储在 TFTP 服务器上。某些型号的路由器还含有一个 USB 端口和一个可以备份到 USB 驱动器上的文件。如果需要的话，可以将这些文件从 TFTP 服务器或 USB 驱动器上复制到路由器和（或）交换机上。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is a standard graphic for the introduction and conclusion pages.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

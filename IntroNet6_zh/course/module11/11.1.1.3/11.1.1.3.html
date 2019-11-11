@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.1.1.3 小型网络的 IP 编址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.1.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>小型网络的 IP 编址</h1>
+        <div>
+          <p>在实施小型网络时，需要规划 IP 编址空间。网际网络中的所有主机都必须有一个唯一地址。应当根据接收地址的设备类型规划、记录和维护 IP 编址方案。</p>
+          <p>影响 IP 设计的不同类型设备的示例如下：</p>
+          <p>
+            <ul>
+              <li>用户使用的终端设备</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>服务器和外围设备 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>可以从 Internet 访问的主机</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>中间设备</li>
+            </ul>
+          </p>
+          <p>IP 编址方案的规划和记录可以帮助管理员跟踪设备类型。例如，如果为所有服务器分配的主机地址范围为 50-100，则很容易通过 IP 地址来识别服务器流量。这在使用协议分析器对网络流量问题进行故障排除时非常有用。</p>
+          <p>此外，当使用确定性 IP 编址方案时，管理员可以根据 IP 地址更好地控制对网络资源的访问。这对于同时向内部网络和外部网络提供资源的主机尤为重要。Web 服务器或电子商务服务器扮演这样的角色。如果不规划和记录这些资源的地址，就不容易控制设备的安全和访问。如果一台服务器的地址是随机分配的，就难以阻止对此地址的访问，客户端可能也就无法定位此资源。</p>
+          <p>下列不同设备类型中的每种类型应该分配到网络地址范围内的一个逻辑地址块中。</p>
+          <p>单击图中的按钮查看分配方法。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is an interactive activity has two groups of network devices.  Each group contains laptops, PC's servers and a printer is labeled east office and west office.  There are buttons below. When you click on Location, all the devices in group one are highlighted orange and in group two are highlighted green.  Then there are buttons next to department labeled Sales, HR and Legal.   When you click on each button, the devices for that department from each group are highlighted orange.  There are also three buttons next to device labeled Printer, Server and Computer.  When you click on each of these buttons, the devices from each office are highlighted orange.  This activity demonstrates that you can organize devices by function, location, or type.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

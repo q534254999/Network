@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.1.1 TCP 服务器进程</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>TCP 服务器进程</h1>
+        <div>
+          <p>服务器上运行的每个应用程序进程都配置有一个端口号，由系统默认分配或者系统管理员手动分配。在同一传输层服务中，服务器不能同时存在具有相同端口号的两个不同服务。 </p>
+          <p>例如，主机同时运行 Web 服务器应用程序和文件传输应用程序时，不能为两个应用程序配置相同的端口（如 TCP 端口 80）。分配给特定端口的活动服务器应用程序应该是开放的，也就是说，传输层将接受并处理分配到该端口的数据段。所有发送到正确套接字地址的传入客户端请求都将被接受，数据将被传送到服务器应用程序。在同一服务器上可以同时开启很多端口，每个端口对应一个动态服务器应用程序。 </p>
+          <p>请参阅图 1 到图 5，查看 TCP 客户端/服务器操作中源端口和目的端口的典型配置。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a server running both an HTTP server on port 80 and SMTP server running on port 25.  The figure has two clients accessing the server.  Client 1 is sending an HTTP request from source port 49152 to destination port 80.  Client 2 is sending an SMTP request from source port 51152 to destination port 25.  This demonstrates how port numbers are used to differentiate between multiple services running on one server. Figure two highlights the use of the well-known ports for the services. Figure three highlights the use of random source ports as the source ports. Figure four highlights the response from the server to each of the two requests and the fact that the server uses the source port from the request packet as the destination. Figure five highlights the new destination port.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

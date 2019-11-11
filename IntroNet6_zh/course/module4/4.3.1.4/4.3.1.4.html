@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.3.1.4 提供介质访问</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.3.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>提供介质访问</h1>
+        <div>
+          <p>在每个通信中可能需要不同的介质访问控制方法。在数据包从本地主机传送到远程主机的过程中，其遇到的各种网络环境可能具有不同的特性。例如，以太网 LAN 由许多竞争访问网络介质的主机组成。串行链路由仅两个设备之间的直接连接组成。 </p>
+          <p>路由器接口将数据包封装为适当的帧，并使用适当的介质访问控制方法来访问每条链路。在任意指定的网络层数据包交换过程中，可能存在多次数据链路层和介质的转换。 </p>
+          <p>在路径沿途的每一跳，路由器：</p>
+          <p>
+            <ul>
+              <li>从介质接受帧</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>解封帧</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>将数据包重新封装到新帧中</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>从适合该物理网络网段的介质转发新帧</li>
+            </ul>
+          </p>
+          <p>图中的路由器具有连接到 LAN 的一个以太网接口和连接到 WAN 的一个串行接口。在处理帧的过程中，路由器将使用数据链路层服务从某个介质接收帧，再将它解封到第 3 层 PDU，然后将 PDU 重新封装到新帧中，再将帧放到网络下一链路的介质中。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is an animation that shows how the frame header and trailer change depending on the media.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

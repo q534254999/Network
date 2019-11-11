@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.4.3 特殊用户 IPv4 地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>特殊用户 IPv4 地址</h1>
+        <div>
+          <p>一些地址，比如网络地址和广播地址不能分配给主机。还有些特殊地址可以分配给主机，但这些主机在网络内的交互方式却受到限制。 </p>
+          <p>
+            <ul>
+              <li>
+                <b>环回地址（127.0.0.0 /8 或 127.0.0.1 到 127.255.255.254）– </b>更常见的是仅确定为 127.0.0.1，主机使用这些特殊地址将流量指向其自身。例如，如图所示，主机可以使用这个特殊地址测试 TCP/IP 配置是否运行正常。注意 127.0.0.1 环回地址对 ping 命令的应答。也要注意该块中的任何地址是如何环回到本地主机的，如图的第二个 ping 所示。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>本地链路地址（169.254.0.0 /16 或 169.254.0.1 到 169.254.255.254）– </b>通常被称为自动私有 IP 编址 (APIPA) 地址。Windows DCHP 客户端在无可用 DHCP 服务器时，使用它们进行自我配置。<b></b>在对等连接中非常有用。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>TEST-NET 地址（192.0.2.0/24 或 192.0.2.0 到 192.0.2.255）– </b>这些地址留作教学使用，用于文档和网络示例。 </li>
+            </ul>
+          </p>
+          <p>
+            <b>注意</b>：在 240.0.0.0 到 255.255.255.254 块中还有实验地址，这些地址留作未来使用 (<a href="https://tools.ietf.org/html/rfc3330" target="_blank">RFC 3330</a>)。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a Windows command line with the successful replies from the ping 127.0.0.1 command and the 127.1.1.1 command.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

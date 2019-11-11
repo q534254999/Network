@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.1.4 SLAAC 选项</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>SLAAC 选项</h1>
+        <div>
+          <p>
+            <b>SLAAC 选项（仅路由器通告）</b>
+          </p>
+          <p></p>
+          <p>SLAAC 是思科路由器上的默认选项。如图所示，M 标记和 O 标记在 RA 中均设置为 0。</p>
+          <p></p>
+          <p>此选项指示客户端仅使用 RA 消息中的信息。包括前缀、前缀长度、DNS 服务器、MTU 和默认网关信息。DHCPv6 服务器没有更多可用信息。使用 EUI-64 或随机生成的值并组合来自 RA 的前缀和接口 ID 创建 IPv6 全局单播地址。 </p>
+          <p></p>
+          <p>将 RA 消息配置在路由器的一个独立接口上。要重新启用一个可能已经设置到另一个选项的 SLAAC 接口，需要将 M 标记和 O 标记重置为其初始值 0。使用以下接口配置模式命令完成以上操作： </p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-if)# </span>
+            <span class="cmd">
+              <b>否</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <b>ipv6 nd managed-config-flag</b>
+            </span>
+            <span class="cmd"></span>
+          </p>
+          <p>
+            <span class="cmd">Router(config-if)# </span>
+            <span class="cmd">
+              <b>no ipv6 nd other-config-flag</b>
+            </span>
+            <span class="cmd"></span>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了计算机的 SLAAC 过程。路由器发送一条路由器通告消息，其中包含计算机需要的所有编址信息。这是对计算机发送的路由器请求消息的响应。  </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

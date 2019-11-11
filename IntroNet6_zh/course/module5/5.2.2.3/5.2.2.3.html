@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.2.3 交换机上的内存缓冲</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>交换机上的内存缓冲</h1>
+        <div>
+          <p>以太网交换机在转发帧之前，可以使用缓冲技术存储帧。当目的端口由于拥塞而繁忙时，也可以使用缓冲，交换机将一直存储帧，直到可以传送该帧。</p>
+          <p>如图所示，有两种内存缓冲方法：基于端口的内存缓冲和共享内存缓冲。</p>
+          <p>
+            <b>基于端口的内存缓冲</b>
+          </p>
+          <p>在基于端口的内存缓冲中，帧存储在链接到特定传入端口和传出端口的队列中。一个帧只有在队列中位于它前面的所有帧都成功传送之后才会传送到外发端口。有可能因为一个目的端口繁忙而造成单个帧拖延内存中所有帧的传输。即使其他帧可以传送到开放的目的端口，这种延迟仍然会发生。</p>
+          <p>
+            <b>共享内存缓冲 </b>
+          </p>
+          <p>共享内存缓冲将所有帧都放入交换机上所有端口共享的公共内存缓冲区中。交换机动态分配各个端口所需要的缓冲内存量。缓冲区中的帧动态链接到目的端口。这样就可以在一个端口上接收数据包，然后在另一个端口上传出该数据包，而无需将其移到其他队列。</p>
+          <p>交换机保留帧对端口链接的映射，映射中显示了数据包需要传送到何处。当帧成功发送之后，映射链接即被清除。存储在缓冲区中的帧的数量受到整个内存缓冲区大小的限制，而不是仅受限于单个端口缓冲区。这样就能传送更大的帧，而丢弃的帧更少。这对于非对称交换尤为重要。非对称交换允许在不同端口上使用不同的数据速率。这可以使更多带宽专用于特定端口，例如连接到服务器的端口。</p>
+          
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a table with 2 terms, port-based memory and shared memory.  Each is listed with its description.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

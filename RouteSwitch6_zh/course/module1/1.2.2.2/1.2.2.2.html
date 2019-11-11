@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.2.2.2 最佳路径</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>最佳路径</h1>
+        <div>
+          <p>要确定最佳路径，就需要对指向相同目标网络的多条路径进行评估，从中选出到达该网络的最优或最短路径。当存在通向相同网络的多条路径时，每条路径会使用路由器上的不同送出接口来到达该网络。 </p>
+          <p></p>
+          <p>路由协议根据其用来确定网络距离的值或度量来选择最佳路径。度量是用于衡量给定网络距离的量化值。指向网络的路径中，度量最低的路径即为最佳路径。</p>
+          <p></p>
+          <p>动态路由协议通常使用自己的规则和度量来建立和更新路由表。路由算法会为网络中的每条路径生成值或度量。度量可以基于路径的单个特征或多项特征。一些路由协议能够根据将多个度量组合为单个度量，并根据该度量来进行路由选择。 </p>
+          <p></p>
+          <p>下面列出了它们使用的一些动态协议以及度量：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>路由信息协议 (RIP)</b> - 跳数</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>开放最短路径优先 (OSPF)</b> - 根据源到目标的累积带宽计算出的思科成本</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>增强型内部网关路由协议 (EIGRP)</b> - 带宽、延迟、负载、可靠性</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>图中的动画显示了路径为何因使用的度量不同而可能不同。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">该图是将跳数和带宽之间的差异作为路由指标显示的动画。该图显示一台计算机将数据包发送到目标计算机，且存在三个路由器形成全网状，这为数据提供两个潜在路径。一个路由使用 56 Kbps 线路并利用一个路由器。另一个路径具有两个路由器，每个链路都是 1.544 Mbps 的 T-1 链路。当使用跳数作为指标时，数据包将使第一个路径经由一个路由器。当使用带宽作为指标时，数据包将跟随两个 T-1 链路，因为两个 T-1 链路是比一个 56 Kbps 链路快的路径。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

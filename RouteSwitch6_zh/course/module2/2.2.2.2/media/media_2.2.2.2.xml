@@ -1,0 +1,5 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>配置默认静态路由</b>]]></text>
+	</component>
+</textcomponents>

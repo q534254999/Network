@@ -1,0 +1,306 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>练习 - 圈定域</b><br/><br/><textformat blockindent='-14'><ul><li>使用鼠标绘制一个形状，圈定每个图中的部分或全部设备。 圈出一组设备即表示这些设备同属于一个广播域或冲突域。 要包括设备接口，但不想包括整个设备，请通过您要包含的接口来包括部分设备。</li><li>要绘制形状，请在图上移动鼠标，按住鼠标按钮，并在您要选择的设备周围绘制圆圈。 绘制时，光标将显示为铅笔状。 绘制出的形状并不是标准圆形，而是暗色的多边形。这个多边形将包含您已选择的设备。 使用绘图工具进行操作，然后随时可点击“<b>重置</b>”清除屏幕。</li><li>您可以绘制多个形状以包含不同设备组。 当绘图时，形状不可更改，但是您可以点击“<b>撤消</b>”一次删除一个形状，或点击“<b>重置</b>”再次开始。 完成后，点击“<b>检查</b>”，系统将评估您的解答。 点击“<b>答案</b>”查看绘制的正确答案。</li><li>单击数字按钮可查看练习中的每个场景。</li></ul></textformat>]]></text>
+</component>
+
+
+<component id="ID_check1">
+  <text><![CDATA[<b>检查</b>]]></text> 
+</component>
+<component id="ID_reset1">
+  <text><![CDATA[<b>重置</b>]]></text> 
+</component>
+<component id="ID_undo1">
+  <text><![CDATA[<b>撤消</b>]]></text> 
+</component>
+<component id="ID_answer1">
+  <text><![CDATA[<b>答案</b>]]></text> 
+</component>
+<component id="ID_hide1">
+  <text><![CDATA[<b>隐藏回答</b>]]></text> 
+</component>
+
+<component id="ID_check2">
+  <text><![CDATA[<b>检查</b>]]></text> 
+</component>
+<component id="ID_reset2">
+  <text><![CDATA[<b>重置</b>]]></text> 
+</component>
+<component id="ID_undo2">
+  <text><![CDATA[<b>撤消</b>]]></text> 
+</component>
+<component id="ID_answer2">
+  <text><![CDATA[<b>答案</b>]]></text> 
+</component>
+<component id="ID_hide2">
+  <text><![CDATA[<b>隐藏回答</b>]]></text> 
+</component>
+
+<component id="ID_check3">
+  <text><![CDATA[<b>检查</b>]]></text> 
+</component>
+<component id="ID_reset3">
+  <text><![CDATA[<b>重置</b>]]></text> 
+</component>
+<component id="ID_undo3">
+  <text><![CDATA[<b>撤消</b>]]></text> 
+</component>
+<component id="ID_answer3">
+  <text><![CDATA[<b>答案</b>]]></text> 
+</component>
+<component id="ID_hide3">
+  <text><![CDATA[<b>隐藏回答</b>]]></text> 
+</component>
+
+<component id="ID_check4">
+  <text><![CDATA[<b>检查</b>]]></text> 
+</component>
+<component id="ID_reset4">
+  <text><![CDATA[<b>重置</b>]]></text> 
+</component>
+<component id="ID_undo4">
+  <text><![CDATA[<b>撤消</b>]]></text> 
+</component>
+<component id="ID_answer4">
+  <text><![CDATA[<b>答案</b>]]></text> 
+</component>
+<component id="ID_hide4">
+  <text><![CDATA[<b>隐藏回答</b>]]></text> 
+</component>
+
+<component id="ID_check5">
+  <text><![CDATA[<b>检查</b>]]></text> 
+</component>
+<component id="ID_reset5">
+  <text><![CDATA[<b>重置</b>]]></text> 
+</component>
+<component id="ID_undo5">
+  <text><![CDATA[<b>撤消</b>]]></text> 
+</component>
+<component id="ID_answer5">
+  <text><![CDATA[<b>答案</b>]]></text> 
+</component>
+<component id="ID_hide5">
+  <text><![CDATA[<b>隐藏回答</b>]]></text> 
+</component>
+
+<component id="ID_check6">
+  <text><![CDATA[<b>检查</b>]]></text> 
+</component>
+<component id="ID_reset6">
+  <text><![CDATA[<b>重置</b>]]></text> 
+</component>
+<component id="ID_undo6">
+  <text><![CDATA[<b>撤消</b>]]></text> 
+</component>
+<component id="ID_answer6">
+  <text><![CDATA[<b>答案</b>]]></text> 
+</component>
+<component id="ID_hide6">
+  <text><![CDATA[<b>隐藏回答</b>]]></text> 
+</component>
+
+<component id="ID_check7">
+  <text><![CDATA[<b>检查</b>]]></text> 
+</component>
+<component id="ID_reset7">
+  <text><![CDATA[<b>重置</b>]]></text> 
+</component>
+<component id="ID_undo7">
+  <text><![CDATA[<b>撤消</b>]]></text> 
+</component>
+<component id="ID_answer7">
+  <text><![CDATA[<b>答案</b>]]></text> 
+</component>
+<component id="ID_hide7">
+  <text><![CDATA[<b>隐藏回答</b>]]></text> 
+</component>
+
+<component id="ID_check8">
+  <text><![CDATA[<b>检查</b>]]></text> 
+</component>
+<component id="ID_reset8">
+  <text><![CDATA[<b>重置</b>]]></text> 
+</component>
+<component id="ID_undo8">
+  <text><![CDATA[<b>撤消</b>]]></text> 
+</component>
+<component id="ID_answer8">
+  <text><![CDATA[<b>答案</b>]]></text> 
+</component>
+<component id="ID_hide8">
+  <text><![CDATA[<b>隐藏回答</b>]]></text> 
+</component>
+
+<component id="ID_check9">
+  <text><![CDATA[<b>检查</b>]]></text> 
+</component>
+<component id="ID_reset9">
+  <text><![CDATA[<b>重置</b>]]></text> 
+</component>
+<component id="ID_undo9">
+  <text><![CDATA[<b>撤消</b>]]></text> 
+</component>
+<component id="ID_answer9">
+  <text><![CDATA[<b>答案</b>]]></text> 
+</component>
+<component id="ID_hide9">
+  <text><![CDATA[<b>隐藏回答</b>]]></text> 
+</component>
+
+
+<component id="ID_s1_title">
+  <text><![CDATA[围绕每个广播域绘制各个形状。 （提示：在某些情况下，有多个。）]]></text> 
+</component>
+
+<component id="ID_s2_title">
+  <text><![CDATA[围绕每个广播域绘制各个形状。 （提示：在某些情况下，有多个。）]]></text> 
+</component>
+
+<component id="ID_s3_title">
+  <text><![CDATA[围绕每个冲突域绘制各个形状。 （提示：在某些情况下，有多个。）]]></text> 
+</component>
+
+<component id="ID_s4_title">
+  <text><![CDATA[围绕每个冲突域绘制各个形状。 （提示：在某些情况下，有多个。）]]></text> 
+</component>
+
+<component id="ID_s5_title">
+  <text><![CDATA[围绕每个冲突域绘制各个形状。 （提示：在某些情况下，有多个。）]]></text> 
+</component>
+
+<component id="ID_s6_title">
+  <text><![CDATA[围绕每个广播域绘制各个形状。 （提示：在某些情况下，有多个。）]]></text> 
+</component>
+
+<component id="ID_s7_title">
+  <text><![CDATA[围绕每个冲突域绘制各个形状。 （提示：在某些情况下，有多个。）]]></text> 
+</component>
+
+<component id="ID_s8_title">
+  <text><![CDATA[围绕每个广播域绘制各个形状。 （提示：在某些情况下，有多个。）]]></text> 
+</component>
+
+<component id="ID_s9_title">
+  <text><![CDATA[围绕每个冲突域绘制各个形状。 （提示：在某些情况下，有多个。）]]></text> 
+</component>
+
+
+
+    <component id="ID_s1_CorrectTitle">
+      <text><![CDATA[<b>正确</b>]]></text>
+  </component>
+  <component id="ID_s1_CorrectText">
+    <text><![CDATA[干得不错。 您已正确标识广播域。]]></text>
+    </component>
+    <component id="ID_s1_InCorrectTitle">
+      <text><![CDATA[<b>不正确</b>]]></text>
+  </component>
+  <component id="ID_s1_InCorrectText">
+    <text><![CDATA[本活动未完成。 请重试。]]></text>
+    </component>
+    <component id="ID_s2_CorrectTitle">
+      <text><![CDATA[<b>正确</b>]]></text>
+  </component>
+  <component id="ID_s2_CorrectText">
+    <text><![CDATA[干得不错。 您已正确标识广播域。]]></text>
+    </component>
+    <component id="ID_s2_InCorrectTitle">
+      <text><![CDATA[<b>不正确</b>]]></text>
+  </component>
+  <component id="ID_s2_InCorrectText">
+    <text><![CDATA[本活动未完成。 请重试。]]></text>
+    </component>
+
+    <component id="ID_s3_CorrectTitle">
+      <text><![CDATA[<b>正确</b>]]></text>
+  </component>
+  <component id="ID_s3_CorrectText">
+    <text><![CDATA[干得不错。 您已正确标识冲突域。]]></text>
+    </component>
+    <component id="ID_s3_InCorrectTitle">
+      <text><![CDATA[<b>不正确</b>]]></text>
+  </component>
+  <component id="ID_s3_InCorrectText">
+    <text><![CDATA[本活动未完成。 请重试。]]></text>
+    </component>
+
+    <component id="ID_s4_CorrectTitle">
+      <text><![CDATA[<b>正确</b>]]></text>
+  </component>
+  <component id="ID_s4_CorrectText">
+    <text><![CDATA[干得不错。 您已正确标识冲突域。]]></text>
+    </component>
+    <component id="ID_s4_InCorrectTitle">
+      <text><![CDATA[<b>不正确</b>]]></text>
+  </component>
+  <component id="ID_s4_InCorrectText">
+    <text><![CDATA[本活动未完成。 请重试。]]></text>
+    </component>
+
+    <component id="ID_s5_CorrectTitle">
+      <text><![CDATA[<b>正确</b>]]></text>
+  </component>
+  <component id="ID_s5_CorrectText">
+    <text><![CDATA[干得不错。 您已正确标识冲突域。]]></text>
+    </component>
+    <component id="ID_s5_InCorrectTitle">
+      <text><![CDATA[<b>不正确</b>]]></text>
+  </component>
+  <component id="ID_s5_InCorrectText">
+    <text><![CDATA[本活动未完成。 请重试。]]></text>
+    </component>
+
+    <component id="ID_s6_CorrectTitle">
+      <text><![CDATA[<b>正确</b>]]></text>
+  </component>
+  <component id="ID_s6_CorrectText">
+    <text><![CDATA[干得不错。 您已正确确定了广播域。]]></text>
+    </component>
+    <component id="ID_s6_InCorrectTitle">
+      <text><![CDATA[<b>不正确</b>]]></text>
+  </component>
+  <component id="ID_s6_InCorrectText">
+    <text><![CDATA[本活动未完成。 请重试。]]></text>
+    </component>
+
+    <component id="ID_s7_CorrectTitle">
+      <text><![CDATA[<b>正确</b>]]></text>
+  </component>
+  <component id="ID_s7_CorrectText">
+    <text><![CDATA[干得不错。 您已正确标识冲突域。]]></text>
+    </component>
+    <component id="ID_s7_InCorrectTitle">
+      <text><![CDATA[<b>不正确</b>]]></text>
+  </component>
+  <component id="ID_s7_InCorrectText">
+    <text><![CDATA[本活动未完成。 请重试。]]></text>
+    </component>
+
+    <component id="ID_s8_CorrectTitle">
+      <text><![CDATA[<b>正确</b>]]></text>
+  </component>
+  <component id="ID_s8_CorrectText">
+    <text><![CDATA[干得不错。 您已正确标识广播域。]]></text>
+    </component>
+    <component id="ID_s8_InCorrectTitle">
+      <text><![CDATA[<b>不正确</b>]]></text>
+  </component>
+  <component id="ID_s8_InCorrectText">
+    <text><![CDATA[本活动未完成。 请重试。]]></text>
+    </component>
+
+    <component id="ID_s9_CorrectTitle">
+      <text><![CDATA[<b>正确</b>]]></text>
+  </component>
+  <component id="ID_s9_CorrectText">
+    <text><![CDATA[干得不错。 您已正确标识冲突域。]]></text>
+    </component>
+    <component id="ID_s9_InCorrectTitle">
+      <text><![CDATA[<b>不正确</b>]]></text>
+  </component>
+  <component id="ID_s9_InCorrectText">
+    <text><![CDATA[本活动未完成。 请重试。]]></text>
+    </component>
+	
+</textcomponents>

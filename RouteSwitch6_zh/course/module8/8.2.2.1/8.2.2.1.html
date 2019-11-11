@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.2.1 将路由器配置为无状态 DHCPv6 服务器</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>将路由器配置为无状态 DHCPv6 服务器</h1>
+        <div>
+          <p>如图 1 所示，将路由器配置为 DHCPv6 服务器需要四个步骤：</p>
+          <p></p>
+          <p>
+            <b>步骤 1.启用 IPv6 路由 </b>
+          </p>
+          <p></p>
+          <p>启用 IPv6 路由要求使用 <b>ipv6 unicast-routing</b> 命令。让路由器成为无状态 DHCPv6 服务器时不必执行此命令，但是路由器查找 ICMPv6 RA 消息来源时需要执行此命令。 </p>
+          <p></p>
+          <p>
+            <b>步骤 2.配置 DHCPv6 池</b>
+          </p>
+          <p></p>
+          <p><b> ipv6 dhcp pool </b><i>池名称 </i>命令创建一个池，然后以 DHCPv6 配置模式进入路由器，该模式是以 Router(config-dhcpv6)# 提示符来标识的。</p>
+          <p></p>
+          <p>
+            <b>步骤 3.配置池参数</b>
+          </p>
+          <p></p>
+          <p>在 SLAAC 过程中，客户端接收创建 IPv6 全局单播地址所需要的信息。客户端也使用来自 RA 消息的源 IPv6 地址（即路由器的本地链路地址）接收默认网关信息。但是，可以配置无状态 DHCPv6 服务器来提供其他可能本不包括在 RA 消息中的信息，例如，DNS 服务器地址和域名。</p>
+          <p></p>
+          <p>
+            <b>步骤 4.配置 DHCPv6 接口</b>
+          </p>
+          <p></p>
+          <p><b>ipv6 dhcp server </b><i>池名称 </i>接口配置模式命令将 DHCPv6 池绑定到该接口。路由器使用池中包含的信息，在此接口上响应无状态 DHCPv6 请求。需要使用接口命令 <b>ipv6 nd other-config-flag</b> 将 O 标记从 0 更改为 1。此接口发送的 RA 消息表示无状态 DHCPv6 服务器提供其他信息。</p>
+          <p></p>
+          <p>
+            <b>DHCPv6 无状态服务器示例</b>
+          </p>
+          <p></p>
+          <p>图 2 显示将配置为无状态 DHCPv6 服务器的路由器示例配置。请注意，路由器 R3 显示为 DHCPv6 客户端。将 R3 配置为客户端以帮助验证无状态 DHCPv6 的运行。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了在路由器上配置无状态 DHCPv6 的命令。该图在全局配置模式下开始，第一个命令是 ipv6 unicast-routing。此命令启用 IPv6 路由。下一个命令为 ipv6 dhcp pool，后面跟池名称。DNS 服务器使用命令 dns-server 配置。域名使用命令 domain-name 配置。使用 ipv6 dhcp server 命令，后跟池名称，为接口配置 DHCP 池。最后一个命令是 i.p.v.6. n.d. other-config-flag。图 2 显示了将一台路由器配置为无状态 DHCPv6 服务器的完整示例。该图在全局配置模式下开始，命令如下所述。第一个命令是 ipv6 unicast-routing。下一个命令是 dhcp pool ipv6-stateless。下一个命令是 dns-server 2 0 0 1:d b 8:c a f e:a a a a :: 5。下一命令是 domain-name example.com。已配置 DHCP v6 池，下一组命令将池绑定到接口。示例中的 CLI 首先使用命令 exit 转移到本地接口。Exit 命令之后是 interface g 0/1 命令。下一命令是 i.p.v.6. address 2 0 0 1:d b 8:c a f e:1:: 1/64。下一命令是 dhcp pool ipv6-stateless。最后一个命令是 i.p.v.6. n.d. other-config-flag。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<textcomponents>
+    <component id="ID_inst">
+        <text>
+            <![CDATA[<b>练习 – IPv4 和 IPv6 术语和描述</b>]]></text>
+    </component>
+    <component id='ID_s1_instr_title'>
+	<text><![CDATA[说明]]></text>
+</component>
+
+<component id='ID_s1_instr_body'>
+	<text><![CDATA[将 IPv4 和 IPv6 术语拖动到其适当描述旁边的字段中。]]></text>
+</component>
+
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[128 位地址/340 涧个地址。]]>
+        </text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[32 位地址/43 亿个地址。]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[通过 IPv4 网络传输 IPv6 数据包。]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[使用 NAT64 在 IPv6 和 IPv4 之间转换。]]>
+        </text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[允许 IPv4 和 IPv6 在同一网络段中共存。]]>
+        </text>
+    </component>
+    <component id="ID_txt06">
+        <text>
+            <![CDATA[术语]]></text>
+    </component>
+    <component id="ID_txt07">
+        <text>
+            <![CDATA[描述]]></text>
+    </component>
+    <!--Drag and Drop-->
+    <component id="ID_ip1_DS">
+        <text>
+            <![CDATA[<font color="#393536">双堆栈</font>]]>
+        </text>
+    </component>
+    <component id="ID_ip2_DS">
+        <text>
+            <![CDATA[<font color="#393536">IPv4</font>]]>
+        </text>
+    </component>
+    <component id="ID_ip3_DS">
+        <text>
+            <![CDATA[<font color="#393536">隧道</font>]]>
+        </text>
+    </component>
+    <component id="ID_ip4_DS">
+        <text>
+            <![CDATA[<font color="#393536">IPv6</font>]]>
+        </text>
+    </component>
+    <component id="ID_ip5_DS">
+        <text>
+            <![CDATA[<font color="#393536">转换</font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_CORRECT_TITLE">
+        <text>
+            <![CDATA[<b>正确</b>]]></text>
+    </component>
+    <component id="ID_s1_CORRECT_BODY">
+        <text>
+            <![CDATA[您已成功地将 IPv4 和 IPv6 术语与其描述配对。]]>
+        </text>
+    </component>
+    <component id="ID_s1_INCORRECT_TITLE">
+        <text>
+            <![CDATA[<b>不正确</b>]]></text>
+    </component>
+    <component id="ID_s1_INCORRECT_BODY">
+        <text>
+            <![CDATA[您未成功将 IPv4 和 IPv6 术语与其描述配对。请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id="ID_CHECK">
+        <text>
+            <![CDATA[检查]]>
+        </text>
+    </component>
+    <component id="ID_RESET">
+        <text>
+            <![CDATA[重置]]>
+        </text>
+    </component>
+</textcomponents>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.2.2 Ping - 测试与本地 LAN 的连接</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Ping - 测试与本地 LAN 的连接</h1>
+        <div>
+          <p>您也可以使用 ping 测试主机在本地网络中通信的能力。这通常是通过 ping 主机网关 IP 地址完成的。ping 通网关表示主机和充当网关的路由器接口在本地网络中均运行正常。 </p>
+          <p>对于此测试，最常用的是网关地址，因为路由器在一般情况下始终都能正常运行。如果网关地址不响应，可以将 ping 发送到本地网络上已知能够正常运行的另一台主机的 IP 地址。 </p>
+          <p>如果网关或另一台主机做出响应，则说明本地主机可以通过本地网络成功通信。如果网关不响应但其另一台主机响应，可能说明充当网关的路由器接口存在问题。 </p>
+          <p>一种可能性是在主机上配置了错误的网关地址。另一种可能原因是路由器接口完全正常，但对其采取了阻止其处理或响应 ping 请求的安全限制。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows a router with a switch connected to its FastEthernet 0/1 port and the port has an IPv4 address of 10.0.0.254.  The switch has a computer connected to it and the computer has an IPv4 address of 10.0.0.1.  The computer is testing connectivity to the router, which is the default gateway, by using ping to send an echo request to the router port.  The command used is ping 10.0.0.254.  The router responds with an echo reply.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

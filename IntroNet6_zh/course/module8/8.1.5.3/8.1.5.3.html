@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.5.3 基本 VLSM</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.5.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>基本 VLSM</h1>
+        <div>
+          <p>为了更好地了解 VLSM 流程，请返回上一个示例，如图 1 所示。网络 192.168.20.0/24 会通过子网划分进一步分为 8 个规模相等的子网。会分配 8 个子网中的 7 个。其中四个子网用于 LAN，三个子网用于路由器之间的 WAN 连接。回想一下，用于 WAN 连接的子网会浪费地址空间，因为这些子网只需要两个可用地址：每个路由器接口使用一个。为了避免这种浪费，可以使用 VLSM 为 WAN 连接创建较小子网。</p>
+          <p>为了为 WAN 链路创建较小子网，将其中一个子网细分。在本示例中，对最后一个子网 192.168.20.224/27 进一步划分子网。</p>
+          <p>回想一下，当所需主机地址的数量已知时，可以使用公式 2^n-2（其中 n 等于剩余主机位的数量）。要提供两个可用地址，必须在主机部分保留 2 个主机位。 </p>
+          <p>因为划分子网的 192.168.20.224/27 地址空间有 5 个主机位，所以可以借用 3 个位，在主机部分保留 2 个位，如图 2 所示。此时的计算与传统子网划分使用的计算完全相同。借用了位，并确定了子网范围。</p>
+          <p>这种 VLSM 子网划分方案将每个子网的地址数目减少到适合 WAN 的大小。对 WAN 的子网 7 划分子网，使子网 4、5 和 6 能够用于未来网络，而且 WAN 中能够有 5 个额外的子网可用。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the binary representation of the eight subnets formed by borrowing 3 bits from a slash twenty four making slash twenty sevens. Figure 2 shows the binary representation of the eight subnets formed by borrowing 3 bits from a slash twenty seven making slash thirties.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

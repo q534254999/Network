@@ -1,0 +1,53 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>UDP 数据报</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>8 字节</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b></b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b><font color='#ffffff'>位 (0)</font></b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b><font color='#ffffff'>位 (15)</font></b>]]></text>
+</component>
+<component id="ID_txt05">
+<text><![CDATA[<b><font color='#ffffff'>位 (16)</font></b>]]></text>
+</component>
+<component id="ID_txt06">
+<text><![CDATA[<b><font color='#ffffff'>位 (31)</font></b>]]></text>
+
+</component>
+
+
+<component id="ID_txt07">
+<text><![CDATA[源端口 (16)]]></text>
+</component>
+<component id="ID_txt08">
+<text><![CDATA[目的端口 (16)]]></text>
+</component>
+<component id="ID_txt09">
+<text><![CDATA[长度 (16)]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[校验和 (16)]]></text>
+</component>
+<component id="ID_txt11">
+<text><![CDATA[应用层数据（大小不等）]]></text>
+</component>
+
+ 
+
+
+
+
+</textcomponents>

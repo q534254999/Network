@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.5.3 IPv6 NAT</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.5.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv6 NAT</h1>
+        <div>
+          <p>用于 IPv6 的 NAT 与用于 IPv4 的 NAT 使用背景大不相同。用于 IPv6 的 NAT 变体用来透明地提供仅支持 IPv6 和仅支持 IPv4 的网络之间的访问。而不是用作一种私有 IPv6 到全局 IPv6 的转换。</p>
+          <p></p>
+          <p>理想情况下，只要有可能，IPv6 就应当在本地运行。这意味着 IPv6 设备将通过 IPv6 网络相互通信。但是，为了帮助实现从 IPv4 到 IPv6 的转移，IETF 已经开发了多项过渡技术以满足各种 IPv4 到 IPv6 的转移情景，包括双堆栈、隧道和转换。</p>
+          <p></p>
+          <p>双堆栈是指设备运行与 IPv4 和 IPv6 都相关的协议。IPV6 隧道是指将 IPv6 数据包封装到 IPv4 数据包中的过程。这将使 IPv6 数据包能够通过仅支持 IPv4 的网络传输。</p>
+          <p></p>
+          <p>用于 IPv6 的 NAT 不应当作为一种长期策略使用，但可作为一种临时机制来帮助进行 IPv4 到 IPv6 的迁移。多年来，已经开发了多个用于 IPv6 的 NAT 的类型，包括网络地址转换-协议转换 (NAT-PT)。IETF 已弃用 NAT-PT，开始倾向于其替代者 NAT64。NAT64 不属于本课程的范围。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了三个云。两个云标记为 IPv6，一个云标记为 IPv4。在两个 IPv6 网络之间传输的数据包为本征 IPv6 数据包。在 IPv4 网络和 IPv6 网络之间传输的数据包将被转换。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

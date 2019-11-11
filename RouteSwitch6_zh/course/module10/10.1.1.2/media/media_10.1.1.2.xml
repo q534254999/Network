@@ -1,0 +1,59 @@
+<textcomponents><!-- slide 1 --><component id='ID_s1_title'>
+	<text><![CDATA[<b><font face="_typewriter">show cdp </font>命令</b>]]></text>
+</component><!-- end slide 1 --><!-- slide 2 --><component id='ID_s2_title'>
+	<text><![CDATA[<b>在接口上配置 CDP</b>]]></text>
+</component><!-- end slide 2 --><!-- slide 3 --><component id='ID_s3_title'>
+	<text><![CDATA[<b>全局禁用并重新启用的 CDP</b>]]></text>
+</component><!-- end slide 3 --><!-- slide 4 --><component id='ID_s4_title'>
+	<text><![CDATA[<b>列出 CDP 邻居</b>]]></text>
+</component><!-- end slide 4 --><!-- slide 5 --><component id='ID_s5_title'>
+	<text><![CDATA[<b>显示启用的 CDP 接口</b>]]></text>
+</component><!-- end slide 5 --><!-- slide 6 --><component id="ID_s6_title">
+        <text><![CDATA[<b>配置和验证 CDP</b>]]></text>
+	</component><!--Syntax Checker Button Text--><component id="ID_s6_reset">
+			<text><![CDATA[重置]]></text>
+		</component>
+
+        <component id="ID_s6_showme">
+			<text><![CDATA[看答案]]></text>
+		</component>
+
+        <component id="ID_s6_showall">
+			<text><![CDATA[全部显示]]></text>
+		</component><!--End Syntax Checker Button Text--><component id="ID_s6_SC" fontSize="12" fontFace='_typewriter'  fontColor="#ffffff">
+                <feedback id="fb"><![CDATA[<b><font face="_sans" color="#ffffff">***您必须输入确切完整的命令。 包含名称或密码的命令区分大小写。***</font></b> ]]></feedback>
+              <existingcommands><![CDATA[<font face="_sans"><b>显示 R1 上 CDP 的状态。</b></font>]]></existingcommands>
+                <command prompt="R1#">
+                       <correctresponse><![CDATA[ show cdp]]></correctresponse>
+                                <deviceresponse><![CDATA[% CDP is not enabled<br>R1#<br>]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b><ul>进入“全局配置”模式来配置以下项：<li>在 R1 上全局启用 CDP。</li><li>在接口 S0/0/0 上禁用 CDP。</li><li>使用结束命令来退出“全局配置”模式。</li></font>]]></instruction>
+              </command>
+                <command prompt="R1#">
+                       <correctresponse><![CDATA[ configure terminal]]></correctresponse>
+              </command>
+                <command prompt="R1(config)#">
+                       <correctresponse><![CDATA[ cdp run]]></correctresponse>
+              </command>
+                <command prompt="R1(config)#">
+                       <correctresponse><![CDATA[ interface s0/0/0]]></correctresponse>
+              </command>
+                <command prompt="R1(config-if)#">
+                       <correctresponse><![CDATA[ no cdp enable]]></correctresponse>
+              </command>
+                <command prompt="R1(config-if)#">
+                       <correctresponse><![CDATA[ end]]></correctresponse>
+                                <deviceresponse><![CDATA[R1#]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b>显示 R1 上 CDP 邻居的列表。</font>]]></instruction>
+              </command>
+                <command prompt="R1#">
+                       <correctresponse><![CDATA[ show cdp neighbors]]></correctresponse>
+                                <deviceresponse><![CDATA[Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge<br>                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,<br>                  D - Remote, C - CVTA, M - Two-port Mac Relay<br><br>Device ID Local Intrfce Holdtme Capability Platform Port ID<br>S1 Gig 0/1 122 S I WS-C2960- Fas 0/5]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b>显示 R1 上 CDP 邻居列表的更多详情。</font>]]></instruction>
+              </command>
+                <command prompt="R1#">
+                       <correctresponse><![CDATA[ show cdp neighbors detail]]></correctresponse>
+                                <deviceresponse><![CDATA[<br>-------------------------<br>Device ID: S1<br>Entry address(es):<br>  IP address: 192.168.1.2<br>Platform: cisco WS-C2960-24TT-L, Capabilities: Switch IGMP<br>Interface: GigabitEthernet0/1, Port ID (outgoing port): FastEthernet0/5<br>Holdtime : 136 sec<br><br>Version :<br>Cisco IOS Software, C2960 Software (C2960-LANBASEK9-M), Version 15.0(2)SE7, RELEASE SOFTWARE (fc1)<br>Technical Support: http://www.cisco.com/techsupport<br>Copyright (c) 1986-2014 by Cisco Systems, Inc.<br>Compiled Thu 23-Oct-14 14:49 by prod_rel_team<br><br>advertisement version: 2<br>Protocol Hello: OUI=0x00000C, Protocol ID=0x0112; payload len=27, value=00000000FFFFFFFF010221FF000000000000002291210380FF0000<br>VTP Management Domain: &apos;&apos;<br>Native VLAN: 1<br>Duplex: full<br>Management address(es):<br>  IP address: 192.168.1.2<br><br><br>Total cdp entries displayed : 1]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b>您已成功配置并验证 CDP。</font>]]></instruction>
+              </command>
+<command prompt=""/>
+ </component><!-- end slide 6 --></textcomponents>

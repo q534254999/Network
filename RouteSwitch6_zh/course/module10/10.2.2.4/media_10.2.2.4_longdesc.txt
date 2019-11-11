@@ -1,0 +1,1 @@
+图中显示已使用“service timestamps log datetime”命令配置 R1，以强制日志消息显示日期和时间。

@@ -1,0 +1,74 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>在目的设备上对 TCP 数据段进行重新排序</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[不同数据段可能采用不同的路由。]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[<br/>数据<br/><br/><br/>将数据划分为多个数据段。]]></text>
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[数据段 1]]></text>
+	</component>
+	<component id="ID_txt12">
+		<text><![CDATA[数据段 2]]></text>
+	</component>
+	<component id="ID_txt18">
+		<text><![CDATA[数据段 3]]></text>
+	</component>
+	<component id="ID_txt15">
+		<text><![CDATA[数据段 4]]></text>
+	</component>
+	<component id="ID_txt14">
+		<text><![CDATA[数据段 5]]></text>
+	</component>
+	<component id="ID_txt13">
+		<text><![CDATA[数据段 6]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[由于采用不同路由到达目的设备，因此数据段到达的顺序混乱。]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[数据段 1]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[数据段 2]]></text>
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[数据段 6]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[数据段 5]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[数据段 4]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[数据段 3]]></text>
+	</component>
+	<component id="ID_txt19">
+		<text><![CDATA[数据段 1]]></text>
+	</component>
+	<component id="ID_txt20">
+		<text><![CDATA[数据段 2]]></text>
+	</component>
+	<component id="ID_txt21">
+		<text><![CDATA[数据段 6]]></text>
+	</component>
+	<component id="ID_txt22">
+		<text><![CDATA[数据段 5]]></text>
+	</component>
+	<component id="ID_txt23">
+		<text><![CDATA[数据段 4]]></text>
+	</component>
+	<component id="ID_txt24">
+		<text><![CDATA[数据段 3]]></text>
+	</component>
+	<component id="ID_txt16">
+		<text><![CDATA[TCP 按照原始顺序对数据段重新排序。]]></text>
+	</component>
+	<component id="ID_txt17">
+		<text><![CDATA[<div><img src="arrow.png" width="30.6" height="100.3" /></div>]]></text>
+	</component>
+</textcomponents>

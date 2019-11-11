@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.2.2 IOS 映像文件名</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IOS 映像文件名</h1>
+        <div>
+          <p>当选择或升级思科 IOS 路由器时，选择合适的、具有正确功能集和版本的 IOS 映像很重要。思科 IOS 映像文件基于一种特殊的命名约定。思科 IOS 映像文件的名称包含多个部分，每部分都有特定的含义。在升级和选择思科 IOS 软件时，必须了解这一命名约定。 </p>
+          <p></p>
+          <p>如图 1 所示，<b>show flash</b> 命令显示闪存中存储的文件，包括系统映像文件。</p>
+          <p></p>
+          <p>图 2 说明了 ISR G2 设备上 IOS 15 系统映像文件的不同部分：</p>
+          <p>
+            <ul>
+              <li>
+                <b>映像名称 (c1900)</b> - 标识映像运行的平台。在本示例中，平台是思科 1900 路由器。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>universalk9</b> - 指定映像标识。ISR G2 的两个标识是 universalk9 和 universalk9_npe。Universalk9_npe 不包含强加密，适用于具有加密限制的国家/地区。通过许可控制功能，并可将功能分为四个技术包。它们是 IP Base、安全、统一通信和数据。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>mz</b> - 表示运行映像的位置以及文件是否经过压缩。在本示例中，“mz”表示文件从 RAM 运行并经过压缩。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>SPA</b> - 表示文件是由思科以数字形式签名的。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>152-4.M3</b> - 指定映像 15.2(4)M3 的文件名格式。这是 IOS 的版本，其包括主要发行版、次要发行版、维护发行版和维护重新构建编号。M 指示这是扩展维护发行版。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>bin</b> - 文件扩展名。该扩展名表示此文件是二进制可执行文件。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>内存位置和压缩格式最常见的标识是 mz。第一个字母表示路由器上执行映像的位置。位置可以包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>f</b> - 闪存 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>m</b> - RAM  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>r</b> - ROM  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>l</b> - 可重定位 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>压缩格式可以是表示 zip 的 z 或者是表示 mzip 的 x。压缩是思科用来压缩某些从 RAM 运行的映像的一种方法，可以有效减小映像的大小。它是自我解压的，因此当将映像加载到 RAM 中来执行时，第一个操作是解压。</p>
+          <p></p>
+          <p>
+            <b>注</b>：思科 IOS 软件的命名约定、字段含义、映像内容和其他详细信息可能会发生变化。</p>
+          <p></p>
+          <p>
+            <b>内存要求</b>
+          </p>
+          <p></p>
+          <p>在大多数思科路由器上（包括集成多业务路由器），IOS 作为压缩映像存储在紧凑式闪存中并在启动过程中加载到 DRAM 中。可用于思科 1900 和 2900 ISR 的思科 IOS 软件 15.0 版映像需要 256MB 闪存和 512MB RAM。3900 ISR 需要 256MB 闪存和 1GB RAM。这不包括其他管理工具，例如思科 Configuration Professional（思科 CP）。有关完整细节，请参阅特定路由器的产品数据表。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了在路由器 1 上“show flash:0”命令的输出。突出显示了 IOS 映像文件名。图 2 显示了如何读取和解释 IOS 版本 12.4 的映像文件名的每个部分。图 3 显示了如何读取和解释 IOS 版本 15.2 的映像文件名的每个部分。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

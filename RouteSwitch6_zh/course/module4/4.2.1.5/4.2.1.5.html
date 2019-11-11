@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.1.5 直通交换</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>直通交换</h1>
+        <div>
+          <p>直通交换的一个优点就是使交换机开始转发帧的时间比存储转发交换早。直接转发交换有两个主要特性：快速帧转发和免分片。</p>
+          <p></p>
+          <p>
+            <b>快速帧转发</b>
+          </p>
+          <p></p>
+          <p>如图所示，使用直通交换方法的交换机一旦在其 MAC 地址表中查出帧的目标 MAC 地址，就会做出转发决策。交换机在执行转发决策前不必等待帧的其余部分进入入口端口。</p>
+          <p></p>
+          <p>如今通过 MAC 控制器和 ASIC，使用直通交换方法的交换机可以迅速确定是否需要检查帧报头的更多部分以进行另外的过滤。例如，交换机可以分析之前的前 14 个字节（源 MAC 地址、目标 MAC 和 EtherType 字段），并检查另外的 40 个字节以便执行与 IPv4 第 3 层和第 4 层有关的更复杂的功能。</p>
+          <p></p>
+          <p>直通交换方法不会丢弃大多数无效帧。有错的帧将转发到网络的其他网段。如果网络中的错误率（无效帧）很高，则直通交换会对带宽带来负面影响；从而使损坏和无效的帧阻塞带宽。</p>
+          <p></p>
+          <p>
+            <b>免分片 </b>
+          </p>
+          <p></p>
+          <p>免分片交换是一种经过改良的直通交换，在这种交换方式中交换机在转发帧之前将等待冲突窗口（64 个字节）通过。这意味着对每个帧的数据字段都会进行检查以确保不出现分段。比起直通，免分片交换能够提供更好的错误检查，而且几乎不会增加延时。 </p>
+          <p></p>
+          <p>直接转发交换的低延时速度使它更适合要求进程到进程的延时不大于 10 毫秒的极其严苛的高性能计算 (HPC) 应用程序。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图显示整个帧，包括页眉和页脚。直接转发在收到目标 MAC（仅是标头的前 14 个字节）立即转发帧。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

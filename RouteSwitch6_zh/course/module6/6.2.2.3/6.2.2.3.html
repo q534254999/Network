@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.2.3 验证 TRUNK 配置</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证 TRUNK 配置</h1>
+        <div>
+          <p>图 1 显示了交换机 S1 上的交换机端口 F0/1 的配置。使用<b> show interfaces </b><i>interface-ID </i><b>switchport</b> 命令可验证配置。 </p>
+          <p></p>
+          <p>最上面突出显示的区域显示，端口 F0/1 的管理模式已设置为 <b>TRUNK</b>。该端口处于中继模式。第二处突出显示的区域表明，本征 VLAN 为 VLAN 99。继续观察输出，最下面突出显示的区域显示，该 TRUNK 已启用所有 VLAN。</p>
+          <p></p>
+          <p>使用图 2 中的语法检查器，用本征 VLAN 99 配置 TRUNK，以支持接口 F0/1 上的所有 VLAN。使用<b> show interfaces f0/1 switchport </b>命令验证 TRUNK 配置。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示将端口 F0/1 配置为中继端口并将本征 VLAN 设置为 99 的语法。此外，还显示“show interfaces f0/1 switchport”的输出以验证是否已正确应用更改。图 2 是让学生练习将端口配置为中继端口并设置本征 VLAN 的互动练习。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

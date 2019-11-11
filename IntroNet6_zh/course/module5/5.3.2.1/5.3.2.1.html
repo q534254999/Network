@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.3.2.1 ARP 简介</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.3.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>ARP 简介</h1>
+        <div>
+          <p>回想一下，以太网网络中具有 IP 地址的每一台设备也都有以太网 MAC 地址。当设备发送以太网帧时，将包含以下两个地址：</p>
+          <p>
+            <ul>
+              <li>
+                <b>目的 MAC 地址</b> - 以太网网卡的 MAC 地址，即最终目的设备或路由器的 MAC 地址。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>源 MAC 地址</b> – 发送方的以太网网卡的 MAC 地址。</li>
+            </ul>
+          </p>
+          <p>设备会使用 ARP 确定目的 MAC 地址。ARP 提供两个基本功能：</p>
+          <p>
+            <ul>
+              <li>将 IPv4 地址解析为 MAC 地址</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>维护映射表</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows 4 computers connected to a switch.  Each computer is labeled with its IP address.  Host 1 has a callout indicating that it knows the IP address of the destination but not the MAC address.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

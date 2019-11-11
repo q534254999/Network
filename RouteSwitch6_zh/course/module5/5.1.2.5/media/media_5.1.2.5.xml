@@ -1,0 +1,97 @@
+<textcomponents><!--slide 1--><component id="ID_s1_title">
+<text><![CDATA[<b>验证接口状态</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+</component>
+
+<component id="ID_table01">
+<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+<tr class="mtable_top">
+<td colspan='3' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+</tr>
+
+<tr>
+<td width="137" bgcolor='#077A77' valign="top" class="mtitle"><font color='#ffffff'><b>接口状态</b></font></td>
+<td  width="137" bgcolor='#077A77' valign="top" class="mtitle"><font color='#ffffff'><b>线路协议状态</b></font></td>
+<td  width="137" bgcolor='#077A77' valign="top" class="mtitle"><font color='#ffffff'><b>Link State</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor="#EFF8F7" valign="top"><font color='#393536'>启用</font></td>
+<td bgcolor="#EFF8F7" valign="top"><font color='#393536'>启用</font></td>
+<td bgcolor="#EFF8F7" valign="top"><font color='#393536'>运营</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#ffffff' valign="top"><font color='#393536'>关闭</font></td>
+<td bgcolor='#ffffff' valign="top"><font color='#393536'>关闭</font></td>
+<td  bgcolor='#ffffff' valign="top"><font color='#393536'>接口问题</font></td>
+</tr>
+
+</table>]]></text> 
+</component><!--slide 2--><component id="ID_s2_title">
+<text><![CDATA[<b>显示接口状态信息和统计信息</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+</component><!--slide 3--><component id="ID_s3_title">
+<text><![CDATA[<b>网络接入层问题</b>]]></text>
+</component>
+
+<component id="ID_s3_table">
+<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+</tr>
+
+<tr>
+<td width="70" bgcolor='#077A77' valign="top" class="mtitle"><font color='#ffffff'><b>错误类型</b></font></td>
+<td  width="350" bgcolor='#077A77' valign="top" class="mtitle"><font color='#ffffff'><b>说明</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor="#EFF8F7" valign="top"><font color='#393536'>输入错误数</font></td>
+<td  bgcolor="#EFF8F7" valign="top"><font color='#393536'>错误总数。 它包括超短帧、超长帧、无缓冲区、CRC、帧、溢出和被忽略的计数。</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#ffffff' valign="top"><font color='#393536'>超短帧</font></td>
+<td bgcolor='#ffffff' valign="top"><font color='#393536'>放弃的数据包，因为它们小于介质的最小数据包大小。 例如，小于 64 字节的所有以太网数据包均被视为超短帧。</font></td>
+</tr>
+
+<tr>
+<td bgcolor="#EFF8F7" valign="top"><font color='#393536'>超长帧</font></td>
+<td  bgcolor="#EFF8F7" valign="top"><font color='#393536'>被丢弃的数据包，因为它们的大小超过了介质的最大数据包大小。 例如，大于 1,518 字节的所有以太网数据包均被视为超长帧。</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#ffffff' valign="top"><font color='#393536'>CRC</font></td>
+<td  bgcolor='#ffffff' valign="top"><font color='#393536'>如果计算出的校验和与已接收的校验和不一致，则会出现 CRC 错误。</font></td>
+</tr>
+
+<tr>
+<td bgcolor="#EFF8F7" valign="top"><font color='#393536'>输出错误数</font></td>
+<td  bgcolor="#EFF8F7" valign="top"><font color='#393536'>阻碍从正在接受检查的接口最终传输数据报的所有错误总和。</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#ffffff' valign="top"><font color='#393536'>冲突</font></td>
+<td  bgcolor='#ffffff' valign="top"><font color='#393536'>因以太网冲突而重新发送的消息数量。</font></td>
+</tr>
+
+<tr>
+<td bgcolor="#EFF8F7" valign="top"><font color='#393536'>延迟冲突</font></td>
+<td  bgcolor="#EFF8F7" valign="top"><font color='#393536'>512 位的帧传输后发生的冲突。</font></td>
+</tr>
+</table>]]></text> 
+</component>
+
+</textcomponents>

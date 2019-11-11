@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.0.1.1 第 6 章：VLAN</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.0.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>第 6 章：VLAN</h1>
+        <div>
+          <p>网络性能是组织生产力的重要因素。用于改善网络性能的其中一项技术是将大型的广播域细分成较小的广播域。根据设计，路由器会拦截某个接口的广播流量。但是，路由器的 LAN 接口数量通常有限。路由器的主要作用是在网络之间传输信息，而不是向终端设备提供网络访问。 </p>
+          <p></p>
+          <p>提供接入到 LAN 的角色通常保留给接入层交换机。可以在第 2 层交换机上创建虚拟局域网 (VLAN) 来减小广播域的规模，类似于第 3 层设备。VLAN 通常融入到网络设计中，便于网络为实现企业目标提供支持。尽管 VLAN 主要用在交换式局域网中，但是现代的 VLAN 能够跨 MAN 和 WAN 实施。 </p>
+          <p></p>
+          <p>由于 VLAN 会将网络分段，因此需要第 3 层过程以允许流量从一个网段转移到下一个网段。</p>
+          <p></p>
+          <p>可以使用路由器或者第 3 层交换机接口实施此第 3 层路由过程。使用第 3 层设备可以控制各网段（包括由 VLAN 创建的网段）之间的流量。</p>
+          <p></p>
+          <p>本章的第一部分将介绍如何配置、管理和排除 VLAN 和 VLAN 中继故障。本章的第二部分重点介绍使用路由器实施 VLAN 间路由。第 3 层交换机上的 VLAN 间路由在后面的课程中会涉及。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图显示本章的目标列表。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

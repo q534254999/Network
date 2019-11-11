@@ -1,0 +1,74 @@
+<textcomponents><!--Slide 1--><component id="ID_title">
+		<text><![CDATA[<b>基本交换机配置</b>]]></text>
+	</component>
+	<component id="ID_sc_reset">
+		<text><![CDATA[<b>重置</b>]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[<b>看答案</b>]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[<b>全部显示</b>]]></text>
+	</component>
+	<component id="ID_SC5" fontFace="_typewriter" fontSize="12" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b><font face="_sans" color="#FFFFFF">***您必须输入确切完整的命令。 包含名称或密码的命令区分大小写。***</font></b>]]></feedback>
+		<existingcommands><![CDATA[<font face="_sans"><b>此语法检查程序练习回顾基本交换机配置。<br>将交换机主机名配置为“HQSw1”。</b></font>]]></existingcommands>
+		<command prompt="Switch#">
+			<correctresponse><![CDATA[configure terminal]]></correctresponse>
+		</command>
+		<command prompt="Switch(config)#">
+			<correctresponse><![CDATA[hostname HQSw1]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>将加密特权 EXEC 密码配置为 class。</b></font>]]></instruction>
+		</command>
+		<command prompt="HQSw1(config)#">
+			<correctresponse><![CDATA[enable secret class]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>将所有线路密码设置为“cisco”并从控制台开始要求登录。 设置 vty 线路 0 到 15。</b></font>]]></instruction>
+		</command>
+		<command prompt="HQSw1(config)#">
+			<correctresponse><![CDATA[line console 0]]></correctresponse>
+		</command>
+		<command prompt="HQSw1(config-line)#">
+			<correctresponse><![CDATA[password cisco]]></correctresponse>
+		</command>
+		<command prompt="HQSw1(config-line)#">
+			<correctresponse><![CDATA[login]]></correctresponse>
+		</command>
+		<command prompt="HQSw1(config-line)#">
+			<correctresponse><![CDATA[line vty 0 15]]></correctresponse>
+		</command>
+		<command prompt="HQSw1(config-line)#">
+			<correctresponse><![CDATA[password cisco]]></correctresponse>
+		</command>
+		<command prompt="HQSw1(config-line)#">
+			<correctresponse><![CDATA[login]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>退出到全局配置模式。 输入命令以加密明文密码。</b></font>]]></instruction>
+		</command>
+		<command prompt="HQSw1(config-line)#">
+			<correctresponse><![CDATA[exit]]></correctresponse>
+		</command>
+		<command prompt="HQSw1(config)#">
+			<correctresponse><![CDATA[service password-encryption]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>使用 IP 地址 192.168.10.2/24 配置 VLAN 1 并激活接口。</b></font>]]></instruction>
+		</command>
+		<command prompt="HQSw1(config)#">
+			<correctresponse><![CDATA[interface vlan 1]]></correctresponse>
+		</command>
+		<command prompt="HQSw1(config-if)#">
+			<correctresponse><![CDATA[ip address 192.168.10.2 255.255.255.0]]></correctresponse>
+		</command>
+		<command prompt="HQSw1(config-if)#">
+			<correctresponse><![CDATA[no shutdown]]></correctresponse>
+			<deviceresponse><![CDATA[%LINK-5-CHANGED: Interface Vlan1, changed state to up]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>直接返回到特权 EXEC 模式并显示当前配置。</b></font>]]></instruction>
+		</command>
+		<command prompt="HQSw1(config-if)#">
+			<correctresponse><![CDATA[end]]></correctresponse>
+		</command>
+		<command prompt="HQSw1#">
+			<correctresponse><![CDATA[show running-config]]></correctresponse>
+			<deviceresponse><![CDATA[Building configuration...  <br> <br>Current configuration : 1178 bytes <br>!  <br>version 12.2 <br>no service timestamps log datetime msec <br>no service timestamps debug datetime msec <br>service password-encryption <br>!  <br>hostname HQSw1 <br>!  <br>enable secret 5 $1$mERr$9cTjUIEqNGurQiFU.ZeCi1 <br>!  <br>!  <br>&lt; 省略部分输出 &gt;!<br>  <br>!  <br>interface Vlan1 <br> ip address 192.168.10.2 255.255.255.0 <br>!  <br>!  <br>line con 0 <br> password 7 0822455D0A16 <br> login <br>!  <br>line vty 0 4 <br> password 7 0822455D0A16 <br> login <br>line vty 5 15 <br> password 7 0822455D0A16 <br> login <br>!  <br>!  <br>end<br>HQSw1#]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>您已成功在交换机 HQSw1 上完成基本交换机配置。</b></font>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+</textcomponents>

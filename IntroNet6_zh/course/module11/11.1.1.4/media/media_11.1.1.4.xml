@@ -1,0 +1,51 @@
+<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>数据中心冗余</b>]]></text>
+    </component>
+    <component id="ID_titleTxt01">
+        <text>
+            <![CDATA[数据中心]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt01">
+        <text>
+            <![CDATA[如果一台服务器发生故障，另一台可随时处理客户请求。]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt02">
+        <text>
+            <![CDATA[链接]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt02">
+        <text>
+            <![CDATA[如果通往一台交换机的链路发生故障，通往第二台交换机的链路仍然可用。]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt03">
+        <text>
+            <![CDATA[交换机]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt03">
+        <text>
+            <![CDATA[部署冗余交换机可避免交换故障。]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt04">
+        <text>
+            <![CDATA[路由器]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt04">
+        <text>
+            <![CDATA[路由器冗余可帮助确保在出现路由器故障或路由故障时，仍然可以处理从外部流量接收的应用程序事务。]]>
+        </text>
+    </component>
+    <component id="ID_inst">
+        <text>
+            <![CDATA[单击橙色突出显示设备和连接以了解详细信息。]]>
+        </text>
+    </component>
+</textcomponents>

@@ -1,0 +1,1 @@
+<textcomponents><component id="ID_title"><text><![CDATA[ARP 广播和安全]]></text></component><component id="ID_txt01"><text><![CDATA[<b>所有设备同时启动</b>]]></text></component><component id="ID_txt02"><text><![CDATA[共享介质（多路访问）]]></text></component><component id="ID_txt03"><text><![CDATA[ARP 广播可能大量占用本地介质。]]></text></component></textcomponents>

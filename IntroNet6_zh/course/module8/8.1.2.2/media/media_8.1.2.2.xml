@@ -1,0 +1,137 @@
+﻿<textcomponents><component id="ID_s1_title"><text><![CDATA[<b>对网络 <u>10.x</u>.0.0/16 划分子网</b>]]></text></component><component id="ID_s2_title"><text><![CDATA[<b>对网络 <u>10.x.x</u>.0/24 划分子网</b>]]></text></component><component id="ID_s1_table"><text><![CDATA[<table header="none" bordercolor="#FFFFFF" borderwidth="3" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4" class="mtable">
+	<tr class="mtable_title">
+		<td colspan="3" bgcolor="#FFFFFF"><font size="5"></font></td>
+	</tr>
+	<tr class="mtable_top">
+		<td colspan="3" bgcolor="#4E4C4D"><font size="1" color="#4E4C4D">.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="200" valign="middle"><font color="#FFFFFF">子网地址（可能有 256 个子网）</font></td>
+		<td bgcolor="#666263" width="220" valign="middle"><font color="#FFFFFF">主机范围（每个子网可能有 65,534 个主机）</font></td>
+		<td bgcolor="#666263" width="180" valign="middle"><font color="#FFFFFF">广播</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.0</u>.0.0/16</td>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.0</u>.0.1 – <u>10.0</u>.255.254</td>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.0</u>.255.255</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.1</u>.0.0/16</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.1</u>.0.1 – <u>10.1</u>.255.254</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.1</u>.255.255</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.2</u>.0.0/16</td>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.2</u>.0.1 – <u>10.2</u>.255.254</td>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.2</u>.255.255</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.3</u>.0.0/16</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.3</u>.0.1 – <u>10.3</u>.255.254</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.3</u>.255.255</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.4</u>.0.0/16</td>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.4</u>.0.1 – <u>10.4</u>.255.254</td>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.4</u>.255.255</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.5</u>.0.0/16</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.5</u>.0.1 – <u>10.5</u>.255.254</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.5</u>.255.255</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.6</u>.0.0/16</td>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.6</u>.0.1 – <u>10.6</u>.255.254</td>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.6</u>.255.255</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.7</u>.0.0/16</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.7</u>.0.1 – <u>10.7</u>.255.254</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.7</u>.255.255</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="middle">...</td>
+		<td bgcolor="#E9E7E8" valign="middle">...</td>
+		<td bgcolor="#E9E7E8" valign="middle">...</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.255</u>.0.0/16</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.255</u>.0.1 – <u>10.255</u>.255.254</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.255</u>.255.255</td>
+	</tr>
+</table>
+]]></text></component><component id="ID_s2_table"><text><![CDATA[<table header="none" bordercolor="#FFFFFF" borderwidth="3" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4" class="mtable">
+	<tr class="mtable_title">
+		<td colspan="3" bgcolor="#FFFFFF"><font size="5"></font></td>
+	</tr>
+	<tr class="mtable_top">
+		<td colspan="3" bgcolor="#4E4C4D"><font size="1" color="#4E4C4D">.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="200" valign="middle"><font color="#FFFFFF">子网地址（可能有 65,536 个子网）</font></td>
+		<td bgcolor="#666263" width="220" valign="middle"><font color="#FFFFFF">主机范围（每个子网可能有 254 个主机）</font></td>
+		<td bgcolor="#666263" width="180" valign="middle"><font color="#FFFFFF">广播</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.0.0</u>.0/24</td>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.0.0</u>.1 – <u>10.0.0</u>.254</td>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.0.0</u>.255</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.0.1</u>.0/24</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.0.1</u>.1 – <u>10.0.1</u>.254</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.0.1</u>.255</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.0.2</u>.0/24</td>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.0.2</u>.1 – <u>10.0.2</u>.254</td>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.0.1.255</u>.255</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="middle">...</td>
+		<td bgcolor="#F2F2F2" valign="middle">...</td>
+		<td bgcolor="#F2F2F2" valign="middle">...</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.0.255</u>.0/24</td>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.0.255</u>.1 – <u>10.0.255</u>.254</td>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.0.255</u>.255</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.1.0</u>.0/24</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.1.0</u>.1 – <u>10.1.0</u>.254</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.1.0</u>.255</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.1.1</u>.0/24</td>
+		<td bgcolor="#E9E7E8" valign="middle"><u>10.1.1</u>.1 – <u>10.1.1</u>.254</td>
+		<td bgcolor="#E9E7E8" valign="middle"><u>1.1.1</u>.255</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.1.2</u>.0/24</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.1.2</u>.1 – <u>10.1.2</u>.254</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.1.2</u>.255</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="middle">...</td>
+		<td bgcolor="#E9E7E8" valign="middle">...</td>
+		<td bgcolor="#E9E7E8" valign="middle">...</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.100.0</u>.0/24</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.100.0</u>.1 – <u>10.100.0</u>.254</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.100.0</u>.255</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="middle">...</td>
+		<td bgcolor="#E9E7E8" valign="middle">...</td>
+		<td bgcolor="#E9E7E8" valign="middle">...</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.255.255</u>.0/24</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.255.255</u>.1 – <u>10.255.255</u>.254</td>
+		<td bgcolor="#F2F2F2" valign="middle"><u>10.255.255</u>.255</td>
+	</tr>
+</table>
+]]></text></component></textcomponents>

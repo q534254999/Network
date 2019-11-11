@@ -1,0 +1,41 @@
+<textcomponents><!-- slide 1 --><component id="ID_s1_txt01">
+		<text><![CDATA[VTY 端口 0-4]]></text>
+	</component><!-- slide 2 --><component id="ID_sc_reset">
+		<text><![CDATA[重置]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[看答案]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[全部显示]]></text>
+	</component>
+	<component id="ID_s2_SC1" fontSize="12" fontFace="_typewriter" fontColor="#ffffff">
+		<text></text>
+		<feedback id="fb"><![CDATA[<b>***</b><font face="_sans" color="#FFFFFF">您必须输入准确而完整的命令。</font><b>***</b> ]]></feedback>
+		<existingcommands><![CDATA[<font face="_sans"><b>使用访问列表 21，配置 vty 线路接受传入 SSH 连接。</b></font>]]></existingcommands>
+		<command prompt="R1(config)#">
+			<correctresponse><![CDATA[line vty 0 4]]></correctresponse>
+		</command>
+		<command prompt="R1(config-line)#">
+			<correctresponse><![CDATA[login local]]></correctresponse>
+		</command>
+		<command prompt="R1(config-line)#">
+			<correctresponse><![CDATA[transport input ssh]]></correctresponse>
+		</command>
+		<command prompt="R1(config-line)#">
+			<correctresponse><![CDATA[access-class 21 in]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>退出到全局配置模式并创建访问列表 21，以允许 192.168.10.0/24 网络并明确拒绝所有其他网络。</b></font>]]></instruction>
+		</command>
+		<command prompt="R1(config-line)#">
+			<correctresponse><![CDATA[exit]]></correctresponse>
+		</command>
+		<command prompt="R1(config)#">
+			<correctresponse><![CDATA[access-list 21 permit 192.168.10.0 0.0.0.255]]></correctresponse>
+		</command>
+		<command prompt="R1(config)#">
+			<correctresponse><![CDATA[access-list 21 deny any]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans" class="syntaxBottomLine"><b>您已成功保护 R1 上的 vty 线路。</b></font>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+</textcomponents>

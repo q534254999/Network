@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.3.3 配置单臂路由器：路由器子接口配置</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置单臂路由器：路由器子接口配置</h1>
+        <div>
+          <p>相比传统 VLAN 间路由，使用单臂路由器配置时，路由器的配置是不同的。图中显示的是多个子接口的配置。</p>
+          <p></p>
+          <p>使用<span class="cmd"><b></b></span><b>接口</b><i> interface_id subinterface_id </i>全局配置模式命令创建各个子接口。子接口的语法为物理接口（在本例中为 g0/0），加上一个点，再加上子接口编号。如图中所示，使用<b> interface g0/0.10 </b>全局配置模式命令创建子接口 GigabitEthernet0/0.10。通常配置子接口编号以反映 VLAN 编号。</p>
+          <p></p>
+          <p>在将 IP 地址分配给子接口之前，必须使用<span class="cmd"><b></b></span><b>encapsulation dot1q</b><i> vlan_id </i>命令从端口中删除该 VLAN。本例中，将子接口 G0/0.10 分配给 VLAN 10。 </p>
+          <p></p>
+          <p>
+            <b>注：</b>有一个<span class="cmd"><b></b></span><b>native</b><span class="cmd"><b></b></span>关键字选项可附加到此命令，用以设置 IEEE 802.1Q 本征 VLAN。在本示例中，排除了<span class="cmd"><b></b></span><b>native</b><span class="cmd"><b></b></span>关键字选项以使本征 VLAN 保留为默认的 VLAN 1。</p>
+          <p></p>
+          <p>接下来，使用<span class="cmd"><b></b></span><b>ip address</b><i> ip_address subnet_mask </i>子接口配置模式命令为子接口分配 IPv4 地址。在本示例中，使用<span class="cmd"><b></b></span><b>ip address 172.17.10.1 255.255.255.0 </b>命令将接口 G0/0.10 的 IPv4 地址配置为 172.17.10.1。 </p>
+          <p></p>
+          <p>为网络上配置的 VLAN 之间进行路由所需的所有路由器子接口，重复以上过程。要实现路由，各路由器子接口需分配唯一子网上的 IP 地址。例如，另一个路由器子接口 G0/0.30 配置为使用 IPv4 地址 172.17.30.1，其子网不同于子接口 G0/0.10 的子网。</p>
+          <p></p>
+          <p>启用物理接口后，子接口将在配置后自动启用。在思科 IOS 软件的子接口配置模式级别，无需使用<span class="cmd"><b></b></span><b>no shutdown</b><span class="cmd"><b></b></span>命令启用子接口。 </p>
+          <p></p>
+          <p>如果物理接口被禁用，所有子接口都会被禁用。在本示例中，在接口配置模式中为 G0/0 输入了命令<span class="cmd"><b></b></span><b>no shutdown</b><span class="cmd"><b></b></span>，这反过来会启用所有已配置的子接口。</p>
+          <p></p>
+          <p>可以使用<span class="cmd"><b></b></span><b>shutdown</b><b></b>命令管理性关闭各个子接口。此外，在子接口配置模式下，可使用<span class="cmd"><b></b></span><b>no shutdown</b><span class="cmd"><b></b></span>命令独立启用各个子接口</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示单臂路由器拓扑和在具有到交换机的单个物理连接的路由器上配置子接口和中继封装所需的步骤。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

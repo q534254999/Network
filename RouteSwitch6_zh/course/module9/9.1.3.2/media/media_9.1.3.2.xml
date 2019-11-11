@@ -1,0 +1,11 @@
+<textcomponents>
+
+<component id="ID_title_txt">
+<text><![CDATA[<b>NAT 的缺点</b>]]></text>
+</component>
+
+<component id="ID_body_txt">
+<text><![CDATA[<li>性能下降。</li><li>端对端功能降低。</li><li>端到端 IP 可追溯性会丧失。</li><li>隧道会变得更加复杂。</li><li>源 TCP 连接会中断。</li>]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.2.3 缓解网络拥塞</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>缓解网络拥塞</h1>
+        <div>
+          <p>LAN 交换机具有特殊特性，使其能够有效地缓解网络拥塞。默认情况下，互连交换机端口尝试在全双工模式下建立链路，因此消除冲突域。交换机的每个全双工端口都为连接到该端口的一台或多台设备提供全带宽。全双工连接可以同时承载发送和接收的信号。全双工连接显著提高了 LAN 网络性能，对于 1 Gb/s 或更高的以太网速度是必需的。</p>
+          <p></p>
+          <p>交换机互连 LAN 网段，使用 MAC 地址表来确定将帧发送到哪个网段，并且可以减少或完全消除冲突。以下是有助于缓解网络拥塞的交换机的一些重要特性：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>高端口密度 </b>- 交换机具有较高端口密度：24 端口和 48 端口交换机通常仅有一个机架单元，运行速度为 100 Mb/s、1 Gb/s 和 10 Gb/s。大型企业的交换机可以支持数百个端口。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>大型帧缓冲区</b> - 在必须开始丢弃收到的帧之前能够存储更多的帧是非常有用的，尤其是在服务器或网络其他部分可能存在拥塞端口时。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>端口速度</b> - 根据交换机的成本，它们可能支持一种速度组合。速度为 100 Mb/s 和 1 Gb/s 或 10 Gb/s 的端口很常见（100 Gb/s 也有可能）。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>快速内部交换</b> - 具备快速内部转发功能能够提高性能。使用的方法可能是快速内部总线或共享内存，这会影响交换机的整体性能。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>较低的每端口成本</b> - 交换机以较低的成本提供高端口密度。 </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示三种类型的交换硬件；固定配置、模块化和堆叠式。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.2.1 路由缺失故障排除</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>路由缺失故障排除</h1>
+        <div>
+          <p>由于以下各种因素，导致网络状况经常会发生变化：</p>
+          <p>
+            <ul>
+              <li>接口故障</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>运营商断开连接</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>链路过饱和</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>管理员输入的配置错误</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>当网络发生变化时，连接可能会中断。网络管理员负责查明并解决问题。要查明并解决这些问题，网络管理员必须熟悉工具，以便快速隔离路由问题。 </p>
+          <p></p>
+          <p>常用 IOS 故障排除命令包括： </p>
+          <p>
+            <ul>
+              <li>
+                <b>ping</b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>traceroute</b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip route</b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip interface brief </b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show cdp neighbors detail</b>
+                <span class="cmd">
+                  <b></b>
+                </span>
+              </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>图 1 显示了从 R1 的源接口到 R3 的 LAN 接口执行扩展 ping 操作的结果。扩展的 ping 是 ping 实用程序的增强版本。实用扩展 ping 能够指定 ping 数据包的源 IP 地址。</p>
+          <p></p>
+          <p>图 2 显示了从 R1 到 R3 的 LAN 执行 traceroute 操作的结果。</p>
+          <p></p>
+          <p>图 3 显示 R1 的路由表。 </p>
+          <p></p>
+          <p>图 4 显示了路由器上所有接口的快速状态。 </p>
+          <p></p>
+          <p>图 5 显示了直接相连的思科设备列表。此命令验证第 2 层（第 1 层）连接。例如，如果命令的输出中列出邻居设备，但对其执行 ping 操作失败，则应该调查第 3 层编址。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">这些图基于标准实验图。图 1 显示路由器 1 上“ping”命令到路由器 3 LAN 上的 PC 的输出。此 ping 使用源选项从路由器 1 LAN 接口获取该 ping。图 2 显示路由器 1 上“trace route”命令到路由器 3 LAN 上的 PC 的输出。图 3 显示路由器 1 上“show ip route”命令的输出，显示路由表。图 4 显示路由器 1 上“show ip interface brief”命令的输出，指示 LAN 和 WAN 接口均开启。图 5 显示路由器 1 上“show CDP neighbors”命令的输出，除连接到路由器 1 的 LAN 交换机外，将路由器 2 作为邻居列出。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

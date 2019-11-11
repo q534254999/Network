@@ -1,0 +1,106 @@
+<textcomponents>
+
+    <component id="ID_title">
+        <text><![CDATA[<b>练习 – 访问方法</b>]]></text>
+    </component>
+
+<!-- instructions -->
+    <component id="id_instr_title">
+        <text><![CDATA[说明]]></text>
+    </component>
+
+    <component id="id_instr_body">
+        <text><![CDATA[为每个场景选择最适当的访问方法。]]></text>
+    </component>
+
+    <component id="MCTable_title">
+        <text><![CDATA[ ]]></text>
+    </component>
+     
+<!-- buttons -->
+    <component id="ID_Button01">
+        <text><![CDATA[检查]]></text>
+    </component>
+
+    <component id="ID_Button02">
+        <text><![CDATA[重置]]></text>
+    </component>
+
+<!--Number of rows in the table-->
+    <component id="txt_numrows">
+        <text><![CDATA[4]]></text>
+    </component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+    <component id="txt_numcols">
+        <text><![CDATA[3]]></text>
+    </component>
+
+<!--Answer column headers-->
+    <component id="txt_col1">
+        <text><![CDATA[<b>控制台端口</b>]]></text>
+    </component>
+
+    <component id="txt_col2">
+        <text><![CDATA[<b>Telnet/SSH</b>]]></text>
+    </component>
+
+    <component id="txt_col3">
+        <text><![CDATA[<b>AUX</b>]]></text>
+    </component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+    <component id="txt_q1">
+        <text><![CDATA[1. <textformat blockindent='13'>您所在的设备房具有需要配置的新交换机。</textformat>]]></text>
+    </component>
+
+    <component id="txt_q2">
+        <text><![CDATA[2. <textformat blockindent='13'>您的经理向您提供了专用电缆并告诉您使用它来配置<br/><span class="aligning">交换机。</span></textformat>]]></text>
+    </component>
+
+    <component id="txt_q3">
+        <text><![CDATA[3. <textformat blockindent='13'>通过网络<br/><span class="aligning">连接</span>，您可以使用另一个中间设备来访问 IOS。</textformat>]]></text>
+    </component>
+
+    <component id="txt_q4">
+        <text><![CDATA[4. <textformat blockindent='13'>您致电您的经理，告诉他您无法<br/><span class="aligning">通过互联网访问另一城市的路由器。他通过电话连接</span><br/><span class="aligning">为您提供访问交换机所需的信息。</span></textformat>]]></text>
+    </component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+    <component id="txt_a1">
+        <text><![CDATA[1]]></text>
+    </component>
+
+    <component id="txt_a2">
+        <text><![CDATA[1]]></text>
+    </component>
+
+    <component id="txt_a3">
+        <text><![CDATA[2]]></text>
+    </component>
+
+    <component id="txt_a4">
+        <text><![CDATA[3]]></text>
+    </component>
+
+<!-- Correct Feedback -->
+    <component id="ID_titleCorrect">
+        <text><![CDATA[正确]]></text>
+    </component>
+
+    <component id="ID_correctText">
+        <text><![CDATA[您已成功地将最适当的访问方法与每个场景相匹配。]]></text>
+    </component>
+
+<!-- Incorrect Feedback -->
+    <component id="ID_titleIncorrect">
+        <text><![CDATA[不正确]]></text>
+    </component>
+
+    <component id="ID_IncorrectText">
+        <text><![CDATA[您尚未成功地将最适当的访问方法与每个场景相匹配。请单击“重置”重试。]]></text>
+    </component>
+
+</textcomponents>

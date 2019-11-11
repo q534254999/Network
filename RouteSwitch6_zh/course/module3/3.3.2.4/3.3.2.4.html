@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.2.4 一级父路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>一级父路由</h1>
+        <div>
+          <p>如图 1 所示，172.16.0.0 和 209.165.200.0 路由是 1 级父路由。父路由是划分子网的 1 级网络路由。父路由不可以是最终路由。 </p>
+          <p></p>
+          <p>图 2 突出显示了 R1 的路由表中的 1 级父路由。在路由表中，它为其包含的特定子网基本上提供了一个标题。各个条目显示细分有类地址所形成的有类网络地址、子网数量和不同子网掩码的数量。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示 1 级路由和父路由之间的关系。该图将网络路由作为 1 级路由列出，如果 1 级网络是划分子网的网络，其下方是标题“Parent Route”。图 2 显示来自命令 show i.p. route pipe begin Gateway 的输出。突出显示两个父路由。第一个路由输出 172.16.0.0/16 is variably subnetted, 5 subnets, 3 masks。下方列出五个子网以及下一跳 IP 地址。例如，其中一个子网行输出 R 代表 RIP，通过 209.165.200.226 可到达的 172.16.2.0/24 120/2。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

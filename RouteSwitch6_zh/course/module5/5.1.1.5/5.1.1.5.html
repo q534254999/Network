@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.1.5 使用 IPv4 配置基本交换机管理访问</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>使用 IPv4 配置基本交换机管理访问</h1>
+        <div>
+          <p>
+            <b>步骤 1.配置管理接口</b>
+          </p>
+          <p></p>
+          <p>在交换机的管理 SVI 上通过 VLAN 接口配置模式配置 IPv4 地址和子网掩码。如图 1 所示，使用 <b>interface vlan 99 </b>命令进入接口配置模式。<b>ip address </b>命令用于配置 IPv4 地址。<b>no shutdown </b>命令将启用接口。在本示例中，为 VLAN 99 配置的 IPv4 地址是 172.17.99.11。 </p>
+          <p></p>
+          <p>只有创建了 VLAN 99 并且有设备连接到与 VLAN 99 关联的交换机端口时 VLAN 99 的 SVI 才会显示为“up/up”。要使用 vlan_id 99 创建 VLAN 并将其与接口相关联，请使用以下命令： </p>
+          <p></p>
+          <p>
+            <span class="cmd">S1(config)#</span>
+            <span class="cmd">
+              <b> vlan </b>
+            </span>
+            <span class="cmd">
+              <i>vlan_id</i>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">S1(config-vlan)#</span>
+            <span class="cmd">
+              <b> name </b>
+            </span>
+            <span class="cmd">
+              <i>vlan_name</i>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">S1(config-vlan)#</span>
+            <span class="cmd">
+              <b> exit</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">S1(config)#</span>
+            <span class="cmd">
+              <b> interface </b>
+            </span>
+            <span class="cmd">
+              <i>interface_id </i>
+            </span>
+            <span class="cmd">
+              <b></b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">S1(config-if)#</span>
+            <span class="cmd">
+              <b></b>
+            </span>
+            <span class="cmd">
+              <b>switchport access vlan </b>
+            </span>
+            <span class="cmd">
+              <i>vlan_id</i>
+            </span>
+          </p>
+          <p></p>
+          <p>
+            <b>步骤 2.配置默认网关 </b>
+          </p>
+          <p></p>
+          <p>如果要通过未直接连接的网络远程管理交换机，则应当为交换机配置默认网关。默认网关是与交换机连接的路由器。交换机将目标 IP 地址位于本地网络之外的 IP 数据包转发到默认网关。如图 2 所示，R1 是 S1 的默认网关。R1 上与交换机连接的接口的 IPv4 地址为 172.17.99.1。该地址是 S1 的默认网关地址。</p>
+          <p></p>
+          <p>要配置交换机的默认网关，请使用<b> ip default-gateway </b>命令。输入默认网关的 IPv4 地址。默认网关是与交换机相连的路由器接口的 IPv4 地址。使用<b> copy running-config startup-config </b>命令备份您的配置。</p>
+          <p></p>
+          <p>
+            <b>步骤 3.验证配置</b>
+          </p>
+          <p></p>
+          <p>如图 3 所示，在确定物理接口和虚拟接口的状态时，<b>show ip interface brief </b>命令非常有用。显示的输出确认接口 VLAN 99 已配置为 IPv4 地址和子网掩码。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示一个列出基本交换机配置命令的表。图 2 显示一个列出用于为交换机配置默认网关的命令的表。图 3 显示 show running-config 命令的输出。输出被截断，仅显示 FastEthernet 0/18 接口的配置，其中将 access vlan 99 配置为访问接口。图中还显示 show ip interface brief 命令的输出。此命令显示接口 vlan 99 的配置（包括 IP 地址及其状态）。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.4.1 使用分层模型的优点</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>使用分层模型的优点</h1>
+        <div>
+          <p>使用分层模型来描述网络协议及其工作方式的优点包括：</p>
+          <p>
+            <ul>
+              <li>有助于协议设计，因为对于在特定层工作的协议而言，它们的工作方式及其与上下层之间的接口都已经确定。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>促进竞争，因为可以同时使用不同厂商的产品。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>避免一个协议层的技术或功能变化影响相邻的其他层。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>提供了描述网络功能和能力的通用语言。</li>
+            </ul>
+          </p>
+          <p>如图所示，TCP/IP 模型和开放式系统互联 (OSI) 模型是讨论网络功能时使用的主要模型。它们每个代表一个基本分层网络模型类型： </p>
+          <p>
+            <ul>
+              <li>
+                <b>协议模型</b> - 这种类型的模型与特定的协议簇结构紧密配合。TCP/IP 模型描述了 TCP/IP 协议簇中每个协议层实现的功能，因此属于协议模型。TCP/IP 也用作参考模型。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>参考模型</b> - 这种类型的模型通过描述特定层需要完成什么但不规定如何完成来保持各类网络协议和服务中的一致性。OSI 模型是一种广为人知的网际网络参考模型，但也是 OSI 协议簇中的一种协议模型。 </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the two networking models side by side, the seven layer OSI model and the four layer TCP/IP model. The main TCP/IP suite protocols are listed for each of the layers.  The application, presentation and session layers of the OSI. model line up with the Application layer of TCP/IP. model, and here are HTTP, DNS, DHCP, and FTP.  The Transport layers align together and carry TCP and UDP.  The OSI network layer aligns with the Internet layer of TCP/IP and carries both IP version 4 and version 6 along with ICMP for both versions 4 and 6.  The OSI data link and physical align with the TCP/IP network access layer and some of the protocols here are PPP, Frame Relay and Ethernet.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

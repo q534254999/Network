@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.3.4 boot system 命令</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>boot system 命令</h1>
+        <div>
+          <p>将 IOS 映像保存到路由器的闪存中后，如果要升级已复制的 IOS 映像，请使用 <b>boot system</b> 命令配置路由器在启动过程中加载新映像，如图 1 中所示。保存配置。重新加载路由器，以便使用新映像启动路由器。在路由器启动后，要验证新映像是否已加载，可使用图 2 所示的 <b>show version</b> 命令。</p>
+          <p></p>
+          <p>在启动过程中，引导程序代码将为指定要加载的思科 IOS 软件映像名称和位置的 <b>boot system</b> 命令解析 NVRAM 中的启动配置文件。可按顺序输入几条 <b>boot system</b> 命令以提供容错启动计划。 </p>
+          <p></p>
+          <p>如果配置中没有 <b>boot system</b> 命令，路由器将默认加载并运行闪存中第一个有效的思科 IOS 映像。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了将路由器设置为从闪存中的特定 IOS 文件启动的语法。当您要测试新版本而不希望删除旧版本时，此命令非常有帮助。图 2 显示路由器 1 上“show version”命令的输出。突出显示了新的思科 IOS 版本以及文件名。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

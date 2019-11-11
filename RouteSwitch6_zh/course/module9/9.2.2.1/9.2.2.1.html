@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.2.1 动态 NAT 操作</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>动态 NAT 操作</h1>
+        <div>
+          <p>静态 NAT 提供内部本地地址与内部全局地址之间的永久映射，而动态 NAT 使内部本地地址与内部全局地址能够进行自动映射。这些内部全局地址通常是公有 IPv4 地址。动态 NAT 使用一个公有 IPv4 地址组或池来实现转换。 </p>
+          <p></p>
+          <p>像静态 NAT 一样，动态 NAT 也要求对参与 NAT 的内部和外部接口进行配置。但是，静态 NAT 创建与单个地址的永久映射，而动态 NAT 使用一个地址池。</p>
+          <p></p>
+          <p>
+            <b>注</b>：到目前为止，公有和私有 IPv4 地址之间的转换是 NAT 的最常见用法。不过，NAT 转换可在任一一对地址之间进行。</p>
+          <p></p>
+          <p>图中所示示例拓扑中，有一个内部网络使用的是来自 RFC 1918 私有地址空间的地址。与路由器 R1 连接的是两个 LAN：192.168.10.0/24 和 192.168.11.0/24。在路由器 R2（边界路由器）上配置动态 NAT，使用从 209.165.200.226 到 209.165.200.240 的公有 IPv4 地址池。  </p>
+          <p></p>
+          <p>这个公有 IPv4 地址池（内部全局地址池）根据先到先得的原则，分配这些地址给内部网络中的任何设备。使用动态 NAT 时，单个内部地址将转换为单个外部地址。要进行此类转换，池中必须有足够地址以满足需要同时访问外部网络的所有内部设备。如果池中的所有地址已经用完，设备必须等待有可用地址时才能访问外部网络。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示路由器 2，内部网络在左侧，外部网络在右侧。内部网络包含路由器 1 和两个计算机。外部网络包含一个服务器。在图像下方列出了 IPv4 NAT 池。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

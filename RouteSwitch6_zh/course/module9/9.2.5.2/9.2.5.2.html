@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.5.2 IPv6 唯一本地地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.5.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv6 唯一本地地址</h1>
+        <div>
+          <p>IPv6 唯一本地地址 (ULA) 与 IPv4 中的 RFC 1918 私有地址相似，但是也有着重大差异。ULA 的目的是为本地站点内的通信提供 IPv6 地址空间；而不是为了提供额外的 IPv6 地址空间，也不是为了提供一定级别的安全性。</p>
+          <p></p>
+          <p>如图所示，ULA 拥有前缀 FC00::/7，这将产生第一个十六进制数的范围 FC00 到 FDFF。如果该前缀是本地分配的，则接下来的 1 位将设置为 1。设置为 0 的情况将在以后进行定义。之后的 40 位是全局 ID，然后是 16 位的子网 ID。以上前 64 位结合在一起，形成 ULA 前缀。这样，剩余的 64 位保留为接口 ID，或者在 IPv4 术语中为地址的主机部分。</p>
+          <p></p>
+          <p>在 RFC 4193 中定义唯一本地地址。ULA 也称为本地 IPv6 地址（不要与 IPv6 本地链路地址相混淆），具有几个特性，包括： </p>
+          <p>
+            <ul>
+              <li>允许站点进行合并或私下互连，而不会产生任何地址冲突或要求使用这些前缀对接口进行重新编号。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>独立于任何 ISP，而且可用于站点内通信，无需进行互联网连接。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>不可通过互联网路由，但是如果无意中因路由或 DNS 而泄露出去，也不会与其他地址发生冲突。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>ULA 并不像 RFC 1918 地址一样完全直接转发。与 IPv4 地址不同，IETF 的目的并不是使用 NAT 的一种形式来进行唯一本地地址和 IPv6 全局单播地址之间的转换。 </p>
+          <p></p>
+          <p>IPv6 唯一本地地址的实施和潜在用途仍由互联网社区进行检查。例如，IETF 正在考虑允许在使用 FC00::/8 ULA 前缀时集中分配 40 位全局 ID、在使用 ULA 前缀 FD00::/8 时随机生成或手动分配 40 位全局 ID 的选项。地址的其余部分保持不变。我们仍为子网 ID 使用 16 位，为接口 ID 使用 64 位。</p>
+          <p></p>
+          <p>
+            <b>注</b>：最初的 IPv6 规范为本地站点地址分配地址空间，这在 RFC 3513 中进行了定义。后来 IETF 在 RFC 3879 中弃用了本地站点地址，因为“站点”这一术语不太明确。本地站点地址的前缀范围为 FEC0::/10，可能在某些较早的 IPv6 文档中仍能见到。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了如何构成 IPv6 唯一本地地址。显示的地址字段包括前缀、全局 ID、子网 ID 以及接口 ID。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

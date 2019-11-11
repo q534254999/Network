@@ -1,0 +1,66 @@
+<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>DHCPv4 问题</b>]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[抱歉，我无法在网络之间转发广播...]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[正在查找 DHCPv4 服务器…]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[DNS 服务器<br/>192.168.11.5]]></text>
+	</component>
+	<component id="ID_s1_txt04">
+		<text><![CDATA[DHCPv4 服务器<br/>192.168.11.6]]></text>
+	</component>
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>PC1：没有 IPv4 地址</b>]]></text>
+	</component>
+	<component id="ID_s2_txt01">
+		<text><![CDATA[<b>C:\WINDOWS\system32\cmd.exe</b>]]></text>
+	</component>
+	<component id="ID_s2_txt02">
+		<text><![CDATA[<b>配置 DHCPv4 步骤 1：排除 Ipv4 地址</b>]]></text>
+	</component>
+	<component id="ID_s3_title">
+		<text><![CDATA[<b>DHCPv4 中继命令</b>]]></text>
+	</component>
+	<component id="ID_s3_txt01">
+		<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+	</component>
+	<component id="ID_s4_title">
+		<text><![CDATA[<b>PC1：更新 IPv4 地址</b>]]></text>
+	</component>
+	<component id="ID_sc_reset">
+		<text><![CDATA[重置]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[看答案]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[全部显示]]></text>
+	</component>
+	<component id="ID_s5_title">
+		<text><![CDATA[<b>配置 DHCPv4 中继</b>]]></text>
+	</component>
+	<component id="ID_s5_SC5" fontSize="12" fontFace="_typewriter" fontColor="#ffffff">
+		<feedback id="fb" class=" font10px"><![CDATA[<b><font face="_sans" color="#FFFFFF">***您必须输入确切完整的命令。 包含名称或密码的命令区分大小写。***</font></b>]]></feedback>
+		<existingcommands><![CDATA[<font face="_sans"><b>在正确的路由器上配置 DHCPv4 中继命令从而让 PC3 接收来自 DHCPv4 服务器的 IPv4 地址和其他参数。 在无需配置的任何设备上退出配置模式。</b></font>]]></existingcommands>
+		<command prompt="R1(config)#">
+			<correctresponse><![CDATA[exit]]></correctresponse>
+		</command>
+		<command prompt="R2(config)#">
+			<correctresponse><![CDATA[exit]]></correctresponse>
+		</command>
+		<command prompt="R3(config)#">
+			<correctresponse><![CDATA[interface g0/0]]></correctresponse>
+		</command>
+		<command prompt="R3(config-if)#">
+			<correctresponse><![CDATA[ip helper-address 192.168.11.6]]></correctresponse>
+			<deviceresponse><![CDATA[<font face='_typewriter'>R3(config-if)#</font>]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>您已成功配置 DHCPv4 中继。</b></font>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+</textcomponents>

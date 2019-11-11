@@ -1,0 +1,55 @@
+<textcomponents>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[互联网]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[ISP 1]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[ISP 2]]></text>
+	</component>
+	<component id="ID_s1_txt05">
+		<text><![CDATA[FTP]]></text>
+	</component>
+	<component id="ID_s1_txt04">
+		<text><![CDATA[服务器群]]></text>
+	</component>
+	<component id="ID_s1_txt06">
+		<text><![CDATA[使用文件传输协议 (FTP) 应用程序将文件发送到服务器。TCP 跟踪会话并将发送的数据分为 6 个数据段。]]></text>
+	</component>
+	<component id="ID_s1_txt08">
+		<text><![CDATA[文件服务器确认接收前 3 个数据段。]]></text>
+	</component>
+	<component id="ID_s1_txt09">
+		<text><![CDATA[客户端转发后 3 个数据段。]]></text>
+	</component>
+	<component id="ID_s1_txt10">
+		<text><![CDATA[如果没有收到数据段，则不发送确认消息。]]></text>
+	</component>
+	<component id="ID_s1_txt11">
+		<text><![CDATA[客户端重新发送最后 3 个数据段。]]></text>
+	</component>
+	<component id="ID_s1_txt12">
+		<text><![CDATA[接收并确认后 3 个数据段。]]></text>
+	</component>
+	<component id="ID_s1_txt07">
+		<text><![CDATA[6 个数据段中的前 3 个数据段转发到服务器。]]></text>
+	</component><!-- controller --><component id="end">
+		<text><![CDATA[结束]]></text>
+	</component>
+	<component id="fforward">
+		<text><![CDATA[快进]]></text>
+	</component>
+	<component id="pause">
+		<text><![CDATA[暂停]]></text>
+	</component>
+	<component id="play">
+		<text><![CDATA[播放]]></text>
+	</component>
+	<component id="rewind">
+		<text><![CDATA[快退]]></text>
+	</component>
+	<component id="start">
+		<text><![CDATA[开始]]></text>
+	</component>
+</textcomponents>

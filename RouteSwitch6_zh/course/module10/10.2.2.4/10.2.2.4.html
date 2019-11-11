@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.2.4 服务时间戳</title>
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>服务时间戳</h1>
+        <div>
+          <p>默认情况下，日志消息没有时间戳。例如，在图中，R1 GigabitEthernet 0/0 接口关闭。记录到控制台的消息没有说明何时更改了接口状态。日志消息应具有时间戳，这样，当它们发送到另一个目标，例如系统日志服务器时，就有关于何时生成了消息的记录。 </p>
+          <p></p>
+          <p>使用命令 <b>service timestamps log datetime</b> 强制记录的事件显示日期和时间。如图所示，当重新激活 R1 GigabitEthernet 0/0 接口时，日志消息现在便包含日期和时间。</p>
+          <p></p>
+          <p>
+            <b>注</b>：当使用 <b>datetime</b> 关键字时，就必须如上所述，手动或通过 NTP 设置网络设备的时钟。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示已使用“service timestamps log datetime”命令配置 R1，以强制日志消息显示日期和时间。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.1.6 验证 VLAN 信息</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证 VLAN 信息</h1>
+        <div>
+          <p>在配置 VLAN 后，可以使用思科 IOS show 命令验证 VLAN 配置。 </p>
+          <p></p>
+          <p>图 1 显示了<b> show vlan </b>和<b> show interfaces </b>命令选项。 </p>
+          <p></p>
+          <p>在图 2 的示例中，<b>show vlan name student</b> 命令的输出较难解释。<b>show vlan summary</b> 命令会显示配置的 VLAN 数总和。图 2 的输出显示七个 VLAN。</p>
+          <p></p>
+          <p><b>show interfaces vlan</b><i> vlan-id </i>命令显示的详细信息不在本课程的讨论范围之内。图 3 中第二行显示的重要信息表示 VLAN 20 已启用。 </p>
+          <p></p>
+          <p>使用图 4 中的语法检查程序显示 VLAN 和交换机端口信息，并验证 VLAN 分配和模式。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示一个带“show vlan”命令选项的表，和一个带“show interfaces”命令选项及其说明的表。图 2 显示“show vlan name student”命令和“show vlan summary”命令的输出。图 3 显示“show interfaces vlan 20”命令的输出。图 4 是允许学生练习搭配 vlan 使用 show 命令的互动练习。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

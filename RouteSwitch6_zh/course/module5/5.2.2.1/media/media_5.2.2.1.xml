@@ -1,0 +1,12 @@
+<textcomponents>
+
+
+<component id="ID_title">
+<text><![CDATA[<b>禁用未使用的端口</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+  <text><![CDATA[使用 <b class="command">shutdown</b> 命令禁用未使用的端口。]]></text> 
+</component>
+
+</textcomponents>

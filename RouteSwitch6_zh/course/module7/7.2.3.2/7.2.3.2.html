@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.3.2 验证 VTY 端口是否安全</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证 VTY 端口是否安全</h1>
+        <div>
+          <p>在配置了 ACL 以限制对 VTY 线路的访问后，验证其是否如预期一样工作非常重要。图中显示有两台设备尝试使用 SSH 连接 R1。已经在 R1 的 VTY 线路上配置了访问列表 21。PC1 连接成功，而 PC2 未能建立 SSH 连接。这是预期行为，因为已配置的访问列表允许从 192.168.10.0/24 网络进行 VTY 访问，但拒绝所有其他设备。</p>
+          <p></p>
+          <p>R1 的输出显示在 PC1 和 PC2 进行过 SSH 尝试后发出 <b>show access-lists</b> 命令得到的结果。输出中 permit 语句的匹配项是因 PC1 的 SSH 连接成功而产生的。deny 语句的匹配项是因 PC2（192.168.11.0/24 网络中的一个设备）尝试创建 SSH 连接失败而产生的。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了上一页的拓扑，以及两个尝试通过 ssh 访问路由器的 LAN 上计算机的屏幕输出。第一台计算机在 192.168.10.0 网络中，这是 ACL 中配置的已接受的网络而且允许访问。第二台计算机在 192.168.11.0 网络中，而且由于 ACL 而拒绝访问。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

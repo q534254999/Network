@@ -1,0 +1,26 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>UDP 服务器侦听请求</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[服务器]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[客户端 1]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[客户端 2]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[<b>服务器应用程序</b><br/>端口 53 用来接收客户端的 DNS 请求。<br/><br/>端口 1812 用来接收客户端的 RADIUS 请求。]]></text>
+	</component>
+	<component id="ID_s1_instr_body">
+		<text><![CDATA[发送到服务器的客户端请求以公认端口号作为目的端口。]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[DNS 请求]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[RADIUS 请求]]></text>
+	</component>
+</textcomponents>

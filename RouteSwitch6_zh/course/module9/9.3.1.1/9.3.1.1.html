@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.3.1.1 show ip nat 命令</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>show ip nat 命令</h1>
+        <div>
+          <p>图 1 显示为 PAT 启用了 R2，使用的地址范围为 209.165.200.226 到 209.165.200.240。 </p>
+          <p></p>
+          <p>当 IPv4 NAT 环境中发生连通性问题时，经常难以确定问题的原因。解决问题的第一步便是检查 NAT 是否为故障的原因。请执行下列步骤来验证 NAT 是否按预期正常工作：</p>
+          <p></p>
+          <p>
+            <b>步骤 1.</b>根据配置，清楚地确定应该实现什么样的 NAT。这可能会揭示出配置问题。</p>
+          <p></p>
+          <p>
+            <b>步骤 2.</b>使用 <b>show ip nat translations</b> 命令验证转换表中转换条目是否正确。</p>
+          <p></p>
+          <p>
+            <b>步骤 3.</b>使用 <b>clear</b> 和 <b>debug</b> 命令验证 NAT 是否如预期一样工作。检查动态条目被清除后，是否又被重新创建出来。</p>
+          <p></p>
+          <p>
+            <b>步骤 4.</b>详细审查数据包传送情况，确认路由器具有移动数据包所需的正确路由信息。</p>
+          <p></p>
+          <p></p>
+          <p>图 2 显示了 <b>show ip nat statistics</b> 和 <b>show ip nat translations</b> 命令的输出。在使用 <b>show</b> 命令之前，可以使用 <b>clear ip nat statistics</b> 和 <b>clear ip nat translation * </b>命令清除 NAT 统计信息和 NAT 表中的条目。在位于 192.168.10.10 的主机通过 Telnet 连接到位于 209.165.201.1 的服务器上之后，将显示 NAT 统计信息和 NAT 表，以验证 NAT 是否如预期一样工作。 </p>
+          <p></p>
+          <p>在简单的网络环境中，使用 <b>show ip nat statistics</b> 命令监控 NAT 统计信息会很有用。<b>show ip nat statistics</b> 命令显示有关总活动转换数、NAT 配置参数、地址池中地址数量和已分配地址数量的信息。但是，在有多个转换的更复杂的 NAT 环境中，该命令可能无法清楚地识别问题。可能需要在路由器上运行<b>debug</b> 命令。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示路由器 2，内部网络在左侧，外部网络在右侧。内部网络包含 2 台计算机和路由器 1。外部网络包含两个服务器。路由器 2 使用 PAT。图 2 显示了多个命令的输出。首先是“clear ip nat statistics”命令，然后是“clear ip nat translations star”命令。现在，主机通过 telnet 登录到服务器，然后显示“show ip nat statistics”命令，再显示“show ip nat translations”命令。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

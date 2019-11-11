@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.2.6 端口处于错误禁用状态</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>端口处于错误禁用状态</h1>
+        <div>
+          <p>当端口配置了端口安全时，违规可能会导致端口变为错误禁用状态。当端口处于错误禁用状态时，它是有效关闭的，此端口上不会发送或接收任何流量。控制台上显示了一系列与端口安全相关的消息（图 1）。 </p>
+          <p></p>
+          <p>
+            <b>注</b>：端口协议和链路状态变为关闭。</p>
+          <p></p>
+          <p>端口 LED 将关闭。<b>show interfaces </b>命令将端口状态标识为<b> err-disabled</b>（图 2）。现在<b> show port-security interface </b>命令的输出显示接口状态为<b> secure-shutdown</b>。由于端口安全违规模式设置为关闭，因此出现安全违规的端口将进入错误禁用状态。 </p>
+          <p></p>
+          <p>管理员应当在重新启用端口之前确定导致安全违规的原因。如果有未经授权设备连接到安全端口，则应当在安全威胁消除后再重新启用端口。要重新启用端口，请使用<b> shutdown </b>接口配置模式命令（图 3）。然后，使用<b> no shutdown </b>接口配置命令使端口正常工作。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示当端口进入错误禁用状态时发送到交换机控制台的错误消息。该消息包含大量有关违规的详细信息并包括导致冲突的 MAC 地址。图 2 显示 show interface fastEthernet 0/18 命令的输出。此输出列出有关端口的信息，包括错误禁用状态。图 2 还显示 show port-security interface fastEthernet 0/18 命令的输出。此输出显示有关指定端口安全性的附加信息，包括违规信息。图 3 显示重新启用由于安全违规而关闭端口的流程。该图以全局配置模式开始，并使用 interface fastEthernet 0 进入端口。使用 shutdown 命令关闭该端口。使用 no shut 命令关闭该端口。此时，该端口将再次工作。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

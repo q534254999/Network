@@ -1,0 +1,58 @@
+<textcomponents><!--slide 1--><component id="ID_s1_title">
+<text><![CDATA[<b>思科无边界网络</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[大型园区]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[数据中心]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[服务模块]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[互联网边缘]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+<text><![CDATA[WAN]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[PSTN]]></text>
+</component>
+
+<component id="ID_s1_txt07">
+<text><![CDATA[互联网]]></text>
+</component>
+
+<component id="ID_s1_txt08">
+<text><![CDATA[中型园区]]></text>
+</component>
+
+<component id="ID_s1_txt09">
+<text><![CDATA[数据中心]]></text>
+</component>
+
+<component id="ID_s1_txt10">
+<text><![CDATA[服务模块]]></text>
+</component>
+
+<component id="ID_s1_txt11">
+<text><![CDATA[小型园区]]></text>
+</component>
+
+<component id="ID_s1_txt12">
+<text><![CDATA[数据中心]]></text>
+</component>
+
+<component id="ID_s1_txt13">
+<text><![CDATA[服务模块]]></text>
+</component>
+
+
+</textcomponents>

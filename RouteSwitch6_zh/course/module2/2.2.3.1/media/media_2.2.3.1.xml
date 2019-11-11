@@ -1,0 +1,103 @@
+<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>IPv6 命令语法</b>]]></text>
+    </component>
+    <component id="ID_s1_table">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+			
+
+	<tr>
+		
+		<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+	</tr>
+	<tr>
+
+		<td bgcolor='#666263'  valign="top" width="110" class="mtitle"><font color='#ffffff' ><b>参数</b></font></td>
+		<td bgcolor='#666263'  valign="top" class="mtitle"><font color='#ffffff' ><b>说明</b></font></td>
+	</tr>
+
+	<tr>
+
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' face="_typewriter" >ipv6-prefix</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' ><textformat blockindent="-16">要加入路由表的远程网络的目标网络地址。</textformat></font></td>
+	</tr>
+	<tr>
+		
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536' face="_typewriter">prefix-length</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536' >要加入路由表的远程网络的前缀长度。</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' face="_typewriter">ipv6-address</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' ><textformat blockindent="-16"><ul class="bulletIndent20"><li>通常称为下一跳路由器的 IP 地址。</li><li>一般在连接到广播介质（即以太网）时使用。</li><li>通常创建递归查询。</li></ul></textformat></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536' face="_typewriter">exit-intf</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536' ><textformat blockindent="-16"><ul class="bulletIndent20"><li>使用传出接口，将数据包转发到目标网络。</li><li>也称为直连静态路由。</li>
+<li>一般在点对点配置中连接时使用。</li></ul></textformat></font></td></tr></table>]]>
+        </text>
+    </component>
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>启用 IPv6 单播路由</b>]]></text>
+    </component>
+    <component id="ID_s3_title">
+        <text>
+            <![CDATA[<b>在 R2 上启用 IPv6 单播路由</b>]]></text>
+    </component>
+    <component id="ID_sc_reset">
+        <text>
+            <![CDATA[重置]]>
+        </text>
+    </component>
+    <component id="ID_sc_showme">
+        <text>
+            <![CDATA[看答案]]>
+        </text>
+    </component>
+    <component id="ID_sc_showall">
+        <text>
+            <![CDATA[全部显示]]>
+        </text>
+    </component>
+    <component id="ID_sc1_reset">
+        <text>
+            <![CDATA[重置]]>
+        </text>
+    </component>
+    <component id="ID_sc1_showme">
+        <text>
+            <![CDATA[看答案]]>
+        </text>
+    </component>
+    <component id="ID_sc1_showall">
+        <text>
+            <![CDATA[全部显示]]>
+        </text>
+    </component>
+    <component id="ID_s3_SC1" fontSize="12" fontFace="_typewriter" fontColor="#ffffff">
+        <feedback id="fb"><![CDATA[<b>***</b><font face="_sans" color="#FFFFFF">您必须输入准确而完整的命令。</font><b>***</b> ]]></feedback>
+        <existingcommands><![CDATA[<font face="_sans"><b>启用 IPv6 单播路由。</b></font>]]></existingcommands>
+       
+        <command prompt="R2(config)#">
+            <correctresponse><![CDATA[ipv6 unicast-routing]]></correctresponse>
+            <instruction><![CDATA[<font face="_sans" class="syntaxBottomLine"><b>您已在 R2 上成功启用 IPv6 单播路由。</b></font>]]></instruction>
+        </command>
+        <command prompt="" />
+    </component>
+    <component id="ID_s4_title">
+        <text>
+            <![CDATA[<b>在 R3 上启用 IPv6 单播路由</b>]]></text>
+    </component>
+    <component id="ID_s4_SC1" fontSize="12" fontFace="_typewriter" fontColor="#ffffff">
+        <feedback id="fb2"><![CDATA[<b>***</b><font face="_sans" color="#FFFFFF">您必须输入准确而完整的命令。</font><b>***</b> ]]></feedback>
+        <existingcommands><![CDATA[<font face="_sans"><b>启用 IPv6 单播路由。</b></font>]]></existingcommands>
+        <command prompt="R3(config)#">
+            <correctresponse><![CDATA[ipv6 unicast-routing]]></correctresponse>
+            <instruction><![CDATA[<font face="_sans" class="syntaxBottomLine"><b>您已在 R3 上成功启用 IPv6 单播路由。</b>]]></instruction>
+        </command>
+        <command prompt="" />
+    </component>
+</textcomponents>

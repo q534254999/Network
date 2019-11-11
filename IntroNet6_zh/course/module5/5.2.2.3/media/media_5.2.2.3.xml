@@ -1,0 +1,14 @@
+<textcomponents><component id="ID_title"><text><![CDATA[<b>基于端口的内存缓冲和共享内存缓冲</b>]]></text></component><component id="ID_table"><text><![CDATA[<table header="none" bordercolor="#FFFFFF" borderwidth="3" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4" class="mtable">
+	<tr class="mtable_title">
+		<td colspan="2" bgcolor="#4E4C4D" class="mtable_top"><font size="1" color="#4E4C4D"><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#4E4C4D" valign="top" class="wider" width="135"><font color="#FFFFFF">基于端口的内存</font></td>
+		<td bgcolor="#E9E7E8" valign="top"><font color="#393536">在基于端口的内存缓冲中，帧存储在链接到特定传入端口和传出端口的队列中。</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#4E4C4D" valign="top"><font color="#FFFFFF">共享内存</font></td>
+		<td bgcolor="#F2F2F2" valign="top"><font color="#393536">共享内存缓冲将所有帧都放入交换机上所有端口共享的公共内存缓冲区中。</font></td>
+	</tr>
+</table>
+]]></text></component></textcomponents>

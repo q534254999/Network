@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.1.4 更改 VLAN 端口成员</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>更改 VLAN 端口成员</h1>
+        <div>
+          <p>更改 VLAN 端口成员有许多方法。图 1 显示了使用<b> no switchport access vlan </b>接口配置模式命令将交换机端口更改为 VLAN 1 成员的语法。 </p>
+          <p></p>
+          <p>接口 F0/18 之前已分配给 VLAN 20。对接口 F0/18 输入<b> no switchport access vlan </b>命令。观察随即显示的 <b>show vlan brief</b> 命令输出，如图 2 所示。<b>show vlan brief</b> 命令显示所有交换机端口的 VLAN 分配和成员类型。<b>show vlan brief </b>命令每行显示一个 VLAN。每个 VLAN 的输出包括 VLAN 名称、状态和交换机端口。</p>
+          <p></p>
+          <p>即使没有分配端口，VLAN 20 仍然处于活动状态。在图 3 中，<b>show interfaces f0/18 switchport </b>输出可以验证接口 F0/18 的 VLAN 是否已重置为 VLAN 1。</p>
+          <p></p>
+          <p>端口的 VLAN 成员可以轻松更改。不需要先从 VLAN 移除端口来更改 VLAN 成员。当接入端口将其 VLAN 成员重新分配给另一个现有的 VLAN 时，新的 VLAN 成员会取代上一个 VLAN 成员。在图 4 中，端口 F0/11 已分配给 VLAN 20。</p>
+          <p></p>
+          <p>使用图 5 中的语法检查器更改 VLAN 端口成员。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示带用于从 VLAN 删除交换机端口的思科 IOS 命令的表。图 2 显示从 VLAN 删除端口 F0/18 的语法，以及用于验证端口 F0/18 是否回到 VLAN 1 的“show vlan brief”命令的输出。图 3 显示“show interfaces Fa0/19”命令的输出。图 4 显示将 F0/11 配置为接入端口和 VLAN 20 成员的语法。此外，还显示用于验证是否为该端口分配了正确的 VLAN 的“show vlan brief”命令的输出。图 5 是允许学生练习使用交换机端口并为其分配和取消分配 VLAN 的互动练习。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

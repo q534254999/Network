@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.1.6 IMAP 工作原理</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IMAP 工作原理</h1>
+        <div>
+          <p>IMAP 是另外一种用于检索电子邮件消息的协议。与 POP 不同的是，当用户连接使用 IMAP 的服务器时，邮件的副本会下载到客户端应用程序。同时原始邮件会一直保留在服务器上，直到用户将它们手动删除。用户在自己的电子邮件客户端软件中查看邮件副本。 </p>
+          <p>用户可以在服务器上创建文件层次结构来组织和保存邮件。该文件结构会照搬到电子邮件客户端。当用户决定删除邮件时，服务器会同步该操作，从服务器上删除对应的邮件。 </p>
+          <p>单击<a href="http://www.cisco.com/web/about/ac123/ac147/ac174/ac196/about_cisco_ipj_archive_article09186a00800c84ea.html" target="_blank">此处</a>了解更多有关电子邮件协议的信息。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows client sending email using SMTP to a server, which uses SMTP to send to another server. The second server uses IMAP to deliver the email to the recipient.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

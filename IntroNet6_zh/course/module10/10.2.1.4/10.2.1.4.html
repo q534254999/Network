@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.1.4 SMTP 工作原理</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>SMTP 工作原理</h1>
+        <div>
+          <p>SMTP 邮件格式要求邮件具有报头和正文。邮件正文没有长度限制，但邮件报头必须具有格式正确的收件人电子邮件地址和发件人地址。</p>
+          <p>当客户端发送电子邮件时，客户端 SMTP 进程会连接公认端口 25 上的服务器 SMTP 进程。连接建立后，客户端将尝试通过此连接发送电子邮件到服务器。如图所示，服务器收到邮件后，如果收件人在本地，它会将邮件保存在本地帐户中，或者将邮件转发给另一台邮件服务器以便传输。 </p>
+          <p>发出电子邮件时，目的电子邮件服务器可能并不在线，或者正忙。因此，SMTP 将邮件转到后台处理，稍后再发送。服务器会定期检查邮件队列，然后尝试再次发送。经过预定义的过期时间后，如果仍然无法发送邮件，则会将其作为无法投递的邮件退回给发件人。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows a client sending mail.  The message reaches the email server and the server decides if the message is for one of its clients.  If it is not, then it forwards the message to another email server for delivery.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

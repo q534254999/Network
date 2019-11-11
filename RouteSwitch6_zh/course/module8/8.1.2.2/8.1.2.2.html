@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.2.2 验证 DHCPv4</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证 DHCPv4</h1>
+        <div>
+          <p>图 1 显示的拓扑结构用于示例输出。在本示例中，配置 R1 以提供 DHCPv4 服务。PC1 未通电，因此没有 IP 地址。 </p>
+          <p></p>
+          <p>如图 2 所示，<b>show running-config | section dhcp</b> 命令输出显示了配置在 R1 上的 DHCPv4 命令。<b>| section</b> 参数只显示了与 DHCPv4 配置相关联的命令。</p>
+          <p></p>
+          <p>如图 3 所示，使用 <b>show ip dhcp binding</b> 命令可验证 DHCPv4 的运行。此命令显示 DHCPv4 服务所提供的全部 IPv4 地址与 MAC 地址绑定的列表。使用图 3 中的第二个命令 <b>show ip dhcp server statistics</b> 验证路由器正在接收或发送消息。此命令显示关于已发送和接收的 DHCPv4 消息数量的计数信息。</p>
+          <p></p>
+          <p>如这些命令的输出显示，目前没有绑定，而且统计数据表明没有发出或收到的消息。此时还没有设备从路由器 R1 上请求 DHCPv4 服务。</p>
+          <p></p>
+          <p>在图 4 中，在 PC1 和 PC2 开机并完成启动过程后发出命令。</p>
+          <p></p>
+          <p>请注意，绑定信息现在显示 192.168.10.10 和 192.168.11.10 的 IPv4 地址已绑定到 MAC 地址。统计信息也显示了 DHCPDISCOVER、DHCPREQUEST、DHCPOFFER 和 DHCPACK 活动。</p>
+          <p></p>
+          <p>如图 5 所示，在 PC1 上发出 <b>ipconfig /all</b> 命令时显示 TCP/IP 参数。由于 PC1 连接到网段 192.168.10.0/24，因此，它会自动从该池接收 DNS 后缀、IPv4 地址、子网掩码、默认网关和 DNS 服务器地址。不需要 DHCP 特定的路由器接口配置。如果 PC 连接到包含可用 DHCPv4 池的网段，该 PC 就能从相应的池中自动获取 IPv4 地址。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了与上一页的图 1 相同的拓扑。图 2 显示了命令 show running-config | section dhcp 的输出。此输出为路由器上的 DHCP 配置。图 3 显示命令 show ip dhcp binding 的输出。该输出列出了所有 IP 和 MAC 地址绑定，图中的示例为空列表。该图还显示了命令 show ip dhcp server statistics 的输出。此命令显示关于已发送和接收的 DHCPv4 消息数量的计数信息。该示例显示配置了一个 DHCP 池，但未发送或接收消息。图 4 显示了在两台客户端计算机开机后以上页面中命令的输出。两台计算机现在列在绑定表中，还包括分配的 IP 地址以及每台计算机的 MAC 地址。统计信息输出列出了路由器接收的八条 DHCP 发现消息以及三条 DHCP 请求消息。路由器发送了三条 DHCP 提供消息和三条 DHCP 确认消息。图 5 显示了在计算机运行的 ip config 命令的输出。该图突出显示了域名、IP 地址、DNS 服务器以及默认网关值。所有这些均由 DHCP 服务器提供。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

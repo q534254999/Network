@@ -1,0 +1,151 @@
+<textcomponents>
+    <!-- instructions -->
+    <component id="ID_inst">
+        <text>
+            <![CDATA[<b>练习 – 识别路由器路由表条目的要素</b>]]></text>
+    </component>
+    <component id='ID_instr_title'>
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id='ID_instr_body'>
+        <text>
+            <![CDATA[本练习显示了部分<b>路由器</b>路由表条目。该条目的各个部分上面使用一个带圈字母进行标识。<br><br>请选择每个输出的正确路由表条目部分。]]></text>
+    </component>
+    <!-- buttons -->
+    <component id="ID_s1_CHECK">
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id="ID_s1_RESET">
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+    <!--Number of rows in the table-->
+    <component id="txt_numrows">
+        <text>
+            <![CDATA[6]]>
+        </text>
+    </component>
+    <!--Number of columns for the answers in the table. Do not count the question column-->
+    <component id="txt_numcols">
+        <text>
+            <![CDATA[6]]>
+        </text>
+    </component>
+    <!--column headers-->
+    <component id="MCTable_title">
+        <text>
+            <![CDATA[ ]]>
+        </text>
+    </component>
+    <component id="txt_col1">
+        <text>
+            <![CDATA[<b>A</b>]]></text>
+    </component>
+    <component id="txt_col2">
+        <text>
+            <![CDATA[<b>B</b>]]></text>
+    </component>
+    <component id="txt_col3">
+        <text>
+            <![CDATA[<b>C</b>]]></text>
+    </component>
+    <component id="txt_col4">
+        <text>
+            <![CDATA[<b>D</b>]]></text>
+    </component>
+    <component id="txt_col5">
+        <text>
+            <![CDATA[<b>E</b>]]></text>
+    </component>
+    <component id="txt_col6">
+        <text>
+            <![CDATA[<b>F</b>]]></text>
+    </component>
+    <!--Question text - blockindent code moves the text away from the left edge a bit-->
+    <!--Question text - If questions are numbered, use blockindent for hanging indents-->
+    <component id="txt_q1">
+        <text>
+            <![CDATA[1.发现网络之后所经过的时间。</textformat>]]>
+        </text>
+    </component>
+    <component id="txt_q2">
+        <text>
+            <![CDATA[2. <textformat blockindent='13'>到达远程网络的管理距离（源）和度量。</textformat>]]>
+        </text>
+    </component>
+    <component id="txt_q3">
+        <text>
+            <![CDATA[3. <textformat blockindent='13'>路由器如何获知网络。</textformat>]]>
+        </text>
+    </component>
+    <component id="txt_q4">
+        <text>
+            <![CDATA[4. <textformat blockindent='13'>显示目的网络。</textformat>]]>
+        </text>
+    </component>
+    <component id="txt_q5">
+        <text>
+            <![CDATA[5. <textformat blockindent='13'>到达远程网络的下一跳 IP 地址。</textformat>]]>
+        </text>
+    </component>
+    <component id="txt_q6">
+        <text>
+            <![CDATA[6. <textformat blockindent='13'>路由器上到达目的网络的传出接口。</textformat>]]>
+        </text>
+    </component>
+    <!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+    <!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+    <component id="txt_a1">
+        <text>
+            <![CDATA[5]]>
+        </text>
+    </component>
+    <component id="txt_a2">
+        <text>
+            <![CDATA[3]]>
+        </text>
+    </component>
+    <component id="txt_a3">
+        <text>
+            <![CDATA[1]]>
+        </text>
+    </component>
+    <component id="txt_a4">
+        <text>
+            <![CDATA[2]]>
+        </text>
+    </component>
+    <component id="txt_a5">
+        <text>
+            <![CDATA[4]]>
+        </text>
+    </component>
+    <component id="txt_a6">
+        <text>
+            <![CDATA[6]]>
+        </text>
+    </component>
+    <!-- Correct Feedback -->
+    <component id="ID_titleCorrect">
+        <text>
+            <![CDATA[正确]]>
+        </text>
+    </component>
+    <component id="ID_correctText">
+        <text>
+            <![CDATA[您已成功选择输出所描述的正确的<b>路由器</b>路由条目。]]></text>
+    </component>
+    <!-- Incorrect Feedback -->
+    <component id="ID_titleIncorrect">
+        <text>
+            <![CDATA[不正确]]>
+        </text>
+    </component>
+    <component id="ID_IncorrectText">
+        <text>
+            <![CDATA[您未成功选择输出所描述的正确的<b>路由器</b>路由条目。请单击“重置”重试。]]></text>
+    </component>
+</textcomponents>

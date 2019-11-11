@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.1.1 路由器文件系统</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>路由器文件系统</h1>
+        <div>
+          <p>思科 IOS 文件系统 (IFS) 允许管理员导航至不同的目录、列出目录中的文件和在闪存或磁盘中创建子目录。具体目录则取决于设备。</p>
+          <p></p>
+          <p>图 1 显示了 <b>show file systems</b> 命令的输出，此命令列出思科 1941 路由器上所有可用的文件系统。此命令可提供有价值的信息，例如可用内存和空闲内存的大小、文件系统的类型及其权限。权限包括只读 (ro)、只写 (wo) 和读写 (rw)，在命令输出的 Flags（标志）列中显示。</p>
+          <p></p>
+          <p>虽然列出了多个文件系统，但我们关心的是 tftp、闪存和 nvram 等文件系统。 </p>
+          <p></p>
+          <p>注意，闪存文件系统前面还标有一个星号。这表示闪存是当前默认文件系统。可启动的 IOS 位于闪存中；因此闪存列表附加的井号 (#) 表示它是可启动磁盘。</p>
+          <p></p>
+          <p>
+            <b>闪存文件系统</b>
+          </p>
+          <p></p>
+          <p>图 2 显示了 <b>dir</b>（目录）命令的输出。因为闪存是默认文件系统，<b>dir</b> 命令可列出闪存的内容。闪存中有多个文件，但值得特别注意的是最后一列。这是 RAM 中运行的当前思科 IOS 文件映像的名称。</p>
+          <p></p>
+          <p>
+            <b>NVRAM 文件系统</b>
+          </p>
+          <p></p>
+          <p>要查看 NVRAM 的内容，必须使用 <b>cd</b>（更改目录）命令更改当前的默认文件系统，如图 3 所示。<b>pwd</b>（当前工作目录）命令可用于确认我们是否正在查看 NVRAM 目录。最后，<b>dir</b> 命令可列出 NVRAM 的内容。在列出的多个配置文件中，最值得关注的是启动配置文件。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示路由器上 show file systems 命令的输出。图 1 显示了路由器上 dir 命令的输出。The output displays the contents of flash.图 3 显示了 cd nvram: 命令后紧跟 pwd 命令时的输出。pwd 命令将打印工作目录。然后，发出 dir 命令，列出 NVRAM 的内容。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

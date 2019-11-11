@@ -1,0 +1,74 @@
+<textcomponents>
+    <!-- Slide 1 -->
+   <!--  <component id="ID_inst">
+        <text>
+            <![CDATA[单击硬件、内核和外壳以了解详细信息。]]>
+        </text>
+    </component> -->
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>操作系统</b>]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[外壳]]>
+        </text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[内核]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[硬件]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[用户界面]]>
+        </text>
+    </component>
+
+    <component id="ID_titleTxt01">
+        <text><![CDATA[外壳]]></text>
+    </component>
+    <component id="ID_bodyTxt01">
+        <text>
+            <![CDATA[指用户界面，供用户请求计算机执行具体任务。通过 CLI 或 GUI 界面可发出这些请求。]]>
+        </text>
+    </component>
+   
+    <component id="ID_titleTxt02">
+        <text><![CDATA[内核]]></text>
+    </component>
+
+    <component id="ID_bodyTxt02">
+        <text>
+            <![CDATA[在计算机的硬件和软件之间进行通信，并对如何使用硬件资源满足软件要求进行管理。]]>
+        </text>
+    </component>
+
+    <component id="ID_titleTxt03">
+        <text><![CDATA[硬件]]></text>
+    </component>
+
+    <component id="ID_bodyTxt03">
+        <text>
+            <![CDATA[计算机的物理组成部分，包括下层的电子元件。]]>
+        </text>
+    </component>
+    <!-- End Slide 1 -->
+    <!-- Slide 2 -->
+    <component id="ID_slide2_title">
+        <text>
+            <![CDATA[<b>命令行界面</b>]]></text>
+    </component>
+    <!-- End Slide 2 -->
+    <!-- Slide 3 -->
+    <component id="ID_slide3_title">
+        <text>
+            <![CDATA[<b>图形用户界面</b>]]></text>
+    </component>
+    <!-- End Slide 3 -->
+</textcomponents>

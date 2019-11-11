@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.5 单播 MAC 地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>单播 MAC 地址</h1>
+        <div>
+          <p>在以太网中，第 2 层单播、组播和广播通信会使用不同的 MAC 地址。</p>
+          <p>单播 MAC 地址是帧从一台发送设备发送到一台目的设备时使用的唯一地址。</p>
+          <p>在动画中的示例中，IPv4 地址为 192.168.1.5 的主机（源）向 IPv4 单播地址为 192.168.1.200 的服务器请求网页。要传送和接收单播数据包，目的 IP 地址必须包含于 IP 包报头中。相应的目的 MAC 地址也必须出现于以太网帧报头中。只有 IP 地址和 MAC 地址相结合才能将数据传送到特定的目的主机。</p>
+          <p>源主机用来确定目的 MAC 地址的流程称为地址解析协议 (ARP)。ARP 将在本章后续部分讨论。</p>
+          <p>虽然目的 MAC 地址可以是单播、广播或组播地址，但是源 MAC 地址必须始终为单播地址。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">This animation shows several computers connected to a switch.  Host 1 wants to send a packet to a server (a unicast).  The diagram shows the MAC address and IP address of both host 1 and the server.  The graphic also shows the frame with source and destination MAC address and the encapsulated packet with source and destination IP address.  When the animation plays, the frame travels from host 1 to the server since the switch forwards the frame based on MAC address and knows where the server is located.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

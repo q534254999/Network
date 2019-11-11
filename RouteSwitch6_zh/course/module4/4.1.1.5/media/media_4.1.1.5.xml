@@ -1,0 +1,66 @@
+<textcomponents>
+<component id="ID_s1_txt01">
+<text><![CDATA[大楼 B - 市场营销和销售部门]]></text>
+</component>
+<component id="ID_s1_txt02">
+<text><![CDATA[大楼 C - 工程部门]]></text>
+</component>
+<component id="ID_s1_txt03">
+<text><![CDATA[接入层]]></text>
+</component>
+<component id="ID_s1_txt04">
+<text><![CDATA[分布层]]></text>
+</component>
+<component id="ID_s1_txt05">
+<text><![CDATA[核心层]]></text>
+</component>
+<component id="ID_s1_txt06">
+<text><![CDATA[分布层]]></text>
+</component>
+<component id="ID_s1_txt07">
+<text><![CDATA[接入层]]></text>
+</component>
+<component id="ID_s1_txt08">
+<text><![CDATA[大楼 A - 管理部门]]></text>
+</component>
+<component id="ID_s1_txt09">
+<text><![CDATA[大楼 D - 研发部门]]></text>
+</component>
+<component id="ID_s1_txt10">
+<text><![CDATA[大楼 E - 信息技术部门]]></text>
+</component>
+<component id="ID_s1_txt11">
+<text><![CDATA[大楼 F - 数据中心]]></text>
+</component>
+
+
+
+
+<component id="ID_s2_txt01">
+<text><![CDATA[接入层]]></text>
+</component>
+<component id="ID_s2_txt02">
+<text><![CDATA[第 6 层 - 研发部门]]></text>
+</component>
+<component id="ID_s2_txt03">
+<text><![CDATA[第 5 层 - 工程部门]]></text>
+</component>
+<component id="ID_s2_txt04">
+<text><![CDATA[第 4 层 - 服务器场]]></text>
+</component>
+<component id="ID_s2_txt05">
+<text><![CDATA[第 3 层 - 信息技术部门]]></text>
+</component>
+<component id="ID_s2_txt06">
+<text><![CDATA[第 2 层 - 管理部门]]></text>
+</component>
+<component id="ID_s2_txt07">
+<text><![CDATA[<b>折叠分布/核心</b>]]></text>
+</component>
+<component id="ID_s2_txt08">
+<text><![CDATA[WAN]]></text>
+</component>
+<component id="ID_s2_txt09">
+<text><![CDATA[PSTN]]></text>
+</component>
+</textcomponents>

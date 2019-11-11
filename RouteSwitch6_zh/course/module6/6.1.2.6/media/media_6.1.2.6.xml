@@ -1,0 +1,171 @@
+<textcomponents>
+<component id="ID_s1_inst">
+<text><![CDATA[<b>活动 - 第 1 部分：操作中的 VLAN 中继</b><br/><br/>将以太网帧（黄色信封）拖动到场景的目标 PC。 并非所有信封都会用于每个场景。<br/><b>场景 1：</b> PC 1 发送广播。 哪些 PC 将接收广播帧的一份副本？]]></text>
+</component>
+
+<component id="ID_s2_inst">
+<text><![CDATA[<b>活动 - 第 2 部分：操作中的 VLAN 中继</b><br/><br/>将以太网帧（黄色信封）拖动到场景的目标 PC。 并非所有信封都会用于每个场景。<br/><b>场景 2：</b> PC 2 发送广播。 哪些 PC 将接收广播帧的一份副本？]]></text>
+</component>
+
+<component id="ID_s3_inst">
+<text><![CDATA[<b>活动 - 第 3 部分：操作中的 VLAN 中继</b><br/><br/>将以太网帧（黄色信封）拖动到场景的目标 PC。 并非所有信封都会用于每个场景。<br/><b>场景 3：</b> PC 3 发送广播。 哪些 PC 将接收广播帧的一份副本？]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[VLAN 10]]></text>
+</component>
+<component id='ID_s1_txt02'>
+	<text><![CDATA[VLAN 20]]></text>
+</component>
+<component id='ID_s1_txt03'>
+	<text><![CDATA[VLAN 30]]></text>
+</component>
+<component id='ID_s1_txt04'>
+	<text><![CDATA[VLAN 10]]></text>
+</component>
+<component id='ID_s1_txt05'>
+	<text><![CDATA[VLAN 20]]></text>
+</component>
+<component id='ID_s1_txt06'>
+	<text><![CDATA[VLAN 30]]></text>
+</component>
+
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[VLAN 10]]></text>
+</component>
+<component id='ID_s2_txt02'>
+	<text><![CDATA[VLAN 30]]></text>
+</component>
+<component id='ID_s2_txt03'>
+	<text><![CDATA[VLAN 30]]></text>
+</component>
+<component id='ID_s2_txt04'>
+	<text><![CDATA[VLAN 30]]></text>
+</component>
+<component id='ID_s2_txt05'>
+	<text><![CDATA[VLAN 20]]></text>
+</component>
+<component id='ID_s2_txt06'>
+	<text><![CDATA[VLAN 30]]></text>
+</component>
+
+
+<component id='ID_s3_txt01'>
+	<text><![CDATA[VLAN 30]]></text>
+</component>
+<component id='ID_s3_txt02'>
+	<text><![CDATA[VLAN 20]]></text>
+</component>
+<component id='ID_s3_txt03'>
+	<text><![CDATA[VLAN 10]]></text>
+</component>
+<component id='ID_s3_txt04'>
+	<text><![CDATA[VLAN 30]]></text>
+</component>
+<component id='ID_s3_txt05'>
+	<text><![CDATA[VLAN 10]]></text>
+</component>
+<component id='ID_s3_txt06'>
+	<text><![CDATA[VLAN 30]]></text>
+</component>
+
+
+
+
+<component id='ID_s1_drag01'>
+	<text><![CDATA[以太网<br>帧]]></text>
+</component>
+
+<component id='ID_s2_drag01'>
+	<text><![CDATA[以太网<br>帧]]></text>
+</component>
+
+<component id='ID_s3_drag01'>
+	<text><![CDATA[以太网<br>帧]]></text>
+</component>
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[您已经成功标识将接收广播帧的目标 PC。 选择“按钮 2”以继续。]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[您尚未成功标识将接收广播帧的目标 PC。 请单击“重置”重试。]]></text>
+</component>
+
+
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[您已经成功标识将接收广播帧的目标 PC。 选择“按钮 3”以继续。]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[您尚未成功标识将接收广播帧的目标 PC。 请单击“重置”重试。]]></text>
+</component>
+
+
+<component id='ID_s3_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_s3_CORRECT_BODY'>
+	<text><![CDATA[您已经成功标识将接收广播帧的目标 PC。]]></text>
+</component>
+
+
+<component id='ID_s3_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_s3_INCORRECT_BODY'>
+	<text><![CDATA[您尚未成功标识将接收广播帧的目标 PC。 请单击“重置”重试。]]></text>
+</component>
+
+
+
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[<b>重置</b>]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[<b>重置</b>]]></text>
+</component>
+
+<component id='ID_s3_CHECK'>
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id='ID_s3_RESET'>
+	<text><![CDATA[<b>重置</b>]]></text>
+</component>
+
+</textcomponents>

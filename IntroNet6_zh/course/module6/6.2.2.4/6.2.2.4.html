@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.2.4 直连路由表条目</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>直连路由表条目</h1>
+        <div>
+          <p>为路由器接口配置 IPv4 地址、子网掩码并激活时，将会自动创建以下两个路由表条目：</p>
+          <p>
+            <ul>
+              <li>
+                <b>C - </b>用于确定直连网络。为接口配置 IP 地址并激活时，会自动创建直连网络。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>L - </b>表示这是本地接口。这是路由器接口的 IPv4 地址。</li>
+            </ul>
+          </p>
+          <p>图中所示为 R1 上的直连网络 192.168.10.0 的路由表条目。配置 GigabitEthernet 0/0 接口并激活时，这些条目会自动添加到路由表。单击每个加号可查看直连路由表条目的详细信息。 </p>
+          <p>
+            <b>注意</b>：IOS 15 之前的版本中没有本地接口条目。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a network and a small portion of the routing table from a router.  There are 3 columns highlighted.  One that identifies how the route was learned (shaded in green), one that identifies the destination network and how it is connected (shaded in pink) and one that identifies the interface which a packet will be forward out of to get to the destination network (shaded in orange).</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

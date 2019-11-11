@@ -1,0 +1,9 @@
+<textcomponents>
+	
+	<component id="ID_txt01">
+	  <text><![CDATA[第 1 步：配置 IP 域名。<br/>第 2 步：生成单向密钥。<br/>第 3 步：检验或创建本地数据库条目。<br/>第 4 步：启用 VTY 传入 SSH 会话。]]></text> 
+	</component>	  
+	<component id="ID_txt02">
+		<text><![CDATA[DCE]]></text>
+	</component>	
+</textcomponents>

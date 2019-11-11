@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.3.4.2 arp 命令</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.3.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>arp 命令</h1>
+        <div>
+          <p>如图所示，<b>arp</b> 命令从 Windows 命令提示符下执行。<b>arp –a</b> 命令列出了当前主机 ARP 缓存中的所有设备，所列出的信息包括每台设备的 IPv4 地址、物理地址和编址类型（静态/动态）。 </p>
+          <p></p>
+          <p>当网络管理员要使用更新后的信息重新填充路由器缓存时，可通过使用 <b>arp -d *</b> 命令来清空缓存。 </p>
+          <p></p>
+          <p>
+            <b>注意</b>：ARP 缓存仅包含最近访问过的设备的信息。要确保填充 ARP 缓存，请 ping 一台设备以使该设备对应的条目出现在 ARP 表中。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows a switch connected to five PCs and a router.  The output of the Windows command, “arp -a” is shown displaying the IP address and MAC address pairs that the PC knows about. </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

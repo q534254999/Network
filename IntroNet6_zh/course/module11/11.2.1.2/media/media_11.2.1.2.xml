@@ -1,0 +1,41 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>物理安全规划</b>]]></text>
+	</component>
+	<component id="ID_titleTxt01">
+		<text><![CDATA[<b>规划物理安全功能以减少对设备的破坏：</b>]]></text>
+	</component>
+	<component id="ID_bodyTxt01">
+		<text><![CDATA[<textformat blockindent='-14'><ul><li>将设备锁定，并防止未经授权的人员经门窗、天花板、架空地板、管道和通风孔进行访问。</li><li>使用电子日志监控配线间。</li><li>使用安全摄像头。</li></ul></textformat>]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[计算机室防护计划]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[AC]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[UPS BAY]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[SVRS]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[LAN]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[WAN]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[服务中心]]></text>
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[读卡器]]></text>
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[门禁]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[门禁]]></text>
+	</component>
+</textcomponents>

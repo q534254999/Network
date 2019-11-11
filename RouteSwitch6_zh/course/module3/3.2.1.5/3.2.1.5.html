@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.1.5 禁用自动汇总</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>禁用自动汇总</h1>
+        <div>
+          <p>如图 1 所示，默认情况下，RIPv2 像 RIPv1 一样在主网边界上自动汇总网络。  </p>
+          <p></p>
+          <p>如图 2 所示，使用 <b>no auto-summary </b>路由器配置模式命令，修改默认 RIPv2 自动汇总行为。当使用 RIPv1 时，此命令无效。当已禁用自动汇总时，RIPv2 不会再将网络汇总到其在边界路由器上的有类地址。现在，RIPv2 在其路由更新中包含所有子网以及相应掩码。<b>show ip protocols </b>现在声明“自动网络汇总无效”。 </p>
+          <p></p>
+          <p>
+            <b>注</b>：禁用自动汇总之前必须启用 RIPv2。 </p>
+          <p></p>
+          <p>使用图 3 中的语法检查器禁用 R2 和 R3 上的自动汇总。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示 show ip protocols 命令的输出，并突出显示说明自动网络汇总已生效的行。图 2 显示如何对运行 RIP 的路由器禁用路由汇总。命令行以全局配置模式开始，第一个命令 router rip 启用 RIP。下一命令为 no auto hyphen summary。此命令使用命令 show ip protocols | section Automatic 验证，且输出声明自动网络汇总无效。图 3 是允许学生在路由器上配置 RIP 路由并禁用自动汇总的互动媒体元素。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.2.1.1 路由器交换功能</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>路由器交换功能</h1>
+        <div>
+          <p>路由器的主要功能是将数据包转发到目的地。这可通过使用交换功能来实现，路由器使用此过程在一个接口上接受数据包并将其从另一接口转发出去。交换功能的重要责任是将数据包封装成适用于传出数据链路的正确数据帧类型。 </p>
+          <p></p>
+          <p>
+            <b>注</b>：在本文中，术语“交换”的本意就是指将数据包从源传输到目标，不应与第 2 层交换机的功能相混淆。</p>
+          <p></p>
+          <p>当路由器通过路径决定功能确定送出接口之后，必须将数据包封装成送出接口的数据链路帧。</p>
+          <p></p>
+          <p>对于从一个网络传入，以另一个网络为目的地的数据包，路由器会进行哪些处理？路由器主要执行以下三个步骤：</p>
+          <p></p>
+          <p>
+            <b>步骤 1.</b>解封第 2 层帧头和帧尾以显示第 3 层数据包。</p>
+          <p>
+            <b>步骤 2.</b>检查 IP 数据包的目标 IP 地址以便从路由表中选择最佳路径。</p>
+          <p>
+            <b>步骤 3.</b>如果路由器找到通往目的地的路径，则它会将第 3 层数据包封装成新的第 2 层帧并将此帧从送出接口转发出去。</p>
+          <p></p>
+          <p>如图所示，设备具有第 3 层 IPv4 地址，而以太网接口具有第 2 层数据链路地址。例如，为 PC1 配置了 IPv4 地址 192.168.1.10 和一个示例 MAC 地址 0A-10。在数据包从源设备到最终目的设备的传输过程中，第 3 层 IP 地址始终不会发生变化。这是因为第 3 层 PDU 不会发生变化。但是，随着每个路由器不断将数据包解封、然后又重新封装成新的第 2 层帧，该数据包的第 2 层数据链路地址在每一跳都会发生变化。 </p>
+          <p></p>
+          <p>数据包经常需要封装到接收帧以外的第 2 层其他类型的帧中。例如，路由器可能会在快速以太网接口上收到以太网封装的帧，然后从串行端口转发该帧以进行处理。 </p>
+          <p></p>
+          <p>请注意，在图中，R2 和 R3 之间的端口没有关联的 MAC 地址。这是因为这是一个串行链路。仅多路访问网络中需要 MAC地址，例如以太网。串行链路是点对点连接并使用不需要使用 MAC 地址的其他第 2 层帧。在本示例中，当 R2 收到来自 Fa0/0 接口的发往 PC2 的以太网帧时，会为串行接口解封然后重新封装，例如点对点协议 (PPP) 封装的帧。当 R3 收到 PPP 帧时，在转发出 Fa0/0 接口之前，会使用目标 MAC 地址 0B-20 将其解封，然后重新封装成以太网帧。  </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示一台计算机通过三个路由器将数据包发送到另一台计算机。图中强调发送节点使用 OSI 模型的所有七层发送数据，所有三个路由器都仅通过该模型的第三层读取数据。接收计算机将处理所有七层。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

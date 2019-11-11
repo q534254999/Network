@@ -1,0 +1,1 @@
+图 1 显示如何查看 ACL 统计信息。该图显示特权 EXEC 模式命令 show access-lists 的输出。输出列出每个 ACL 的行和每行的匹配数。例如，序号为 1 的 ACL 第 10 行后面紧接着显示了以下字样：“4 matches”。这意味着有四个数据包符合第 10 行的条件。在图中，已发送一个将会匹配第 10 行的条件的 ping 操作，并且在查看统计信息时，可以发现匹配数已经增加。图 2 显示了命令 clear access-list counters 1 的使用。命令 show access-lists 的输出不再列出 ACL 的任何匹配项。

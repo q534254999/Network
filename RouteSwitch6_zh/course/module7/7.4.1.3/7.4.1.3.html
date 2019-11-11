@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.4.1.3 第 7 章：访问控制列表</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.4.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>第 7 章：访问控制列表</h1>
+        <div>
+          <p>默认情况下路由器不会过滤流量。进入路由器的流量仅根据路由表内的信息进行路由。</p>
+          <p></p>
+          <p>数据包过滤通过分析传入和传出的数据包并根据条件传递或丢弃数据包，从而控制网络访问，例如源 IP 地址、目标 IP 地址和数据包内传输的协议。数据包过滤路由器使用特定规则确定是允许还是拒绝流量。路由器还可以在第 4 层（传输层）过滤数据包。 </p>
+          <p></p>
+          <p>ACL 是一系列 permit 或 deny 语句组成的顺序列表。ACL 的最后一条语句通常是拦截所有流量的隐式 deny 语句。为了防止 ACL 末尾的隐式 deny any 语句拦截所有流量，可以添加 <b>permit any</b> 语句。</p>
+          <p></p>
+          <p>当网络流量经过配置了 ACL 的接口时，路由器会将数据包中的信息与每个条目按顺序进行比较，以确定数据包是否匹配其中一个语句。如果找到匹配项，就将数据包进行相应的处理。</p>
+          <p></p>
+          <p>ACL 要么配置用于入站流量，要么用于出站流量。 </p>
+          <p></p>
+          <p>标准 ACL 可以用于允许或拒绝仅来自源 IPv4 地址的流量。它不评估数据包的目标地址和所涉及的端口。放置标准 ACL 的基本规则是使其接近目标。</p>
+          <p></p>
+          <p>扩展 ACL 根据多种属性过滤数据包：协议类型、源或目标 IPv4 地址以及源或目标端口。放置扩展 ACL 的基本规则是将其置于尽量靠近源地址的位置。 </p>
+          <p></p>
+          <p><b>access-list </b>全局配置命令定义编号在 1 至 99 范围内的标准 ACL
+<b>ip access-list standard </b><i>name </i>用于创建标准命名 ACL。</p>
+          <p></p>
+          <p>配置 ACL 之后，可以在接口配置模式下使用 <b>ip access-group</b> 命令将其关联到接口：请记住以下规则：每种协议一个 ACL，每个方向一个 ACL，每个接口一个 ACL。 </p>
+          <p></p>
+          <p>要从接口上删除 ACL，首先在接口上输入 <b>no ip access-group</b> 命令，然后输入全局命令 <b>no access-list</b> 删除整个 ACL。</p>
+          <p></p>
+          <p><b>show running-config</b> 命令和 <b>show access-lists</b> 命令用于验证 ACL 配置。<b>show ip interface</b> 命令用于验证接口上应用的 ACL 及其应用方向。</p>
+          <p></p>
+          <p>线路配置模式中配置的 <b>access-class </b>命令可限制特定 VTY 与访问列表中地址之间的传入和传出连接。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中总结了使用 ACL 的三“每”原则，即每种协议、每个方向、每个接口均配置一个 ACL。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

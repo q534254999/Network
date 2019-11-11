@@ -1,0 +1,55 @@
+﻿<textcomponents>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[SMB 请求]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[SMB 响应]]></text>
+</component> 
+
+<component id="ID_s1_txt03">
+<text><![CDATA[客户端]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[服务器]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+<text><![CDATA[SMB 是一种客户端服务器请求响应协议。服务器可将其资源共享给网络中的客户端使用。]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[<b>共享的资源</b>]]></text>
+</component>
+
+<component id="ID_s1_txt07">
+<text><![CDATA[<textformat blockindent='-10'><ul><li>文件系统</li><li>打印机</li><li>发件箱</li><li>API</li></ul></textformat>]]></text>
+</component>
+
+<component id="ID_s1_txt08">
+<text><![CDATA[打印机]]></text>
+</component>
+ 
+<component id="ID_s2_txt1">
+<text><![CDATA[网络]]></text>
+</component>
+ 
+<component id="ID_s2_txt2">
+<text><![CDATA[使用 SMB 协议可以通过 Windows 资源管理器将一台 PC 中的文件复制到另一台 PC。]]></text>
+</component>
+
+<component id="ID_s2_txt3">
+<text><![CDATA[复制文件]]></text>
+</component>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>SMB 协议</b>]]></text>
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>SMB 文件共享</b>]]></text>
+</component>
+
+</textcomponents>

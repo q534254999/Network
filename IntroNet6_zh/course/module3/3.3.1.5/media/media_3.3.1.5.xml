@@ -1,0 +1,153 @@
+<textcomponents>
+	 <component id='ID_s1_instr_title'>
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id='ID_s1_instr_body'>
+        <text>
+            <![CDATA[将 PDU 拖放到堆叠中的正确位置来说明封装过程的顺序。]]>
+        </text>
+    </component>
+    <component id='ID_title'>
+        <text>
+            <![CDATA[<b>练习 - 说明封装过程</b>]]></text>
+    </component>
+   
+    <component id="ID_drag_header">
+        <text>
+            <![CDATA[<b>PDU</b>]]></text>
+    </component>
+    <component id="ID_drop_header">
+        <text>
+            <![CDATA[<b>封装</b>]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[电子邮件数据]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[数据]]>
+        </text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[数据]]>
+        </text>
+    </component>
+    <component id="ID_txt06">
+        <text>
+            <![CDATA[数据]]>
+        </text>
+    </component>
+    <component id="ID_txt08">
+        <text>
+            <![CDATA[传输报头]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[数据]]>
+        </text>
+    </component>
+    <component id="ID_txt11">
+        <text>
+            <![CDATA[网络报头]]>
+        </text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[传输报头]]>
+        </text>
+    </component>
+    <component id="ID_txt13">
+        <text>
+            <![CDATA[数据]]>
+        </text>
+    </component>
+    <component id="ID_txt10">
+        <text>
+            <![CDATA[帧头]]>
+        </text>
+    </component>
+    <component id="ID_txt07">
+        <text>
+            <![CDATA[网络报头]]>
+        </text>
+    </component>
+    <component id="ID_txt12">
+        <text>
+            <![CDATA[传输报头]]>
+        </text>
+    </component>
+    <component id="ID_txt09">
+        <text>
+            <![CDATA[数据]]>
+        </text>
+    </component>
+    <component id="ID_txt14">
+        <text>
+            <![CDATA[帧尾]]>
+        </text>
+    </component>
+    <component id="ID_txt15">
+        <text>
+            <![CDATA[<b>1100010101000101100101001010101001</b>]]></text>
+    </component>
+    <component id="ID_txt16">
+        <text>
+            <![CDATA[沿协议栈向下传送。]]>
+        </text>
+    </component>
+    <!--Drag and Drop-->
+    <component id="ID_pdu01_DS">
+        <text>
+            <![CDATA[<font color="#393536">数据</font>]]></text>
+    </component>
+    <component id="ID_pdu02_DS">
+        <text>
+            <![CDATA[<font color="#393536">数据段</font>]]></text>
+    </component>
+    <component id="ID_pdu03_DS">
+        <text>
+            <![CDATA[<font color="#393536">数据包</font>]]></text>
+    </component>
+    <component id="ID_pdu04_DS">
+        <text>
+            <![CDATA[<font color="#393536">帧</font>]]></text>
+    </component>
+    <component id="ID_pdu05_DS">
+        <text>
+            <![CDATA[<font color="#393536">位</font>]]></text>
+    </component>
+    <component id="ID_s1_CORRECT_TITLE">
+        <text>
+            <![CDATA[正确]]>
+        </text>
+    </component>
+    <component id="ID_s1_CORRECT_BODY">
+        <text>
+            <![CDATA[您已成功按照正确的顺序放置了 PDU 来说明封装过程。]]>
+        </text>
+    </component>
+    <component id="ID_s1_INCORRECT_TITLE">
+        <text>
+            <![CDATA[不正确]]>
+        </text>
+    </component>
+    <component id="ID_s1_INCORRECT_BODY">
+        <text>
+            <![CDATA[您尚未成功按照正确的顺序放置 PDU 来说明封装过程。请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id="ID_CHECK">
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id="ID_RESET">
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+</textcomponents>

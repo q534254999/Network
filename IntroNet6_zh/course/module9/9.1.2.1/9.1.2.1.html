@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.2.1 TCP 功能</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>TCP 功能</h1>
+        <div>
+          <p>要了解 TCP 和 UDP 的差异，就必须了解每种协议如何实现特定的可靠性功能，以及它们如何跟踪会话。除了支持数据分段和重组的基本功能之外，TCP 还提供如图所示的以下服务：</p>
+          <p>
+            <b>建立会话</b>
+          </p>
+          <p>TCP 是一种面向连接的协议。面向连接的协议在转发任何流量之前，在源设备和目的设备之间协商并建立永久连接（或会话）。通过建立会话，设备可以协商特定时间能够转发的流量，而且两个设备之间的通信数据可得到严格管理。 </p>
+          <p>
+            <b>可靠传输</b>
+          </p>
+          <p>在网络术语中，可靠性指确保从源设备发送的每个数据段都能够到达目的设备。由于多种原因，数据段在网络传输过程中可能会损坏或者完全丢失。 </p>
+          <p>
+            <b>同序传输</b>
+          </p>
+          <p>由于网络可能提供了多条路由，每条路由又有不同的传输速率，所以可能导致数据抵达的顺序错乱。通过对数据段编号和排序，TCP 可以确保按正确的顺序重组这些数据段。 </p>
+          <p>
+            <b>流量控制</b>
+          </p>
+          <p>网络主机的内存或处理能力等资源有限。当 TCP 发现这些资源超负荷运转时，它可以请求源应用程序降低数据流速。为此，TCP 会调整源设备传输的数据量。流量控制可避免当接收主机的资源不堪重负时，数据的重新传输。 </p>
+          <p>有关 TCP 的详细信息，请参阅 <a href="https://www.ietf.org/rfc/rfc793.txt" target="_blank">RFC</a>。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows a single computer that has multiple web pages open along with an instant messaging window and an e-mail application running.  Four core services provided by T.C.P. are establishing a session, providing reliable delivery of data, providing proper order of data sent and managing flow control.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

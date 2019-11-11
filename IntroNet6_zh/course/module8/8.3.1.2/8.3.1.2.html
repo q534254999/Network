@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.3.1.2 使用子网 ID 划分子网</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>使用子网 ID 划分子网</h1>
+        <div>
+          <p>IPv6 全局单播地址的 16 位子网 ID 部分可以由组织用来创建内部子网。 </p>
+          <p>子网 ID 提供足够多的子网和主机支持，比一个子网中需要的还多。例如，16 位部分可以：</p>
+          <p>
+            <ul>
+              <li>创建最多 65,536 /64 个子网。这还不包括从地址的接口 ID 借用位的情况。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>每个子网支持多达 18 百亿亿的主机 IPv6 地址（即 18,000,000,000,000,000,000）。 </li>
+            </ul>
+          </p>
+          <p>
+            <b>注意</b>：也可以将子网划分为 64 位接口 ID（或主机部分），但是很少这么要求。</p>
+          <p>IPv6 子网划分也比 IPv4 容易实施，因为不需要转换为二进制。要确定下一个可用子网，只需要将十六进制数相加。 </p>
+          <p>例如，假设一个组织分配了 2001:0DB8:ACAD::/48 全局路由前缀，并采用 16 位子网 ID。这将允许组织创建 /64 子网，如图所示。注意，所有子网的全局路由前缀是相同的。只为每个子网递增子网 ID 的十六位字节数（以十六进制形式）。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows that the 16 bits of the subnet ID, represented in hexadecimal, can make 65,536 subnets.  These subnets are 0 0 0 0 through F F F F.  </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

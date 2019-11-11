@@ -1,0 +1,116 @@
+<textcomponents><!--Slide 1--><component id="ID_s1_title">
+<text><![CDATA[<b>使用 IOS 的端口转发</b>]]></text>
+</component><!--screen 1 table --><component id="ID_s1_table01">
+<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'  cellspacing="2" class="mtable">
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#077A77' valign="top" width="100" class="mtitle"><font bgcolor='#097A76' color='#EFF8F7'><b>参数</b></font></td>
+<td bgcolor='#077A77' valign="top" class="mtitle"><font bgcolor='#097A76' color='#EFF8F7'><b>说明</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#ffffff' valign="top"><font face="_typewriter"><b>tcp </b></font> 或 <font face="_typewriter"><b>udp</b></font></td>
+<td bgcolor='#ffffff' valign="top">指示这是 TCP 或 UDP 端口号。</td>
+</tr>
+
+<tr>
+<td bgcolor='#EFF8F7' valign="top"><font face="_typewriter"><i>local-ip</i></font></td>
+<td bgcolor='#EFF8F7' valign="top">这是分配给内部网络上的主机的 IPv4 地址，通常来自 RFC 1918 私有地址空间。</td>
+</tr>
+
+<tr>
+<td bgcolor='#ffffff' valign="top"><font face="_typewriter"><i>local-port</i></font></td>
+<td bgcolor='#ffffff' valign="top">设置本地 TCP/UDP 端口，范围从 1 到 65,535。 这是服务器侦听的端口号。</td>
+</tr>
+
+<tr>
+<td bgcolor='#EFF8F7' valign="top"><font face="_typewriter"><i>global-ip</i></font></td>
+<td bgcolor='#EFF8F7' valign="top">这是内部主机的 IPv4 全局唯一 IP 地址。 这是外部客户端到达内部服务器所用的 IP 地址。</td>
+</tr>
+
+
+
+
+<tr>
+<td bgcolor='#ffffff' valign="top"><font face="_typewriter"><i>global-port</i></font></td>
+<td bgcolor='#ffffff' valign="top">设置全局 TCP/UDP 端口，范围从 1 到 65,535。 这是外部客户端到达内部服务器所用的端口号。</td>
+</tr>
+
+   
+
+<tr>
+<td bgcolor='#EFF8F7' valign="top"><font face="_typewriter"><b class="command">extendable</b></font></td>
+<td bgcolor='#EFF8F7' valign="top"><font face="_typewriter"><b class="command">extendable </b></font> 选项会自动应用。 <font face="_typewriter"><b class="command">extendable </b></font> 关键字允许用户配置多个模糊的静态转换，模糊转换是指使用相同本地地址或全局地址的转换。 它允许路由器在多个端口扩展转换。</td>
+</tr>
+</table>]]></text>
+</component><!--slide 2--><component id="ID_s2_title">
+<text><![CDATA[<b>使用 IOS 的端口转发示例</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[网络内部]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[网络外部]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[Web 服务器]]></text>
+</component>
+
+<component id="ID_s2_txt04">
+<text><![CDATA[互联网]]></text>
+</component>
+
+<component id="ID_s2_txt05">
+<text><![CDATA[客户端]]></text>
+</component>
+
+<component id='ID_s2_txt06'>
+	<text><![CDATA[http://www.example.com:<font color="#F26200">&nbsp;&nbsp;&nbsp;<b>8080</b></font>]]></text>
+</component>
+
+<component id="ID_s2_txt07">
+<text><![CDATA[在内部本地地址与本地端口之间和内部全局地址与全局端口之间建立静态转换。]]></text>
+</component>
+
+<component id='ID_s2_txt08'>
+	<text><![CDATA[将 Serial 0/0/0 接口识别为内部 NAT 接口。]]></text>
+</component>
+
+<component id='ID_s2_txt09'>
+	<text><![CDATA[将 Serial 0/1/0 接口识别为外部 NAT 接口。]]></text>
+</component><!--slide 3--><component id="ID_s3_title">
+<text><![CDATA[<b>检验端口转发</b>]]></text>
+</component>
+
+<component id="ID_s3_txt01">
+<text><![CDATA[网络内部]]></text>
+</component>
+
+<component id="ID_s3_txt02">
+<text><![CDATA[网络外部]]></text>
+</component>
+
+<component id="ID_s3_txt03">
+<text><![CDATA[Web 服务器]]></text>
+</component>
+
+<component id="ID_s3_txt04">
+<text><![CDATA[互联网]]></text>
+</component>
+
+<component id="ID_s3_txt05">
+<text><![CDATA[客户端]]></text>
+</component>
+
+<component id='ID_s3_txt06'>
+	<text><![CDATA[http://www.example.com:<font color="#F26200">&nbsp;&nbsp;&nbsp;<b>8080</b></font>]]></text>
+</component>
+
+
+</textcomponents>

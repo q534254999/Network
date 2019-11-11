@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.1.1 路由器 RIP 配置模式</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>路由器 RIP 配置模式</h1>
+        <div>
+          <p>尽管在现代网络中极少使用 RIP，但是作为了解基本网络路由的基础则十分有用。本部分简要概述如何配置基本 RIP 设置和如何验证 RIPv2。 </p>
+          <p></p>
+          <p>参阅图 1 中的参考拓扑和图 2 中的地址分配表。在该场景中，所有路由器均已配置基本管理功能，且参考拓扑结构中标识的所有接口已配置和启用。未配置静态路由且未启用路由协议；因此，目前不可访问远程网络。将 RIPv1 用作动态路由协议。如图 3 所示，请使用 <b>router rip</b> 命令启用 RIP。该命令并不直接启动 RIP 进程。而是在配置了 RIP 路由设置的情况下提供对路由器配置模式的访问。当启用 RIP 时，默认版本为 RIPv1。</p>
+          <p></p>
+          <p>请使用 <b>no router rip </b>全局配置命令，禁用并消除 RIP。该命令会停止 RIP 进程并清除所有现有的 RIP 配置。 </p>
+          <p></p>
+          <p>图 4 显示了可配置的各种 RIP 命令。本部分会介绍突出显示的关键字。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示通过 WAN 链路线性连接的三个路由器。R1 通过 WAN 串行链路连接到 R2，它在千兆以太网接口上有一个 LAN。R2 通过 WAN 串行链路连接到 R1 和 R3，也在千兆以太网接口上有一个 LAN。R3 仅通过 WAN 串行链路连接到 R2，在千兆以太网接口上有一个 LAN。图中有五个不同的网络地址。图 2 显示该网络的简化路由表。路由器 R1 和 R3 各有 2 个直连网络，路由器 R2 具有三个。图 3 显示用于在路由器上激活 RIP 的命令。该图以特权 EXEC 模式开始，第一个命令为 config t，使用它可进入全局配置模式。下一命令为 router rip，它可在路由器上激活 RIP 并将提示符放在 router-rip 中。图 4 显示在 router-rip 提示符中输入问号的输出。该命令可导致路由器列出可在 router-rip 提示符中输入的所有命令。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

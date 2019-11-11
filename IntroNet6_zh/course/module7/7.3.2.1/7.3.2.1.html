@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.2.1 Ping - 测试本地协议栈</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Ping - 测试本地协议栈</h1>
+        <div>
+          <p>Ping 是一种测试实用程序，它使用 ICMP 回应请求和回应应答消息来测试主机之间的连接。Ping 可以服务于 IPv4 和 IPv6 主机。</p>
+          <p>为了测试与网络上的另一台主机的连接，可使用 ping 命令将回应请求发送给该主机地址。若指定地址处的主机收到回应请求，便会使用回应应答进行响应。每收到一个回应应答，ping 都会在发出请求之后和收到应答之前提供反馈。这可以度量网络性能。 </p>
+          <p>Ping 对响应规定了超时值。如果在超时前没有收到应答，ping 会提供一条消息，表示未收到响应。这通常表示存在问题，但是，还可能表示安全功能阻止了网络启用 ping 消息。</p>
+          <p>所有请求发送完毕后，ping 实用程序会提供摘要，包括成功率和到达目的地的平均往返时间。</p>
+          <p>
+            <b>Ping 本地环回</b>
+          </p>
+          <p>我们也可以使用 ping 进行一些特殊测试和验证。例如，测试本地主机上的内部 IPv4 或 IPv6 配置。要执行此测试，对于 IPv4，我们 ping 本地环回地址 127.0.0.1，对于 IPv6，则是 ::1。IPv4 环回地址的测试如图中所示。</p>
+          <p>从 127.0.0.1 接收的 IPv4 响应或从 ::1 接收的 IPv6 响应，表示主机上的 IP 安装正确。此响应来自网络层。但是，此响应并不代表地址、掩码或网关配置正确。它也不能说明有关网络协议栈下层的任何状态。它只测试 IP 网络层的 IP 连接。如果收到错误消息，则表示该主机上的 TCP/IP 无法正常运行。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows the command line utility to test the local TCP/IP stack on a computer running IPv4.  The command is ping 127.0.0.1.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>中继故障排除</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+<text><![CDATA[<font face="_typewriter"><b>show interfaces trunk</b></font>]]></text>
+</component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[<font face="_typewriter"><b>show interfaces trunk</b></font>]]></text> 
+  </component>
+<component id="ID_s1_txt03">
+  <text><![CDATA[排除中继故障。]]></text> 
+  </component>
+<component id="ID_s1_txt04">
+<text><![CDATA[本地和对等端口上的原生 VLAN 是否匹配？]]></text>
+</component>
+<component id="ID_s1_txt05">
+  <text><![CDATA[是]]></text> 
+  </component>
+<component id="ID_s1_txt06">
+  <text><![CDATA[本地端口和对等端口上的中继模式是否兼容？]]></text> 
+  </component>
+<component id="ID_s1_txt07">
+<text><![CDATA[是]]></text>
+</component>
+<component id="ID_s1_txt08">
+  <text><![CDATA[中继工作正常。]]></text> 
+  </component>
+<component id="ID_s1_txt09">
+  <text><![CDATA[否]]></text> 
+  </component>
+<component id="ID_s1_txt10">
+<text><![CDATA[否]]></text>
+</component>
+<component id="ID_s1_txt11">
+  <text><![CDATA[更改原生 VLAN 以匹配。]]></text> 
+  </component>
+<component id="ID_s1_txt12">
+  <text><![CDATA[静态配置两个设备上的端口来建立中继。]]></text> 
+  </component>
+  
+  
+  
+  
+<component id="ID_s2_title">
+<text><![CDATA[<b>中继故障排除</b>]]></text>
+</component>
+<component id="ID_s2_txt01">
+<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+</component>
+
+
+</textcomponents>

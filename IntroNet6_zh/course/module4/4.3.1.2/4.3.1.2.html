@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.3.1.2 数据链路子层</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>数据链路子层</h1>
+        <div>
+          <p>数据链路层可以拆分成两个子层： </p>
+          <p>
+            <ul>
+              <li>
+                <b>逻辑链路控制 (LLC)</b> - 这一较高子层与网络层通信。它放入帧中的信息用于确定帧所使用的网络层协议。此信息允许多个第 3 层协议（如 IPv4 和 IPv6）使用相同的网络接口和介质。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>介质访问控制 (MAC)</b> - 这一较低子层定义了硬件执行的介质访问流程。它提供数据链路层编址和对各种网络技术的访问。</li>
+            </ul>
+          </p>
+          <p>该图说明了数据链路层如何分为 LLC 和 MAC 子层。当 MAC 子层允许多种网络访问技术时，LLC 与网络层进行通信。例如，MAC 子层与以太网 LAN 技术通信，以便通过铜缆或光缆发送和接收帧。MAC 子层还与无线技术（如 Wi-Fi 和蓝牙）通信，以便采用无线方式发送和接收帧。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows layers one, two and three of the OSI model.  Layer two is divided into its two sub-layers, the upper sub-layer is LLC and the lower is MAC.  The figure also shows that 802.3, 802.11 and 802.15 standards span layer 1 and the MAC sublayer of layer 2.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

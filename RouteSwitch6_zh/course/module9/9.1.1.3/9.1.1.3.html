@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.1.3 NAT 术语</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>NAT 术语</h1>
+        <div>
+          <p>在 NAT 术语中，内部网络是指需要经过转换的网络地址集。外部网络指所有其他网络。 </p>
+          <p></p>
+          <p>当使用 NAT 时，根据地址是在私有网络上还是在公有网络（互联网）上，以及流量是传入还是传出，不同的 IPv4 地址有不同的称谓。 </p>
+          <p></p>
+          <p>NAT 包括四类地址：</p>
+          <p>
+            <ul>
+              <li>内部本地地址</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>内部全局地址</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>外部本地地址</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>外部全局地址</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>在决定使用哪种地址时，重要的是要记住 NAT 术语始终是从具有转换后地址的设备的角度来应用的：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>内部地址</b> - 经过 NAT 转换的设备的地址。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>外部地址</b> - 目标设备的地址。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>关于地址，NAT 还会使用本地或全局的概念：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>本地地址</b> - 本地地址是在网络内部出现的任何地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>全局地址</b> - 全局地址是在网络外部出现的任何地址。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>图中，PC1 具有内部本地地址 192.168.10.10。从 PC1 的角度来讲，Web 服务器具有外部地址 209.165.201.1。当数据包从 PC1 发送到 Web 服务器的全局地址时，PC1 的内部本地地址将转换为 209.165.200.226（内部全局地址）。通常不会转换外部设备的地址，因为该地址一般是公有 IPv4 地址。</p>
+          <p></p>
+          <p>注意，PC1 具有不同的本地和全局地址，而 Web 服务器对于本地和全局地址都使用相同的公有 IPv4 地址。从 Web 服务器的角度来讲，源自 PC1 的流量好像来自 209.165.200.226（内部全局地址）。</p>
+          <p></p>
+          <p>NAT 路由器（图中的 R2）是内部和外部网络之间以及本地地址和全局地址之间的分界点。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了路由器 2，两侧都有一个网络。左侧的网络为内部网络，右侧的网络为外部网络。内部网络连接到 PC，具有本地地址。外部网络是 ISP，具有全局地址。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

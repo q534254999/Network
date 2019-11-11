@@ -1,0 +1,35 @@
+<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>协议簇</b>]]></text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[协议簇是共同作用、帮助解决某个问题的规则集。]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[内容层]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt03">
+        <text>
+            <![CDATA[规则层]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt04">
+        <text>
+            <![CDATA[物理层]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt05">
+        <text>
+            <![CDATA[<b>会话协议簇</b><br/>1.使用通用语言<br/>2.等待您的回答<br/>3.完成信号]]></text>
+    </component>
+    <component id="ID_bubble">
+        <text>
+            <![CDATA[<font color="#FFFFFF">咖啡厅在哪？</font>]]>
+        </text>
+    </component>
+</textcomponents>

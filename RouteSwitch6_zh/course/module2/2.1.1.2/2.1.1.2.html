@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.1.2 为什么使用静态路由？</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>为什么使用静态路由？</h1>
+        <div>
+          <p>静态路由相对于动态路由有以下优势：</p>
+          <p>
+            <ul>
+              <li>静态路由不通过网络通告，从而能够提高安全性。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>静态路由比动态路由协议使用更少的带宽，且不需要使用 CPU 周期计算和交换路由信息。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>静态路由用来发送数据的路径已知。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>静态路由主要有以下缺点：</p>
+          <p>
+            <ul>
+              <li>初始配置和维护耗费时间。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>配置容易出错，尤其对于大型网络。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>需要管理员维护变化的路由信息。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>不能随着网络的增长而扩展；维护会越来越麻烦。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>需要完全了解整个网络的情况才能进行操作。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>图中对动态路由和静态路由的功能做了直观的比较。注意，一种方式的优点也就是另一种方式的不足之处。</p>
+          <p></p>
+          <p>静态路由对只有一条路径通往外部网络的小型网络非常有用。它们还为大型网络中需要更多控制的特定类型流量或其他网络链路提供安全性。静态和动态路由并不互相排斥，理解这一点很重要。相反，大多数网络结合使用动态路由协议和静态路由。这可能导致路由器通过静态路由和动态获知的路由有多条到达目标网络的路径。但是，请记住管理距离 (AD) 值是衡量路由源首选项的指标。具有较低 AD 值的路由源优先于具有较高 AD 值的路由源。静态路由的 AD 值为 1。因此，静态路由将优先于所有动态获取的路由，它们将具有更高的 AD 值。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示一个比较静态路由和动态路由之间的配置复杂性、拓扑更改、扩展、安全性、资源使用情况和可预测性的表格。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

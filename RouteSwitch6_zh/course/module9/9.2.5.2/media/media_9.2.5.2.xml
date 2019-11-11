@@ -1,0 +1,67 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>IPv6 唯一本地地址</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>全球 ID</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>子网 ID</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>接口 ID</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[伪随机算法]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[EUI-64、随机或手动配置]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[7]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[40]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[16]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[64]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>前缀<b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[1]]></text>
+</component>
+
+
+<component id="ID_txt12">
+<text><![CDATA[位]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<b>L</b>]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[1 或 0]]></text>
+</component>
+
+
+
+
+
+</textcomponents>

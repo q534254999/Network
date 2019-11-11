@@ -1,0 +1,27 @@
+<textcomponents><!--Slide 1--><component id="ID_s1_title">
+<text><![CDATA[<b>在路由器上配置无状态 DHCPv6</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+   <text><![CDATA[<b>步骤 1. 启用 IPv6 路由</b>]]></text>
+   </component>
+<component id="ID_s1_txt02">
+   <text><![CDATA[<b>步骤 2. 配置 DHCPv6 池</b>]]></text>
+   </component>
+<component id="ID_s1_txt03">
+   <text><![CDATA[<b>步骤 3. 配置池参数</b>]]></text>
+   </component>
+<component id="ID_s1_txt04">
+   <text><![CDATA[<b>步骤 4. 配置 DHCPv6 接口</b>]]></text>
+   </component><!--Slide 2--><component id="ID_s2_title">
+<text><![CDATA[<b>将路由器 R1 配置为无状态 DHCPv6 服务器</b>]]></text>
+</component>
+<component id="ID_s2_txt01">
+   <text><![CDATA[<b>DHCPv6 无状态服务器</b>]]></text>
+   </component>
+<component id="ID_s2_txt02">
+   <text><![CDATA[<b>DHCPv6 客户端</b>]]></text>
+   </component>
+
+
+
+</textcomponents>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.3.2.2 ARP 功能</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>ARP 功能</h1>
+        <div>
+          <p>
+            <b>将 IPv4 地址解析为 MAC 地址</b>
+          </p>
+          <p>当数据包发送到要封装入以太网帧的数据链路层时，设备将参照其内存中的表来查找映射至 IPv4 地址的 MAC 地址。此表称为 ARP 表或 ARP 缓存。ARP 表存储在设备的 RAM 中。 </p>
+          <p>发送设备会在自己的 ARP 表中搜索目的 IPv4 地址和相应的 MAC 地址。 </p>
+          <p>
+            <ul>
+              <li>如果数据包的目的 IPv4 地址与源 IPv4 地址处于同一个网络，则设备会在 ARP 表中搜索目的 IPv4 地址。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>如果目的 IPv4 地址与源 IPv4 地址不在同一个网络中，则设备会在 ARP 表中搜索默认网关的 IPv4 地址。 </li>
+            </ul>
+          </p>
+          <p>这两种情况都是搜索设备的 IPv4 地址和相应的 MAC 地址。 </p>
+          <p>ARP 表中的每一条（或每行）将一个 IPv4 地址与一个 MAC 地址绑定。我们将这两个值之间的关系称为映射 - 只是表示您可以在表中查找 IPv4 地址并发现相应的 MAC 地址。ARP 表暂时保存（缓存）LAN 上设备的映射。 </p>
+          <p>如果设备找到 IPv4 地址，其相应的 MAC 地址将作为帧中的目的 MAC 地址。如果找不到该条目，设备会发送一个 ARP 请求。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">This animation shows how a host makes a broadcast on the LAN when it needs to find the MAC address for the destination.  The destination host will respond to the broadcast but the other hosts will not.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

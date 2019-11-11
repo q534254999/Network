@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.3.5.2 terminal monitor 命令</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.3.5.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>terminal monitor 命令</h1>
+        <div>
+          <p>可在本地或远程建立授权访问 IOS 命令行界面的连接。</p>
+          <p></p>
+          <p>本地连接需要物理访问路由器或交换机，因此需要使用电缆连接。通常通过使用全反电缆将 PC 连接到路由器或交换机控制台端口来建立此连接。在本课程中，我们将本地连接看作控制台连接。</p>
+          <p></p>
+          <p>远程连接通过网络建立，因此需要一个网络协议（例如 IP）。远程会话不需要直接物理访问。SSH 和 Telnet 是用于远程会话的两种常见的连接协议。在本课程中，我们在讨论特定远程连接（例如 Telnet 连接或 SSH 连接）时会使用此协议。</p>
+          <p></p>
+          <p>当 IOS 日志消息默认发送到控制台时，这些相同的日志消息默认不会发送到虚拟线路。由于调试消息属于日志消息，此行为会阻止任何与调试相关的消息在 VTY 线路上显示。</p>
+          <p></p>
+          <p>要在终端（虚拟控制台）上显示日志消息，请使用 <b>terminal monitor</b> 特权 EXEC 命令。</p>
+          <p></p>
+          <p>要停止终端上的日志记录消息，请使用 <b>terminal no monitor</b> 特权 EXEC 命令。</p>
+          <p></p>
+          <p>使用语法检查器练习使用 <b>terminal monito</b>r 和 <b>debug</b> 进行故障排除。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 is output from the ‘debug ip icmp’ command. Figure 2 is a syntax checker activity.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

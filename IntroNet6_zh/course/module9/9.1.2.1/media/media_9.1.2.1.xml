@@ -1,0 +1,46 @@
+﻿<textcomponents>
+    <!--SLIDE0 1-->
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>TCP 服务</b>]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[收件人：you@example.com<br>发件人：me@example.com<br>主题：假期]]>
+        </text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[电子邮件]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[即时<br/>消息]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[多个网页]]>
+        </text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[IP 电话<br/>(VoIP)]]>
+        </text>
+    </component>
+    <component id="ID_txt06">
+        <text>
+            <![CDATA[流视频]]>
+        </text>
+    </component>
+    <component id="ID_txt07">
+        <text>
+            <![CDATA[<b>网络</b>]]></text>
+    </component>
+   <component id="ID_bodyTxt01">
+        <text>
+            <![CDATA[<textformat blockindent="-16"><li><b>建立会话</b> 确保应用程序做好接收数据的准备。</li><li><b>同序处理</b> 确保按照正确的顺序重组数据段。 </li><li><b>可靠传输</b> 表示需要重新发送丢失的数据段，确保所接收数据的完整性。</li><li><b>流量控制</b> 确保接收方能够处理接收到的数据。 </li></textformat>]]>
+        </text>
+    </component>
+</textcomponents>

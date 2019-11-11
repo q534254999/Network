@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.1 MAC 地址和十六进制</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>MAC 地址和十六进制</h1>
+        <div>
+          <p>以太网 MAC 地址是一种表示为 12 个十六进制数字（每个十六进制数字为 4 位）的 48 位二进制值。</p>
+          <p>就像十进制是以 10 为基数的数制系统一样，十六进制是以 16 为基数的数制系统。以 16 为基数的数制系统使用数字 0 到 9 和字母 A 到 F。图 1 显示了 0000 到 1111 这些二进制数的十进制和十六进制值。将一个值表示为一个十六进制数字比表示为四个二进制位要容易。 </p>
+          <p>8 位（1 个字节）是一种常用的二进制组，从 00000000 到 11111111 的二进制可表示为从 00 到 FF 的十六进制（如图 2 所示）。前导零始终都会显示，以完整的 8 位表示。例如，二进制值 0000 1010 以十六进制显示为 0A。</p>
+          <p>
+            <b>注意</b>：对于字符 0 到 9，区分十六进制值与十进制值非常重要，具体如图所示。 </p>
+          <p>
+            <b>表示十六进制值</b>
+          </p>
+          <p>十六进制通常用以 0x 为前导的值（例如 0x73）或以 16 为下标的值来表示。在少数情况下，后面可能会接 H，例如 73H。但是，由于下标文字在命令行或编程环境中无法识别，因此十六进制的技术表示法以“0x”（零 X）为前导。按照这种表示法，以上示例应分别显示为 0x0A 和 0x73。</p>
+          <p>十六进制用于表示以太网 MAC 地址和 IP V6 地址。</p>
+          <p>
+            <b>十六进制的转换</b>
+          </p>
+          <p>十进制与十六进制值之间的数字可以直接转换，但快速除以或乘以 16 不一定很方便。如果需要进行这种转换，通常比较容易的方法是：先将十进制或十六进制值转换为二进制值，然后将二进制值转换为适当的十进制或十六进制值。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a table with Decimal values between 0 and 15 with the Binary and Hexadecimal equivalents.  This table demonstrates why Hexadecimal has letters A through F along with numbers 0 through 9. Figure 2 shows a table with Decimal values between 0 and 255 with the Binary and Hexadecimal equivalents.  This table only shows 19 examples.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.2.4 下一可用端口</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>下一可用端口</h1>
+        <div>
+          <p>在上述示例中，启用 NAT 的路由器上客户端的端口号（1331 和 1555）没有改变。这种情形不太常见，因为这些端口号很有可能已被其他正在进行的会话所使用。 </p>
+          <p></p>
+          <p>PAT 会尝试保留原始的源端口。但是，如果原始的源端口已被使用，则 PAT 会从相应端口组（0–511、512–1023 或 1024–65535）的开头开始，分配第一个可用端口号。如果没有其他可用端口，而地址池中的外部地址多于一个，则 PAT 会进入下一地址并尝试重新分配原始的源端口。这一过程会一直持续，直到不再有可用端口或外部 IPv4 地址。 </p>
+          <p></p>
+          <p>点击图中的“播放”按钮，观看 PAT 的工作原理。在本示例中，PAT 已经将下一个可用端口 (1445) 分配给第二个主机地址。</p>
+          <p></p>
+          <p>在动画中，主机选择了相同端口号 1444。这对于内部地址是可以接受的，因为主机具有唯一的私有 IPv4 地址。但是，在 NAT 路由器上，必须更改端口号；否则，来自两个不同主机的数据包将使用相同的源地址离开 R2。此示例假设在 1,024-65,535 范围内的前 420 个端口已经在使用，因此，使用下一个可用的端口号 1445。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">此动画显示连接到一个 NAT 路由器的两个计算机。计算机需要访问互联网。当两台计算机在内部使用同一端口号时，NAT 路由器仍将分配一个不同的外部端口号。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

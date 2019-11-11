@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.1.4 启用并验证 RIPv2</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>启用并验证 RIPv2</h1>
+        <div>
+          <p>如图 1 所示，配置了 RIP 进程的思科路由器会默认运行 RIPv1。不过，尽管路由器只发送 RIPv1 消息，但它可以同时解释 RIPv1 和 RIPv2 消息。RIPv1 路由器忽略了路由条目中的 RIPv2 字段。 </p>
+          <p></p>
+          <p>如图 2 所示，使用 <b>version 2 </b>路由器配置模式命令启用 RIPv2。请注意，<b>show ip protocols </b>命令如何验证现在配置的 R2 仅发送和接收第 2 版的信息。现在，RIP 进程在所有更新中包含子网掩码，所以 RIPv2 是一种无类路由协议。  </p>
+          <p></p>
+          <p>
+            <b>注</b>：配置 <b>version 1</b> 只启用 RIPv1，而配置 <b>no version </b>则将路由器返回默认设置（即发送第 1 版更新但侦听第 1 版或第 2 版更新）。 </p>
+          <p></p>
+          <p>图 3 验证路由表中是否不再有任何 RIP 路由。这是因为 R1 现在只侦听 RIPv2 更新。R2 和 R3 仍然在发送 RIPv1 更新。因此，路由域中的所有路由器都必须配置 <b>version 2 </b>命令。 </p>
+          <p></p>
+          <p>使用图 4 中的语法检查器启用 R2 和 R3 上的 RIPv2。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示 show ip protocols 命令的输出，并突出显示声明路由器正在发送第一版，但可能会收到第一版和第二版更新的部分。图 2 显示在路由器上启用 RIPv2 的命令。该图以全局配置模式开始并使用命令 router rip 启用 RIP。下一命令为 version 2，可启用 RIPv2 并禁用 RIPv1。显示命令 show ip protocols 的结果，此时路由器正在仅发送和接收 RIP 第 2 版。图 3 显示命令 show ip route | begin Gateway 的输出。其中显示路由表，由于在上一图中 version 2 命令仅在路由器上启用第 2 版，因此无 RIP 路由，且此时忽略 RIP 第 1 版更新。图 4 是允许学生在路由器上配置 RIPv2 的互动媒体元素。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

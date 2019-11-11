@@ -1,0 +1,17 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>静态路由场景</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[互联网]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[路由器 R2 连接到其他网络和互联网。 这是我离开此处的唯一方式。 我只使用默认静态路由就可以到达我不知道的所有网络。]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[路由器 R1 只有两个网络需要我了解，因此我只使用两条静态路由到达这两个网络。]]></text> 
+</component>
+</textcomponents>

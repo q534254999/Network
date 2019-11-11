@@ -1,0 +1,72 @@
+<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>练习 - 故障排除步骤排序</b>]]></text>
+	</component>
+	<component id="ID_s1_instr_title">
+		<text><![CDATA[说明]]></text>
+	</component>
+	<component id="ID_s1_instr_body">
+		<text><![CDATA[请将每个步骤拖到相应描述旁边的字段。]]></text>
+	</component>
+	<component id="ID_s1_CORRECT_TITLE">
+		<text><![CDATA[正确]]></text>
+	</component>
+	<component id="ID_s1_CORRECT_BODY">
+		<text><![CDATA[您已成功地将每个步骤与其描述相匹配。]]></text>
+	</component>
+	<component id="ID_s1_INCORRECT_TITLE">
+		<text><![CDATA[不正确]]></text>
+	</component>
+	<component id="ID_s1_INCORRECT_BODY">
+		<text><![CDATA[您尚未成功地将每个步骤与其描述相匹配。 请单击“重置”重试。]]></text>
+	</component>
+	<component id="ID_s1_CHECK">
+		<text><![CDATA[检查]]></text>
+	</component>
+	<component id="ID_s1_RESET">
+		<text><![CDATA[重置]]></text>
+	</component><!--Drag Items--><component id="ID_s1_target_header">
+		<text><![CDATA[<font color="#FFFFFF" size="15">步骤</font>]]></text>
+	</component>
+	<component id="ID_s1_drag01">
+		<text><![CDATA[第 2 步]]></text>
+	</component>
+	<component id="ID_s1_drag02">
+		<text><![CDATA[第 4 步]]></text>
+	</component>
+	<component id="ID_s1_drag03">
+		<text><![CDATA[第 6 步]]></text>
+	</component>
+	<component id="ID_s1_drag04">
+		<text><![CDATA[第 1 步]]></text>
+	</component>
+	<component id="ID_s1_drag05">
+		<text><![CDATA[第 3 步]]></text>
+	</component>
+	<component id="ID_s1_drag06">
+		<text><![CDATA[第 5 步]]></text>
+	</component><!--Questions--><component id="ID_s1_drag_header">
+		<text><![CDATA[<font size="15">步骤</font>]]></text>
+	</component>
+	<component id="ID_s1_text_header">
+		<text><![CDATA[<font size="15">说明</font>]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[推测潜在原因。]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[制定行动方案，解决问题并实施解决方案。]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[记录调查结果、措施和结果。]]></text>
+	</component>
+	<component id="ID_s1_txt04">
+		<text><![CDATA[识别问题。]]></text>
+	</component>
+	<component id="ID_s1_txt05">
+		<text><![CDATA[验证推测以确定原因。]]></text>
+	</component>
+	<component id="ID_s1_txt06">
+		<text><![CDATA[验证完整的系统功能并实施预防措施。]]></text>
+	</component>
+</textcomponents>

@@ -1,0 +1,1 @@
+图 1 显示在路由器上输入的命令 terminal history size 200，因此将历史记录设置为记住 200 个最近的命令。然后 show history 命令在路由器上运行，且输出列出最近在路由器上输入的命令。图 2 是允许学生练习使用 terminal history size 和 show history 命令的互动媒体元素。

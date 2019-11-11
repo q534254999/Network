@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.3.2.3 直连示例</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.3.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>直连示例</h1>
+        <div>
+          <p>图 1 至图 3 中的示例显示了配置和激活与 R1 连接的接口的步骤。注意在激活每个接口时生成的第 1 层和第 2 层信息消息。</p>
+          <p></p>
+          <p>在添加每个接口时，路由表会自动添加直连（“<b>C</b>”）条目和本地（“<b>L</b>”）条目。图 4 提供了一个路由表的示例，该路由表中配置并激活了 R1 的直连接口。</p>
+          <p></p>
+          <p>使用图 5 中的语法检查器配置并激活与 R2 连接的接口。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示用于将描述添加到接口并为其分配 IP 地址的命令。图中显示路由器的命令行界面并以全局配置模式开始。使用第一个命令可进入所需接口，该命令是 interface gigabitEthernet 0/0。下一命令将描述置于接口的配置文件中，此处的命令是 LAN 1 链路描述。下一命令分配 IP 地址和子网掩码，这是 IP 地址：192.168.10.1 255.255.255.0。现在必须使用 no shutdown 命令开启此接口。然后，该接口更改为启动状态。图 2 配置下一个接口。使用第一个命令可进入该接口，该命令是 interface gigabitEthernet 0/1。下一命令将描述置于接口的配置文件中，此处的命令是 LAN 2 链路描述。下一命令分配 IP 地址和子网掩码，这是 IP 地址：192.168.11.1 255.255.255.0。现在必须使用 no shutdown 命令开启此接口。该接口更改为启动状态。图 3 配置下一个接口。使用第一个命令可进入该接口，该命令是 interface serial 0/0/0。下一命令将描述置于接口的配置文件中，此处的命令是 description Link to R1。下一命令分配 IP 地址和子网掩码，这是 IP 地址：209.165.200.255 255.255.255.0。接下来，需要为串行链路分配时钟速率，该命令是 clock rate 128000。现在必须使用 no shutdown 命令开启此接口。该接口更改为启动状态。图 4 显示 show ip route route | Gateway 命令的输出。这会显示路由表并应用过滤器以显示文件中在词 Gateway 后（包括关键字 Gateway）出现的所有内容。表中显示由于前面三个图中的三个已配置接口预计存在的六个条目。图 5 是允许学生配置路由器上的三个接口以便它与前面四个图中的路由器连接的互动媒体元素。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

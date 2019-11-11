@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.1.2 NTP 操作</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>NTP 操作</h1>
+        <div>
+          <p>NTP 网络使用时间源的分层系统。此分层系统中的每个级别称为一个层。层级定义为权威来源的跳数。使用 NTP 将同步的时间分布到网络中。图中显示 NTP 网络示例。</p>
+          <p></p>
+          <p>NTP 服务器设置三个级别，显示三个层。第 1 层连接到第 0 层时钟.</p>
+          <p></p>
+          <p>
+            <b>第 0 层</b>
+          </p>
+          <p></p>
+          <p>NTP 网络从权威时间源获取时间。这些权威时间源，也称为第 0 层设备，是一些高精度计时设备，被认为是非常精确且极少或不发生延迟的设备。图中的时钟代表第 0 层设备。</p>
+          <p></p>
+          <p>
+            <b>第 1 层</b>
+          </p>
+          <p></p>
+          <p>第 1 层设备直接连接到权威时间源。它们充当主要网络时间标准。</p>
+          <p></p>
+          <p>
+            <b>第 2 层及更低层</b>
+          </p>
+          <p></p>
+          <p>第 2 层服务器通过网络连接连接到第 1 层设备。第 2 层设备（例如 NTP 客户端）使用来自第 1 层服务器的 NTP 数据包同步其时间。它们也可以充当第 3 层设备的服务器。</p>
+          <p></p>
+          <p>较小层数上的服务器，与较大层数上相比，距离权威时间源更近。层级数越大，层级越低。最大跳数为 15。第 16 层（最低层级）表示设备不同步。同一层级上的时间服务器可以配置为同一层级上其他时间服务器的对等设备，以用于备份或验证时间。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">添加媒体脚本</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

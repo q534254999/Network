@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.1.1 IPv4 地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv4 地址</h1>
+        <div>
+          <p>二进制是指包含数字 0 和 1 <i>位</i>的数制系统。相比之下，十进制数制系统是由数字 0 - 9 共 10 位数字组成。 </p>
+          <p>理解二进制对于我们很重要，因为主机、服务器和网络设备使用二进制编址。具体地说，它们使用二进制 IPv4 地址，如图 1 所示，以识别彼此。 </p>
+          <p>每一个地址包含一串 32 位字符串，并分为四个部分，称为<i>二进制八位数</i>。每一个二进制八位数包含 8 位（或 1 个字节），用句点分隔。例如，为图中的 PC1 分配的 IPv4 地址为 11000000.10101000.00001010.00001010。其默认网关地址将为 R1 千兆以太网接口地址 11000000.10101000.00001010.00000001。 </p>
+          <p>使用二进制数字会很麻烦。为了方便人们使用，IPv4 地址通常表达为点分十进制记法（如图 2 所示）。为 PC1 分配的 IPv4 地址为 192.168.10.10，其默认网关地址为 192.168.10.1。 </p>
+          <p>图 3 对比了 PC1 的点分十进制地址和 32 位二进制地址。</p>
+          <p>为了扎实理解网络编址，必须了解二进制编址，并有技能进行 IPv4 地址的二进制和点分十进制之间的转换。</p>
+          <p>此部分介绍如何在以 2 为基数的数制系统和 10 为基数的数制系统之间进行转换。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a topology with router connected to two LANs and to a cloud. Each LAN has a PC and there is a PC in the cloud. All the devices are labeled with their IP addresses in binary format, which is a series of 32 binary digits separated by a period at every 8th bit. Figure 2 shows the same topology as Figure 1. But now the devices are labeled with their IPv4 addresses in dotted decimal notation. Figure 3 shows the IP address 192.168.10.10 in dotted decimal format and in binary digits format.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

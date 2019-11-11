@@ -1,0 +1,11 @@
+<textcomponents><!-- SLIDE 1--><component id="ID_s1_title">
+		<text><![CDATA[<b>参考拓扑</b>]]></text> 
+	</component>
+  
+	<component id="ID_s1_txt01">
+		<text><![CDATA[互联网]]></text>
+	</component><!--SLIDE 2--><component id="ID_s2_title">
+		<text><![CDATA[<b>R1 的路由表</b>]]></text> 
+	</component>
+	
+</textcomponents>

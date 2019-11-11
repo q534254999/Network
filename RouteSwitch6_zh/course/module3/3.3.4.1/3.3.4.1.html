@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.4.1 IPv6 路由表条目</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv6 路由表条目</h1>
+        <div>
+          <p>IPv6 路由表的组件与 IPv4 路由表非常相似。例如，通常使用直连接口、静态路由和动态获知的路由。 </p>
+          <p></p>
+          <p>因为 IPv6 在设计上无类，所以所有路由都是有效的第 1 级最终路由。没有第 2 级子路由的第 1 级父代。 </p>
+          <p></p>
+          <p>将如图所示的拓扑用作本部分的参考拓扑。在拓扑中注意：</p>
+          <p>
+            <ul>
+              <li>R1、R2 和 R3 配置在全网状拓扑中。所有路由器都包含通向不同网络的冗余路径。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>R2 是边界路由器，并与 ISP 连接；但是不通告默认静态路由。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>IPv6 的 EIGRP 已配置在所有三台路由器上。</li>
+            </ul>
+          </p>
+          <p>
+            <b>注</b>：尽管 IPv6 的 EIGRP 用于填充路由表，EIGRP 的操作和配置超出本课程的范围。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示在三角形布局中配置三个路由器的拓扑。每个路由器都与另外两个路由器相连，提供全网状拓扑。每个路由器都具有两个带 IPv6 地址的活动 WAN 串行链路，且每个路由器都在带 IPv6 地址的千兆位以太网上具有一个 LAN。使用的路由协议为 IPv6 的 EIGRP。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

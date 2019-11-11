@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.2.1 对标准 IPv4 ACL 进行故障排除 - 示例 1</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>对标准 IPv4 ACL 进行故障排除 - 示例 1</h1>
+        <div>
+          <p>使用前面介绍过的 <b>show</b> 命令可以发现大部分更为常见的 ACL 错误。最常见的错误是以错误的顺序输入 ACE 和不指定适当的 ACL 规则。其他常见错误包括使用错误的方向、错误的接口或错误的源地址应用 ACL。 </p>
+          <p></p>
+          <p>
+            <b>安全策略</b>：PC2 应该不能访问文件服务器。</p>
+          <p></p>
+          <p>在图 1 中，虽然 PC2 无法访问文件服务器，但是 PC1 也无法访问文件服务器。当查看 <b>show access-list</b> 命令的输出时，仅 PC2 被显式拒绝。但是，没有 permit 语句允许其他访问。 </p>
+          <p></p>
+          <p>
+            <b>解决方案</b>：当前已隐式拒绝所有从 G0/0 接口到 192.168.30.0/24 LAN 的访问。如图 2 所示，向 ACL 10 添加一条语句以允许所有其他流量。PC1 现在应该能够访问文件服务器。<b>show access-list</b> 命令的输出验证了从 PC1 到文件服务器的 ping 操作匹配 permit any 语句。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示一个由三个路由器组成的网络。R2 是三角形布局的顶部，与 R1 和 R3 有一条串行广域网连接。R1 与 R3 之间没有直接连接。R2 还具有到互联网的连接。路由器 R1 和 R3 各自有用于本地网段的两个活动的千兆接口，每个网段有一台交换机，每台交换机连接一台计算机。R1 在接口 Gb0/0 上有 192.168.10.0 网络，在接口 Gb0/1 上有 192.168.11.0 网络。R3 在接口 Gb0/0 上有 192.168.30.0 网络。所有网段均为 C 类网络，带有 /24。这是后续页面的参考拓扑。图 1 显示 show access-list 命令的输出。图 2 显示向 ACL 10 添加“permit any”语句，然后使用 show access-list 命令进行验证的流程。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

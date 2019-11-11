@@ -1,0 +1,5 @@
+﻿<textcomponents>
+	<component id="notes">
+		<text><![CDATA[注意：]]></text>
+	</component>
+</textcomponents>

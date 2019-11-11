@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.3.3.1 静态路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.3.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>静态路由</h1>
+        <div>
+          <p>在配置了直连接口，并将其添加到路由表中后，就可以实现静态或动态路由。 </p>
+          <p></p>
+          <p>静态路由是手动配置的。它们将定义两个网络设备之间的明确路径。与动态路由协议不同，静态路由不会自动更新，并且当网络拓扑发生变化时，必须手动重新配置静态路由。使用静态路由的优点是提高了安全性和资源利用率。静态路由比动态路由协议使用更少的带宽，且不需要使用 CPU 周期计算和交换路由信息。使用静态路由的主要缺点就是在网络拓扑发生变化时不能自动重新配置。</p>
+          <p></p>
+          <p>路由表中有两种常见的静态路由类型：</p>
+          <p>
+            <ul>
+              <li>指向特定网络的静态路由</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>默认静态路由</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>可以将静态路由配置为到达某个特定远程网络。使用以下命令配置 IPv4 静态路由：</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config)#</span>
+            <span class="cmd">
+              <b> ip route </b>
+            </span>
+            <span class="cmd">
+              <i>network mask</i>
+            </span>
+            <span class="cmd"> {</span>
+            <span class="cmd">
+              <i>next-hop-ip</i>
+            </span>
+            <span class="cmd"> | </span>
+            <span class="cmd">
+              <i>exit-intf</i>
+            </span>
+            <span class="cmd">} </span>
+          </p>
+          <p></p>
+          <p>静态路由在路由表中以代码“<b>S</b>”标识。</p>
+          <p></p>
+          <p>默认静态路由类似于主机上的默认网关。默认静态路由将指定当路由表不包含通往目标网络的路径时使用哪个出口点。当路由器只有一个通往另一路由器的出口点时（例如，当路由器连接中心路由器或服务提供商时），默认静态路由非常有用。 </p>
+          <p></p>
+          <p>要配置 IPv4 默认静态路由，请使用以下命令：</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config)#</span>
+            <span class="cmd">
+              <b> ip route 0.0.0.0 0.0.0.0</b>
+            </span>
+            <span class="cmd"> {</span>
+            <span class="cmd">
+              <i>exit-intf</i>
+            </span>
+            <span class="cmd"> | </span>
+            <span class="cmd">
+              <i>next-hop-ip</i>
+            </span>
+            <span class="cmd">}</span>
+          </p>
+          <p></p>
+          <p>该图提供了一个有关如何应用默认路由和静态路由的简单场景。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示包含两个路由器和它们之间的五个网络地址的网络。在第一个路由器上配置到第二个路由器的默认路由。这是因为下一个路由器是来自第一个路由器的所有网络流量的下一跳路由器，包括互联网。默认路由是路由器的最有效配置。仅第二路由器需要到达直接连接到第一个路由器的两个网络。为最有效地到达这两个网络，在指向第一个路由器的第二个路由器上配置了两个静态路由。  </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

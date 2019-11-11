@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.1.4 路由过程和 ACL</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>路由过程和 ACL</h1>
+        <div>
+          <p>图中显示了路由和 ACL 过程的原理。当数据包到达路由器接口时，无论是否使用 ACL，路由器过程都是相同的。当帧进入接口时，路由器查看其第 2 层目标地址是否与其第 2 层接口地址匹配，或该帧是否是广播帧。 </p>
+          <p></p>
+          <p></p>
+          <p>如果可以接受该帧地址，那么路由器将解封帧信息，并检查入站接口上的 ACL。如果存在 ACL，则按照列表中的语句测试该数据包。 </p>
+          <p></p>
+          <p>如果数据包与某条语句匹配，则根据结果允许或拒绝该数据包。如果数据包被接受，将检查路由表条目来确定目标接口。如果目标存在路由表条目，数据包将被转发到送出接口，否则数据包将被丢弃。 </p>
+          <p></p>
+          <p>接下来，路由器检查送出接口是否具有 ACL。如果存在 ACL，则按照列表中的语句测试该数据包。 </p>
+          <p></p>
+          <p>如果数据包与某条语句匹配，则根据结果允许或拒绝该数据包。</p>
+          <p></p>
+          <p>如果没有 ACL 或数据包被允许，则将数据包封装在新的第 2 层协议中，并从相应接口转发到下一台设备。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中是描述路由器中 ACL 和路由过程的流程图。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

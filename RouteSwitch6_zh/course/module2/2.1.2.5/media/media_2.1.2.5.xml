@@ -1,0 +1,35 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>配置备份路由</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[专用 WAN]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[互联网]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[分支机构]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[ISP]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[HQ]]></text> 
+</component>
+
+<component id="ID_speech01">
+<text><![CDATA[<font color="#FFFFFF">我首选使用专用 WAN 链路访问 HQ 路由器。 </font>]]></text> 
+</component>
+
+<component id="ID_speech02">
+<text><![CDATA[<font color="#FFFFFF">但是，如果该链路出现故障，我可以使用连接到互联网的浮动静态路由作为备份。 </font>]]></text> 
+</component>
+
+</textcomponents>

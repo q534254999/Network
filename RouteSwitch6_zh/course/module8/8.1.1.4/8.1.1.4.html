@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.1.4 DHCPv4 发现和提供消息</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>DHCPv4 发现和提供消息</h1>
+        <div>
+          <p>如果客户端配置为动态接收其 IPv4 设置并要连接网络，它会从 DHCPv4 服务器请求编址值。当客户端启动或侦听到活动网络连接时，会在其本地网络上传输 DHCPDISCOVER 消息。由于客户端无法知道它属于哪一个子网，因此 DHCPDISCOVER 消息是一个 IPv4 广播（目标 IPv4 地址为 255.255.255.255）。客户端还没有配置 IPv4 地址，因此使用源 IPv4 地址 0.0.0.0。 </p>
+          <p></p>
+          <p>如图 1 所示，客户端 IPv4 地址 (CIADDR)，默认网关地址 (GIADDR) 和子网掩码均有标记，这表示使用了地址 0.0.0.0。 </p>
+          <p></p>
+          <p>
+            <b>注</b>：将未知消息发送为 0.0.0.0。</p>
+          <p></p>
+          <p>当 DHCPv4 服务器收到 DHCPDISCOVER 消息时，它以 DHCPOFFER 消息回应。此消息包含客户端的初始配置信息，这些信息包括服务器提供的 IPv4 地址，子网掩码，租期，以及 DHCPv4 服务器提供的 IPv4 地址。 </p>
+          <p></p>
+          <p>可以配置 DHCPOFFER 消息以包括其它信息，例如租用更新时间和 DNS 地址。 </p>
+          <p></p>
+          <p>如图 2 所示，DHCP 服务器通过给 CIADDR 和子网掩码分配值来响应 DHCPDISCOVER。使用客户端硬件地址 (CHADDR) 构建帧，并将帧发送给请求客户端。</p>
+          <p></p>
+          <p>客户端与服务器发送确认消息后，过程完毕。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了 DHCP 版本 4 发现消息。消息包括客户端的 MAC 地址作为源 MAC 地址、全部使用 F 表示的目标 MAC 地址，使用IP 地址 0.0.0.0 表示源 IP、子网掩码和默认网关。目标地址为 255.255.255.255。图 2 显示了 DHCPv4 提供消息。服务器通过提供 IP 地址和子网掩码作出响应。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

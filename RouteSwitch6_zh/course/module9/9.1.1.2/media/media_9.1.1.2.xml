@@ -1,0 +1,27 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>NAT 边界</b>]]></text>
+</component>
+<component id="ID_txt01">
+   <text><![CDATA[末节网络：只有一个互联网出口点]]></text>
+   </component>
+<component id="ID_txt02">
+   <text><![CDATA[启用 NAT 的边界路由器]]></text>
+   </component>
+<component id="ID_txt03">
+   <text><![CDATA[<b>公共 地址空间</b>]]></text>
+   </component>
+<component id="ID_txt04">
+   <text><![CDATA[互联网]]></text>
+   </component>
+<component id="ID_txt05">
+   <text><![CDATA[服务器]]></text>
+   </component>
+<component id="ID_txt06">
+   <text><![CDATA[<b>私有 地址空间</b>]]></text>
+   </component>
+
+   <component id="ID_txt07">
+      <text><![CDATA[ISP]]></text>
+      </component>
+</textcomponents>

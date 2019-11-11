@@ -1,0 +1,10 @@
+﻿<textcomponents>
+	
+	<component id="ID_type">
+		<text><![CDATA[实验]]></text>
+	</component>
+	<component id="ID_title">
+		<text><![CDATA[使用 Wireshark 检查 UDP DNS 捕获]]></text>
+	</component>
+	
+</textcomponents>

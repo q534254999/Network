@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.4 验证交换机端口配置</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证交换机端口配置</h1>
+        <div>
+          <p>图 1 描述了一些有助于验证常见可配置交换机功能的<b> show </b>命令选项。</p>
+          <p></p>
+          <p>图 2 显示了 <b>show running-config</b> 命令缩略输出的示例。使用此命令可以验证交换机是否已配置正确。如 S1 输出所示，某些重要信息显示为：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>快速以太网 0/18 接口配置了管理 VLAN 99</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>VLAN 99 配置了 IPv4 地址 172.17.99.11 255.255.255.0</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>默认网关设置为 172.17.99.1</li>
+            </ul>
+          </p>
+          <p></p>
+          <p><b>show interfaces </b>是另一个常用命令，用于显示交换机网络接口的状态及统计信息。在配置和监视网络设备时，经常会用到 <b>show interfaces</b> 命令。 </p>
+          <p></p>
+          <p>图 3 显示了<b> show interfaces fastEthernet 0/18 </b>命令的输出。图中第一行表明 FastEthernet 0/18 接口处于 up/up 状态，表示其正在运行。输出的接下来几行显示双工设置为全双工，速度为 100 Mb/s。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示一个列出在交换机上使用的有用 show 命令的表。列出的第一个命令为 show interfaces，该命令用于显示接口状态和配置。列出的下一命令为 show startup-config，该命令用于显示启动配置文件。列出的下一命令为 show running-config，该命令用于显示运行配置。列出的下一命令为 show flash，该命令用于显示闪存文件系统。列出的下一命令为 show version，该命令用于显示硬件和软件状态。列出的下一命令为 show history，该命令用于显示所输入命令的历史记录。列出的下一命令为 show ip interface-id，该命令用于显示特定接口的 IP 信息。列出的最后一个命令为 show mac-address-table，该命令用于显示 MAC V 地址表。图 2 显示 show running-config 命令的输出。输出缩略为显示有关交换机端口 0/18 的信息，包括该接口的虚拟 LAN分配。输出还显示交换机上配置的虚拟 LAN 99 的 IP 地址和默认网关。图 3 显示 show interfaces fastEthernet 0/18 命令的输出。此输出提供有关特定接口的详细信息，包括速度和双工配置、当前运行状态和 IP 地址。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<textcomponents><component id="ID_s1_title"><text><![CDATA[]]></text></component><component id="ID_table"><text><![CDATA[<table header="none" bordercolor="#FFFFFF" borderwidth="2" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4" class="mtable">
+	<tr>
+		<td colspan="3" bgcolor="#4E4C4D" class="liner"><font size="1" color="#4E4C4D"><span style="color:#4E4C4D">.</span></font></td>
+	</tr>
+	<tr class="liner_top">
+		<td bgcolor="#666263" valign="top" width="200"><font color="#ffffff">实施问题</font></td>
+		<td bgcolor="#666263" valign="top" width="170"><font color="#ffffff">UTP 布线</font></td>
+		<td bgcolor="#666263" valign="top" width="220"><font color="#ffffff">光纤布线</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top"><font color="#393536">支持的带宽</font></td>
+		<td bgcolor="#E9E7E8" valign="top"><font color="#393536">10 Mb/s – 10 Gb/s</font></td>
+		<td bgcolor="#E9E7E8" valign="top"><font color="#393536">10 Mb/s – 100 Gb/s</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="top"><font color="#393536">距离</font></td>
+		<td bgcolor="#F2F2F2" valign="top"><font color="#393536">相对较短（1 至 100 米）</font></td>
+		<td bgcolor="#F2F2F2" valign="top"><font color="#393536">相对较长（1 至 100,000 米）</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top"><font color="#393536">不易受到 EMI 和 RFI 干扰</font></td>
+		<td bgcolor="#E9E7E8" valign="top"><font color="#393536">低</font></td>
+		<td bgcolor="#E9E7E8" valign="top"><font color="#393536">高（完全不受影响）</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="top"><font color="#393536">不易受电气危险的影响</font></td>
+		<td bgcolor="#F2F2F2" valign="top"><font color="#393536">低</font></td>
+		<td bgcolor="#F2F2F2" valign="top"><font color="#393536">高（完全不受影响）</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top"><font color="#393536">介质和连接器成本</font></td>
+		<td bgcolor="#E9E7E8" valign="top"><font color="#393536">最低</font></td>
+		<td bgcolor="#E9E7E8" valign="top"><font color="#393536">最高</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="top"><font color="#393536">安装技能要求</font></td>
+		<td bgcolor="#F2F2F2" valign="top"><font color="#393536">最低</font></td>
+		<td bgcolor="#F2F2F2" valign="top"><font color="#393536">最高</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top"><font color="#393536">安全预防措施</font></td>
+		<td bgcolor="#E9E7E8" valign="top"><font color="#393536">最低</font></td>
+		<td bgcolor="#E9E7E8" valign="top"><font color="#393536">最高</font></td>
+	</tr>
+</table>
+]]></text></component></textcomponents>

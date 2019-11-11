@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.4.3.4 排除 DNS 故障</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.4.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>排除 DNS 故障</h1>
+        <div>
+          <p>域名服务 (DNS) 定义了一种将域名（例如 www.cisco.com）与 IP 地址相匹配的自动化服务。DNS 解析对于设备无关紧要，但对最终用户而言非常重要。</p>
+          <p></p>
+          <p>用户通常会错误地将 Internet 链路的运行与 DNS 服务的可用性相关联。“网络中断”或“Internet 中断”等用户投诉通常就是由于 DNS 服务器无法访问所导致的。当数据包路由以及其他网络服务仍正常运行时，DNS 故障经常会导致用户得出错误结论。如果用户在 Web 浏览器中键入一个域名（例如 www.cisco.com），而 DNS 服务器无法访问，则该域名将无法转换为 IP 地址，网站将不会显示。</p>
+          <p></p>
+          <p>DNS 服务器地址可以手动或自动分配。网络管理员通常负责在服务器和其他设备上手动分配 DNS 服务器地址，而 DHCP 用于将 DNS 服务器地址自动分配到客户端。</p>
+          <p></p>
+          <p>虽然公司和组织通常会管理他们自己的 DNS 服务器，但任何可访问的 DNS 服务器都可以用于解析域名。小型办公室和家庭办公室 (SOHO) 用户通常依赖其 ISP 所维护的 DNS 服务器来进行域名解析。ISP 维护的 DNS 服务器通过 DHCP 分配给 SOHO 客户。例如，Google 维护一个可供所有人使用的公共 DNS 服务器，它对于测试非常有用。Google 的公共 DNS 服务器的 IPv4 地址为 8.8.8.8，其 IPv6 DNS 地址为 2001:4860:4860::8888。</p>
+          <p></p>
+          <p>如图 1 所示，使用 <b>ipconfig /all</b> 验证 Windows 计算机正在使用哪个 DNS 服务器。 </p>
+          <p></p>
+          <p><b>nslookup</b> 命令是 PC 的另一个有用的 DNS 故障排除工具。利用 <b>nslookup</b>，用户可以手动进行 DNS 查询并分析 DNS 响应。图 2 显示在查询 www.cisco.com 时 <b>nslookup</b> 的输出。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a topology with a PC, a switch, and three routers. The PC is connected to the switch, which is connected to router R1, which is connected to router R2, which is connected to router R3. Below the topology is the command output for ‘show ip route’ with gateway of last resort highlighted.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.1.2 何谓 NAT？</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>何谓 NAT？</h1>
+        <div>
+          <p>NAT 有很多作用，但其主要作用是节省了公有 IPv4 地址。它通过允许网络在内部使用私有 IPv4 地址，而只在需要时提供到公有地址的转换，从而实现这一作用。NAT 还能在一定程度上增加网络的私密性和安全性，因为它对外部网络隐藏了内部 IPv4 地址。</p>
+          <p></p>
+          <p>可以为启用 NAT 的路由器配置一个或多个有效的公有 IPv4 地址。这些公有地址称为 NAT 地址池。当内部设备将流量发送到网络外部时，启用 NAT 的路由器会将设备的内部 IPv4 地址转换为 NAT 池中的一个公有地址。对外部设备而言，所有进出网络的流量好像都有一个取自所提供地址池中的公有 IPv4 地址。 </p>
+          <p></p>
+          <p>NAT 路由器通常工作在末节网络边界。末节网络是一个与其相邻网络具有单个连接的网络，而且单进单出。在图中的示例中，R2 为边界路由器。对 ISP 来说，R2 构成末节网络。 </p>
+          <p></p>
+          <p>当末节网络内的设备想要与其网络外部的设备通信时，会将数据包转发到边界路由器。边界路由器会执行 NAT 过程，将设备的内部私有地址转换为公有的外部可路由地址。 </p>
+          <p></p>
+          <p>
+            <b>注</b>：与 ISP 的连接可能使用私有地址或在客户之间共享的公有地址。出于学习本章的目的，这里显示一个公有地址。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图显示连接了两个 LAN 的路由器 1。路由器 1 也通过串行链路连接到路由器 2。路由器 2 也连接到 ISP。连接到路由器 1 的网络是内部网络，它们使用专用编址。有一个标注，表明这是末端网络。路由器 2 有一个标注，表明这是支持 NAT 的边界路由器。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

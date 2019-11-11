@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.2.3 端口安全：违规模式</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>端口安全：违规模式</h1>
+        <div>
+          <p>可以将接口配置为三种违规模式中的一种，指定在出现违规时应采取的措施。图中演示，当端口上配置了以下某一安全违规模式时，将转发哪些类型的数据流量： </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>保护 </b>- 当安全 MAC 地址的数量达到端口允许的限制时，带有未知源地址的数据包将被丢弃，直至移除足够数量的安全 MAC 地址或增加允许的最大地址数。出现安全违规时不会发出通知。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>限制 </b>- 当安全 MAC 地址的数量达到端口允许的限制时，带有未知源地址的数据包将被丢弃，直至移除足够数量的安全 MAC 地址或增加允许的最大地址数。在该模式下，出现安全违规时会发出通知。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>关闭</b> - 在此（默认）模式下，端口安全违规可导致接口立即变为错误禁用状态，并关闭端口 LED。它增添了违规计数器。当安全端口处于错误禁用状态时，可通过输入后跟<b> no shutdown </b>命令的<b> shutdown </b>接口配置模式命令使其脱离该状态。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>要更改交换机端口的违规模式，请使用 <b>switchport port-security violation </b>{<b>protect </b>|<b> restrict </b>|<b> shutdown</b>} 接口配置模式命令。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中列出两种导致交换机发生安全冲突的情况和三种安全违规模式。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<textcomponents>
+    <!-- text on page -->
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[<b>Tx</b>]]></text>
+    </component>
+    <component id="ID_txt01a">
+        <text>
+            <![CDATA[<b>Tx</b>]]></text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[<b>Rx</b>]]></text>
+    </component>
+    <component id="ID_txt02a">
+        <text>
+            <![CDATA[<b>Rx</b>]]></text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[表皮]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[强化材料]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt03">
+        <text>
+            <![CDATA[缓冲区]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt04">
+        <text>
+            <![CDATA[涂层]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt05">
+        <text>
+            <![CDATA[核心]]>
+        </text>
+    </component>
+    <component id="ID_txt08">
+        <text>
+            <![CDATA[单击每个组件以了解详细信息。]]>
+        </text>
+    </component>
+    <component id="ID_txt09">
+        <text>
+            <![CDATA[<b>单击“播放”观看光缆的详细视图。</b>]]></text>
+    </component>
+    <!-- textbox  -->
+    <component id="ID_PopTitle01">
+        <text>
+            <![CDATA[表皮]]></text>
+    </component>
+    <component id="ID_PopBody01">
+        <text>
+            <![CDATA[PVC 表皮通常用于防止光纤受到磨损、侵蚀和其他污染。该外部表皮的成分取决于电缆的用途。]]>
+        </text>
+    </component>
+    <component id="ID_PopTitle02">
+        <text>
+            <![CDATA[强化材料]]></text>
+    </component>
+    <component id="ID_PopBody02">
+        <text>
+            <![CDATA[包裹在缓冲区周围，以防牵动光纤时电缆变形。其材质与制造防弹衣的材质相同。]]>
+        </text>
+    </component>
+    <component id="ID_PopTitle03">
+        <text>
+            <![CDATA[缓冲区]]></text>
+    </component>
+    <component id="ID_PopBody03">
+        <text>
+            <![CDATA[用于防止核心和涂层遭到损坏。]]>
+        </text>
+    </component>
+    <component id="ID_PopTitle04">
+        <text>
+            <![CDATA[涂层]]></text>
+    </component>
+    <component id="ID_PopBody04">
+        <text>
+            <![CDATA[其材质与制造核心所用的材质略有不同。其作用是像镜子一样将光反射到光纤的核心内。如此可确保光在光纤中传输时始终处于核心内。]]>
+        </text>
+    </component>
+    <component id="ID_PopTitle05">
+        <text>
+            <![CDATA[核心]]></text>
+    </component>
+    <component id="ID_PopBody05">
+        <text>
+            <![CDATA[核心位于光纤中心，是实际的光线传输部件。核心通常由硅或玻璃制成。光脉冲沿着光纤的核心传输。]]>
+        </text>
+    </component>
+    <!-- controller -->
+    <component id="end">
+        <text>
+            <![CDATA[结束]]>
+        </text>
+    </component>
+    <component id="fforward">
+        <text>
+            <![CDATA[快进]]>
+        </text>
+    </component>
+    <component id="pause">
+        <text>
+            <![CDATA[暂停]]>
+        </text>
+    </component>
+    <component id="play">
+        <text>
+            <![CDATA[播放]]>
+        </text>
+    </component>
+    <component id="rewind">
+        <text>
+            <![CDATA[快退]]>
+        </text>
+    </component>
+    <component id="start">
+        <text>
+            <![CDATA[开始]]>
+        </text>
+    </component>
+</textcomponents>

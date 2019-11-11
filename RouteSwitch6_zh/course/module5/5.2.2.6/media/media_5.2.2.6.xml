@@ -1,0 +1,12 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>端口安全性违规消息</b>]]></text>
+</component>
+<component id="ID_s2_title">
+  <text><![CDATA[<b>端口状态</b>]]></text> 
+  </component>
+<component id="ID_s3_title">
+  <text><![CDATA[<b>重新启用错误禁用端口</b>]]></text> 
+  </component>
+
+</textcomponents>

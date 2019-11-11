@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.2.3 端口地址转换 (PAT)</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>端口地址转换 (PAT)</h1>
+        <div>
+          <p>端口地址转换 (PAT)（也称为 NAT 过载），将多个私有 IPv4 地址映射到单个私有 IPv4 地址或几个地址。大多数家用路由器就是这样工作的。您的 ISP 分配一个地址给您的路由器，但是您的多名家庭成员可以同时上网冲浪。这是 NAT 的最常用方式。</p>
+          <p></p>
+          <p>PAT 可以将多个地址映射到一个或少数几个地址，因为每个私有地址也会用端口号加以跟踪。当设备发起 TCP/IP 会话时，它生成一个 TCP 或 UDP 源端口值或专门为 ICMP 分配的查询 ID，用来唯一标识会话。当 NAT 路由器收到来自客户端的数据包时，将使用其源端口号来唯一确定特定的 NAT 转换。</p>
+          <p></p>
+          <p>PAT 利用互联网上的服务器确保设备对每个会话使用不同的 TCP 端口号。当服务器返回响应时，源端口号（在回程中变成目标端口号）决定路由器将数据包转发到哪个设备。PAT 过程还验证传入数据包是请求数据包，因此在一定程度上提高了会话的安全性。</p>
+          <p></p>
+          <p>点击图中的“播放”和“暂停”按钮控制动画播放。</p>
+          <p></p>
+          <p>动画演示了 PAT 流程。PAT 会将唯一的源端口号添加到内部全局地址上来区分不同的转换。 </p>
+          <p></p>
+          <p>当 R2 处理各数据包时，它使用端口号（本例中为 1331 和 1555）来识别发起数据包的设备。源地址 (SA) 为内部本地地址加上 TCP/IP 分配的端口号。目标地址 (DA) 为外部本地地址加上服务的端口号。在本示例中，HTTP 服务端口为 80。</p>
+          <p></p>
+          <p>对于源地址，R2 会将内部本地地址转换为内部全局地址，并添加端口号。目标地址未做更改，但此时称为外部全局 IPv4 地址。当 Web 服务器做出回复时，路径正好相反。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">此动画显示连接到一个 NAT 路由器的两个计算机。计算机需要访问互联网。当两台计算机都要访问时，NAT 路由器将为它们分配外部接口的 IP 地址以及一个端口号。这演示了 PAT 过程。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

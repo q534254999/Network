@@ -1,0 +1,1 @@
+ 图中显示了将 ACL 配置为拒绝特定主机，同时允许特定子网时所需的命令。该命令以全局配置模式开始。第一个命令删除之前的 ACL。此命令是 no access-list 1。下一个命令是 access-list 1 deny host 192.168.10.10。ACL 配置为允许此网络，所使用的命令是 access-list 1 permit 192.168.10.0 0.0.0.255。该命令通过 interface serial 0/0/0 命令进入广域网接口。最后，ACL 通过命令 ip access-group 1 out 应用于此接口出站方向上。

@@ -1,0 +1,12 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>将路由器配置为有状态 DHCPv6 客户端</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+   <text><![CDATA[<b>有状态 DHCPv6 服务器</b>]]></text>
+   </component>
+<component id="ID_txt02">
+   <text><![CDATA[<b>DHCPv6 客户端</b>]]></text>
+   </component>
+</textcomponents>

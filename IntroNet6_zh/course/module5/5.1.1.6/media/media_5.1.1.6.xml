@@ -1,0 +1,245 @@
+<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>练习</b>]]></text>
+    </component>
+    <component id='ID_s1_instr_title'>
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id='ID_s1_instr_body'>
+        <text>
+            <![CDATA[请将以太网帧字段名称与其描述进行配对。]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[使用“填充”将该帧字段至少增加到 64 个字节]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[描述使用了哪种上层协议]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt03">
+        <text>
+            <![CDATA[帧的始发网卡或接口的 MAC 地址]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt04">
+        <text>
+            <![CDATA[协助主机确定收到的帧是否指向该主机]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt05">
+        <text>
+            <![CDATA[告知目的设备准备接收新帧]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt06">
+        <text>
+            <![CDATA[同步发送设备和接收设备以便进行帧传输]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt07">
+        <text>
+            <![CDATA[检测以太网帧中的错误]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt08">
+        <text>
+            <![CDATA[<b>字段名称</b>]]></text>
+    </component>
+    <component id="ID_s1_txt09">
+        <text>
+            <![CDATA[<b>802.3 以太网帧字段说明</b>]]></text>
+    </component>
+    <component id='ID_s1_target_header'>
+	<text><![CDATA[<font size="14">字段</font>]]></text>
+</component>
+<component id='ID_s1_text_header'>
+	<text><![CDATA[<font size="14">描述</font>]]></text>
+</component>
+    <!--Drag and Drop-->
+    <component id="ID_s1_drag01">
+        <text>
+            <![CDATA[<font color="#393536">802.2 报头和数据</font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag02">
+        <text>
+            <![CDATA[<font color="#393536">帧校验序列</font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag03">
+        <text>
+            <![CDATA[<font color="#393536">类型</font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_traget04">
+        <text>
+            <![CDATA[<font color="#393536">帧首定界符 </font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag05">
+        <text>
+            <![CDATA[<font color="#393536">目的地址</font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag06">
+        <text>
+            <![CDATA[<font color="#393536">前导码</font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag07">
+        <text>
+            <![CDATA[<font color="#393536">源地址</font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_CORRECT_TITLE">
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id="ID_s1_CORRECT_BODY">
+        <text>
+            <![CDATA[您已成功地将以太网帧字段名称与其描述配对。]]>
+        </text>
+    </component>
+    <component id="ID_s2_INCORRECT_TITLE">
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id="ID_s1_INCORRECT_BODY">
+        <text>
+            <![CDATA[您未成功将以太网帧字段名称与其描述配对。 请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id="ID_s2_CHECK">
+        <text>
+            <![CDATA[检查]]>
+        </text>
+    </component>
+    <component id="ID_s2_RESET">
+        <text>
+            <![CDATA[重置]]>
+        </text>
+    </component>
+    <!--slide02-->
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>练习</b>]]></text>
+    </component>
+    
+
+<component id='ID_s2_title_instr'>
+	<text><![CDATA[说明]]></text>
+</component>
+
+<component id='ID_s2_body_instr'>
+	<text><![CDATA[将以太网帧字段名称拖动到图中的正确位置。]]></text>
+</component>
+
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[<b>IEEE 802.3 以太网帧字段</b>]]></text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[<b>7 个字节</b>]]></text>
+    </component>
+    <component id="ID_s2_txt03">
+        <text>
+            <![CDATA[<b>1 个字节</b>]]></text>
+    </component>
+    <component id="ID_s2_txt05">
+        <text>
+            <![CDATA[<b>6 个字节</b>]]></text>
+    </component>
+    <component id="ID_s2_txt04">
+        <text>
+            <![CDATA[<b>6 个字节</b>]]></text>
+    </component>
+    <component id="ID_s2_txt06">
+        <text>
+            <![CDATA[<b>2 个字节</b>]]></text>
+    </component>
+    <component id="ID_s2_txt07">
+        <text>
+            <![CDATA[<b>46-1500 个字节</b>]]></text>
+    </component>
+    <component id="ID_s2_txt08">
+        <text>
+            <![CDATA[<b>4 个字节</b>]]></text>
+    </component>
+    <!--Drag and Drop-->
+    <component id="ID_s2_traget01">
+        <text>
+            <![CDATA[<font color="#393536">源地址</font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_traget02">
+        <text>
+            <![CDATA[<font color="#393536">帧校验序列</font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag04">
+        <text>
+            <![CDATA[<font color="#393536">帧首定界符</font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_traget03">
+        <text>
+            <![CDATA[<font color="#393536">帧首定界符</font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_traget04">
+        <text>
+            <![CDATA[<font color="#393536">前导码</font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_traget05">
+        <text>
+            <![CDATA[<font color="#393536">802.2 报头和数据</font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_traget06">
+        <text>
+            <![CDATA[<font color="#393536">长度</font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_traget07">
+        <text>
+            <![CDATA[<font color="#393536">目的地址</font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_CORRECT_TITLE">
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id="ID_s2_CORRECT_BODY">
+        <text>
+            <![CDATA[您已成功地将以太网帧字段与其正确位置配对。]]>
+        </text>
+    </component>
+    <component id="ID_s1_INCORRECT_TITLE">
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id="ID_s2_INCORRECT_BODY">
+        <text>
+            <![CDATA[您未成功将以太网帧字段与其正确位置配对。 请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id="ID_s1_CHECK">
+        <text>
+            <![CDATA[检查]]>
+        </text>
+    </component>
+    <component id="ID_s1_RESET">
+        <text>
+            <![CDATA[重置]]>
+        </text>
+    </component>
+</textcomponents>

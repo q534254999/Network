@@ -1,0 +1,39 @@
+<textcomponents>
+
+	<component id="ID_title">
+		<text><![CDATA[<b>路由器上的 ACL 流量过滤</b>]]></text>
+	</component>
+
+	<component id="ID_txt01">
+		<text><![CDATA[<b>IPv4</b>]]></text>
+	</component>
+
+	<component id="ID_txt02">
+		<text><![CDATA[<b>IPv4</b>]]></text>
+	</component>
+
+	<component id="ID_txt01_1">
+		<text><![CDATA[<b>IPv6</b>]]></text>
+	</component>
+
+	<component id="ID_txt02_1">
+		<text><![CDATA[<b>IPv6</b>]]></text>
+	</component>
+
+	<component id="ID_txt03">
+		<text><![CDATA[每个接口、每个方向、每种协议一个列表]]></text>
+	</component>
+
+	<component id="ID_txt04">
+		<text><![CDATA[如果路由器有两个接口、运行着两种协议，那么该路由器上总共可以应用 8 个不同的 ACL。]]></text>
+	</component>
+
+	<component id="ID_txt05">
+		<text><![CDATA[应用 ACL 的规则]]></text>
+	</component>
+
+	<component id="ID_txt06">
+		<text><![CDATA[每种协议、每个接口和每个方向只能有一个 ACL：<textformat blockindent="-14"><ul><li>每种协议一个 ACL（例如 IPv4 或 IPv6）</li><li>每个方向一个 ACL（例如 IN 或 OUT）</li><li>每个接口一个 ACL（例如，GigabitEthernet0/0）</li></ul></textformat>]]></text>
+	</component>
+
+</textcomponents>

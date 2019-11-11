@@ -1,0 +1,1 @@
+图中显示了命令 debug ipv6 dhcp detail 的输出。图中突出显示了输出中指出 IPv6 DHCP 已从主机收到征求消息并且 IPv6 DHCP 正在使用 interface pool ipv6-stateful 的行。该图还突出显示了指出正在为池中的特定地址创建绑定的输出内容。

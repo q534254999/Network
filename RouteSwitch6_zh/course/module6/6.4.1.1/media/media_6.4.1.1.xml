@@ -1,0 +1,25 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[三楼]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[二楼]]></text> 
+</component>
+<component id="ID_txt03">
+  <text><![CDATA[一楼]]></text> 
+  </component>
+  <component id="ID_txt04">
+<text><![CDATA[VLAN 2<br/>IT<br/>10.0.2.0/24]]></text>
+</component>
+<component id="ID_txt05">
+  <text><![CDATA[VLAN 3<br/>HR<br/>10.0.3.0/24]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[VLAN 4<br/>销售<br/>10.0.4.0/24]]></text> 
+  </component>
+<component id="ID_txt07">
+  <text><![CDATA[在设计和配置 LAN 时，可以使用不同的 VLAN 间路由解决方案。]]></text> 
+</component>
+
+</textcomponents>

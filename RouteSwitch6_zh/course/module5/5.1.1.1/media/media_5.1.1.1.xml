@@ -1,0 +1,21 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>配置 BOOT 环境变量</b>]]></text> 
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[命令]]></text> 
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[存储设备]]></text> 
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[文件系统中位置的路径]]></text> 
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[IOS 的文件名]]></text> 
+</component>
+</textcomponents>

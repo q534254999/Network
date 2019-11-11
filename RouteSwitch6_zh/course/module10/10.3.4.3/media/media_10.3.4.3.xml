@@ -1,0 +1,27 @@
+<textcomponents>
+
+<component id="ID_title">
+	<text><![CDATA[<b>购买某一功能的许可证</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+	<text><![CDATA[IP Base<br/><font color="#918F90">数据<br/>统一通信<br/>安全</font>]]></text> 
+</component>
+
+<component id="ID_txt02">
+	<text><![CDATA[数据许可证]]></text> 
+</component>
+
+<component id="ID_txt03">
+	<text><![CDATA[统一通信许可证]]></text> 
+</component>
+
+<component id="ID_txt04">
+	<text><![CDATA[安全许可证]]></text> 
+</component>
+
+<component id="ID_txt05">
+	<text><![CDATA[数据<br/>统一通信<br/>安全]]></text> 
+</component>
+
+</textcomponents>

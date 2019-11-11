@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.1.1 Catalyst 交换机上的 VLAN 范围</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Catalyst 交换机上的 VLAN 范围</h1>
+        <div>
+          <p>不同的思科 Catalyst 交换机支持不同数量的 VLAN。支持的 VLAN 数足以满足大多数企业需要。例如，Catalyst 2960 和 3560 系列交换机支持 4,000 多个 VLAN。在这些交换机上，普通范围的 VLAN 编号为 1 到 1,005，扩展范围的 VLAN 编号为 1,006 到 4,094。图中显示了运行思科 IOS 版本 15.x 的 Catalyst 2960 交换机上的 VLAN。</p>
+          <p></p>
+          <p>
+            <b>普通范围的 VLAN</b>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>用于中小型商业网络和企业网络。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>VLAN ID 范围为 1 到 1005。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>ID 1002 到 1005 是预留给令牌环和光纤分布式数据接口 (FDDI) VLAN 的。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>ID 1 和 ID 1002 到 1005 是自动创建的，不能删除。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>配置存储在名为 vlan.dat 的 VLAN 数据库文件中。vlan.dat 文件位于交换机的闪存中。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>VLAN 中继协议 (VTP) 有助于管理交换机之间的 VLAN 配置，只能识别和存储普通范围的 VLAN。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>扩展范围的 VLAN</b>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>可让服务提供商扩展自己的基础架构以适应更多的客户。某些跨国企业的规模很大，从而需要使用扩展范围的 VLAN ID。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>VLAN ID 范围从 1006 到 4094。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>配置不会写入 vlan.dat 文件。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>支持的 VLAN 功能比普通范围的 VLAN 更少。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>默认保存在运行配置文件中。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>VTP 无法识别扩展范围的 VLAN。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>注</b>：由于 IEEE 802.1Q 报头的 VLAN ID 字段有 12 位，因此 4096 是 Catalyst 交换机上可用 VLAN 数的上限。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示将交换机端口配置为中继以及将本征 VLAN 配置为 VLAN 99 的语法。还显示了“show interfaces trunk”命令的输出。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+图 1 显示 show ip protocols 命令的输出。此路由器运行 RIPv1，且输出显示读数中列出的值。图 2 显示命令 show ip route | begin Gateway 的输出。其中列出显示两个直连路由、两个接口 IP 地址和三个通过 RIP 协议获取的网络路由的路由表。这三个网络在路由表中用大写字母 R 列出，表示它们是通过 RIP 更新获取的。图 3 是允许学生使用 show ip protocols 命令和 show ip route 命令查看路由器的当前路由协议配置和路由表的互动媒体元素。

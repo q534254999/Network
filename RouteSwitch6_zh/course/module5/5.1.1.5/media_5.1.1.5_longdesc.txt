@@ -1,0 +1,1 @@
+图 1 显示一个列出基本交换机配置命令的表。图 2 显示一个列出用于为交换机配置默认网关的命令的表。图 3 显示 show running-config 命令的输出。输出被截断，仅显示 FastEthernet 0/18 接口的配置，其中将 access vlan 99 配置为访问接口。图中还显示 show ip interface brief 命令的输出。此命令显示接口 vlan 99 的配置（包括 IP 地址及其状态）。

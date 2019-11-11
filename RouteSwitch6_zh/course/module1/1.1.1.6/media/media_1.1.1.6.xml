@@ -1,0 +1,58 @@
+<textcomponents>
+
+<component id='ID_txt01'>
+	<text><![CDATA[<b>控制平面</b>]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[<b>CPU</b>]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[<b>入口接口</b>]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[<b>数据平面</b>]]></text>
+</component>
+
+<component id='ID_txt05'>
+	<text><![CDATA[<b>出口<br>接口</b>]]></text>
+</component>
+
+<component id='ID_txt06'>
+	<text><![CDATA[第 1 个数据包]]></text>
+</component>
+
+<component id='ID_txt07'>
+	<text><![CDATA[第 2&nbsp;个数据包]]></text>
+</component>
+
+<component id='ID_txt08'>
+	<text><![CDATA[第 3 个数据包]]></text>
+</component>
+
+<component id='ID_txt09'>
+	<text><![CDATA[第 4 个数据包]]></text>
+</component>
+
+<component id='ID_txt10'>
+	<text><![CDATA[第 5 个数据包]]></text>
+</component><!-- Slide 1 --><component id='ID_s1_title'>
+	<text><![CDATA[<b>进程交换</b>]]></text>
+</component><!-- Slide 2 --><component id='ID_s2_title'>
+	<text><![CDATA[<b>快速交换</b>]]></text>
+</component>
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[<b>快进缓存</b>]]></text>
+</component><!-- Slide 3 --><component id='ID_s3_title'>
+	<text><![CDATA[<b>思科快速转发</b>]]></text>
+</component>
+
+
+
+<component id='ID_s3_txt01'>
+	<text><![CDATA[<b>FIB</b> 和<b>邻接表</b>]]></text>
+</component>
+</textcomponents>

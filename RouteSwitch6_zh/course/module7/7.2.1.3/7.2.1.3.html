@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.1.3 编号标准 IPv4 ACL 示例</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>编号标准 IPv4 ACL 示例</h1>
+        <div>
+          <p>图 1 显示了一个允许特定子网（除该子网上的一个特定主机之外）的 ACL 示例。</p>
+          <p></p>
+          <p>第一个命令将删除之前的 ACL 1 版本。下一条 ACL 语句将拒绝位于 192.168.10.10 的主机 PC1。但允许 192.168.10.0/24 网络中的其他各台主机。同样，隐式拒绝语句匹配所有其他网络。</p>
+          <p></p>
+          <p>该 ACL 将再次应用到接口 S0/0/0 的出站方向。</p>
+          <p></p>
+          <p>图 2 显示的是一个拒绝特定主机的 ACL 示例。该 ACL 用于取代上一示例的 ACL。此示例仍会阻止来自主机 PC1 的流量，但允许所有其他流量。</p>
+          <p></p>
+          <p>前两条命令与上一个示例相同。第一条命令删除之前的 ACL 1 版本，下一条 ACL 语句拒绝位于 192.168.10.10 网络中的主机 PC1。</p>
+          <p></p>
+          <p>第三行是一条新的语句，允许所有其他主机。这意味着将允许来自 192.168.10.0/24 网络的所有主机，但上一语句中拒绝的 PC1 除外。</p>
+          <p></p>
+          <p>此 ACL 将应用于接口 G0/0 的入站方向。因为该过滤只会影响 G0/0 上的 192.168.10.0/24 LAN，所以将 ACL 应用于入站接口更加有效。可将 ACL 应用于 S0/0/0 的出站方向，但是这样，R1 就必须检查来自所有网络（包括 192.168.11.0/24）的数据包。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description"> 图中显示了将 ACL 配置为拒绝特定主机，同时允许特定子网时所需的命令。该命令以全局配置模式开始。第一个命令删除之前的 ACL。此命令是 no access-list 1。下一个命令是 access-list 1 deny host 192.168.10.10。ACL 配置为允许此网络，所使用的命令是 access-list 1 permit 192.168.10.0 0.0.0.255。该命令通过 interface serial 0/0/0 命令进入广域网接口。最后，ACL 通过命令 ip access-group 1 out 应用于此接口出站方向上。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

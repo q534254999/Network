@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.2.3 分析动态 NAT</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>分析动态 NAT</h1>
+        <div>
+          <p>使用上述配置，该图演示了两个客户端和 Web 服务器之间的动态 NAT 转换过程：</p>
+          <p></p>
+          <p>图 1 显示了从内部流向外部的流量：</p>
+          <p></p>
+          <p>1.源 IPv4 地址为 192.168.10.10 (PC1) 和 192.168.11.10 (PC2) 的主机发送数据包，请求与位于公有 IPv4 地址 (209.165.200.254) 的服务器连接。</p>
+          <p>2.R2 收到来自主机 192.168.10.10 的第一个数据包。由于此数据包是在一个内部 NAT 接口上接收的，因此 R2 将检查 NAT 配置，以确定是否应该对其进行转换。ACL 允许该数据包，因此 R2 对数据包进行转换。R2 将检查其 NAT 表。因为此 IPv4 地址的转换条目不存在，所以 R2 确定必须动态转换源地址 192.168.10.10。R2 从动态地址池中选择一个可用全局地址，并创建一个转换条目 209.165.200.226。在 NAT 表中，最初的源 IPv4 地址 (192.168.10.10) 是内部本地地址，而转换后的地址是内部全局地址 (209.165.200.226)。 </p>
+          <p></p>
+          <p>对于第二台主机 192.168.11.10，R2 将重复以上程序，从动态地址池中选择下一个可用全局地址，并创建第二个转换条目 209.165.200.227。</p>
+          <p></p>
+          <p>3.R2 使用转换后的内部全局地址 209.165.200.226 替换 PC1 的内部本地源地址 192.168.10.10。使用 PC2 转换后的地址 (209.165.200.227)，对来自 PC2 的数据包执行同一过程。</p>
+          <p></p>
+          <p>图 2 显示了从外部流向内部的流量：</p>
+          <p></p>
+          <p>4.服务器收到来自 PC1 的数据包，使用 IPv4 目标地址 209.165.200.226 做出响应。当服务器收到第二个数据包时，它将使用 IPv4 目标地址 209.165.200.227 对 PC2 做出响应。</p>
+          <p>5a.R2 收到目标 IPv4 地址为 209.165.200.226 的数据包时，它执行 NAT 表查找。使用来自表的映射，R2 将地址转换回内部本地地址 (192.168.10.10) 并将数据包转发到 PC1。 </p>
+          <p>5b.R2 收到目标 IPv4 地址为 209.165.200.227 的数据包时，它执行 NAT 表查找。使用来自表的映射，R2 将地址转换回内部本地地址 (192.168.11.10) 并将数据包转发到 PC2。</p>
+          <p>6.位于 192.168.10.10 的 PC1 和位于 192.168.11.10 的 PC2 接收数据包并继续会话。路由器对每个数据包执行步骤 2 至步骤 5。（图中未显示步骤 6。）</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示路由器 2，内部网络在左侧，外部网络在右侧。内部网络包含路由器 1 和两个计算机。外部网络包含一个服务器。有数据包从两台计算机发送到服务器，并且显示了其对应的内部地址和外部地址。图像下方列出了使用的 NAT 池。图 2 显示了相同的拓扑，数据包从服务器发送回计算机。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.2.4 通配符掩码关键字</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>通配符掩码关键字</h1>
+        <div>
+          <p>使用二进制通配符掩码位的十进制表示有时可能显得比较冗长。此时可使用关键字 <b>host</b> 和 <b>any</b> 来标识最常用的通配符掩码，从而简化此任务。这些关键字避免了在标识特定主机或完整网络时输入通配符掩码的麻烦。这些关键字还可提供有关条件的来源和目标的可视化提示，使 ACL 更加易于理解。</p>
+          <p></p>
+          <p><b>host</b> 关键字可替代 0.0.0.0 掩码。此掩码表明，所有 IPv4 地址位均必须匹配，才能过滤出一个主机地址。</p>
+          <p><b>any</b> 选项可替代 IPv4 地址和 255.255.255.255 掩码。该掩码表示忽略整个 IPv4 地址，这意味着接受任何地址。 </p>
+          <p></p>
+          <p>
+            <b>示例 1：匹配单个 IPv4 地址的通配符掩码过程</b>
+          </p>
+          <p></p>
+          <p>在该图的示例 1 中，我们可以不输入 <b>192.168.10.10 0.0.0.0</b>，而是使用 <b>host 192.168.10.10</b>。 </p>
+          <p></p>
+          <p>
+            <b>示例 2：匹配所有 IPv4 地址的通配符掩码过程</b>
+          </p>
+          <p></p>
+          <p>在该图的示例 2 中，我们可以不输入 <b>0.0.0.0 255.255.255.255</b>，而是使用关键字 <b>any</b>。</p>
+          <p></p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示一个全零通配符掩码的示例，此通配符掩码精确匹配 IP 地址匹配项的所有二进制位。图中还显示了表明所有 IP 地址都将会匹配的全零通配符掩码。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

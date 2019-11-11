@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.2.3 逻辑 AND 运算</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>逻辑 AND 运算</h1>
+        <div>
+          <p>逻辑 AND 运算是数字逻辑中使用的三种基本二进制运算之一。另外两种是 OR 和 NOT。虽然这三种运算都用于数据网络中，不过用于确定网络地址的是 AND。因此，本章的讨论仅限于逻辑 AND 运算。 </p>
+          <p>逻辑 AND 运算比较两个位，所得结果如图 1 所示。注意只有 1 AND 1 等于 1。</p>
+          <p>要确定 IPv4 主机的网络地址，要在子网掩码内对 IPv4 地址进行逐位逻辑AND 运算。地址和子网掩码之间的 AND 运算得到的结果就是网络地址。 </p>
+          <p>要举例说明 AND 是如何用于发现网络地址的，假设主机的 IPv4 地址为 192.168.10.10，子网掩码为 255.255.255.0。图 2 为主机的 IPv4 地址和转换的二进制地址。图 3 为主机子网掩码的二进制地址。 </p>
+          <p>图 4 的黄色突出显示部分确定在 AND 结果行中生成一个二进制 1 的 AND 位。所有其他位的比较生成二进制 0。注意最后的二进制八位数不再有任何二进制 1 位。 </p>
+          <p>最后，图 5 显示结果网络地址为 192.168.10.0 255.255.255.0。因此，主机 192.168.10.10 在网络 192.168.10.0 255.255.255.0 上。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the logical AND operation where 1 and 1 equal 1 and all other possibilities equal zero. Figure 2 shows the dotted decimal and binary formats for the IP address 192.168.10.10. Figure 3 adds the dotted decimal and binary formats for the subnet mask 255.255.255.0 to Figure 2. Figure 4 shows the ANDing operation between the binary format of the IP address and the binary format of the subnet mask. Figure 5 shows the result of the ANDing operation is the network address, 192.168.10.0</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

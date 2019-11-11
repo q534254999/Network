@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.1.2 接口和端口</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>接口和端口</h1>
+        <div>
+          <p>网络通信取决于最终用户设备接口、网络设备接口以及连接设备的电缆。每个物理接口都有对其进行定义的规范或标准。连接接口的电缆必须设计为匹配接口的物理标准。网络介质类型包括双绞线铜缆、光缆、同轴电缆和无线，如图所示。 </p>
+          <p></p>
+          <p>不同类型的网络介质有不同的特性和优点。并非所有网络介质的特征都相同，也不一定适合同样的用途。各种介质类型之间的差异包括：</p>
+          <p>
+            <ul>
+              <li>介质可以成功传送信号的距离</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>要安装介质的环境</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>必须传输的数据量和速度</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>介质和安装的成本</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Internet 上的每条链路不仅需要采用特定的网络介质，而且需要采用特定的网络技术。例如，以太网是当今最常用的局域网 (LAN) 技术。在使用电缆物理连接到网络的最终用户设备、交换设备和其他网络设备上，均可找到以太网端口。 </p>
+          <p></p>
+          <p>Cisco IOS 第 2 层交换机有物理端口，可用于连接设备。这些端口不支持第 3 层 IP 地址。因此，交换机有一个或多个交换机虚拟接口 (SVI)。这些是虚拟接口，是因为设备上没有任何物理硬件与之关联。软件中会创建 SVI。 </p>
+          <p></p>
+          <p>借助虚拟接口，即可使用 IPv4 通过网络远程管理交换机。每台交换机的默认配置中都“现成”带有一个 SVI。默认 SVI 是接口 VLAN1。</p>
+          <p></p>
+          <p>
+            <b>注意</b>：2 层交换机不需要 IP 地址。分配给 SVI 的 IP 地址用于远程访问交换机。2层交换机无需使用 IP 地址来执行其操作。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows several pictures.  One picture of several fixed port switches, two pictures of copper media, two pictures of fiber media, and 3 pictures of wireless devices.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

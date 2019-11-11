@@ -1,0 +1,122 @@
+﻿<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>物理拓扑</b>]]></text>
+    </component>
+    <component id="ID_txt20">
+        <text>
+            <![CDATA[<b>互联网</b>]]></text>
+    </component>
+    <component id="ID_txt21">
+        <text>
+            <![CDATA[<b>Web 服务器</b>]]></text>
+    </component>
+    <component id="ID_txt22">
+        <text>
+            <![CDATA[<b>电子邮件服务器</b>]]></text>
+    </component>
+    <component id="ID_txt23">
+        <text>
+            <![CDATA[<b>文件服务器</b>]]></text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[机架 2<br/>架板 1]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[机架 2<br/>架板 2]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[机架 2<br/>架板 3]]>
+        </text>
+    </component>
+    <component id="ID_txt12">
+        <text>
+            <![CDATA[机架 1<br/>架板 2]]>
+        </text>
+    </component>
+    <component id="ID_txt11">
+        <text>
+            <![CDATA[机架 1<br/>架板 1]]>
+        </text>
+    </component>
+    <component id="ID_txt13">
+        <text>
+            <![CDATA[机架 1<br/>架板 3]]>
+        </text>
+    </component>
+    <component id="ID_txt09">
+        <text>
+            <![CDATA[机架 1<br/>架板 1]]>
+        </text>
+    </component>
+    <component id="ID_txt08">
+        <text>
+            <![CDATA[机架 1<br/>架板 2]]>
+        </text>
+    </component>
+    <component id="ID_txt10">
+        <text>
+            <![CDATA[机架 1<br/>架板 3]]>
+        </text>
+    </component>
+    <component id="ID_txt14">
+        <text>
+            <![CDATA[<b>服务器机房：Rm: 2158</b>]]></text>
+    </component>
+    <component id="ID_txt15">
+        <text>
+            <![CDATA[<b>IT 办公室：Rm: 2159</b>]]></text>
+    </component>
+    <component id="ID_txt16">
+        <text>
+            <![CDATA[<b>Rm: 2124</b>]]></text>
+    </component>
+    <component id="ID_txt17">
+        <text>
+            <![CDATA[<b>1 班：Rm: 2125</b>]]></text>
+    </component>
+    <component id="ID_txt18">
+        <text>
+            <![CDATA[<b>2 班：Rm: 2126</b>]]></text>
+    </component>
+    <component id="ID_txt19">
+        <text>
+            <![CDATA[<b>3 班：Rm: 2127</b>]]></text>
+    </component>
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>逻辑拓扑</b>]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[<b>互联网</b>]]></text>
+    </component>
+    
+   
+  
+    <component id="ID_txt24">
+        <text>
+            <![CDATA[<b>网络 <br/>192.168.10.0</b>]]></text>
+    </component>
+    <component id="ID_txt25">
+        <text>
+            <![CDATA[<b>网络 <br/>192.168.11.0</b>]]></text>
+    </component>
+    <component id="ID_txt26">
+        <text>
+            <![CDATA[<b>网络 192.168.100.0</b>]]></text>
+    </component>
+    <component id="ID_txt27">
+        <text>
+            <![CDATA[<b>网络 192.168.101.0</b>]]></text>
+    </component>
+    <component id="ID_txt28">
+        <text>
+            <![CDATA[<b>网络 192.168.102.0</b>]]></text>
+    </component>
+</textcomponents>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.1.3 协议交互</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>协议交互</h1>
+        <div>
+          <p>Web 服务器和 Web 客户端之间的通信就是多种协议之间进行交互的一个示例。图中所示协议包括：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>HTTP -</b> 是一种应用程序协议，控制 Web 服务器和 Web 客户端进行交互的方式。HTTP 定义了客户端和服务器之间交换的请求和响应的内容与格式。客户端软件和 Web 服务器软件都将 HTTP 作为应用程序的一部分来实现。HTTP 依靠其他协议来控制客户端和服务器之间传输消息的方式。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>TCP</b> - 是用于管理单个会话的传输协议。TCP 将 HTTP 消息划分为较小的片段，称为数据段。这些数据段将在目的主机上运行的 Web 服务器和客户端进程之间进行传送。TCP 还负责控制服务器和客户端之间交换的消息的大小和传输速率。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>IP -</b> 负责从 TCP 获取格式化数据段，将其封装成数据包，为它们分配相应的地址并将其传送到目的主机。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>以太网 </b>- 是一种网络访问协议，描述两个主要功能：数据链路上的通信和网络介质中数据的物理传输。网络访问协议负责接收来自 IP 的数据包并将其封装为适合通过介质传输的格式。</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the protocol stack interaction during a web server and a web client communication.  This communication begins with the hypertext transport protocol (HTTP), it is then passed to the Transmission Control Protocol (TCP), from here it is passed to the Internet Protocol (IP) layer, and lastly it is passed to a network access protocol such as Ethernet.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

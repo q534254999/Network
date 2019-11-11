@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.1.2 MAC 子层</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>MAC 子层</h1>
+        <div>
+          <p>如图所示，以太网 MAC 子层有两项主要职责：</p>
+          <p>
+            <ul>
+              <li>数据封装</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>介质访问控制</li>
+            </ul>
+          </p>
+          <p>
+            <b>数据封装</b>
+          </p>
+          <p>数据封装过程包括发送前的帧组装和收到帧时的帧解析。在构建帧时，MAC 层会向网络层 PDU 添加帧头和帧尾。 </p>
+          <p>数据封装提供三项主要功能：</p>
+          <p>
+            <ul>
+              <li>
+                <b>帧定界 -</b> 成帧过程提供重要的定界符，用于标识组成帧的一组位。这些定界位会对发送节点与接收节点进行同步。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>编址 -</b> 封装过程包含第 3 层 PDU，还提供数据链路层编址。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>错误检测 -</b> 每个帧中包含一个帧尾，用于检测传输中的任何错误。</li>
+            </ul>
+          </p>
+          <p>帧的使用有助于比特的发送，因为会把它们组成比特组放在介质中和在接收节点接收。</p>
+          <p>
+            <b>介质访问控制</b>
+          </p>
+          <p>MAC 子层的第二项职责是介质访问控制。介质访问控制负责将帧放入介质中和从介质中移除帧。顾名思义，它控制对介质的访问。该子层直接与物理层通信。</p>
+          <p>以太网的基础逻辑拓扑是一个多路访问总线；因此，各个网段的所有节点（设备）共享介质。以太网是一种网络争用方法。网络争用方法是指一旦有数据需要发送，所有设备都可以尝试通过共享介质传输数据。载波侦听多路访问/冲突检测 (CSMA/CD) 过程用于在半双工以太网 LAN 中检测和解决冲突。当前的以太网 LAN 采用全双工交换机，可使多台设备同时发送和接受，并无任何冲突。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the physical layer and how it connects to the MAC sublayer of layer 2.  This figure also shows how the MAC sublayer is split into Signaling standards as well as physical media standards.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

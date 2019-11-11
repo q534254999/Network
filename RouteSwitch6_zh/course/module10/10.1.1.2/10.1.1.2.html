@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.1.1.2 配置和验证 CDP</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置和验证 CDP</h1>
+        <div>
+          <p>对于思科设备，CDP 默认启用。出于安全原因，理想做法是在网络设备上全局禁用 CDP，或在每个接口上禁用。利用 CDP，攻击者可以收集有关网络布局的重要信息，比如 IP 地址、IOS 版本和设备类型。</p>
+          <p></p>
+          <p>如示例 1 所示，要验证 CDP 的状态并显示有关 CDP 的信息，请输入 <b>show cdp</b> 命令。</p>
+          <p></p>
+          <p>要为设备上所有受支持的接口全局启用 CDP，请在全局配置模式下输入 <b>cdp run</b>。在全局配置模式下使用 <b>no cdp run</b> 命令，可以为设备上的所有接口禁用 CDP。</p>
+          <p></p>
+          <p>要禁用特定接口上的 CDP（例如面向 ISP 的接口），请在接口配置模式下输入 <b>no cdp enable</b>。设备上仍然启用 CDP；但不再有任何 CDP 通告从此端口发送出去。如图 2 所示，要在特定接口上重新启用 CDP，请输入 <b>cdp enable</b>。</p>
+          <p></p>
+          <p>如图 3 所示，使用 <b>no cdp run</b> 命令全局禁用 CDP，并使用 <b>cdp run</b> 命令重新启用 CDP。</p>
+          <p></p>
+          <p>要验证 CDP 的状态和显示邻居列表，请在特权 EXEC 模式下使用 <b>show cdp neighbors</b> 命令。<b>show cdp neighbors</b> 命令显示有关 CDP 邻居的重要信息。如图 4 中显示的 <b>show cdp neighbors</b> 命令结果所示，目前此设备没有任何邻居，因为它尚未物理连接到任何设备。</p>
+          <p></p>
+          <p>使用 <b>show cdp interface </b>命令显示设备上启用 CDP 的接口。每个接口的状态也会显示。图 5 显示，在只有一个指向另一台设备的活动连接的路由器上，五个接口启用了 CDP。</p>
+          <p></p>
+          <p>使用图 6 中的语法检查程序来练习配置和验证 CDP。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 使用“show cdp”命令显示 CDP 的默认设置，包括每 60 秒发送 CDP 消息、180 秒的保持时间以及启用 CDPv2。图 2 显示了在交换机的 gigabitethernet 0/1 接口上配置的“cdp enable”命令。在图 3 中，CDP 通过“no cdp run”命令全局禁用。然后，“show cdp”验证它是否已禁用。最后，全局重新启用 CDP。在图 4 中，“show cdp neighbors”命令的输出显示路由器没有 CDP 邻居。在图 5 中，“show cdp interface”命令的输出突出显示了 gigabitethernet 0/1 为 up 状态。所有接口都启用了 CDP。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

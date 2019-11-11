@@ -1,0 +1,42 @@
+<textcomponents>
+
+<component id="ID_title">
+  <text><![CDATA[<b>中继的常见问题</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>做出决定并选择操作系统</b>]]></text> 
+ </component>
+ 
+ <component id="ID_table01">
+<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="mtable_top">
+<td colspan='3' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+</tr>
+
+<tr>
+<td width="130" bgcolor='#077A77' valign="top" class="mtitle"><font color='#ffffff'><b>问题</b></font></td>
+<td  width="150" bgcolor='#077A77' valign="top" class="mtitle"><font color='#ffffff'><b>结果</b></font></td>
+<td  width="150" bgcolor='#077A77' valign="top" class="mtitle"><font color='#ffffff'><b>示例</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#eff8f7' valign="top"><font color='#393536'>原生 VLAN 不匹配</font></td>
+<td bgcolor='#eff8f7' valign="top"><font color='#393536'>引发安全风险并导致意外结果。</font></td>
+<td bgcolor='#eff8f7' valign="top"><font color='#393536'>例如，一个端口定义为 VLAN 99，而另一个端口定义为 VLAN 100。</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#ffffff' valign="top"><font color='#393536'>中继模式不匹配</font></td>
+<td  bgcolor='#ffffff' valign="top"><font color='#393536'>导致网络连接丢失。</font></td>
+<td  bgcolor='#ffffff' valign="top"><font color='#393536'>例如，中继的一端配置为接入端口。</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#eff8f7' valign="top"><font color='#393536'>TRUNK 上允许的 VLAN</font></td>
+<td  bgcolor='#eff8f7' valign="top"><font color='#393536'>导致意外的流量或没有流量通过 TRUNK 发送。</font></td>
+<td  bgcolor='#eff8f7' valign="top"><font color='#393536'>允许的 VLAN 列表不支持当前的 VLAN 中继要求。</font></td>
+</tr>
+</table>]]></text> 
+</component>
+ 
+</textcomponents>

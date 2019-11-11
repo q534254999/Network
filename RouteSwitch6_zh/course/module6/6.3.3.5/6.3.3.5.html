@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.3.5 配置单臂路由器：验证路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.3.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置单臂路由器：验证路由</h1>
+        <div>
+          <p>在配置路由器和交换机来执行 VLAN 间路由后，下一步是验证主机之间的连接。可使用<span class="cmd"><b></b></span><b>ping</b><span class="cmd"><b></b></span>命令测试对远程 VLAN 上的设备的访问。 </p>
+          <p></p>
+          <p>对于图中显示的示例，从 PC1 向 PC3 的目标地址发起<span class="cmd"><b></b></span><b>ping</b><span class="cmd"><b></b></span>和<span class="cmd"><b></b></span><b>tracert</b><span class="cmd"><b></b></span>。</p>
+          <p></p>
+          <p>
+            <b>Ping 测试</b>
+          </p>
+          <p></p>
+          <p><span class="cmd"><b></b></span><b>ping</b><span class="cmd"><b></b></span>命令将 ICMP 回应请求发送到目标地址。主机收到 ICMP 回应请求后，将通过 ICMP 应答确认已收到该请求。<span class="cmd"><b></b></span><b>ping</b><span class="cmd"><b></b></span>命令通过发出回应请求和收到回应答复的时间差来计算运行时间。再根据该时间确定连接延时。如果成功接收到回应，证明发送设备和接收设备间存在路径。</p>
+          <p></p>
+          <p>
+            <b>Tracert 测试</b>
+          </p>
+          <p></p>
+          <p>Tracert 实用程序用于确定两台设备间的路由路径的有效性。在 UNIX 系统中，该实用程序由<span class="cmd"><b></b></span><b>traceroute</b><b>指定。</b>Tracert 也通过 ICMP 确定所取路径，但它采用的 ICMP 回应请求在指定帧上规定了特定生存时间值。 </p>
+          <p></p>
+          <p>生存时间值用于确定 ICMP 回应可以经过的路由器跳数。第一个发送的 ICMP 回应请求包含一个生存时间值设置，使其在到达目标设备路径中的第一台路由器时到期。 </p>
+          <p></p>
+          <p>如果 ICMP 响应请求在第一条路由超时，路由器将向源设备发回 ICMP 信息。设备记录路由器的响应后，继续发送生存时间值更长的 ICMP 回应请求。这样， ICMP 回应请求就能够通过第一台路由器，到达最终目的地路径中的第二台设备。递归重复该过程，直到 ICMP 响应请求一直沿着路径发送至最终目标设备。在发出<span class="cmd"><b></b></span><b>tracert</b><span class="cmd"><b></b></span>实用程序运行完毕后，将显示 ICMP 回应请求到达目标时所经过的入口路由器接口列表。</p>
+          <p></p>
+          <p>在本示例中，<span class="cmd"><b></b></span><b>ping</b><span class="cmd"><b></b></span>实用程序可向 PC3 的 IP 地址发送 ICMP 回应请求。除此之外，<span class="cmd"><b></b></span><b>tracert</b><span class="cmd"><b></b></span>实用程序确认到 PC3 的路径会经过路由器 R1 的子接口 IP 地址 172.17.10.1。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示从单独 VLAN 和子网上的 PC 角度来讲，通过单臂路由器 VLAN 间路由拓扑到远程主机的 ping 测试结果。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

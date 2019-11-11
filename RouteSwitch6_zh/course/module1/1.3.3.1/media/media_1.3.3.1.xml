@@ -1,0 +1,18 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>静态路由和默认路由场景</b>]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[互联网]]></text> 
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[R2 用作所有网络的下一跳，包括没有直连到 R1 的互联网；因此，R1 应该有配置为指向 R2 的默认路由。]]></text> 
+  </component>
+
+  <component id="ID_txt03">
+  <text><![CDATA[R1 仅包含两个 R2 需要了解的直连网络。 可以在 R2 上配置两个静态路由条目，以允许路由添加至路由表中。]]></text> 
+  </component>
+<component id="transcript">
+  <text><![CDATA[<b>此处显示脚本</b>]]></text> 
+  </component>
+</textcomponents>

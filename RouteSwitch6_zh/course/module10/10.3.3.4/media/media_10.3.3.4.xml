@@ -1,0 +1,12 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>使用<font face="_typewriter"> boot system </font>命令</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+<text><![CDATA[设置映像以启动和重新加载系统。]]></text>
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>检验新的映像</b>]]></text>
+</component>
+</textcomponents>

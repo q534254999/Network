@@ -1,0 +1,87 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>检验命令</b>]]></text>
+</component>
+
+<component id="ID_s1_table01">
+<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000'glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+<tr class="mtitle">
+	<td colspan='2' bgcolor='#98D3D1' class="mtitle"><font size='12' class="font11px" color='#393536'><b>思科交换机 IOS 命令</b></font></td>
+</tr>
+<tr>
+<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#0E6360'><span 
+style="color:#98D3D1">.</span></font></td>
+</tr>
+<tr>
+<td bgcolor='#EFF8F7' valign="top">显示接口状态信息和配置信息。</td>
+<td bgcolor='#EFF8F7' valign="top" width="260"><font face="_typewriter">S1# <b class="command">show interfaces </b>[<i>接口 id</i>]</font></td>
+</tr>
+<tr>
+<td bgcolor='#ffffff' valign="top">显示当前启动配置。</td>
+<td bgcolor='#ffffff' valign="top"><font face="_typewriter">S1# <b class="command">show startup-config</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#EFF8F7' valign="top">显示当前运行配置。</td>
+<td bgcolor='#EFF8F7' valign="top"><font face="_typewriter">S1# <b class="command">show running-config</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#ffffff' valign="top"> 显示有关闪存文件系统的信息。</td>
+<td bgcolor='#ffffff' valign="top"><font face="_typewriter">S1# <b class="command">show flash</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#EFF8F7' valign="top">显示系统硬件和软件状态。</td>
+<td bgcolor='#EFF8F7' valign="top"><font face="_typewriter">S1# <b class="command">show version</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#ffffff' valign="top">显示输入的命令历史记录。</td>
+<td bgcolor='#ffffff' valign="top"><font face="_typewriter">S1# <b class="command">show history</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#EFF8F7' valign="top">显示接口的 IP 信息。</td>
+<td bgcolor='#EFF8F7' valign="top"><font face="_typewriter">S1# <b class="command">show ip </b>[<i>接口 id</i>]</font></td>
+</tr>
+<tr>
+<td bgcolor='#ffffff' valign="top">显示 MAC 地址表。</td>
+<td bgcolor='#ffffff' valign="top"><font face="_typewriter">S1# <b class="command">show mac-address-table</b></font><br/>或<br/><font face="_typewriter"> S1# <b class="command">show mac address-table</b></font></td>
+</tr>
+</table>]]></text>
+</component>
+
+
+
+
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>运行配置</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+</component>
+
+<component id="ID_s2_txt04">
+<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+</component>
+
+<component id="ID_s2_txt05">
+<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+</component>
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>接口状态</b>]]></text>
+</component>
+
+<component id="ID_s3_txt01">
+<text><![CDATA[&lt;省略部分输出&gt;]]></text>
+</component>
+
+</textcomponents>

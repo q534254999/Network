@@ -1,0 +1,10 @@
+﻿<textcomponents>
+	
+	<component id="ID_type">
+		<text><![CDATA[Packet Tracer]]></text>
+	</component>
+	<component id="ID_title">
+		<text><![CDATA[在 VTY 线路上配置 IPv4 ACL]]></text>
+	</component>
+	
+</textcomponents>

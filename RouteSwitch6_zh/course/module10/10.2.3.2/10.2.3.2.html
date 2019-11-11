@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.3.2 默认日志记录</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>默认日志记录</h1>
+        <div>
+          <p>默认情况下，思科路由器和交换机会向控制台发送所有严重性级别的日志消息。在某些 IOS 版本中，默认情况下设备还会缓冲这些系统日志消息。要启用这两项设置，请分别使用 <b>logging console</b> 和 <b>logging buffered</b> 全局配置命令。 </p>
+          <p></p>
+          <p><b>show logging</b> 命令显示思科路由器的默认日志记录服务设置，如图所示。第一行输出列出关于日志记录流程的信息，而最后一行列出日志消息。</p>
+          <p></p>
+          <p>突出显示的第一行表明此路由器将日志记录到控制台并包括调试消息。这实际上意味着所有调试级别的消息以及级别更低的所有消息（例如通知级别的消息）都已记录到控制台。在大多数思科 IOS 路由器上，默认严重性级别为调试级别 7。从输出中还可发现，已记录了 32 条此类消息。</p>
+          <p></p>
+          <p>突出显示的第二行表明此路由器将日志记录到内部缓冲区。由于此路由器已启用了记录到内部缓冲区，<b>show logging</b> 命令也列出了该缓冲区中的消息。您可以查看输出末尾记录的部分系统消息。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了在路由器上“show logging”命令的输出。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

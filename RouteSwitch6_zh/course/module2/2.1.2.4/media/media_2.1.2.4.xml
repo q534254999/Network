@@ -1,0 +1,8 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>使用一个总结静态路由</b>]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[我可以代表全部四个网络：<ul class="bubbleBullets"><li>172.20.0.0/16</li><li>172.21.0.0/16</li><li>172.22.0.0/16</li><li>172.23.0.0/16</li></ul><br/>使用一条总结路由：<ul><li>172.20.0.0/14</li></ul>]]></text> 
+  </component>
+</textcomponents>

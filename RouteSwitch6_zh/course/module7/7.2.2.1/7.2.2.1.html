@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.2.1 方法 1 - 使用文本编辑器</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>方法 1 - 使用文本编辑器</h1>
+        <div>
+          <p>当一个人熟悉了 ACL 的创建和编辑后，使用文本编辑器（例如 Microsoft 记事本）构建 ACL 可能会比较容易。您可以在编辑器中创建或编辑 ACL，然后将其粘贴到路由器接口中。对于现有的 ACL，您可以使用 <b>show running-config</b> 命令显示 ACL，将其复制粘贴到文本编辑器中，进行必要的更改并将其粘贴回到路由器接口中。 </p>
+          <p></p>
+          <p>
+            <b>配置</b>：例如，假设图中的主机 IPv4 地址的输入有误。不应该输入 192.168.10.99 主机，而应该输入 192.168.10.10 主机。以下是编辑和更正 ACL 1 的步骤：</p>
+          <p></p>
+          <p>
+            <b>步骤 1.</b>使用 <b>show running-config</b> 命令显示 ACL。图中的示例使用 <b>include</b> 关键字以便仅显示 ACE。</p>
+          <p></p>
+          <p>
+            <b>步骤 2.</b>选中 ACL、将其复制并粘贴到 Microsoft 记事本中。根据需要编辑列表。在 Microsoft 记事本中更正了 ACL 之后，选中它并复制。</p>
+          <p></p>
+          <p>
+            <b>步骤 3.</b>在全局配置模式下，使用 <b>no access-list 1</b> 命令移除访问列表。否则，新的语句将附加到现有的 ACL 之后。然后，将新的 ACL 粘贴到路由器的配置中。</p>
+          <p></p>
+          <p>
+            <b>步骤 4.</b>使用 <b>show running-config</b> 命令验证更改。</p>
+          <p></p>
+          <p>应该注意的是，当使用 <b>no access-list</b> 命令时，不同 IOS 软件版本的运行方式不同。如果将已删除的 ACL 仍应用于接口，那么某些 IOS 版本的运行与没有 ACL 保护网络时一样，而另外一些版本会拒绝所有流量。因此，比较好的做法是在修改访问列表之前将有关访问列表从接口删除。如果新列表中出现错误，则将其禁用并对问题进行故障排除。在那种情况下，您的网络在更正过程会失去 ACL 的保护。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了使用文本编辑器编辑编号 ACL 的过程。第一个命令创建一个编号为 1 的编号 ACL。此 ACL 可以使用命令 show running-config | include access-list 1 查看。此 ACL 可以复制并粘贴到文本编辑器中并进行编辑。使用关键字 no 从接口上移除当前 ACL。然后，将新 ACL 复制粘贴到路由器上，并且可以使用命令 show running-config | include access-list 1 验证此新 ACL。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

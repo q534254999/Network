@@ -1,0 +1,13 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>准备远程管理</b>]]></text>
+	</component>	
+	
+	<component id="ID_txt01">
+		<text><![CDATA[控制台电缆]]></text>
+	</component>
+	
+	<component id="ID_Body_txt01">
+		<text><![CDATA[<textformat blockindent='-14' ><ul><li>控制台电缆用于将 PC 连接到交换机的控制台端口以便进行配置。</li><li>要远程管理交换机，开始时必须通过控制台端口配置交换机。</li></ul></textformat>]]></text>
+	</component>	
+</textcomponents>

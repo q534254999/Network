@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.3.2.4 直连 IPv6 示例</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.3.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>直连 IPv6 示例</h1>
+        <div>
+          <p>图 1 中的示例显示了使用指定的 IPv6 地址配置 R1 的直连接口的步骤。注意在配置并激活每个接口时生成的第 1 层和第 2 层信息消息。</p>
+          <p></p>
+          <p>图 2 所示的 <b>show ipv6 route</b> 命令用于验证 IPv6 路由表中是否已安装 IPv6 网络和特定 IPv6 接口地址。与 IPv4 相似，路由旁边的“<b>C</b>”表示这是一个直连网络。“<b>L</b>”表示本地路由。在 IPv6 网络中，本地路由具有 /128 前缀。路由表使用本地路由来有效处理目的地址为路由器接口的数据包。 </p>
+          <p></p>
+          <p>注意，还有一个安装到 FF00::/8 网络中的路由。组播路由中要求使用此路由。</p>
+          <p></p>
+          <p>图 3 显示如何结合使用 <b>show ipv6 route</b> 命令和特定网络目标来显示有关路由器如何获取该路由的详细信息。 </p>
+          <p></p>
+          <p>图 4 显示如何使用 <b>ping</b> 命令验证与 R2 的连接。 </p>
+          <p></p>
+          <p>在图 5 中，请注意当 <b>ping</b> 命令的目标为 R2 的 G0/0 LAN 接口时会发生什么情况？结果 ping 失败。这是因为 R1 在路由表中没有到达 2001:DB8:ACAD:4::/64 网络的条目。 </p>
+          <p></p>
+          <p>R1 需要使用其他信息才能到达远程网络。可以使用以下方式将远程网络的路由条目添加到路由表中：</p>
+          <p>
+            <ul>
+              <li>静态路由 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>动态路由协议</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示使用 IPv6 地址配置路由器的直连接口的步骤。该命令以全局配置模式开始。使用第一个命令可进入该接口，该命令是 interface gigabitEthernet 0/0。下一命令将描述置于接口的配置文件中，该命令是 LAN 1 链路描述。下一命令分配 IP 地址，这是 IPv6 地址 2001:db8:acad:1::1/64。现在必须使用 no shutdown 命令开启此接口。该接口更改为启动状态。为路由器的接下来两个接口重复此过程。图 2 显示 show ipv6 route 命令的输出。这将显示 IPv6 路由表且与 IPv4 路由表非常类似。图 3 显示路由特定命令 show ipv6 route 2001:db8:acad:1::/64 的输出。这将仅显示指定网络的路由表条目。图中是直连路由。图 4 显示 IPv6 ping 命令。语法是 ping 2001:db8:acad:3::2。在图中，发送了 5 个 100 字节回应请求并收到 5 个。图 5 显示 IPv6 ping 命令。语法是 ping 2001:db8:acad:4::1。在图中，发送了 5 个 100 字节回应请求，收到零个，因为指定网络没有路由。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

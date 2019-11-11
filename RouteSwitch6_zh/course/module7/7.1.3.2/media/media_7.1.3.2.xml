@@ -1,0 +1,32 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>ACL 最佳做法</b>]]></text>
+</component>
+
+  <component id="ID_table">
+  <text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td colspan='2' bgcolor='#0E6360' class="liner_top"><font size='1' color='#0E6360'><span style="color:#98D3D1">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#077A77'  valign="top" width="200"><font color='#ffffff' size="11"><b>指南</b></font></td>
+		<td bgcolor='#077A77'  valign="top"><font color='#ffffff' size="11"><b>收益</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'>根据组织的安全策略设定 ACL。</td>
+		<td bgcolor='#FFFFFF'>这样可以确保遵循组织的安全要求。</td>
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7'>记下您打算用 ACL 来达到什么目的。</td>
+		<td bgcolor='#EFF8F7'>这有助于避免不小心造成访问问题。</td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'>使用文本编辑器创建、编辑和保存 ACL。</td>
+		<td bgcolor='#FFFFFF'>这有助于创建可重复使用的 ACL 库。</td>
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7'>在生产网络中部署 ACL 之前，先在开发网络中进行测试。</td>
+		<td bgcolor='#EFF8F7'>这有助于避免造成代价高昂的错误。</td>
+	</tr></table>]]></text>
+  </component>
+</textcomponents>

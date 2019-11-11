@@ -1,0 +1,187 @@
+<textcomponents>
+    <!--SLIDE 1-->
+    
+    <component id="ID_s1_title">
+		<text><![CDATA[<b>练习 - 第 1 部分：练习 VLSM</b>]]></text>
+	</component>
+	
+	<component id='ID_s1_instr_title'>
+		<text><![CDATA[说明]]></text>
+	</component>
+
+	<component id='ID_s1_instr_body'>
+		<text><![CDATA[表 1 使用常规子网划分来适应所示网络。表 2 使用 <b>VLSM</b> 来进一步对网络进行子网划分。 将地址拖到正确的子网说明。]]></text>
+	</component>
+    <component id='ID_s1_header'>
+        <text>
+            <![CDATA[<b>192.168.5.0/24</b><br><font><b>表 1 - 第一个子网计算</b></font>]]></text>
+    </component>
+    <component id='ID_s1_subheader'>
+        <text>
+            <![CDATA[<b style="margin-left:5px;">每个子网计算 50 个用户</b>]]></text>
+    </component>
+    <component id='ID_s1_txt01'>
+        <text>
+            <![CDATA[<span style="margin-left:5px;">新的子网掩码（十进制）</span>]]></text>
+    </component>
+    <component id='ID_s1_txt02'>
+        <text>
+            <![CDATA[<span style="margin-left:5px;"><b>第一个</b>前缀记法</span>]]></text>
+    </component>
+    <component id='ID_s1_txt03'>
+        <text>
+            <![CDATA[<span style="margin-left:5px;">第一个<b>完整</b>的子网范围</span>]]></text>
+    </component>
+    <component id='ID_s1_txt04'>
+        <text>
+            <![CDATA[<span style="margin-left:5px;">第二个<b>完整</b>的子网范围</span>]]></text>
+    </component>
+    <component id='ID_s1_txt05'>
+        <text>
+            <![CDATA[<span style="margin-left:5px;">最后一个<b>完整</b>的子网范围</span>]]></text>
+    </component>
+    <!--Drag and Drop-->
+    <component id='ID_sub1_DS'>
+        <text>
+            <![CDATA[<font color="#393536">255.255.255.192</font>]]>
+        </text>
+    </component>
+    <component id='ID_sub2_DS'>
+        <text>
+            <![CDATA[<font color="#393536">/26</font>]]>
+        </text>
+    </component>
+    <component id='ID_sub3_DS'>
+        <text>
+            <![CDATA[<font color="#393536">192.168.5.0-<br>192.168.5.63</font>]]>
+        </text>
+    </component>
+    <component id='ID_sub4_DS'>
+        <text>
+            <![CDATA[<font color="#393536">192.168.5.64-<br>192.168.5.127</font>]]>
+        </text>
+    </component>
+    <component id='ID_sub5_DS'>
+        <text>
+            <![CDATA[<font color="#393536">192.168.5.192-<br>192.168.5.255</font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_CORRECT_TITLE'>
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id='ID_s1_CORRECT_BODY'>
+        <text>
+            <![CDATA[<span style="width:194px;">您已正确计算子网。</span>]]></text>
+    </component>
+    <component id='ID_s1_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id='ID_s1_INCORRECT_BODY'>
+        <text>
+            <![CDATA[您尚未正确计算子网。请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id='ID_s1_CHECK'>
+        <text>
+            <![CDATA[<span style="margin-left:-8px">检查</span>]]></text>
+    </component>
+    <component id='ID_s1_RESET'>
+        <text>
+            <![CDATA[<span style="margin-left:-8px">重置</span>]]></text>
+    </component>
+    <!--SLIDE 2-->
+   
+    <component id="ID_s2_title">
+		<text><![CDATA[<b>练习 – 第 2 部分：练习 VLSM</b>]]></text>
+	</component>
+	
+	<component id='ID_s2_instr_title'>
+		<text><![CDATA[说明]]></text>
+	</component>
+
+	<component id='ID_s2_instr_body'>
+		<text><![CDATA[表 2 使用 VLSM 来进一步对网络进行子网划分。 将地址拖到正确的子网说明。]]></text>
+	</component>
+    <component id='ID_s2_header'>
+        <text>
+            <![CDATA[<b>192.168.5.0/24</b><br><font><b>表 2 - VLSM 计算</b></font>]]></text>
+    </component>
+    <component id='ID_s2_subheader'>
+        <text>
+            <![CDATA[<b style="margin-left:5px;">使用表 1 的第二个完整子网范围和 VLSM 为每个子网的 20 个用户进行计算。</b>]]></text>
+    </component>
+    <component id='ID_s2_txt01'>
+        <text>
+            <![CDATA[<span style="margin-left:5px;">第二个<b>完整</b>的子网范围 (/26)（来自表 1）</span>]]></text>
+    </component>
+    <component id='ID_s2_txt02'>
+        <text>
+            <![CDATA[<span style="margin-left:5px;">新的 VLSM 子网掩码（十进制）</span>]]></text>
+    </component>
+    <component id='ID_s2_txt03'>
+        <text>
+            <![CDATA[<span style="margin-left:5px;"><b>VLSM</b> 前缀记法</span>]]></text>
+    </component>
+    <component id='ID_s2_txt04'>
+        <text>
+            <![CDATA[<span style="margin-left:5px;">第一个<b>完整的 VLSM</b> 子网范围</span>]]></text>
+    </component>
+    <component id='ID_s2_txt05'>
+        <text>
+            <![CDATA[<span style="margin-left:5px;">最后一个<b>完整的 VLSM</b> 子网范围</span>]]></text>
+    </component>
+    <!--Drag and Drop-->
+    <component id='ID_vlsm1_DS'>
+        <text>
+            <![CDATA[<font color="#393536">192.168.5.64-<br>192.168.5.127</font>]]>
+        </text>
+    </component>
+    <component id='ID_vlsm2_DS'>
+        <text>
+            <![CDATA[<font color="#393536">255.255.255.224</font>]]>
+        </text>
+    </component>
+    <component id='ID_vlsm3_DS'>
+        <text>
+            <![CDATA[<font color="#393536">/27</font>]]>
+        </text>
+    </component>
+    <component id='ID_vlsm4_DS'>
+        <text>
+            <![CDATA[<font color="#393536">192.168.5.64-<br>192.168.5.95</font>]]>
+        </text>
+    </component>
+    <component id='ID_vlsm5_DS'>
+        <text>
+            <![CDATA[<font color="#393536">192.168.5.96-<br>192.168.5.127</font>]]>
+        </text>
+    </component>
+    <component id='ID_s2_CORRECT_TITLE'>
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id='ID_s2_CORRECT_BODY'>
+        <text>
+            <![CDATA[您已使用 VLSM 正确计算子网。]]>
+        </text>
+    </component>
+    <component id='ID_s2_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id='ID_s2_INCORRECT_BODY'>
+        <text>
+            <![CDATA[您尚未使用 VLSM 正确计算子网。请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id='ID_s2_CHECK'>
+        <text>
+            <![CDATA[<span style="margin-left:-8px">检查</span>]]></text>
+    </component>
+    <component id='ID_s2_RESET'>
+        <text>
+            <![CDATA[<span style="margin-left:-8px">重置</span>]]></text>
+    </component>
+</textcomponents>

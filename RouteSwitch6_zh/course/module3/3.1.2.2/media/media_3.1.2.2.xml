@@ -1,0 +1,40 @@
+<textcomponents>
+
+	<component id="ID_title">
+		<text><![CDATA[<b>静态路由的优点和缺点</b>]]></text>
+	</component>
+	
+	<component id='ID_table'>
+		<text><![CDATA[
+						 <table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+								
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#666263'><font size='1' color='#0E6360'>.</font></td>
+		</tr>
+								<tr>
+								  <td bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>优点</b></font></td>
+								  <td bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>缺点</b></font></td>
+								</tr>
+								<tr>
+								  <td bgcolor='#E9E7E8' valign="top">易于在小型网络中实施。</td>
+								  <td bgcolor='#E9E7E8' valign="top">仅适用于简单拓扑或特殊用途，如默认静态路由。</td>
+								</tr>
+								<tr>
+								  <td bgcolor='#F2F2F2' valign="top">非常安全。 与动态路由协议相比，不会发送通告。</td>
+								  <td bgcolor='#F2F2F2' valign="top">随着网络的不断扩大，配置复杂性会显著增加。</td>
+								</tr> 
+								<tr>
+								  <td bgcolor='#E9E7E8' valign="top">总是通过同一路径到达目的网络.</td>
+								  <td bgcolor='#E9E7E8' valign="top">需要人工干预来重新路由流量。</td>
+								</tr>	
+                                <tr>
+								  <td bgcolor='#F2F2F2' valign="top">不需要路由算法或更新机制；因此，不需要额外的资源（CPU 或 RAM）。</td>
+								  <td bgcolor='#F2F2F2' valign="top"></td>
+								</tr>
+							  </table>
+					]]>
+		</text>
+</component>
+
+
+</textcomponents>

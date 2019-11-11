@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.2.3 验证默认静态路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证默认静态路由</h1>
+        <div>
+          <p>在图中，<b>show ip route static</b> 命令输出显示路由表静态路由的内容。注意带代码“S”的路由旁边的星号 (*)<b></b>。如图中的代码表所示，星号表示该静态路由是候选默认路由，因此它被选为最后选用网关。 </p>
+          <p></p>
+          <p>该配置的关键之处在于 /0 掩码。路由表中的子网掩码决定了数据包的目标 IP 地址与路由表中的路由之间必须匹配的位数。二进制 1 表示位必须匹配。二进制 0 表示位不必匹配。此路由条目的 /0 掩码表示位不需要匹配。如果没有更精确的匹配，默认静态路由匹配所有数据包。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示包含“show ip route static”命令输出的标准实验图。这将显示输出顶部的最后选用网关和底部的默认静态路由之间的关系。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

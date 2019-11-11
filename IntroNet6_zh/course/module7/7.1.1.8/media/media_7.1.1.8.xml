@@ -1,0 +1,72 @@
+<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>十进制到二进制的转换练习</b>]]></text>
+    </component>
+    <component id="ID_titleTxt01">
+    <text><![CDATA[说明]]></text>
+    </component>
+
+<component id="ID_bodyTxt01">
+    <text><![CDATA[本练习使您能够练习将十进制转换为 8 位二进制值。我们建议您反复使用此工具，直到能够正确无误地完成转换。<br><br>将十进制值行中显示的十进制数字转换成它的二进制值。]]></text>
+</component>
+
+    <component id="ID_btn01">
+        <text>
+            <![CDATA[检查]]>
+        </text>
+    </component>
+    <component id="ID_btn02">
+        <text>
+            <![CDATA[重置]]>
+        </text>
+    </component>
+    <component id="ID_btn03">
+        <text>
+            <![CDATA[新数字]]>
+        </text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[<b>十进制值</b>]]></text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[<b>幂</b>]]></text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[<b>位</b>]]></text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[<b>比特</b>]]></text>
+    </component>
+    <component id="ID_txt06">
+        <text>
+            <![CDATA[]]>
+        </text>
+    </component>
+    <component id="ID_txt07">
+        <text>
+            <![CDATA[<b>基数</b>]]></text>
+    </component>
+    <component id='ID_CORRECT_TITLE'>
+        <text>
+            <![CDATA[<b>正确</b>]]></text>
+    </component>
+    <component id='ID_CORRECT_BODY'>
+        <text>
+            <![CDATA[您输入的所有位置的二进制值都正确！请单击“新数字”以继续。]]>
+        </text>
+    </component>
+    <component id='ID_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[<b>不正确</b>]]></text>
+    </component>
+    <component id='ID_INCORRECT_BODY'>
+        <text>
+            <![CDATA[您输入的一个或多个位置的二进制值不正确。请单击“重置”重试。]]>
+        </text>
+    </component>
+</textcomponents>

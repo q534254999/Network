@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.1.6 数据包转发机制</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>数据包转发机制</h1>
+        <div>
+          <p>路由器支持 3 种数据包转发机制：</p>
+          <p>
+            <ul>
+              <li>
+                <b>进程交换</b> - 一种较早版本的数据包转发机制，在思科路由器上仍然可用。当数据包到达某个接口时，将其转发到控制平面，在控制平面上 CPU 将目的地址与其路由表中的条目进行匹配，然后确定送出接口并转发数据包。重要的是要了解路由器会对每个数据包执行此操作，即使数据包流的目的地是相同的。这种进程交换机制非常慢，在现代网络中很少实施。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>快速交换</b> - 这是一种常见的数据包转发机制，使用快速交换缓存来存储下一跳信息。当数据包到达某个接口时，将其转发到控制平面，在控制平面上 CPU 将在快速交换缓存中搜索匹配项。如果不存在匹配项，则数据包采用进程交换并将转发到送出接口。数据包的流向信息也会存储到快速交换缓存中。如果通往同一目的地的另一个数据包到达接口，则缓存中的下一跳信息可以重复使用，无需 CPU 的干预。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>思科快速转发 (CEF)</b> - CEF 是最近推出和首选使用的思科 IOS 数据包转发机制。与快速交换相似，CEF 将构建转发信息库 (FIB) 和邻接表。但是，表中的条目不是像快速交换一样由数据包触发，而是由更改触发，例如当网络拓扑发生更改时。因此，当网络融合后，FIB 和邻接表将包含路由器在转发数据包时必须考虑的所有信息。FIB 包含预先计算的反向查找，路由的下一跳信息（包括接口和第 2 层信息）。思科快速转发是思科路由器上最快且首选的转发机制。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>图 1 至图 3 说明了三种数据包转发机制之间的差异。假定由五个数据包组成的流量都发往同一目的地。如图 1 所示，如果使用进程交换，则每个数据包都必须由 CPU 单独处理。将其与快速交换进行对比，如图 2 所示。使用快速交换时请注意一下，如何只让流量的第一个数据包进行进程交换并添加到快速交换缓冲中。而使之后的四个数据包根据快速交换缓存中的信息得到快速处理。最后，在图 3 中，当网络融合后，CEF 将构建 FIB 和邻接表。所有的五个数据包都将在数据平面中得到快速处理。</p>
+          <p></p>
+          <p>一个用于描述这三种数据包转发机制的常见比喻如下：</p>
+          <p>
+            <ul>
+              <li>进程交换通过数学计算来解决每个问题，即使是完全相同的问题。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>快速交换通过一次数学计算并为后续相同问题记忆答案，以解决问题。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>CEF 事先在电子表格中解决每个可能出现的问题。</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 描述进程交换，其中将传入数据包发送到控制平面，然后读取目的地址并将其发送到正确接口。在此方法中，每个数据包必须经过 CPU 的处理。图 2 描述快速交换，其中在确定可以根据缓存中的信息路由数据包时，使用快进缓存使路由过程更加高效。如果缓存没有所需信息，则会将数据包发送到控制平面。图 3 描述思科快速转发过程，其中路由器构建转发信息库和邻接表，且路由器使用这些路由数据包。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

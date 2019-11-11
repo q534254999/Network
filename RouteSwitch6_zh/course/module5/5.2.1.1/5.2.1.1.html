@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.1.1 SSH 运行</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>SSH 运行</h1>
+        <div>
+          <p>安全外壳 (SSH) 是一种提供远程设备的安全（加密）管理连接的协议。SSH 应替代 Telnet 来管理连接。Telnet 是一种较早协议，对登录身份验证（用户名和密码）和通信设备之间传输的数据都采用不安全的明文传输。SSH 通过在设备进行身份验证（用户名和密码）时以及在通信设备之间传输数据时提供强加密，确保远程连接的安全。将 SSH 分配给 TCP 端口 22。将 Telnet 分配给 TCP 端口 23。  </p>
+          <p></p>
+          <p>在图 1 中，攻击者可以使用 Wireshark 监控数据包。Telnet 数据流可用来捕获用户名和密码。</p>
+          <p></p>
+          <p>在图 2 中，攻击者可以从明文 Telnet 会话中捕获管理员的用户名和密码。</p>
+          <p></p>
+          <p>图 3 显示了通过 Wireshark 查看到的 SSH 会话。攻击者可以使用管理员设备的 IP 地址跟踪会话。</p>
+          <p></p>
+          <p>但是，在图 4 中，用户名和密码是加密的。</p>
+          <p></p>
+          <p>为了在 Catalyst 2960 交换机上启用 SSH，交换机必须使用包含密码（加密）特征和功能的 IOS 软件版本。在图 5 中，在交换机上使用 <b>show version</b> 命令查看交换机当前运行的 IOS。包含组合“k9”的 IOS 文件名支持密码（加密）特征和功能。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 是使用 Wireshark 的 telnet 会话的数据包捕获文件。图 2 显示 Telnet 会话的详细信息。此处由于数据未加密，因此可读取。图 3 是 SSH 会话的数据包捕获文件。图 4 显示 SSH 会话的详细信息，其中数据已加密，因此无法读取。图 5 显示 show version 命令的输出，其中显示当前在交换机上运行的 IOS。文件名中的字母 K 和数字 9 表示它支持加密功能。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

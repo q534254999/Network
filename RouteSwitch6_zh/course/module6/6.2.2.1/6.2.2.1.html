@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.2.1 配置 IEEE 802.1Q TRUNK 链路</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置 IEEE 802.1Q TRUNK 链路</h1>
+        <div>
+          <p>VLAN TRUNK 是两台交换机之间的 OSI 第 2 层链路，为所有 VLAN 传输流量（除非允许的 VLAN 列表已被手动或动态地限制）。要启用 TRUNK 链路，则使用几组并行命令配置物理链路任意一端的端口。</p>
+          <p></p>
+          <p>要配置中继链路其中一端的交换机端口，则使用 <b>switchport mode trunk </b>命令。使用此命令后，接口变为永久中继模式。端口参与到动态中继协议 (DTP) 协商，将链路转换为 TRUNK 链路，即使它连接的接口不同意更改。在本课程中，<b>switchport mode trunk </b>命令是用于实施中继配置的唯一方法。</p>
+          <p></p>
+          <p>
+            <b>注</b>：DTP 不在本课程的讨论范围之内。</p>
+          <p></p>
+          <p>图 1 显示了思科 IOS 命令语法，用于将本征 VLAN 指定为除 VLAN 1 外的其他 VLAN。在本例中，使用 <b>switchport trunk native vlan 99 </b>命令将 VLAN 99 配置为本征 VLAN。</p>
+          <p></p>
+          <p>使用思科 IOS <b>switchport trunk allowed vlan </b><i>vlan-list</i> 命令指定在中继链路上允许的 VLAN 列表。</p>
+          <p></p>
+          <p>在图 2 中，VLAN 10、20 和 30 分别支持 Faculty、Student 和 Guest 计算机（PC1、PC2 和 PC3）。交换机 S1 上的 F0/1 端口配置为 TRUNK 端口，并为 VLAN 10、20 和 30 转发流量。VLAN 99 配置为本征 VLAN。 </p>
+          <p></p>
+          <p>图 3 显示了交换机 S1 上的 F0/1 端口配置为 TRUNK 端口。本征 VLAN 更改为 VLAN 99，并且允许的 VLAN 列表限制为 10、20、30 和 99。</p>
+          <p></p>
+          <p>
+            <b>注</b>：此配置假定使用思科 Catalyst 2960 交换机，该交换机自动在 TRUNK 链路上使用 802.1Q 封装。其他型号的交换机可能需要手动配置封装。一条 TRUNK 链路的两端始终使用相同的本征 VLAN。如果两端的 802.1Q TRUNK 配置不同，思科 IOS 软件将报告错误。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示带用于在交换机端口上配置中继链路的命令及其说明的表。图 2 显示一个带四个 VLAN 的简单 LAN。标注显示四个 VLAN、其编号和名称以及每个 VLAN 的网络地址。图 3 显示将 F0/1 配置为中继链路，将本征 VLAN 设置为 99 以及将允许的 VLAN 设置为包括 10、20 和 30 的语法。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

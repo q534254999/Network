@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.2.5 比较 NAT 和 PAT</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>比较 NAT 和 PAT</h1>
+        <div>
+          <p>总结 NAT 和 PAT 之间的差异将有助于您理解这两者。 </p>
+          <p></p>
+          <p>如图所示，NAT 在一对一的基础上进行私有 IPv4 地址和公有 IPv4 地址之间的 IPv4 地址转换。但是，PAT 会同时修改地址和端口号。 </p>
+          <p></p>
+          <p>通过参考公有网络的主机给出的传入源 IPv4 地址，NAT 将传入数据包转发至其内部目的地。利用 PAT，一般只需一个或极少的几个公有 IPv4 地址。通过参考 NAT 路由器中的一个表，将来自公有网络的传入数据包路由到其私有网络中的目的地。此表会跟踪公有与私有端口对。这称为连接跟踪。</p>
+          <p></p>
+          <p>
+            <b>不包含第 4 层数据段的数据包</b>
+          </p>
+          <p></p>
+          <p>如果 IPv4 数据包传送的是数据而不是 TCP 或 UDP 数据段会怎么样？这些数据包将不包含第 4 层端口号。PAT 可以转换 IPv4 承载的大多数常用协议，这些协议不会将 TCP 或 UDP 用作传输层协议。其中最常见的一种就是 ICMPv4。对于每种类型的协议，PAT 会以不同方式进行处理。例如，ICMPv4 查询消息、响应请求和响应应答会包含一个查询 ID。ICMPv4 使用查询 ID 来识别响应请求及其相应的响应应答。每发送一个响应请求，查询 ID 都会增加。PAT 将会使用查询 ID 而不是第 4 层端口号。 </p>
+          <p></p>
+          <p>
+            <b>注</b>：其他 ICMPv4 消息不使用查询 ID。对于这些消息以及其他不使用 TCP 或 UDP 端口号的协议，情况有所不同，不在本课程的讨论范围之内。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了两个表。一个表显示 NAT 如何使用可从中选择地址的全局地址池。另一个表显示 PAT 如何使用单个地址，但是为映射添加唯一的端口号。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

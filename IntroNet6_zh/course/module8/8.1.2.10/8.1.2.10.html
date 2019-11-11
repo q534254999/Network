@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.2.10 创建 4 个子网</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.2.10_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>创建 4 个子网</h1>
+        <div>
+          <p>现在考虑图 1 所示的网络拓扑。企业正使用私有网络地址 192.168.1.0/24 范围，并要求有 3 个子网。借用一位只能提供 2 个子网，因此必须借用另一个主机位，如图 2 所示。使用 <b>2^n</b> 公式，对于借用了 2 位的情况，结果是 <b>2^2 = 4</b> 个子网。图 3 显示了四个子网的具体情况。生成的子网掩码 /26 或 255.255.255.192 由所有四个子网使用。 </p>
+          <p>要计算主机数量，请检查最后一个二进制八位数，如图 4 所示。在借用 2 个位用于子网之后，还剩余 6 个主机位。应用所示的主机计算公式 <b>2^n - 2</b>，结果是每个子网能支持 62 个主机地址。图 5 显示了第一个子网（即 Net 0）的重要地址。</p>
+          <p>只需要前三个子网，因为只有三个接口。图 6 显示了用于满足图 1 拓扑的前三个子网的具体情况。  </p>
+          <p>最后，图 7 从每个子网到各自的 R1 LAN 接口应用了第一个有效主机地址。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a topology with router 1 connected to two switches to create two LANs. Router 1 is then connected to router 2 to create a WAN. The subnets 192.168.1.0/26 and 192.168.1.64/25 are assigned to the two LANs. The subnet 192.168.1.128/26 is assigned to the WAN. Figure 2 shows borrowing the first two bits in the fourth octet. Figure 3 shows the four subnets two bits borrowed would create. Figure 4 shows the formula to calculate the number of hosts which is 2 to the 6 power minus two for 62 valid hosts. Figure 5 shows the network address, first host address, last host address, and broadcast address for the 192.168.1.0/26 subnet. The last octet is in binary to show that a network address is all zeros in the host portion. The first host address is all zeros except the least significant bit in the host portion. The last host address is all ones except for the least significant bit in the host portion. And the broadcast address is all ones in the host portion. Figure 6 is a table showing the three subnets that will be used in the topology with the network address, first host address, last host address, and broadcast address for each listed. Figure 7 shows the topology from Figure 1 with IP addresses assigned to the devices from the appropriate subnets. </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

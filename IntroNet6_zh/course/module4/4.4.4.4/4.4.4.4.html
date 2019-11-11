@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.4.4 第 2 层地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.4.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>第 2 层地址</h1>
+        <div>
+          <p>数据链路层提供了通过共享本地介质传输帧时要用到的编址方法。此层中的设备地址称为物理地址。数据链路层地址包含在帧头中，它指定了帧在本地网络中的目的节点。帧头还可能包含帧的源地址。 </p>
+          <p>与分层式第 3 层逻辑地址不同，物理地址不会表示设备位于哪个网络。相反，物理地址对于特定设备是唯一的。若将设备移至另一网络或子网，它将仍使用同一第 2 层物理地址。 </p>
+          <p>图 1 至图 3 阐述了第 2 层和第 3 层地址的功能。当 IP 数据包从主机到路由器、从路由器到路由器和最终从路由器到主机传输时，沿途中的每个点上都会将 IP 数据包封装到新的数据链路帧中。每个数据链路帧包含发送帧的 NIC 卡的源数据链路地址和接收帧的 NIC 卡的目的数据链路地址。</p>
+          <p>特定设备的非分层式地址无法用于确定大型网络或 Internet 中设备的位置。这类似于只用一个门牌号和街道名称试图在全世界范围内找到一个房屋。但是物理地址可用于查找有限区域内的设备。因此，数据链路层地址仅用于本地传送。该层地址在本地网络之外无任何意义。将它与第 3 层进行比较，我们发现在第 3 层中，无论途中有多少个网络跳点，数据包报头中的址址都会从源主机传送到目的主机。</p>
+          <p>如果数据必须传递到另一网段上，则需要使用中间设备，比如路由器。路由器必须根据物理地址接受帧并解封帧，以便检查分层地址或 IP 地址。路由器使用 IP 地址就能确定目的设备的网络地址以及到达该地址的最佳路径。当知道要将数据包转发到何处时，路由器会为数据包创建一个新帧，并将新帧发送到通往最终目的地的下一网段。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figures 1, 2, and 3 demonstrate the concept that layer 2 address change at every hop while the layer 3 addresses stay the same. In Figure 1, the layer 2 addresses are for the original source and router 1. In Figure 2, the layer 2 addresses are for router 1 and router 2. In Figure 3, the layer 2 addresses are for router 2 and the final destination, the web server.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.1.3 思科 IOS 对标准 ACL 重新排序 </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>思科 IOS 对标准 ACL 重新排序 </h1>
+        <div>
+          <p>标准 ACE 的输入顺序可能不是路由器对其进行存储、显示和处理的顺序。</p>
+          <p>图 1 显示了标准访问列表的配置。首先配置拒绝三个网络的 range 语句，然后配置五个 host 语句。由于主机 IPv4 地址不属于前面输入的 range 语句，因此 host 语句都是有效语句。</p>
+          <p></p>
+          <p><b>show running-config</b> 命令用于验证 ACL 配置。请注意，语句列出的顺序与其输入顺序不同。我们将使用 <b>show access-lists</b> 命令来了解这背后的原理。</p>
+          <p></p>
+          <p>如图 2 所示，<b>show access-lists</b> 命令可将 ACE 与其序号一起显示。我们可能希望输出中语句的顺序反映语句的输入顺序。但是，<b>show access-lists</b> 的输出显示情况并非如此。</p>
+          <p></p>
+          <p>标准 ACE 列出的顺序是 IOS 用来处理该列表的顺序。注意，语句分为两个部分，先列出 host 语句，然后是 range 语句。序号表示语句的输入顺序，而不是语句的处理顺序。</p>
+          <p></p>
+          <p>host 语句首先列出，但不一定是以这些语句的输入顺序列出。IOS 使用特殊的哈希函数按顺序添加 host 语句。最终顺序可以优化主机 ACL 条目的搜索。range 语句在 host 语句后面显示。这些语句按其输入的顺序列出。</p>
+          <p></p>
+          <p>
+            <b>注</b>：哈希函数只能应用于 IPv4 标准访问列表中的 host 语句。有关哈希函数的详细信息不属于本课程的范围。</p>
+          <p></p>
+          <p>回想一下，可以使用序号编辑标准 ACL 和编号 ACL。当插入新的 ACL 语句时，序号只会影响列表中 range 语句的位置。始终能够使用哈希函数恢复 host 语句的顺序。</p>
+          <p></p>
+          <p>继续使用本示例，在保存运行配置后，重新加载路由器。如图 2 所示，<b>show access-lists</b> 命令会以相同顺序显示 ACL，但是已对语句重新编号。现在序号以编号的大小顺序显示。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示首先拒绝三个网络范围地址，然后特别允许五个主机 ip 地址的 ACL 的内容。当运行 show running-config 命令时，ACL 语句的顺序如下：首先是五个 permit host 条目，然后是三个 deny range 语句。图 2 显示 show access-lists 1 命令的输出。此输出首先列出五个 permit host 条目，然后列出三个 deny range 语句。每个语句保留输入时原有的序号。图中继续保存配置文件，重新启动路由器，然后显示配置文件。ACL 的顺序依然是首先列出主机条目，然后列出网络范围，但是已经更改序号以与其顺序匹配。这表明，路由器会更改顺序和序号，以便最大程度地提高效率。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

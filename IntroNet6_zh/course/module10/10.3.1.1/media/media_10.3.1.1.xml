@@ -1,0 +1,6 @@
+﻿<textcomponents>
+    <component id="ID_footer">
+        <text>
+            <![CDATA[<b>网络应用程序使用协议实现数据通信…</b><br/><br/><textformat blockindent="-14"><li>POP</li><li>IMAP</li><li>HTTP</li><li>FTP</li><br/>…而且这样的例子举不胜举！</textformat>]]></text>
+    </component>
+</textcomponents>

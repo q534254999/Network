@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.3.5 配置完全指定静态 IPv6 路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.3.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置完全指定静态 IPv6 路由</h1>
+        <div>
+          <p>在完全指定静态路由中，同时指定退出接口和下一跳 IPv6 地址。类似于 IPv4 使用的完全指定静态路由，如果路由器上未启用 CEF，并且送出接口在多路访问网络上，则使用这种路由。使用 CEF 时，即使送出接口是多路访问网络，仅使用下一跳 IPv6 地址的静态路由也是首选方法。</p>
+          <p></p>
+          <p>与 IPv4 不同，IPv6 中有一种情况必须使用完全指定静态路由。如果 IPv6 静态路由使用 IPv6 本地链路地址作为下一跳地址，则必须使用完全指定静态路由（包含送出接口）。图 1 显示了一个完全限定的 IPv6 静态路由的示例，使用 IPv6 本地链路地址作为下一跳地址。</p>
+          <p></p>
+          <p>必须使用完全指定静态路由的原因在于，IPv6 路由表中不包含 IPv6 本地链路地址。本地链路地址仅在给定链路或网络上是唯一的。下一跳本地链路地址可以是连接路由器的多个网络上的有效地址。因此，需要包含送出接口。</p>
+          <p></p>
+          <p>在图 1 中，完全指定静态路由使用 R2 的本地链路地址配置为下一跳地址。注意 IOS 需要指定送出接口。 </p>
+          <p></p>
+          <p>图 2 显示此路由的 IPv6 路由条目。注意包括下一跳本地链路地址和送出接口。 </p>
+          <p></p>
+          <p>使用图 3 中的语法检查器，在 R2 上配置完全指定静态 IPv6 路由，以使用本地链路地址到达 R1 的 LAN。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">这些图显示两个使用串行电缆连接的路由器。每个路由器都连接一个 LAN。图 1 显示在路由器 1 上配置通往路由器 2 上的 LAN 的完全限定静态路由的语法。因为我们使用本地链路地址作为下一跳，因此需要完全限定路由语句。这需要使用退出接口。图 2 显示在路由器 1 上发出“show ipv6 route static | begin，后跟 ipv6 地址”命令的结果。图 3 是允许学生练习在 ipv6 中配置完全限定静态路由的互动练习。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.1.2 ACL 中 ACE 的顺序</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>ACL 中 ACE 的顺序</h1>
+        <div>
+          <p>在接受和处理标准 ACE 时，思科 IOS 将应用内部逻辑。如前所述，ACE 是按照顺序处理的；因此，ACE 的输入顺序非常重要。</p>
+          <p></p>
+          <p>例如，在图 1 中，ACL 3 包含两个 ACE。第一个 ACE 使用通配符掩码来拒绝某一范围内的地址，此范围包括 192.168.10.0/24 网络中的所有主机。第二个 ACE 为检查属于 192.168.10.0/24 网络的特定主机 192.168.10.10 的主机语句。标准访问列表的 IOS 内部逻辑将拒绝第二条语句并返回错误消息，因为它是上一语句的子集。 </p>
+          <p></p>
+          <p>图 2 中 ACL 4 的配置使用相同的两条语句，但顺序相反。这是一个有效的语句顺序，因为第一条语句针对的是特定主机，而不是一组主机。</p>
+          <p></p>
+          <p>在图 3 中，ACL 5 显示可在指向一组主机的语句后面配置 host 语句。该主机必须在上一语句所涉及的范围之外。192.168.11.10 主机地址不属于 192.168.10.0/24 网络，因此这是一个有效语句。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示当前 ACL 上的一个冲突访问列表条目。第一行是 access-list 3 deny 192.168.10.0 0.0.0.255。此后紧接命令 access-list 3 permit host 192.168.10.10，此命令与 deny 语句冲突，从而导致向控制台发送错误消息。图 2 显示与上图中所用的命令相同，但是顺序相反的两个命令。路由器接受此命令顺序。图 3 显示不冲突的两个条目。第一个命令是 access-list 5 deny 192.168.10.0 0.0.0.255。此命令后紧接 access-list 5 permit host 192.168.11.10。主机不受 deny 语句中的网络的影响，因此会被接受。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

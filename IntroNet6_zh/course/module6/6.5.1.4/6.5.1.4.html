@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.5.1.4 第 6 章：网络层</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.5.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>第 6 章：网络层</h1>
+        <div>
+          <p>网络层即 OSI 第 3 层，提供能够让终端设备跨整个网络交换数据的服务。为了实现这种端到端传输，网络层使用了四个基本过程：终端设备的 IP 编址、封装、路由和解封。</p>
+          <p>Internet 主要基于 IPv4，IPv4 仍然是使用最广泛的网络层协议。IPv4 数据包包含 IP 报头和负载。但是，IPv4 的唯一公有 IP 地址数量有限。这促使了 IP 版本 6 (IPv6) 的开发。IPv6 使用简化的报头，比 IPv4 具有更多优势，例如更高的路由效率、简化的扩展报头和单个流处理能力。此外，IPv6 地址基于 128 位分层编址，而 IPv4 采用的是 32 位。这显著增加了可用的 IP 地址数量。</p>
+          <p>除了分层编址外，网络层也负责路由。</p>
+          <p>主机需要使用本地路由表才能确保数据包转发到正确的目的网络。主机的本地路由表通常包含直连路由、本地网络路由和本地默认路由。本地默认路由是到默认网关的路由。</p>
+          <p>默认网关是连接本地网络的路由器接口的 IP 地址。当主机需要将数据包转发到与此主机不在同一网络的目的地址时，会将数据包发送到默认网关进行进一步处理。 </p>
+          <p>当路由器（例如默认网关）收到数据包时，它会检查目的 IP 地址以确定目的网络。路由器的路由表存储了有关 IP 网络的直连路由和远程路由的信息。如果路由器的路由表中存在指向目的网络的条目，路由器会转发数据包。如果不存在匹配的路由条目，若已配置了默认路由，路由器可能会将数据包转发到自己的默认路由，否则它会丢弃数据包。</p>
+          <p>可以在每台路由器上手动配置路由表条目来提供静态路由，路由器相互之间也可以使用路由协议动态交换路由信息。</p>
+          <p>为了能够连接路由器，必须配置路由器接口。要启用具体接口，请使用<b> interface</b><i> type-and-number </i>全局配置模式命令进入接口配置模式。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is a standard graphic for the introduction and conclusion pages.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.1.2 配置 SSH</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置 SSH</h1>
+        <div>
+          <p>在配置 SSH 之前，至少必须为交换机配置唯一的主机名和正确的网络连接设置。</p>
+          <p></p>
+          <p>
+            <b>步骤 1.验证是否支持 SSH。</b>
+          </p>
+          <p></p>
+          <p>使用<b> show ip ssh </b>命令验证交换机是否支持 SSH。如果交换机没有运行支持加密功能的 IOS，则此命令将无法识别。 </p>
+          <p></p>
+          <p>
+            <b>步骤 2.配置 IP 域。</b>
+          </p>
+          <p></p>
+          <p>使用<b> ip domain-name </b><i>domain-name </i>全局配置模式命令配置网络 IP 域名。图 1 中，<i> domain-name </i>值为<b> cisco.com</b>。</p>
+          <p></p>
+          <p>
+            <b>步骤 3.生成 RSA 密钥对。</b>
+          </p>
+          <p></p>
+          <p>并非所有 IOS 版本都默认为 SSH 第 2 版，而 SSH 第 1 版存在已知安全缺陷。要配置 SSH 第 2 版，请执行<b> ip ssh version 2 </b>全局配置模式命令。生成 RSA 密钥对将自动启用 SSH。使用<b> crypto key generate rsa </b>全局配置模式命令在交换机上启用 SSH 服务器并生成 RSA 密钥对。当生成 RSA 密钥时，系统会提示管理员输入模数长度。图 1 中的示例配置使用 1,024 位模数大小。模数长度越长越安全，但生成和使用模数的时间也越长。</p>
+          <p></p>
+          <p>
+            <b>注</b>：要删除 RSA 密钥对，请使用<b> crypto key zeroize rsa </b>全局配置模式命令。删除 RSA 密钥对之后，SSH 服务器将自动禁用。</p>
+          <p></p>
+          <p>
+            <b>步骤 4.配置用户身份验证。</b>
+          </p>
+          <p></p>
+          <p>SSH 服务器可以对用户进行本地身份验证或使用身份验证服务器。要使用本地身份验证方法，请使用<b> username </b><i>用户名</i><b> secret </b><i>密码 </i>全局配置模式命令创建用户名和密码对。在本示例中，为用户<b> admin </b>分配的密码为<b> ccna</b>。</p>
+          <p></p>
+          <p>
+            <b>步骤 5.配置 vty 线路。</b>
+          </p>
+          <p></p>
+          <p>使用<b> transport input ssh </b>线路配置模式命令启用 vty 线路上的 SSH 协议。Catalyst 2960 的 vty 线路范围为 0 到 15。该配置将阻止除 SSH 之外的连接（如 Telnet），将交换机限制为仅接受 SSH 连接。使用<b> line vty</b> 全局配置模式命令，然后使用<b> login local</b> 线路配置模式命令来要求从本地用户名数据库进行 SSH 连接的本地身份验证。</p>
+          <p></p>
+          <p>
+            <b>步骤 6.启用 SSH 第 2 版。</b>
+          </p>
+          <p></p>
+          <p>默认情况下，SSH 同时支持第 1 版和第 2 版。如果支持两种版本，在<b> show ip ssh </b>输出中将显示为支持版本 1.99。第 1 版存在已知漏洞。因此，建议只启用第 2 版。使用<b> ip ssh version 2 </b>全局配置命令启用 SSH 版本。</p>
+          <p></p>
+          <p></p>
+          <p>使用图 2 中的语法检查器配置交换机 S1 的 SSH。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示用于配置交换机以使用 SSH 进行远程管理的命令。该图以特权 EXEC 模式开始。第一个命令为 configure terminal。下一命令为 ip domain-name cisco.com，其中 cisco.com 是示例域名。下一命令为 crypto key generate rsa。交换机将询问模数的大小，默认值为 512。图中使用 1,024。下一命令是 username admin password ccna，其中 admin 和 ccna 都是示例。使用此命令可创建用户名和密码。下一步是将 VTY 线路配置为仅接受 SSH 连接。命令为 line vty0 15。下一命令为 transport input ssh。最后一个命令为 login local。图 2 是允许学生在交换机上配置 SSH 的互动练习。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

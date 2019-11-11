@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.2.2 配置传统 VLAN 间路由：交换机配置</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置传统 VLAN 间路由：交换机配置</h1>
+        <div>
+          <p>配置交换机后才能开始配置传统 VLAN 间路由。 </p>
+          <p></p>
+          <p>如图所示，路由器 R1 与交换机端口 F0/4 和 F0/5 相连，这两个端口分别配置给了 VLAN 10 和 VLAN 30。</p>
+          <p></p>
+          <p>使用<b> vlan</b><i> vlan_id </i>全局配置模式命令创建 VLAN。本示例中，VLAN 10 和 VLAN 30 创建在交换机 S1 上。 </p>
+          <p></p>
+          <p>创建 VLAN 后，交换机端口会分配给相应的 VLAN。在交换机的接口配置模式下，对每个与路由器连接的接口执行<b> switchport access vlan</b><i> vlan_id </i>命令。</p>
+          <p></p>
+          <p>在本示例中，已使用 <b>switchport access vlan 10</b> 命令，将接口 F0/4 和 F0/11 分配给 VLAN 10。重复相同步骤，将交换机 S1 上的接口 F0/5 和 F0/6 分配给 VLAN 30。 </p>
+          <p></p>
+          <p>最后，为避免重新加载交换机后配置丢失，执行 <b>copy running-config startup-config</b> 命令，将运行配置备份到启动配置。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中展示了为传统 VLAN 间路由配置交换机所需的命令。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>Cisco 1941 背板</b>]]></text>
+    </component>
+    <component id="ID_titleTxt01">
+        <text>
+            <![CDATA[增强的高速广域网接口卡 (eHWIC) 插槽]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt012">
+        <text>
+            <![CDATA[&nbsp;]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt01">
+        <text>
+            <![CDATA[标记为 eHWIC 0 和 eHWIC 1，用于通过启用路由器来提供模块化功能和灵活性，进而支持各种接口模块，包括串行、数字用户线路 (DSL)、交换机端口和无线。]]></text>
+    </component>
+    <component id="ID_titleTxt02">
+        <text>
+            <![CDATA[紧凑式闪存插槽]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt011">
+        <text>
+            <![CDATA[&nbsp;]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt02">
+        <text>
+            <![CDATA[标记为 CF0 和 CF1，用于增加存储器闪存空间，每个插槽可升级至 4 GB 紧凑式闪存卡。默认情况下，CF0 通过 256 MB 紧凑式闪存卡填写，它是默认启动位置。]]></text>
+    </component>
+    <component id="ID_titleTxt03">
+        <text>
+            <![CDATA[控制台端口]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt014">
+        <text>
+            <![CDATA[&nbsp;]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt03">
+        <text>
+            <![CDATA[用于初始配置和命令行界面 (CLI) 管理访问。两个端口可用；常用的常规 RJ-45 端口和新的 USB Type-B (mini-B USB) 连接器。但是，一次只能通过一个端口访问控制台。]]></text>
+    </component>
+    <component id="ID_titleTxt04">
+        <text>
+            <![CDATA[辅助 (AUX)]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt013">
+        <text>
+            <![CDATA[&nbsp;]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt04">
+        <text>
+            <![CDATA[RJ-45 端口用于远程管理访问，这类似于控制台端口。现在它被视为传统端口，因为它过去为拨号调制解调器提供支持。]]></text>
+    </component>
+    <component id="ID_titleTxt05">
+        <text>
+            <![CDATA[千兆以太网]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt016">
+        <text>
+            <![CDATA[&nbsp;]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt05">
+        <text>
+            <![CDATA[接口标记为 GE0/0 和 GE0/1。通常通过连接交换机与用户或者互联其他路由器来提供 LAN 访问。]]></text>
+    </component>
+    <component id="ID_titleTxt06">
+        <text>
+            <![CDATA[USB]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt015">
+        <text>
+            <![CDATA[&nbsp;]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt06">
+        <text>
+            <![CDATA[端口标记为 USB 0 和 USB 1，用于提供额外的存储空间，类似于闪存。]]></text>
+    </component>
+</textcomponents>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.2.8 端口号组</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.2.8_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>端口号组</h1>
+        <div>
+          <p>互联网数字分配机构 (IANA) 是负责分配各种编址标准（包括端口号）的标准机构。如图 1 所示，端口号有如下不同类型：</p>
+          <p>
+            <ul>
+              <li>
+                <b>公认端口（端口 0 到 1023）</b>- 这些编号用于服务和应用程序。Web 浏览器、电子邮件客户端以及远程访问客户端等应用程序通常使用这些端口号。通过为服务器应用程序定义公认端口，可以将客户端应用程序设定为请求特定端口及其相关服务的连接。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>注册端口（端口 1024 到 49151）</b>- 这些端口号由 IANA 分配给请求实体以用于特定进程或应用程序。这些进程主要是用户选择安装的一些应用程序，而不是已经分配了公认端口号的常用应用程序。例如，思科已将端口 1985 注册为其热备份路由器协议 (HSRP) 进程。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>动态或私有端口（端口 49152 到 65535）</b> - 也称为临时端口。这些端口往往在开始连接服务时由客户端操作系统动态分配。动态端口用于在通信期间识别客户端应用程序。</li>
+            </ul>
+          </p>
+          <p>
+            <b>注意</b>：一些客户端操作系统在分配源端口时可能使用注册端口号而不是动态端口号。</p>
+          <p>图 2 显示了一些常见公认端口号及其相关应用程序。一些应用程序可能既使用 TCP，又使用 UDP。例如，当客户端向 DNS 服务器发送请求时，DNS 使用 UDP。但是，两个 DNS 服务器之间的通信总是使用 TCP.</p>
+          <p>单击<a href="http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml" target="_blank">此处</a>查看 IANA 网站上端口号及相关应用程序的完整列表。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the three ranges used for port numbers.  Ports 0 through 1023 are classified as well known ports.  Numbers 1024 through 49151 are registered ports.  Ports 49152 through 65535 are considered private and slash or dynamic ports. Figure 2 lists a dozen of the more common well-known port numbers including FTP (20 and 21), SSH (22), SMTP (25), DNS (53), DHCP (67 and 68), TFTP (69), HTTP (80), POP3 (110), IMAP (143), SNMP (161), and HTTPS (443).</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>扩展 Ping</b>]]></text>
+</component>
+<component id="ID_s2_title">
+  <text><![CDATA[<b>从 R1 对 R3 进行 traceroute 操作</b>]]></text> 
+  </component>
+<component id="ID_s3_title">
+  <text><![CDATA[<b>验证路由表</b>]]></text> 
+  </component>
+<component id="ID_s4_title">
+  <text><![CDATA[<b>接口状态</b>]]></text> 
+  </component>
+  <component id="ID_s5_title">
+  <text><![CDATA[<b>直连的思科设备</b>]]></text> 
+  </component>
+</textcomponents>

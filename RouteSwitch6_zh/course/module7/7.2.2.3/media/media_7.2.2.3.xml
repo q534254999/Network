@@ -1,0 +1,10 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>在命名 ACL 中添加行</b>]]></text>
+	</component>
+	
+	<component id="ID_text01">
+		<text><![CDATA[<b>注意</b>：<font face="_typewriter"><b>no</b> <i>序号</i></font> 命名 ACL 命令用于删除单个语句。]]></text>
+	</component>
+	
+</textcomponents>

@@ -1,0 +1,1 @@
+图 1 显示带用于重置本征 VLAN 和在中继链路上重置允许的 VLAN 的命令的表。图 2 显示重置本征 VLAN 和在中继链路上重置允许的 VLAN 的语法。此外，还显示了用于验证是否已适当重新配置端口的“show interfaces f0/1 switchport”命令的输出。图 3 显示将端口 F0/1 配置为接入端口的语法。此外，还显示了用于验证是否已适当重新配置端口的“show interfaces f0/1 switchport”命令。

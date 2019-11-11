@@ -1,0 +1,48 @@
+<textcomponents>
+	<component id='ID_inst'>
+		<text><![CDATA[<b>练习 - 确定父 IPv4 路由和子 IPv4 路由</b><br/><br/>使用以下路由表找到图表中列出的网络。 确定网络是属于 1 级，1 级父路由，还是 2 级子路由。 将合适的术语拖动到提供的“路由类型”字段。</b>]]></text>
+	</component><!--Drag and Drop--><component id='ID_drag01'>
+		<text><![CDATA[<font color="#393536">第 1 级</font>]]></text>
+	</component>
+
+	<component id='ID_drag02'>
+		<text><![CDATA[<font color="#393536">1 级父路由</font>]]></text>
+	</component>
+
+	<component id='ID_drag03'>
+		<text><![CDATA[<font color="#393536">2 级子路由</font>]]></text>
+	</component>
+
+	<component id='ID_s1_CORRECT_TITLE'>
+		<text><![CDATA[<span class="font10px"><b>正确</b></span>]]></text>
+	</component>
+
+	<component id='ID_s1_CORRECT_BODY'>
+		<text><![CDATA[<span class="font10px">您已成功将每个网络的路由类型进行分类。</span>]]></text>
+	</component>
+
+	<component id='ID_s1_INCORRECT_TITLE'>
+		<text><![CDATA[<span class="font10px"><b>不正确</b></span>]]></text>
+	</component>
+
+	<component id='ID_s1_INCORRECT_BODY'>
+		<text><![CDATA[<span class="font10px">您尚未成功将每个网络的路由类型进行分类。 请单击“重置”重试。</span>]]></text>
+	</component>
+
+	<component id='ID_CHECK'>
+		<text><![CDATA[<b>检查</b>]]></text>
+	</component>
+
+	<component id='ID_RESET'>
+		<text><![CDATA[<b>重置</b>]]></text>
+	</component>
+
+	<component id='ID_txt01'>
+		<text><![CDATA[<b>指定网络</b>]]></text>
+	</component> 
+	
+	<component id='ID_txt02'>
+		<text><![CDATA[<b>路由类型</b>]]></text>
+	</component> 
+	
+</textcomponents>

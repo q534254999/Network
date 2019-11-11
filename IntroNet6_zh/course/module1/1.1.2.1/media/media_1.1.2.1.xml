@@ -1,0 +1,41 @@
+<textcomponents>
+	<component id="ID_titleTxt01">
+		<text><![CDATA[小型家庭网络]]></text>
+	</component>
+	<component id="ID_title01">
+		<text><![CDATA[小型家庭网络]]></text>
+	</component>
+	<component id="ID_bodyTxt01">
+		<text><![CDATA[小型家庭网络将少量的几台计算机互联并将它们连接到互联网。]]></text>
+	</component>
+	<component id="ID_titleTxt02">
+		<text><![CDATA[小型办公室/家庭办公室网络]]></text>
+	</component>
+	<component id="ID_title02">
+		<text><![CDATA[小型办公室/家庭办公室网络]]></text>
+	</component>
+	<component id="ID_bodyTxt02">
+		<text><![CDATA[小型办公室/家庭办公室 (SOHO) 网络可让一个家庭办公室或远程办公室内的计算机连接到企业网络或访问集中的共享资源。]]></text>
+	</component>
+	<component id="ID_titleTxt03">
+		<text><![CDATA[大中型网络]]></text>
+	</component>
+	<component id="ID_title03">
+		<text><![CDATA[大中型网络]]></text>
+	</component>
+	<component id="ID_bodyTxt03">
+		<text><![CDATA[大中型网络（例如大型企业和学校使用的网络）可能有许多站点，包含成百上千台相互连接的计算机。]]></text>
+	</component>
+	<component id="ID_titleTxt04">
+		<text><![CDATA[万维网]]></text>
+	</component>
+	<component id="ID_title04">
+		<text><![CDATA[万维网]]></text>
+	</component>
+	<component id="ID_bodyTxt04">
+		<text><![CDATA[Internet 是由网络组成的网络，连接全球亿万台计算机。]]></text>
+	</component>
+	<component id="ID_inst">
+		<text><![CDATA[单击蓝色突出显示的图像以了解详细信息。]]></text>
+	</component>
+</textcomponents>

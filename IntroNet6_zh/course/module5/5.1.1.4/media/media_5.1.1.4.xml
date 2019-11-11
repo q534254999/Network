@@ -1,0 +1,90 @@
+<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>以太网 II 帧字段</b>]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[前导码]]>
+        </text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[目的 MAC 地址]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[源 MAC 地址]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[EtherType]]>
+        </text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[数据]]>
+        </text>
+    </component>
+    <component id="ID_txt06">
+        <text>
+            <![CDATA[FCS]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt01">
+        <text>
+            <![CDATA[前导码和起始帧分界符字段]]></text>
+    </component>
+    <component id="ID_bodyTxt01">
+        <text>
+            <![CDATA[前导码（7 个字节）和起始帧分界符 (SFD)（也称为帧首）（1 个字节）字段用于发送设备与接收设备之间的同步。帧的这前八个字节用于引起接收节点的注意。前几个字节的实质作用是告诉接收方准备接收新帧。]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt02">
+        <text>
+            <![CDATA[目的 MAC 地址字段]]></text>
+    </component>
+    <component id="ID_bodyTxt02">
+        <text>
+            <![CDATA[该 6 字节字段是预期接收方的标识符。您应该还记得，此地址被第 2 层用来协助设备确定帧是否发送到目的地。帧中的地址将会与设备中的 MAC 地址进行比对。如果匹配，设备就接受该帧。可以是单播、组播或广播地址。]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt03">
+        <text>
+            <![CDATA[源 MAC 地址字段]]></text>
+    </component>
+    <component id="ID_bodyTxt03">
+        <text>
+            <![CDATA[该 6 字节字段标识发出帧的网卡或接口。必须是单播地址。]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt04">
+        <text>
+            <![CDATA[EtherType 字段]]></text>
+    </component>
+    <component id="ID_bodyTxt04">
+        <text>
+            <![CDATA[该字段包含两个字节，标识封装于以太网帧中的上层协议。常见值为十六进制，0x800 用于 IPv4，0x86DD 用于 IPv6，0x806 用于 ARP。]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt05">
+        <text>
+            <![CDATA[数据字段]]></text>
+    </component>
+    <component id="ID_bodyTxt05">
+        <text>
+            <![CDATA[该字段（46 - 1500 个字节）包含来自较高层的封装数据（一般是第 3 层 PDU 或更常见的 IPv4 数据包）。所有帧至少必须有 64 个字节。如果封装的是小数据包，则使用填充位将帧增大到最小值。]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt06">
+        <text>
+            <![CDATA[帧校验序列字段]]></text>
+    </component>
+    <component id="ID_bodyTxt06">
+        <text>
+            <![CDATA[“帧校验序列 (FCS)”字段（4 个字节）用于检测帧中的错误。它使用循环冗余校验 (CRC)。发送设备在帧的 FCS 字段中包含 CRC 的结果。接收设备接收帧并生成 CRC 以查找错误。如果计算匹配，就不会发生错误。计算不匹配则表明数据已经改变；因此帧会被丢弃。数据改变可能是由于代表比特的电信号中断所致。]]>
+        </text>
+    </component>
+</textcomponents>

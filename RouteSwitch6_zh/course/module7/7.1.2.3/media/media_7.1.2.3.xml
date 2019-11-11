@@ -1,0 +1,19 @@
+<textcomponents><!--Slide 1--><component id="ID_s1_title">
+<text><![CDATA[<b>通配符掩码计算方法</b>]]></text>
+</component>
+
+
+<component id="ID_s1_txt01">
+<text><![CDATA[示例 1]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[示例 2]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[示例 3]]></text>
+</component>
+
+
+</textcomponents>

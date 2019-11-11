@@ -1,0 +1,15 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>末节网络和末节路由器</b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[末节网络]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[网络]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[末节路由器]]></text> 
+  </component>
+
+</textcomponents>

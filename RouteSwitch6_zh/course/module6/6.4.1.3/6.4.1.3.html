@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.4.1.3 第 6 章：VLAN</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.4.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>第 6 章：VLAN</h1>
+        <div>
+          <p>本章介绍了 VLAN。VLAN 基于逻辑连接，而不是物理连接。VLAN 机制允许网络管理员创建可跨单个或多台交换机的逻辑广播域，而无需考虑物理接近度。此功能可用于减小广播域的大小，或用于对组或用户进行逻辑分组，不必位于相同物理位置。</p>
+          <p></p>
+          <p>VLAN 分为几类： </p>
+          <p>
+            <ul>
+              <li>默认 VLAN</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>管理 VLAN</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>本征 VLAN</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>用户/数据 VLAN</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>语音 VLAN</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>移动设备上的<span class="cmd"><b></b></span><b>switchport access vlan</b><span class="cmd"><b></b></span>命令用于在交换机上创建 VLAN。在创建 VLAN 后，下一步是为 VLAN 分配端口。移动设备上的<span class="cmd"><b></b></span><b>show vlan brief</b><span class="cmd"><b></b></span>命令显示所有交换机端口的 VLAN 分配和成员关系。每个 VLAN 必须对应唯一的 IP 子网。</p>
+          <p></p>
+          <p>使用<span class="cmd"><b></b></span><b>show vlan</b><span class="cmd"><b></b></span>命令检查端口是否属于期望的 VLAN。如果为端口分配了错误的 VLAN，请使用<span class="cmd"><b></b></span><b>switchport access vlan</b><span class="cmd"><b></b></span>命令纠正 VLAN 成员关系。使用<span class="cmd"><b></b></span><b>show mac address-table</b> 命令检查交换机的特定端口上获取的地址，以及为该端口分配的 VLAN。</p>
+          <p></p>
+          <p>交换机上的端口既是接入端口，又是 TRUNK 端口。接入端口传输来自分配给该端口的特定 VLAN 的流量。TRUNK 端口默认为所有 VLAN 的成员；因此，它传输所有 VLAN 的流量。</p>
+          <p></p>
+          <p>VLAN TRUNK 传递与多个 VLAN 关联的流量，非常有利于交换机间的通信。与不同 VLAN 关联的以太网帧在经过公共的 TRUNK 链路时，IEEE 802.1Q 帧标记功能可以区分这些帧。要启用中继链路，请使用<span class="cmd"><b></b></span><b>switchport mode trunk</b><span class="cmd"><b></b></span>命令从端口中删除该 VLAN。使用<span class="cmd"><b></b></span><b>show interfaces trunk</b><span class="cmd"><b></b></span>命令检查是否已在交换机之间建立中继。</p>
+          <p></p>
+          <p>TRUNK 协商由动态中继协议 (DTP) 管理，它仅在网络设备之间点对点地进行操作。DTP 是 Catalyst 2960 和 Catalyst 3560 系列交换机上自动启用的思科专有协议。</p>
+          <p></p>
+          <p>要将交换机恢复为带 1 个默认 VLAN 的出厂默认状态，请使用命令<b></b><b>delete flash:vlan.dat</b><span class="cmd"><b></b></span>和<span class="cmd"><b></b></span><b>erase startup-config.</b></p>
+          <p></p>
+          <p>本章还检查如何使用思科 IOS CLI 对 VLAN 和中继进行配置、验证和故障排除工作。</p>
+          <p></p>
+          <p>VLAN 间路由是在不同 VLAN 之间，通过一台专用路由器或多层交换机进行路由通信的过程。VLAN 间路由可实现被 VLAN 边界隔离设备之间的通信。</p>
+          <p></p>
+          <p>传统 VLAN 间路由取决于每个所配置的 VLAN 上的可用物理路由器端口。依赖外部路由器（包含中继到第 2 层交换机的子接口）的单臂路由器拓扑已经取代了上述状况。如果选择使用单臂路由器，则每个逻辑子接口上都必须配置正确的 IP 编址和 VLAN 信息，而且必须配置 TRUNK 封装来匹配交换机的中继接口。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图是标准章节介绍和摘要图形</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

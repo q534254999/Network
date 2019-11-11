@@ -1,0 +1,46 @@
+<textcomponents><!--Slide 1--><component id="ID_s1_title">
+		<text><![CDATA[<b>过滤显示命令</b>]]></text>
+	</component><!--Slide 2--><component id="ID_s2_title">
+		<text><![CDATA[<b>过滤显示命令</b>]]></text>
+	</component><!--Slide 3--><component id="ID_s3_title">
+		<text><![CDATA[<b>过滤显示命令</b>]]></text>
+	</component><!--Slide 4--><component id="ID_s4_title">
+		<text><![CDATA[<b>过滤显示命令</b>]]></text>
+	</component><!--Slide 5--><component id="ID_sc_reset">
+		<text><![CDATA[重置]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[看答案]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[全部显示]]></text>
+	</component>
+	<component id="ID_s5_title">
+		<text><![CDATA[<b>过滤显示命令</b>]]></text>
+	</component>
+	<component id="ID_SC" fontSize="12" fontFace="_typewriter" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b>***</b><font face="_sans" color="#FFFFFF">您必须输入准确而完整的命令。</font><b>***</b>]]></feedback>
+		<existingcommands><![CDATA[<font face="_sans"><b>输入命令过滤“line con”部分的 show running-config 输出。</b></font>]]></existingcommands>
+		<command prompt="R1#">
+			<correctresponse><![CDATA[show running-config | section line con]]></correctresponse>
+			<deviceresponse><![CDATA[<font >line con 0<br> password 7 110A1016141D<br> login</font>]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>输入命令过滤简短列表中的“down”接口。</b></font>]]></instruction>
+		</command>
+		<command prompt="R1#">
+			<correctresponse><![CDATA[show ip interface brief | include down]]></correctresponse>
+			<deviceresponse><![CDATA[Interface IP-Address OK? Method Status Protocol<br>Embedded-Service-Engine0/0 unassigned YES unset administratively down down<br>Serial0/0/1 unassigned YES unset administratively down down</font>]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>输入命令排除简短列表中的“up”接口。</b>]]></instruction>
+		</command>
+		<command prompt="R1#">
+			<correctresponse><![CDATA[show ip interface brief | exclude up]]></correctresponse>
+			<deviceresponse><![CDATA[Interface IP-Address OK? Method Status Protocol<br>Embedded-Service-Engine0/0 unassigned YES unset administratively down down<br>Serial0/0/1 unassigned YES unset administratively down down</font>]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>输入命令过滤以单词 line 开头的 show running-config 输出。</b>]]></instruction>
+		</command>
+		<command prompt="R1#">
+			<correctresponse><![CDATA[show running-config | begin line]]></correctresponse>
+			<deviceresponse><![CDATA[<font>line con 0 <br> password 7 110A1016141D <br> login <br>line aux 0 <br>line 2 <br> no activation-character <br> no exec <br> transport preferred none <br> transport input all <br> transport output pad telnet rlogin lapb-ta mop udptn v120 <br/>ssh <br> stopbits 1 <br>line vty 0 4 <br> password 7 030752180500 <br> login <br> transport input all <br>!  <br>scheduler allocate 20000 1000 <br>!  <br>end <br> <br>R1# </font>]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans" class="syntaxBottomLine"><b>您已成功执行了过滤 show 命令。</b></font>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+</textcomponents>

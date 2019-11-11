@@ -1,0 +1,32 @@
+<textcomponents><!--slide 1--><!--OSI Model--><component id="ID_osi_header"><text><![CDATA[<font size="14"><b>OSI 模型</b></font>]]></text></component><component id="ID_osi_txt07"><text><![CDATA[应用层]]></text></component><component id="ID_osi_txt06"><text><![CDATA[表示层]]></text></component><component id="ID_osi_txt05"><text><![CDATA[会话层]]></text></component><component id="ID_osi_txt04"><text><![CDATA[传输层]]></text></component><component id="ID_osi_txt03"><text><![CDATA[网络层]]></text></component><component id="ID_osi_txt02"><text><![CDATA[数据链路层]]></text></component><component id="ID_osi_txt01"><text><![CDATA[物理层]]></text></component><component id="ID_s1_txt01"><text><![CDATA[TCP/IP 标准在软件中实施并由 IETF 监管。]]></text></component>
+	<component id="ID_s1_txt02"><text><![CDATA[物理层标准在硬件中实施并由许多组织监管，包括：<br><textformat blockindent='-18'><li>ISO</li><li>EIA/TIA</li><li>ITU-T</li><li>ANSI</li><li>IEEE</li></textformat>]]></text></component><!--slide 2-->
+	<component id="ID_s2_table"><text><![CDATA[<table header="none" bordercolor="#98D3D1" borderwidth="3" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4">
+	<tr>
+		<td colspan="2" bgcolor="#0E6360" class="mtable_top"><font size="2" color="#0E6360">.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#077A77" width="100"><font color="#FFFFFF">。</font></td>
+		<td bgcolor="#077A77"><font color="#FFFFFF">Standard Organization</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#EFF8F7">Networking Standards</td>
+		<td bgcolor="#EFF8F7"><textformat blockindent="-18">ISO</textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFFFFF">ISO 8877: Officially adopted the RJ connectors (e.g., RJ-11, RJ-45).ISO 11801: Network cabling standard similar to EIA/TIA 568.</td>
+		<td bgcolor="#FFFFFF"><textformat blockindent="-18">EIA/TIA</textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor="#EFF8F7">TIA-568-C: Telecommunications cabling standards, used by nearly all voice, video, and data networks.TIA-569-B: Commercial Building Standards for Telecommunications Pathways and Spaces.TIA-598-C: Fiber optic color coding.TIA-942: Telecommunications Infrastructure Standard for Data Centers.</td>
+		<td bgcolor="#EFF8F7">ANSI</td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFFFFF">568-C: RJ-45 pinouts. Co-developed with EIA/TIA.</td>
+		<td bgcolor="#FFFFFF">ITU-T</td>
+	</tr>
+	<tr>
+		<td bgcolor="#EFF8F7">G.992: ADSL</td>
+		<td bgcolor="#EFF8F7"><textformat blockindent="-18">IEEE</textformat></td>
+	</tr>
+</table>
+]]></text></component></textcomponents>

@@ -1,0 +1,23 @@
+<textcomponents>
+	<component id="ID_txt01">
+		<text><![CDATA[mysong.mp3 在哪里]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[我有。]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[我有。]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[我有。]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[P2P 应用程序通过 Gnutella 可以搜索对等节点上的共享资源。]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[网络]]></text>
+	</component>
+	<component id="ID_title">
+		<text><![CDATA[<b>Gnutella 支持 P2P 应用程序</b>]]></text>
+	</component>
+</textcomponents>

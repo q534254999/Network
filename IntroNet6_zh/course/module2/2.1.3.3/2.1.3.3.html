@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.3.3 配置命令模式</title>
+    <!-- Activity / Other / Flash PnC -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置命令模式</h1>
+        <div>
+          <p>要配置设备，用户必须进入<b>全局配置模式</b>。 </p>
+          <p></p>
+          <p>在全局配置模式下，对 CLI 配置所做的更改将影响整个设备的运行。全局配置模式由在设备名称之后加 (config)# 结尾的提示符标识，比如 <b>Switch(config)#</b>。</p>
+          <p></p>
+          <p>访问全局配置模式之后才能访问其他具体的配置模式。在全局配置模式下，用户可以进入不同的子配置模式。其中的每种模式可以用于配置 IOS 设备的特定部分或特定功能。两个常见的子配置模式包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>线路配置模式 - </b>用于配置控制台、SSH、Telnet 或 AUX 访问。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>接口配置模式 - </b>用于配置交换机端口或路由器网络接口。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>当使用 CLI 时，每种模式由该模式独有的命令提示符来标识。默认情况下，每个提示符都以设备名称开头。命令提示符中设备名称后的部分用于表明状态。例如，线路配置模式的默认提示符为 <b>Switch(config-line)#</b>，而接口配置模式的默认提示符为 <b>Switch(config-if)#</b>。</p>
+          <p></p>
+          <p>单击图中的“播放”观看有关在 IOS 模式之间导航的视频演示。</p>
+          <p></p>
+          <p>单击<a href="../../files/2.1.3.3%20Video%20-%20IOS%20CLI%20Primary%20Command%20Modes.pdf" target="_blank">此处</a>可阅读本视频的脚本。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" src="media/index.html" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is a video with the title "IOS CLI Primary Command Modes".</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

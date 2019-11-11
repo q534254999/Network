@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.2.2 解决连接问题</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>解决连接问题</h1>
+        <div>
+          <p>如果使用正确的工具并采用系统的方法，查找缺失（或配置错误）的路由会相对简单一些。 </p>
+          <p></p>
+          <p>例如，在本例中，PC1 的用户报告说他无法访问 R3 LAN 上的资源。将 R1 的 LAN 接口用作源，对 R3 的 LAN 接口执行 ping 操作，可以确认问题（参见图 1）。结果显示，这些 LAN 之间没有建立连接。</p>
+          <p></p>
+          <p>图 2 中的 traceroute 显示，R2 没有按预期响应。由于某种原因，R2 将 traceroute 返回给 R1。R1 又将其返回到 R2。这种循环会一直持续，直到生存时间 (TTL) 值递减为 0，这种情况下，路由器将向 R1 发送互联网控制消息协议 (ICMP) 目的地不可达的消息。</p>
+          <p></p>
+          <p>下一步是检查 R2 的路由表，因为是路由器显示异常转发模式。图 3 中的路由表显示，192.168.2.0/24 网络配置错误。当前已用下一跳地址 172.16.2.1 配置了到 192.168.2.0/24 网络的静态路由。使用配置的下一跳地址，指向 192.168.2.0/24 网络的数据包发送回 R1。从拓扑中可以清楚看到，192.168.2.0/24 网络连接到 R3，而不是 R1。因此，R2 上到 192.168.2.0/24 网络的静态路由必须使用下一跳 192.168.1.1，而不是 172.16.2.1。</p>
+          <p></p>
+          <p>图 4 显示运行配置的输出，显示不正确的 <b>ip route </b>语句。删除不正确的路由，然后输入正确的路由。</p>
+          <p></p>
+          <p>图 5 验证 R1 现在可以到达 R3 的 LAN 接口。最后一个确认步骤是，PC1 上的用户还应该测试与 192.168.2.0/24 LAN 的连接。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">这些图基于标准实验图。图 1 显示路由器 1 上“ping”命令到路由器 3 LAN 上的 PC 的输出。此 ping 使用源选项从路由器 1 LAN 接口获取该 ping。此 ping 命令会失败。图 2 显示路由器 1 上“trace route”命令到路由器 3 LAN 上的 PC 的输出。由于路由器 2 将数据包发送回路由器 1，因此跟踪路由失败。跟踪路由显示数据包在路由器 1 和路由器 2 之间跳来跳去。图 3 显示路由器 2 上“show ip route”命令的输出。在这里，我们注意到路由器 2 具有通往指向路由器 1 的路由器 3 LAN 的静态路由。图 4 显示路由器 2 上“show running-config”命令的输出，其中列出静态路由。我们注意到通往路由器 3 LAN 的静态路由配置错误。输出还显示删除静态路由并将其更换为正确配置的路由。图 5 显示路由器 1 上“ping”命令到路由器 3 LAN 上的 PC 的输出。此 ping 使用源选项从路由器 1 LAN 接口获取该 ping。此 ping 操作成功。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

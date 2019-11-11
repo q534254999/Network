@@ -1,0 +1,33 @@
+<textcomponents><!--slide 2--><component id="ID_s2_title"><text><![CDATA[<b>IOS 命令约定</b>]]></text></component><component id="ID_s2_table"><text><![CDATA[<table header="none" bordercolor="#FFFFFF" borderwidth="3" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4">
+	<tr class="mtable_title">
+		<td colspan="2" bgcolor="#FFFFFF"><font size="12">说明命令的用途时通常使用以下约定。</font></td>
+	</tr>
+	<tr class="mtable_top">
+		<td colspan="2" bgcolor="#4E4C4D"><font size="1" color="#4E4C4D">.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF">约定</font></td>
+		<td bgcolor="#666263"><font color="#FFFFFF">描述</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8"><b>粗体</b></td>
+		<td bgcolor="#E9E7E8">粗体文本表示您需要原样输入的命令和关键字。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2"><i>斜体</i></td>
+		<td bgcolor="#F2F2F2">斜体文本表示由您提供值的参数。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8">[x]</td>
+		<td bgcolor="#E9E7E8">方括号表示可选元素（关键字或参数）。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2">{x}</td>
+		<td bgcolor="#F2F2F2">大括号表示必需元素（关键字或参数）。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8">[x {y | z}]</td>
+		<td bgcolor="#E9E7E8">方括号中的大括号和垂直线表示可选元素中的必填选项。</td>
+	</tr>
+</table>
+]]></text></component></textcomponents>

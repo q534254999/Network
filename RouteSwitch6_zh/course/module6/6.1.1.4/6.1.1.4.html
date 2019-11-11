@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.1.4 语音 VLAN</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>语音 VLAN</h1>
+        <div>
+          <p>IP 语音 (VoIP) 需要单独的 VLAN。因此 VoIP 流量要求：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>足够的带宽来保证语音质量 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>高于其它网络流量类型的传输优先级</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>可以绕过网络中的拥塞区域进行路由</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>跨网络的延迟小于 150 毫秒</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>为满足这些要求，整个网络都必须支持 VoIP。至于具体怎样配置网络使其支持 VoIP，这已经超出本课程的范围，但是了解这些对于总结语音 VLAN 在路由器、思科 IP 电话以及计算机之间的工作方式很有意义。</p>
+          <p></p>
+          <p>如图所示，VLAN 150 用于传送语音流量。学生计算机 PC5 连接到思科 IP 电话，而电话又连接到交换机 S3。PC5 位于 VLAN 20 这个主要用于传输学生数据的 VLAN 中。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示一个路由器连接到交换网络。一台交换机连接了一台 VoIP 电话。每台交换机上都有标注，表明交换机将支持 VLAN 150。默认情况下这是思科交换机上的 VLAN。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

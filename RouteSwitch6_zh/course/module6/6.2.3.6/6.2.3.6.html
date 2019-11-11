@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.3.6 不正确的 VLAN 列表</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.3.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>不正确的 VLAN 列表</h1>
+        <div>
+          <p>要让来自 VLAN 的流量通过 TRUNK 传输，必须在 TRUNK 上获得允许。要获得允许，请使用 <b>switchport trunk allowed vlan</b><b><i></i></b><i>vlan-id</i> 命令从端口中删除该 VLAN。 </p>
+          <p></p>
+          <p>在图 1 中，VLAN 20 (Student) 和 PC5 已加入网络。文档已经过更新，现在文档显示中继上允许的 VLAN 有 10、20 和 99。在这种情况下，PC5 无法连接到学生电子邮件服务器。 </p>
+          <p></p>
+          <p>如图 2 所示，使用<b> show interfaces trunk </b>命令查看交换机 S1 上的 TRUNK 端口。<b>show interfaces trunk</b> 命令是揭示常见中继问题的有力工具。该命令表明，交换机 S3 上的接口 F0/3 已正确配置为允许 VLAN 10、20 和 99。检查交换机 S1 上的 F0/3 接口后发现，接口 F0/1 和 F0/3 只允许 VLAN 10 和 99。有人更新了文档，但忘了重新配置交换机 S1 上的端口。</p>
+          <p></p>
+          <p>如图 3 所示，使用<b> switchport trunk allowed vlan 10,20,99 </b>命令重新配置交换机 S1 上的接口 F0/1 和 F0/3。输出显示，VLAN 10、20 和 99 现已添加到交换机 S1 的 F0/1 和 F0/3 端口上。PC5 已与 IPv4 地址为 172.17.20.10 的学生电子邮件服务器重新建立连接。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示一个 LAN，带有两台连接到交换机 3 的 PC，一台连接到交换机 1 的电子邮件服务器，和一台连接到交换机 1 的 Web 服务器。交换机 3 上的其中一台计算机具有标注，说明其无法连接到电子邮件服务器。它位于另一个 VLAN，但其 IP 地址与电子邮件服务器位于相同的子网。图 2 显示交换机 1 和交换机 3 上“show interfaces trunk”命令的输出。F0/3 上允许的 VLAN 突出显示，交换机 1 缺失 VLAN 20。图 3 显示将 VLAN 20 添加到交换机 1 上端口 f0/3 上的语法，以及交换机 1 上“show interfaces trunk”命令的输出。还显示来自 PC 5 的成功 ping 的输出。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

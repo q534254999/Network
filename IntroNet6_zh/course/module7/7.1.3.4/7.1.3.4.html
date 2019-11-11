@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.3.4 单播传输</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>单播传输</h1>
+        <div>
+          <p>在客户端/服务器网络和对等网络中，主机与主机之间的常规通信都使用单播通信。单播数据包使用目的设备的地址作为目的地址并且可以通过网际网络路由。 </p>
+          <p>播放动画，观看单播传输的示例。</p>
+          <p>在 IPv4 网络中，用于终端设备的单播地址称为主机地址。单播通信使用分配给两台终端设备的地址作为源 IPv4 地址和目的 IPv4 地址。在封装过程中，源主机将其 IPv4 地址作为源地址，目的主机的 IPv4 地址作为目的地址。无论目标指定的数据包是单播、广播或组播，任何数据包的源地址总是源主机的单播地址。 </p>
+          <p>
+            <b>注意</b>：在本课程中，除非另行说明，否则设备之间的所有通信均指单播通信。</p>
+          <p>IPv4 单播主机地址的地址范围是 0.0.0.0 到 223.255.255.255。不过，此范围中的很多地址被留作特殊用途。这些特殊用途的地址将在本章后续部分讨论。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is an animation showing a unicast transmission.  A PC with the IP address 172.16.4.1 needs to send a packet to a network printer at 172.16.4.253.  The packet is sent to a switch and then the packet is forwarded only to the printer.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

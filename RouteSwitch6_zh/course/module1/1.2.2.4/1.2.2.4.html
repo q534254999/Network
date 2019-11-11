@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.2.2.4 管理距离</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.2.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>管理距离</h1>
+        <div>
+          <p>可以使用多个路由协议和静态路由来配置路由器。如果发生这种情况，则对于同一目标网络，路由表可能会有多个路由来源。例如，如果路由器上同时配置了 RIP 和 EIGRP，则两种路由协议可能会获得相同的目标网络。但是，每个路由协议可能会根据各自路由协议的度量选择不同的路径到达目的地。RIP 根据跳数选择路径，而 EIGRP 根据其复合度量选择路径。路由器如何确定使用哪个路由？</p>
+          <p></p>
+          <p>思科 IOS 使用称为管理距离 (AD) 的工具来确定安装到 IP 路由表的路由。AD 代表路由的“可信度”；AD 越低，路由来源的可信度越高。例如，静态路由的 AD 为 1，而 EIGRP 发现的路由的 AD 为 90。如果有两条通往相同目的地的不同路由，则路由器会选择 AD 较低的路由。如果有静态路由和 EIGRP 路由供路由器选择，则路由器会优先选择静态路由。同理，AD 为 0 的直连路由的优先级高于 AD 为 1 的静态路由。</p>
+          <p></p>
+          <p>图中列出了各种路由协议及其关联的 AD。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中列出常用路由协议及各个协议的管理距离的表。三个主要路由协议及其管理距离为 RIP 使用 120、OSPF 使用 110，以及内部 EIGRP 使用 90。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.3.1.2 路由表来源</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>路由表来源</h1>
+        <div>
+          <p>在思科路由器上，<b>show ip route</b> 命令可用于显示路由器 IPv4 路由表。路由器将提供其他路由信息，包括如何获取路由、路由在表中存在的时间以及到达预定目的地要使用的具体接口。</p>
+          <p></p>
+          <p>路由表中的条目可按以下方式添加：</p>
+          <p>
+            <ul>
+              <li>
+                <b>本地路由接口</b> - 当接口已配置并处于活动状态时添加。该条目只在使用 IPv4 路由的 IOS 15 或更新版本中和使用 IPv6 路由的所有 IOS 版本中显示。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>直连接口</b> - 当接口已配置并处于活动状态时添加到路由表中。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>静态路由</b> - 当路由已手动配置且退出接口处于活动状态时添加。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>动态路由协议</b> - 当实施了用于动态获取网络的路由协议（如 EIGRP 或 OSPF）并且网络已确定时添加。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>路由表条目的来源由代码来标识。代码将标识获取路由的方式。例如，常用代码包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>L</b> - 标识为路由器接口分配的地址。这使路由器能够有效确定何时收到的数据包是指向该接口的，而不必进行转发。  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>C</b> - 标识直连网络。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>S</b> - 标识创建以通往特定网络的静态路由。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>D</b> - 标识使用 EIGRP 从另一台路由器动态获取的网络。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>O</b> - 标识使用 OSPF 路由协议从另一台路由器动态获取的网络。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>图中显示的是简单网络中的 R1 路由表。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示包括两个通过串行 WAN 链路连接的路由器的网络。每个路由器都在其两个千兆位以太网端口上有一个交换机。全部的四个交换机都连接计算机。此网络共有五个网络，因此具有五个网络地址。图中显示在其中一个路由器上运行 show ip route 命令的输出。该输出列出了相连路由、通过路由协议获取的路由器和活动接口 IP 地址。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

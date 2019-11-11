@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.1.6 LAN 和 WAN 接口</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>LAN 和 WAN 接口</h1>
+        <div>
+          <p>思科路由器上的连接可分为两类：带内路由器接口和管理端口。单击图 1 中突出显示的区域可查看更多信息。</p>
+          <p>与思科交换机类似，有多种方法可以访问思科路由器上的 CLI 环境中的用户 EXEC 模式。最常用的方法包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>控制台</b> – 这是一种物理管理端口，可通过该端口对思科设备进行带外访问。带外访问是指通过仅用于设备维护的专用管理通道进行访问。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>安全外壳 (SSH)</b> – SSH 是使用虚拟接口通过网络远程建立安全 CLI 连接的方法。不同于控制台连接，SSH 连接需要设备上具有有效的网络服务，包括配置了地址的有效接口。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Telnet</b> - Telnet 使用虚拟接口通过网络远程建立 CLI 会话，这种方法并不安全。不同于 SSH，Telnet 不提供经过加密的安全连接。用户身份验证、密码和命令通过网络以明文形式发送。 </li>
+            </ul>
+          </p>
+          <p>
+            <b>注意</b>：某些设备，比如路由器，还可以支持传统辅助端口，这种辅助端口可用于通过调制解调器远程建立 CLI 会话。类似于控制台连接，AUX 端口也是带外连接，且不需要配置或提供网络服务。</p>
+          <p>Telnet 和 SSH 要求带内网络连接，这意味着管理员必须通过其中一个 WAN 或 LAN 接口访问路由器。单击图 2 中突出显示的区域可查看更多信息。 </p>
+          <p>带内接口接收和转发 IP 数据包。路由器上配置的每个活动接口都是不同 IP 网络上的一员或一台主机。每个接口必须配置一个 IPv4 地址以及对应网络的子网掩码。Cisco IOS 不允许同一路由器上的两个活动接口同属一个网络。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the backplane of a 1941 router. Connections and ports highlighted include the management ports and interfaces. Clicking each provides more information. Figure 2 shows the backplane of a 1941 router. Connections and ports highlighted include the serial interfaces (HWICs) and the Gigabit Ethernet interfaces as examples of inband interfaces. Click each provides more information.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

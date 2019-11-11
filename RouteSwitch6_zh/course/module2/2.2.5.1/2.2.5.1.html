@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.5.1 浮动静态路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.5.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>浮动静态路由</h1>
+        <div>
+          <p>浮动静态路由的管理距离大于另一个静态或动态路由的管理距离。当为主链路提供备用链路时，它们非常有用，如图所示。 </p>
+          <p></p>
+          <p>默认情况下，静态路由的管理距离为 1，因此它们优先于通过动态路由协议获知的路由。例如，一些常见动态路由协议的管理距离如下：</p>
+          <p>
+            <ul>
+              <li>EIGRP = 90</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>IGRP = 100</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>OSPF = 110</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>IS-IS = 115</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>RIP = 120</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>静态路由的管理距离可以增加，以便使另一个静态路由或通过动态路由协议获取的路由优先于该路由。这样，静态路由将会“浮动”，当有管理距离更好的路由处于活动状态时，则不使用该路由。但是，如果首选路由丢失，浮动静态路由可以接管，而且流量可以通过此备用路由发送。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示两个路由器，各自有两条路径相互连接。一条路径通过内部网络，另一条路径可以通过互联网。它们之间可能有一个 E. I. G. R. P 主路由。在另一路径发生故障的情况下，管理员可以将浮动静态路由配置为备用路径。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

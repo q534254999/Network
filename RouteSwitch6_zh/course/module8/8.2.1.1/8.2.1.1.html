@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.1.1 无状态地址自动配置 (SLAAC)</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>无状态地址自动配置 (SLAAC)</h1>
+        <div>
+          <p>与 IPv4 类似，可以手动或动态配置 IPv6 全局单播地址。但是，动态分配 IPv6 全局单播地址有两种方法：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>如图所示，无状态地址自动配置 (SLAAC)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>IPv6 的动态主机配置协议（有状态 DHCPv6）</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>介绍 SLAAC</b>
+          </p>
+          <p></p>
+          <p>SLAAC 是一种可以在没有 DHCPv6 服务器服务的情况下获取 IPv6 全局单播地址的方法。SLAAC 的核心是 ICMPv6。ICMPv6 与 ICMPv4 类似，但它包括其他功能，也是一种更稳定的协议。SLAAC 使用 ICMPv6 路由器请求消息和路由器通告消息提供通常本由 DHCP 服务器提供的编址和其他配置信息。</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>路由器请求 (RS) 消息</b> - 当配置客户端以使用 SLAAC 自动获取其编址信息时，该客户端会将 RS 消息发送至路由器。将 RS 信息发送至 IPv6 所有路由器组播地址 FF02::2。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>路由器通告 (RA) 消息</b> - 路由器发送 RA 消息来提供所配置客户端的编址信息，以自动获取其 IPv6 地址。RA 消息包括本地数据段的前缀和前缀长度。客户端使用此信息创建自己的 IPv6 全局单播地址。路由器定期发送 RA 消息或响应 RS 消息。默认情况下，思科路由器每隔 200 秒发送一次 RA 消息。始终将 RA 消息发送到 IPv6 全节点组播地址 FF02::1。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>如名称所示，SLAAC 是无状态的。无状态服务意味着没有维护网络地址信息的服务器。与 DHCP 不同，没有 SLAAC 服务器知道哪些 IPv6 地址正在使用中，哪些地址是可用的。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图显示已连接路由器和计算机的交换机。计算机正在发出 IPv6 路由器请求消息，这是所有路由器组播消息。路由器接收此消息并使用路由器通告消息（这是 IPv6 所有节点组播消息）进行响应。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

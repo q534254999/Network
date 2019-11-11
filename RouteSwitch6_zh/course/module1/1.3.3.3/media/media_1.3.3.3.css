@@ -1,0 +1,10 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#router_text5 {word-spacing:-1.5px;}
+@media only screen and (device-width: 768px) {
+#ID_static_15{left:3px !important}
+}
+#static4,#static2{color:#f68026 !important; }

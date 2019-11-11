@@ -1,0 +1,42 @@
+﻿<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>UDP</b>]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[IP 电话 (VoIP)]]>
+        </text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[流视频]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[<b>无序的数据重构</b><br/>根据接收数据的顺序重构数据。]]></text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[<b>不可靠传输</b><br/>任何丢失的数据段都不会重新发送。]]></text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[<b>无连接</b><br/>没有建立会话。]]></text>
+    </component>
+    <component id="ID_txt06">
+        <text>
+            <![CDATA[<b>无流量控制</b><br/>不会将资源可用性告知发送方。]]></text>
+    </component>
+    <component id="ID_titleTxt01">
+        <text>
+            <![CDATA[UDP 特征]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt01">
+        <text>
+            <![CDATA[<li>会重新组织数据以便于接收。</li><li>不会发送任何丢失的数据分段。</li><li>不会建立会话。</li><li>不会告诉发送者资源是否可用。</li>]]>
+        </text>
+    </component>
+</textcomponents>

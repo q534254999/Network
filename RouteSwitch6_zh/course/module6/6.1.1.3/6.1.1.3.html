@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.1.3 VLAN 的类型</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>VLAN 的类型</h1>
+        <div>
+          <p>现代网络中使用的 VLAN 有许多不同的类型。一些 VLAN 类型按流量类别进行定义。其他一些 VLAN 类型按特定功能进行定义。</p>
+          <p></p>
+          <p>
+            <b>数据 VLAN</b>
+          </p>
+          <p></p>
+          <p>数据 VLAN 用于传送用户生成的流量。传送语音或管理流量的 VLAN 不属于数据 VLAN。我们一般会将语音流量和管理流量与数据流量分开。“数据 VLAN”有时也称为“用户 VLAN”。数据 VLAN 用于将网络分为用户组或设备组。</p>
+          <p></p>
+          <p>
+            <b>默认 VLAN</b>
+          </p>
+          <p></p>
+          <p>交换机加载默认配置进行初始启动后，所有交换机端口成为默认 VLAN 的一部分。参与默认 VLAN 的交换机端口属于同一广播域。这样一来，连接到交换机任何端口的任何设备都能与连接到其它端口的其它设备通信。思科交换机的默认 VLAN 是 VLAN 1。在图中，运行默认配置的交换机上发出 <b>show vlan brief</b> 命令。注意默认情况下，所有端口都分配给 VLAN 1。 </p>
+          <p></p>
+          <p>VLAN 1 具有所有 VLAN 的功能，不同之处在于，它不能重命名或删除。默认情况下，所有第 2 层控制流量都与 VLAN 1 关联。 </p>
+          <p></p>
+          <p>
+            <b>本征 VLAN</b>
+          </p>
+          <p></p>
+          <p>本征 VLAN 分配给 802.1Q 中继端口。TRUNK 端口是交换机之间的链路，支持传输与多个 VLAN 关联的流量。802.1Q TRUNK 端口支持来自多个 VLAN 的流量（有标记流量），也支持来自 VLAN 以外的流量（无标记流量）。有标记流量是指原始的以太网帧头中插入 4 字节标记（指定帧所属的 VLAN）的流量。802.1Q TRUNK 端口在本征 VLAN（默认为 VLAN 1）中保存无标记流量。</p>
+          <p></p>
+          <p>本征 VLAN 在 IEEE 802.1Q 规范中说明，其作用是维护无标记流量的向下兼容性，这种流量在传统 LAN 方案中十分常见。本征 VLAN 的目的是充当 TRUNK 链路两端的公共标识符。 </p>
+          <p></p>
+          <p>最佳做法是将本征 VLAN 配置为未使用的 VLAN，区别于 VLAN 1 和其他 VLAN。实际上，通常指定一个固定 VLAN 作为交换域中所有 TRUNK 端口的本征 VLAN。 </p>
+          <p></p>
+          <p>
+            <b>管理 VLAN</b>
+          </p>
+          <p></p>
+          <p>管理 VLAN 是您配置用于访问交换机管理功能的 VLAN。默认情况下，VLAN 1 是管理 VLAN。要创建管理 VLAN，该 VLAN 的交换机虚拟接口 (SVI) 将分配 IP 地址和子网掩码，使交换机通过 HTTP、Telnet、SSH 或 SNMP 进行管理。因为思科交换机的出厂配置将 VLAN 1 作为默认 VLAN，所以将 VLAN 1 用作管理 VLAN 不是明智的选择。  </p>
+          <p></p>
+          <p>以前，2960 系列交换机的管理 VLAN 是唯一的活动 SVI。在 Catalyst 2960 系列交换机的思科 IOS 15.x 版本上，可能会有多个活动 SVI。思科 IOS 15.x 要求必须记录为远程管理分配的特定活动 SVI。尽管理论上交换机可以有多个管理 VLAN，但超过一个会增加网络攻击。</p>
+          <p></p>
+          <p>在图中，所有端口当前已分配给默认 VLAN 1。没有明确指定本征 VLAN，其他 VLAN 都不处于活动状态；因此网络的本征 VLAN 与管理 VLAN 相同。这将导致安全风险。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示交换机上“show vlan brief”命令的输出。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

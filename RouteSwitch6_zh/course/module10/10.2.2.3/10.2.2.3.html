@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.2.3 系统日志消息格式</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>系统日志消息格式</h1>
+        <div>
+          <p>思科设备在发生网络事件时会生成系统日志消息。每个系统日志消息包含严重级别和相关设备。 </p>
+          <p></p>
+          <p>数字级别越小，系统日志警报越发严重。我们可以设置消息的严重级别来控制每种消息的显示位置（例如显示在控制台或其他目的地）。图 1 显示了系统日志级别的完整列表。</p>
+          <p>每个系统日志级别都有自己的含义：</p>
+          <p>
+            <ul>
+              <li>
+                <b>警告级别 4 - 紧急级别 0</b> - 这些消息是与软件或硬件故障有关的错误消息；这些类型的消息表示设备功能会受到影响。问题的严重性决定了所应用的实际系统日志级别。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>通知级别 5</b>：该通知级别表示正常但重要的事件。例如，接口的运行或关闭状态过渡、系统重新启动等消息在通知级别显示。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>信息级别 6</b>：不影响设备功能的正常信息消息。例如，在思科设备启动时，您可能看到以下信息消息： <span class="cmd">%LICENSE-6-EULA_ACCEPT_ALL：使用权最终用户许可协议已接受</span>.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>调试级别 7</b> - 这种级别表示消息是发出各种 <b>debug</b> 命令生成的输出。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>除了指定严重性外，系统日志消息还包含相关设备的信息。系统日志设备是用来识别和分类系统状态数据以生成错误和事件消息报告的服务标识符。可用的日志记录设备选项特定于具体网络设备。例如，运行思科 IOS 版本 15.0(2) 的思科 2960 系列交换机和运行思科 IOS 版本 15.2(4) 的思科 1941 系列交换机支持 24 个设备选项，这些设备归为 12 种设备类型。 </p>
+          <p></p>
+          <p>思科 IOS 路由器报告的常见系统日志消息设备包括：</p>
+          <p>
+            <ul>
+              <li>IP</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>OSPF 协议</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>SYS 操作系统</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>IP 安全性 (IPSec)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>接口 IP (IF)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>默认情况下，思科 IOS 软件上的系统日志消息格式如下：</p>
+          <p></p>
+          <p>
+            <span class="cmd">seq no: timestamp: %facility-severity-MNEMONIC: description</span>
+          </p>
+          <p></p>
+          <p>图 2 解释了思科 IOS 软件系统日志消息中包含的字段。 </p>
+          <p></p>
+          <p>例如，思科交换机的 EtherChannel 链路状态更改为 up 的输出示例如下：</p>
+          <p></p>
+          <p>
+            <span class="cmd">00:00:46: %LINK-3-UPDOWN: Interface Port-channel1, changed state to up</span>
+          </p>
+          <p></p>
+          <p>其中，设备为 LINK，严重级别为 3，助记键为 UPDOWN。 </p>
+          <p></p>
+          <p>最常见的消息是 link up 和 link down 消息，以及设备退出配置模式时生成的消息。如果配置了 ACL 日志记录功能，设备会在数据包匹配参数条件时生成系统日志消息。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了包含系统日志严重性名称、级别和描述的表格。图 2 显示了包含系统日志消息字段和说明的表格。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

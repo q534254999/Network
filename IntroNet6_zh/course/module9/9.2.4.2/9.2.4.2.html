@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.4.2 使用 UDP 的应用程序</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>使用 UDP 的应用程序</h1>
+        <div>
+          <p>最适合采用 UDP 协议的三种应用程序包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>实时视频和多媒体应用程序</b> - 可以容忍部分数据丢失但要求延迟极小或没有延迟的应用程序。示例包括 VoIP 和实时流传输视频。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>简单请求和应答应用程序</b> - 处理简单事务的应用程序，其中主机发送请求，但不一定收到应答。例如 DNS 和 DHCP。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>处理可靠性的应用程序</b> - 不要求进行流量控制、错误检测、确认和错误恢复，或这些功能由应用程序来执行的单向通信。例如 SNMP 和 TFTP。</li>
+            </ul>
+          </p>
+          <p>虽然 DNS 和 SNMP 默认使用 UDP，但它们都可以使用 TCP。如果 DNS 请求或 DNS 响应大于 512 字节，DNS 会使用 TCP，例如 DNS 响应包含大量域名解析时。同样，在某些情况下，网络管理员可以配置 SNMP 使用 TCP。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows common applications that use UDP including DHCP, DNS, SNMP, TFTP, VoIP, and IPTV.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

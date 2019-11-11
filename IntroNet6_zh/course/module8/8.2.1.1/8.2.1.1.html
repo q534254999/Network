@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.1.1 网络地址规划</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>网络地址规划</h1>
+        <div>
+          <p>如图所示，企业网络中网络层地址空间的分配需要精心设计。地址分配不应当是随机的。 </p>
+          <p>网络子网的规划要求同时分析组织的网络使用需求和子网的构建方法。进行网络需求调研是子网规划的起点。这意味着要查看整个网络，并确定网络的主要部分和划分方法。地址规划包括确定每个子网对于子网大小、每个子网中的主机数、主机地址的分配方法、哪些主机要求静态 IPv4 地址和哪些主机可以使用 DHCP 获取其编址信息的需求。</p>
+          <p>子网的大小涉及规划细分的私有网络的每个子网中要求 IPv4 主机地址的主机数。例如，在校园网设计中，您可能会考虑在管理 LAN 中需要多少台主机，在教员 LAN 中需要多少和在学生 LAN 中需要多少。在家庭网络中，可能会考虑主要房间 LAN 中的主机数和家庭办公室 LAN 中的主机数。</p>
+          <p>如前所述，网络管理员可以选择 LAN 上使用的私有 IPv4 地址范围，需要仔细考虑以确保有足够的主机地址可用于当前已知主机及未来扩展。请记住，私有 IPv4 地址的范围是：</p>
+          <p>
+            <ul>
+              <li>10.0.0.0 - 10.255.255.255，子网掩码为 255.0.0.0 或 /8</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>172.16.0.0 – 172.31.255.255，子网掩码为 255.240.0.0 或 /12</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>192.168.0.0 – 192.168.255.255，子网掩码为 255.255.0.0 或 /16</li>
+            </ul>
+          </p>
+          <p>了解您的 IPv4 地址需求将决定要实施的主机地址的范围。对选定私有 IPv4 地址空间的子网划分将提供满足您网络需求的主机地址。</p>
+          <p>用于连接 Internet 的公有地址通常由服务提供商分配。因此，虽然与子网划分应用相同原理，但这通常不是组织中网络管理员的责任。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows 3 LANs, the student LAN, Faculty LAN, and Administrative LAN.  This figure has a question mark above it.  This figure demonstrates how important it is to make a plan for subnetting.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

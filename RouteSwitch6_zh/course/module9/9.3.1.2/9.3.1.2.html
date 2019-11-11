@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.3.1.2 debug ip nat 命令</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>debug ip nat 命令</h1>
+        <div>
+          <p>使用 <b>debug ip nat</b> 命令显示关于被路由器转换的每个数据包的信息，验证 NAT 功能的运作。<b>debug ip nat detailed</b> 命令会产生关于要进行转换的每个数据包的说明。此命令还会提供关于某些错误或异常状况的信息，例如分配全局地址失败等。<b>debug ip nat detailed</b> 命令会比 <b>debug ip nat</b> 命令产生更多开销，但它可以提供在排除 NAT 故障时可能需要的详细信息。请务必在完成后关闭调试。</p>
+          <p></p>
+          <p>图 1 显示了 <b>debug ip nat</b> 命令的输出示例。输出显示，内部主机 (192.168.10.10) 向外部主机 (209.165.201.1) 发起流量，而且源地址已转换为地址 209.165.200.226。 </p>
+          <p></p>
+          <p>解读调试输出时，注意下列符号和值的含义： </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>*（星号）</b>- NAT 旁边的星号表示转换发生在快速交换路径。会话中的第一个数据包始终经过过程交换，因而较慢。如果缓存条目存在，则其余数据包经过快速交换路径。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>s=</b> - 该符号是指源 IPv4 地址。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>a.b.c.d</b>---><b>w.x.y.z</b> - 该值表示源地址 a.b.c.d 已转换为 w.x.y.z。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>d=</b> - 该符号是指目标 IPv4 地址。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>[xxxx]</b> - 中括号中的值表示 IPv4 标识号。此信息可能对调试有用，因为它与协议分析器的其它数据包跟踪相关联。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>注</b>：验证 NAT 命令中引用的 ACL 是否允许所有必需的网络。图 2 中，只有地址 192.168.0.0/16 具有转换资格。数据包从内部网络发往互联网，其源地址未得到 ACL 1 的明确允许，因此 R2 没有对该源地址进行转换。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了“debug ip nat”命令的输出。图 2 显示路由器 2，内部网络在左侧，外部网络在右侧。内部网络包含 2 台计算机和路由器 1。外部网络包含两个服务器。路由器 2 使用 PAT。此外还显示了“show access-lists”命令的输出。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

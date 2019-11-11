@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.2.2 系统日志操作</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>系统日志操作</h1>
+        <div>
+          <p>在思科网络设备上，系统日志协议开始于向设备内部的本地日志记录进程发送系统消息和 <b>debug</b> 输出。日志记录进程如何管理这些消息和输出取决于设备配置。例如，系统日志消息可以通过网络发送到外部系统日志服务器。无需访问物理设备即可检索这些消息。外部服务器上存储的日志消息和输出可以用于各种报表以方便阅读。 </p>
+          <p></p>
+          <p>系统日志消息还可以发送到内部缓冲区。发送到内部缓冲区的消息只能通过设备的 CLI 进行查看。 </p>
+          <p></p>
+          <p>最后，网络管理员可以指定仅特定类型的系统消息可以发送到各个目的地。例如，设备可以配置为将所有系统消息转发到外部系统日志服务器。但是，调试级别消息将转发到内部缓冲区，并且管理员只能从 CLI 访问。  </p>
+          <p></p>
+          <p>如图所示，系统日志消息的常用目的地如下：</p>
+          <p>
+            <ul>
+              <li>日志记录缓冲区（路由器或交换机内部的 RAM）</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>控制台线路 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>终端线路</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>系统日志服务器</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>要想远程监控系统消息，可以查看系统日志服务器上的日志，或者通过 Telnet、SSH 或控制台端口访问设备。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了交换机和系统日志消息的四个目的地：日志记录缓冲区、控制台线路、终端线路和系统日志服务器。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

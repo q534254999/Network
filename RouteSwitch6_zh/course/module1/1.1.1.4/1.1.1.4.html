@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.1.4 路由器互联网络</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>路由器互联网络</h1>
+        <div>
+          <p>大多数用户并不清楚自己的网络上或互联网上存在许多路由器。用户只希望能够访问网页、发送电子邮件和下载音乐，而不管访问的服务器是在自己的网络上还是在另一网络上。但网络专业人员知道，负责在网络间将数据包从初始源位置转发到最终目的地的设备，正是路由器。</p>
+          <p></p>
+          <p>一台路由器可以连接多个网络，也就是说，它具有多个接口，而每个接口属于不同的 IP 网络。当路由器从某个接口收到 IP 数据包时，它会确定使用哪个接口来将该数据包转发到目的地。路由器用于转发数据包的接口可能是最终目的地，也可能是与用于到达目标网络的另一路由器相连的网络。</p>
+          <p></p>
+          <p>在图 1 的动画中，路由器 R1 和 R2 负责从一个网络接收数据包，并将数据包从另一个网络转发出去，发往目标网络。</p>
+          <p></p>
+          <p>路由器连接的每个网络通常需要单独的接口。这些接口同时用于连接局域网 (LAN) 和广域网 (WAN)。LAN 通常为以太网络，其中包含各种设备（如 PC、打印机和服务器）。WAN 用于连接分布在广阔地域中的网络。例如，WAN 连接通常用于将 LAN 连接到互联网服务提供商 (ISP) 网络。</p>
+          <p></p>
+          <p>注意，图 2 中的每个站点都要求使用路由器以互连到其他站点。即使是家庭办公室也要求使用路由器。在该拓扑中，位于家庭办公室中的路由器是一种专用设备，可以为家庭网络执行多种服务。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示两个 LAN。每个 LAN 都有一台路由器。LAN 通过 WAN 链路相互连接。每台路由器通过以太网端口与一台交换机连接，每台交换机连接多台本地设备。动画显示数据包从一个 LAN 上的计算机发送到其他 LAN 上的计算机。数据包先传输到交换机，然后到路由器，这样就会将数据包传输到串行端口并将其发送到另一台路由器。此路由器接收串行接口上的数据包并将其传输到其以太网接口。然后将数据包发送到交换机，交换机会将其发送到目标设备。图 2 显示三个全部通过 WAN 连接互连的 LAN。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

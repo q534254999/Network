@@ -1,0 +1,60 @@
+<textcomponents>
+	<component id="ID_table">
+		<text><![CDATA[<table header="none" bordercolor="#FFFFFF" borderwidth="3" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4" class="mtable">
+	<tr class="mtable_title">
+		<td colspan="3" bgcolor="#FFFFFF"></td>
+	</tr>
+	<tr class="mtable_top">
+		<td colspan="3" bgcolor="#4E4C4D"><font size="1" color="#4E4C4D">.</font></td>
+	</tr>
+	<tr class="mtable_title">
+		<td bgcolor="#666263" width="150px"><font color="#FFFFFF">电缆类型</font></td>
+		<td bgcolor="#666263"><font color="#FFFFFF">标准</font></td>
+		<td bgcolor="#666263"><font color="#FFFFFF">应用</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8">以太网直通电缆</td>
+		<td bgcolor="#E9E7E8">两端均为 T568A 或两端均为 T568B</td>
+		<td bgcolor="#E9E7E8">将网络主机连接到交换机或集线器之类的网络设备。</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2">以太网交叉电缆</td>
+		<td bgcolor="#F2F2F2">一端为 T568A，另一端为 T568B<br/>Other end T568B</td>
+		<td bgcolor="#F2F2F2"><textformat blockindent="-18">连接两台网络主机连接两台网络中间设备（交换机与交换机或路由器与路由器）。</textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8">全反电缆</td>
+		<td bgcolor="#E9E7E8">思科专有</td>
+		<td bgcolor="#E9E7E8">使用适配器连接工作站串行端口与路由器控制台端口。</td>
+	</tr>
+</table>
+]]></text></component><!--first cable--><component id="ID_txt07">
+		<text><![CDATA[<b>线对 2</b>]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[<b>线对 3</b>]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[<b>线对 1</b>]]></text>
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[<b>线对 4</b>]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[<b>T568A</b>]]></text>
+	</component><!--second cable--><component id="ID_txt02">
+		<text><![CDATA[<b>线对 3</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[<b>线对 2</b>]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[<b>线对 1</b>]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[<b>线对 4</b>]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[<b>T568B<b>]]></text>
+	</component>
+</textcomponents>

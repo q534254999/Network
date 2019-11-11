@@ -1,0 +1,43 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>端口编址</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[收件人：you@example.com<br>发件人：me@example.com<br>主题：假期]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[电子邮件]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[HTML 页面]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[互联网聊天]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[不同的应用程序]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[端口 110]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[端口 80]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[端口 531]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[端口编址]]></text>
+</component>
+
+</textcomponents>

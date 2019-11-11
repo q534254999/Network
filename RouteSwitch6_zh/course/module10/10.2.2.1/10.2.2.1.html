@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.2.1 系统日志简介</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>系统日志简介</h1>
+        <div>
+          <p>当网络上发生某些事件时，网络设备具有向管理员通知详细系统消息的可靠机制。这些消息可能并不重要，也可能事关重大。网络管理员可以采用多种方式来存储、解释和显示这些消息，并接收可能会对网络基础设施具有最大影响的消息警报。</p>
+          <p></p>
+          <p>访问系统消息的最常用方法是使用系统日志协议。 </p>
+          <p></p>
+          <p>系统日志是一个用于描述标准的术语。同时它还用于描述针对该标准所开发的协议。系统日志协议是二十世纪八十年代为 UNIX 系统开发的，但最早是 2001 年由 IETF 记录在 RFC 3164 中。系统日志使用 UDP 端口 514 将事件通知消息通过 IP 网络发送到事件消息收集器，如图所示。</p>
+          <p></p>
+          <p>许多网络设备支持系统日志，包括：路由器、交换机、应用服务器、防火墙和其他网络设备。系统日志协议允许网络设备将系统消息通过网络发送到系统日志服务器。 </p>
+          <p></p>
+          <p>Windows 和 UNIX 有许多不同的系统日志服务器软件包。其中许多都是免费软件。</p>
+          <p></p>
+          <p>系统日志的日志记录服务具有三个主要功能：</p>
+          <p>
+            <ul>
+              <li>能够收集日志记录信息来用于监控和故障排除 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>能够选择捕获的日志记录信息的类型</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>能够指定捕获的系统日志消息的目的地</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了连接到交换机的路由器。两者均向系统日志服务器发送系统消息。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.4.3 远程 IPv6 网络条目</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>远程 IPv6 网络条目</h1>
+        <div>
+          <p>图 1 突出显示了三个远程网络（例如，R2 LAN、R3 LAN 和 R2 和 R3 之间的链路）的路由表条目。EIGRP 已添加这三个条目。 </p>
+          <p></p>
+          <p>图 2 显示 R1 上通往 R3 上的远程网络 2001:DB8:CAFE:3::/64 的路由的路由表条目。此条目用于确定以下信息：</p>
+          <p>
+            <ul>
+              <li>
+                <b>路由源</b>- 标识如何获知该路由。通用代码包括 O (OSPF)、D (EIGRP)、R (RIP) 和 S（静态路由）。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>目标网络</b> - 用于标识远程 IPv6 网络的地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>管理距离</b> - 用于标识路由源的可信度。IPv6 使用与 IPv4 相同的距离。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>指标 </b>- 标识分配用来访问远程网络的值。值越低表示此路由越佳。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>下一跳 </b>- 用于确定接收所转发数据包的下一路由器的 IPv6 地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>传出接口 </b>- 标识用于将数据包转发到最终目标的退出接口。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>IPv6 数据包到达路由器接口时，路由器会检查 IPv6 报头并确定目标 IPv6 地址。路由器随后继续进行以下路由器查找过程。</p>
+          <p></p>
+          <p>路由器检查 1 级网络路由，查找与 IPv6 数据包的目标地址最为匹配的路由。与 IPv4 一样，最长匹配就是最佳匹配。例如，如果路由表中有多个匹配，路由器会选择包含最长匹配的路由。将包含 IPv6 前缀的数据包目标 IPv6 地址的最左侧位数与 IPv6 路由表中的前缀长度进行匹配来建立匹配。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示 show i.p. Route 命令为路由器 R-1 生成的 IPv6 路由表。图中突出显示通过 EIGRP 获取的三个远程网络。图 2 列出其中一个条目并标识各个条目。该行输出 D 代表路由源为 EIGRP，2001:DB8:CAFE:3::/64 代表网络地址，90 代表管理距离，/2170112 代表指标。该行以 via FE80::3（代表下一跳 IP 地址）和 serial0/0/0（代表传出接口）结束。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

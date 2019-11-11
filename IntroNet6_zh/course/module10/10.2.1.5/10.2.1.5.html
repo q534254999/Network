@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.1.5 POP 工作原理</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>POP 工作原理</h1>
+        <div>
+          <p>应用程序使用 POP 从邮件服务器中检索邮件。根据 POP 的规定，邮件将从服务器下载到客户端，然后从服务器上删除。这就是默认情况下 POP 的运行方式。</p>
+          <p>服务器通过在 TCP 端口 110 上被动侦听客户端连接请求来启动 POP 服务。当客户端要使用此服务时，它会发送一个请求来建立与服务器的 TCP 连接。一旦建立连接，POP 服务器即会发送问候语。然后客户端和 POP 服务器会交换命令和响应，直到连接关闭或中止。 </p>
+          <p>根据 POP，由于电子邮件会下载到客户端并从服务器删除，因此电子邮件不会集中保存在某一特定的位置。因为 POP 不会存储邮件，因此不适于需要集中备份解决方案的小型企业。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows the interaction between all devices involved with an email transmission.  The client sends the message to the server. The server forwards the message to another server, which will deliver the message to the recipient. using POP3.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

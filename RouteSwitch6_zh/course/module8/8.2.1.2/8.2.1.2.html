@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.1.2 SLAAC 工作原理</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>SLAAC 工作原理</h1>
+        <div>
+          <p>路由器必须启用 IPv6 路由，然后才能发送 RA 消息：</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config)# </span>
+            <span class="cmd">
+              <b>ipv6 unicast-routing</b>
+            </span>
+          </p>
+          <p></p>
+          <p>1.在图 1 所示的示例拓扑中，配置 PC1 以自动获取 IPv6 编址。自启动开始，PC1 未收到一条 RA 消息，因此，它发送 RS 消息至所有路由器组播地址来通知本地 IPv6 路由器它需要 RA。</p>
+          <p></p>
+          <p>2.如图 2 所示，R1 接收 RS 消息并以 RA 消息作为回应。RA 消息中包括网络的前缀和前缀长度。以路由器的本地链路地址为 IPv6 源地址将 RA 消息发送至 IPv6 全节点组播地址 FF02::1。 </p>
+          <p></p>
+          <p>3.PC1 收到包含本地网络前缀和前缀长度的 RA 消息。PC1 会使用此信息创建自己的 IPv6 全局单播地址。PC1 现在有一个 64 位网络前缀，但是还需要一个 64 位接口 ID (IID) 来创建全局单播地址。 </p>
+          <p></p>
+          <p>PC1 可以使用两种方式创建自己的唯一 IID：</p>
+          <p>
+            <ul>
+              <li>
+                <b>EUI-64</b> - PC1 将使用 EUI-64 进程通过其 48 位 MAC 地址创建一个 IID。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>随机生成</b> - 该 64 位 IID 可以是客户端操作系统随机生成的数值。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>如图 3 所示，PC1 可以将 64 位前缀与 64 位 IID 相结合创建一个 128 位 IPv6 全局单播地址。PC1 会将路由器的本地链路地址用作其 IPv6 默认网关地址。</p>
+          <p></p>
+          <p>4.由于 SLAAC 是无状态的过程，PC1 必须先验证此新创建的 IPv6 地址是唯一的，然后才能使用。如图 4 所示，PC1 使用一个特殊构造的多播地址发送 ICMPv6 邻居请求消息，此地址称为请求节点组播地址，它复制 PC1 的 IPv6 地址的最后 24 位。如果没有其他设备回应邻居通告消息，则实际上确保该地址是唯一的，可被 PC1 使用。如果 PC1 接收到邻居通告，那么该地址就不是唯一的，而且操作系统必须确定可用的新接口 ID。 </p>
+          <p></p>
+          <p>此过程是 ICMPv6 邻居发现的一部分，称为重复地址检测 (DAD)。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了与上一页中相同的拓扑。计算机正在发出 IPv6 路由器请求消息，这是所有路由器组播消息。图 2 显示显示路由器收到此消息并以路由器通告消息作为回应。此消息为 IPv6 全节点多播消息，包含客户端的前缀、前缀长度和其他信息。图 3 显示客户端通过生成接口 ID 并使用路由器发送的前缀和前缀长度来创建 IPv6 全局单播地址。图 4 显示计算机在配置其 IPv6 地址后发出一个重复地址检测消息。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

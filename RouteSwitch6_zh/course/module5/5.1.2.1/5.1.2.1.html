@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.1 双工通信</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>双工通信</h1>
+        <div>
+          <p>该图说明了全双工和半双工通信。</p>
+          <p></p>
+          <p>全双工通信提高了交换 LAN 的性能。全双工通信允许连接的两端同时传输和接收数据，因而增加了有效带宽。这也称为双向通信。这种优化网络性能的方法要求微分段。当交换机端口只连接一个设备并且在全双工模式下运行时，会创建微分段 LAN。当交换机端口在全双工模式下运行时，没有与端口关联的冲突域。</p>
+          <p></p>
+          <p>与全双工通信不同，半双工通信是单向的。数据的发送和接收不会同时进行。半双工通信会引起性能问题，因为数据一次只能在一个方向上流动，经常会发生冲突。半双工连接常见于一些老式硬件（如集线器）中。在大多数硬件中全双工通信已经取代了半双工通信。</p>
+          <p></p>
+          <p>千兆以太网和 10Gb 网卡要求使用全双工连接才能运行。在全双工模式下，禁用网卡上的冲突检测电路。两个相连设备由于使用了网络电缆中两条不同的电路，因此它们发送的帧不可能发生冲突。全双工连接要求交换机支持全双工配置，或使用以太网电缆直接连接两个设备。 </p>
+          <p></p>
+          <p>标准的共享式基于集线器的以太网配置，其效率通常为指定带宽的 50% 到 60%。全双工提供两个方向上（传输和接收）100% 的效率。这会引起对指定带宽 200% 的潜在使用。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图显示两组交换机。一组已标记全双工和半双工通讯。这一组使用以太网电缆连接，描述同时发送和接收数据的能力。第二组交换机已标记为半双工通讯。这一组描述发送或接收数据的能力。  </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

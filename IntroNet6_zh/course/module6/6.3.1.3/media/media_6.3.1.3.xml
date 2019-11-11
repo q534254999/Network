@@ -1,0 +1,53 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>路由器存储器</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[IOS <font face="_typewriter"><b>show</b></font> 命令可提供有关思科交换机或路由器各部分的配置、运行和状态的信息。]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[运行 IOS]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[路由表<br/><br/>ARP 表]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[运行配置文件]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[数据包缓冲区]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[启动配置文件]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[IOS 文件]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[POST<br/><br/>ROM 监视器固件（受限 IOS）]]></text>
+	</component>
+	<component id="ID_titleTxt01">
+		<text><![CDATA[RAM]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[NVRAM]]></text>
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[Flash]]></text>
+	</component>
+	<component id="ID_titleTxt02">
+		<text><![CDATA[ROM]]></text>
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[RAM]]></text>
+	</component>
+	<component id="ID_bodyTxt01">
+		<text><![CDATA[RAM 使用以下应用和流程：<ul><li>IOS 映像和运行配置文件</li><li>用于确定转发数据包的最佳路径的路由表</li><li>用于将 IPv4 地址映射到 MAC 地址的 ARP 缓存</li><li>用于在转发到目的地之前临时存储数据包的数据包缓存</li></ul>]]></text>
+	</component>
+	<component id="ID_txt12">
+		<text><![CDATA[ROM]]></text>
+	</component>
+	<component id="ID_bodyTxt02">
+		<text><![CDATA[ROM 存储以下内容：<ul><li>提供启动说明的启动信息</li><li>测试所有硬件组件的开机自检 (POST)</li><li>提供 IOS 备份版本的受限 IOS。 它用于在全功能 IOS 被删除或损坏时加载全功能 IOS。</li></ul>]]></text>
+	</component>
+</textcomponents>

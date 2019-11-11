@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.2.1 冲突域</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>冲突域</h1>
+        <div>
+          <p>在基于集线器的以太网段上，网络设备会竞争介质，因为设备必须依次传输数据。在设备之间共享相同带宽的网段称为冲突域。当位于该相同冲突域内的两台或多台设备尝试同时通信时，将发生冲突。</p>
+          <p></p>
+          <p>如果以太网交换机端口在半双工模式下运行，每个网段都位于自己的冲突域。但是，在全双工模式下运行的以太网交换机端口可消除冲突；因此，没有冲突域。默认情况下，当相邻设备也可在全双工模式下运行时，以太网交换机端口将自动协商全双工。如果交换机端口连接到在半双工模式下运行的设备，如传统集线器，则交换机端口将在半双工模式下运行。如果是半双工，交换机端口将为冲突域的一部分。</p>
+          <p></p>
+          <p>如图所示，如果两台设备都能够使用其最高常用带宽，则选择全双工。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示连接到三个独立交换机端口的三台设备如何属于其自己的冲突域，但仍全部在同一广播域内。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

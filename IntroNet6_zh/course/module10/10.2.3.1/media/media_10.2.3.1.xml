@@ -1,0 +1,26 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>FTP 流程</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[服务器]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[客户端]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[网络]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[<b>1. 控制连接：</b><br/>客户端向服务器开放第一条连接，用于控制流量。]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[<b>2. 数据连接：</b><br/>客户端开放第二条连接，用于数据通信。]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[获取数据]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[取决于通过控制连接发送的命令，可以从服务器下载数据，也可以从客户端上传数据。]]></text>
+	</component>
+</textcomponents>

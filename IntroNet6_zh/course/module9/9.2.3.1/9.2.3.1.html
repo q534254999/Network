@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.3.1 UDP 低开销与可靠性</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>UDP 低开销与可靠性</h1>
+        <div>
+          <p>UDP 是一种简单协议，提供了基本的传输层功能。与 TCP 相比，UDP 的开销极低，因为 UDP 是无连接的，并且不提供能实现可靠性的重新传输、排序和流量控制等复杂机制。</p>
+          <p>这并不能说明使用 UDP 的应用程序始终不可靠，也不能说明 UDP 是下等协议。而仅仅是说明，作为传输层协议，UDP 不提供上述几项功能，如果需要这些功能，必须通过其他方式来实现。</p>
+          <p>正是由于 UDP 的开销低，因此它很适合于进行简单请求和响应通信事务的协议。例如，将 TCP 用于 DHCP 会造成不必要的网络流量。如果请求或响应出现问题，设备会在没有收到任何响应时重新发送请求。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows two network segments connected through a network.  In one network segment there is a computer sending data, an I.P. phone, and a computer using a video application.  On the other segment there is a computer receiving the data sent by the sending computer, an IP phone, and a computer using a video application.  These are two examples of applications that utilize UDP due to its low overhead data transport method.  UDP provides this low overhead data transport because it has a small datagram header and no network management traffic.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

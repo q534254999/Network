@@ -1,0 +1,38 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>数据包过滤</b>]]></text>
+</component>
+<component id="ID_osi_header">
+<text><![CDATA[<b>OSI 模型</b>]]></text>
+</component>
+
+
+<component id="ID_osi_txt07">
+<text><![CDATA[应用层]]></text> 
+</component>
+<component id="ID_osi_txt06">
+<text><![CDATA[表示层]]></text> 
+</component>
+<component id="ID_osi_txt05">
+<text><![CDATA[会话层]]></text> 
+</component>
+<component id="ID_osi_txt04">
+<text><![CDATA[传输层]]></text> 
+</component>
+<component id="ID_osi_txt03">
+<text><![CDATA[网络层]]></text>
+</component>
+<component id="ID_osi_txt02">
+<text><![CDATA[数据链路层]]></text>
+</component>
+<component id="ID_osi_txt01">
+<text><![CDATA[物理层]]></text>
+</component>
+
+<component id="ID_bubble01">
+<text><![CDATA[数据包过滤在第 3 层和第 4 层进行]]></text>
+</component>
+
+
+</textcomponents>

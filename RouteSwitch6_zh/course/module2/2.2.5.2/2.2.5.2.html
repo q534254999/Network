@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.5.2 配置 IPv4 浮动静态路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.5.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置 IPv4 浮动静态路由</h1>
+        <div>
+          <p>使用 <b>ip route </b>全局配置命令并指定管理距离，可以配置 IPv4 浮动静态路由。如果没有配置管理距离，将使用默认值 (1)。</p>
+          <p></p>
+          <p>请参考图 1 中的拓扑。在此场景中，从 R1 开始的首选默认路由是到 R2。到 R3 的连接应该仅用于备用。</p>
+          <p></p>
+          <p>R1 配置了指向 R2 的默认静态路由。因为没有配置管理距离，将默认值 (1) 用于此静态路由。R1 还配置了指向 R3 的浮动静态默认路由，管理距离为 5。该值大于默认值 1，因此，此路由浮动且不存在于路由表中，除非首选路由发生故障。</p>
+          <p></p>
+          <p>图 2 验证到 R2 的默认路由是否在路由表中。请注意，R3 的备用路由并未存在于路由表中。</p>
+          <p></p>
+          <p>使用图 3 中的语法检查器配置 R3，与 R1 类似。</p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示标准实验图，其具有路由器 1 与路由器 3 之间的额外链路。该图显示关于在路由器 1 上创建指向路由器 2 的默认静态路由以及创建指向管理距离更长（为 5）的路由器 3 的另一路由的语法。这让第一条路由成为首选路由，第二条路由是浮动静态路由。图 2 显示路由器 1 上“show i. p. route static”命令的输出。由于第一条路由是首选路由，所以在输出中仅显示此路由。图 3 是交互练习，使学习者可以练习如何配置浮动静态路由。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

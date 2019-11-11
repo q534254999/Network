@@ -1,0 +1,173 @@
+<textcomponents>
+    <!--slide 1-->
+    <component id='ID_title'>
+        <text>
+            <![CDATA[<b>练习 – 第 1 部分：IPv4 报头字段</b>]]></text>
+    </component>
+    <component id="ID_titleTxt01">
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt01">
+        <text>
+            <![CDATA[阅读每个 IPv4 报头功能，然后单击选择其所属的 IPv4 报头字段。]]>
+        </text>
+    </component>
+   
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[IPv4 报头功能]]></text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[<b>IPv4 报头字段</b>]]></text>
+    </component>
+    <component id="ID_s1_field01">
+        <text>
+            <![CDATA[<b>版本</b>]]></text>
+    </component>
+    <component id="ID_s1_field02">
+        <text>
+            <![CDATA[<b>区分服务</b>]]></text>
+    </component>
+    <component id="ID_s1_field03">
+        <text>
+            <![CDATA[<b>生存时间</b>]]></text>
+    </component>
+    <component id="ID_s1_field04">
+        <text>
+            <![CDATA[<b>协议</b>]]></text>
+    </component>
+    <component id="ID_s1_field05">
+        <text>
+            <![CDATA[<b>源 IP 地址</b>]]></text>
+    </component>
+    <component id="ID_s1_field06">
+        <text>
+            <![CDATA[<b>目的 IP 地址</b>]]></text>
+    </component>
+    <!--answers-->
+    <component id="ID_s1_ans01">
+        <text>
+            <![CDATA[始终将 IPv4 设为 0100]]>
+        </text>
+    </component>
+    <component id="ID_s1_ans02">
+        <text>
+            <![CDATA[确定每个数据包的优先级]]>
+        </text>
+    </component>
+    <component id="ID_s1_ans03">
+        <text>
+            <![CDATA[通常称为跳数]]>
+        </text>
+    </component>
+    <component id="ID_s1_ans04">
+        <text>
+            <![CDATA[确定待使用的上层协议]]>
+        </text>
+    </component>
+    <component id="ID_s1_ans05">
+        <text>
+            <![CDATA[确定发送主机的 IP 地址]]>
+        </text>
+    </component>
+    <component id="ID_s1_ans06">
+        <text>
+            <![CDATA[确定接收主机的 IP 地址]]>
+        </text>
+    </component>
+    <!--buttons-->
+    <component id="ID_s2_btn01">
+        <text>
+            <![CDATA[<b>重置</b>]]></text>
+    </component>
+    <!--feedback-->
+    <component id="ID_s2_titleCorrect">
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id="ID_s1_correctText">
+        <text>
+            <![CDATA[恭喜！您已将 IPv4 报头功能与其相应字段配对。]]>
+        </text>
+    </component>
+    <component id="ID_s2_titleIncorrect">
+        <text>
+            <![CDATA[不正确]]>
+        </text>
+    </component>
+    <component id="ID_s2_incorrectText">
+        <text>
+            <![CDATA[请重试。]]>
+        </text>
+    </component>
+    <!--slide 2-->
+    <component id="ID_s2_inst">
+        <text>
+            <![CDATA[<b>练习 – 第 2 部分：IPv4 报头字段</b><br><br>阅读每个 IPv4 识别和验证报头的描述，然后单击选择其所属的 IPv4 报头字段。]]></text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[<b>IPv4 识别和验证报头描述</b>]]></text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[<b>IPv4 报头字段</b>]]></text>
+    </component>
+    <component id="ID_s2_field01">
+        <text>
+            <![CDATA[<b>互联网报头长度</b>]]></text>
+    </component>
+    <component id="ID_s2_field02">
+        <text>
+            <![CDATA[<b>总长度</b>]]></text>
+    </component>
+    <component id="ID_s2_field03">
+        <text>
+            <![CDATA[<b>报头校验和</b>]]></text>
+    </component>
+    <!--answers-->
+    <component id="ID_s2_ans01">
+        <text>
+            <![CDATA[确定报头中 32 位字的数量。]]>
+        </text>
+    </component>
+    <component id="ID_s2_ans02">
+        <text>
+            <![CDATA[最大值为 65535 个字节。]]>
+        </text>
+    </component>
+    <component id="ID_s2_ans03">
+        <text>
+            <![CDATA[IP 报头错误检测 – 如果 IP 报头不正确，则丢弃数据包]]>
+        </text>
+    </component>
+    <!--buttons-->
+    <component id="ID_s1_btn01">
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+    <!--feedback-->
+    <component id="ID_s1_titleCorrect">
+        <text>
+            <![CDATA[正确]]>
+        </text>
+    </component>
+    <component id="ID_s2_correctText">
+        <text>
+            <![CDATA[恭喜！您已将 IPv4 识别和验证报头描述与其相应字段配对。]]>
+        </text>
+    </component>
+    <component id="ID_s1_titleIncorrect">
+        <text>
+            <![CDATA[不正确]]>
+        </text>
+    </component>
+    <component id="ID_s1_incorrectText">
+        <text>
+            <![CDATA[请重试。]]>
+        </text>
+    </component>
+</textcomponents>

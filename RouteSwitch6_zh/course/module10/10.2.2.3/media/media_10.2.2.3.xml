@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<textcomponents>
+  <component id="ID_s1_title">
+    <text><![CDATA[<b>系统日志严重级别</b>]]></text>
+  </component>
+  <component id="ID_s1_table">
+    <text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="mtable_top">
+<td colspan='3' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#0E6360'><span style="color:#98D3D1">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#077A77'  valign="top" width='125'><font color='#ffffff' size="11"><b>严重名称</b></font></td>
+		<td bgcolor='#077A77'  valign="top" width='125'><font color='#ffffff' size="11"><b>严重级别</b></font></td>	
+		<td bgcolor='#077A77'  valign="top" ><font color='#ffffff' size="11"><b>解释</b></font></td>	
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top">紧急</td>
+		<td bgcolor='#EFF8F7' valign="top">第 0 级</td>
+		<td bgcolor='#EFF8F7' valign="top">系统不可用</td>
+	</tr>
+
+	   <tr>
+		<td bgcolor='#FFFFFF' valign="top">警报</td>
+		<td bgcolor='#FFFFFF' valign="top">第 1 级</td>
+		<td bgcolor='#FFFFFF' valign="top">需要立即采取操作</td>
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top">严重</td>
+		<td bgcolor='#EFF8F7' valign="top">第 2 级</td>
+		<td bgcolor='#EFF8F7' valign="top">关键条件</td>
+	</tr>
+
+	   <tr>
+		<td bgcolor='#FFFFFF' valign="top">错误</td>
+		<td bgcolor='#FFFFFF' valign="top">第 3 级</td>
+		<td bgcolor='#FFFFFF' valign="top">错误条件</td>
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top">警告</td>
+		<td bgcolor='#EFF8F7' valign="top">第 4 级</td>
+		<td bgcolor='#EFF8F7' valign="top">警告条件</td>
+	</tr>
+
+	   <tr>
+		<td bgcolor='#FFFFFF' valign="top">通知</td>
+		<td bgcolor='#FFFFFF' valign="top">第 5 级</td>
+		<td bgcolor='#FFFFFF' valign="top">正常但比较重要的情况</td>
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top">信息</td>
+		<td bgcolor='#EFF8F7' valign="top">第 6 级</td>
+		<td bgcolor='#EFF8F7' valign="top">信息性消息</td>
+	</tr>
+
+	   <tr>
+		<td bgcolor='#FFFFFF' valign="top">调试</td>
+		<td bgcolor='#FFFFFF' valign="top">第 7 级</td>
+		<td bgcolor='#FFFFFF' valign="top">调试消息</td>
+	</tr>
+	</table>]]></text>
+  </component>
+  
+  
+  
+  <component id="ID_s2_title">
+    <text><![CDATA[<b>系统日志消息格式</b>]]></text>
+  </component>
+  <component id="ID_s2_table">
+    <text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#0E6360'><span style="color:#98D3D1">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#077A77' width="110"  valign="top" ><font color='#ffffff' size="11"><b>字段</b></font></td>
+		<td bgcolor='#077A77' valign="top" ><font color='#ffffff' size="11"><b>解释</b></font></td>	
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top">seq no</td>
+		<td bgcolor='#EFF8F7' valign="top">仅当配置了 <font face="_typewriter"><b>service sequence-numbers</b></font> 全局配置命令时，才会使用序号来标记日志消息。</td>
+	</tr>
+
+	   <tr>
+		<td bgcolor='#FFFFFF' valign="top">timestamp</td>
+		<td bgcolor='#FFFFFF' valign="top">消息或事件的日期和时间，仅在配置了 <font face="_typewriter"><b>service timestamps</b></font> 全局配置命令时显示。</td>
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top">facility</td>
+		<td bgcolor='#EFF8F7' valign="top">消息所指的设备。</td>
+	</tr>
+
+	   <tr>
+		<td bgcolor='#FFFFFF' valign="top">严重性</td>
+		<td bgcolor='#FFFFFF' valign="top">从 0 到 7 的单个数字编码，表示消息的严重级别。</td>
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top">MNEMONIC</td>
+		<td bgcolor='#EFF8F7' valign="top">唯一地描述消息的文本字符串。</td>
+	</tr>
+
+	   <tr>
+		<td bgcolor='#FFFFFF' valign="top">说明</td>
+		<td bgcolor='#FFFFFF' valign="top">包含已报告事件详细信息的文本字符串。</td>
+	</tr>
+	</table>]]></text>
+  </component>
+  
+</textcomponents>

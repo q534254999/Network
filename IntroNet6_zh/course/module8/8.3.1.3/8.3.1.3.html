@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.3.1.3 IPv6 子网分配</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.3.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv6 子网分配</h1>
+        <div>
+          <p>由于有 65000 个子网可供选择，网络管理员的任务就变为设计一个逻辑方案来分配网络地址。</p>
+          <p>如图 1 所示，示例拓扑要求为每个 LAN 和 R1 和 R2 之间的 WAN 链路分配子网。与 IPv4 的示例不同，使用 IPv6 时，对 WAN 链路子网不再进一步划分子网。虽然这可能会“浪费”地址，但是使用 IPv6 时这并不是问题。</p>
+          <p>如图 2 所示，在本示例中 5 个 IPv6 子网的分配将使用 0001 到 0005 的子网 ID 字段。每个 /64 子网提供的地址都远多于所需要的地址。</p>
+          <p>如图 3 所示，为每个 LAN 网段和 WAN 链路都分配了 /64 子网。</p>
+          <p>与配置 IPv4 类似，图 4 显示每个路由器接口都已经配置到不同的 IPv6 子网中。 </p>
+          <p>有关将 IPv6 子网划分为接口 ID 的详细信息，请参阅章节附录。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows two routers connected by a serial link. Each router has 2 LANs attached. Figure 2 shows several IPv6 subnet IDs and 5 of them will be used for the networks previously displayed. Figure 3 shows the previous network topology with the IPv6 subnets assigned to the networks. Figure 4 shows a router with the commands to configure each interface with an IPv6 address.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

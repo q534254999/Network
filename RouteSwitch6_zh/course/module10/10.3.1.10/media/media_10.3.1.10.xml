@@ -1,0 +1,10 @@
+﻿<textcomponents>
+	
+	<component id="ID_type">
+		<text><![CDATA[实验]]></text>
+	</component>
+	<component id="ID_title">
+		<text><![CDATA[使用 TFTP、闪存和 USB 管理设备配置文件]]></text>
+	</component>
+	
+</textcomponents>

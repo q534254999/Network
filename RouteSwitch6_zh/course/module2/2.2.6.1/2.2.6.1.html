@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.6.1 自动安装的主机路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.6.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>自动安装的主机路由</h1>
+        <div>
+          <p>主机路由为具有 32 位掩码的 IPv4 地址或具有 128 位掩码的 IPv6 地址。有三种方法可以将主机路由添加到路由表：</p>
+          <p>
+            <ul>
+              <li>当在路由器配置 IP 地址时自动安装（如图 1 和图 2 所示）</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>配置为静态主机路由</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>通过其他方法自动获取主机路由（在后续课程中讨论）</li>
+            </ul>
+          </p>
+          <p>当路由器上配置接口地址时，思科 IOS 会自动安装主机路由（也称为本地主机路由）。主机路由支持一种更有效的流程，该流程可以将数据包直接定向到路由器本身，而不是进行数据包转发。这不适用于在接口网络地址的路由表中指定为 C 的相连路由。</p>
+          <p></p>
+          <p>在为路由器上的一个活动接口配置 IP 地址时，本地主机路由会自动添加到路由表中。本地路由在路由表输出中标记为“L”。分配给分支机构 Serial0/0/0 接口的 IP 地址是 198.51.100.1/30（用于 IPv4）和 2001:DB8:ACAD:1::1/64（用于 IPv6）。如图 1 中的 IPv4 输出和图 2 中的 IPv6 输出所示，该接口的本地路由由 IOS 安装到路由表中。</p>
+          <p></p>
+          <p>注意：对于 IPv4，IOS 第 15 版引入了标记为“L”的本地路由。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">静态图形</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

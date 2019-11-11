@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.1.7 正确的应用程序使用正确的传输层协议</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.1.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>正确的应用程序使用正确的传输层协议</h1>
+        <div>
+          <p>在一些应用程序中，数据段必须按照特定的顺序到达，才能顺利处理；对于其他应用程序，必须完全接收所有数据才会有用。在这两种情况下，使用 TCP 作为传输协议。应用程序开发人员必须根据应用程序的需求，选择适合的传输层协议类型。 </p>
+          <p>例如，数据库、Web 浏览器和电子邮件客户端等应用程序，要求发送的所有数据都必须以原始形式到达目的地。任何数据的丢失都可能导致通信失败，要么不能完成通信，要么通信的信息不可读。这些应用程序设计为使用 TCP。 </p>
+          <p>在其他情况下，应用程序可以容忍在网络传输过程中丢失部分数据，但是不接受传输中出现延迟。由于需要的网络开销较少，UDP 是这些应用程序的更好选择。UDP 是流实时音频、实时视频和 IP 语音 (VoIP) 之类应用程序的首选。确认和重新发送会拖慢传输速度。 </p>
+          <p>例如，如果视频数据流中的一段或者两段数据未到达目的地，就会造成数据流的短暂中断。这可能表现为图像失真或声音失真，用户也许不会察觉。如果目的设备必须负责处理丢失的数据，则流可能在等待重新发送的过程中被推迟，从而导致图像或声音的质量大大降低。在这种情况下，最好利用接收到的数据段呈现最佳介质，并放弃可靠性。</p>
+          <p>
+            <b>注意</b>：存储音频和视频流的应用程序使用 TCP。例如，如果您的网络突然不能支持观看一个点播电影所需的带宽，则应用程序使播放暂停。在暂停期间，您可能会看到一个“缓冲……”消息，这时，TCP 正在重建流。所有的片段都井然有序且恢复最低限度的带宽时，您的 TCP 会话重新开始，电影开始播放。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows UDP protocol properties on the left including fast, low overhead, does not require acknowledgments, and delivers data as it arrives. On the right are the TCP properties including reliable, acknowledges data, resends lost data, and delivers data in order sent. Example UDP applications include IP telephony and streaming live video. Example TCP applications include Email and HTTP.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

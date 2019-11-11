@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.1.1 广播域</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>广播域</h1>
+        <div>
+          <p>在以太网 LAN 中，设备使用广播进行定位：</p>
+          <p>
+            <ul>
+              <li>
+                <b>其他设备</b> – 设备使用地址解析协议 (ARP) 将第 2 层广播发送到本地网络上的已知 IPv4 地址，以发现相关 MAC 地址。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>服务 – </b>主机通常需要使用动态主机配置协议 (DHCP) 来获取 IPv4 地址配置，这会发送本地网络上的广播来定位 DHCP 服务器。</li>
+            </ul>
+          </p>
+          <p>交换机会将广播传播到所有接口，接收它的接口除外。例如，如果图中的交换机接收到广播，则它会将其转发到网络上连接的其他交换机和其他用户。</p>
+          <p>路由器不传播广播。路由器在收到广播时，它不会将其转发到其他接口。例如，当 R1 在其 Gigabit Ethernet 0/0 接口收到广播时，它不会将其转发到另一个接口。 </p>
+          <p>因此，每个路由器接口都连接了一个<i>广播域</i>，而广播只能在特定广播域内传播。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a router connected to the Internet and to another switch. The switch is connected to three other switches. A box encompasses all the switches and the router interface and is labeled “Broadcast Domain”.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

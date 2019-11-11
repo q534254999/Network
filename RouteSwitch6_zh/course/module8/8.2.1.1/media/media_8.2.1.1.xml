@@ -1,0 +1,20 @@
+<textcomponents>
+<component id="ID_title">
+	<text><![CDATA[<b>ICMPv6 无状态地址自动配置</b>]]></text>
+</component>
+<component id="ID_txt01">
+	<text><![CDATA[客户端]]></text> 
+</component>
+<component id="ID_txt02">
+	<text><![CDATA[IPv6 所有路由器组播]]></text> 
+</component>
+<component id="ID_txt03">
+	<text><![CDATA[<b>路由器请求 (RS)</b><br>“我需要来自路由器的路由器通告。”]]></text> 
+</component>
+<component id="ID_txt04">
+	<text><![CDATA[IPv6 所有节点组播]]></text> 
+</component>
+<component id="ID_txt05">
+	<text><![CDATA[<b>路由器通告 (RA)</b><br>“这是您的前缀、前缀长度和其他信息。”]]></text> 
+</component>
+</textcomponents>

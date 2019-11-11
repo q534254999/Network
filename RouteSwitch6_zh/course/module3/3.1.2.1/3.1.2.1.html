@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.2.1 静态路由的应用 </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>静态路由的应用 </h1>
+        <div>
+          <p>在确定动态路由协议的优点之前，请考虑网络专业人员使用静态路由的原因。动态路由肯定在很多方面优于静态路由，但是，当今的网络仍然使用静态路由。而实际上，网络通常是将静态路由和动态路由结合使用。 </p>
+          <p></p>
+          <p>静态路由主要有以下几种用途： </p>
+          <p>
+            <ul>
+              <li>在不会显著增长的小型网络中，使用静态路由便于维护路由表。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>路由至和路由出末节网络。末节网络是只有一个默认路由输出的网络，并对任何远程网络一概不知。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>访问单一默认路由（如果某个网络在路由表中找不到更匹配的路由条目，则可使用默认路由作为通往该网络的路径）。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>图中提供了一个静态路由示例场景。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示两个路由器通过 WAN 串行链路连接。每个路由器都在千兆位以太网端口上有 2 个本地网络。图中将左侧路由器标识为“R1”，将右侧路由器标识为“R2”。图中说明 R2 连接到互联网，是离开 R1 的唯一路径。因此，R1 将具有表示它的默认静态路由。R2 知道只有两个网络连接 R1，因此，它在路由表中需要 2 个静态路由条目来到达这两个网络。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

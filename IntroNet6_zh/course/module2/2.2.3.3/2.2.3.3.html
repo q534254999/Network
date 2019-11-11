@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.3.3 将配置捕获到文本文件中</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>将配置捕获到文本文件中</h1>
+        <div>
+          <p>配置文件也可以保存并存档到文本文档中。这一系列步骤可确保获取当前配置文件的一份副本以供稍后编辑或重新使用。</p>
+          <p></p>
+          <p>例如，假定交换机已经配置，而且运行配置已经保存到设备上。</p>
+          <p>
+            <ul>
+              <li>打开一个与交换机连接的终端仿真软件，比如 PuTTY 或 Tera Term（图 1）。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>在终端软件（比如 PuTTY 或 Tera Term）中启用日志记录，并指定名称和文件位置以保存日志文件。图 2 显示<b>所有会话输出</b>都将捕获到指定文件中（即 MySwitchLogs）。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>在特权 EXEC 提示符下执行 <b>show running-config</b> 或 <b>show startup-config</b> 命令。终端窗口中显示的文本将保存到所选的文件中。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>在终端软件中禁用日志记录。图 3 显示了如何通过选择 <b>None</b> 会话日志记录选项禁用日志记录。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>所创建的文本文件可用作设备当前实施方式的记录。在用于将保存的配置恢复到设备之前，可能需要对该文件进行编辑。</p>
+          <p></p>
+          <p>要将配置文件恢复到设备中，请执行以下操作：</p>
+          <p>
+            <ul>
+              <li>在设备上进入全局配置模式。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>将文本文件复制并粘贴到与交换机相连的终端窗口中。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>文件中的文本将作为 CLI 中的命令应用，并成为设备上的运行配置。这是手动配置设备的一种便利方法。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1, 2 and 3 are a screen captures of PuTTY. Figure 1 is a the Session window. In Figure 2, “Logging” is selected, “All session output” is selected, and the log filename entered is “MySwitchLogs”. Figure 3 shows how to disable session logging by choosing “None”.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

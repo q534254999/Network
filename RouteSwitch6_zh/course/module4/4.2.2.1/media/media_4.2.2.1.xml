@@ -1,0 +1,51 @@
+﻿<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[双工和速度设置]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[双工]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[双工]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[速度]]></text>
+	</component>
+	<component id="ID_s1_txt04">
+		<text><![CDATA[速度]]></text>
+	</component>
+	<component id="ID_s1_txt05">
+		<text><![CDATA[全]]></text>
+	</component>
+	<component id="ID_s1_txt06">
+		<text><![CDATA[半]]></text>
+	</component>
+	<component id="ID_s1_txt07">
+		<text><![CDATA[全]]></text>
+	</component>
+	<component id="ID_s1_txt08">
+		<text><![CDATA[半]]></text>
+	</component>
+	<component id="ID_s1_txt09">
+		<text><![CDATA[100 Mb/s]]></text>
+	</component>
+	<component id="ID_s1_txt10">
+		<text><![CDATA[10 Mb/s]]></text>
+	</component>
+	<component id="ID_s1_txt11">
+		<text><![CDATA[1000 Mb/s]]></text>
+	</component>
+	<component id="ID_s1_txt12">
+		<text><![CDATA[100 Mb/s]]></text>
+	</component>
+	<component id="ID_s1_txt13">
+		<text><![CDATA[10 Mb/s]]></text>
+	</component>
+	<component id="ID_s1_txt14">
+		<text><![CDATA[端口 1]]></text>
+	</component>
+	<component id="ID_s1_txt15">
+		<text><![CDATA[自动协商]]></text>
+	</component>
+
+</textcomponents>

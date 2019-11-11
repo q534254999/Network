@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.5.2 可变长子网掩码</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.5.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>可变长子网掩码</h1>
+        <div>
+          <p>在上述所有子网划分示例中，您会注意到所有子网都使用相同的子网掩码。这意味着每个子网有相同数量的可用主机地址。 </p>
+          <p>如图 1 所示，传统子网划分可以创建大小相等的子网。传统方案中每个子网都使用相同的子网掩码。如图 2 所示，VLSM 使网络空间能够分为大小不等的部分。使用 VLSM，子网掩码将根据特定子网所借用的位数而变化，从而成为 VLSM 的“变量”部分。</p>
+          <p>VLSM 子网划分与传统子网划分类似，通过借用位来创建子网。用于计算每个子网主机数量和所创建子网数量的公式仍然适用。 </p>
+          <p>区别在于，子网划分不再是可以一次完成的活动。使用 VLSM 时，首先对网络划分子网，然后对子网再进行子网划分。该过程可以多次重复，以创建不同大小的子网。</p>
+          <p>
+            <b>注意</b>：当使用 VLSM 时，请始终从满足最大子网的主机要求开始。继续子网划分直至满足最小子网的主机要求。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a pie chart with equal sections representing one of the eight equal subnets. Figure two shows one of the subnets further subnetted to slash thirties, and each hold 2 valid host addresses.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

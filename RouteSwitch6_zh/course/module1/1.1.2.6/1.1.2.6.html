@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.2.6 控制台访问</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>控制台访问</h1>
+        <div>
+          <p>在生产环境中，通常使用安全外壳 (SSH) 或安全超文本传输协议 (HTTPS) 来远程访问基础架构设备。实际上只有在进行设备的初始配置时或远程访问失败时才会要求控制台访问。</p>
+          <p></p>
+          <p>控制台访问要求：</p>
+          <p>
+            <ul>
+              <li>
+                <b>控制台电缆</b>- RJ-45 转 DB-9 串行电缆或 USB 串行电缆</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>终端仿真软件</b> - Tera Term、PuTTY 和超级终端 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>在主机的串行端口和设备的控制台端口之间连接电缆。大多数计算机和笔记本电脑不再包含内置的串行端口。如果主机没有串行端口，则 USB 端口可用于建立控制台连接。在使用 USB 端口时，要求使用特殊的 USB-to-RS-232 兼容串行端口适配器。 </p>
+          <p></p>
+          <p>思科 ISR G2 支持 USB 串行控制台连接。要建立连接，需要使用 USB A 型 - USB B 型（mini-B USB）电缆和操作系统的设备驱动程序。此设备驱动程序可从以下网站获得： <a href="http://www.cisco.com/" target="_blank">www.cisco.com</a>.虽然这些路由器有两个控制台端口，但一次只能有一个控制台端口处于活动状态。当电缆插入 USB 控制台端口时，RJ-45 端口处于非活动状态。当 USB 电缆从 USB 端口移除时，RJ-45 端口处于活动状态。</p>
+          <p></p>
+          <p>图 1 中的表格总结了控制台连接要求。图 2 显示了所需的各种端口和电缆。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 是思科路由器的控制台连接要求表。列标题如下：计算机上的端口、所需电缆、ISR 上的端口和终端仿真。例如，使用计算机上的串行端口需要一条 RJ-45 转 DB-9 控制台电缆，并连接到路由器上的 RJ-45 控制台端口。可以使用终端仿真程序 Tera Term 或 PuTTY。图 2 是同一个表，但具有端口和电缆的照片。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

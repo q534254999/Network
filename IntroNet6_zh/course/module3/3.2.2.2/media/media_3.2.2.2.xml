@@ -1,0 +1,162 @@
+<textcomponents>
+    <!--  Event Date 2011 goes here  -->
+    <component id="ID_title01">
+        <text>
+            <![CDATA[在第一个全球 IPv6 日（2011 年 6 月 8日），全球多家网站和互联网服务提供商，包括 Google、Facebook 和雅虎以及其他 1,000 多家公司参加了 IPv6 的全球试用。]]>
+        </text>
+    </component>
+    <!--  Event Date 1995 goes here  -->
+    <component id="ID_title02">
+        <text>
+            <![CDATA[发布了 IPv6（IPv4 的最终继承者）的第一个规范 (RFC 1883)。]]>
+        </text>
+    </component>
+    <!--  Event Date 1993 goes here  -->
+    <component id="ID_title03">
+        <text>
+            <![CDATA[第一款 Web 浏览器 MOSAIC 由伊利诺伊大学阿巴纳香槟分校的 Marc Andreessen 开发。]]>
+        </text>
+    </component>
+    <component id="ID_bodytext03">
+        <text>
+            <![CDATA[1985_x2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Fusce id lacus in risus consectetur tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Fusce id lacus in risus consectetur tristique.]]>
+        </text>
+    </component>
+    <!--  Event Date 1991 goes here  -->
+    <component id="ID_title04">
+        <text>
+            <![CDATA[Tim Berners-Lee 和 Robert Cailliau 发布了 WWW 规范。]]>
+        </text>
+    </component>
+    <!--  Event Date 1988 goes here  -->
+    <component id="ID_title05">
+        <text>
+            <![CDATA[Internet Relay Chat (IRC) 由 Jarkko Oikarinen 开发。]]>
+        </text>
+    </component>
+    <component id="ID_txt08_01">
+        <text>
+            <![CDATA[网络]]>
+        </text>
+    </component>
+    <component id="ID_txt_09_03">
+        <text>
+            <![CDATA[<p class="ID_bubble01">Enrico: Jessica，您好！<br/>Jessica: Enrico，您好！</p>]]>
+        </text>
+    </component>
+    <component id="ID_txt_09_02">
+        <text>
+            <![CDATA[<p class="ID_bubble01">Enrico: Jessica，您好！<br/>Jessica: Enrico，您好！</p>]]>
+        </text>
+    </component>
+    <!--  Event Date 1986 goes here  -->
+    <component id="ID_title06">
+        <text>
+            <![CDATA[1986 年思科发布了其第一款路由创新产品：AGS 多协议路由器。]]>
+        </text>
+    </component>
+    <!--  Event Date 1985 goes here  -->
+    <component id="ID_title07">
+        <text>
+            <![CDATA[对文件传输协议 (FTP) 进行了说明 (RFC 765)。]]>
+        </text>
+    </component>
+    <!--  Event Date 1984 goes here  -->
+    <component id="ID_title08">
+        <text>
+            <![CDATA[引入了域名服务 (DNS)。]]>
+        </text>
+    </component>
+    <component id="ID_txt_09_01">
+        <text>
+            <![CDATA[网络]]>
+        </text>
+    </component>
+    <component id="ID_txt08_02">
+        <text>
+            <![CDATA[DNS 服务器]]>
+        </text>
+    </component>
+    <component id="ID_txt08_03">
+        <text>
+            <![CDATA[<p class="ID_bubble02">www.example.com 的 IP 地址是什么？</p>]]>
+        </text>
+    </component>
+    <component id="ID_txt08_04">
+        <text>
+            <![CDATA[<p class="ID_bubble03">www.example.com 的 IP 地址是 10.10.10.10。</p>]]>
+        </text>
+    </component>
+    <component id="ID_txt08_05">
+        <text>
+            <![CDATA[客户端]]>
+        </text>
+    </component>
+    <!--  Event Date 1982 goes here  -->
+    <component id="ID_title09">
+        <text>
+            <![CDATA[开发了外部网关协议 (EGP) 以允许路由器交换网络信息 (RFC 827)。]]>
+        </text>
+    </component>
+    <component id="ID_txt09_02">
+        <text>
+            <![CDATA[EGP]]>
+        </text>
+    </component>
+    <component id="ID_txt09_01">
+        <text>
+            <![CDATA[EGP]]>
+        </text>
+    </component>
+    <component id="ID_txt09_03">
+        <text>
+            <![CDATA[EGP]]>
+        </text>
+    </component>
+    <!--  Event Date 1981 goes here  -->
+    <component id="ID_title10">
+        <text>
+            <![CDATA[对 TCP 和 IP 协议进行了规范化（RFC 793 和 RFC 791）。]]>
+        </text>
+    </component>
+    <!--  Event Date 1972_1 goes here  -->
+    <component id="ID_title11">
+        <text>
+            <![CDATA[Ray Tomlinson 选择 @ 符号来标记收件人的目的地。]]>
+        </text>
+    </component>
+    <!--  Event Date 1972_2 goes here  -->
+    <component id="ID_title12">
+        <text>
+            <![CDATA[Larry Roberto 编写了第一个电子邮件管理程序。]]>
+        </text>
+    </component>
+    <!--  Event Date 1972_3 goes here  -->
+    <component id="ID_title13">
+        <text>
+            <![CDATA[编写了 Telnet 规范 (RFC 318).]]>
+        </text>
+    </component>
+    <component id="ID_txt13_01">
+        <text>
+            <![CDATA[远程文件服务器]]>
+        </text>
+    </component>
+    <component id="ID_txt13_02">
+        <text>
+            <![CDATA[C> telnet 10.1.1.1<br/><b>登录: ****<br/>密码: ****<br/><br/>已连接至远程文件服务器]]>
+        </text>
+    </component>
+    <!--  Event Date 1970 goes here  -->
+    <component id="ID_title14">
+        <text>
+            <![CDATA[Alohanet 开始运营，它是第一个数据包无线电网络，由夏威夷大学的 Norman Abramso 开发。]]>
+        </text>
+    </component>
+    <!--  Event Date 1969 goes here  -->
+    <component id="ID_title15">
+        <text>
+            <![CDATA[在 1969 年 10 月 29 日，第一封邮件从加州大学洛杉矶分校 (UCLA) 的 SDS Sigma 7 大型机发送到斯坦福研究所的 SDS 940 大型机。]]>
+        </text>
+    </component>
+</textcomponents>

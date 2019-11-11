@@ -1,0 +1,26 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>验证 IPv6 路由表 R1</b>]]></text>
+</component>
+<component id="ID_s2_title">
+<text><![CDATA[<b>验证 IPv6 路由表 R2</b>]]></text>
+</component>
+<component id="ID_s3_title">
+<text><![CDATA[<b>验证 IPv6 路由表 R3</b>]]></text>
+</component>
+<component id="ID_s4_title">
+<text><![CDATA[<b>验证从 R1 到 R2 的连接</b>]]></text>
+</component>
+<component id="ID_s5_title">
+<text><![CDATA[<b>验证从 R1 到 R3 LAN 的连接</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+  <text><![CDATA[&lt;省略部分输出&gt;]]></text> 
+</component>
+<component id="ID_s2_txt01">
+  <text><![CDATA[&lt;省略部分输出&gt;]]></text> 
+</component>
+<component id="ID_s3_txt01">
+  <text><![CDATA[&lt;省略部分输出&gt;]]></text> 
+</component>
+</textcomponents>

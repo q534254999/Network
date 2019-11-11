@@ -1,0 +1,95 @@
+<textcomponents>
+
+   <component id="ID_title01">
+      <text><![CDATA[<b>PC1 向 PC2 发送数据包</b>]]></text>
+   </component>
+
+   <component id="ID_header1">
+      <text><![CDATA[<b>第 2 层数据链路帧</b>]]></text>
+   </component>
+
+   <component id="ID_header2">
+      <text><![CDATA[<b>数据包的第 3 层数据</b>]]></text>
+   </component>
+   
+   <component id="ID_txt01">
+      <text><![CDATA[<b>目标 MAC 00-10</b>]]></text>
+   </component>
+
+   <component id="ID_txt02">
+      <text><![CDATA[<b>源 MAC 0A-10</b>]]></text>
+   </component>
+
+   <component id="ID_txt03">
+      <text><![CDATA[0X800 类型]]></text>
+   </component> 
+
+   <component id="ID_txt04">
+      <text><![CDATA[<b>源 IP 192.168.1.10</b>]]></text>
+   </component>
+   
+   <component id="ID_txt05">
+      <text><![CDATA[<b>目标 IP 192.168.4.10</b>]]></text>
+   </component>
+
+   <component id="ID_txt06">
+      <text><![CDATA[IP 字段]]></text>
+   </component>
+
+   <component id="ID_txt07">
+      <text><![CDATA[数据]]></text>
+   </component>
+
+   <component id="ID_txt08">
+      <text><![CDATA[帧尾]]></text>
+   </component>
+
+   <component id="ID_txt09">
+      <text><![CDATA[<b>PC1 对应于 R1 的 ARP 缓存</b>]]></text>
+   </component>
+
+   <component id="ID_txt10">
+      <text><![CDATA[<b>IP 地址</b>]]></text>
+   </component>
+
+   <component id="ID_txt11">
+      <text><![CDATA[<b>MAC 地址</b>]]></text>
+   </component><!--SPEECH BUBBLES--><component id="ID_speech01">
+      <text><![CDATA[我有一个数据包要发送到 PC2。]]></text>
+   </component>
+
+   <component id="ID_speech02">
+      <text><![CDATA[它需要通过什么路径？]]></text>
+   </component>
+
+   <component id="ID_speech03">
+      <text><![CDATA[我发现 PC2 在另一个网络中。]]></text>
+   </component>
+
+   <component id="ID_speech04">
+      <text><![CDATA[由于 PC2 在另一个网络中，因此我要封装数据包并将它发送到我所在网络上的路由器。 让我找找 MAC 地址....]]></text>
+   </component><!--ANIMATION CONTROLLER--><component id="end">
+		<text><![CDATA[结束]]></text>
+	</component>
+	
+	<component id="fforward">
+		<text><![CDATA[快进]]></text>
+	</component>
+	
+	<component id="pause">
+		<text><![CDATA[暂停]]></text>
+	</component>
+	
+	<component id="play">
+		<text><![CDATA[播放]]></text>
+	</component>
+	
+	<component id="rewind">
+		<text><![CDATA[快退]]></text>
+	</component>
+	
+	<component id="start">
+		<text><![CDATA[开始]]></text>
+	</component>
+
+</textcomponents>

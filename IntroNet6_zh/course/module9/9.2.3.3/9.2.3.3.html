@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.3.3 UDP 服务器进程与请求</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>UDP 服务器进程与请求</h1>
+        <div>
+          <p>如图所示，与基于 TCP 的应用程序相同的是，基于 UDP 的服务器应用程序也被分配了公认端口号或注册端口号。当上述应用程序或进程在服务器上运行时，它们就会接受与所分配端口号相匹配的数据。当 UDP 收到用于某个端口的数据报时，它就会按照应用程序的端口号将数据发送到相应的应用程序。</p>
+          <p>
+            <b>注意：</b>图中所示的远程验证拨入用户服务 (RADIUS) 服务器通过提供身份验证、授权和记账服务，来管理用户访问。RADIUS 的操作不属于本课程的范围。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a server receiving a request from a DNS client and a request from a RADIUS client.  These two protocols utilize UDP and the DNS request is received on port 53 and the RADIUS request is received on port 1812.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

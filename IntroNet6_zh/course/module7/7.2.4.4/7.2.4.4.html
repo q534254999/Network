@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.4.4 动态配置 – DHCPv6</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.4.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>动态配置 – DHCPv6</h1>
+        <div>
+          <p>默认情况下，RA 消息为选项 1，仅限 SLAAC。路由器的接口可配置为使用 SLAAC 和无状态 DHCPv6 或仅使用有状态 DHCPv6 发送路由器通告。</p>
+          <p>
+            <b>RA 选项 2：SLAAC 和无状态 DHCPv6</b>
+          </p>
+          <p>通过此选项，RA 消息给予设备以下提示：</p>
+          <p>
+            <ul>
+              <li>使用 SLAAC 创建其自己的 IPv6 全局单播地址.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>使用路由器的本地链路地址，即默认网关地址的 RA 的源 IPv6 地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>使用无状态 DHCPv6 服务器获取其他信息，例如 DNS 服务器地址和域名。</li>
+            </ul>
+          </p>
+          <p>使用无状态 DHCPv6 服务器分配 DNS 服务器地址和域名。它不分配全局单播地址。 </p>
+          <p>
+            <b>RA 选项 3：有状态 DHCPv6</b>
+          </p>
+          <p>有状态 DHCPv6 与 IPv4 的 DHCP 相似。使用有状态 DHCPv6 服务器的服务，设备可自动接收编址信息，包括全局单播地址、前缀长度和 DNS 服务器地址。 </p>
+          <p>通过此选项，RA 消息给予设备以下提示：</p>
+          <p>
+            <ul>
+              <li>使用路由器的本地链路地址，即默认网关地址的 RA 的源 IPv6 地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>使用有状态 DHCPv6 服务器获取全局单播地址、DNS 服务器地址、域名和所有其他信息。</li>
+            </ul>
+          </p>
+          <p>使用有状态 DHCPv6 服务器分配并维持哪台设备接收哪个 IPv6 地址的清单。IPv4 的 DHCP 是有状态的。 </p>
+          <p>
+            <b>注意：</b>默认网关地址仅可从 RA 消息中动态获取。无状态或有状态 DHCPv6 服务器均不提供默认网关地址。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows a router advertisement message being sent by a router in response to a router solicitation message.  The router advertisement in the figure is using option two and it is telling the computer the prefix, prefix-length, and the default gateway to use.  It is also using Stateless Address Auto-configuration and tells the computer that a DHCPv6 server is needed for DNS information.  The computer then sends out a DHCPv6 solicit request looking for DNS information.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

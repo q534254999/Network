@@ -1,0 +1,226 @@
+<textcomponents><!-- slide 1 --><component id="ID_s1_title"><text><![CDATA[<b>将第一个二进制八位数转换为十进制数</b>]]></text></component><component id="ID_s2_txt01"><text><![CDATA[点分十进制记法]]></text></component><component id="ID_s1_table"><text><![CDATA[<table header="none" bordercolor="#FFFFFF" borderwidth="3" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4" class="mtable">
+	<tr class="mtable_title">
+		<td colspan="9" bgcolor="#FFFFFF"><font size="5"></font></td>
+	</tr>
+	<tr class="mtable_top">
+		<td colspan="9" bgcolor="#4E4C4D"><font size="1" color="#4E4C4D">.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="220"><font color="#FFFFFF">位置值</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">128</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">64</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">32</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">16</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">8</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">4</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">2</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">1</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF">二进制数字</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">1</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">1</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF">计算</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">1 x  128</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">1 x  64</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  32</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  16</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  8</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  4</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  2</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  1</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF">对它们求和 …</font></td>
+		<td bgcolor="#F2F2F2">128</td>
+		<td bgcolor="#F2F2F2">+ 64</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF">结果</font></td>
+		<td bgcolor="#E9E7E8" colspan="8"><font color="#46A040">192</font></td>
+	</tr>
+</table>
+]]></text></component><!-- end slide 1 --><!-- slide 2 --><component id="ID_s2_title"><text><![CDATA[<b>将第二个二进制八位数转换为十进制数</b>]]></text></component><component id="ID_s1_txt01"><text><![CDATA[点分十进制记法]]></text></component>
+	<component id="ID_s2_table"><text><![CDATA[<table header="none" bordercolor="#FFFFFF" borderwidth="3" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4" class="mtable">
+	<tr class="mtable_title">
+		<td colspan="9" bgcolor="#FFFFFF"><font size="5"></font></td>
+	</tr>
+	<tr class="mtable_top">
+		<td colspan="9" bgcolor="#4E4C4D"><font size="1" color="#4E4C4D">.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="220"><font color="#FFFFFF">位置值</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">128</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">64</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">32</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">16</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">8</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">4</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">2</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">1</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF">二进制数字</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">1</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">1</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">1</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF">计算</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">1 x  128</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  64</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">1 x  32</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  16</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">1 x  8</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  4</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  2</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  1</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF">对它们求和 …</font></td>
+		<td bgcolor="#F2F2F2">128</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+		<td bgcolor="#F2F2F2">+ 32</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+		<td bgcolor="#F2F2F2">+ 8</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF">结果</font></td>
+		<td bgcolor="#E9E7E8" colspan="8"><font color="#46A040">168</font></td>
+	</tr>
+</table>
+]]></text></component><!-- end slide 2 --><!-- slide 3 --><component id="ID_s3_title"><text><![CDATA[<b>二进制位置记法</b>]]></text></component><component id="ID_s4_txt01"><text><![CDATA[点分十进制记法]]></text></component><component id="ID_s3_table"><text><![CDATA[<table header="none" bordercolor="#FFFFFF" borderwidth="3" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4" class="mtable">
+	<tr class="mtable_title">
+		<td colspan="9" bgcolor="#FFFFFF"><font size="5"></font></td>
+	</tr>
+	<tr class="mtable_top">
+		<td colspan="9" bgcolor="#4E4C4D"><font size="1" color="#4E4C4D">.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="220"><font color="#FFFFFF">位置值</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">128</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">64</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">32</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">16</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">8</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">4</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">2</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">1</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF">二进制数字</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">1</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">1</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">1</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF">计算</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  128</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  64</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  32</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  16</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">1 x  8</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  4</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">1 x  2</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">1 x  1</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF">对它们求和 …</font></td>
+		<td bgcolor="#F2F2F2">0</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+		<td bgcolor="#F2F2F2">+ 8</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+		<td bgcolor="#F2F2F2">+ 2</td>
+		<td bgcolor="#F2F2F2">+ 1</td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF">结果</font></td>
+		<td bgcolor="#E9E7E8" colspan="8"><font color="#46A040">11</font></td>
+	</tr>
+</table>
+]]></text></component><!-- end slide 3 --><!-- slide 4 --><component id="ID_s4_title"><text><![CDATA[<b>应用二进制位置记法</b>]]></text></component><component id="ID_s3_txt01"><text><![CDATA[点分十进制记法]]></text></component><component id="ID_s4_table"><text><![CDATA[<table header="none" bordercolor="#FFFFFF" borderwidth="3" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4" class="mtable">
+	<tr class="mtable_title">
+		<td colspan="9" bgcolor="#FFFFFF"><font size="5"></font></td>
+	</tr>
+	<tr class="mtable_top">
+		<td colspan="9" bgcolor="#4E4C4D"><font size="1" color="#4E4C4D">.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="220"><font color="#FFFFFF">位置值</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">128</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">64</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">32</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">16</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">8</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">4</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">2</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">1</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF">二进制数字</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">1</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">1</font></td>
+		<td bgcolor="#F2F2F2" align="center"><font color="#F68026">0</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF">计算</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  128</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  64</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  32</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  16</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">1 x  8</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  4</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">1 x  2</font></td>
+		<td bgcolor="#E9E7E8" align="center"><font color="#46A040">0 x  1</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF">对它们求和 …</font></td>
+		<td bgcolor="#F2F2F2">0</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+		<td bgcolor="#F2F2F2">+ 8</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+		<td bgcolor="#F2F2F2">+ 2</td>
+		<td bgcolor="#F2F2F2">+ 0</td>
+	</tr>
+	<tr>
+		<td bgcolor="#666263" width="150"><font color="#FFFFFF">结果</font></td>
+		<td bgcolor="#E9E7E8" colspan="8"><font color="#46A040">10</font></td>
+	</tr>
+</table>
+]]></text></component><!-- end slide 4 --></textcomponents>

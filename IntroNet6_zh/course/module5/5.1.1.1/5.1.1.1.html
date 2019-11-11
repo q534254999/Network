@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.1.1 以太网封装</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>以太网封装</h1>
+        <div>
+          <p>以太网是当前使用最广泛的 LAN 技术。 </p>
+          <p>以太网在数据链路层和物理层运行。以太网是 IEEE 802.2 和 802.3 标准中定义的一系列网络技术。以太网支持的数据带宽为：</p>
+          <p>
+            <ul>
+              <li>10 Mb/s</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>100 Mb/s</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>1000 Mb/s (1 Gb/s)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>10,000 Mb/s (10 Gb/s)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>40,000 Mb/s (40 Gb/s)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>100,000 Mb/s (100 Gb/s)</li>
+            </ul>
+          </p>
+          <p>如图 1 所示，以太网标准同时定义第 2 层协议和第 1 层技术。对于第 2 层协议，正如所有 802 IEEE 标准一样，以太网依靠数据链路层的两个单独子层运行，即逻辑链路控制 (LLC) 和 MAC 子层。</p>
+          <p>
+            <b>LLC 子层</b>
+          </p>
+          <p>以太网 LLC 子层处理上层与下层之间的通信。这通常是在网络软件和设备硬件之间进行的。LLC 子层获取网络协议数据（通常是 IPv4 数据包）并加入控制信息，帮助将数据包传送到目的节点。LLC 用于与应用层的上层进行通信，并将数据包转换到下层以便传输。</p>
+          <p>LLC 在软件中实施，并且其实施不受硬件影响。在计算机中，可将 LLC 视为网卡的驱动程序软件。网卡驱动程序是一个直接与网卡中硬件交互，以在 MAC 子层和物理介质之间传递数据的程序。</p>
+          <p>
+            <b>MAC 子层</b>
+          </p>
+          <p>MAC 构成数据链路层的较低子层。MAC 由硬件（通常是计算机网卡）实施。IEEE 802.3 标准指定了这些细节。图 2 列出了常用 IEEE 以太网标准。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the seven layers of the OSI model with the lower two layers highlighted.  This figure demonstrates that Ethernet spans Layers 1 and 2.  802.3 covers Layer 1 and the MAC sublayer of Layer 2.  802.2 is the LLC sublayer and covers the upper half of Layer 2. Figure 2 shows a different representation of how the different implementations of Ethernet span the layers.  In this figure, we see that Ethernet, Fast Ethernet and Gigabit Ethernet spans Layer 1 and the lower half of Layer 2.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

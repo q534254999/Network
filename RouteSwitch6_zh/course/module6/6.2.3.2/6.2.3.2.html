@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.3.2 缺失 VLAN</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>缺失 VLAN</h1>
+        <div>
+          <p>如果 VLAN 中的设备之间仍然没有连接，但是 IP 编址问题已经解决，请参阅图 1 中的故障排除流程图：</p>
+          <p></p>
+          <p>
+            <b>步骤 1</b>.使用 <b>show vlan</b> 命令检查端口是否属于期望的 VLAN。如果端口被分配到错误的 VLAN，请使用 <b>switchport access vlan</b> 命令纠正 VLAN 成员关系。使用 <b>show mac address-table </b>命令检查交换机的特定端口上获取的地址，以及将该端口分配到的 VLAN，如图 2 所示。</p>
+          <p></p>
+          <p>
+            <b>步骤 2</b>.如果端口分配到的 VLAN 被删除，则该端口将变为无效。已删除 VLAN 的端口将不会在<b> show vlan </b>命令的输出中列出。使用<b> show interfaces switchport </b>命令验证是否为端口分配了非活动 VLAN，如图 2 所示。</p>
+          <p></p>
+          <p>图 2 中的示例显示在 F0/1 接口上获取的 MAC 地址。可以看到 MAC 地址 000c.296a.a21c 是在 VLAN 10 中的 F0/1 接口上获取的。如果此编号不是预期的 VLAN 编号，请使用 <b>switchport access vlan</b> 命令更改端口 VLAN 成员。</p>
+          <p></p>
+          <p>交换机中的每个端口均属于一个 VLAN。如果删除了端口所属的 VLAN，则端口将变为非活动状态。所有属于已删除的 VLAN 的端口都将无法与网络中的其他设备通信。使用 <b>show interface f0/1 switchport </b>命令检查端口是否处于非活动状态。如果端口处于非活动状态，它将无法进行工作，直到使用 <b>vlan</b><i> vlan-id </i>全局配置命令创建缺失的 VLAN，或使用<b> no switchport access vlan </b><i>vlan-id </i>命令从端口中删除该 VLAN。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 是显示在使用 VLAN 时诊断连接问题所涉及步骤的流程图。图 2 显示交换机 1 上“show mac address-table interface fastEthernet 0/1”命令的输出和交换机 1 上“show interfaces fastEthernet 0/1 switchport”命令的输出。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

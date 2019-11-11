@@ -1,0 +1,1 @@
+该图显示用于配置 DHCP 的 Packet Tracer 无线路由器 GUI。

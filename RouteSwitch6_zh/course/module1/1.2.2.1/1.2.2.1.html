@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.2.2.1 路由决策</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>路由决策</h1>
+        <div>
+          <p>路由器的主要功能是确定用于发送数据包的最佳路径。为决定最佳路径，路由器需要在其路由表中搜索能够匹配数据包目标 IP 地址的网络地址。</p>
+          <p></p>
+          <p>路由表搜索将产生以下三个路径决定之一：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>直连网络</b> - 如果数据包目标 IP 地址属于与路由器的其中一个接口直连的网络中的设备，则该数据包将直接转发至目标设备。这表示数据包的目标 IP 地址是与该路由器接口处于同一网络中的主机地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>远程网络</b> - 如果数据包的目标 IP 地址属于远程网络，则该数据包将转发至另一个路由器。只有将数据包转发至另一台路由器才能到达远程网络。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>未确定路由</b> - 如果数据包的目标 IP 地址既不属于相连网络也不属于远程网络，则路由器将确定是否存在最后选用网关。当路由器上配置或获取了默认路由时，会设置最后选用网关。如果有默认路由，则将数据包转发到最后选用网关。如果路由器没有默认路由，则丢弃该数据包。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>图中的逻辑流程图演示了路由器数据包转发决策过程。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">该图是路由器在收到数据包时经过的数据包转发决策过程的流程图。以下是显示内容的摘要。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>练习</b>]]></text>
+</component>
+<component id='ID_instr_title'>
+		<text><![CDATA[说明]]></text>
+</component>
+
+<component id='ID_instr_body'>
+		<text><![CDATA[使用此处显示的拓扑根据以下场景创建 R1 的路由表条目。 通过将其拖动到相应字段来输入答案。<br/><br/><b>场景：</b>网络数据从 PC1 发送到主机 10.1.1.10。 在 R1 或 R2 上没有配置静态或默认路由。 R1 和 R2 都使用 EIGRP 作为其路由协议。]]></text>
+</component>
+
+<component id='ID_txt01'>
+	<text><![CDATA[<b>R1 路由表条目</b>]]></text>
+</component><!--Drag and Drop--><component id='ID_drag01'>
+	<text><![CDATA[<font color="#393536">S0/0/1</font>]]></text>
+</component>
+<component id='ID_drag02'>
+	<text><![CDATA[<font color="#393536">via 209.165.200.226</font>]]></text>
+</component>
+<component id='ID_drag03'>
+	<text><![CDATA[<font color="#393536">via 209.165.200.225</font>]]></text>
+</component>
+<component id='ID_drag04'>
+	<text><![CDATA[<font color="#393536">00:00:33</font>]]></text>
+</component>
+
+<component id='ID_drag05'>
+	<text><![CDATA[<font color="#393536">90/3072</font>]]></text>
+</component>
+
+<component id='ID_drag06'>
+	<text><![CDATA[<font color="#393536">10.1.1.0/24</font>]]></text>
+</component>
+
+<component id='ID_drag07'>
+	<text><![CDATA[<font color="#393536">209.165.200.224/30</font>]]></text>
+</component>
+
+<component id='ID_drag08'>
+	<text><![CDATA[<font color="#393536">D</font>]]></text>
+</component>
+
+<component id='ID_drag09'>
+	<text><![CDATA[<font color="#393536">S0/0/0</font>]]></text>
+</component>
+
+<component id='ID_drag10'>
+	<text><![CDATA[<font color="#393536">S</font>]]></text>
+</component>
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[您已成功根据以下场景创建 R1 的路由条目。]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[您尚未成功根据以下场景创建 R1 的路由条目。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[检查]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[重置]]></text>
+</component>
+
+</textcomponents>

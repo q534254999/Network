@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.1.3 交换机转发方法</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>交换机转发方法</h1>
+        <div>
+          <p>随着网络的发展，企业开始体会到网络性能变差，因此将以太网网桥（交换机的早期版本）添加到网络中以限制冲突域的规模。在 20 世纪 90 年代，集成电路技术的提高使以太网 LAN 交换机取代了以太网网桥。这些 交换机能够将第 2 层转发决策从软件转移到专用集成电路 (ASIC)。ASIC 减少了设备中的数据包处理时间，并使设备能够处理更多端口而不会降低性能。这种在第 2 层转发数据帧的方法称为存储转发交换。这一术语使其与直通交换区分开来。</p>
+          <p></p>
+          <p>如图 1 所示，存储转发方法会在其收到整个帧，并使用称为“循环冗余检查 (CRC)”的数学错误检查机制检查帧是否存在错误后，对帧作出转发决策。 </p>
+          <p></p>
+          <p>相反，如图 2 所示，直通方法在确定了传入帧的目标 MAC 地址和出口端口后就开始转发过程。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 是显示为存储转发帧处理配置的交换机将从源接收整个帧的动画。首先，交换机将计算 CRC 以确保帧未损坏。交换机将查找目标地址，然后将该帧转发到目标。图 2 是显示为直接转发帧处理配置的交换机在接收并处理目标地址后立即转发帧的动画。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

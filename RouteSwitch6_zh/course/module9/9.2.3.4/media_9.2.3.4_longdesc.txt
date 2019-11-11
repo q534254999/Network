@@ -1,0 +1,1 @@
+图 1 显示了“show ip nat translations”命令的输出。图 2 显示了“clear ip nat statistics”命令和“show ip nat statistics”命令的输出。

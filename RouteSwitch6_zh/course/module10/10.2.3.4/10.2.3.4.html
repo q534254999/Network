@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.3.4 验证系统日志</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证系统日志</h1>
+        <div>
+          <p>您可以使用 <b>show logging</b> 命令查看已记录的所有消息。当日志记录缓冲区较大时，可在 <b>show logging</b> 命令中结合使用管道 (|) 字符。管理员可以使用管道选项明确指定应显示的消息。例如，您可以使用管道 (|) 只筛选包括 <b>changed state to up</b> 的消息，如图 1 中所示。 </p>
+          <p></p>
+          <p>在图 1 中的输出中向下滚动，以查看另一个筛选示例。要查看在 Jun 12 10:35 PM 或之后记录到缓冲区的消息，您可以使用过滤器 <b>begin June 12 22:35</b>。<b></b></p>
+          <p></p>
+          <p>使用图 2 中的语法检查器配置和验证 R1 上的系统日志。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了在路由器上“show logging | include changed state to up”命令的输出。图 2 是一个互动练习，允许学生练习使用命令配置系统日志服务器并确认正确运行。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

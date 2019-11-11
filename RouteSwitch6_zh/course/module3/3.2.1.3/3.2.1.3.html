@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.1.3 验证 RIP 路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证 RIP 路由</h1>
+        <div>
+          <p><b>show ip protocols</b> 命令用于显示路由器当前配置的 IPv4 路由协议设置。图 1 所示的输出确认大多数 RIP 参数包括：</p>
+          <p></p>
+          <p>1.RIP 路由配置在路由器 R1 上，并在 R1 上运行。</p>
+          <p>2.不同计时器的值；例如，R1 会在 16 秒内发送下一次路由更新。</p>
+          <p>3.目前配置的 RIP 版本是 RIPv1。</p>
+          <p>4.R1 目前正在有类网络边界进行汇总。</p>
+          <p>5.由 R1 通告有类网络。R1 在其 RIP 更新中包含这些网络。</p>
+          <p>6.列出的 RIP 邻居包括各自的下一跳 IP 地址，R2 用于由该邻居发送的更新的相关 AD，以及从该邻居接收到上次更新的时间。</p>
+          <p></p>
+          <p>
+            <b>注</b>：在验证其他路由协议（如 EIGRP 和 OSPF）的运行时，此命令也非常有用。 </p>
+          <p></p>
+          <p><b> show ip route </b>命令用于显示安装在路由表中的 RIP 路由。在图 2 中，R1 现在能识别突出显示的网络。 </p>
+          <p></p>
+          <p>使用图 3 中的语法检查器验证 R2 和 R3 的 RIP 设置和路由。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示 show ip protocols 命令的输出。此路由器运行 RIPv1，且输出显示读数中列出的值。图 2 显示命令 show ip route | begin Gateway 的输出。其中列出显示两个直连路由、两个接口 IP 地址和三个通过 RIP 协议获取的网络路由的路由表。这三个网络在路由表中用大写字母 R 列出，表示它们是通过 RIP 更新获取的。图 3 是允许学生使用 show ip protocols 命令和 show ip route 命令查看路由器的当前路由协议配置和路由表的互动媒体元素。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

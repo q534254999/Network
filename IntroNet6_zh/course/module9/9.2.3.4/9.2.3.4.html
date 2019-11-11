@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.3.4 UDP 客户端进程</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>UDP 客户端进程</h1>
+        <div>
+          <p>与 TCP 一样，客户端应用程序向服务器进程请求数据，便会发起客户端-服务器通信。UDP 客户端进程则是从可用端口号中动态挑选一个端口号，用来作为会话的源端口。而目的端口通常都是分配到服务器进程的公认端口号或注册端口号。 </p>
+          <p>客户端选定了源端口和目的端口后，通信事务中的所有数据报头都采用相同的端口对。对于从服务器到达客户端的数据来说，数据报头所含的源端口号和目的端口号作了互换。</p>
+          <p>依次单击图 1 到 图 5，查看 UDP 客户端进程的详细信息。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a server running a DNS server on port 53 and a RADIUS server on port 1812.  The figure has two clients accessing the server.  Client 1 is sending a DNS request from source port 49152 to destination port 53.  Client 2 is sending a RADIUS request from source port 51152 to destination port 1812.  This demonstrates how port numbers are used to differentiate between multiple services running on one server. Figure 2 highlights the use of the well-known ports for the services. Figure 3 highlights the use of random port numbers as the source ports. Figure 4 highlights the response from the server to each of the two requests and the fact that the server uses the source port from the request packet as the destination. Figure 5 highlights the new destination port.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

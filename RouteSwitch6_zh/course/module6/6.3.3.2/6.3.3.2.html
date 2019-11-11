@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.3.2 配置单臂路由器：交换机配置</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置单臂路由器：交换机配置</h1>
+        <div>
+          <p>使用单臂路由器启用 VLAN 间路由前，首先启用连接至路由器的交换机端口上的中继。</p>
+          <p></p>
+          <p>如图所示，路由器 R1 通过 TRUNK 端口 F0/5 连接到交换机 S1 上。VLAN 10 和 30 已添加到交换机 S1。 </p>
+          <p></p>
+          <p>由于交换机端口 F0/5 配置为 TRUNK 端口，因此该端口不需要分配给任何 VLAN。要将交换机端口 F0/5 配置为中继端口，请在接口配置模式下为端口 F0/5 执行<span class="cmd"><b></b></span><b>switchport mode trunk</b><span class="cmd"><b></b></span>命令。 </p>
+          <p></p>
+          <p>现在可配置路由器来执行 VLAN 间路由。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示单臂路由器拓扑和在具有到路由器的单个物理连接的交换机上配置 VLAN 和中继链路所需的步骤。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

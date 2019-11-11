@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.1.2 跳选项</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>跳选项</h1>
+        <div>
+          <p>在此示例中，图 1 至 3 显示 R1、R2 和 R3 的路由表。注意，每台路由器只有直连网络及其关联的本地地址的条目。这些路由器都对其直连接口之外任何网络一无所知。</p>
+          <p></p>
+          <p>例如，R1 对以下网络一无所知：</p>
+          <p>
+            <ul>
+              <li>172.16.1.0/24 - R2 上的 LAN</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>192.168.1.0/24 - R2 和 R3 之间的串行网络</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>192.168.2.0/24 - R3 上的 LAN</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>图 4 显示从 R1 到 R2 的 Ping 成功。图 5 显示到 R3 LAN 的 ping 失败。这是因为，R1 的路由表中没有 R3 LAN 网络的条目。</p>
+          <p></p>
+          <p>下一跳可以通过 IP 地址、送出接口或两者结合进行识别。根据如何指定目标，路由分为以下三种类型： </p>
+          <p>
+            <ul>
+              <li>
+                <b>下一跳路由</b> - 仅指定下一跳 IP 地址</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>直连静态路由</b> - 仅指定路由器退出接口</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>完全指定静态路由</b> - 指定下一跳 IP 地址和退出接口</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">这些图基于标准实验图。R1，有 LAN 连接到 R2，还有一个 LAN 使用一个 LAN 连接到 R3。图 1 至 3 显示每个路由器的路由表。每个路由器的路由表中只列出直连网络。图 4 显示路由器 1 对路由器 2 的串行链路的另一端执行 ping 操作。因为它们是直连路由器，因此此 ping 操作成功。图 5 显示路由器 1 尝试对路由器 3 的 LAN 接口执行 ping 操作。由于路由器仅知道它们的直连网络，因此此 ping 操作不成功。路由器 1 没有通向路由器 3 的 LAN 的路径。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

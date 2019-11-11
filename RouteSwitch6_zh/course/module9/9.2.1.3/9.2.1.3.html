@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.1.3 验证静态 NAT</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证静态 NAT</h1>
+        <div>
+          <p>用于验证 NAT 操作的一个有用命令是 <b>show ip nat translations</b>。此命令可用于显示活动的 NAT 转换。与动态转换不同，静态转换始终在 NAT 表中进行。图 1 使用上述配置示例显示此命令的输出。由于该示例是静态 NAT 配置，因此不论正在进行的是何种通信，转换都会在 NAT 表中进行。如果此命令是正在进行会话时发出的，则输出还会表示出外部设备的地址，如图 1 所示。</p>
+          <p></p>
+          <p>另一个有用命令是<b> show</b><b> ip nat statistics</b>。如图 2 所示，<b>show ip nat statistics</b> 命令显示有关总活动转换数、NAT 配置参数、地址池中地址数量和已分配地址数量的信息。 </p>
+          <p></p>
+          <p>为了验证 NAT 转换是否正常工作，最好在测试前使用 <b>clear ip nat statistics</b> 命令清除任何之前转换的统计信息。</p>
+          <p></p>
+          <p>在与 Web 服务器通信之前，<b>show ip nat statistics</b> 命令显示无当前点击。在客户端与 Web 服务器建立会话后，<b>show ip nat statistics </b>显示在内部（串行 0/0/0）接口上增加到五次点击。这将验证 R2 上是否发生了静态 NAT 转换。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示没有任何活动会话时“show ip nat translations”命令的输出。外部地址为空。此外，还显示了有一个活动会话时“show ip nat translations”命令的输出。存在外部地址。这表明静态 NAT 始终存在 NAT 转换。图 2 显示了“clear ip nat statistics”命令以及紧跟的“show ip nat statistics”命令的输出，显示无点击。当 PC 与 Web 服务器建立会话时，“show ip nat statistics”命令的输出中显示了五个点击。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

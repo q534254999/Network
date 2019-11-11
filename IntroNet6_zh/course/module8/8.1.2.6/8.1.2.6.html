@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.2.6 无类子网划分示例</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>无类子网划分示例</h1>
+        <div>
+          <p>为了理解如何以无类级别进行子网划分，请考虑以下示例。 </p>
+          <p>考虑图 1 中显示的私有网络地址 192.168.1.0/24。前三个二进制八位数以十进制显示，而最后一个二进制八位数以二进制显示。原因是我们将从最后一个二进制八位数借用位来创建 192.168.1.0/24 网络的子网。</p>
+          <p>子网掩码是 255.255.255.0，如 /24 前缀长度所示。这将前三个二进制八位数标识为网络部分，而将最后一个二进制八位数中的其余 8 位标识为主机部分。没有子网划分，该网络只能支持一个 LAN 接口，提供 254 个主机 IPv4 地址。如果需要其他 LAN，则网络需要划分子网。</p>
+          <p>在图 2 中，从主机部分最重要的位（最左边的位）借用 1 位，从而将网络部分扩展为 25 位或 /25。这能创建两个子网。</p>
+          <p>图 3 显示了这两个子网：192.168.1.0/25 和 192.168.1.128/25。将借用的位值更改为 0 或 1 时就会派生这两个子网。因为借用的位是 128 位，所以第二个子网的第四个二进制八位数的十进制值为 128。 </p>
+          <p>图 4 显示了两个网络所生成的子网掩码。注意，它如何在借用位的位置使用 1 来表示这个位现在是网络部分的一部分。</p>
+          <p>图 5 显示了两个子网地址及其常见子网掩码的点分十进制表示。因为已经借用了一个位，所以每个子网的子网掩码为 255.255.255.128 或 /25。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the network address 192.168.1.0/24 with the first three octets of the address in decimal and the last octet in binary. The address is over the subnet mask. The first three octets of the subnet mask are in decimal and the last octet is in binary. The host portion of both is all zeros. Figure 2 shows borrowing the first bit in the fourth octet. Figure 3 shows the two subnets one bit borrowed would create. Figure 4 shows that the borrowed bit becomes a one bit in the subnet mask. Figure 5 shows that the two subnets are 192.168.1.0/25 and 192.168.1.128/25 with the new subnet mask of 255.255.255.128.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

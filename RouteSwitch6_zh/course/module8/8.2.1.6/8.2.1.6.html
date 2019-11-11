@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.1.6 有状态 DHCPv6 选项</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>有状态 DHCPv6 选项</h1>
+        <div>
+          <p>
+            <b>有状态 DHCPv6（仅限 DHCPv6）</b>
+          </p>
+          <p></p>
+          <p>此选项与 DHCPv4 最为类似。在此情况下，RA 消息通知客户端不使用 RA 消息中的信息。所有编址信息和配置信息必须从有状态 DHCPv6 服务器获取。这称为有状态 DHCPv6，因为 DHCPv6 服务器维护 IPv6 状态信息。这与分配 IPv4 地址的 DHCPv4 服务器类似。</p>
+          <p></p>
+          <p>M 标记表示是否要使用有状态 DHCPv6。不包含 O 标记。以下命令用于将 M 标记从 0 更改为 1 以显示有状态 DHCPv6：</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-if)# </span>
+            <span class="cmd">
+              <b>ipv6 nd managed-config-flag</b>
+            </span>
+            <span class="cmd"></span>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了计算机的有状态 DHCPv6 过程。路由器发送的路由器通告消息不包含编址信息，它指示计算机查找 DHCPv6 服务器以获取所有必需的编址信息。这是对计算机发送的路由器请求消息的响应。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

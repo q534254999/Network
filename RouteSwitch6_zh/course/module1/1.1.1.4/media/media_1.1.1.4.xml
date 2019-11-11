@@ -1,0 +1,103 @@
+<textcomponents>
+	<component id="end">
+		<text><![CDATA[结束]]></text>
+	</component>
+	
+	<component id="fforward">
+		<text><![CDATA[快进]]></text>
+	</component>
+	
+	<component id="pause">
+		<text><![CDATA[暂停]]></text>
+	</component>
+	
+	<component id="play">
+		<text><![CDATA[播放]]></text>
+	</component>
+	
+	<component id="rewind">
+		<text><![CDATA[快退]]></text>
+	</component>
+	
+	<component id="start">
+		<text><![CDATA[开始]]></text>
+	</component>
+<component id="transcript">
+		<text><![CDATA[文字说明]]></text>
+	</component>
+	
+	<component id="ID_s1_txt02">
+		<text><![CDATA[<b>介质</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt02a">
+			<text><![CDATA[<b>介质</b>]]></text>
+	</component>
+	
+	
+	<component id="ID_s1_txt03">
+		<text><![CDATA[<b>R1</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt04">
+		<text><![CDATA[<b>R2</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt01">
+		<text><![CDATA[<b>介质</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt05">
+	        <text><![CDATA[<b>WAN</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt06">
+	     <text><![CDATA[<b>LAN</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt07">
+	 	<text><![CDATA[<b>LAN</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt08">
+		<text><![CDATA[路由器将数据包传输到正确的目的地。 路由器可连接不同的介质。]]></text>
+	</component>
+		<component id="ID_s1_title">
+			<text><![CDATA[<b>路由器连接</b>]]></text>
+	</component><!--  slide2 --><component id="ID_s2_title">
+	<text><![CDATA[<b>路由器连接]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+	<text><![CDATA[<b>家庭办公室]]></text>
+</component>
+
+<component id='ID_s2_txt02'>
+	<text><![CDATA[互联网]]></text>
+</component>
+
+<component id='ID_s2_txt03'>
+	<text><![CDATA[云]]></text>
+</component>
+
+<component id='ID_s2_txt04'>
+	<text><![CDATA[<b>中心</b>]]></text>
+</component>
+
+<component id='ID_s2_txt05'>
+	<text><![CDATA[<b>分支机构</b>]]></text>
+</component>
+
+<component id='ID_s2_txt06'>
+	<text><![CDATA[<b>LAN</b>]]></text>
+</component>
+
+<component id='ID_s2_txt07'>
+	<text><![CDATA[<b>WAN</b>]]></text>
+</component>
+
+
+
+
+
+  </textcomponents>

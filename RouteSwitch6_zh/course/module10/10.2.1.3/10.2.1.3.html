@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.1.3 配置和验证 NTP</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置和验证 NTP</h1>
+        <div>
+          <p>在网络中配置 NTP 之前，<b>show clock</b> 命令可用于显示软件时钟上的当前时间。结合 <b>detail</b> 选项，还可以显示时间源。如图 1 所示，已手动配置软件时钟。在全局配置模式下使用 <b>ntp server</b><i> ip-address </i>命令将 209.165.200.225 配置为 R1 的 NTP 服务器。要验证时间源是否已设置为 NTP，请再次使用 <b>show clock detail</b> 命令。</p>
+          <p></p>
+          <p>如图 2 所示，使用 <b>show ip ntp associations</b> 和 <b>show ntp status</b> 命令验证 R1 与位于 209.165.200.225 处的 NTP 服务器保持同步。请注意 R1 与位于 209.165.200.225 的一台与 GPS 时钟同步的第 1 层 NTP 服务器同步。<b>show ntp status</b> 命令显示 R1 现在是一个与位于 209.165.220.225 的 NTP 服务器同步的第 2 层设备。</p>
+          <p></p>
+          <p>S1 上的时钟配置为与 R1 同步，如图 3 中所示。<b>show ntp associations</b> 命令的输出验证 S1 上的时钟通过 NTP 与 192.168.1.1 处的 R1 保持同步。R1 是第 2 层设备，并且是 S1 的 NTP 服务器。现在 S1 是一个可以为网络中的其他设备提供 NTP 服务的第 3 层设备（例如终端设备）。</p>
+          <p></p>
+          <p>使用图 4 中的语法检查程序来练习配置和验证 NTP。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1、图 2 和图 3 显示了 NTP 服务器和 NTP 客户端，具有相同的拓扑。路由器 R1 是交换机 S1 的 NTP 服务器。在图 1 中，R1 配置为 NTP 服务器。在图 2 中，“show ntp associations”和“show ntp status”命令验证 R1 现在是 NTP 服务器。在图 3 中，交换机 S1 已配置为 NTP 服务器，并且得到验证。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

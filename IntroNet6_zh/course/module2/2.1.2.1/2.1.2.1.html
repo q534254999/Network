@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.2.1 访问方法</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>访问方法</h1>
+        <div>
+          <p>Cisco IOS 交换机可以在未配置的情况下实施，而且它仍然可以在相连设备之间交换数据。将两台 PC 连接到交换机，这些 PC 即可立即建立连接。 </p>
+          <p></p>
+          <p>尽管思科交换机可即刻运行，但是配置初始设置仍是值得推荐的最佳做法。人们可以通过多种方法访问 CLI 环境和配置设备。最常见的方法有：</p>
+          <p>
+            <ul>
+              <li>
+                <b>控制台</b> – 这是一种物理管理端口，可通过该端口对思科设备进行带外访问。带外访问是指通过仅用于设备维护的专用管理通道进行访问。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>安全外壳 (SSH)</b> – SSH 是使用虚拟接口通过网络远程建立安全 CLI 连接的方法。不同于控制台连接，SSH 连接需要设备上具有有效的网络服务，包括配置了地址的有效接口。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Telnet</b> - Telnet 使用虚拟接口通过网络远程建立 CLI 会话，这种方法并不安全。不同于 SSH，Telnet 不提供经过加密的安全连接。用户身份验证、密码和命令通过网络以明文形式发送。 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>单击图中的选项以查看更多信息。</p>
+          <p></p>
+          <p>
+            <b>注意：</b>某些设备，比如路由器，还可以支持传统辅助端口，这种辅助端口可用于通过调制解调器远程建立 CLI 会话。类似于控制台连接，AUX 端口也是带外连接，且不需要配置或提供网络服务。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure includes more text for console, SSH, and Telnet access methods. The advantage of using a console port is that the device is accessible even if no networking services have been configured, such as when performing an initial configuration of the networking device. When performing an initial configuration, a computer running terminal emulation software is connected to the console port of the device using a special cable. Configuration commands for setting up the switch or router can be entered on the connected computer. SSH is the recommended method for remote management because it provides a secure connection. SSH provides encrypted password authentication and transport of session data. This keeps the user ID, password, and the details of the management session private. Most versions of Cisco IOS include an SSH server and an SSH client that can be used to establish SSH sessions with other devices. Best practice dictates to use SSH instead of Telnet for remote management CLI connections. Cisco IOS includes a Telnet server and a Telnet client that can be used to establish Telnet sessions with other devices.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

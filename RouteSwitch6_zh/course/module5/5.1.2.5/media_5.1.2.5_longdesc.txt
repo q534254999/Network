@@ -1,0 +1,1 @@
+图 1 显示 show interface fastEthernet 0/1 命令的输出。运行状态行突出显示。该行说明 fastEthernet 0/1 为 up，线路协议为 up。图 2 显示 show interface 命令的输出。FastEthernet 0/1 接口的计数器和统计信息突出显示。计数器列出统计信息，如 0 个超短帧、0 个超长帧、3 个输入错误和 8 个输出错误。图 3 显示一个列出网络接入层错误及其说明的表。

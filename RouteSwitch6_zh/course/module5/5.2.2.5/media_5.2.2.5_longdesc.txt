@@ -1,0 +1,1 @@
+图 1 显示 show port-security interface fastEthernet 0/18 命令的输出。在本示例中，最大 MAC 地址数设置设置为 1 并突出显示。图 2 突出显示新的最大数量设置为 50，该粘性 MAC 地址现在设置为 1。图 3 显示 show run | begin fastEthernet 0/19 命令的输出。此输出列出端口的配置，包括端口安全。配置中列出 MAC 地址，该地址代表连接到交换机端口并添加到运行配置文件的计算机。图 4 显示 show port-security address 命令的输出。图中列出已作为安全粘性 MAC 地址添加到上图中的交换机中的计算机 MAC 地址。

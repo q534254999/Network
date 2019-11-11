@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.1.1.3 使用 CDP 发现设备</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.1.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>使用 CDP 发现设备</h1>
+        <div>
+          <p>在网络上启用 CDP 时，<b>show cdp neighbors </b>命令可用于确定网络布局。</p>
+          <p></p>
+          <p>例如，假设图 1 所示拓扑中缺少文档。没有任何有关网络其余部分的可用信息。<b>show cdp neighbors</b> 命令提供有关每个 CDP 邻居设备的实用信息，包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>设备标识符</b> - 邻居设备 (S1) 的主机名</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>端口标识符</b> - 本地和远程端口（分别为 Gig 0/1 和 Fas 0/5）的名称</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>功能列表</b> - 设备是路由器还是交换机（S 代表交换机；I 代表超出本课程范围的 IGMP）</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>平台</b> - 设备（思科 2960 交换机的 WS - C2960）的硬件平台</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>如图 2 所示，如果需要更多信息，<b>show cdp neighbors detail</b> 命令还可以提供邻居的 IOS 版本和 IPv4 地址等信息。如图 3 中的 <b>show cdp neighbors</b> 的输出所示，网络管理员可通过 SSH 远程访问 S1 或通过控制台端口物理访问 S1，从而可以确定连接到 S1 的其他设备。</p>
+          <p></p>
+          <p>输出中显示另一台交换机 S2。如图 4 所示，网络管理员接下来会访问 S2 并显示 CDP 邻居。唯一连接到 S2 的设备是 S1。因此，拓扑中不会发现更多设备。网络管理员可以立即更新文档，以反映已发现的设备。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了一个路由器连接到云以及“show cdp neighbors”命令的输出。路由器 R1 有一个 CDP 邻居即交换机 S1，它连接到本地 gigabitethernet0/0 接口。图 2 显示了一个路由器连接到与云相连的云交换机，以及“show cdp neighbors detail”命令的输出。交换机 S1 的 IP 地址是 192.168.1.2，它正在运行 IOS 版本 15.0。图 3 显示了相同的拓扑以及交换机 S1 上“show cdp neighbors”命令的输出。交换机 S1 与两个设备相连。路由器 R1 连接到本地 fastethernet0/5 接口。交换机 S2 连接到本地 fastethernet0/4 接口。图 4 显示了路由器 R1 连接到交换机 S1 并且交换机 S1 又连接到交换机 S3 的完整拓扑，还显示了在交换机 S2 上“show cdp neighbors”命令的输出。交换机 S2 通过本地接口 fastethernet0/4 连接到交换机 S1，未连接到使用 CDP 的任何其他设备。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.3.3 将 IOS 映像复制到设备的步骤</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>将 IOS 映像复制到设备的步骤</h1>
+        <div>
+          <p>思科不断发布新的思科 IOS 软件版本来解决警告和提供新功能。此示例使用 IPv6 进行传输，表明 TFTP 也可在 IPv6 网络中使用。 </p>
+          <p></p>
+          <p>图 1 说明了从 TFTP 服务器复制思科 IOS 软件映像的过程。新的映像文件 (c1900-universalk9-mz.SPA.152-4.M3.bin) 将从位于 2001:DB8:CAFE:100::99 的 TFTP 服务器复制到路由器。 </p>
+          <p></p>
+          <p>按照这些步骤升级思科路由器上的软件：</p>
+          <p></p>
+          <p>
+            <b>步骤 1.</b>选择符合平台、功能和软件等方面的要求的思科 IOS 映像文件。从 cisco.com 下载文件并将其传输到 TFTP 服务器。</p>
+          <p></p>
+          <p>
+            <b>步骤 2.</b>验证与 TFTP 服务器之间的连接。从路由器对 TFTP 服务器执行 ping 操作。图 2 中的输出显示可以从路由器访问 TFTP 服务器。</p>
+          <p></p>
+          <p>
+            <b>步骤 3.</b>确保待升级的路由器有足够的闪存空间。可以使用 <b>show flash0:</b> 命令验证可用闪存的大小。比较空闲闪存空间与新映像文件的大小。图 3 中的 <b>show flash0:</b> 命令用于验证可用闪存大小。本例中的可用闪存空间为 182,394,880 字节。 </p>
+          <p></p>
+          <p>
+            <b>步骤 4.</b>使用图 4 中的 <b>copy</b> 命令将 IOS 映像文件从 TFTP 服务器复制到路由器。在使用指定的源和目标 URL 执行此命令后，系统将提示用户输入远程主机的 IP 地址、源文件名和目标文件名。文件将开始传输。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了一个路由器和一个服务器，演示可以将 IOS 从 TFTP 服务器复制到路由器。图 2 显示从路由器对服务器进行 ping 操作的成功结果。图 3 显示了在路由器上“show flash:0”命令的输出。图 4 显示了将 IOS 从 TFTP 服务器复制到路由器上的闪存的语法。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

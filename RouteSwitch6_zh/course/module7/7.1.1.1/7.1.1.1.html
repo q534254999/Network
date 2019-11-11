@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.1.1 什么是 ACL？</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>什么是 ACL？</h1>
+        <div>
+          <p>ACL 是一系列 IOS 命令，根据数据包报头中找到的信息来控制路由器应该转发还是应该丢弃数据包。ACL 是思科 IOS 软件中最常用的功能之一。 </p>
+          <p></p>
+          <p>在配置后，ACL 将执行以下任务：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>限制网络流量以提高网络性能。例如，如果公司政策不允许在网络中传输视频流量，那么就应该配置和应用 ACL 以阻止视频流量。这可以显著降低网络负载并提高网络性能。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>提供流量控制。ACL 可以限制路由更新的传输，从而确保更新都来自一个已知的来源。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>提供基本的网络访问安全性。ACL 可以允许一台主机访问部分网络，同时阻止其他主机访问同一区域。例如，“人力资源”网络仅限授权用户进行访问。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>根据流量类型过滤流量。例如，ACL 可以允许邮件流量，但阻止所有 Telnet 流量。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>屏蔽主机以允许或拒绝对网络服务的访问。ACL 可以允许或拒绝用户访问特定文件类型，例如 FTP 或 HTTP。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>默认情况下，路由器并未配置 ACL；因此，路由器不会默认过滤流量。进入路由器的流量仅根据路由表内的信息进行路由。但是，当 ACL 应用于接口时，路由器会在网络数据包通过接口时执行另一项评估所有网络数据包的任务，以确定是否可以转发数据包。  </p>
+          <p></p>
+          <p>除了允许或拒绝流量外，ACL 还可用于选择需要以其他方式进行分析、转发或处理的流量类型。例如，ACL 可用于对流量进行分类，以实现按优先级处理流量的功能。此功能与音乐会或体育赛事中的 VIP 通行证类似。VIP 通行证使选定的客人享有未向普通入场券持有人提供的特权，例如优先进入或能够进入专用区。</p>
+          <p></p>
+          <p>该图显示一个应用了 ACL 的示例拓扑。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示一个标记为 R-2 的路由器，该路由器有一条连接互联网的串行广域网链路。该路由器在串行接口上放置了一个 ACL。该 ACL 允许传入邮件，但是阻止传入 Telnet 请求。此外，该路由器上还有两个活动串行广域网链路，这两条串行广域网链路分别连接至路由器 R-1 和 R-3。R-1 和 R-3 有连接至交换机的局域网接口。局域网接口上配置了 ACL。路由器 R-1 上的 ACL 拒绝视频流量进入所连接的交换机。此外，R-1 还拒绝交换机与其他局域网接口上的交换机建立连接。R-3 有两个局域网接口。其中一个局域网接口连接至一台交换机，一个串行广域网链路连接至内部子网。内部子网链路上有一个 ACL 拒绝来自定向至子网的路由器的所有流量。因此，只有子网内产生的所有数据被允许离开该网络。局域网接口有一个拒绝所有更新、FTP 或 Web 流量的 ACL。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

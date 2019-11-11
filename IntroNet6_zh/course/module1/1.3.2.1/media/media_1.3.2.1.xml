@@ -1,0 +1,20 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>支持的网络架构</b>]]></text>
+</component>
+<component id="ID_txt01">
+   <text><![CDATA[容错能力]]></text>
+   </component>
+<component id="ID_txt02">
+   <text><![CDATA[可扩展性]]></text>
+   </component>
+<component id="ID_txt03">
+   <text><![CDATA[服务质量 (QoS)]]></text>
+   </component>
+<component id="ID_txt04">
+   <text><![CDATA[安全]]></text>
+   </component>
+<component id="ID_txt05">
+   <text><![CDATA[<b>可靠网络</b>]]></text>
+   </component>
+</textcomponents>

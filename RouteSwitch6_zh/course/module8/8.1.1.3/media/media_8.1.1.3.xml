@@ -1,0 +1,58 @@
+<textcomponents>
+	<component id="ID_s1_title">
+	<text><![CDATA[<b>DHCPv4 消息格式</b>]]></text>
+	</component>
+
+	<component id="ID_table">
+	<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' class="mtable" cellpadding='4'>
+	<tr class="mtable_top">
+			<td colspan='4' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#0E6360'><span 
+	style="color:#98D3D1">.</span></font></td>
+		</tr>
+		<tr>
+			<td bgcolor='#0E6360' valign="top" class="mtitle"><p align='center'><font color="#ffffff"><b>8</b></font></p></td>
+			<td bgcolor='#0E6360' valign="top" class="mtitle"><p align='center'><font color="#ffffff"><b>16</b></font></p></td>
+			<td bgcolor='#0E6360' valign="top" class="mtitle"><p align='center'><font color="#ffffff"><b>24</b></font></p></td>
+			<td bgcolor='#0E6360' valign="top" class="mtitle"><p align='center'><font color="#ffffff"><b>32</b></font></p></td>
+		</tr>
+		
+		<tr>
+			<td bgcolor='#EFF8F7' valign="top"><p align='center'>操作代码 (1)</p></td>
+			<td bgcolor='#EFF8F7' valign="top"><p align='center'>硬件类型 (1)</p></td>
+			<td bgcolor='#EFF8F7' valign="top"><p align='center'>硬件地址长度 (1)</p></td>
+			<td bgcolor='#EFF8F7' valign="top"><p align='center'>跳数 (1)</p></td>
+		</tr>
+		<tr>
+			<td colspan="4" bgcolor='#ffffff' valign="top"><p align='center'>事务标识符</p></td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor='#EFF8F7' valign="top"><p align='center'>秒数 - 2 字节</p></td>
+			<td colspan="2" bgcolor='#EFF8F7' valign="top"><p align='center'>标志 - 2 字节</p></td>
+		</tr>
+		<tr>
+			<td colspan="4" bgcolor='#ffffff' valign="top"><p align='center'>客户端 IP 地址 (CIADDR) - 4 字节</p></td>
+		</tr>
+		<tr>
+			<td colspan="4" bgcolor='#EFF8F7' valign="top"><p align='center'>你的 IP 地址 (YIADDR) - 4 字节</p></td>
+		</tr>
+		<tr>
+			<td colspan="4" bgcolor='#ffffff' valign="top"><p align='center'>服务器 IP 地址 (SIADDR) - 4 字节</p></td>
+		</tr>
+		<tr>
+			<td colspan="4" bgcolor='#EFF8F7' valign="top"><p align='center'>网关 IP 地址 (GIADDR) - 4 字节</p></td>
+		</tr>
+		<tr>
+			<td colspan="4" bgcolor='#ffffff' valign="top"><p align='center'>客户端硬件地址 (CIADDR) - 16 字节</p></td>
+		</tr>
+		<tr>
+			<td colspan="4" bgcolor='#EFF8F7' valign="top"><p align='center'>服务器名称 (SNAME) - 64 字节</p></td>
+		</tr>
+		<tr>
+			<td colspan="4" bgcolor='#ffffff' valign="top"><p align='center'>启动文件名 - 128 字节</p></td>
+		</tr>
+		<tr>
+			<td colspan="4" bgcolor='#EFF8F7' valign="top"><p align='center'>DHCP 选项 - 变量</p></td>
+		</tr>
+	</table>]]></text>
+	</component>
+</textcomponents>

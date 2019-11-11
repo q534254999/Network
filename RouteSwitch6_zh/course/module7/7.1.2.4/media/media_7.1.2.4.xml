@@ -1,0 +1,29 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>通配符掩码的缩写</b>]]></text>
+</component>
+
+
+<component id="ID_txt01">
+<text><![CDATA[<b>示例 1</b><br><br><textformat blockindent='-14'><ul><li>192.168.10.10 0.0.0.0 匹配所有地址位</li><li>使用以关键字 <font face="_typewriter"><b>host </b></font>开头的 IP 地址 <font face="_typewriter"><b>(host 192.168.10.10) </b></font>缩写该通配符掩码。</li></ul></textformat>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>通配符掩码：</b>]]></text> 
+</component>
+
+<component id="ID_txt03"><text><![CDATA[（匹配所有位）]]></text>
+</component>
+
+
+<component id="ID_txt04"><text><![CDATA[<b>示例 2</b><br><br><textformat blockindent='-14'><ul><li>0.0.0.0 255.255.255.255 忽略所有地址位</li><li>可使用关键字 <font face="_typewriter"><b>any</b></font> 缩写表达式。</li></ul></textformat>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>通配符掩码：</b>]]></text> 
+</component>
+
+<component id="ID_txt06"><text><![CDATA[（忽略所有位）]]></text>
+</component>
+
+</textcomponents>

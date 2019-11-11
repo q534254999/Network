@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.4.2 按照网络要求划分子网</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>按照网络要求划分子网</h1>
+        <div>
+          <p>有时要求一定数量的子网，但对每个子网中的主机地址数量不太重视。在组织选择根据其内部结构或部门设置来分隔网络流量时可能出现这种情况，如图所示。例如，企业可能选择将工程部员工使用的所有主机设备放在一个网络中，而将用于管理的所有主机设备放在另一网络中。在这种情况下，子网的数量对于确定借用多少个位是最重要的。</p>
+          <p>回想一下，借用位时所创建的子网数可以使用公式 2^n（其中 n 是借用的位数）来计算。关键是所需子网数量和最大子网所需主机数量之间的平衡。借用越多的位来创建更多子网，就意味着每个子网的可用主机越少。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows a cloud with smaller clouds within.  This figure demonstrates subnetting based on organizational structure.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

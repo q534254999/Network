@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.1.4 命名的标准 IPv4 ACL 语法</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>命名的标准 IPv4 ACL 语法</h1>
+        <div>
+          <p>命名 ACL 让人更容易理解其作用。当使用名称而不是编号来标识 ACL 时，配置模式和命令语法略有不同。</p>
+          <p></p>
+          <p>图 1 显示了创建标准命名 ACL 所需的步骤。</p>
+          <p></p>
+          <p>
+            <b>步骤 1.</b>进入全局配置模式，使用 <b>ip access-list</b> 命令创建命名 ACL。ACL 名称可由字母数字组成，区分大小写，并且必须是唯一的。<b>ip access-list standard</b><i> name </i>命令用于创建标准命名 ACL。在输入此命令后，路由器进入标准 (std) 命名 ACL (nacl) 配置模式，如图 1 中第二个提示符所示。</p>
+          <p></p>
+          <p>
+            <b>注</b>：编号 ACL 使用全局配置命令 <b>access-list</b>，而命名 IPv4 ACL 使用 <b>ip access-list</b> 命令。</p>
+          <p></p>
+          <p>
+            <b>步骤 2.</b>在命名 ACL 配置模式下，使用 <b>permit</b> 或 <b>deny</b> 语句指定一个或多个条件，以确定应该转发还是丢弃数据包。您可以使用 <b>remark</b> 向 ACL 添加注释。</p>
+          <p></p>
+          <p>
+            <b>步骤 3.</b>使用 <b>ip access-group</b><i> name </i>命令将 ACL 应用于接口。请指定应当在数据包进入接口 (<b>in</b>) 时还是在数据包离开接口 (<b>out</b>) 时将 ACL 应用于数据包。</p>
+          <p></p>
+          <p>图 2 显示了在路由器 R1 接口 G0/0 上配置标准命名 ACL 时使用的命令，该命令拒绝主机 192.168.11.10 访问 192.168.10.0 网络。将 ACL 命名为 NO_ACCESS。</p>
+          <p></p>
+          <p>ACL 名称不一定非要使用大写字母，但查看运行配置输出时大写字母会比较醒目。而且它使您不太可能无意间创建两个不同的 ACL，而两个 ACL 名称相同，大小写不同。</p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description"> 图 1 显示用于创建命名 ACL 的命令。第一个命令是 ip access-list，后接 standard 或 extended，然后再接 ACL 的名称。这会将路由器设置移入新的模式 config-std-nacl。接下来输入允许或拒绝语句，以及可选的注释语句。此语句后接 ip 地址和可选命令 log。最后一步是将 ACL 应用于接口的指定方向。图 2 配置了一个命名 ACL。第一个命令是 ip access-list standard no_access。下一个命令是 deny host 192.168.11.10。下一条命令是 permit any。然后，通过命令 interface gigabit Ethernet 0/0 将路由器移入指定接口。最后一步是通过命令 ip access-group no_access out 应用 ACL。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

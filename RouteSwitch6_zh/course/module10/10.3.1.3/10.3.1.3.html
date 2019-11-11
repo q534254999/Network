@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.1.3 使用文本文件备份和恢复</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>使用文本文件备份和恢复</h1>
+        <div>
+          <p>
+            <b>通过文本捕获备份配置 (Tera Term)</b>
+          </p>
+          <p></p>
+          <p>可使用 Tera Term 将配置文件保存/存档到文本文件。 </p>
+          <p></p>
+          <p>如图所示，步骤如下：</p>
+          <p></p>
+          <p>
+            <b>步骤 1.</b>在 File（文件）菜单中点击 <b>Log</b>（记录）。</p>
+          <p></p>
+          <p>
+            <b>步骤 2</b>.选择保存文件的位置。Tera Term 将开始捕获文本。 </p>
+          <p></p>
+          <p>
+            <b>步骤 3</b>.一旦开始捕获后，马上在特权 EXEC 提示符后执行 <b>show running-config</b> 或 <b>show startup-config</b> 命令。在终端窗口中显示的文本将指向选定文件。</p>
+          <p></p>
+          <p>
+            <b>步骤 4</b>.捕获完成后，在“TeraTerm: Log”（TeraTerm：日志）窗口中选择 <b>Close</b>（关闭）。</p>
+          <p></p>
+          <p>
+            <b>步骤 5</b>.查看文件验证其未损坏。</p>
+          <p></p>
+          <p>
+            <b>恢复文本配置</b>
+          </p>
+          <p></p>
+          <p>可将配置从文件复制到设备。在将文本从文本文件复制并粘贴到终端窗口时，IOS 会将配置文本的每一行作为一个命令执行。这意味着需要对该文件进行编辑，以确保将加密的口令转换为明文，还应删除诸如“--More--”之类的非命令文本以及 IOS 消息。此过程会在实验中讨论。 </p>
+          <p></p>
+          <p>此外，还必须在 CLI 中将设备设置为全局配置模式，以接收已粘贴到终端窗口的文本文件的命令。</p>
+          <p></p>
+          <p>使用 Tera Term 时的步骤如下：</p>
+          <p></p>
+          <p>
+            <b>步骤 1</b>.在 File（文件）菜单中点击 <b>Send</b>（发送）发送文件。</p>
+          <p></p>
+          <p>
+            <b>步骤 2</b>.找到要复制到设备的文件并点击 <b>Open</b>（打开）。</p>
+          <p></p>
+          <p>
+            <b>步骤 3</b>.Tera Term 会将该文件粘贴到设备中。</p>
+          <p></p>
+          <p>文件中的文本将作为 CLI 中的命令应用，并成为设备上的运行配置。这是手动配置路由器的一种便利方法。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows the process that requires the user to go to the file menu and start logging.When finished with output, stop logging.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

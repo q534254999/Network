@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.2.7 套接字对</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.2.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>套接字对</h1>
+        <div>
+          <p>源端口和目的端口都被置入数据段内，然后数据段封装于 IP 数据包内。IP 数据包中含有源 IP 地址和目的 IP 地址。源 IP 地址和源端口号的组合或者目的 IP 地址和目的端口号的组合，称为套接字。套接字用于标识客户端所请求的服务器和服务。客户端套接字可能如下所示，其中 1099 代表源端口号：192.168.1.5:1099 </p>
+          <p>Web 服务器上的套接字则可能是：192.168.1.7:80</p>
+          <p>这两个套接字组合在一起形成一个套接字对：192.168.1.5:1099，192.168.1.7:80</p>
+          <p>有了套接字，一台客户端上运行的多个进程便可彼此区分，它们与同一服务器进程建立的多个连接也可以彼此区分。</p>
+          <p>对于请求数据的应用程序而言，该源端口号就像是一个返回地址。传输层将跟踪此端口和发出该请求的应用程序，当返回响应时，传输层可以将其转发到正确的应用程序。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the location of the source and destination port numbers within a segment.  The figure is showing a computer that has both an active FTP session and a web session.  When data is meant for the FTP server the computer selects a random source port value above 1023 and assigns 21 to the destination port.  In the figure the source port used is 1305.  The IP address and the port number create the socket and this allows the computer to keep track of the FTP data.  The web traffic also uses a random source port above 1023, and in the figure it is using port 1099.  The data destined for the web server is assigned a destination port of 80, which is the port used by web servers.  The IP address and the port number create the socket and this allows the computer to keep track of the web server connection.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

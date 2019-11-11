@@ -1,0 +1,38 @@
+﻿<textcomponents><!-- Slide 01 --><component id="ID_s1_title">
+		<text><![CDATA[<b>显示 UDI</b>]]></text>
+	</component><!-- Slide 02 --><component id="ID_s2_title">
+		<text><![CDATA[<b>显示可拆移标签上的 UDI (PID/SN)</b>]]></text>
+	</component>
+
+	<component id="ID_s2_txt01">
+		<text><![CDATA[<b>SN</b>]]></text>
+	</component>
+
+	<component id="ID_s2_txt02">
+		<text><![CDATA[<b>PID</b>]]></text>
+	</component><!-- Slide 03 --><component id="ID_s3_title">
+		<text><![CDATA[<b>显示 R2 上的许可证 UDI</b>]]></text>		
+	</component>
+	<component id="ID_sc_reset">
+		<text><![CDATA[重置]]></text>
+	</component>	
+	<component id="ID_sc_showme">
+		<text><![CDATA[看答案]]></text>
+	</component>	
+	<component id="ID_sc_showall">
+		<text><![CDATA[全部显示]]></text>
+	</component>	
+
+
+
+	<component id="ID_s3_SC5" fontFace="_typewriter" fontSize="12" fontColor="#ffffff"><text />
+		<feedback id="fb"><![CDATA[<b>***</b><font face="_sans" color="#FFFFFF">您必须输入准确而完整的命令。</font><b>***</b> ]]></feedback>		
+		<existingcommands><![CDATA[<font face="_sans"><b>显示 R2 的唯一设备标识符 (UDI)。</b></font>]]></existingcommands>
+		<command  prompt="R2#">
+		<correctresponse><![CDATA[show license udi]]></correctresponse>
+		<deviceresponse><![CDATA[<font face="_typewriter">Device# PID SN UDI <br>--------------------------------------------------------------- <br>*0 CISCO1941/K9 FTX16368491 CISCO1941/K9:FTX16368491 <br> <br>R2#]]></deviceresponse> 
+		<instruction><![CDATA[<font face="_sans" class="syntaxBottomLine"><b>您已成功显示 R2 上的 UDI。</b>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+</textcomponents>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.3.4.3 show cdp neighbors 命令</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.3.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>show cdp neighbors 命令</h1>
+        <div>
+          <p>还有几个很有用的 IOS 命令。例如，思科发现协议 (CDP) 是思科专有协议，在数据链路层运行。由于 CDP 在数据链路层运行，即使不存在第 3 层连接，两台或多台思科网络设备（例如支持不同网络层协议的路由器）也可以互相获取信息。</p>
+          <p></p>
+          <p>将图 1 中 <b>show cdp neighbors</b> 命令的输出与图 2 中的拓扑进行比较。请注意，R3 已收集到关于 R2 的一些详细信息，以及与 R3 快速以太网接口连接的交换机有关的一些详细信息。</p>
+          <p></p>
+          <p>思科设备启动时会默认启动 CDP。CDP 会自动发现运行 CDP 的邻近思科设备，无论这些设备运行哪种第 3 层协议或协议簇。CDP 还会与直连的 CDP 邻居交换硬件和软件设备信息。</p>
+          <p></p>
+          <p>CDP 提供每台 CDP 邻居设备的以下信息：</p>
+          <p>
+            <ul>
+              <li>
+                <b>设备标识符</b> - 例如，为交换机配置的主机名</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>地址列表</b> - 每种支持的协议最多对应一个网络层地址</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>端口标识符</b> -本地和远程端口的名称 － ASCII 字符格式的字符串，例如 FastEthernet 0/0</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>功能列表</b> - 例如，该设备是路由器还是交换机</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>平台</b> - 设备的硬件平台;例如 Cisco 1841 系列路由器</li>
+            </ul>
+          </p>
+          <p></p>
+          <p><b>show cdp neighbors detail</b> 命令也会显示相邻设备的 IP 地址。无论是否能 ping 通邻居，CDP 都会显示邻居的 IP 地址。当两台 Cisco 路由器无法通过共享的数据链路进行路由时，此命令非常有用。<b>show cdp neighbors detail</b> 命令也有助于确定某个 CDP 邻居是否存在 IP 配置错误。</p>
+          <p></p>
+          <p>虽然它和 CDP 同样有用，但它也会带来安全风险，因为它可以为攻击者提供有用的网络基础设施信息。例如，许多 IOS 版本默认情况下会向所有已启用的端口发送 CDP 通告。但是，最佳实践建议仅在连接到其他基础设施思科设备的接口上启用 CDP。应在面向用户的端口上禁用 CDP 通告。</p>
+          <p></p>
+          <p>由于某些 IOS 版本默认情况下会向外发送 CDP 通告，因此必须知道如何禁用 CDP。要全局禁用 CDP，请使用全局配置命令 <b>no cdp run</b>。要在某一接口上禁用 CDP，请使用接口命令 <b>no cdp enable</b>。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the output of the "show cdp neighbors" command and "show cdp neighbors detail" command. Figure 2 shows a topology with three routers connected with serial connections.  R1 connects to R2, and R2. connects to R3  Each Router has a LAN with a switch and a PC.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

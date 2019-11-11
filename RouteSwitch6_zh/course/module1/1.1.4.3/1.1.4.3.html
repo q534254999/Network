@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.4.3 过滤 show 命令输出</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>过滤 show 命令输出</h1>
+        <div>
+          <p>默认情况下，生成多页输出的命令在显示出 24 行后会暂停。在暂停输出的结尾处，将会显示“--更多--”文本。按 <b>Enter</b> 键显示下一行，按空格键显示下一组输出。使用 <b>terminal length</b> 命令指定要显示的线路数量。零值 (0) 可以防止路由器在输出屏幕之间暂停。</p>
+          <p></p>
+          <p>另一个能改善命令行界面 (CLI) 用户体验的有用功能是过滤 <b>show</b> 输出。过滤命令可用于显示输出的特定部分。要启用过滤命令，请在 <b>show</b> 命令后面输入管道 (<b>|</b>) 字符，然后输入一个过滤参数和过滤表达式。</p>
+          <p></p>
+          <p>在管道后面可以配置的过滤参数包括：</p>
+          <p>
+            <ul>
+              <li>
+                <b>section</b> - 显示从过滤表达式开始的整个部分</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>include </b>- 包括符合过滤表达式的所有输出行</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>exclude </b>- 排除符合过滤表达式的所有输出行</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>begin </b>- 从符合过滤表达式的行开始，显示从某个点开始的所有输出行</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>注</b>：可以结合使用输出过滤器和任意 <b>show</b> 命令。</p>
+          <p></p>
+          <p>图 1 至图 4 提供了各种输出过滤器的示例。</p>
+          <p></p>
+          <p>使用图 5 中的语法检查器来过滤输出。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示随思科 IOS 使用过滤命令的示例。在本示例中，输入了 show running/config | section line vty 命令，结果为针对 xty 线路运行配置部分。图 2 显示使用过滤命令的示例，它为 show ip interface brief | include up。该输出列出已启动的三个接口，意味着其处于活动状态。图 3 显示使用过滤命令的示例，它为 show ip interface brief | exclude unassigned。该输出列出已启动的三个接口，意味着其处于活动状态。很明显缺少路由器上当前未分配 IP 地址第四个接口，因此，此接口地址未分配且输出中忽略。图 4 显示使用过滤命令的示例，它为 show ip route | begin Gateway。输出列出 show ip route 命令的内容，从关键字 gateway 开始直到输出的结尾。图 5 是允许学生练习使用过滤命令的互动媒体元素。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

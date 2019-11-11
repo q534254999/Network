@@ -1,0 +1,76 @@
+<textcomponents>
+    <!--   <component id="ID_s0_txt01">
+        <text>
+            <![CDATA[MAC 地址缩短是为了便于演示。]]>
+        </text>
+    </component>
+    <component id="ID_s0_txt02">
+        <text>
+            <![CDATA[类型]]>
+        </text>
+    </component>
+    <component id="ID_s0_txt03">
+        <text>
+            <![CDATA[数据]]>
+        </text>
+    </component>
+    <component id="ID_s0_txt04">
+        <text>
+            <![CDATA[FCS]]>
+        </text>
+    </component> -->
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>学习：检查源 MAC 地址</b>]]></text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[目的 MAC 地址<br/>00-0D]]>
+        </text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[源 MAC 地址<br/>00-0A]]>
+        </text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[目的 MAC 地址<br/>00-0B]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[目的 MAC 地址<br/>00-0C]]>
+        </text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[我的表中没有该源 MAC 地址和传入端口，所以我需要添加。]]>
+        </text>
+    </component>
+    <component id="ID_table">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" >
+
+	<tr class="mtable_title">
+				<td colspan="2" bgcolor='#FFFFFF'><font size="12" color="#393536"><b>MAC 地址表</b></font></td>
+			</tr>
+			<tr class="mtable_top">
+				<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#434321'>.</font></td>
+			</tr>
+			<tr>
+                <td bgcolor='#666263' width="170px" ><font color="#FFFFFF" align="center"><b>端口</b></font></td>
+                <td bgcolor='#666263'><font color="#FFFFFF"><b>MAC 地址</b></font></td>
+			</tr>
+			<tr>
+				<td bgcolor='#E9E7E8'><font color='#E9E7E8'>.</font></td>
+				<td bgcolor='#E9E7E8'><font color='#E9E7E8'>.</font></td>
+			</tr>
+			<tr>
+				<td bgcolor='#F2F2F2'><font color='#E9E7E8'>.</font></td>
+				<td bgcolor='#F2F2F2'><font color='#E9E7E8'>.</font></td>
+			</tr>
+		</table>]]>
+        </text>
+    </component>
+</textcomponents>

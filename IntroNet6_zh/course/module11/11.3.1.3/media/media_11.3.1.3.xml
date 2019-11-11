@@ -1,0 +1,46 @@
+<textcomponents><!--Slide 1--><component id="ID_s1_title">
+		<text><![CDATA[<b>运行的测试相同</b>]]></text>
+	</component>
+	<component id="ID_s2_txt01">
+		<text><![CDATA[2013 年 2 月 8 日 08:14:43]]></text>
+	</component>
+	<component id="ID_s2_txt02">
+		<text><![CDATA[2013 年 3 月 17 日 14:41:06]]></text>
+	</component>
+	<component id="ID_s1_txt04">
+		<!--For border --><text><![CDATA[]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<!--For border --><text><![CDATA[]]></text>
+	</component><!--Slide 2--><component id="ID_s2_title">
+		<text><![CDATA[<b>时间不同</b>]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[2013 年 2 月 8 日 08:14:43]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[2013 年 3 月 17 日 14:41:06]]></text>
+	</component>
+	<component id="ID_s2_txt04">
+		<!--For border --><text><![CDATA[]]></text>
+	</component>
+	<component id="ID_s2_txt03">
+		<!--For border --><text><![CDATA[]]></text>
+	</component><!--Slide 3--><component id="ID_s3_title">
+		<text><![CDATA[<b>比较值</b>]]></text>
+	</component>
+	<component id="ID_s3_txt01">
+		<text><![CDATA[2013 年 2 月 8 日 08:14:43]]></text>
+	</component>
+	<component id="ID_s3_txt02">
+		<text><![CDATA[2013 年 3 月 17 日 14:41:06]]></text>
+	</component><!--Slide 4--><component id="ID_s4_title">
+		<text><![CDATA[<b>路由器 Ping 捕获 - 保存到文本文件</b>]]></text>
+	</component>
+	<component id="ID_s4_txt01">
+		<text><![CDATA[<b>在终端会话过程中：</b>]]></text>
+	</component>
+	<component id="ID_s4_txt02">
+		<text><![CDATA[1. 开始文本捕获过程。<br/>2. 发出 <font face="_typewriter"><b>ping</b> <i>&lt;ip address&gt; </i></font> 命令。<br/>3. 停止捕获过程。<br/>4. 保存文本文件。]]></text>
+	</component>
+</textcomponents>

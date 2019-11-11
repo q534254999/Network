@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.3.1.3 第 5 章：交换机配置</title>
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.3.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>第 5 章：交换机配置</h1>
+        <div>
+          <p>在思科 LAN 交换机首次开启时，它将经过以下启动顺序：</p>
+          <p></p>
+          <p>1.首先，交换机将加载存储在 ROM 中的加电自检 (POST) 程序。POST 会检查 CPU 子系统。它会测试 CPU、DRAM 以及构成闪存文件系统的闪存设备部分。</p>
+          <p>2.接下来，交换机加载启动加载程序软件。启动加载程序是存储在 ROM 中并在 POST 成功完成后立即运行的小程序。</p>
+          <p>3.启动加载程序执行低级 CPU 初始化。启动加载程序初始化 CPU 寄存器，寄存器控制物理内存的映射位置、内存量以及内存速度。 </p>
+          <p>4.启动加载程序初始化系统主板上的闪存文件系统。 </p>
+          <p>5.最后，启动加载程序找到并将默认的 IOS 操作系统软件映像加载到内存，并将对交换机的控制权转交给 IOS。 </p>
+          <p></p>
+          <p>已加载的特定思科 IOS 文件由 BOOT 环境变量指定。在思科 IOS 加载后，它将使用启动配置文件中找到的命令初始化并配置接口。如果思科 IOS 文件缺失或已损坏，则可以使用启动加载程序重新加载或从问题中恢复。</p>
+          <p></p>
+          <p>交换机运行状态可通过前面板上的一组 LED 显示。这些 LED 将显示诸如端口状态、双工和速度等信息。</p>
+          <p></p>
+          <p>在管理 VLAN 的 SVI 上配置 IP 地址，以实现对设备的远程配置。必须在交换机上使用 <b>ip default-gateway</b> 命令配置属于管理 VLAN 的默认网关。如果默认网关配置不正确，则不可能实现远程管理。建议使用安全外壳 (SSH) 提供对远程设备的安全（加密）管理连接，以阻止对未加密用户名和密码的嗅探（使用 Telnet 等协议时可能会发生）。 </p>
+          <p></p>
+          <p>交换机的一个优势就是设备之间能够进行有效的全双工通信，使通信速率加倍。虽然可以指定交换机接口的速度和双工设置，但建议您允许交换机自动设置这些参数以避免出错。</p>
+          <p></p>
+          <p>交换机端口安全是阻止诸如 MAC 地址泛洪和 DHCP 欺骗等攻击所必需的。交换机端口应该配置为只允许具有特定源 MAC 地址的帧进入。应该拒绝来自未知源 MAC 地址的帧，并使端口关闭以阻止进一步攻击。</p>
+          <p></p>
+          <p>端口安全仅仅是对网络威胁的一种防护。有 10 种代表网络最佳保险的最好做法：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>开发组织的书面安全策略。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>关闭不使用的服务和端口。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>使用强密码并经常进行更改。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>控制对设备的物理访问。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>避免使用具有不安全标准的 HTTP 网站，尤其是登录页面。而应使用更加安全的 HTTPS。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>执行备份并定期测试备份的文件。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>向员工就社会工程攻击进行培训，并制定通过电话、电子邮件和亲自验证身份的策略。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>加密敏感数据，并使用强密码对其进行保护。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>实施安全硬件和软件，例如防火墙。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>尽可能每周或每天安装安全补丁，以保持 IOS 软件为最新版本。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>这些方法只是安全管理的起点。组织必须始终保持警惕，以防止不断演变的威胁。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示一个表，其中列出交换机接口的基本配置命令。CLI 以特权 EXEC 模式启动，且第一条命令是，configure terminal。这将进入全局配置模式。下一命令是 interface fast Ethernet zero slash one，然后交换机提示符变为配置 - if，并且放在括号内。这会进入指定接口的配置模式。下一命令为 duplex full。此命令将双工选项设置为全双工。下一命令为 speed 100。此命令将接口上的速度设置为 100 Mb/秒。使用 copy running - config startup - config 命令将运行配置复制到启动配置文件中。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.2.1 配置传统 VLAN 间路由：准备工作</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置传统 VLAN 间路由：准备工作</h1>
+        <div>
+          <p>传统 VLAN 间路由要求路由器具有多个物理接口。路由器通过每个物理接口连接到唯一的 VLAN，从而实现路由。每个接口也都配置有一个子网的 IPv4 地址，该子网与所连接的特定 VLAN 相关联。由于各物理接口配置了 IPv4 地址，与各个 VLAN 相连的网络设备可通过连接到同一 VLAN 的物理接口与路由器通信。本配置中，网络设备可将路由器用作网关，以访问与其它 VLAN 相连接的设备。</p>
+          <p></p>
+          <p>路由的过程中，源设备必须确定目标设备相对本地子网而言是本地设备还是远程设备。要完成此任务，源设备会将源 IPv4 地址和目标 IPv4 地址与子网掩码进行比较。如果目标 IPv4 地址已确定在远程网络中，则源设备必须确定将数据包转发到何处才能到达目标设备。源设备将检查本地路由表，确定将数据发送到何处。设备会将其默认网关作为必须离开本地子网的所有流量的第 2 层目的地。默认网关是指设备在没有明确定义的路由通往目标网络时所使用的路由。本地子网上的路由器接口的 IPv4 地址可作为发送设备的默认网关。</p>
+          <p></p>
+          <p>当源设备已确定数据包必须经由所连 VLAN 上的本地路由器接口传输时，源设备将发出 ARP 请求以确定本地路由器接口的 MAC 地址。当路由器将 ARP 应答发回源设备时，源设备就可以使用 MAC 地址完成数据包成帧，然后将其作为单播流量发送到网络。</p>
+          <p></p>
+          <p>由于以太网帧含有路由器接口的目标 MAC 地址，因此交换机知道应该通过哪个端口将单播流量转发到 VLAN 上的路由器接口。帧到达路由器时，路由器删除源 MAC 地址和目标 MAC 地址信息以检查数据包的目标 IPv4 地址。路由器将目标地址与路由表中的条目相比较，以确定应将该数据从哪个位置转发到最终目的地。如果路由器确定目标网络为本地连接的网络（VLAN 间路由即属于这种情况），则路由器会通过与目标 VLAN 相连接的物理接口发送 ARP 请求。路由器收到目标设备返回的 MAC 地址后，便将其用于数据成帧。随后，路由器将单播流量发送到交换机，交换机再将流量从与目标设备相连的端口转发出去。</p>
+          <p></p>
+          <p>点击图中的“播放”，观看传统路由的工作原理。</p>
+          <p></p>
+          <p>虽然 VLAN 间路由的工作原理的步骤很繁杂，但当不同 VLAN 上的两部设备通过路由器进行通信时，整个过程仅需数秒即可完成。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">该图是展示传统 VLAN 间路由所涉及的各个步骤的动画。此过程包括 ARP 发现以发现连接的设备、单播数据包传送和标记中继链路上的帧。需要注意的是，发往路由器的数据包无标记，因为它不是中继链路。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

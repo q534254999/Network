@@ -1,0 +1,17 @@
+﻿<textcomponents>
+ <component id="ID_title">
+    <text><![CDATA[<b>直连网络条目标识符</b>]]></text>
+  </component>
+  <component id="ID_txt01">
+    <text><![CDATA[- 确定路由器如何获知网络。]]></text>
+  </component>
+  <component id="ID_txt02">
+    <text><![CDATA[- 确定目标网络及其连接方式。]]></text>
+  </component>
+  <component id="ID_txt03">
+    <text><![CDATA[- 标识路由器上连接到目标网络的接口。]]></text>
+  </component>
+  <component id="ID_txt04">
+    <text><![CDATA[<b>图例</b>]]></text>
+  </component>
+</textcomponents>

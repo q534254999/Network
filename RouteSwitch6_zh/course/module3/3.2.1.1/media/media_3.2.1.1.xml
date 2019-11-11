@@ -1,0 +1,79 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>参考拓扑</b>]]></text>
+</component>
+<component id="ID_s2_title">
+  <text><![CDATA[<b>地址分配表</b>]]></text> 
+  </component>
+<component id="ID_s3_title">
+  <text><![CDATA[<b>进入路由配置模式</b>]]></text> 
+  </component>
+<component id="ID_s4_title">
+  <text><![CDATA[<b>RIP 配置选项</b>]]></text> 
+  </component><!-- Table--><component id="ID_s1_table01">
+  <text><![CDATA[
+  		<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+
+  			<tr class="mtable_title">
+				<td colspan="4" bgcolor='#FFFFFF'><font size="16"></font></td>
+			</tr>
+			<tr class="mtable_top">
+				<td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+			</tr>
+	<tr>
+		
+		<td bgcolor='#666263'  valign="top" class="mtitle"><font color='#ffffff' size="11"><b>设备</b></font></td>
+		<td bgcolor='#666263'  valign="top" class="mtitle"><font color='#ffffff' size="11"><b>接口</b></font></td>
+		<td bgcolor='#666263'  valign="top" class="mtitle"><font color='#ffffff' size="11"><b>IP 地址</b></font></td>
+		<td bgcolor='#666263'  valign="top" class="mtitle"><font color='#ffffff' size="11"><b>子网掩码</b></font></td>
+	</tr>
+     <tr>
+		
+		<td bgcolor='#E9E7E8'  valign="top" rowspan="2"><font color='#393536' size="11">R1</font></td>
+		<td bgcolor='#E9E7E8'  valign="top"><font color='#393536' size="11">G0/0</font></td>
+		<td bgcolor='#E9E7E8'  valign="top"><font color='#393536' size="11">192.168.1.1</font></td>
+		<td bgcolor='#E9E7E8'  valign="top"><font color='#393536' size="11">255.255.255.0</font></td>
+	</tr>
+	<tr>
+		
+		<td bgcolor='#E9E7E8'  valign="top"><font color='#393536' size="11">S0/0/0</font></td>
+		<td bgcolor='#E9E7E8'  valign="top"><font color='#393536' size="11">192.168.2.1</font></td>
+		<td bgcolor='#E9E7E8'  valign="top"><font color='#393536' size="11">255.255.255.0</font></td>
+	</tr>
+	
+	 <tr>
+		
+		<td bgcolor='#F2F2F2'  valign="top" rowspan="3"><font color='#393536' size="11">R2</font></td>
+		<td bgcolor='#F2F2F2'  valign="top"><font color='#393536' size="11">G0/0</font></td>
+		<td bgcolor='#F2F2F2'  valign="top"><font color='#393536' size="11">192.168.3.1</font></td>
+		<td bgcolor='#F2F2F2'  valign="top"><font color='#393536' size="11">255.255.255.0</font></td>
+	</tr>
+	<tr>
+		
+		<td bgcolor='#F2F2F2'  valign="top"><font color='#393536' size="11">S0/0/0</font></td>
+		<td bgcolor='#F2F2F2'  valign="top"><font color='#393536' size="11">192.168.2.2</font></td>
+		<td bgcolor='#F2F2F2'  valign="top"><font color='#393536' size="11">255.255.255.0</font></td>
+	</tr>
+	<tr>
+		
+		<td bgcolor='#F2F2F2'  valign="top"><font color='#393536' size="11">S0/0/1</font></td>
+		<td bgcolor='#F2F2F2'  valign="top"><font color='#393536' size="11">192.168.4.2</font></td>
+		<td bgcolor='#FFFFFF'  valign="top"><font color='#393536' size="11">255.255.255.0</font></td>
+	</tr>
+	  <tr>
+		
+		<td bgcolor='#E9E7E8'  valign="top" rowspan="2"><font color='#393536' size="11">R3</font></td>
+		<td bgcolor='#E9E7E8'  valign="top"><font color='#393536' size="11">G0/0</font></td>
+		<td bgcolor='#E9E7E8'  valign="top"><font color='#393536' size="11">192.168.5.1</font></td>
+		<td bgcolor='#E9E7E8'  valign="top"><font color='#393536' size="11">255.255.255.0</font></td>
+	</tr>
+	<tr>
+		
+		<td bgcolor='#E9E7E8'  valign="top"><font color='#393536' size="11">S0/0/1</font></td>
+		<td bgcolor='#E9E7E8'  valign="top"><font color='#393536' size="11">192.168.4.1</font></td>
+		<td bgcolor='#EFF8F7'  valign="top"><font color='#393536' size="11">255.255.255.0</font></td>
+	</tr>
+	   
+</table>]]></text>
+</component>
+</textcomponents>

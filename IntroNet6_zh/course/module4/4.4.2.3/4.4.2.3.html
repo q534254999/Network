@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.2.3 逻辑点对点拓扑</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>逻辑点对点拓扑</h1>
+        <div>
+          <p>从物理上来说，点对点网络中通信的终端节点可以通过多种中间设备连接起来。但是，在网络中使用物理设备并不会影响逻辑拓扑。 </p>
+          <p>如图 1 所示，距离较远的源节点和目的节点彼此可以间接相连。在某些情况下，节点间的逻辑连接形成了虚电路。虚电路是在网络中的两个网络设备间创建的逻辑连接。虚电路两端上的节点相互交换帧。即使通过中间设备传输帧，情况也同样如此，如图 2 所示。虚电路是某些第 2 层技术使用的重要逻辑通信模型。 </p>
+          <p>数据链路协议使用的介质访问方法取决于逻辑点对点拓扑，而非物理拓扑。这表示两个节点间的逻辑点对点连接可能并不一定存在于某个物理链路各端的两个物理节点之间。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows two routers connected with a point to point connection through a cloud.  The cloud is empty. Figure 2 shows the same two routers connected with a point to point connection through a cloud.  This cloud has several pieces of network equipment.  This demonstrates that sometimes a point to point is not a physical wire connecting two routers.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

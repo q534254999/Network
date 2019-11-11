@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.4.7 静态本地链路地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.4.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>静态本地链路地址</h1>
+        <div>
+          <p>手动配置本地链路地址使得创建的地址便于识别和记忆。一般来说，只需要在路由器上创建可识别的本地链路地址。这样做很有用，因为路由器本地链路地址将被用作默认网关地址并包含在路由通告消息中。</p>
+          <p>可以使用与创建 IPv6 全局单播地址相同的接口命令来手动配置本地链路地址，但还需要<b>本地链路</b>参数。当地址以 FE80 到 FEBF 范围的十六进制数开头时，本地链路参数必须符合该地址。</p>
+          <p>图中显示了使用 <b>ipv6 address</b> interface 命令配置的本地链路地址。使用本地链路地址 FE80::1 让系统更容易识别出它属于路由器 R1。所有 R1 接口上均配置相同的 IPv6 本地链路地址。可以在各个链路上配置 FE80::1，因为它仅需在单个链路上保持唯一性。</p>
+          <p>类似于 R1，将 FE80::2 配置为路由器 R2 所有接口的 IPv6 本地链路地址。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the command syntax for configure the link-local address on a router interface. Also shown is an example of configuring three interfaces on a router with the same link-local command, which is “ipv6 address fe80::1 link-local”.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

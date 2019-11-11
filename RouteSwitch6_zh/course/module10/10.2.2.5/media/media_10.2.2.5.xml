@@ -1,0 +1,260 @@
+<textcomponents><!-- Slide 1--><component id='ID_s1_inst'>
+		<text><![CDATA[<b>活动 – 第 1 部分：解释系统日志输出</b><br/>读取所示的系统日志输出。 将输出拖到相应标识旁的字段。 并非全部选项都要使用。 点击“按钮 2”以继续。]]></text>
+	</component><!--Drag and Drop--><component id='ID_s1_drag01'>
+		<text><![CDATA[17:46:01.619]]></text>
+	</component>
+
+	<component id='ID_s1_drag02'>
+		<text><![CDATA[IFMGR]]></text>
+	</component>
+
+	<component id='ID_s1_drag03'>
+		<text><![CDATA[没有列出条目]]></text>
+	</component>
+	
+	<component id='ID_s1_drag04'>
+		<text><![CDATA[7]]></text>
+	</component>
+	
+	<component id='ID_s1_drag05'>
+		<text><![CDATA[NO_IFINDEX_FILE]]></text>
+	</component>
+	
+	<component id='ID_s1_drag06'>
+		<text><![CDATA[June 12 17:46:01.619]]></text>
+	</component>
+	
+	<component id='ID_s1_drag07'>
+		<text><![CDATA[ifIndex-table]]></text>
+	</component>
+	
+
+	<component id='ID_s1_CHECK'>
+		<text><![CDATA[<b>检查</b>]]></text>
+	</component>
+
+	<component id='ID_s1_RESET'>
+		<text><![CDATA[<b>重置</b>]]></text>
+	</component>
+
+	<component id='ID_s1_CORRECT_TITLE'>
+		<text><![CDATA[<b>正确</b>]]></text>
+	</component>
+
+	<component id='ID_s1_CORRECT_BODY'>
+		<text><![CDATA[您已成功地将每个系统日志输出与其标识相匹配。 点击“按钮 2”以继续。]]></text>
+	</component>
+
+	<component id='ID_s1_INCORRECT_TITLE'>
+		<text><![CDATA[<b>不正确</b>]]></text>
+	</component>
+
+	<component id='ID_s1_INCORRECT_BODY'>
+		<text><![CDATA[您未成功地将每个系统日志输出与其标识相匹配。 请单击“重置”重试。]]></text>
+	</component>
+	
+	<component id='ID_s1_txt01'>
+		<text><![CDATA[*Jun 12 17:46:01.619: %IFMGR-7-NO_IFINDEX_FILE: Unable to open nvram:/ifIndex-table No such file or directory]]></text>
+	</component> 
+	
+	<component id='ID_s1_txt02'>
+		<text><![CDATA[<b>标识符</b>]]></text>
+	</component> 
+	
+	<component id='ID_s1_txt03'>
+		<text><![CDATA[<b>交付内容</b>]]></text>
+	</component> 
+	
+	<component id='ID_s1_txt04'>
+		<text><![CDATA[此系统日志条目的序号]]></text>
+	</component> 
+	
+		
+	<component id='ID_s1_txt05'>
+		<text><![CDATA[此条目的严重性级别]]></text>
+	</component> 
+	
+	<component id='ID_s1_txt06'>
+		<text><![CDATA[此系统日志条目的助记符]]></text>
+	</component> 
+	
+	<component id='ID_s1_txt07'>
+		<text><![CDATA[此系统日志的条目时间戳]]></text>
+	</component> 
+	
+	<component id='ID_s1_txt08'>
+		<text><![CDATA[系统日志报告设施]]></text>
+	</component><!-- Slide 2 --><component id='ID_s2_inst'>
+		<text><![CDATA[<b>活动 – 第 2 部分：解释系统日志输出</b><br/>读取所示的系统日志输出。 将输出拖到相应标识旁的字段。 并非全部选项都要使用。 点击“按钮 3”以继续。]]></text>
+	</component><!--Drag and Drop--><component id='ID_s2_drag01'>
+		<text><![CDATA[22:06:49.642]]></text>
+	</component>
+
+	<component id='ID_s2_drag02'>
+		<text><![CDATA[CHANGED]]></text>
+	</component>
+
+	<component id='ID_s2_drag03'>
+		<text><![CDATA[Interface Loopback0, changed state to administratively down.]]></text>
+	</component>
+	
+	<component id='ID_s2_drag04'>
+		<text><![CDATA[5]]></text>
+	</component>
+	
+	<component id='ID_s2_drag05'>
+		<text><![CDATA[LINK]]></text>
+	</component>
+	
+	<component id='ID_s2_drag06'>
+		<text><![CDATA[Jun 12 22:06:49.642]]></text>
+	</component>
+	
+	<component id='ID_s2_drag07'>
+		<text><![CDATA[LINK-5]]></text>
+	</component>
+	
+
+
+	<component id='ID_s2_CHECK'>
+		<text><![CDATA[<b>检查</b>]]></text>
+	</component>
+
+	<component id='ID_s2_RESET'>
+		<text><![CDATA[<b>重置</b>]]></text>
+	</component>
+	
+	<component id='ID_s2_CORRECT_TITLE'>
+		<text><![CDATA[<b>正确</b>]]></text>
+	</component>
+
+	<component id='ID_s2_CORRECT_BODY'>
+		<text><![CDATA[您已成功地将每个系统日志输出与其标识相匹配。 点击“按钮 3”以继续。]]></text>
+	</component>
+
+	<component id='ID_s2_INCORRECT_TITLE'>
+		<text><![CDATA[<b>不正确</b>]]></text>
+	</component>
+
+	<component id='ID_s2_INCORRECT_BODY'>
+		<text><![CDATA[您未成功地将每个系统日志输出与其标识相匹配。 请单击“重置”重试。]]></text>
+	</component>
+	
+	<component id='ID_s2_txt01'>
+		<text><![CDATA[*Jun 12 22:06:49.642: %LINK-5-CHANGED: Interface Loopback0, changed state to administratively down]]></text>
+	</component> 
+	
+	<component id='ID_s2_txt02'>
+		<text><![CDATA[<b>标识符</b>]]></text>
+	</component> 
+	
+	<component id='ID_s2_txt03'>
+		<text><![CDATA[<b>交付内容</b>]]></text>
+	</component> 
+	
+	<component id='ID_s2_txt04'>
+		<text><![CDATA[系统日志错误说明]]></text>
+	</component> 
+	
+	<component id='ID_s2_txt05'>
+		<text><![CDATA[此条目的严重性级别]]></text>
+	</component> 
+	
+	<component id='ID_s2_txt06'>
+		<text><![CDATA[此系统日志条目的助记符]]></text>
+	</component> 
+	
+	<component id='ID_s2_txt07'>
+		<text><![CDATA[此系统日志的条目时间戳]]></text>
+	</component> 
+	
+	<component id='ID_s2_txt08'>
+		<text><![CDATA[系统日志报告设施]]></text>
+	</component><!-- Slide 3 --><component id='ID_s3_inst'>
+		<text><![CDATA[<b>活动 – 第 3 部分：解释系统日志输出</b><br/>读取所示的系统日志输出。 将输出拖到相应标识旁的字段。 并非全部选项都要使用。]]></text>
+	</component><!--Drag and Drop--><component id='ID_s3_drag01'>
+		<text><![CDATA[没有列出条目]]></text>
+	</component>
+
+	<component id='ID_s3_drag02'>
+		<text><![CDATA[SYS-5]]></text>
+	</component>
+
+	<component id='ID_s3_drag03'>
+		<text><![CDATA[000011]]></text>
+	</component>
+	
+	<component id='ID_s3_drag04'>
+		<text><![CDATA[5]]></text>
+	</component>
+	
+	<component id='ID_s3_drag05'>
+		<text><![CDATA[CONFIG_I]]></text>
+	</component>
+	
+	<component id='ID_s3_drag06'>
+		<text><![CDATA[IFMGR-7]]></text>
+	</component>
+	
+	<component id='ID_s3_drag07'>
+		<text><![CDATA[SYS]]></text>
+	</component>
+
+
+	<component id='ID_s3_CHECK'>
+		<text><![CDATA[<b>检查</b>]]></text>
+	</component>
+
+	<component id='ID_s3_RESET'>
+		<text><![CDATA[<b>重置</b>]]></text>
+	</component>
+	
+	<component id='ID_s3_CORRECT_TITLE'>
+		<text><![CDATA[<b>正确</b>]]></text>
+	</component>
+
+	<component id='ID_s3_CORRECT_BODY'>
+		<text><![CDATA[您已成功地将每个系统日志输出与其标识相匹配。]]></text>
+	</component>
+
+	<component id='ID_s3_INCORRECT_TITLE'>
+		<text><![CDATA[<b>不正确</b>]]></text>
+	</component>
+
+	<component id='ID_s3_INCORRECT_BODY'>
+		<text><![CDATA[您未成功地将每个系统日志输出与其标识相匹配。 请单击“重置”重试。]]></text>
+	</component>
+	
+	<component id='ID_s3_txt01'>
+		<text><![CDATA[*000011: $SYS-5-CONFIG_I: Configured from console by console.]]></text>
+	</component> 
+	
+	<component id='ID_s3_txt02'>
+		<text><![CDATA[<b>标识符</b>]]></text>
+	</component> 
+	
+	<component id='ID_s3_txt03'>
+		<text><![CDATA[<b>交付内容</b>]]></text>
+	</component> 
+	
+	<component id='ID_s3_txt04'>
+		<text><![CDATA[此条目的严重性级别]]></text>
+	</component> 
+	
+	<component id='ID_s3_txt05'>
+		<text><![CDATA[此系统日志条目的序号]]></text>
+	</component> 
+	
+	<component id='ID_s3_txt06'>
+		<text><![CDATA[此系统日志条目的助记符]]></text>
+	</component> 
+	
+	<component id='ID_s3_txt07'>
+		<text><![CDATA[系统日志报告设施]]></text>
+	</component> 
+	
+	<component id='ID_s3_txt08'>
+		<text><![CDATA[此系统日志的条目时间戳]]></text>
+	</component> 
+	
+</textcomponents>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.4.1.3 第 8 章：对 IP 网络划分子网</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.4.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>第 8 章：对 IP 网络划分子网</h1>
+        <div>
+          <p>划分网络（将其划分为多个较小网络空间）的过程，称为子网划分。 </p>
+          <p>每个网络地址都有一个有效的主机地址范围。连接到同一网络的所有设备将具有该网络的 IPv4 主机地址，并具有相同的子网掩码或网络前缀。同一子网上的流量可以直接在主机之间转发。若不使用路由器，子网之间不能转发流量。要确定流量来自本地还是远程，路由器需要使用子网掩码。前缀和子网掩码都代表地址的网络部分，是两种不同的方式。</p>
+          <p>创建 IPv4 子网时会将一个或多个主机位作为网络位。两个非常重要的因素将决定 IP 地址块及子网掩码：所需子网数量和每个子网所需的最大主机数量。子网数量与主机数量成反比。创建子网时借用的位越多，可用的主机位就越少；因此每个子网的主机就越少。</p>
+          <p>公式 2^n（其中 n 为剩余主机位的数量）用于计算每个子网上有多少个可用地址。但是，不能使用同一范围内的网络地址和广播地址。因此，要计算可用的地址数量，计算公式应为 2^n-2。 </p>
+          <p>细分子网即使用可变长子网掩码 (VLSM)，其目的是避免地址浪费。</p>
+          <p>IPv6 子网划分要求使用与 IPv4 子网划分不同的方法。对 IPv6 地址空间划分子网不是为了保存地址；而是为了支持网络的层次化逻辑设计。所以，IPv4 子网划分是管理地址稀缺性，而 IPv6 子网划分是根据路由器的数量以及它们所支持的网络来构建编址分层结构。 </p>
+          <p>必须仔细规划以充分利用可用地址空间。大小、地点、用途和访问要求全都是地址规划过程中必须考虑的事项。</p>
+          <p>IP 网络实施后需要经过测试，以检验其连接和工作性能。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is a standard graphic for the introduction and conclusion pages.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,631 @@
+<textcomponents>
+    <!-- SLIDE 1  -->
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>TCP/IP 协议簇和通信过程</b>]]></text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[<b>应用层</b>]]></text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[名称<br/>系统]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt03">
+        <text>
+            <![CDATA[主机<br/>配置]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt04">
+        <text>
+            <![CDATA[电子邮件]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt05">
+        <text>
+            <![CDATA[文件<br/>传输]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt06">
+        <text>
+            <![CDATA[Web]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt07">
+        <text>
+            <![CDATA[<b>传输层</b>]]></text>
+    </component>
+    <component id="ID_s1_txt08">
+        <text>
+            <![CDATA[<b>互联网层</b>]]></text>
+    </component>
+    <component id="ID_s1_txt09">
+        <text>
+            <![CDATA[IP 支持]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt10">
+        <text>
+            <![CDATA[路由协议]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt11">
+        <text>
+            <![CDATA[<b>网络接入<br>层</b>]]></text>
+    </component>
+    <!--button and textbox text ID_titleTxt01   ID_bodyTxt01-->
+    <component id="ID_btn01">
+        <text>
+            <![CDATA[<font>DNS</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt01">
+        <text>
+            <![CDATA[域名系统（或服务）]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt01">
+        <text>
+            <![CDATA[将域名（例如 cisco.com）转换为 IP 地址]]>
+        </text>
+    </component>
+    <component id="ID_btn02">
+        <text>
+            <![CDATA[<font>BOOTP</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt02">
+        <text>
+            <![CDATA[Bootstrap 协议]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt02">
+        <text>
+            <![CDATA[<textformat blockindent='-16'><ul><li>允许无盘工作站探查其 IP 地址、网络中 BOOTP 服务器的 IP 地址以及要加载到内存中以引导机器的文件</li><li>BOOTP 正在被 DHCP 所取代</li></ul></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_btn03">
+        <text>
+            <![CDATA[<font>DHCP</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt03">
+        <text>
+            <![CDATA[动态主机配置协议]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt03">
+        <text>
+            <![CDATA[<textformat blockindent='-16'><li>启动时向客户端站动态分配 IP 地址</li><li>当地址不再需要时允许其被重复使用</li></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_btn04">
+        <text>
+            <![CDATA[<font>SMTP</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt04">
+        <text>
+            <![CDATA[简单邮件传输协议]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt04">
+        <text>
+            <![CDATA[<textformat blockindent='-16'><li>允许客户端向邮件服务器发送电子邮件</li><li>允许服务器向其他服务器发送电子邮件</li></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_btn05">
+        <text>
+            <![CDATA[<font>POP</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt05">
+        <text>
+            <![CDATA[邮局协议第 3 版 (POP3)]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt05">
+        <text>
+            <![CDATA[<textformat blockindent='-16'><li>允许客户端从邮件服务器检索电子邮件</li><li>将电子邮件从邮件服务器下载到桌面</li></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_btn06">
+        <text>
+            <![CDATA[<font>IMAP</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt06">
+        <text>
+            <![CDATA[Internet 邮件访问协议]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt06">
+        <text>
+            <![CDATA[<textformat blockindent='-16'><li>允许客户端访问存储在邮件服务器中的电子邮件</li><li>在服务器上维护电子邮件</li></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_btn07">
+        <text>
+            <![CDATA[<font>FTP</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt07">
+        <text>
+            <![CDATA[<b>文件传输协议</b>]]></text>
+    </component>
+    <component id="ID_bodyTxt07">
+        <text>
+            <![CDATA[<textformat blockindent='-16'><ul><li>设置规则，使得一台主机上的用户能够通过网络访问另一台主机或向其传输文件</li><li>一种可靠、面向连接而且确认结果的文件传输协议</li></ul></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_btn08">
+        <text>
+            <![CDATA[<font>TFTP</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt08">
+        <text>
+             <![CDATA[<font>简单文件</font>]]>
+           </text>
+    </component>
+    <component id="ID_bodyTxt08">
+        <text>
+            <![CDATA[<textformat blockindent='-16'><li>一种简单、无连接的文件传输协议</li><li>一种尽力而为、无确认的文件传输协议</li><li>比 FTP 的开销少</li></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_btn09">
+        <text>
+            <![CDATA[<font>HTTP</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt09">
+        <text>
+            <![CDATA[超文本传输协议]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt09">
+        <text>
+            <![CDATA[有关在万维网上交换文本、图形图像、音频、视频以及其他多媒体文件的一组规则集]]>
+        </text>
+    </component>
+    <component id="ID_btn10">
+        <text>
+            <![CDATA[<font>UDP</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt10">
+        <text>
+            <![CDATA[用户数据报协议]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt10">
+        <text>
+            <![CDATA[<textformat blockindent='-16'><ul><li>允许一台主机上运行的进程向另一台主机上运行的进程发送数据包</li><li>不会确认数据报传输是否成功</li></ul></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_btn11">
+        <text>
+            <![CDATA[<font>TCP</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt11">
+        <text>
+            <![CDATA[传输控制协议]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt11">
+        <text>
+            <![CDATA[<textformat blockindent='-16'><ul><li>支持不同主机上运行的进程之间的可靠通信</li><li>确认成功传输的可靠传输</li></ul></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_btn12">
+        <text>
+            <![CDATA[<font>IP</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt12">
+        <text>
+            <![CDATA[Internet 协议]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt12">
+        <text>
+            <![CDATA[<textformat blockindent='-16'><li>从传输层接收消息段</li><li>将消息打包为数据包</li><li>解决数据包在网际网络上的端对端传输</li></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_btn13">
+        <text>
+            <![CDATA[<font>NAT</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt13">
+        <text>
+            <![CDATA[网络地址转换]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt13">
+        <text>
+            <![CDATA[将私有网络 IP 地址转换为全球唯一的公有 IP 地址]]>
+        </text>
+    </component>
+    <component id="ID_btn14">
+        <text>
+            <![CDATA[<font>ICMP</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt14">
+        <text>
+            <![CDATA[Internet 控制消息协议]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt14">
+        <text>
+            <![CDATA[目的主机针对数据包传输中出现的错误，向源主机传回反馈]]>
+        </text>
+    </component>
+    <component id="ID_btn15">
+        <text>
+            <![CDATA[<font>OSPF</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt15">
+        <text>
+            <![CDATA[开放最短路径优先]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt15">
+        <text>
+            <![CDATA[<textformat blockindent='-16'><li>链路状态路由协议</li><li>基于区域的分层设计</li><li>开放标准内部路由协议</li></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_btn16">
+        <text>
+            <![CDATA[<font>EIGRP</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt16">
+        <text>
+            <![CDATA[增强型内部网关路由协议]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt16">
+        <text>
+            <![CDATA[<textformat blockindent='-16'><li>思科专有路由协议</li><li>使用基于带宽、延迟、负载和可靠性的复合度量</li></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_btn17">
+        <text>
+            <![CDATA[<font>ARP</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt17">
+        <text>
+            <![CDATA[地址解析协议]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt17">
+        <text>
+            <![CDATA[提供 IP 地址与硬件地址之间的动态地址映射]]>
+        </text>
+    </component>
+    <component id="ID_btn18">
+        <text>
+            <![CDATA[<font>PPP</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt18">
+        <text>
+            <![CDATA[<b>点对点协议</b>]]></text>
+    </component>
+    <component id="ID_bodyTxt18">
+        <text>
+            <![CDATA[提供数据包封装方法，以便通过串行链路传输封包]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt19">
+        <text>
+            <![CDATA[<font>以太网</font>]]>
+        </text>
+    </component>
+    <component id="ID_btn19">
+        <text>
+            <![CDATA[以太网]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt19">
+        <text>
+            <![CDATA[定义网络接入层的布线标准和信令标准]]>
+        </text>
+    </component>
+    <component id="ID_btn20">
+        <text>
+            <![CDATA[<font>接口驱动程序</font>]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt20">
+        <text>
+            <![CDATA[接口驱动程序]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt20">
+        <text>
+            <![CDATA[提供机器的控制指令，用于控制网络设备的特定接口]]>
+        </text>
+    </component>
+    <!-- SLIDE 2  -->
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>发送和接收消息的协议工作方式</b>]]></text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[以太网]]>
+        </text>
+    </component>
+   
+    
+    <component id="ID_s2_txt05">
+        <text>
+            <![CDATA[数据]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt08">
+        <text>
+            <![CDATA[HTTP 数据]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt09">
+        <text>
+            <![CDATA[TCP 网段]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt10">
+        <text>
+            <![CDATA[IP 数据包]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt11">
+        <text>
+            <![CDATA[以太网帧]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt12">
+        <text>
+            <![CDATA[Web 服务器]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt13">
+        <text>
+            <![CDATA[数据]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt14">
+        <text>
+            <![CDATA[Web 客户端]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt15">
+        <text>
+            <![CDATA[<b>协议封装术语</b>]]></text>
+    </component>
+    <component id="ID_s2_txt16">
+        <text>
+            <![CDATA[HTTP]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt17">
+        <text>
+            <![CDATA[TCP]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt18">
+        <text>
+            <![CDATA[IP]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt19">
+        <text>
+            <![CDATA[以太网]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt20">
+        <text>
+            <![CDATA[数据]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt21">
+        <text>
+            <![CDATA[数据]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt22">
+        <text>
+            <![CDATA[HTTP]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt23">
+        <text>
+            <![CDATA[TCP]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt24">
+        <text>
+            <![CDATA[IP]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt25">
+        <text>
+            <![CDATA[以太网]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt26">
+        <text>
+            <![CDATA[用户<br/>数据]]>
+        </text>
+    </component>
+    <!-- SLIDE 3  -->
+    <component id="ID_s3_title">
+        <text>
+            <![CDATA[<b>发送和接收消息的协议工作方式</b>]]></text>
+    </component>
+    <component id="ID_s3_txt01">
+        <text>
+            <![CDATA[以太网]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt02">
+        <text>
+            <![CDATA[IP]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt03">
+        <text>
+            <![CDATA[TCP]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt04">
+        <text>
+            <![CDATA[HTTP]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt05">
+        <text>
+            <![CDATA[数据]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt06">
+        <text>
+            <![CDATA[010101101010010111101101010010]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt07">
+        <text>
+            <![CDATA[用户<br>数据]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt08">
+        <text>
+            <![CDATA[HTTP 数据]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt09">
+        <text>
+            <![CDATA[TCP 网段]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt10">
+        <text>
+            <![CDATA[IP 数据包]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt11">
+        <text>
+            <![CDATA[以太网帧]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt12">
+        <text>
+            <![CDATA[Web 服务器]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt30">
+        <text>
+            <![CDATA[Web 客户端]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt14">
+        <text>
+            <![CDATA[Web 客户端]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt16">
+        <text>
+            <![CDATA[<b>协议封装术语</b>]]></text>
+    </component>
+    <component id="ID_s3_txt17">
+        <text>
+            <![CDATA[数据]]>
+        </text>
+    </component>
+    <!-- controller -->
+    <component id="ID_s3_end">
+        <text>
+            <![CDATA[结束]]>
+        </text>
+    </component>
+    <component id="ID_s3_fforward">
+        <text>
+            <![CDATA[快进]]>
+        </text>
+    </component>
+    <component id="ID_s3_pause">
+        <text>
+            <![CDATA[暂停]]>
+        </text>
+    </component>
+    <component id="ID_s3_play">
+        <text>
+            <![CDATA[播放]]>
+        </text>
+    </component>
+    <component id="ID_s3_rewind">
+        <text>
+            <![CDATA[快退]]>
+        </text>
+    </component>
+    <component id="ID_s3_start">
+        <text>
+            <![CDATA[开始]]>
+        </text>
+    </component>
+    <component id="ID_s2_end">
+        <text>
+            <![CDATA[结束]]>
+        </text>
+    </component>
+    <component id="ID_s2_fforward">
+        <text>
+            <![CDATA[快进]]>
+        </text>
+    </component>
+    <component id="ID_s2_pause">
+        <text>
+            <![CDATA[暂停]]>
+        </text>
+    </component>
+    <component id="ID_s2_play">
+        <text>
+            <![CDATA[播放]]>
+        </text>
+    </component>
+    <component id="ID_s2_rewind">
+        <text>
+            <![CDATA[快退]]>
+        </text>
+    </component>
+    <component id="ID_s2_start">
+        <text>
+            <![CDATA[开始]]>
+        </text>
+    </component>
+    <component id="play">
+        <text>播放</text>
+    </component>
+    <component id="pause">
+        <text>暂停</text>
+    </component>
+    <component id="rewind">
+        <text>快退</text>
+    </component>
+    <component id="fforward">
+        <text>快进</text>
+    </component>
+    <component id="start">
+        <text>开始</text>
+    </component>
+    <component id="end">
+        <text>结束</text>
+    </component>
+</textcomponents>

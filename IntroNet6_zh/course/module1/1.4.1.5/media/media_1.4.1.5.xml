@@ -1,0 +1,65 @@
+<textcomponents>
+	<component id="ID_txt01">
+		<text><![CDATA[定制：<br>媒体]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[定制：<br>医疗保健]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[定制：<br>政府]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[公共]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[定制：<br>以及更多]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[私有：<br>故乡新闻]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[混合]]></text>
+	</component>
+	<component id="ID_titleTxt02">
+		<text><![CDATA[<font size="17">定制云</font>]]></text>
+	</component>
+	<component id="ID_bodyTxt02">
+		<text><![CDATA[数据丢失的最常见因素包括即时消息传输软件和社交媒体网站。 例如，拦截的电子邮件或即时消息可能被捕获并暴露机密信息。]]></text>
+	</component>
+	<component id="ID_titleTxt01">
+		<text><![CDATA[<font size="17">定制云</font>]]></text>
+	</component>
+	<component id="ID_bodyTxt01">
+		<text><![CDATA[数据丢失的最常见因素包括即时消息传输软件和社交媒体网站。 例如，拦截的电子邮件或即时消息可能被捕获并暴露机密信息。]]></text>
+	</component>
+	<component id="ID_titleTxt05">
+		<text><![CDATA[<font size="17">定制云</font>]]></text>
+	</component>
+	<component id="ID_bodyTxt05">
+		<text><![CDATA[数据丢失的最常见因素包括即时消息传输软件和社交媒体网站。 例如，拦截的电子邮件或即时消息可能被捕获并暴露机密信息。]]></text>
+	</component>
+	<component id="ID_titleTxt04">
+		<text><![CDATA[<font size="17">公共云</font>]]></text>
+	</component>
+	<component id="ID_bodyTxt06">
+		<text><![CDATA[公共云中提供的基于云的应用和服务可供所有用户使用。 服务可能免费，也可能按即用即付模式提供，比如按在线存储付费。 公共云利用 Internet 提供服务。]]></text>
+	</component>
+	<component id="ID_titleTxt03">
+		<text><![CDATA[<font size="17">定制云</font>]]></text>
+	</component>
+	<component id="ID_bodyTxt03">
+		<text><![CDATA[数据丢失的最常见因素包括即时消息传输软件和社交媒体网站。 例如，拦截的电子邮件或即时消息可能被捕获并暴露机密信息。]]></text>
+	</component>
+	<component id="ID_titleTxt06">
+		<text><![CDATA[<font size="17">私有云</font>]]></text>
+	</component>
+	<component id="ID_bodyTxt04">
+		<text><![CDATA[公共云中提供的基于云的应用和服务可供所有用户使用。 服务可能免费，也可能按即用即付模式提供，比如按在线存储付费。 公共云利用 Internet 提供服务。]]></text>
+	</component>
+	<component id="ID_titleTxt07">
+		<text><![CDATA[<font size="17">混合云</font>]]></text>
+	</component>
+	<component id="ID_bodyTxt07">
+		<text><![CDATA[混合云由两种或多种云组成（例如：部分为自定义，部分为公共），每一部分保持为独立的对象，但两部分使用一个架构连接。 混合云中的个人将根据用户访问权限有权访问各种服务。]]></text>
+	</component>
+</textcomponents>

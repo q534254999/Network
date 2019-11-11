@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.1.1 设置系统时钟</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>设置系统时钟</h1>
+        <div>
+          <p>路由器或交换机上的软件时钟在系统启动时开始运行，而且是系统时间的主要来源。网络中所有设备的时间的同步至关重要，因为网络的管理、保护、故障排除和规划的各个方面都需要精确的时间戳。如果设备之间的时间不同步，将无法确定事件的顺序和事件的原因。</p>
+          <p></p>
+          <p>通常，使用以下两种方法之一设置路由器或交换机的日期和时间设置：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>手动配置日期和时间，如图所示</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>配置网络时间协议 (NTP)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>随着网络规模的不断扩大，要确保所有基础设施设备以同步时间运行越来越困难。甚至在小型网络环境中，手动方法也并不理想。如果路由器重新启动，它将如何获取准确的日期和时间戳？</p>
+          <p></p>
+          <p>一个更好的解决方案是在网络中配置 NTP。此协议允许网络中的路由器将其时间设置与 NTP 服务器同步。从单一来源获取时间和日期信息的一组 NTP 客户端的时间设置具有更高的一致性。当网络中实施 NTP 时，可以设置为同步到专用主时钟，也可以同步到 Internet 上的公共可用 NTP 服务器。</p>
+          <p></p>
+          <p>NTP 使用 UDP 端口 123 并记录在 RFC 1305 中。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">路由器 R1 使用“clock set 20:36:00 dec 11 2015”命令配置。系统日志消息显示时钟已更新</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

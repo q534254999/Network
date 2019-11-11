@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.1.4 消息格式和封装</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>消息格式和封装</h1>
+        <div>
+          <p>当消息从源地址发送到目的地址时，必须使用特定的格式或结构。消息格式取决于消息的类型和传递通道。</p>
+          <p>书信是人类书面交流最常用的方式之一。私人信件的格式数百年以来从未改变过。在许多文化中，私人信件都包含以下要素：</p>
+          <p>
+            <ul>
+              <li>收信人的标识</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>称呼或问候</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>信件正文</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>结束语</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>寄信人的身份标识</li>
+            </ul>
+          </p>
+          <p>除了正确的格式以外，大多数私人信件还必须用信封装好，以便投递，如图 1 所示。信封上有寄信人和收信人的地址，分别写在信封适当的位置。如果目的地址和格式不正确，信件就无法投递。将一种消息格式（信件）放入另一种消息格式（信封）的过程称为封装。收信人从信封中取出信件的过程就是解封。</p>
+          <p>通过计算机网络发送的消息也要遵循特定的格式规则才能被发送和处理。就像信件封装在信封中进行投递一样，计算机消息也以类似方式处理。每条计算机消息在通过网络发送之前都以特定的格式封装，称为帧。帧就像信封一样；它提供目的地址和源主机的地址，如图 2 所示。注意，帧在帧编址部分和封装的消息中都有一个源地址和一个目的地址。关于这两种类型的地址之间的区别将在本章后续部分作出说明。</p>
+          <p>帧的格式和内容由消息类型及其发送通道决定。消息如果没有正确格式化，就无法成功发送或被目的主机处理。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 is an animation used to demonstrate the rules used in communication.  The figure shows an envelope that has a recipient address and a return address on it.  These represent the location address of the recipient and the location address of the sender of the message.  The letter inside represents the message being sent.   The greeting such as “Dear” on the message aligns with the start of message indicator.  The name following Dear such as “Jane” represents the identity of the recipient.  The contents of the letter represent the encapsulated data and the signing of the letter is the source identifier.  The stamp represents transmitting the message. Figure 2 shows the format and contents of a frame.  This encapsulation has the frame addressing on one end and the frame indicator on the other end with the message in between.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

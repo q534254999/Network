@@ -1,0 +1,12 @@
+<textcomponents>
+
+<component id="ID_titletxt">
+<text><![CDATA[探索网络…]]></text>
+</component>
+
+
+<component id="ID_Bodytxt">
+<text><![CDATA[<textformat blockindent="-14"><ul><li>在以网络为中心的世界里相互通信</li><li>作为平台的网络</li><li>LAN、WAN 和 Internet</li><li>不断变化的网络环境</li></ul></textformat>]]></text>
+</component>
+
+</textcomponents>

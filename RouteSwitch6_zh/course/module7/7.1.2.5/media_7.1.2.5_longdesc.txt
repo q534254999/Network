@@ -1,0 +1,1 @@
+图中显示使用 CLI 命令创建允许所有地址的访问列表的两个示例。这些示例在全局配置模式下开始。第一个示例列出使用通配符掩码的方法。命令是 access-list 1 permit 0.0.0.0 255.255.255.255。下一个示例使用关键字 any，命令是 access-list 1 permit any。第二个示例是指定特定主机的 ACL。命令是 access-list 1 permit 192.168.10.10 0.0.0.0。示例 2 中下一个命令使用关键字 host。命令是 access-list 1 permit host 192.168.10.10。

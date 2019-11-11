@@ -1,0 +1,40 @@
+<textcomponents>
+
+<component id="ID_title">
+	<text><![CDATA[<b>存储转发交换</b>]]></text>
+</component>
+<component id="ID_txt01">
+	<text><![CDATA[帧报头]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[网络报头]]></text> 
+</component>
+<component id="ID_txt03">
+  <text><![CDATA[传输报头]]></text> 
+</component>
+<component id="ID_txt04">
+	<text><![CDATA[数据]]></text>
+</component>
+<component id="ID_txt05">
+  <text><![CDATA[前导码]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[目标 MAC 地址]]></text> 
+</component>
+<component id="ID_txt07">
+	<text><![CDATA[源 MAC 地址]]></text>
+</component>
+<component id="ID_txt08">
+  <text><![CDATA[类型]]></text> 
+</component>
+<component id="ID_txt09">
+  <text><![CDATA[FCS 校验和 (CRC)]]></text> 
+</component>
+<component id="ID_txt10">
+	<text><![CDATA[字节]]></text>
+</component>
+<component id="ID_txt11">
+  <text><![CDATA[在进行转发决定之前，存储和转发交换需要接收整个帧（最多有大约 9,200 字节的超巨型帧）。]]></text> 
+</component>
+
+</textcomponents>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.2.3 DHCPv4 中继</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>DHCPv4 中继</h1>
+        <div>
+          <p>
+            <b>何谓 DHCP 中继？</b>
+          </p>
+          <p></p>
+          <p>在复杂的分层网络中，企业服务器通常位于服务器群中。这些服务器可为网络提供 DHCP、DNS、TFTP 和 FTP 服务。网络客户端通常不像这些服务器一样处在同一子网上。为了定位服务器并接收服务，客户端通常使用广播消息。 </p>
+          <p></p>
+          <p>在图 1 中，PC1 正在尝试使用广播消息从 DHCP 服务器获取 IPv4 地址。在本场景中，路由器 R1 未配置为 DHCPv4 服务器，且不转发广播。由于 DHCPv4 服务器位于不同的网络上，因此 PC1 不能使用 DHCP 接收 IP 地址。</p>
+          <p></p>
+          <p>在图 2 中，PC1 正在尝试更新其 IPv4 地址。为此，它发出 <b>ipconfig /release</b> 命令。请注意，IPv4 地址得到释放，且地址显示为 0.0.0.0。然后，发出 <b>ipconfig /renew</b> 命令。此命令使 PC1 广播 DHCPDISCOVER 消息。输出显示 PC1 无法定位 DHCPv4 服务器。由于路由器不转发广播，因此请求未成功。</p>
+          <p></p>
+          <p>对此问题的一个解决方案是，管理员在所有子网上均添加 DHCPv4 服务器。但是，在数台计算机上运行这些服务会带来成本上和管理上的额外开销。 </p>
+          <p></p>
+          <p>更好的解决方案是配置思科 IOS Helper 地址。此解决方案使路由器能够将 DHCPv4 广播转发至 DHCPv4 服务器。当路由器转发地址分配/参数请求时，它充当 DHCPv4 中继代理的角色。在示例拓扑结构中，PC1 会广播一条请求以定位 DHCPv4 服务器。如果将 R1 配置为 DHCPv4 中继代理，它会将请求转发至位于子网 192.168.11.0 的 DHCPv4 服务器。</p>
+          <p></p>
+          <p>如图 3 所示，接收广播的 R1 上的接口配置有 <b>ip helper-address</b> 接口配置模式命令。将 DHCPv4 服务器的地址配置为唯一参数。 </p>
+          <p></p>
+          <p>当 R1 配置为 DHCPv4 中继代理时，它会接收 DHCPv4 服务的广播请求，然后将这些请求作为单播转发至 IPv4 地址 192.168.11.6。<b>show ip interface</b> 命令用于验证配置。</p>
+          <p></p>
+          <p>如图 4 所示，PC1 现在能够从 DHCPv4 服务器获取 IPv4 地址。</p>
+          <p></p>
+          <p>DHCPv4 不是唯一一种可通过配置路由器来中继的服务。<b>ip helper-address</b> 命令默认转发下列八种 UDP 服务：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>端口 37：时间 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>端口 49：TACACS</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>端口 53：DNS</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>端口 67：DHCP/BOOTP 客户端</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>端口 68：DHCP/BOOTP 服务器</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>端口 69：TFTP</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>端口 137：NetBIOS 名称服务</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>端口 138：NetBIOS 数据报服务</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>使用图 5 中的语法检查程序，在正确的路由器上配置 DHCPv4 中继命令以便 PC3 可以从 DHCPv4 服务器接收 IPv4 编址信息。再次参考图 1，查看网络拓扑结构。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了与上一页中相同的拓扑。在本示例中，计算机寻找一个 DHCP 服务器，但是在本地网段中没有 DHCP 服务器。默认情况下，路由器不会转发 DHCP 发现消息，因为它是广播消息。图 2 显示了在不能找到 DHCP 服务器的计算机上运行的 ip config 命令的输出。由于计算机无法与 DHCP 服务器通信，该地址为 0.0.0.0。图 3 显示了用于将路由器配置为 DHCP helper 的命令。该命令在接口级别配置。在全局配置模式下，第一个命令是 interface g 0/0。下一条命令是 ip helper-address 192.168.11.6。运行命令 show ip interface g 0/0，helper 地址列出在接口的配置中。图 4 显示了在本地链路上没有 DHCP 并且依赖路由器充当中继代理的计算机上运行的 ip config 命令的输出。输出列出了计算机的 IP 地址，这表明该中继代理在工作。图 5 是允许学生将路由器配置为 DHCP 中继代理的一个互动练习。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

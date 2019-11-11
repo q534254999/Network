@@ -1,0 +1,147 @@
+<textcomponents>
+<component id="ID_s1_inst">
+<text><![CDATA[<b>活动 – 第 1 部分：标识 VLAN 间路由的类型</b><br/>通过将相应回答拖动到提供的字段，将此拓扑标识为旧的、单臂路由器或者多层交换机 VLAN 间路由。 点击“第 2 部分”以继续本活动。]]></text></component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>R1 接口</b><br/>G0/0 中继链路<br/><br/> <b>R1 子接口</b><br/>G0/0.10&nbsp;&nbsp;&nbsp;&nbsp;  10.17.10.1/28<br/>G0/0.20&nbsp;&nbsp;&nbsp;&nbsp;  10.17.20.1/28<br/>G0/0.30&nbsp;&nbsp;&nbsp;&nbsp;  10.17.30.1/28<br/><br/><b>S1 端口</b><br/>G0/1 中继链路<br/>G0/3 = VLAN 10<br/>G0/9 = VLAN 20<br/>G0/17 = VLAN 30<br/><br/><b>终端设备</b><br/>PC1 – VLAN 10&nbsp;&nbsp; 10.17.10.4/28<br/>PC2 – VLAN 20&nbsp;&nbsp; 10.17.20.4/28<br/>PC3 – VLAN 30&nbsp;&nbsp; 10.17.30.4/28]]></text> 
+ </component>
+ 
+<component id="ID_s1_txt02">
+<text><![CDATA[<b>VLAN 间路由类型</b>]]></text> 
+ </component>
+ 
+<component id='ID_s1_drag01'>
+	<text><![CDATA[传统]]></text>
+</component>
+
+<component id='ID_s1_drag02'>
+	<text><![CDATA[单臂路由器]]></text>
+</component>
+
+<component id='ID_s1_drag03'>
+	<text><![CDATA[多层交换机]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[您已成功标识此拓扑中使用的 VLAN 间路由的类型。 点击“第 2 部分”以继续。]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[您尚未成功标识此拓扑中使用的 VLAN 间路由的类型。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[<b>重置</b>]]></text>
+</component>
+
+<component id="ID_s2_inst">
+<text><![CDATA[<b>活动 – 第 2 部分：标识 VLAN 间路由的类型</b><br/>通过将相应回答拖动到提供的字段，将此拓扑标识为旧的、单臂路由器或者多层交换机 VLAN 间路由。 点击“第 3 部分”以继续本活动。]]></text></component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[<b>S1 端口</b><br/>G0/1-G0/4 = 中继<br/>VLAN 10&nbsp;&nbsp; 172.17.10.1<br/>VLAN 20&nbsp;&nbsp; 172.17.20.1<br/><br/><b>S2 端口</b><br/>G0/1-G0/2 – 中继<br/>G0/5-G0/6 – 中继<br/>VLAN 10 – G0/11<br/><br/><b>S3 端口</b><br/>G0/3-G0/6 = 中继<br/>VLAN 20 – G0/18<br/><br/><b>终端设备</b><br/>PC1 – VLAN 10<br/>10.17.10.4/28<br/>PC2 – VLAN 20<br/>10.17.20.4/28]]></text> 
+ </component>
+ 
+<component id="ID_s2_txt02">
+<text><![CDATA[<b>VLAN 间路由类型</b>]]></text> 
+ </component>
+ 
+<component id='ID_s2_drag01'>
+	<text><![CDATA[传统]]></text>
+</component>
+
+<component id='ID_s2_drag02'>
+	<text><![CDATA[单臂路由器]]></text>
+</component>
+
+<component id='ID_s2_drag03'>
+	<text><![CDATA[多层交换机]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[您已成功标识此拓扑中使用的 VLAN 间路由的类型。 点击“第 3 部分”以继续。]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[您尚未成功标识此拓扑中使用的 VLAN 间路由的类型。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[<b>重置</b>]]></text>
+</component>
+
+<component id="ID_s3_inst">
+<text><![CDATA[<b>活动 – 第 3 部分：标识 VLAN 间路由的类型</b><br/>通过将相应回答拖动到提供的字段，将此拓扑标识为旧的、单臂路由器或者多层交换机 VLAN 间路由。]]></text></component>
+
+<component id="ID_s3_txt01">
+<text><![CDATA[<b>R1 接口</b><br/>G0/0 10.17.10.1/28<br/>G0/1 10.17.20.1/28<br/><br/><b>S1 端口</b><br/>G0/3 = VLAN 10<br/>G0/17 = VLAN 20<br/><br/><b>终端设备</b><br/>PC1 – VLAN 10<br/>10.17.10.4/28<br/><br/>PC2 – VLAN 20<br/>10.17.20.4/28]]></text> 
+ </component>
+ 
+<component id="ID_s3_txt02">
+<text><![CDATA[<b>VLAN 间路由类型</b>]]></text> 
+ </component>
+ 
+<component id='ID_s3_drag01'>
+	<text><![CDATA[传统]]></text>
+</component>
+
+<component id='ID_s3_drag02'>
+	<text><![CDATA[单臂路由器]]></text>
+</component>
+
+<component id='ID_s3_drag03'>
+	<text><![CDATA[多层交换机]]></text>
+</component>
+
+<component id='ID_s3_CORRECT_TITLE'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_s3_CORRECT_BODY'>
+	<text><![CDATA[您已成功标识此拓扑中使用的 VLAN 间路由的类型。]]></text>
+</component>
+
+
+<component id='ID_s3_INCORRECT_TITLE'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_s3_INCORRECT_BODY'>
+	<text><![CDATA[您尚未成功标识此拓扑中使用的 VLAN 间路由的类型。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_s3_CHECK'>
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+<component id='ID_s3_RESET'>
+	<text><![CDATA[<b>重置</b>]]></text>
+</component>
+
+
+</textcomponents>

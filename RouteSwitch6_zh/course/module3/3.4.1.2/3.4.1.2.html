@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.4.1.2 第 3 章：动态路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.4.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>第 3 章：动态路由</h1>
+        <div>
+          <p>路由器使用动态路由协议来促进路由器间路由信息的交换。动态路由协议的用途包括：发现远程网络，维护最新的路由信息，选择到达目标网络的最佳路径，在当前路径不再可用时找出新的最佳路径。虽然动态路由协议需要的管理开销比静态路由少，但是它们却需要占用一部分路由器资源（包括 CPU 时间和网络链路带宽）来运行协议。 </p>
+          <p></p>
+          <p>网络通常将静态路由和动态路由结合使用。对于大型网络而言，动态路由是最佳选择，而对于末节网络而言，静态路由则更好一些。</p>
+          <p></p>
+          <p>路由协议负责发现远程网络和维护准确的网络信息。当拓扑结构发生变化时，路由协议会在整个路由域中传播该信息。使所有路由表达到一致的过程称为收敛，在路由表一致的状态下，同一路由域或区域中的所有路由器包含关于网络的完整准确的信息。一些路由协议比其他的路由协议收敛得更快。</p>
+          <p></p>
+          <p></p>
+          <p>有时，路由器会同时通过静态路由和动态路由协议获取到达到同一目标网络的多个路由。如果路由器从多个路由来源获取到目标网络信息，思科路由器会使用管理距离值来确定使用哪一个路由来源的信息。每个动态路由协议都有唯一的管理距离值，静态路由和直连网络也不例外。管理距离值越低，路由来源的优先级别越高。直连网络始终是优先选用的路由来源，其次是静态路由，然后是各种动态路由协议。</p>
+          <p></p>
+          <p>路由表条目包含路由源、目标网络和传出接口。路由源可以是直连路由、本地路由、静态路由或来自动态路由协议。 </p>
+          <p></p>
+          <p>IPv4 路由表可能包含四种类型的路由：最终路由、1 级路由、1 级父路由和 2 级子路由。因为 IPv6 在设计上无类，所以所有路由都是有效的第 1 级最终路由。没有第 2 级子路由的第 1 级父代。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 是自上而下分类动态路由协议的图表。该图表将它们细分为内部网关协议和外部网关协议。内部网关协议更进一步细分为距离矢量路由协议和链路状态路由协议。距离矢量协议包括 RIP 第 1 版和第 2 版以及 EIGRP。链路状态路由协议包括 OSPF 和 IS-IS。外部路由协议被视为路径矢量路由协议，唯一的一个协议是 BGP。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

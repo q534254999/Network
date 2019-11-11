@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.2.2 IPv4 路由器路由表</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv4 路由器路由表</h1>
+        <div>
+          <p>在 Cisco IOS 路由器上，<b>show ip route</b> 命令可用于显示路由器的 IPv4 路由表，如图所示。 </p>
+          <p>除了为直连网络和远程网络提供路由信息，路由表还包括其他一些信息，比如路由获取方式、路由的可信度和等级、上次更新路由的时间以及到达请求的目的地所使用的接口。</p>
+          <p>当数据包到达路由器接口时，路由器会检查数据包报头，从而确定目的网络。如果目的网络与路由表中的某个路由匹配，路由器会使用路由表指定的信息转发数据包。如果有两个或多个路由均可到达同一个目的网络，则使用度量来决定应在路由表中显示的路由。</p>
+          <p>图中显示的是网络图中的 R1 路由表。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows two routers connected by a serial connection.  Each router has two LANs attached.  The output from "show ip route" is displayed for one of the routers. The output contains all networks that this router has in its routing table.  They include the directly connected networks, denoted by a "C" in the routing table and the remote networks, denoted by a different code depending on the routing protocol running on the router.  This router is running EIGRP so the code is a "D".  For each directly connected network there are 2 entries.  One with a code of "C" and one with a code of "L".  The "L" is new as of IOS 15 and refers to local networks.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

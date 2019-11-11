@@ -1,0 +1,7 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[路由器确定发送数据的最佳路径，路由表帮助它们选择这些路径。]]></text>
+</component>
+
+</textcomponents>

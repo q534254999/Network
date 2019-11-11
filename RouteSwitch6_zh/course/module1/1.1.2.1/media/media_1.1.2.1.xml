@@ -1,0 +1,48 @@
+﻿<textcomponents>
+<component id="ID_title">
+	<text><![CDATA[<b>LAN 和 WAN 连接示例</b>]]></text>
+</component>
+
+
+<component id="ID_txt01">
+	<text><![CDATA[<b>家庭办公室</b>]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[互联网]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[云]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[<b>中心</b>]]></text>
+</component>
+
+<component id='ID_txt05'>
+	<text><![CDATA[<b>分支机构</b>]]></text>
+</component>
+
+<component id='ID_txt06'>
+	<text><![CDATA[LAN]]></text>
+</component>
+
+<component id='ID_txt07'>
+	<text><![CDATA[WAN]]></text>
+</component>
+
+<component id="ID_txt08">
+   <text><![CDATA[企业服务器]]></text>
+</component>
+
+<component id="ID_txt09">
+   <text><![CDATA[文件服务器]]></text>
+</component>
+
+<component id="ID_txt10">
+   <text><![CDATA[WAP]]></text>
+</component>
+
+
+</textcomponents>

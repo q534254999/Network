@@ -1,0 +1,20 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>系统日志</b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[系统日志服务器]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[路由器 1]]></text>
+</component>
+<component id="ID_txt03">
+<text><![CDATA[交换机 1]]></text>
+</component>
+<component id="ID_txt04">
+<text><![CDATA[系统消息]]></text>
+</component>
+<component id="ID_txt05">
+<text><![CDATA[系统消息]]></text>
+</component>
+</textcomponents>

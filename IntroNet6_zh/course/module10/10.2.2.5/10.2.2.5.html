@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.2.5 动态主机配置协议</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>动态主机配置协议</h1>
+        <div>
+          <p>IPv4 服务的动态主机配置协议 (DHCP) 会自动分配 IPv4 地址、子网掩码、网关以及其他 IPv4 网络参数。这称为动态编址。动态编址的替代选项是静态编址。在使用静态编址时，网络管理员在主机上手动输入 IP 地址信息。</p>
+          <p>主机连入网络时，将联系 DHCP 服务器并请求地址。DHCP 服务器从已配置地址范围（也称为“地址池”）中选择一条地址，并将其分配（租赁）给主机。</p>
+          <p>在较大型的网络中，或者用户经常变更的网络中，地址分配优先选用 DHCP。新用户可能在到达时需要连接；其他用户可能必须连接新计算机。与为每个连接使用静态编址的做法相比，采用 DHCP 自动分配 IPv4 地址的方法更有效。</p>
+          <p>DHCP 分配的地址租赁一段时间。租赁期限一到，切断主机电源或断开网络，地址便返回地址池以供重新使用。因此，用户可以通过 DHCP 自由换位，并随时重新连接网络。 </p>
+          <p>如图所示,很多类型的设备都可以成为 DHCP 服务器。在大多数中型到大型网络中，DHCP 服务器通常都是基于 PC 的本地专用服务器。在家庭网络中，DHCP 服务器通常位于本地路由器，将家庭网络连接到 ISP。 </p>
+          <p>很多网络都同时采用 DHCP 和静态编址。DHCP 用于一般用途主机，例如最终用户设备。静态编址用于网络设备，例如网关、交换机、服务器和打印机。</p>
+          <p>DHCPv6（IPv6 的 DHCP）为 IPv6 客户端提供类似服务。一个重要的不同是，DHCPv6 不会提供默认网关地址。这只能从路由器的 Router Advertisement（路由器通告）消息中动态获得。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows a cloud, or the Internet, connected to 4 networks.  Each network has its own DHCP server.  Each network is a different size ranging from a single home to a corporate network.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<textcomponents>
+
+	<component id="ID_header">
+		<text><![CDATA[网络应用…]]></text>
+	</component>
+	
+
+	<component id="ID_footer">
+		<text><![CDATA[<textformat blockindent="-14"><ul><li>使工作场所中的通信更轻松</li><li>影响每天完成的工作量</li><li>降低数据通信时间和成本</li></ul></textformat]]></text>
+	</component>
+	
+	<component id="ID_txt01">
+		<text><![CDATA[即时消息]]></text>
+	</component>
+	
+	<component id="ID_txt02">
+		<text><![CDATA[博客]]></text> 
+	</component>
+	
+	<component id="ID_txt03">
+		<text><![CDATA[播客]]></text> 
+	</component>
+	
+	<component id="ID_txt04">
+		<text><![CDATA[即时消息可以随时随地传送，而且可以进行音频和视频对话。即时消息还可向手机发送文本消息。]]></text>
+	</component>
+	
+	<component id="ID_txt05">
+		<text><![CDATA[您可以在网上表达观点，分享照片，加入志同道合者组成的网上社区。]]></text>
+	</component>
+	
+	<component id="ID_txt06">
+		<text><![CDATA[只要有时间，您可以随时随地用便携式音频播放器收听喜爱的广播节目。每当有新节目时，都可以自动下载。]]></text>
+	</component>
+
+</textcomponents>

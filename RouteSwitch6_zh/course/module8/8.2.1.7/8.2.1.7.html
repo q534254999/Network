@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.1.7 DHCPv6 操作</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.1.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>DHCPv6 操作</h1>
+        <div>
+          <p> 如图 1 所示，无状态或有状态 DHCPv6，或两者的组合均以来自路由器的 ICMPv6 RA 消息开头。RA 消息可能是定期消息，也可能是使用 RS 消息的设备请求的消息。 </p>
+          <p></p>
+          <p>如果 RA 消息中指示了无状态或有状态 DHCPv6，那么该设备将开始 DHCPv6 客户端/服务器通信。</p>
+          <p></p>
+          <p>
+            <b>DHCPv6 通信</b>
+          </p>
+          <p></p>
+          <p>当 RA 指示无状态 DHCPv6 或有状态 DHCPv6 时，将调用 DHCPv6 操作。通过 UDP 发送 DHCPv6 消息。从服务器到客户端的 DHCPv6 消息使用 UDP 目标端口 546。客户端使用 UDP 目标端口 547 将 DHCPv6 消息发送到服务器。</p>
+          <p></p>
+          <p>该客户端（现在是 DHCPv6 客户端）需要找到 DHCPv6 服务器。在图 2 中，客户端将 DHCPv6 SOLICIT 消息发送到保留的 IPv6 组播 all-DHCPv6-servers 地址 FF02::1:2。此组播地址有本地链路范围，这意味着路由器不会将消息转发到其它网络。 </p>
+          <p></p>
+          <p>如图 3 所示，一个或多个 DHCPv6 服务器以 DHCPv6 ADVERTISE 单播消息作为回应。ADVERTISE 消息通知 DHCPv6 客户端该服务器可用于 DHCPv6 服务。</p>
+          <p></p>
+          <p>在图 4 中，客户端根据是否正在使用有状态或无状态 DHCPv6 使用 DHCPv6 REQUEST 消息或 INFORMATION-REQUEST 单播消息回应服务器。</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>无状态 DHCPv6 客户端</b> - 客户端将 DHCPv6 INFORMATION-REQUEST 消息发送到只请求配置参数（如 DNS 服务器地址）的 DHCPv6 服务器。客户端使用来自 RA 消息的前缀和自动生成的接口 ID 生成自己的 IPv6 地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>有状态 DHCPv6 客户端</b> - 客户端将 DHCPv6 REQUEST 消息发送到服务器以获取服务器的 IPv6 地址和所有其他配置参数。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>如图 5 所示，服务器将 DHCPv6 REPLY 单播消息发送到包含 REQUEST 消息或 INFORMATION-REQUEST 消息所请求信息的客户端。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了一台交换机连接了一台路由器、一台计算机和一台 DHCPv6 服务器的拓扑。图 1 显示了计算机发送路由器请求消息，路由器则发送路由器通告作为响应。图 2 显示了客户端计算机发出 DHCPv6 请求消息，在本地链路上查找 DHCPv6 服务器。图 3 显示了 DHCPv6 服务器发出通告单播消息来响应该请求消息。图 4 显示了客户端计算机发送对信息请求单播消息的请求，用来请求必要信息。图 5 显示 DHCPv6 服务器在答复单播消息中向客户端发送相应的信息。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.1.1 隐式 deny any</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>隐式 deny any</h1>
+        <div>
+          <p>如果 ACL 中仅包含一个 deny 条目，则其效果与拒绝所有流量相同。在 ACL 中必须至少配置一条 permit ACE，否则将阻止所有流量。</p>
+          <p></p>
+          <p>对于图中的网络，在 R1 S0/0/0 接口的出站方向上应用 ACL 1 或 ACL 2 将产生相同的效果。允许 192.168.10.0 网络访问通过 S0/0/0 可到达的网络，同时拒绝 192.168.11.0 访问这些网络。在 ACL 1 中，如果数据包不匹配 permit 语句，则将其丢弃。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了带两个活动千兆接口的一个路由器。拓扑下列出了两个 ACL 的语法。第一个 ACL 语法是 access-list 1 permit ip192.168.10.0 0.0.0.255。第二个 ACL 命令是 access-list 2 permit ip192.168.10.0 0.0.0.255，后接 access-list 2 deny any。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

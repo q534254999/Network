@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.2.3 DNS 层级</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>DNS 层级</h1>
+        <div>
+          <p>DNS 协议采用分层系统创建数据库以提供名称解析。就像一棵倒置的树的层次结构下到达根的以下顶部和分支机构（如图所示）。DNS 使用域名来划分层次。</p>
+          <p>域名结构被划分为多个更小的受管域。每台 DNS 服务器维护着特定的数据库文件，而且只负责管理 DNS 结构中那一小部分的“域名-IP”映射。当 DNS 服务器收到的域名转换请求不属于其所负责的 DNS 区域时，该 DNS 服务器可将请求转发到与该请求对应的区域中的 DNS 服务器进行转换。 </p>
+          <p>
+            <b>注意</b>：DNS 具有可扩展性，这是因为主机名解析分散于多台服务器上完成。</p>
+          <p>不同的顶级域有不同的含义，分别代表着组织类型或起源国家/地区。请参见如下顶级域名示例：</p>
+          <p>
+            <ul>
+              <li>
+                <b>.com</b> - 商业或行业</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>.org</b> - 非赢利性组织</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>.au</b> - 澳大利亚</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>.co</b> - 哥伦比亚</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows the DNS hierarchy.  A client communicates with a local DNS server.  That server can communicate with Top-level domain servers for records it does not have in its DNS database.  The Top-Level servers can communicate with the Root servers for any records they do not have.  The Root servers have All DNS records.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

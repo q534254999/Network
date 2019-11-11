@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.3.2.2 扩展 Traceroute</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>扩展 Traceroute</h1>
+        <div>
+          <p>作为 <b>traceroute</b> 命令的变体，扩展 <b>traceroute</b> 命令允许管理员对命令操作相关参数作出调整。这对于路由环路问题的故障排除和下一跳路由器的准确确定非常有用，或者可以帮助确定路由器在何处丢弃了数据包或者防火墙在何处拒绝了数据包。扩展 <b>ping</b> 命令可以用来确定连接问题类型，而扩展 <b>traceroute</b> 命令对于问题的定位非常有用。</p>
+          <p></p>
+          <p>ICMP“超时”错误消息表示，路径中的一台路由器已经发现并丢弃了数据包。ICMP“目的地不可达”错误消息表示，路由器接收了数据包，但因无法送达而将其丢弃。与 ping 类似，traceroute 使用 ICMP 回应请求和回应答复。如果 ICMP 计时器在收到 ICMP 回应答复之前到期，<b>traceroute </b>命令输出将显示一个星号 (*)。</p>
+          <p></p>
+          <p>在 IOS 中，当发生以下任一情况时，扩展 traceroute 命令将终止：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>目的设备以 ICMP 回应答复做出响应</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>用户使用转义序列中断跟踪</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>注意</b>：在 IOS 中，您可以按 <b>Ctrl+Shift+6</b> 调用此转义序列。在 Windows 中，按 <b>Ctrl+C</b> 调用转义序列。</p>
+          <p></p>
+          <p>要使用<b>扩展</b> traceroute，无需提供任何参数，直接键入 <b>traceroute</b>，然后按 <b>ENTER</b> 键。IOS 将会显示一些与各个参数的设置相关的提示，引导您使用命令选项。图 1 显示 IOS 扩展 <b>traceroute</b> 选项及其相应描述。</p>
+          <p></p>
+          <p>虽然 Windows <b>tracert</b> 命令允许输入多个参数，但不提供引导，而且必须通过命令行中的选项来执行。图 2 显示 Windows 中 <b>tracert</b> 的可用选项。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 is a table describing each of IOS traceroute options. Figure 2 shows the tracert options on a Windows machine </div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

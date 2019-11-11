@@ -1,0 +1,74 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>TRUNK 配置</b>]]></text>
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>示例拓扑</b>]]></text>
+</component>
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>示例配置</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[教职工 <br/>VLAN 10<br/>172.17.10.21]]></text> 
+</component>
+<component id="ID_s2_txt02">
+<text><![CDATA[学生<br/>VLAN 20<br/>172.17.20.22]]></text> 
+</component>
+<component id="ID_s2_txt03">
+<text><![CDATA[访客<br/>VLAN 30<br/>172.17.30.23]]></text> 
+</component>
+<component id="ID_s2_txt04">
+<text><![CDATA[中继]]></text> 
+</component>
+
+
+
+<component id="ID_s1_table01">
+<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' 
+glow='true' glowcolor='#808080' cellpadding='4'>
+
+<tr>
+<td colspan='2' bgcolor='#98D3D1' class="mtitle"><font size='12' color='#393536'><b>思科交换机 IOS 命令</b></font></td>
+</tr>
+
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#0E6360'><font size='1' color='#0E6360' class="mtable_top"><span style="color:#98D3D1">.</span></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#EFF8F7' valign="top" width="150">进入全局配置模式。</td>
+<td bgcolor='#EFF8F7' valign="top"><font face='_typewriter'>S1# <b>configure terminal</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#ffffff' valign="top" width="150">进入接口配置模式。</td>
+<td bgcolor='#ffffff' valign="top"><font face='_typewriter'>S1(config)# <b>interface </b><i> interface_id</i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#EFF8F7' valign="top" width="150">强制链路变为 TRUNK 链路。</td>
+<td bgcolor='#EFF8F7' valign="top"><font face='_typewriter'>S1(config-if)# <b>switchport mode trunk</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#ffffff' valign="top" width="150">为无标记帧指定原生 VLAN。</td>
+<td bgcolor='#ffffff' valign="top"><font face='_typewriter'>S1(config-if)# <b>switchport trunk native vlan </b><i> vlan_id</i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#EFF8F7' valign="top" width="150">指定在 TRUNK 链路上允许的 VLAN 列表。</td>
+<td bgcolor='#EFF8F7' valign="top"><font face='_typewriter'>S1(config-if)# <b>switchport trunk allowed vlan </b><i> vlan-list</i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#ffffff' valign="top" width="150">返回到特权 EXEC 模式。</td>
+<td bgcolor='#ffffff' valign="top"><font face='_typewriter'>S1(config-if)# <b>end</b></font></td>
+</tr>
+
+</table>]]></text>
+</component>
+
+</textcomponents>

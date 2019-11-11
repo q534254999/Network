@@ -1,0 +1,23 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>使用文本编辑器编辑编号 ACL</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[配置]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[步骤 1]]></text> 
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[步骤 2]]></text> 
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[步骤 3]]></text> 
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[步骤 4]]></text> 
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[&lt;文本编辑器&gt;]]></text> 
+	</component>
+</textcomponents>

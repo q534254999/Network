@@ -1,0 +1,49 @@
+﻿<textcomponents>
+  <component id="ID_title">
+    <text><![CDATA[<b>远程网络条目标识符</b>]]></text>
+  </component><!-- <component id="ID_txt01">
+    <text><![CDATA[D]]></text>
+  </component>--><component id="ID_txt01">
+    <text><![CDATA[<b>D</b>]]></text>
+  </component>
+
+     <component id="ID_txt02">
+    <text><![CDATA[<b>图例</b>]]></text>
+  </component>
+ 
+
+	 <component id="ID_txt03">
+    <text><![CDATA[- 确定路由器如何获知网络。]]></text>
+  </component>
+ 
+ 
+ 
+	<component id="ID_txt04">
+    <text><![CDATA[- 标识目标网络。]]></text>
+  </component>
+	
+	<component id="ID_txt05">
+    <text><![CDATA[- 标识路由来源的管理距离（可信度）。]]></text>
+  </component>
+	
+	<component id="ID_txt06">
+    <text><![CDATA[- 标识到达远程网络的度量。]]></text>
+  </component>
+	
+	<component id="ID_txt07">    
+	<text><![CDATA[- 标识到达远程网络的下一跳 IP 地址。]]></text>
+  </component>
+  
+	<component id="ID_txt08">    
+	<text><![CDATA[- 标识发现网络后所经过的时间。]]></text>
+  </component>
+	
+	<component id="ID_txt09">    
+	<text><![CDATA[- 标识路由器上到达目标网络的传出接口。]]></text>
+  </component>
+
+
+  
+  
+
+</textcomponents>

@@ -1,0 +1,34 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+html, body {
+	margin:0;
+	height:100%;
+
+}
+#flashContent {
+	width:98%;
+	height:98%;
+}
+
+#ID_s2_staticTxt1{
+	/*padding: 3px 2px;*/
+}
+code{ 	
+	
+	line-height: 12px;
+	word-spacing: -2.8px;
+	font-size: 10px;
+	white-space: pre;
+}
+
+code b{color: #000;} 
+
+div[id ^= ID_static]{
+	font-size: 9px!important;
+}
+#ID_static_20, #ID_static_4, #ID_static_5, #ID_static_6, #ID_static_14, #ID_static_22, #ID_static_17{
+	letter-spacing: -1px !important;
+}

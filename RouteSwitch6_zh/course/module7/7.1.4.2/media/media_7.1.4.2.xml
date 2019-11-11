@@ -1,0 +1,20 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>标准 ACL 放置</b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[拦截从 192.168.10.0/24 传输到 192.168.30.0/24 的所有流量。]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[过滤从 192.168.10.0/24 仅传输到 192.168.30.0/24 的流量。]]></text> 
+  </component>
+  <component id="ID_txt03">
+  <text><![CDATA[过滤从 192.168.10.0/24 传输到 R3 可达的所有目的地的流量。]]></text> 
+  </component>
+   <component id="ID_txt04">
+  <text><![CDATA[<b>站点 A</b>]]></text> 
+  </component>
+   <component id="ID_txt05">
+  <text><![CDATA[<b>站点 B</b>]]></text> 
+  </component>
+</textcomponents>

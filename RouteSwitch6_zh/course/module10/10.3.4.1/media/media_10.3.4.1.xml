@@ -1,0 +1,62 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>ISR G2 路由器的 IOS 封装模型</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>安全性</b><br>思科 IOS 防火墙、SSL VPN、DMVPN、IPS、GET VPN、IPsec 等<br>设备：1900、2900、3900]]></text>
+</component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[<b>统一通信</b><br>CUBE、SRST、Voice Gateway、CUCME、DSP、VXML 等<br>设备：2900、3900]]></text> 
+  </component>
+<component id="ID_s1_txt03">
+  <text><![CDATA[<b>数据</b><br>MPLS、BFD、RSVP、L2VPN、L2TPv3、IP SLA 等<br>设备：1900、2900、3900]]></text> 
+  </component>
+<component id="ID_s1_txt04">
+  <text><![CDATA[<b>IP Base</b><br>BGP、OSPF、EIGRP、IS-IS、RIP、PBR、IGMP、组播<br>接入路由器的默认映像<br>设备：1900、2900、3900]]></text> 
+  </component>
+  
+  
+  
+<component id="ID_s2_title">
+<text><![CDATA[<b>技术包许可证</b>]]></text>
+</component><!--Buttons--><component id='ID_s2_btn01'>
+	<text><![CDATA[<b>IP Base</b>]]></text>
+</component>
+
+<component id='ID_s2_btn02'>
+	<text><![CDATA[<b>数据</b>]]></text>
+</component>
+
+<component id='ID_s2_btn03'>
+	<text><![CDATA[<b>统一通信</b>]]></text>
+</component>
+
+<component id='ID_s2_btn04'>
+	<text><![CDATA[<b>安全</b>]]></text>
+</component><!--Textbox 1--><component id='ID_s2_titleTxt01'>
+	<text><![CDATA[<b>IP Base</b>]]></text>
+</component>
+
+<component id='ID_s2_bodyTxt01'>
+	<text><![CDATA[提供在 ISR 1900、2900 和 3900 上 IP Base IOS 映像中具备的功能 + Flexible Netflow + 存在于 IP Base 中的 IPv4 功能的 IPv6 对等功能。 一些主要功能包括 AAA、BGP、OSPF、EIGRP、IS-IS、RIP、PBR、IGMP、组播、DHCP、HSRP、GLBP、NHRP、HTTP、HQF、QoS、ACL、NBAR、GRE、CDP、ARP、NTP、PPP、PPPoA、PPPoE、RADIUS、TACACS、SCTP、SMDS、SNMP、STP、VLAN、DTP、IGMP、监听、SPAN、WCCP、ISDN、ADSL over ISDN、NAT-Basic X.25、RSVP、NTP、Flexible Netflow 等。]]></text>
+</component><!--Textbox 2--><component id='ID_s2_titleTxt02'>
+	<text><![CDATA[<b>数据</b>]]></text>
+</component>
+
+<component id='ID_s2_bodyTxt02'>
+	<text><![CDATA[ISR 1900、2900 和 3900 上 SP 服务和企业服务 IOS 映像中具备的数据功能。例如，MPLS、BFD、RSVP、L2VPN、L2TPv3、第 2 层本地交换、移动 IP、组播身份验证、FHRP-GLBP、IP SLAs、PfR、DECnet、ALPS、RSRB、BIP、DLSw+、FRAS、令牌环、ISL、IPX、STUN、SNTP、SDLC、QLLC 等。]]></text>
+</component><!--Textbox 3--><component id='ID_s2_titleTxt03'>
+	<text><![CDATA[<b>统一通信</b>]]></text>
+</component>
+
+<component id='ID_s2_bodyTxt03'>
+	<text><![CDATA[提供在 ISR 1900、2900 和 3900 上 IP 语音 IOS 映像中具备的 UC 功能。例如 TDM/PSTN 网关、视频网关 [H320/324]、语音会议、编解码器代码转换、RSVP 代理（语音）、FAX T.37/38、CAC/QOS、Hoot-n-Holler 等。]]></text>
+</component><!--Textbox 4--><component id='ID_s2_titleTxt04'>
+	<text><![CDATA[<b>安全</b>]]></text>
+</component>
+
+<component id='ID_s2_bodyTxt04'>
+	<text><![CDATA[提供在 ISR 1900、2900 和 3900 上高级安全 IOS 映像中具备的安全功能。例如 IKE v1 / IPsec / PKI、IPsec/GRE、Easy VPN w/ DVTI、DMVPN、Static VTI、防火墙、Network Foundation Protection、GETVPN 等。]]></text>
+</component>
+
+</textcomponents>

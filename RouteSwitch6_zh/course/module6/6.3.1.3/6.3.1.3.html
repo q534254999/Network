@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.1.3 单臂路由器 VLAN 间路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>单臂路由器 VLAN 间路由</h1>
+        <div>
+          <p>虽然传统的 VLAN 间路由要求路由器和交换机上均具备多个物理接口，但是现在一种更普遍使用的 VLAN 间路由实施却不需要。相反，一些路由器软件允许将路由器接口配置为 TRUNK 链路，就是说路由器和交换机上只需要一个物理接口就可以在多个 VLAN 之间传送数据包。</p>
+          <p></p>
+          <p>“单臂路由器”是通过单个物理接口在网络中的多个 VLAN 之间发送流量的路由器配置。如图所示，路由器与交换机 S1 通过单一的物理网络连接 (TRUNK) 相连。 </p>
+          <p>对路由器接口进行配置，使其以中继链路的方式运行，并将其与中继模式配置下的交换机端口相连。通过接收中继接口上来自相邻交换机的 VLAN 标记流量，以及通过子接口在 VLAN 之间进行内部路由，路由器便可实现 VLAN 间路由。之后将路由流量和标记 VLAN 转发到目标 VLAN。由于该物理接口以前接收过流量，所以不能在同一个端口上接收。</p>
+          <p></p>
+          <p>子接口是基于软件的虚拟接口，与单个物理接口相关联。路由器的软件中配置了子接口，并且每个子接口上都分别配置了 IP 地址和 VLAN 分配。根据各自的 VLAN 分配，每个子网络都配置了子接口以方便逻辑路由。基于目标 VLAN 进行路由决策后，数据帧会进行 VLAN 标记，并通过物理接口发送回去。 </p>
+          <p></p>
+          <p>点击图中的“播放”，观看单臂路由器如何执行路由功能的动画。</p>
+          <p></p>
+          <p>如动画中所示：</p>
+          <p></p>
+          <p>1.利用单个物理路由器接口，VLAN 10 中的 PC1 正经路由器 R1 与 VLAN 30 中的 PC3 通信。</p>
+          <p></p>
+          <p>2.PC1 将它的单播流量发送到交换机 S2。</p>
+          <p></p>
+          <p>3.交换机 S2 将该单播流量标记为来源于 VLAN 10 后，将其从 TRUNK 链路转发到交换机 S1。</p>
+          <p></p>
+          <p>4.交换机 S1 将标记流量从端口 F0/3 上的另一个中继接口转发到路由器 R1 上的接口。</p>
+          <p></p>
+          <p>5.路由器 R1 接收 VLAN 10 上标记的单播流量，并通过为其所配置的子接口将该单播流量发送到 VLAN 30。</p>
+          <p></p>
+          <p>6.单播流量从路由器接口发送到交换机 S1 时标记为 VLAN 30。</p>
+          <p></p>
+          <p>7.交换机 S1 将被标记的单播流量从另一个中继链路转发到交换机 S2。</p>
+          <p></p>
+          <p>8.交换机 S2 将单播帧的 VLAN 标记删除后，将该帧转发到端口 F0/23 上的 PC3。</p>
+          <p></p>
+          <p>
+            <b>注</b>：VLAN 间路由器的单臂路由器方法不能扩展超出 50 个 VLAN。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中是拓扑的动画，演示连接到具有三台交换机的一个集群的三个主机。每台交换机都通过中继链路彼此连接，一台交换机使用一条物理电缆连接到路由器。动画演示单播数据包如何通过拓扑移动并要求路由器可以将数据包转发到不同子网。突出显示交换机和路由器之间的单个中继链路，这能够标记流量并使用路由器子接口以便路由子网间流量。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

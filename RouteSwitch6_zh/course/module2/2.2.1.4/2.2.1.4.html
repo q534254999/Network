@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.1.4 配置直连静态路由</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置直连静态路由</h1>
+        <div>
+          <p>当配置静态路由时，另一种方法是使用送出接口指定下一跳地址。 </p>
+          <p></p>
+          <p>在图 1 中，R1 使用送出接口配置了三条直连静态路由。如图 2 中 R1 的路由表所示，当数据包指向 192.168.2.0/24 网络时，R1 在路由表中查找匹配，发现可以将数据包从 Serial 0/0/0 接口转发出去。无需其他任何查找。</p>
+          <p></p>
+          <p>请注意，使用退出接口配置的路由表与使用递归条目配置的路由表有什么不同之处。</p>
+          <p></p>
+          <p>通过配置带送出接口的直连静态路由，路由表搜索一次即可解析送出接口，而不需要搜索两次。虽然路由表条目表示“直连”，但静态路由的管理距离仍然是 1。只有直连接口的管理距离可以是 0。</p>
+          <p></p>
+          <p>
+            <b>注</b>：对于点对点接口，您可以使用指向退出接口或下一跳地址的静态路由。对于多点/广播接口，更适合采用指向下一跳地址的静态路由。</p>
+          <p></p>
+          <p>使用图 3 和图 4 中的语法检查器配置并验证 R2 和 R3 的直连静态路由。</p>
+          <p></p>
+          <p>
+            <b>注</b>：CEF（思科快速转发）是运行 IOS 12.0 或更高版本的大多数平台的默认行为。CEF 提供优化的查找功能来实现高效的数据包转发，使用数据平面中存储的两种主要数据结构：FIB（转发信息库），即路由表和邻接表的副本，其中包含第 2 层编址信息。这两个表中组合的信息相互配合，因此查找下一跳 IP 地址时无需进行递归查找。换句话说，当路由器上启用 CEF 时，使用下一跳 IP 的静态路由只需要一次查找。虽然在点对点网络上仅使用送出接口的静态路由十分常见，但如果使用默认 CEF 转发机制，则不必要采用这种做法。CEF 将在后面的课程中详细介绍。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">这些图基于标准实验图。R1，有 LAN 连接到 R2，还有一个 LAN 使用一个 LAN 连接到 R3。图 1 显示路由器 1 未连接到的两个 LAN 的配置、路由器 2 LAN和路由器 3 LAN 以及路由器 2 与路由器 3 之间的 WAN。使用退出接口来配置静态路由。图 2 演示路由器 1 访问路由器 3 上的 LAN 的查找过程。图 3 是允许学生将路由器 2 上的静态路由配置为使用退出接口到达路由器 3 的 LAN 的互动练习。图 4 是一个交互练习，允许学习者在路由器 3 上配置指向路由器 2 的另一端的网络的静态路由。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

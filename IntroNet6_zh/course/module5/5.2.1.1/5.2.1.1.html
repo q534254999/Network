@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.1.1 交换机基础知识</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>交换机基础知识</h1>
+        <div>
+          <p>第 2 层以太网交换机使用 MAC 地址做出转发决策。它完全忽视帧的数据部分的协议，例如 IPv4 数据包。交换机仅根据第 2 层以太网 MAC 地址做出转发决策。</p>
+          <p>与旧式以太网集线器（它重复除了传入端口以外的所有端口的位）不同，以太网交换机在做出每个帧的转发决策时会查询 MAC 地址表。如图所示，四端口交换机已启动。但它还未获知四台连接的 PC 的 MAC 地址。</p>
+          <p>
+            <b>注意</b>：MAC 地址表有时也称为内容可编址内存 (CAM) 表。虽然 CAM 表这一术语相当常见，但在本课程中，我们将称其为 MAC 地址表。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a four port switch with four PCs attached one to each port. The PCs are named A, B, C, and D. The abbreviated MAC addresses are 00-0A, 00-0B, 00-0C, and 00-0D. The switch MAC address table is also shown. The table is empty.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

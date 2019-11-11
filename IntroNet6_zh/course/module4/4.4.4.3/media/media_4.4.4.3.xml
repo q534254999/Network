@@ -1,0 +1,183 @@
+<textcomponents>
+    <!--Slide 1-->
+    <component id="ID_s1_inst">
+        <text>
+            <![CDATA[<b>练习 - 第 1 部分：通用帧字段</b>]]></text>
+    </component>
+         <component id='ID_s1_tbox_header'>
+		<text><![CDATA[说明]]></text>
+	</component>
+
+	<component id='ID_s1_instru'>
+		<text><![CDATA[将通用帧字段拖放到图中的正确位置。]]></text>
+	</component>
+    <component id="ID_s2_drag01">
+        <text>
+            <![CDATA[数据]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag04">
+        <text>
+            <![CDATA[类型]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag03">
+        <text>
+            <![CDATA[帧头]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag04">
+        <text>
+            <![CDATA[帧尾]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag02">
+        <text>
+            <![CDATA[控制]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag06">
+        <text>
+            <![CDATA[数据包<br>（数据）]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag03">
+        <text>
+            <![CDATA[编址]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag08">
+        <text>
+            <![CDATA[帧结束]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag09">
+        <text>
+            <![CDATA[错误检测]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag10">
+        <text>
+            <![CDATA[帧开始]]>
+        </text>
+    </component>
+    <component id="ID_s2_CHECK">
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id="ID_s2_RESET">
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+    <component id="ID_s2_CORRECT_TITLE">
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id="ID_s1_CORRECT_BODY">
+        <text>
+            <![CDATA[您已成功排列帧中<b>通用字段名称</b>的顺序。]]></text>
+    </component>
+    <component id="ID_s2_INCORRECT_TITLE">
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id="ID_s1_INCORRECT_BODY">
+        <text>
+            <![CDATA[您尚未成功排列帧中<b>通用字段名称</b>的顺序。请单击“重置”重试。]]></text>
+    </component>
+    <!--Slide 2-->
+    <component id="ID_s2_inst">
+        <text>
+            <![CDATA[<b>练习 - 第 2 部分：通用帧字段</b>]]></text>
+    </component>
+             <component id='ID_s2_instr_title'>
+		<text><![CDATA[说明]]></text>
+	</component>
+
+	<component id='ID_s2_instr_body'>
+		<text><![CDATA[将通用帧字段拖放到其描述下。]]></text>
+	</component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[包含 IP 报头、传输层 PDU 和数据]]>
+        </text>
+    </component>
+    <component id='ID_s2_txt06'>
+        <text>
+            <![CDATA[术语]]></text>
+    </component>
+    <component id='ID_s2_txt07'>
+        <text>
+            <![CDATA[物理层描述]]></text>
+    </component>
+
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[确定 LLC 使用的第 3 层协议]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt03">
+        <text>
+            <![CDATA[标记帧的结束]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt04">
+        <text>
+            <![CDATA[通过 MAC 地址确定源主机和目的主机]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt05">
+        <text>
+            <![CDATA[指定特定流量控制服务]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag01">
+        <text>
+            <![CDATA[数据]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag05">
+        <text>
+            <![CDATA[控制]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag07">
+        <text>
+            <![CDATA[编址]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag02">
+        <text>
+            <![CDATA[类型]]>
+        </text>
+    </component>
+    <component id="ID_s2_drag05">
+        <text>
+            <![CDATA[帧结束指示<br/>标志]]>
+        </text>
+    </component>
+    <component id="ID_s1_CHECK">
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id="ID_s1_RESET">
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+    <component id="ID_s1_CORRECT_TITLE">
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id="ID_s2_CORRECT_BODY">
+        <text>
+            <![CDATA[您已成功地将每个<b>通用帧字段</b>与其描述相匹配。]]></text>
+    </component>
+    <component id="ID_s1_INCORRECT_TITLE">
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id="ID_s2_INCORRECT_BODY">
+        <text>
+            <![CDATA[您尚未成功地将每个<b>通用帧字段</b>与其描述相匹配。请单击“重置”重试。]]></text>
+    </component>
+</textcomponents>

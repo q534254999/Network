@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.4.2.2 双工不匹配</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.4.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>双工不匹配</h1>
+        <div>
+          <p>当设备之间仍在通信时，可能很难对双工不匹配的问题进行排查。即使在使用 ping 等工具时，双工不匹配问题也可能会变得不够明显。单个小的数据包可能无法显示出双工不匹配问题。缓慢发送数据的终端会话（在很短时间内）也可能通过双工不匹配成功通信。即使连接的任意一端尝试大量发送数据并且链路性能显著下降，原因可能也不会很明显，因为网络是正常运行的。</p>
+          <p></p>
+          <p>思科专有协议 CDP 可以很容易地检测到两台思科设备之间的双工不匹配。考虑图 1 中的拓扑和日志消息，其中 R1 的 G0/0 接口错误地配置为在半双工模式下运行。CDP 会显示有关双工不匹配链路的日志消息。消息还包含涉及双工不匹配的设备名称和端口，使我们能够更轻松地确定并解决问题。</p>
+          <p></p>
+          <p>
+            <b>注意</b>：这些是日志消息，因此默认在控制台会话中显示。如果启用 terminal monitor 命令，则您只能在远程连接中看到这些消息。</p>
+          <p></p>
+          <p>图 2 显示了 S1 接口正确配置为全双工操作。图 3 显示了 R1 上的半双工配置导致了问题。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figures 1, 2, and 3 have the topology with a switch connected to a router. The devices have duplex mismatch. The switch is operating in full-duplex mode and the router is operating in half-duplex mode. Figure 1 also shows output for the switch’s console messages which indicate there is a duplex mismatch. Figure 2 displays output for the ‘show interfaces fastethernet 0/5’ command on the switch verifying that the switch is operating in full duplex mode. Figure 3 displays output for the ‘show interfaces gigabitethernet0/0’ common on the router verify that the router is operating in half-duplex mode.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+﻿<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>计算子网数量公式</b>]]></text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[借用的位数]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[借用 <font color='#F26200'><b>1</b></font> 位：]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt01B">
+        <text>
+            <![CDATA[2^<font color='#F26200'><b>1</b></font> = <font color='#46A040'><b>2</b></font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[借用 <font color='#F26200'><b>2</b></font> 位：]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt02B">
+        <text>
+            <![CDATA[2^<font color='#F26200'><b>2</b></font> = <font color='#46A040'><b>4</b></font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt03">
+        <text>
+            <![CDATA[借用 <font color='#F26200'><b>3</b></font> 位：]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt03B">
+        <text>
+            <![CDATA[2^<font color='#F26200'><b>3</b></font> = <font color='#46A040'><b>8</b></font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt04">
+        <text>
+            <![CDATA[借用 <font color='#F26200'><b>4</b></font> 位：]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt04B">
+        <text>
+            <![CDATA[2^<font color='#F26200'><b>4</b></font> = <font color='#46A040'><b>16</b></font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt05">
+        <text>
+            <![CDATA[借用 <font color='#F26200'><b>5</b></font> 位：]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt05B">
+        <text>
+            <![CDATA[2^<font color='#F26200'><b>5</b></font> = <font color='#46A040'><b>32</b></font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt06">
+        <text>
+            <![CDATA[借用 <font color='#F26200'><b>6</b></font> 位：]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt06B">
+        <text>
+            <![CDATA[2^<font color='#F26200'><b>6</b></font> = <font color='#46A040'><b>64</b></font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt07">
+        <text>
+            <![CDATA[借用 <font color='#F26200'><b>7</b></font> 位：]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt07B">
+        <text>
+            <![CDATA[2^<font color='#F26200'><b>7</b></font> = <font color='#46A040'><b>128</b></font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt08">
+        <text>
+            <![CDATA[借用 <font color='#F26200'><b>8</b></font> 位：]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt08B">
+        <text>
+            <![CDATA[2^<font color='#F26200'><b>8</b></font> = <font color='#46A040'><b>256</b></font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt09">
+        <text>
+            <![CDATA[借用 <font color='#F26200'><b>9</b></font> 位：]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt09B">
+        <text>
+            <![CDATA[2^<font color='#F26200'><b>9</b></font> = <font color='#46A040'><b>512</b></font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt10">
+        <text>
+            <![CDATA[借用 <font color='#F26200'><b>10</b></font> 位：]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt10B">
+        <text>
+            <![CDATA[2^<font color='#F26200'><b>10</b></font> = <font color='#46A040'><b>1024</b></font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt11">
+        <text>
+            <![CDATA[借用 <font color='#F26200'><b>11</b></font> 位：]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt11B">
+        <text>
+            <![CDATA[2^<font color='#F26200'><b>11</b></font> = <font color='#46A040'><b>2048</b></font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt12">
+        <text>
+            <![CDATA[借用 <font color='#F26200'><b>12</b></font> 位：]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt12B">
+        <text>
+            <![CDATA[2^<font color='#F26200'><b>12</b></font> = <font color='#46A040'><b>4096</b></font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt13">
+        <text>
+            <![CDATA[借用 <font color='#F26200'><b>13</b></font> 位：]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt13B">
+        <text>
+            <![CDATA[2^<font color='#F26200'><b>13</b></font> = <font color='#46A040'><b>8192</b></font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt14">
+        <text>
+            <![CDATA[借用 <font color='#F26200'><b>14</b></font> 位：]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt14B">
+        <text>
+            <![CDATA[2^<font color='#F26200'><b>14</b></font> = <font color='#46A040'><b>16384</b></font>]]>
+        </text>
+    </component>
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>对 /24 网络划分子网</b>]]></text>
+    </component>
+    <component id="ID_s3_title">
+        <text>
+            <![CDATA[<b>计算主机数量公式</b>]]></text>
+    </component>
+    <component id="ID_s3_txt01">
+        <text>
+            <![CDATA[主机字段剩余的位数]]>
+        </text>
+    </component>
+    <component id="ID_s4_title">
+        <text>
+            <![CDATA[<b>计算主机数量</b>]]></text>
+    </component>
+    <component id="ID_s4_txt01">
+        <text>
+            <![CDATA[主机字段中剩余 <font color="#f26200"><b>7</b></font> 位]]>
+        </text>
+    </component>
+    <component id="ID_s4_txt02">
+        <text>
+            <![CDATA[<textformat tabstops='[1]'>2^<font color="#f26200"><b>7</b></font> = 128 个主机/子网<br>2^<font color="#f26200"><b>7</b></font> - 2 = 126 个有效主机/子网</textformat>]]>
+        </text>
+    </component>
+</textcomponents>

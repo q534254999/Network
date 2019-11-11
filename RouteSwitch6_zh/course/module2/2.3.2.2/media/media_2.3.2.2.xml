@@ -1,0 +1,17 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>验证与 R3 LAN 的连接</b>]]></text>
+</component>
+<component id="ID_s2_title">
+  <text><![CDATA[<b>检验 Hop-to-Hop 连接</b>]]></text> 
+  </component>
+<component id="ID_s3_title">
+  <text><![CDATA[<b>验证路由表</b>]]></text> 
+  </component>
+<component id="ID_s4_title">
+  <text><![CDATA[<b>确定并解决问题</b>]]></text> 
+  </component>
+  <component id="ID_s5_title">
+  <text><![CDATA[<b>验证与 R3 LAN 的连接</b>]]></text> 
+  </component>
+</textcomponents>

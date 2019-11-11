@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.2.1 TCP 可靠性 - 按序传送</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>TCP 可靠性 - 按序传送</h1>
+        <div>
+          <p>TCP 数据段到达目的地的顺序可能是混乱的。因此，为了让目的设备理解原始消息，将重组这些数据段，使其恢复原有顺序。每个数据包中的数据段报头中都含有序列号，便于进行数据重组。序列号代表 TCP 数据段的第一个数据字节。</p>
+          <p>在会话建立过程中，将设置初始序列号 (ISN)。此 ISN 表示该会话中传输到接收应用程序的字节起始值。在会话过程中，每传送一定字节的数据，序列号就随之增加。通过这样的数据字节跟踪，可以唯一标识并确认每个数据段，还可以标识丢失的数据段。 </p>
+          <p>
+            <b>注意：</b>ISN 并不是从 1 开始，而实际上是随机的号码。这样做的目的是防止某些类型的恶意攻击。为简单起见，本章的示例中我们将使用 1 作为 ISN。</p>
+          <p>如图所示，数据段的序列号用于指示如何重组和重新排序收到的数据段。 </p>
+          <p>接收方的 TCP 进程将数据段中的数据存入缓存区，而数据段则按照正确的序列顺序进行排列，重组后发送到应用层。对于序列号混乱的数据段，将被保留以备后期处理。等缺失的数据段到达后，再来按顺序处理这些数据段。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows data being divided into 6 segments, which are each labeled with a sequence number 1 through 6 and sent to remote host.  There are five routers connected with redundant links, thereby allowing multiple paths for the segments to follow.  The segments do not arrive at the destination in same order they were sent.  T.C.P. uses the sequence numbers to re-order the segments back to their original order.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

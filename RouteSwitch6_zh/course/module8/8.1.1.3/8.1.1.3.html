@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.1.3 DHCPv4 消息格式</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>DHCPv4 消息格式</h1>
+        <div>
+          <p>DHCPv4 消息格式用于所有 DHCPv4 事务。DHCPv4 消息封装在 UDP 传输协议中。从客户端发出的 DHCPv4 消息使用 UDP 源端口 68 和目标端口 67。从服务器发往客户端的 DHCPv4 消息使用 UDP 源端口 67 和目标端口 68。 </p>
+          <p></p>
+          <p>图中显示了 DHCPv4 消息的格式。字段如下：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>操作 (OP) 代码</b> - 指定通用消息类型。1 表示请求消息，2 表示回复消息。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>硬件类型</b> - 确定网络中使用的硬件类型。例如，1 表示以太网，15 表示帧中继，20 表示串行线路。这与 ARP 消息中使用的代码相同。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>硬件地址长度</b> - 指定地址的长度。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>跳数</b> - 控制消息的转发。客户端传输请求前将其设置为 0。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>事务标识符</b> - 客户端使用事务标识符将请求和从 DHCPv4 服务器接收的应答进行匹配。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>秒数</b> - 确定从客户端开始尝试获取或更新租用以来经过的秒数。当有多个客户端请求未得到处理时，DHCPv4 服务器会使用秒数来排定应答的优先顺序。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>标记</b> - 发送请求时，不知道自己 IPv4 地址的客户端会使用标记。只使用 16 位中的一位，即广播标记。此字段中的 1 值告诉接收请求的 DHCPv4 服务器或中继代理应将应答作为广播发送。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>客户端 IP 地址</b> - 当客户端的地址有效且可用时，客户端在租约更新期间（而不是在获取地址的过程中）使用客户端 IP 地址。当且仅当客户端在绑定状态下有一个有效的 IPv4 地址时，该客户端才会将其 IPv4 地址放在此字段中，否则，它会将该字段设置为 0。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>您的 IP 地址</b> - 服务器使用该地址将 IPv4 地址分配给客户端。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>服务器 IP 地址</b> - 服务器使用该地址确定在 bootstrap 过程的下一步骤中客户端应当使用的服务器地址，它既可能是也可能不是发送该应答的服务器。发送服务器始终会把自己的 IPv4 地址放在称作“服务器标识符”DHCPv4 选项的特殊字段中。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>网关 IP 地址</b> - 涉及 DHCPv4 中继代理时会路由 DHCPv4 消息。网关地址可以帮助位于不同子网或网络的客户端与服务器之间传输 DHCPv4 请求和 DHCPv4 回复。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>客户端硬件地址</b> - 指定客户端的物理层。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>服务器名称</b> - 由发送 DHCPOFFER 或 DHCPACK 消息的服务器使用。服务器可能选择性地将其名称放在此字段中。这可以是简单的文字别名或 DNS 域名，例如 dhcpserver.netacad.net。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>启动文件名</b> - 客户端选择性地在 DHCPDISCOVER 消息中使用它来请求特定类型的启动文件。服务器在 DHCPOFFER 中使用它来完整指定启动文件目录和文件名。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>DHCP 选项</b> - 容纳 DHCP 选项，包括基本 DHCP 运行所需的几个参数。此字段的长度不定。客户端与服务器均可以使用此字段。</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图显示了 DHCP 版本 4 消息格式，并且列出了文本中描述的字段。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

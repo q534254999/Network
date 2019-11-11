@@ -1,0 +1,71 @@
+<textcomponents><!--Slide 1--><component id="ID_s1_title">
+		<text><![CDATA[<b>支持网络的设备的组件</b>]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[<b>支持网络的设备</b>]]></text> 
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[CPU]]></text> 
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[操作系统]]></text> 
+	</component>
+	<component id="ID_s1_txt04">
+		<text><![CDATA[内存和<br/>存储]]></text> 
+	</component><!--Slide 2--><component id="ID_s2_title">
+		<text><![CDATA[<b>路由器存储器</b>]]></text>
+	</component>
+	<component id='ID_s2_table'>
+     <text>
+      <![CDATA[ <table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+        
+        <tr>
+          <td width='100px' bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>内存</b></font></td>
+          <td width='320px' bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>说明</b></font></td>
+        </tr>
+        <tr>
+          <td  bgcolor='#E9E7E8' valign="top"><font color='#393536'>随机访问存储器 (RAM)</font></td>
+          <td bgcolor='#E9E7E8' valign="top" class="col3"><font color='#393536'>提供各种应用程序和进程的临时存储的易失性存储器，包括：<textformat blockindent='-14'><ul class="bulletIndent20"><li>运行 IOS</li><li>运行配置文件</li><li>IP 路由和 ARP 表</li><li>数据包缓冲区</li></ul></textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F2F2F2' valign="top"><font color='#393536'>只读存储器 (ROM)</font></td>
+          <td bgcolor='#F2F2F2' valign="top" class="col3"><font color='#393536'>提供以下项的永久存储的非易失性存储器：<ul class="bulletIndent20"><li><textformat blockindent='-14'>启动说明</textformat></li><li><textformat blockindent='-14'>基本诊断软件</textformat></li><li><textformat blockindent='-14'>有限 IOS，如果路由器无法加载全功能 IOS</textformat></li></ul></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#E9E7E8' valign="top"><font color='#393536'>非易失性随机访问存储器 (NVRAM)</font></td>
+          <td bgcolor='#E9E7E8' valign="top" class="col3"><font  color='#393536'>提供以下项的永久存储的非易失性存储器：<ul class="bulletIndent20"><li><textformat blockindent='-14'>启动配置文件</textformat></li></ul></font></td>
+        </tr>
+         <tr>
+          <td bgcolor='#F2F2F2' valign="top"><font  color='#393536'>闪存</font></td>
+          <td width='170' class="col3" bgcolor='#F2F2F2' valign="top"><font  color='#393536'>提供以下项的永久存储的非易失性存储器：<ul class="bulletIndent20"><li><textformat blockindent='-14'>IOS</textformat></li><li><textformat blockindent='-14'>其他系统相关文件</textformat></li></ul></font></td>
+        </tr>         
+      </table>]]>
+    </text>
+  </component><!--Slide 3--><component id="ID_s3_title">
+		<text><![CDATA[<b>路由器后面板</b>]]></text>
+	</component> 
+	<component id="ID_s3_txt01">
+		<text><![CDATA[双宽 eHWIC 插槽]]></text>
+	</component>
+	<component id="ID_s3_txt02">
+		<text><![CDATA[EHWIC 0]]></text> 
+	</component> 
+	<component id="ID_s3_txt03">
+		<text><![CDATA[AUX 端口]]></text>
+	</component>
+	<component id="ID_s3_txt04">
+		<text><![CDATA[LAN 接口]]></text> 
+	</component> 
+	<component id="ID_s3_txt05">
+		<text><![CDATA[两个 4 GB 闪存卡插槽]]></text>
+	</component>
+	<component id="ID_s3_txt06">
+		<text><![CDATA[控制台 USB Mini-B]]></text> 
+	</component> 
+	<component id="ID_s3_txt07">
+		<text><![CDATA[控制台<br/>RJ-45]]></text>
+	</component>
+	<component id="ID_s3_txt08">
+		<text><![CDATA[USB 端口]]></text> 
+	</component> 
+</textcomponents>

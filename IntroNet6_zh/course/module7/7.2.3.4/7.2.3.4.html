@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.3.4 IPv6 本地链路单播地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv6 本地链路单播地址</h1>
+        <div>
+          <p>IPv6 本地链路地址允许设备与同一链路上支持 IPv6 的其他设备通信，并且只能在该链路（子网）上通信。具有源或目标本地链路地址的数据包不能在数据包的源链路之外进行路由。</p>
+          <p>全局单播地址不是必需项。但是，每个支持 IPv6 的网络接口均需要有本地链路地址。 </p>
+          <p>如果没有手动为接口配置本地链路地址，设备会在不与 DHCP 服务器通信的情况下自动创建自己的地址。支持 IPv6 的主机会创建 IPv6 本地链路地址，即使没有为该设备分配 IPv6 全局单播地址。这允许支持 IPv6 的设备与同一子网中的其他支持 IPv6 的设备通信。这包括与默认网关（路由器）的通信。 </p>
+          <p>IPv6 本地链路地址属于 FE80::/10 范围。/10 表示前 10 位是 1111 1110 10xx xxxx。第一个十六进制数的范围是 1111 1110 10<b>00 0000</b> (FE80) 到 1111 1110 10<b>11 1111</b> (FEBF)。 </p>
+          <p>图 1 是使用 IPv6 本地链路地址进行通信的示例。</p>
+          <p>图 2 为 IPv6 本地链路地址的一些应用。</p>
+          <p>
+            <b>注意</b>：通常情况下，用作链路上其他设备的默认网关的是路由器的本地链路地址而不是全局单播地址。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a router with a switch connected. The router also has two other networks attached. The router is configured with the same FE80::1/64 IPv6 link-local address on all three interfaces. On one of the LANs, there are two computers, a server, and a printer attached to the switch.  A computer is using link-local source and destination addresses to send a job to the printer. The router would not forward this job to another LAN because link-local addresses is local to the link. Figure 2 show a router connected to another router. One of the routers has a PC connected. The two routers are using the link-local address to send routing updates. The PC is using the router's link-local address as its default gateway.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

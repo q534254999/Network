@@ -1,0 +1,100 @@
+﻿<textcomponents>
+    <component id='ID_inst'>
+        <text>
+            <![CDATA[<b>练习 – 识别路由器组件</b>]]></text>
+    </component>
+    <component id='ID_s1_instr_title'>
+	<text><![CDATA[说明]]></text>
+</component>
+
+<component id='ID_s1_instr_body'>
+	<text><![CDATA[表中提供了路由器功能和硬件组件的描述。将每个路由器组件名与其功能/描述进行配对。]]></text>
+</component>
+    <component id='ID_txt01'>
+        <text>
+            <![CDATA[将路由器连接到外部网络（通常要经过很长距离）。]]>
+        </text>
+    </component>
+    <component id='ID_txt02'>
+        <text>
+            <![CDATA[通过网络接口远程访问 CLI 的方法。]]>
+        </text>
+    </component>
+    <component id='ID_txt03'>
+        <text>
+            <![CDATA[连接内部网络的计算机、交换机和路由器。]]>
+        </text>
+    </component>
+    <component id='ID_txt04'>
+        <text>
+            <![CDATA[使用 USB 或低速串行连接管理网络设备的本地端口。]]>
+        </text>
+    </component>
+    <component id='ID_txt05'>
+        <text>
+            <![CDATA[管理路由器的端口 – 使用电话线和调制解调器。]]>
+        </text>
+    </component>
+    <component id='ID_txt06'>
+        <text>
+            <![CDATA[<b>路由器组件名</b>]]></text>
+    </component>
+    <component id='ID_txt07'>
+        <text>
+            <![CDATA[<b>功能/描述</b>]]></text>
+    </component>
+    <!--Drag and Drop-->
+    <component id='ID_ip1_DS'>
+        <text>
+            <![CDATA[<font color="#393536">WAN 接口</font>]]>
+        </text>
+    </component>
+    <component id='ID_ip2_DS'>
+        <text>
+            <![CDATA[<font color="#393536">辅助端口</font>]]>
+        </text>
+    </component>
+    <component id='ID_ip3_DS'>
+        <text>
+            <![CDATA[<font color="#393536">LAN 接口</font>]]>
+        </text>
+    </component>
+    <component id='ID_ip4_DS'>
+        <text>
+            <![CDATA[<font color="#393536">Telnet 或 SSH</font>]]>
+        </text>
+    </component>
+    <component id='ID_ip5_DS'>
+        <text>
+            <![CDATA[<font color="#393536">控制台端口</font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_CORRECT_TITLE'>
+        <text>
+            <![CDATA[正确]]>
+        </text>
+    </component>
+    <component id='ID_s1_CORRECT_BODY'>
+        <text>
+            <![CDATA[您已成功地将路由器组件名与其功能/描述配对。]]>
+        </text>
+    </component>
+    <component id='ID_s1_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[不正确]]>
+        </text>
+    </component>
+    <component id='ID_s1_INCORRECT_BODY'>
+        <text>
+            <![CDATA[您未成功将路由器组件名与其功能/描述配对。请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id='ID_CHECK'>
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id='ID_RESET'>
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+</textcomponents>

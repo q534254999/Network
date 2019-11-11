@@ -1,0 +1,29 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>许可概述</b>]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[思科 License Manager]]></text> 
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[思科许可门户]]></text> 
+  </component>
+  <component id="ID_txt03">
+  <text><![CDATA[或]]></text> 
+  </component>
+   <component id="ID_txt04">
+  <text><![CDATA[购买包或功能]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[收到 PAK]]></text> 
+  </component>
+    <component id="ID_txt06">
+  <text><![CDATA[获取许可证<br/>（将 PAK 与 UDI 相关联）]]></text> 
+  </component>
+   <component id="ID_txt07">
+  <text><![CDATA[收到许可证文件]]></text> 
+  </component>
+   <component id="ID_txt08">
+  <text><![CDATA[安装许可证]]></text> 
+  </component>
+</textcomponents>

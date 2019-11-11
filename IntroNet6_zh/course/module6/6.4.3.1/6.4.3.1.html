@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.4.3.1 主机的默认网关</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.4.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>主机的默认网关</h1>
+        <div>
+          <p>对于通过网络通信的终端设备，必须配置正确的 IP 地址信息，包括默认网关地址。当主机要将数据包发送到另一个网络设备时，才会使用默认网关。默认网关地址通常是连接主机本地网络的路由器接口地址。主机设备的 IP 地址和路由器接口地址必须位于同一网络。 </p>
+          <p>图 1 和图 2 中的网络拓扑由互联两个单独的 LAN 的路由器组成。G0/0 连接到网络 192.168.10.0，G0/1 连接到网络 192.168.11.0。每台主机设备均配置有相应的默认网关地址。 </p>
+          <p>在图 1 中，PC1 将数据包发送到 PC2。在此示例中，未使用默认网关。相反，PC1 将 PC2 的 IP 地址指定给数据包，然后通过交换机将该数据包直接转发给 PC2。 </p>
+          <p>在图 2 中，PC1 将数据包发送到 PC3。在此示例中，PC1 将 PC3 的 IP 地址指定给数据包，但是随后将该数据包转发给路由器。路由器接受数据包，访问其路由表，进而根据目的地址确定相应的出接口，然后将数据包转发出相应接口，以到达 PC3。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a router with two LANs.  Each LAN has 2 PCs.  This figure shows how a host can communicate with another host on the same LAN without the use of the gateway. Figure 2 shows a router with two LANs.  Each LAN has 2 PCs . This figure shows how a host requires the gateway to communicate with a host on another LAN.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

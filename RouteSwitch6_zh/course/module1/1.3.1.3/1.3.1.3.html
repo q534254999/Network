@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.3.1.3 远程网络路由条目</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.3.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>远程网络路由条目</h1>
+        <div>
+          <p>作为网络管理员，必须知道如何解释 IPv4 和 IPv6 路由表中的内容。图中所示为 R1 上用于通往远程网络 10.1.1.0 的路由的 IPv4 路由表条目。 </p>
+          <p></p>
+          <p>此条目用于确定以下信息：</p>
+          <p>
+            <ul>
+              <li>
+                <b>路由源</b>- 标识如何获知该路由。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>目标网络</b>- 标识远程网络的地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>管理距离</b>- 标识路由源的可信度。较低的值表示首选路由来源。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>指标 </b>- 标识分配用来访问远程网络的值。值越低表示此路由越佳。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>下一跳</b> - 标识将数据包转发到的下一路由器的 IPv4 地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>路由时间戳</b> - 标识自从获取路由之后经过的时间。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>传出接口 </b>- 标识用于将数据包转发到最终目标的退出接口。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示 show ip route 命令输出中的一行，并突出显示每一项信息，如读数中所述。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

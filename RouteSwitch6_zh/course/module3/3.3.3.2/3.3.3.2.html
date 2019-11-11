@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.3.2 最佳路由 = 最长匹配</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>最佳路由 = 最长匹配</h1>
+        <div>
+          <p>路由器必须在路由表中找到最佳匹配意味着什么？最佳匹配等于最长匹配。 </p>
+          <p></p>
+          <p>要使数据包的目标 IPv4 地址和路由表中的路由形成匹配，两者之间从最左侧开始必须存在最少匹配位数。这个最少匹配位数由路由表中路由的子网掩码决定。请记住，IPv4 数据包仅包含 IPv4 地址，不包含子网掩码。 </p>
+          <p></p>
+          <p>最佳匹配是指路由表中与数据包的目标 IPv4 地址从最左侧开始存在最多匹配位数的路由。最左侧包含最多匹配位数（最长匹配）的路由总是首选路由。</p>
+          <p></p>
+          <p>在图中，将数据包发往 172.16.0.10。路由器包含三个可能与该数据包匹配的路由：172.16.0.0/12、172.16.0.0/18 和 172.16.0.0/26。在这三个路由中，172.16.0.0/26 的匹配位数最长，因此选择该路由来转发数据包。请记住，这几条路由必须达到其子网掩码所指定的最少匹配位数，才会被视为匹配路由。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示在路由表中检查最长匹配项的流程。数据包的目标地址为 172.16.0.10，第一步是以二进制格式列出地址，该地址为 10101100.00010000.00000000.00001010。有三个路由可用于通往目标，因此路由器必须查看每个路由并从左向右比较二进制值。匹配子网掩码内最多位数的路由即是所选路由。三个选项分别为 /12、/18 和 /26。目标数据包匹配具有 /26 的最多位数，因此这将是所选路由。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

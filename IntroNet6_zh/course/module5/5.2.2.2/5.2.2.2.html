@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.2.2 直通交换</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>直通交换</h1>
+        <div>
+          <p>在直通交换中，交换机在收到数据时立即处理数据，即使传输尚未完成。交换机只缓冲帧的一部分，缓冲的量仅足以读取目的 MAC 地址，以便确定转发数据时应使用的端口。目的 MAC 地址位于帧中前导码后面的前 6 个字节。交换机在其交换表中查找目的 MAC 地址，确定外发接口端口，然后通过指定的交换机端口将帧转发到其目的地。交换机对该帧不执行任何错误检查。 </p>
+          <p>播放直通交换过程的演示动画。</p>
+          <p>直通交换有两种变体：</p>
+          <p>
+            <ul>
+              <li>
+                <b>快速转发交换 -</b> 快速转发交换提供最低程度的延时。快速转发交换在读取目的地址之后立即转发数据包。由于快速转发交换在收到整个数据包之前就开始转发，因此有时候中继数据包时会出错。这种情况并不经常发生，而且目的网络适配器在收到含错数据包时会将其丢弃。在快速转发模式下，延时是指从收到第一个位到传出第一个位之间的时间差。快速转发交换是典型的直通交换方法。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>免分片交换 -</b> 在免分片交换中，交换机在转发之前存储帧的前 64 个字节。可以将免分片交换视为存储转发交换和直通交换之间的折衷。免分片交换只存储帧的前 64 个字节的原因是，大部分网络错误和冲突都发生在前 64 个字节。免分片交换在转发帧之前对帧的前 64 个字节执行小错误检查以确保没有发生过冲突，并且尝试通过这种方法来增强快速转发交换功能。免分片交换是存储转发交换的高延时和高完整性与快速转发交换的低延时和弱完整性之间的折衷。</li>
+            </ul>
+          </p>
+          <p>某些交换机可配置为按端口执行直通交换，当达到用户定义的错误阈值时，这些端口自动切换为存储转发。当错误率低于该阈值时，端口自动恢复到直通切换。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is an animation showing that a switch starts forwarding the frame before it receives the entire frame.  This is known as cut through switching.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

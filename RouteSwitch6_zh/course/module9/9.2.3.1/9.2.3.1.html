@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.3.1 配置 PAT：地址池</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置 PAT：地址池</h1>
+        <div>
+          <p>PAT（也称为 NAT 过载）允许路由器为许多内部本地地址使用一个内部全局地址，从而节省了内部全局地址池中的地址。换句话说，一个公有 IPv4 地址可用于数百甚至数千个内部私有 IPv4 地址。当配置了此类转换后，路由器会保存来自更高层协议的足够信息（例如 TCP 或 UDP 端口号），以便将内部全局地址转换回正确的内部本地地址。当多个内部本地地址映射到一个内部全局地址时，每台内部主机的 TCP 或 UDP 端口号可用于区分不同的本地地址。</p>
+          <p></p>
+          <p>
+            <b>注</b>：理论上，可转换为一个外部地址的内部地址总数量可高达每个 IPv4 地址 65,536 个。不过，能被赋予单一 IPv4 地址的内部地址数量约为 4000 个。</p>
+          <p></p>
+          <p>配置 PAT 的方法有两种，具体采用哪一种则取决于 ISP 分配公有 IPv4 地址的方式。第一种分配方式是，ISP 为企业分配多个公有 IPv4 地址，而另一种是，它为企业分配单个 IPv4 地址，使其通过该地址连接到 ISP。</p>
+          <p></p>
+          <p>
+            <b>为公有 IPv4 地址池配置 PAT</b>
+          </p>
+          <p></p>
+          <p>如果某个站点发出了多个公有 IPv4 地址，这些地址可能是 PAT 使用的地址池的一部分。这与动态 NAT 相似，不同之处在于没有足够的公有地址可用于内部到外部地址的一对一映射。因此这个小的地址池由更多设备之间共享。 </p>
+          <p></p>
+          <p>图 1 显示了使用地址池配置 PAT 的步骤。这种配置与动态、一对一 NAT 配置的主要区别是前者使用了 <b>overload</b> 关键字。<b>overload</b> 关键字会启用 PAT。</p>
+          <p></p>
+          <p>图 2 所示示例配置中为名为 NAT-POOL2 的 NAT 池建立了过载转换。NAT-POOL2 包含 209.165.200.226 到 209.165.200.240 范围内的地址。192.168.0.0/16 网络上的主机需要转换。S0/0/0 接口标识为内部接口，而 S0/1/0 接口标识为外部接口。</p>
+          <p></p>
+          <p>使用图 3 中的语法检查器，在 R2 上使用地址池配置 PAT。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示的表格列出了配置端口地址转换中涉及的步骤和命令，也称为 PAT 或过载 NAT。图 2 显示了配置 PAT 的语法，其中包括池、ACL，将 ACL 与池映射，以及定义内部接口和外部接口。图 3 是交互练习，使学习者可以练习如何配置 PAT。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

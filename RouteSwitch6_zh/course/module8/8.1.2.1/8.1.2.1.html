@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.2.1 配置基本 DHCPv4 服务器</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置基本 DHCPv4 服务器</h1>
+        <div>
+          <p>可以将运行思科 IOS 软件的思科路由器配置为 DHCPv4 服务器。思科 IOS DHCPv4 服务器从路由器内的指定地址池分配 IPv4 地址给 DHCPv4 客户端，并管理这些 IP 地址。图 1 显示的拓扑结构用于说明此功能。</p>
+          <p></p>
+          <p>
+            <b>步骤 1.排除 IPv4 地址</b>
+          </p>
+          <p></p>
+          <p>除非配置为排除特定地址，否则路由器将充当 DHCPv4 服务器分配 DHCPv4 地址池中的所有 IPv4 地址。通常，将池中的某些 IPv4 地址分配给需要静态地址分配的网络设备。因此，这些 IPv4 地址不应分配给其他设备。如图 2 所示，要排除特定地址，请使用 <b>ip dhcp excluded-address</b> 命令。</p>
+          <p></p>
+          <p>可以通过指定范围内的低位地址和高位地址来排除单个地址或多个地址。排除地址应包括分配给路由器、服务器、打印机和其他已经或者将手动配置的设备的地址。</p>
+          <p></p>
+          <p>
+            <b>步骤 2.配置 DHCPv4 池</b>
+          </p>
+          <p></p>
+          <p>配置 DHCPv4 服务器包括定义待分配的地址池。如图 3 所示，<b>ip dhcp pool </b><i>池名称</i> 命令创建具有特定名称的地址池，并使路由器进入 DHCPv4 配置模式，可通过 Router(dhcp-config)# 提示来识别。</p>
+          <p></p>
+          <p>
+            <b>步骤 3.配置特定任务</b>
+          </p>
+          <p></p>
+          <p>图 4 列出了完成 DHCPv4 池配置需执行的任务。有些任务可以选择性完成，有些任务则必须完成。 </p>
+          <p></p>
+          <p>必须配置地址池和默认网关路由器。使用 <b>network</b> 语句定义可用地址范围。 </p>
+          <p>使用 <b>default-router</b> 命令定义默认网关路由器。通常，网关是最接近客户端设备的路由器的 LAN 接口。虽然只需要一个网关，但是如果有多个网关，您最多可以列出八个地址。</p>
+          <p></p>
+          <p>其他 DHCPv4 池命令为可选命令。例如，使用 <b>dns-server</b> 命令配置 DHCPv4 客户端可用的 DNS 服务器 IPv4 地址。<b>domain-name </b><i>domain</i> 命令用于定义域名。使用 <b>lease</b> 命令可以更改 DHCPv4 租期。默认租用值为一天。<b>netbios-name-server</b> 命令用于定义 NetBIOS WINS 服务器。</p>
+          <p></p>
+          <p>
+            <b>DHCPv4 示例</b>
+          </p>
+          <p></p>
+          <p>图 5 显示了在路由器 R1 上配置了基本 DHCPv4 参数的配置示例。使用图 1 中的拓扑示例，将 R1 配置为 192.168.10.0/24 LAN 的 DHCPv4 服务器。</p>
+          <p></p>
+          <p>
+            <b>禁用 DHCPv4</b>
+          </p>
+          <p></p>
+          <p>默认情况下，DHCPv4 服务已启用。要禁用此服务，请使用 <b>no service dhcp</b> 全局配置模式命令。使用 <b>service dhcp</b> 全局配置模式命令可重新启用 DHCPv4 服务器进程。如果没有配置参数，启用服务将不会有效果。</p>
+          <p></p>
+          <p>使用图 6 中的语法检查器练习在 R1 上配置 192.168.11.0/24 LAN 的类似 DHCPv4 参数。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示三个路由器的网络拓扑。R2 在中间，有一个 WAN 串行链路连接到 R1，一个 WAN 串行链路连接到 R3。R1 和 R3 没有直接相连。R1 有两个活动的千兆以太网 LAN。其中每个 LAN 都连接一台交换机，每台交换机连接一个计算机。还有一个 DHCP 服务器连接到 S2。R3 有一个活动的千兆以太网 LAN，其包含交换机和计算机。图 2 显示了用于从 DHCP 池中排除特定地址的命令。命令是 IP DHCP excluded-address。后面紧跟特定地址或地址范围。列举了两个示例。第一个示例列出一个范围，命令是，IP DHCP excluded-address 192.168.10.1 192.168.10.9第二个示例列出一个地址，命令是，IP DHCP excluded-address 192.168.10.254。图 3 显示了用于创建 DHCP 池的命令。该命令是 IP DHCP pool，后面跟池名称。该示例为 IP DHCP pool LAN-POOL-1。图 4 列出了配置 DHCP 时的两个必需参数。这两个参数定义地址池并定义默认路由器或网关。可选任务包括定义 DNS　服务器、定义域名、设置 DHCP 租用时间以及定义 BIOS WINS 服务器。图 5 继续显示 DHCP 配置示例。下一条命令设置网络范围，命令为 network 192.168.10.0 255.255.255.0。下一条命令是 default-router 192.168.11.5。DNS 服务器使用命令 domain-name example.com 配置。图 6 是一个互动练习，允许学生将路由器配置为 DHCPv4 服务器。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

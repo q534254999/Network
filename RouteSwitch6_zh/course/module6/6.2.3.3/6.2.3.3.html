@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.3.3 TRUNK 故障排除简介</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>TRUNK 故障排除简介</h1>
+        <div>
+          <p>网络管理员的一项常见任务是对中继形成过程或端口错误地作为中继端口进行故障排除。有时交换机端口可以充当 TRUNK 端口，即使它未配置为 TRUNK 端口。例如，接入端口可以接受来自除其所分配的 VLAN 以外的 VLAN 的帧。这称为 VLAN 泄漏。</p>
+          <p></p>
+          <p>图 1 显示了通用 TRUNK 故障排除指南的流程图。</p>
+          <p></p>
+          <p>当没有形成 TRUNK 或发生 VLAN 泄漏时，请按以下步骤排除故障：</p>
+          <p></p>
+          <p>
+            <b>步骤 1</b>.使用 <b>show interfaces trunk </b>命令检查本地和对等本征 VLAN 是否匹配。如果两端的本征 VLAN 不匹配，则发生了 VLAN 泄漏。 </p>
+          <p></p>
+          <p>
+            <b>步骤 2</b>.使用 <b>show interfaces trunk</b> 命令检查是否已在交换机之间建立 TRUNK。尽可能静态配置 TRUNK 链路。默认情况下，思科 Catalyst 交换机端口使用 DTP 并尝试协商 TRUNK 链路。</p>
+          <p></p>
+          <p>要显示 TRUNK 的状态、该 TRUNK 链路所用的本征 VLAN 和验证 TRUNK 建立情况，请使用<b> show interfaces trunk</b> 命令。图 2 中的示例显示 TRUNK 链路一端上的本征 VLAN 已更改为 VLAN 2。如果 TRUNK 一端配置为本征 VLAN 99，另一端配置为本征 VLAN 2，那么从一端的 VLAN 99 发出的帧会在另一端的 VLAN 2 上接收。VLAN 99 泄漏到 VLAN 2 网段。</p>
+          <p></p>
+          <p>CDP 显示 TRUNK 链路上本征 VLAN 不匹配的通知，显示以下消息：</p>
+          <p></p>
+          <p>
+            <span class="cmd">*Mar  1 06:45:26.232: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on FastEthernet0/1 (2), with S2 FastEthernet0/1 (99).</span>
+          </p>
+          <p></p>
+          <p>如果本征 VLAN 不匹配，网络中会发生连接问题。除配置的两个本征 VLAN 之外，VLAN 的数据流量通过 TRUNK 链路成功传播，但是与任一本征 VLAN 关联的数据不能通过 TRUNK 链路成功传播。 </p>
+          <p></p>
+          <p>如图 2 所示，本征 VLAN 不匹配问题不会阻止中继的形成。要解决本征 VLAN 不匹配问题，请在链路两端将本征 VLAN 配置为同一 VLAN。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 是显示在使用 VLAN 时诊断中继链路问题所涉及步骤的流程图。图 2 显示交换机 1 上“show interfaces f0/1 trunk”命令的输出。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

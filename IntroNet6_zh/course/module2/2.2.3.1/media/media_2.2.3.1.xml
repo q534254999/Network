@@ -1,0 +1,1 @@
+﻿<textcomponents><!--Slide 1--><component id="ID_title"><text><![CDATA[<b>查看和保存配置</b>]]></text></component><component id="ID_txt01"><text><![CDATA[列出 RAM 中当前处于活动状态的全部配置。]]></text></component><component id="ID_txt02"><text><![CDATA[活动配置可复制到 NVRAM。]]></text></component><component id="ID_txt03"><text><![CDATA[省略部分输出]]></text></component><!--End Slide 1--></textcomponents>

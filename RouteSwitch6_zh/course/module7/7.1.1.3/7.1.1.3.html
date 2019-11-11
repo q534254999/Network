@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.1.3 ACL 工作原理</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>ACL 工作原理</h1>
+        <div>
+          <p>ACL 定义了一组规则，用于对进入入站接口的数据包、通过路由器中继的数据包，以及从路由器出站接口输出的数据包施加额外的控制。ACL 对路由器自身产生的数据包不起作用。 </p>
+          <p></p>
+          <p>如图所示，ACL 可配置为应用于入站流量和出站流量。</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>入站 ACL</b> - 传入数据包经过处理之后才会被路由到出站接口。因为如果数据包被丢弃，就节省了执行路由查找的开销，所以入站 ACL 非常高效。如果 ACL 允许该数据包，则会处理该数据包以进行路由。当与入站接口连接的网络是需要检测的数据包的唯一来源时，最适合使用入站 ACL 来过滤数据包。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>出站 ACL</b> - 传入数据包路由到出站接口后，由出站 ACL 进行处理。在来自多个入站接口的数据包通过同一出站接口之前，对数据包应用相同过滤器时，最适合使用出站 ACL。 </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示了一个路由器，其中有一个数据包即将进入某个端口。该数据包将通过入站 ACL 处理。该图还显示有一个数据包正在离开路由器。该数据包将通过出站 ACL 处理。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

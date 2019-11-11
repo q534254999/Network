@@ -1,0 +1,20 @@
+﻿<textcomponents>
+<component id="ID_s1_txt01"><text>
+<![CDATA[<b>终端设备</b>]]></text></component>
+<component id="ID_s1_txt02"><text>
+<![CDATA[台式计算机]]></text></component>
+<component id="ID_s1_txt03"><text><![CDATA[笔记本电脑]]></text></component>
+<component id="ID_s1_txt04"><text><![CDATA[打印机]]></text></component>
+<component id="ID_s1_txt05"><text><![CDATA[IP 电话]]></text></component>
+<component id="ID_s1_txt06"><text><![CDATA[无线平板电脑]]></text></component>
+<component id="ID_s1_txt07"><text><![CDATA[网真端点]]></text></component>
+<component id="ID_txt01"><text><![CDATA[介质]]></text></component>
+<component id="ID_txt02"><text><![CDATA[<b>网际网络<b>]]></text></component>
+<component id="ID_txt03-1"><text><![CDATA[LAN]]></text></component>
+<component id="ID_txt03-2"><text><![CDATA[LAN]]></text></component>
+<component id="ID_txt04"><text><![CDATA[消息可以采用备用路由。]]></text></component>
+<component id="ID_txt05"><text><![CDATA[数据从终端设备发出，流经网络，然后到达终端设备。]]></text></component>
+<component id="end"><text><![CDATA[结束]]></text></component><component id="fforward"><text><![CDATA[快进]]></text></component><component id="pause"><text><![CDATA[暂停]]></text></component>
+<component id="play"><text><![CDATA[播放]]></text></component><component id="rewind"><text><![CDATA[快退]]></text></component>
+<component id="start"><text><![CDATA[开始]]></text></component>
+</textcomponents>

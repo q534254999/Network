@@ -1,0 +1,1 @@
+图中显示交换机上“show vlan brief”命令的输出。

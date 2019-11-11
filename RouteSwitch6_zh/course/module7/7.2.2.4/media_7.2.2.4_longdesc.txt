@@ -1,0 +1,1 @@
+图一显示使用命令 show ip interface 显示已应用的任何 ACL。图中显示命令 show ip interface serial 0/0/0 的输出。以下行高亮显示，其中出站访问列表是 1。对千兆以太网接口再次运行该命令，然后输出中会列出出站访问列表为 no_access list，这是一个命名 ACL。图 2 显示 show access-lists 命令的输出。这将显示路由器上所有 ACL 的完整内容，但是不会指明每个 ACL 放置在什么位置。

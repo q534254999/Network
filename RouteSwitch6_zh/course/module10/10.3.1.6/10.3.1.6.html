@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.1.6 使用 USB 备份和恢复</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>使用 USB 备份和恢复</h1>
+        <div>
+          <p>
+            <b>使用 USB 闪存驱动器备份配置</b>
+          </p>
+          <p></p>
+          <p>当备份到 USB 端口时，最好发出 <b>show file systems</b> 命令验证端口上是否有 USB 驱动器并确认名称，如图 1 所示。 </p>
+          <p></p>
+          <p>接下来，使用 <b>copy run usbflash0:</b><i>/</i> 命令将运行配置文件复制到 USB 闪存驱动器。请务必使用文件系统中所表示的闪存驱动器名称。可以选用斜线，但它表示 USB 闪存驱动器的根目录。 </p>
+          <p></p>
+          <p>IOS 将提示输入文件名。如果 USB 闪存驱动器上已存在该文件，则路由器将提示会进行覆盖，如图 2 所示。</p>
+          <p></p>
+          <p>使用 <b>dir</b> 命令可查看 USB 驱动器上的文件，使用 <b>more</b> 命令可查看文件内容，如图 3 所示。</p>
+          <p></p>
+          <p>
+            <b>使用 USB 闪存驱动器恢复配置</b>
+          </p>
+          <p></p>
+          <p>若要将文件复制回来，就必须使用文本编辑器编辑 USB R1-Config 文件。假设文件名为 <b>R1-Config</b>，则使用命令 <b>copy usbflash0:/R1-Config </b><i>running-config</i> 来恢复运行配置。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示路由器上 show file systems 命令的输出。突出显示了 usbflash0: 文件系统。图 2 显示了“copy running-config usbflash0:”命令的输出两次。一次是目标文件不存在，一次是目标文件存在。如果目标文件已存在，将提示用户覆盖此文件。图 3 显示了“dir usbflash0:/”命令的输出。它还证明了使用“more usbflash0:/R1-Config”命令可以查看闪存中的“R1-config”文件。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

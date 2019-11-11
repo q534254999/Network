@@ -1,0 +1,66 @@
+<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>管理端口和接口</b>]]></text>
+    </component>
+    <component id="ID_s1_titleTxt01">
+        <text>
+            <![CDATA[带内路由器接口]]>
+        </text>
+    </component>
+    <component id="ID_s1_titleTxt012">
+        <text>
+            <![CDATA[&nbsp;]]>
+        </text>
+    </component>
+    <component id="ID_s1_bodyTxt01">
+        <text>
+            <![CDATA[是配置有 IP 编址的 LAN（例如千兆以太网）和 WAN（例如 eHWIC）接口，用于传输用户流量。以太网接口是最常见的 LAN 连接，而常见 WAN 连接包括串行接口和 DSL 接口。]]></text>
+    </component>
+    <component id="ID_s1_titleTxt02">
+        <text>
+            <![CDATA[管理端口]]>
+        </text>
+    </component>
+    <component id="ID_s1_titleTxt011">
+        <text>
+            <![CDATA[&nbsp;]]>
+        </text>
+    </component>
+    <component id="ID_s1_bodyTxt02">
+        <text>
+            <![CDATA[包括用于路由器配置、管理和故障排除的控制台和 AUX 端口。与 LAN 接口和 WAN 接口不同，管理端口不用于转发数据包用户流量。]]></text>
+    </component>
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>带内路由器接口</b>]]></text>
+    </component>
+    <component id="ID_s2_titleTxt01">
+        <text>
+            <![CDATA[串行 WAN 接口]]>
+        </text>
+    </component>
+    <component id="ID_s2_titleTxt012">
+        <text>
+            <![CDATA[&nbsp;]]>
+        </text>
+    </component>
+    <component id="ID_s2_bodyTxt01">
+        <text>
+            <![CDATA[连接到 eHWIC0 和标有 Serial 0（例如 S0/0/0）和 Serial 1（例如 S0/0/1）的接口。串行接口用于将路由器连接到外部 WAN 网络。每个串行 WAN 接口都有自己的 IP 地址和子网掩码，这些可将接口标识为特定网络的成员。]]></text>
+    </component>
+    <component id="ID_s2_titleTxt02">
+        <text>
+            <![CDATA[以太网 LAN 接口]]>
+        </text>
+    </component>
+    <component id="ID_s2_titleTxt011">
+        <text>
+            <![CDATA[&nbsp;]]>
+        </text>
+    </component>
+    <component id="ID_s2_bodyTxt02">
+        <text>
+            <![CDATA[标有 GE 0/0（例如 G0/0）和 GE 0/1（例如 G0/1）的接口。以太网接口用于连接其他支持以太网的设备，包括交换机、路由器、防火墙等。每个 LAN 接口都有自己的 IPv4 地址和子网掩码和/或 IPv6 地址和前缀，这些可将接口标识为特定网络的成员。]]></text>
+    </component>
+</textcomponents>

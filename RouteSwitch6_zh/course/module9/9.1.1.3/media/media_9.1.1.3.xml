@@ -1,0 +1,50 @@
+<textcomponents>
+ <component id="ID_title">
+ <text><![CDATA[<b>NAT 地址的类型</b>]]></text>
+ </component>
+ <component id="ID_txt01">
+ <text><![CDATA[SA<br/>内部本地<br/>192.168.10.10]]></text>
+ </component>
+<component id="ID_txt02">
+ <text><![CDATA[DA<br/>外部本地<br/>209.165.201.1]]></text>
+ </component>
+<component id="ID_txt03">
+ <text><![CDATA[SA<br/>内部全局<br/>209.165.200.226]]></text>
+ </component>
+<component id="ID_txt11">
+ <text><![CDATA[DA<br/>外部全局<br/>209.165.201.1]]></text>
+ </component>
+<component id="ID_txt04">
+ <text><![CDATA[<b>网络内部</b>]]></text>
+ </component>
+<component id="ID_txt05">
+ <text><![CDATA[<b>网络外部</b>]]></text>
+ </component>
+<component id="ID_txt06">
+ <text><![CDATA[192.168.10.10<br/><b>内部地址</b>]]></text>
+ </component>
+<component id="ID_txt07">
+ <text><![CDATA[网络内部]]></text>
+ </component>
+<component id="ID_txt08">
+ <text><![CDATA[<b>本地地址</b>]]></text>
+ </component>
+<component id="ID_txt09">
+ <text><![CDATA[<b>全局地址</b>]]></text>
+ </component>
+<component id="ID_txt10">
+ <text><![CDATA[209.165.201.1<br/><b>外部地址</b>]]></text>
+ </component>
+
+
+
+<component id="ID_txt12">
+   <text><![CDATA[Web 服务器]]></text>
+   </component>
+
+   <component id="ID_txt13">
+   <text><![CDATA[ISP]]></text>
+   </component>
+ 
+
+</textcomponents>

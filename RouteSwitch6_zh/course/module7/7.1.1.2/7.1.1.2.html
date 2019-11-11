@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.1.2 数据包过滤</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>数据包过滤</h1>
+        <div>
+          <p></p>
+          <p></p>
+          <p>ACL 是一系列被称为访问控制条目 (ACE) 的 permit 或 deny 语句组成的顺序列表。ACE 通常也称为 ACL 语句。当网络流量经过配置了 ACL 的接口时，路由器会将数据包中的信息与每个 ACE 按顺序进行比较，以确定数据包是否匹配其中一个 ACE。此过程称为数据包过滤。</p>
+          <p></p>
+          <p>数据包过滤通过分析传入和传出的数据包，然后根据特定条件转发或丢弃分析后的数据包，从而控制对网络的访问。如图所示，数据包分析可以发生在第 3 层或第 4 层。标准 ACL 仅在第 3 层执行过滤。扩展 ACL 在第 3 层和第 4 层执行过滤。 </p>
+          <p></p>
+          <p>
+            <b>注</b>：扩展 ACL 不在本课程的讨论范围之内。</p>
+          <p></p>
+          <p>源 IPv4 地址是在标准 IPv4 ACL 的每个 ACE 中设置的过滤条件。配置了标准 IPv4 ACL 的路由器从数据包报头中提取源 IPv4 地址。路由器从 ACL 顶部开始，按顺序将地址与每个 ACE 进行比较。当找到一个匹配项时，路由器执行指令，允许或拒绝数据包。在匹配之后，不会继续分析 ACL 中剩余的 ACE（如有）。如果源 IPv4 地址不匹配 ACL 中的任何 ACE，则数据包会被丢弃。 </p>
+          <p></p>
+          <p>ACL 的最后一条语句都是隐式拒绝语句。每个 ACL 的末尾都会自动插入此语句，尽管实际上 ACL 中并无此语句。隐式拒绝语句会阻止所有流量，由于具有此隐式拒绝语句，一条 permit 语句也没有的 ACL 将会阻止所有流量。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示 OSI 模型的 7 个层级。文字说明指出“数据包过滤在第 3 层和第 4 层上运行。”</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.5.2 激活评估使用权许可证</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.5.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>激活评估使用权许可证</h1>
+        <div>
+          <p>评估许可证在 60 天后替换为评估使用权许可证 (RTU)。评估许可证在 60 天的评估期内有效。在 60 天后，此许可证将自动过渡为 RTU 许可证。这些许可证可在荣誉系统上使用，并且需要客户接受 EULA。EULA 会自动应用于所有思科 IOS 软件许可证。 </p>
+          <p></p>
+          <p><b>license accept end user agreement</b> 全局配置模式命令用于为所有思科 IOS 软件包和功能配置 EULA 的一次性接受。在发出此命令并接受 EULA 后，EULA 会自动应用于所有思科 IOS 软件许可证，而且在许可证安装过程中，系统不再提示用户接受 EULA。</p>
+          <p></p>
+          <p>图 1 显示了如何配置 EULA 的一次性接受：</p>
+          <p></p>
+          <p>Router(config)# <b>license accept end user agreement</b></p>
+          <p></p>
+          <p>此外，图 1 还显示了用于激活评估 RTU 许可证的命令：</p>
+          <p></p>
+          <p>Router# <b>license boot module </b><i>模块名称</i><b> 技术包 </b><i>包名称</i></p>
+          <p></p>
+          <p>使用 <b> ? </b>代替参数来确定路由器上有哪些可用的模块名称和受支持的软件包。用于思科 ISR G2 平台的技术包名称是：</p>
+          <p>
+            <ul>
+              <li>
+                <b>ipbasek9 </b>- IP Base 技术包</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>securityk9 </b> - 安全技术包 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>datak9</b> - 数据技术包</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>uck9</b> - 统一通信包（在 1900 系列上不可用）</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>注</b>：激活软件包需要使用 <b>reload</b> 命令重新加载。</p>
+          <p></p>
+          <p>评估许可证是临时的，用于评估新硬件上的功能集。临时许可证具有特定的使用期限（例如 60 天）。</p>
+          <p></p>
+          <p>使用 <b>reload</b> 命令成功安装许可证后，重新加载路由器。图 2 中的 <b>show license</b> 命令用于验证许可证是否已安装。</p>
+          <p></p>
+          <p>使用图 3 中的语法检查器接受 EULA 并激活 1900 路由器上的评估 RTU 数据技术包许可证。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示了接受最终用户协议和安装评估许可证的语法。图 2 显示路由器 1 上“show license”命令的输出。许可证类型是评估使用权。图 3 是互动练习，让学生练习安装评估许可证。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

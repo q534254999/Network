@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.2.3 验证无状态 DHCPv6 </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>验证无状态 DHCPv6 </h1>
+        <div>
+          <p>
+            <b>验证无状态 DHCPv6 服务器</b>
+          </p>
+          <p></p>
+          <p>在图 1 中，<b>show ipv6 dhcp pool</b> 命令验证 DHCPv6 池及其参数的名称。因为没有正处于服务器维护下的状态，所以处于活动状态的客户端数量为 0。</p>
+          <p></p>
+          <p><b>show running-config</b> 命令还可用于验证以前配置的所有命令。</p>
+          <p></p>
+          <p>
+            <b>验证无状态 DHCPv6 客户端</b>
+          </p>
+          <p></p>
+          <p>在本示例中，将路由器用作无状态 DHCPv6 客户端。在图 2 中，<b>show ipv6 interface</b> 命令的输出显示路由器已“启用无状态地址自动配置”并拥有 IPv6 全局单播地址。使用 SLAAC 创建 IPv6 全局单播地址，其中包括 RA 消息中包含的前缀。使用 EUI-64 生成 IID。不使用 DHCPv6 分配 IPv6 地址。</p>
+          <p></p>
+          <p>默认路由器信息也来自 RA 消息。这是数据包的源 IPv6 地址，该数据包包含 RA 消息和路由器的本地链路地址。</p>
+          <p></p>
+          <p>在图 3 中，<b>debug ipv6 dhcp detail</b> 命令的输出显示在客户端和服务器之间交换了 DHCPv6 消息。在本示例中，客户端上已输入此命令。显示 INFORMATION-REQUEST 消息是因为该消息是从无状态 DHCPv6 客户端发出的。请注意，客户端（路由器 R3）正在将 DHCPv6 消息从其本地链路地址发送到 All_DHCPv6_Relay_Agents_and_Servers address 地址 FF02::1:2。</p>
+          <p></p>
+          <p>调试输出显示了客户端和服务器之间发送的所有 DHCPv6 消息，包括 DNS 服务器和配置在该服务器上的域名选项。</p>
+          <p></p>
+          <p>使用图 4 中的语法检查器配置和验证路由器上的无状态 DHCPv6。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示命令 show ipv6 dhcp pool 的输出。这将显示路由器上的 DHCPv6 配置。图 2 显示命令 show ipv6 interface g 0/1 的输出。在图中突出显示了指出路由器已启用无状态地址自动配置的行、IPv6 地址以及默认的路由器地址配置。图 3 显示命令 debug ipv6 dhcp detail 的输出。在图中突出显示了客户端和服务器之间发送的所有 DHCPv6 消息，包括 DNS 服务器和配置在该服务器上的域名选项。图 4 是交互练习，使学习者可以在路由器上配置并验证无状态 DHCP V6。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

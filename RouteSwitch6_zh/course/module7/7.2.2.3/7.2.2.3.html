@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.2.3 编辑标准命名 ACL</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>编辑标准命名 ACL</h1>
+        <div>
+          <p>上述示例中使用了序号来编辑标准编号 IPv4 ACL。通过引入语句序号，可以很容易地插入或删除单条语句。此方法也可用于编辑标准命名 ACL。</p>
+          <p></p>
+          <p>图中显示了在命名 ACL 中插入一条语句的示例。 </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>在第一个 <b>show</b> 命令的输出中，您可以看到名为 NO_ACCESS 的 ACL 有两条编号的语句，指示 IPv4 地址为 192.168.11.10 的工作站的访问规则。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>可以从命名访问列表配置模式插入或删除语句。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>要添加一条拒绝另一个工作站的语句，则需要插入一个编号的语句。在本示例中，使用新的序号 15 添加 IPv4 地址为 192.168.11.11 的工作站。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>最后的 <b>show</b> 命令输出确认新添加的工作站现在拒绝访问。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>注</b>：在命名访问列表配置模式下，使用 <b>no </b><i>sequence-number</i> 命令可以快速删除单条语句。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示在现有 ACL 中插入语句的过程。图中显示名称为 no_access 的现有 ACL。该 ACL 有两个条目，第 10 行和第 20 行。然后，图中显示了在现有的两行之间添加一行。使用命令 15 deny host 192.168.11.11 添加此行。ACL 的内容使用命令 show access-lists 显示，图中突出显示了编号为 15 的行，此行位于第 10 行和第 20 行之间。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

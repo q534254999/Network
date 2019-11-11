@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.1.4 二进制到十进制的转换</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>二进制到十进制的转换</h1>
+        <div>
+          <p>要将二进制 IPv4 地址转换为其点分十进制等值，将 IPv4 地址分为四个 8 位二进制八位数。下一步，将二进制位置值应用于第一个二进制八位数二进制数字并进行相应计算。 </p>
+          <p>例如，将 11000000.10101000.00001011.00001010 作为主机的二进制 IPv4 地址。要将这个二进制地址转换为十进制，先转换第一个二进制八位数（如图 1 所示）。在第 1 行的位置值下输入 8 位二进制数字，然后计算出十进制数字 192。192 为点分十进制记法的第一个二进制八位数。 </p>
+          <p>下一步转换第二个二进制八位数（如图 2 所示）。结果十进制值为 168，它属于第二个二进制八位数。</p>
+          <p>转换第三个二进制八位数（如图 4 所示），和第四个二进制八位数（根据图 5 所示），IP 地址转换完成并计算出 <b>192.168.11.10。</b></p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figures 1 through 4show an example of using the binary positional notation table to convert a binary IP address to the dotted decimal address, 192.168.11.10. Each figure shows one of the four octets being converted to decimal.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

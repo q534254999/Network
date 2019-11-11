@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.1.5 消息大小</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>消息大小</h1>
+        <div>
+          <p>通信的另一条规则是大小。人们在相互交流时，他们发送的消息通常会分成较小的部分或较短的句子。这些句子的大小限制为接收方一次可以处理的大小，如图 1 所示。在交谈时，为确保对方收到和理解话语的每个部分，可以将谈话内容分成许多短句。如果本课程单元的所有内容显示为一个长句子，读起来会怎样？很显然，结果将难以阅读和理解。</p>
+          <p></p>
+          <p>同样，将一条长消息通过网络从一台主机发送到另一台主机时，也必须将其分为许多小片段，如图 2 所示。控制网络中传送的消息片段（帧）大小的规则非常严格，并且不同的渠道有不同的规则。帧太长或太短都无法传送。 </p>
+          <p></p>
+          <p>帧大小限制规则要求源主机将长消息分割为同时符合最小和最大长度要求的多个片段。长消息必须分成不同的帧发送，其中每个帧包含原始消息的一个片段。每个帧还将拥有自己的编址信息。在接收主机上，消息的各个片段会重新组合为原始消息。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 is an animation of the communication process between two people, specifically on the message size. A woman is thinking of a message, she formulates the message and transmits it to a man very quickly with no spacing between the words.  The man cannot process the information in this manner and has to ask for it to be re-sent in a slower and organized fashion.  The woman complies and this time the man can understand the information.  This represents segmenting of data. Figure 2 is an animation of the communication process between two computers. The data is sent from one computer to another very quickly and with no breaks, which the receiving computer cannot process.   The sending computer repeats sending data and the second time it segments the message, which can then be processed by the receiving computer.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>TCP 拥塞控制</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[TCP 数据段 1]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[TCP 数据段 2]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[TCP 数据段 3]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[TCP 数据段 4]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[确认数据段 1]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[确认数据段 2]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[TCP 数据段 2]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[TCP 数据段 3]]></text>
+	</component>
+	<component id="ID_s1_instr_body">
+		<text><![CDATA[确认号是下一个预期字节的，而不是数据段的。简化使用的数据段号用作说明。]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[我没有从 PC B 获得期望的确认，所以我将在获得确认前减少我发送的字节数量。]]></text>
+	</component>
+</textcomponents>

@@ -1,0 +1,56 @@
+﻿<textcomponents>
+
+<component id="ID_s1_title">
+		<text><![CDATA[<b>故障排除方法的六个步骤</b>]]></text>
+	</component>
+
+
+<component id="ID_table">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+		<tr class="mtable_title">
+			<td colspan="3" bgcolor='#FFFFFF'><font size="16"></font></td>
+		</tr>
+		
+		<tr class="mtable_top">
+			<td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+		
+		<tr>
+			<td bgcolor='#666263'  valign="top"  width="50"><font color='#FFFFFF' ><b>步骤</b></font></td>
+			<td bgcolor='#666263'  valign="top" width="170"><font color='#FFFFFF' ><b>标题</b></font></td>
+			<td bgcolor='#666263'  valign="top" ><font color='#FFFFFF' ><b>说明</b></font></td>
+		</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'><font color='#393536'>1</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>识别问题</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>故障排除流程中的第一步是识别问题。 虽然此步骤中可以使用工具，但与用户对话往往非常有用。</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'><font color='#393536'>2</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>推测潜在原因</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>在与用户联系并确定问题后，您可以尝试推测潜在原因。 此步骤通常会得出问题的多种潜在原因。</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'><font color='#393536'>3</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>测试推测以确定原因</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>根据潜在原因测试您的推测，以确定哪个是导致问题的原因。 技术人员通常会应用快速程序测试潜在原因，看其是否能解决问题。 如果快速程序未能纠正问题，则您可能需要进一步研究问题以确定确切原因。</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'><font color='#393536'>4</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>制定行动方案以解决问题并实施解决方案</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>在您确定了问题的确切原因后，请制定行动计划以解决问题并实施解决方案。</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'><font color='#393536'>5</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>检验完整的系统功能并实施预防措施</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>在您纠正了问题后，请检验完整功能，如果适用，并实施预防措施。</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'><font color='#393536'>6</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>记录调查结果、措施和结果</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>在故障排除流程的最后一步，记录您的调查结果、措施和结果。 这对于未来参考非常重要。</font></td>
+	</tr>
+
+</table>]]></text>
+</component>
+</textcomponents>

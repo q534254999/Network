@@ -1,0 +1,42 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<i><b>完成本练习后，请考虑通信中涉及以下因素的原因：</b><br/><br/><textformat blockindent="-14"><ul><li>重要数据在发送和接收时必须准确</li><li>在选择数据传输方法时需要考虑时间因素</li></ul></textformat></i>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[收件人：you@example.com<br>发件人：me@example.com<br>主题：电子邮件]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[电子邮件]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[即时<br/>消息]]></text>
+</component>
+
+
+<component id="ID_s1_txt04">
+<text><![CDATA[多个网页]]></text>
+</component>
+
+
+
+<component id="ID_s1_txt05">
+<text><![CDATA[IP 电话 (VoIP)]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[流视频]]></text>
+</component>
+
+<component id="ID_s1_txt07">
+<text><![CDATA[网络]]></text>
+</component>
+
+
+<component id="ID_s1_txt08">
+<text><![CDATA[]]></text>
+</component>
+
+</textcomponents>

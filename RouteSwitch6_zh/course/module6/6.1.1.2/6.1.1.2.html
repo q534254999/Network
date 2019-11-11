@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.1.2 VLAN 的优势</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>VLAN 的优势</h1>
+        <div>
+          <p>用户效率和网络适应性是企业发展与成功的重要因素。VLAN 更加便于网络为实现企业目标提供支持。使用 VLAN 主要有以下优点：</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>安全</b> － 含有敏感数据的用户组可与网络的其余部分隔离，从而降低泄露机密信息的可能性。如图所示，教师计算机位于 VLAN 10 上，与学生和访客数据流量完全独立。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>成本降低</b> － 成本高昂的网络升级需求减少，现有带宽和上行链路的利用率更高，因此可节约成本。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>性能提高</b> － 将第 2 层平面网络划分为多个逻辑工作组（广播域）可以减少网络上不必要的流量并提高性能。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>减小广播域大小</b> - 将网络划分为多个 VLAN 可减少广播域中的设备数量。如图所示，该网络中有六台计算机，但有三个广播域：Faculty、Student 和 Guest。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>提高 IT 员工效率</b> － VLAN 为管理网络带来了方便，因为有相似网络需求的用户将共享同一个 VLAN。当您为特定 VLAN 设置新的交换机时，之前为该 VLAN 配置的所有策略和程序均会在分配新端口后应用到端口上。另外，通过为 VLAN 设置一个适当的名称，IT 员工很容易就知道该 VLAN 的功能。在图中，为了便于识别，我们将 VLAN 10 命名为“Faculty”，将 VLAN 20 命名为“Student”，将 VLAN 30 命名为“Guest”。 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>简化项目管理和应用管理</b> - VLAN 将用户和网络设备聚合到一起，以支持商业需求或地域上的需求。通过划分职能，可以让管理项目或使用专业应用更加轻松；此类应用程序的一个例子是教师的电子学习开发平台。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>交换网络中的每个 VLAN 都对应一个 IP 网络。因此，VLAN 的设计必须考虑到分层网络编址方案的实施。分层网络编址意味着 IP 网络号以有序的方式应用到网段或 VLAN，将网络视为一个整体。如图所示，连续的网络地址块为网络特定区域中的设备预留并配置。 </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图中显示一个路由器连接到交换机 1。交换机通过中继链路连接到交换机 2 和 3。交换机 2 和 3，每个有三个 VLAN。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+﻿<textcomponents><component id="MCTable_title"><text><![CDATA[ ]]></text></component><!-- slide01--><component id='ID_inst'>
+	<text><![CDATA[<b>练习 - 帧转发方法</b><br><br>表中提供了交换机的帧转发方法的描述。 在存储转发或直通字段中单击以将方法与其描述配对。]]></text>
+</component><!-- Number of rows in the table --><component id="ID_Button01">
+	<text><![CDATA[<b>检查</b>]]></text>
+</component>
+
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>重置</b>]]></text>
+</component>
+
+<component id="txt_numrows">
+	<text><![CDATA[6]]></text>
+</component><!-- Number of columns for the answers in the table. Do not count the question column --><component id="txt_numcols">
+	<text><![CDATA[2]]></text>
+</component><!-- Answer column headers --><component id="txt_col1">
+	<text><![CDATA[<span class="font11px"><b>存储转发</b></span>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<span class="font11px"><b>直通</b></span>]]></text>
+</component><!-- Question text - blockindent code moves the text away from the left edge a bit --><!-- Question text - If questions are numbered, use blockindent for hanging indents --><component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13' class="font11px">缓冲帧直到交换机<br><span id="span1">已接收完整的帧。</span></textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='13' class="font11px">在将帧从交换机端口<br><span id="span1">转发出去之前检测帧中<br><span id="span1">的错误，如果未收到完整帧，<br><span id="span1">则交换机将丢弃该帧。</span> </textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='13' class="font11px">交换机在将帧从其端口转发<br><span id="span1">出去之前不对该帧执行<br><span id="span1">错误检测。</span></textformat>]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[4. <textformat blockindent='13' class="font11px">一个用于节省网络中带宽的<br><span id="span1">好方法。</span></textformat>]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[5. <textformat blockindent='13' class="font11px">使用该帧转发方法，目标网<br><span id="span1">络接口卡 (NIC) 将丢弃所有<br><span id="span1">不完整的帧。</span></textformat>]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[6. <textformat blockindent='13' class="font11px">但是更快的交换方式可能<br><span id="span1">导致更多的数据完整性<br><span id="span1">错误，因此可能会消耗更多<br><span id="span1">带宽。</span></textformat>]]></text>
+</component><!-- Answers - Give the column number(s), column numbering start with 1 not 0 --><!-- Answers - For MCMA separate the correct answers with commas [2, 4, 5] --><component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[2]]></text>
+</component><!-- Correct Feedback --><component id="ID_titleCorrect">
+	<text><![CDATA[<span class="font11px"><b>正确</b></span>]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[<span class="font11px">您已成功将描述与正确的帧转发技术匹配。</span>]]></text>
+</component><!-- Incorrect Feedback --><component id="ID_titleIncorrect">
+	<text><![CDATA[<span class="font11px"><b>不正确</b></span>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[<span class="font11px">您尚未成功将描述与正确的帧转发技术匹配。 点击“重置”按钮再试一次！</span>]]></text>
+</component>
+
+
+</textcomponents>

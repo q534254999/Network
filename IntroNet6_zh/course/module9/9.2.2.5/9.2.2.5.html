@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.2.5 TCP 流量控制 - 避免拥塞</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>TCP 流量控制 - 避免拥塞</h1>
+        <div>
+          <p>网络中出现拥塞会使过载的路由器丢弃数据包。当包含 TCP 数据段的数据包未到达其目的地时，它们就成为未确认的数据包。通过确定 TCP 数据段发送但未确认的速率，源设备可以假设一定程度的网络拥塞。  </p>
+          <p></p>
+          <p>出现网络拥塞时，从源设备丢失的 TCP 数据段就会重传。如果不适当控制重传，TCP 数据段的额外重传会使拥塞的情况更糟。网络中不仅有 TCP 数据段的新数据包，而且还有重传丢失的 TCP 数据段的反馈效果，这都增加了拥塞。为避免和控制拥塞，TCP 使用了多个拥塞处理机制、计时器和算法。 </p>
+          <p></p>
+          <p>如果源设备确定 TCP 数据段没有被确认或没有被及时确认，它会在收到确认之前减少发送的字节数。注意是源设备在减少其发送的未确认的字节数，而不是由目的设备来确定窗口大小。</p>
+          <p></p>
+          <p>
+            <b>注意：</b>实际拥塞处理机制、计时器和算法的解释不属于本课程的范围。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows what happens when some segments get lost. PC 1 sends segments 1, 2, 3, and 4. Segments 2 and 3 were lost. PC B sends ACKs for 1 and 2. PC A says “I’m not getting the acknowledgments I expect for PC B so I will reduce the number of bytes I send before getting an acknowledgment.”</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

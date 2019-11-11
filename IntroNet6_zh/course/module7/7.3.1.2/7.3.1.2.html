@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.1.2 ICMPv6 路由器请求和路由器通告消息</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>ICMPv6 路由器请求和路由器通告消息</h1>
+        <div>
+          <p>在 ICMPv6 中发现的信息和错误消息非常类似于 ICMPv4 填充的控制和错误消息。但是，ICMPv6 拥有 ICMPv4 中所没有的新特性和功能提升。ICMPv6 消息封装在 IPv6 中。</p>
+          <p>ICMPv6 在邻居发现协议（ND 或 NDP）中包括四个新协议。 </p>
+          <p>IPv6 路由器和 IPv6 设备间的消息： </p>
+          <p>
+            <ul>
+              <li>路由器请求 (RS) 消息</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>路由器通告 (RA) 消息</li>
+            </ul>
+          </p>
+          <p>IPv6 设备间的消息： </p>
+          <p>
+            <ul>
+              <li>邻居请求 (NS) 消息</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>邻居通告 (NA) 消息</li>
+            </ul>
+          </p>
+          <p>
+            <b>注意</b>：ICMPv6 ND 还包括重定向消息，与 ICMPv4 中使用的重定向消息功能相似。</p>
+          <p>图 1 展示了 PC 和路由器交换请求和路由器通告消息的一个示例。单击每个消息以了解详细信息。</p>
+          <p>邻居请求和邻居通告消息用于地址解析和重复地址检测 (DAD)。</p>
+          <p>
+            <b>地址解析</b>
+          </p>
+          <p>当 LAN 上的设备知道目的 IPv6 单播地址，但不知道其以太网 MAC 地址时，会使用地址解析。要确定目的 MAC 地址，设备会将 NS 消息发送到请求节点地址。该消息包括已知（目标）IPv6 地址。具有目标 IPv6 地址的设备会使用包含其以太网 MAC 地址的 NA 消息进行回应。图 2 展示了两台 PC 交换 NS 和 NA 消息的示例。单击每个消息以了解详细信息。</p>
+          <p>
+            <b>重复地址检测 </b>
+          </p>
+          <p>当设备分配有全球单播或本地链路单播地址时，则建议对地址执行 DAD 来确保其唯一性。如图 3 所示，要检查地址的唯一性，设备将发送 NS 信息，其中使用自身 IPv6 地址作为目标 IPv6 地址。如果网络中的其他设备具有该地址，则会使用 NA 消息进行响应。此 NA 消息通知发送方设备地址已在使用。如果回应的 NA 消息未在固定的一段时间返回，则单播地址是唯一的，可以使用。</p>
+          <p>
+            <b>注意</b>：DAD 不是必需的，但是 RFC 4861 建议对单播地址执行 DAD。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a PC is booting and sends out an RS requesting an RA. The router is sending out RAs every 200 seconds. Clicking the two message types opens a textbox with more information. In Figure 2, one PC knows the IPv6 address of another PC but does not know the MAC address. It sends out a NS message, which is a solicited-node multicast. The PC replies with an NS unicast message. Figure 3 shows the DAD process with one PC using a solicited-node multicast to make sure other PCs are not currently using the IPv6 address that the PC wants to use.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

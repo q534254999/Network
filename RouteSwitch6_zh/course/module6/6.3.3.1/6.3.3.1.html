@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.3.1 配置单臂路由器：准备</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>配置单臂路由器：准备</h1>
+        <div>
+          <p>使用物理接口的传统 VLAN 间路由具有明显的限制。路由器上连接不同 VLAN 的物理接口数量有限。当网络上 VLAN 数量增加时，如果每个 VLAN 上都有一个物理路由器接口，那么就会很快耗尽路由器上物理接口的容量。在更大的网络中，替代办法是使用 VLAN 中继和子接口。VLAN 中继允许单个物理路由器接口路由多个 VLAN 的流量。此技术被称为单臂路由器，它是使用路由器上的虚拟子接口来克服基于物理路由器接口的硬件局限。 </p>
+          <p></p>
+          <p>子接口是基于软件的虚拟接口，可分配到各物理接口。使用自己的 IP 地址和前缀长度独立配置各个子接口。这使单个物理接口可以同时属于多个逻辑网络。 </p>
+          <p></p>
+          <p>
+            <b>注</b>：在与 IPv4 地址关联时，术语前缀长度可用于指 IPv4 子网掩码，在与 IPv6 地址关联时指 IPv6 前缀长度。</p>
+          <p></p>
+          <p>使用单臂路由器模式配置 VLAN 间路由时，路由器的物理接口必须与相邻交换机的中继链路相连接。在路由器上，子接口是为网络上每个唯一 VLAN 而创建的。各个子接口都分配了特定于其子网/VLAN 的 IP 地址，而且，同时也是为了标记该 VLAN 的帧。这样，路由器可以在流量通过中继链路返回交换机时区分各个子接口的流量。</p>
+          <p></p>
+          <p>从功能上说，单臂路由器模式与传统 VLAN 间路由模式是相同的，但这一模式使用单个物理接口的子接口执行路由，而不是使用物理接口。</p>
+          <p></p>
+          <p>图中，PC1 需要与 PC3 通信。PC1 在 VLAN 10 中，PC3 在 VLAN 30 中。为实现 PC1 与 PC3 之间的通信，PC1 需要使用路由器 R1 经由子接口路由数据。 </p>
+          <p></p>
+          <p>点击图中的“播放”，观看如何利用子接口在 VLAN 之间进行路由。动画暂停时，请读取拓扑左侧的文本。再次点击“播放”，继续观看动画。</p>
+          <p></p>
+          <p>使用 TRUNK 链路和子接口能减少所使用的路由器和交换机端口的数量。这样，不仅节约了成本，还降低了配置的复杂性。因此，相对于每个 VLAN 配置一个物理接口的配置设计，配置路由器子接口更适合有许多 VLAN 的网络。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">该图为展示使用单臂路由器路由行为的 VLAN 间路由过程的动画。此过程包括 ARP 发现以了解相连设备及通过基础设施传播单播帧。由于配置了从交换机到路由器子接口的中继链路，标记了一个指示帧从交换机传输到路由器的语句。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

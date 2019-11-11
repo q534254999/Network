@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.1.3 为 VLAN 分配端口</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>为 VLAN 分配端口</h1>
+        <div>
+          <p>在创建 VLAN 后，下一步是为 VLAN 分配端口。接入端口一次只能分配给一个 VLAN。此规则的一个例外是连接到 IP 电话的端口，在这种情况下，有两个 VLAN 与端口关联：一个用于语音，一个用于数据。</p>
+          <p></p>
+          <p>图 1 显示了将端口定义为接入端口并将其分配给 VLAN 的语法。<b>switchport mode access </b>命令为可选，但是强烈建议将其作为确保安全的最佳做法。使用此命令后，接口变为永久访问模式。</p>
+          <p></p>
+          <p>
+            <b>注</b>：使用<b> interface range</b> 命令可同时配置多个接口。  </p>
+          <p></p>
+          <p>在图 2 的示例中，VLAN 20 分配给交换机 S1 上的端口 F0/18；因此，学生计算机 (PC2) 位于 VLAN 20。在交换机端口上，而不是设备上配置 VLAN。PC2 配置了与交换机端口上配置的 VLAN 关联的 IPv4 地址和子网掩码，在本例中为 VLAN 20。当在其他交换机上配置 VLAN 20 时，网络管理员知道把其他学生计算机配置到与 PC2 (172.17.20.0/24) 相同的子网中。 </p>
+          <p></p>
+          <p>使用图 3 中的语法检查器分配一个 VLAN，并使用 <b>show vlan brief</b> 命令显示 vlan.dat 文件的内容。 </p>
+          <p></p>
+          <p>如果交换机上不存在 VLAN，<b>switchport access vlan </b>命令会强制创建一个 VLAN。例如，交换机的 <b>show vlan brief</b> 输出未显示 VLAN 30。如果在未作任何配置的接口上输入<b> switchport access vlan 30</b> 命令，则交换机将显示以下消息：</p>
+          <p></p>
+          <p>
+            <span class="cmd">% Access VLAN does not exist.Creating vlan 30</span>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">图 1 显示带用于将交换机端口配置为接入模式和特定 VLAN 成员的思科 IOS 命令的表。图 2 显示一个小型 LAN 以及将 F0/18 配置为接入端口和 VLAN 20 成员的语法。图 3 是允许学生练习将交换机端口配置为接入端口和 VLAN 20 成员的互动练习。</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

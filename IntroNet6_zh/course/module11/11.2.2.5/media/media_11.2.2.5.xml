@@ -1,0 +1,274 @@
+<textcomponents>
+   
+    <component id='ID_s1_title'>
+        <text>
+            <![CDATA[<b>练习 - 攻击类型</b>]]></text>
+    </component>
+    <component id='ID_s1_instr_title'>
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id='ID_s1_instr_body'>
+        <text>
+            <![CDATA[确定描述的安全攻击类型。将每个安全攻击类型拖到相应场景。]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[一台计算机用作 ACME Inc. 的打印服务器。IT 人员超过 60 天没有对该计算机进行安全更新。现在打印服务器运行缓慢，并发送大量恶意数据包到网卡。]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[ACME Inc. 的 IT 实习生 Sharon 在修改防火墙生成的安全日志时注意到了一些奇怪的数据包。Internet 上少量的 IP 地址在 ACME Inc 内部几个不同的随机端口号处发送错误数据包到几个不同的 IP 地址。]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt03">
+        <text>
+            <![CDATA[<b>攻击类型</b>]]></text>
+    </component>
+    <component id="ID_s2_txt04">
+        <text>
+            <![CDATA[<b>安全攻击场景</b>]]></text>
+    </component>
+    <!--Drag and Drop-->
+    <component id="ID_s2_traget01">
+        <text>
+            <![CDATA[<font color="#393536">蠕虫</font></b>]]>
+        </text>
+    </component>
+    <component id="ID_s2_traget02">
+        <text>
+            <![CDATA[<font color="#393536">接入</font></b>]]>
+        </text>
+    </component>
+    <component id="ID_s2_traget03">
+        <text>
+            <![CDATA[<font color="#393536">病毒</font></b>]]>
+        </text>
+    </component>
+    <component id="ID_s2_traget04">
+        <text>
+            <![CDATA[<font color="#393536">特洛伊木马</font></b>]]>
+        </text>
+    </component>
+    <component id="ID_s2_traget05">
+        <text>
+            <![CDATA[<font color="#393536">侦察</font></b>]]>
+        </text>
+    </component>
+    <component id="ID_s2_traget06">
+        <text>
+            <![CDATA[<font color="#393536">拒绝服务 (DoS)</font></b>]]>
+        </text>
+    </component>
+    <component id="ID_s2_CORRECT_TITLE">
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id="ID_s2_CORRECT_BODY">
+        <text>
+            <![CDATA[您已成功将每个安全攻击类型与其场景相匹配。]]>
+        </text>
+    </component>
+    <component id="ID_s2_INCORRECT_TITLE">
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id="ID_s2_INCORRECT_BODY">
+        <text>
+            <![CDATA[您尚未成功将每个安全攻击类型与其场景相匹配。请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id="ID_s2_CHECK">
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id="ID_s2_RESET">
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+    <!--slide02-->
+   
+    <component id='ID_s2_title'>
+        <text>
+            <![CDATA[<b>练习 - 攻击类型</b>]]></text>
+    </component>
+    <component id='ID_s2_instr_title'>
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id='ID_s2_instr_body'>
+        <text>
+            <![CDATA[确定描述的安全攻击类型。将每个安全攻击类型拖到相应场景。]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[Jeremiah 正从他的个人计算机上网，一个随机网站提供了一个免费系统清理程序。下载并运行该可执行文件后，操作系统崩溃。与操作系统相关的重要文件损坏，Jeremiah 的计算机需要完全磁盘格式化并重新安装操作系统。]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[Arianna 在商场停车场路面上发现了一个闪存驱动器。她四处打听，但无法找到失主。她决定把它留下并插入了自己的笔记本电脑，却发现一个照片文件夹。出于好奇，Arianna 还没有格式化该闪存驱动器就打开了一些照片。然后，Arianna 注意到她笔记本电脑的摄像头激活。]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt03">
+        <text>
+            <![CDATA[<b>攻击类型</b>]]></text>
+    </component>
+    <component id="ID_s1_txt04">
+        <text>
+            <![CDATA[<b>安全攻击场景</b>]]></text>
+    </component>
+    <!--Drag and Drop-->
+    <component id="ID_s1_traget01">
+        <text>
+            <![CDATA[<font color="#393536">蠕虫</font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_traget02">
+        <text>
+            <![CDATA[<font color="#393536">接入</font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_traget03">
+        <text>
+            <![CDATA[<font color="#393536">病毒</font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_traget04">
+        <text>
+            <![CDATA[<font color="#393536">特洛伊木马</font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_traget05">
+        <text>
+            <![CDATA[<font color="#393536">侦察</font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_traget06">
+        <text>
+            <![CDATA[<font color="#393536">拒绝服务 (DoS)</font>]]>
+        </text>
+    </component>
+    <component id="ID_s1_CORRECT_TITLE">
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id="ID_s1_CORRECT_BODY">
+        <text>
+            <![CDATA[您已成功将每个安全攻击类型与其场景相匹配。]]>
+        </text>
+    </component>
+    <component id="ID_s1_INCORRECT_TITLE">
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id="ID_s1_INCORRECT_BODY">
+        <text>
+            <![CDATA[您尚未成功将每个安全攻击类型与其场景相匹配。请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id="ID_s1_CHECK">
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id="ID_s1_RESET">
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+    <!--slide03-->
+   
+     <component id='ID_s3_title'>
+        <text>
+            <![CDATA[<b>练习 – 攻击类型</b>]]></text>
+    </component>
+    <component id='ID_s3_instr_title'>
+        <text>
+            <![CDATA[说明]]>
+        </text>
+    </component>
+    <component id='ID_s3_instr_body'>
+        <text>
+            <![CDATA[确定描述的安全攻击类型。将每个安全攻击类型拖到相应场景。]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt01">
+        <text>
+            <![CDATA[ACME 公司的 IT 人员 Angela 发现与公司 Web 服务器的通信很慢。经过调查，她断定响应慢是由于 Internet 上的一台计算机发送了大量的错误 Web 请求到 ACME 的 Web 服务器。]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt02">
+        <text>
+            <![CDATA[George 需要与同事分享一个视频。因为视频文件很大，他决定在他的工作站上运行一个简单的 FTP 服务器将视频文件发给同事。为简便起见，George 使用简单密码“file”创建了一个帐户并在星期五将其提供给同事。由于没有妥善的安全措施或强密码，当 IT 人员于星期一发现 George 的工作站被盗用并在试图上传工作相关文件到 Internet 时并不感到惊讶。]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt03">
+        <text>
+            <![CDATA[<b>攻击类型</b>]]></text>
+    </component>
+    <component id="ID_s3_txt04">
+        <text>
+            <![CDATA[<b>安全攻击场景</b>]]></text>
+    </component>
+    <!--Drag and Drop-->
+    <component id="ID_s3_traget01">
+        <text>
+            <![CDATA[<font color="#393536">蠕虫</font>]]>
+        </text>
+    </component>
+    <component id="ID_s3_traget02">
+        <text>
+            <![CDATA[<font color="#393536">接入</font>]]>
+        </text>
+    </component>
+    <component id="ID_s3_traget03">
+        <text>
+            <![CDATA[<font color="#393536">病毒</font>]]>
+        </text>
+    </component>
+    <component id="ID_s3_traget04">
+        <text>
+            <![CDATA[<font color="#393536">特洛伊木马</font>]]>
+        </text>
+    </component>
+    <component id="ID_s3_traget05">
+        <text>
+            <![CDATA[<font color="#393536">侦察</font>]]>
+        </text>
+    </component>
+    <component id="ID_s3_traget06">
+        <text>
+            <![CDATA[<font color="#393536">拒绝服务 (DoS)</font>]]>
+        </text>
+    </component>
+    <component id="ID_s3_CORRECT_TITLE">
+        <text>
+            <![CDATA[正确]]></text>
+    </component>
+    <component id="ID_s3_CORRECT_BODY">
+        <text>
+            <![CDATA[您已成功将每个安全攻击类型与其场景相匹配。]]>
+        </text>
+    </component>
+    <component id="ID_s3_INCORRECT_TITLE">
+        <text>
+            <![CDATA[不正确]]></text>
+    </component>
+    <component id="ID_s3_INCORRECT_BODY">
+        <text>
+            <![CDATA[您尚未成功将每个安全攻击类型与其场景相匹配。请单击“重置”重试。]]>
+        </text>
+    </component>
+    <component id="ID_s3_CHECK">
+        <text>
+            <![CDATA[检查]]></text>
+    </component>
+    <component id="ID_s3_RESET">
+        <text>
+            <![CDATA[重置]]></text>
+    </component>
+</textcomponents>

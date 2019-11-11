@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.2.4.4 启用 SSH</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.2.4.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>启用 SSH</h1>
+        <div>
+          <p>Telnet 并不安全。Telnet 数据包中包含的数据以未加密形式传输。因此，强烈建议在设备上启用 SSH 以进行安全远程访问。如图所示，可以通过四个步骤来配置思科设备以支持 SSH。</p>
+          <p>
+            <b>第 1 步：</b>确保路由器具有唯一的主机名，然后在全局配置模式下使用 <b>ip domain-name </b>命令配置网络的 IP 域名。</p>
+          <p>
+            <b>第 2 步：</b>必须为路由器生成单向密钥以加密 SSH 流量。要生成 SSH 密钥，请在全局模式下使用 <b>crypto key generate rsa general-keys </b>命令。该命令各个部分的具体含义很复杂，不属于本课程的范围。注意，确定密钥大小的系数可配置为 360 位至 2048 位。系数越大，密钥就越安全，但加密和解密信息所用的时间也就越长。最小建议系数长度为 1024 位。 </p>
+          <p>
+            <b>第 3 步：</b>使用 <b>username </b>全局配置命令来创建本地数据库用户名条目。</p>
+          <p>
+            <b>第 4 步：</b>使用线路 vty 命令 <b>login local</b> 和 <b>transport input ssh</b> 启用传入 SSH 会话。</p>
+          <p>现在就可以通过使用 SSH 来远程访问路由器。</p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the commands to configure SSH. The steps are listed in a text box.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+﻿<textcomponents><component id="ID_title"><text><![CDATA[<b>默认网关功能</b>]]></text></component><component id="ID_txt01"><text><![CDATA[<b>默认网关 …</b><br/><br/><textformat blockindent='-17'><ul><li>向其他网络路由流量</li><br/><li>本地 IP 地址在与网络其他主机相同的地址范围</li><br/><li>可接收并转发数据</li></ul></textformat>]]></text></component></textcomponents>

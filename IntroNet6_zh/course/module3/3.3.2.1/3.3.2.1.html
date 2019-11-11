@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.2.1 网络地址</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>网络地址</h1>
+        <div>
+          <p>网络层和数据链路层负责将数据从源设备传输到目的设备。如图 1 所示，两层中的协议都包含源地址和目的地址，但它们的地址具有不同的用途。</p>
+          <p>
+            <ul>
+              <li>
+                <b>网络层源地址和目的地址</b> - 负责将 IP 数据包从原始源设备传输到处于同一网络或远程网络中的最终目的设备。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>数据链路层源地址和目的地址</b> – 负责将数据链路帧从一个网络接口卡 (NIC) 传输到同一网络上的另一个 NIC。</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>IP 地址是网络层（或第 3 层）逻辑地址，用于将 IP 数据包从原始源设备传输到最终目的设备，如图 2 所示。 </p>
+          <p></p>
+          <p>IP 数据包包含两个 IP 地址：</p>
+          <p>
+            <ul>
+              <li>
+                <b>源 IP 地址</b> - 发送设备（数据包的原始源设备）的 IP 地址。</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>目的 IP 地址</b> - 接收设备（数据包的最终目的设备）的 IP 地址。</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="调整大小" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the network address and the data link address contained in a message.  The physical layer contains the timing and synchronization bits.  The data link layer contains the destination and source physical addresses.  The network layer contains the destination and source logical network addresses.  The transport layer contains the destination and source port numbers and the upper layers contain the encoded application data. Figure 2 shows an IP packet traversing several routers. The source and destination IP address are inserted into the packet header.</div>
+    </div>
+    <div id="login">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+  </body>
+</html>

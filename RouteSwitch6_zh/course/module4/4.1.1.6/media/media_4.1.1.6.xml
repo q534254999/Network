@@ -1,0 +1,166 @@
+﻿
+<textcomponents>
+
+<component id="ID_s1_title">
+	<text><![CDATA[<font size="17"><b>练习 - 第 1 部分：确定交换网络的术语</b></font>]]></text>
+</component>
+
+<component id="MCTable_title">
+	<text><![CDATA[说明说明]]></text>
+</component>
+
+<component id='ID_instr_title'>
+	<text><![CDATA[说明]]></text>
+</component>
+
+<component id='ID_instr_body'>
+	<text><![CDATA[选择每个术语的定义。 点击“按钮 2”以继续本活动。]]></text>
+</component><!-- buttons --><component id="ID_s1_CHECK">
+	<text><![CDATA[检查]]></text>
+</component>
+
+<component id="ID_s1_RESET">
+	<text><![CDATA[重置]]></text>
+</component><!--Number of rows in the table--><component id="txt_numrows">
+	<text><![CDATA[4]]></text>
+</component><!--Number of columns for the answers in the table. Do not count the question column--><component id="txt_numcols">
+	<text><![CDATA[4]]></text>
+</component><!--Answer column headers--><component id="txt_col1">
+	<text><![CDATA[<b>分层</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>模块化</b>]]></text>
+</component>
+
+<component id="txt_col3">
+	<text><![CDATA[<b>恢复能力</b>]]></text>
+</component>
+
+<component id="txt_col4">
+	<text><![CDATA[<b>灵活性</b>]]></text>
+</component><!--Question text - blockindent code moves the text away from the left edge a bit--><!--Question text - If questions are numbered, use blockindent for hanging indents--><component id="txt_q1">
+	<text><![CDATA[提供一种使网络始终可访问的方式。]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[允许网络扩展并提供按需服务。]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[帮助每层的每台设备部署特定角色。]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[使用所有可用网络资源来提供数据流量负载共享。]]></text>
+</component><!--Answers - Give the column number(s), column numbering start with 1 not 0--><!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] --><component id="txt_a1">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[4]]></text>
+</component><!-- Correct Feedback --><component id="ID_titleCorrect">
+	<text><![CDATA[<font size="17">正确</font>]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[您已成功选择每个术语的定义。 点击“按钮 2”以继续。]]></text>
+</component><!-- Incorrect Feedback --><component id="ID_titleIncorrect">
+	<text><![CDATA[<font size="17">不正确</font>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[您尚未成功选择每个术语的定义。 请单击“重置”重试。]]></text>
+</component><!--Slide 2--><component id="ID_s2_title">
+	<text><![CDATA[<font size="17"><b>练习 - 第 2 部分：确定交换网络层的功能</b></font>]]></text>
+</component>
+
+<component id='ID_s2_instr_title'>
+	<text><![CDATA[说明]]></text>
+</component>
+
+<component id='ID_s2_instr_body'>
+	<text><![CDATA[将每个功能与其相应的层匹配。]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[<b>分层交换网络平台标识符。</b>]]></text>
+</component><!--Characteristics--><component id="ID_s2_ans01">
+<text><![CDATA[交换的网络主干区域]]></text>
+</component>
+
+<component id="ID_s2_ans02">
+<text><![CDATA[提供错误隔离和高速主干交换机连接]]></text>
+</component>
+
+<component id="ID_s2_ans03">
+<text><![CDATA[提供智能交换、路由和安全的主干和用户的接口]]></text>
+</component>
+
+<component id="ID_s2_ans04">
+<text><![CDATA[允许数据通过等价交换路径传输到主干]]></text>
+</component>
+
+<component id="ID_s2_ans05">
+<text><![CDATA[包括作为交换网络访问重要功能的冗余]]></text>
+</component>
+
+<component id="ID_s2_ans06">
+<text><![CDATA[提供到用户的直接交换网络连接]]></text>
+</component>
+
+<component id="ID_s2_ans07">
+<text><![CDATA[帮助应用程序更安全地在交换网络上进行操作]]></text>
+</component>
+
+<component id="ID_s2_ans08">
+<text><![CDATA[支持第 2 层广播域和第 3 层路由边界]]></text>
+</component>
+
+<component id="ID_s2_ans09">
+<text><![CDATA[可以与分布层组合使用来提供折叠设计]]></text>
+</component>
+
+<component id='ID_s2_break'>
+	<text><![CDATA[<br><br>]]></text>
+</component><!--buttons--><component id="ID_s2_btn01">
+<text><![CDATA[<b>重置</b>]]></text>
+</component><!-- Terms --><component id="ID_s2_term01">
+<text><![CDATA[<b>核心层</b>]]></text>
+</component>
+
+<component id="ID_s2_term02">
+<text><![CDATA[<b>分布层</b>]]></text>
+</component>
+
+<component id="ID_s2_term03">
+<text><![CDATA[<b>接入层</b>]]></text>
+</component><!--feedback--><component id='ID_s2_titleCorrect'>
+	<text><![CDATA[<b>正确</b>]]></text>
+</component>
+
+<component id='ID_s2_correctText'>
+	<text><![CDATA[您已成功将每个功能与其相应的层匹配。]]></text>
+</component>
+
+<component id='ID_s2_titleIncorrect'>
+	<text><![CDATA[<b>不正确</b>]]></text>
+</component>
+
+<component id='ID_s2_incorrectText'>
+	<text><![CDATA[您尚未成功将每个功能与其相应的层匹配。 请单击“重置”重试。]]></text>
+</component>
+
+<component id='ID_break'>
+	<text><![CDATA[<br><br>]]></text>
+</component>
+
+</textcomponents>
