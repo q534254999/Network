@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>路由和交换基本要素</title>
+    <link rel="stylesheet" type="text/css" href="course/common-ext/styles/course.css"/>
+    <link rel="stylesheet" type="text/css" href="course/common/styles/course.css"/>
+    <script type="text/javascript" src="course/common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="course/common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="course/common-ext/scripts/netacad.js"></script>
+    <script type="text/javascript" src="course/common-ext/scripts/course.js"></script>
+    <script>
+
+      netacad.settings.init("RouteSwitch6");
+
+      netacad.lang.set("Module", "第 # 章");
+      netacad.lang.set("Section", "第 # 节");
+      netacad.lang.set("Topic", "主题 #");
+      netacad.lang.set("Page", "第 # 页");
+      netacad.lang.set("Figure", "图 #");
+      netacad.lang.set("Figures", "图片");
+      netacad.lang.set("NoItems", "没有项目。");
+      netacad.lang.set("NoBookmarks", "没有书签。");
+      netacad.lang.set("NoRecentPages", "没有最近访问的页面。");
+      netacad.lang.set("NoSearchResults", "没有搜索结果。");
+      netacad.lang.set("EnterSearchTerms", "输入搜索词……");
+      netacad.lang.set("PageThumbnail", "頁碼 # 縮略圖");
+      netacad.lang.set("BackgroundImage", "背景影像");
+
+      var course = function() {
+        var c, m, s, t, p;
+        c = new netacad.models.Course("RouteSwitch6", "zh", "路由和交换基本要素");
+        m = new netacad.models.Module("0", "课程简介");
+        s = new netacad.models.Section("0.0", "欢迎学习路由和交换基础");
+        t = new netacad.models.Topic("0.0.1", "致学生的话");
+        p = new netacad.models.Page("0.0.1.1", "欢迎", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("0.0.1.2", "全球社区", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("0.0.1.3", "不止包含信息", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("0.0.1.4", "如何教学", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("0.0.1.5", "在不断实践中掌握概念", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("0.0.1.6", "广开思路", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("0.0.1.7", "工程日志", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("0.0.1.8", "探索网络世界", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("0.0.1.9", "开创自己的世界", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("0.0.1.10", "Packet Tracer 如何帮助学生掌握概念", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("0.0.1.11", "课程概述", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("1", "路由概念");
+        s = new netacad.models.Section("1.0", "简介");
+        t = new netacad.models.Topic("1.0.1", "欢迎");
+        p = new netacad.models.Page("1.0.1.1", "第 1 章：路由概念", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.0.1.2", "练习 - 我们是否真的需要映射？", "Activity", "实验", "动手实践");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("1.1", "路由器初始配置");
+        t = new netacad.models.Topic("1.1.1", "路由器的功能");
+        p = new netacad.models.Page("1.1.1.1", "网络的特征", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.1.2", "为什么需要路由？", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.1.3", "路由器实质上是计算机", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.1.4", "路由器互联网络", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.1.5", "路由器选择最佳路径", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.1.6", "数据包转发机制", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.1.7", "练习 - 确定路由器组件 ", "Activity", "其他", "闪存 DnD");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.1.8", "Packet Tracer - 使用 Traceroute 发现网络", "Activity", "Packet Tracer", "综合技能练习");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.1.9", "实验 - 映射互联网", "Activity", "实验", "动手实践");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("1.1.2", "连接设备");
+        p = new netacad.models.Page("1.1.2.1", "连接到网络", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.2.2", "默认网关", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.2.3", "记录网络编址", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.2.4", "在主机上启用 IP", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.2.5", "设备 LED", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.2.6", "控制台访问", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.2.7", "在交换机上启用 IP", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.2.8", "练习 - 记录编址方案", "Activity", "其他", "闪存 DnD");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.2.9", "Packet Tracer - 记录网络", "Activity", "Packet Tracer", "综合技能练习");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("1.1.3", "路由器基本设置");
+        p = new netacad.models.Page("1.1.3.1", "配置路由器的基本设置", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.3.2", "配置 IPv4 路由器接口", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.3.3", "配置 IPv6 路由器接口", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.3.4", "配置 IPv4 环回接口", "");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.3.5", "Packet Tracer - 配置 IPv4 和 IPv6 接口", "Activity", "Packet Tracer", "综合技能练习");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("1.1.4", "检验直连网络的连接");
+        p = new netacad.models.Page("1.1.4.1", "验证接口设置", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.4.2", "验证 IPv6 接口设置", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.4.3", "过滤 show 命令输出", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.4.4", "命令历史记录功能", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.4.5", "Packet Tracer - 配置和验证小型网络", "Activity", "Packet Tracer", "综合技能练习");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.4.6", "实验 - 使用 IOS CLI 来配置基本路由器设置", "Activity", "实验", "动手实践");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("1.2", "路由决策");
+        t = new netacad.models.Topic("1.2.1", "在网络间交换数据包");
+        p = new netacad.models.Page("1.2.1.1", "路由器交换功能", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.2.1.2", "发送数据包", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.2.1.3", "转发到下一跳", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.2.1.4", "数据包路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.2.1.5", "到达目的地 ", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.2.1.6", "练习 - 匹配第 2 层和第 3 层编址", "Activity", "其他", "闪存 DnD");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("1.2.2", "确定路径");
+        p = new netacad.models.Page("1.2.2.1", "路由决策", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.2.2.2", "最佳路径", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.2.2.3", "负载均衡", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.2.2.4", "管理距离", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.2.2.5", "活动 - 将数据包转发流程中的步骤排序", "Activity", "其他", "闪存 DnD");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.2.2.6", "练习 – 将管理距离与路由源匹配", "Activity", "其他", "闪存 DnD");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("1.3", "路由器操作");
+        t = new netacad.models.Topic("1.3.1", "分析路由表");
+        p = new netacad.models.Page("1.3.1.1", "路由表", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.3.1.2", "路由表来源", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.3.1.3", "远程网络路由条目", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.3.1.4", "练习 - 解释路由表条目的内容", "Activity", "其他", "闪存 DnD");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("1.3.2", "直连路由");
+        p = new netacad.models.Page("1.3.2.1", "直连接口", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.3.2.2", "直连路由表条目", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.3.2.3", "直连示例", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.3.2.4", "直连 IPv6 示例", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.3.2.5", "Packet Tracer - 研究直连路由", "Activity", "Packet Tracer", "综合技能练习");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("1.3.3", "静态获知的路由");
+        p = new netacad.models.Page("1.3.3.1", "静态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.3.3.2", "静态路由示例", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.3.3.3", "静态 IPv6 路由示例", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("1.3.4", "动态路由协议");
+        p = new netacad.models.Page("1.3.4.1", "动态路由 ", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.3.4.2", "IPv4 路由协议 ", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.3.4.3", "IPv4 动态路由示例 ", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.3.4.4", "IPv6 路由协议 ", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.3.4.5", "IPv6 动态路由示例", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("1.4", "小结");
+        t = new netacad.models.Topic("1.4.1", "结论");
+        p = new netacad.models.Page("1.4.1.1", "练习 - 我们确实可以使用地图！", "Activity", "实验", "动手实践");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.4.1.2", "第 1 章：路由概念", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("2", "静态路由");
+        s = new netacad.models.Section("2.0", "简介");
+        t = new netacad.models.Topic("2.0.1", "欢迎");
+        p = new netacad.models.Page("2.0.1.1", "第 2 章：静态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.0.1.2", "练习 - 我们应选择哪个方向？", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("2.1", "实施静态路由");
+        t = new netacad.models.Topic("2.1.1", "静态路由");
+        p = new netacad.models.Page("2.1.1.1", "到达远程网络", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.1.2", "为什么使用静态路由？", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.1.3", "何时使用静态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.1.4", "练习 - 标识静态路由的优点和缺点", "Activity", "Other", "Flash Check Box");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("2.1.2", "静态路由的类型");
+        p = new netacad.models.Page("2.1.2.1", "静态路由应用", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.2.2", "标准静态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.2.3", "默认静态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.2.4", "汇总静态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.2.5", "浮动静态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.2.6", "练习 - 确定静态路由类型", "Activity", "Other", "Flash Check Box");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("2.2", "配置静态路由和默认路由");
+        t = new netacad.models.Topic("2.2.1", "配置 IPv4 静态路由");
+        p = new netacad.models.Page("2.2.1.1", "ip route 命令", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.1.2", "跳选项", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.1.3", "配置下一跳静态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.1.4", "配置直连静态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.1.5", "配置完全指定静态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.1.6", "验证静态路由", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("2.2.2", "配置 IPv4 默认路由");
+        p = new netacad.models.Page("2.2.2.1", "默认静态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.2.2", "配置默认静态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.2.3", "验证默认静态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.2.4", "Packet Tracer - 配置 IPv4 静态路由和默认路由", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.2.5", "实验 - 配置 IPv4 静态路由和默认路由", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("2.2.3", "配置 IPv6 静态路由");
+        p = new netacad.models.Page("2.2.3.1", "ipv6 route 命令", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.3.2", "跳选项", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.3.3", "配置下一跳静态 IPv6 路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.3.4", "配置直连静态 IPv6 路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.3.5", "配置完全指定静态 IPv6 路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.3.6", "验证 IPv6 静态路由", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("2.2.4", "配置 IPv6 默认路由");
+        p = new netacad.models.Page("2.2.4.1", "默认静态 IPv6 路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.4.2", "配置默认静态 IPv6 路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.4.3", "验证默认静态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.4.4", "Packet Tracer - 配置 IPv6 静态路由和默认路由", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.4.5", "实验 - 配置 IPv6 静态路由和默认路由", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("2.2.5", "配置浮动静态路由");
+        p = new netacad.models.Page("2.2.5.1", "浮动静态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.5.2", "配置 IPv4 浮动静态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.5.3", "测试 IPv4 浮动静态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.5.4", "配置 IPv6 浮动静态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.5.5", "Packet Tracer - 配置浮动静态路由", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("2.2.6", "配置静态主机路由");
+        p = new netacad.models.Page("2.2.6.1", "自动安装的主机路由", "Content", "Summarise the activity");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.2.6.2", "配置 IPv4 和 IPv6 静态主机路由", "Content", "Summarise the activity");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("2.3", "静态路由和默认路由故障排除");
+        t = new netacad.models.Topic("2.3.1", "使用静态路由处理数据包");
+        p = new netacad.models.Page("2.3.1.1", "静态路由和数据包转发", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("2.3.2", "排除 IPv4 静态和默认路由配置故障");
+        p = new netacad.models.Page("2.3.2.1", "路由缺失故障排除", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.3.2.2", "解决连接问题", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.3.2.3", "Packet Tracer - 静态路由故障排除", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.3.2.4", "实验 - 静态路由故障排除", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("2.4", "小结");
+        t = new netacad.models.Topic("2.4.1", "结论");
+        p = new netacad.models.Page("2.4.1.1", "练习 - 配置为静态", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.4.1.2", "第 2 章：静态路由", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("3", "动态路由");
+        s = new netacad.models.Section("3.0", "简介");
+        t = new netacad.models.Topic("3.0.1", "欢迎");
+        p = new netacad.models.Page("3.0.1.1", "第 3 章：动态路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.0.1.2", "这需要多大代价", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("3.1", "动态路由协议");
+        t = new netacad.models.Topic("3.1.1", "动态路由协议概述");
+        p = new netacad.models.Page("3.1.1.1", "动态路由协议的发展历程", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.1.1.2", "动态路由协议组件", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("3.1.2", "动态与静态路由");
+        p = new netacad.models.Page("3.1.2.1", "静态路由的应用 ", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.1.2.2", "静态路由的优点和缺点", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.1.2.3", "动态路由协议的应用", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.1.2.4", "动态路由的优点和缺点", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.1.2.5", "练习 - 比较静态路由和动态路由", "Activity", "Other", "Flash DnD");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("3.2", "RIPv2");
+        t = new netacad.models.Topic("3.2.1", "配置 RIP 协议");
+        p = new netacad.models.Page("3.2.1.1", "路由器 RIP 配置模式", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.2.1.2", "通告网络", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.2.1.3", "验证 RIP 路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.2.1.4", "启用并验证 RIPv2", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.2.1.5", "禁用自动汇总", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.2.1.6", "配置被动接口", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.2.1.7", "传播默认路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.2.1.8", "Packet Tracer - 配置 RIPv2", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.2.1.9", "实验 - 配置基本 RIPv2 ", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("3.3", "路由表");
+        t = new netacad.models.Topic("3.3.1", "IPv4 路由条目的组成部分");
+        p = new netacad.models.Page("3.3.1.1", "路由表条目", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.3.1.2", "直连条目", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.3.1.3", "远程网络条目", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.3.1.4", "练习 - 标识 IPv4 路由表条目的各个部分", "Activity", "Other", "Flash DnD");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("3.3.2", "动态获取的 IPv4 路由");
+        p = new netacad.models.Page("3.3.2.1", "路由表术语", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.3.2.2", "最终路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.3.2.3", "一级路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.3.2.4", "一级父路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.3.2.5", "二级子路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.3.2.6", "练习 - 标识父 IPv4 路由和子 IPv4 路由", "Activity", "Other", "Flash DnD");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("3.3.3", "IPv4 路由查找过程");
+        p = new netacad.models.Page("3.3.3.1", "路由查找过程", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.3.3.2", "最佳路由 = 最长匹配", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.3.3.3", "练习 - 确定最长匹配路由", "Activity", "Other", "Flash DnD");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("3.3.4", "分析 IPv6 路由表");
+        p = new netacad.models.Page("3.3.4.1", "IPv6 路由表条目", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.3.4.2", "直连条目", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.3.4.3", "远程 IPv6 网络条目", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.3.4.4", "练习 - 标识 IPv6 路由表条目的各个部分", "Activity", "Other", "Flash DnD");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("3.4", "小结");
+        t = new netacad.models.Topic("3.4.1", "结论");
+        p = new netacad.models.Page("3.4.1.1", "IPv6 - 详细信息、详细信息…", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.4.1.2", "第 3 章：动态路由", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("4", "交换网络");
+        s = new netacad.models.Section("4.0", "简介");
+        t = new netacad.models.Topic("4.0.1", "欢迎");
+        p = new netacad.models.Page("4.0.1.1", "第 4 章：交换网络", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.0.1.2", "已发送或接收的指令", "Activity", "实验", "动手实践");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("4.1", "LAN 设计");
+        t = new netacad.models.Topic("4.1.1", "融合网络");
+        p = new netacad.models.Page("4.1.1.1", "网络复杂性不断增加", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.1.1.2", "融合网络的网元", "Activity");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.1.1.3", "思科无边界网络", "Activity");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.1.1.4", "无边界交换网络的层次结构", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.1.1.5", "接入层、分布层和核心层", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.1.1.6", "练习 - 确定交换网络的术语", "Activity", "其他", "闪存 DnD");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("4.1.2", "交换网络");
+        p = new netacad.models.Page("4.1.2.1", "交换网络的作用", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.1.2.2", "外形因素", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.1.2.3", "练习 - 确定交换机硬件", "Activity", "其他", "闪存 DnD");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("4.2", "交换环境");
+        t = new netacad.models.Topic("4.2.1", "帧转发");
+        p = new netacad.models.Page("4.2.1.1", "作为网络与通信基本概念的交换", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.2.1.2", "动态填充交换机 MAC 地址表", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.2.1.3", "交换机转发方法", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.2.1.4", "存储转发交换", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.2.1.5", "直通交换", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.2.1.6", "练习 - 帧转发方法", "Activity", "其他", "闪存 DnD");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.2.1.7", "练习 - 交换！", "Activity", "其他", "Flash 复选框");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("4.2.2", "交换域");
+        p = new netacad.models.Page("4.2.2.1", "冲突域", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.2.2.2", "广播域", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.2.2.3", "缓解网络拥塞", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.2.2.4", "练习 - 圈出域", "Activity", "其他", "闪存 - PT 圈出工具");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("4.3", "小结");
+        t = new netacad.models.Topic("4.3.1", "结论");
+        p = new netacad.models.Page("4.3.1.1", "它是网络访问时间", "");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.3.1.2", "基本交换机配置", "Activity", "其他", "闪存 DnD");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.3.1.3", "第 4 章：交换网络", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("5", "交换机配置");
+        s = new netacad.models.Section("5.0", "简介");
+        t = new netacad.models.Topic("5.0.1", "欢迎");
+        p = new netacad.models.Page("5.0.1.1", "第 5 章：交换机配置", "");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.0.1.2", "练习 – 支持我", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("5.1", "基本交换机配置");
+        t = new netacad.models.Topic("5.1.1", "使用初始设置配置交换机");
+        p = new netacad.models.Page("5.1.1.1", "交换机启动顺序", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.1.1.2", "从系统崩溃中恢复", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.1.1.3", "交换机 LED 指示灯", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.1.1.4", "准备基本交换机管理", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.1.1.5", "使用 IPv4 配置基本交换机管理访问", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.1.1.6", "实验 - 基本交换机配置", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("5.1.2", "配置交换机端口");
+        p = new netacad.models.Page("5.1.2.1", "双工通信", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.1.2.2", "在物理层配置交换机端口", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.1.2.3", "Auto-MDIX", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.1.2.4", "验证交换机端口配置", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.1.2.5", "网络接入层问题", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.1.2.6", "对网络接入层问题进行故障排除", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("5.2", "交换机的安全性");
+        t = new netacad.models.Topic("5.2.1", "安全远程访问");
+        p = new netacad.models.Page("5.2.1.1", "SSH 运行", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.2.1.2", "配置 SSH", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.2.1.3", "验证 SSH", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.2.1.4", "Packet Tracer - 配置 SSH", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("5.2.2", "交换机端口安全");
+        p = new netacad.models.Page("5.2.2.1", "保护未使用端口的安全", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.2.2.2", "端口安全：操作", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.2.2.3", "端口安全：违规模式", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.2.2.4", "端口安全：配置", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.2.2.5", "端口安全：验证", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.2.2.6", "端口处于错误禁用状态", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.2.2.7", "Packet Tracer - 配置交换机端口安全", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.2.2.8", "Packet Tracer - 交换机端口安全故障排除", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.2.2.9", "实验 - 配置交换机安全功能", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("5.3", "小结");
+        t = new netacad.models.Topic("5.3.1", "结论");
+        p = new netacad.models.Page("5.3.1.1", "练习 – 基本交换机", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.3.1.2", "Packet Tracer - 综合技能练习", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.3.1.3", "第 5 章：交换机配置", "");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("6", "VLAN");
+        s = new netacad.models.Section("6.0", "简介");
+        t = new netacad.models.Topic("6.0.1", "欢迎");
+        p = new netacad.models.Page("6.0.1.1", "第 6 章：VLAN", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.0.1.2", "课堂练习 - 休假电台", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("6.1", "VLAN 分段");
+        t = new netacad.models.Topic("6.1.1", "VLAN 概述");
+        p = new netacad.models.Page("6.1.1.1", "VLAN 定义", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.1.1.2", "VLAN 的优势", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.1.1.3", "VLAN 的类型", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.1.1.4", "语音 VLAN", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.1.1.5", "Packet Tracer - 谁听到广播？", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("6.1.2", "多交换环境中的 VLAN");
+        p = new netacad.models.Page("6.1.2.1", "VLAN 中继", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.1.2.2", "通过 VLAN 控制广播域", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.1.2.3", "标记以太网帧以便识别 VLAN", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.1.2.4", "本征 VLAN 和 802.1Q 标记", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.1.2.5", "语音 VLAN 标记", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.1.2.6", "练习 - 预测交换机行为", "Activity", "Other", "Flash Game");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.1.2.7", "Packet Tracer - 研究 VLAN 实施情况", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("6.2", "VLAN 实施情况");
+        t = new netacad.models.Topic("6.2.1", "VLAN 分配");
+        p = new netacad.models.Page("6.2.1.1", "Catalyst 交换机上的 VLAN 范围", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.1.2", "创建 VLAN", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.1.3", "为 VLAN 分配端口", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.1.4", "更改 VLAN 端口成员", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.1.5", "删除 VLAN", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.1.6", "验证 VLAN 信息", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.1.7", "Packet Tracer - 配置 VLAN", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("6.2.2", "VLAN 中继");
+        p = new netacad.models.Page("6.2.2.1", "配置 IEEE 802.1Q TRUNK 链路", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.2.2", "将 TRUNK 重置为默认状态", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.2.3", "验证 TRUNK 配置", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.2.4", "Packet Tracer - 配置 TRUNK", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.2.5", "实验 - 配置 VLAN 和中继", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("6.2.3", "排除 VLAN 和中继故障");
+        p = new netacad.models.Page("6.2.3.1", "使用 VLAN 的 IP 编址问题", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.3.2", "缺失 VLAN", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.3.3", "TRUNK 故障排除简介", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.3.4", "中继的常见问题", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.3.5", "端口模式不正确", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.3.6", "不正确的 VLAN 列表", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.3.7", "Packet Tracer - VLAN 实施故障排除 - 场景 1", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.3.8", "Packet Tracer - VLAN 实施故障排除 - 场景 2", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.3.9", "实验 - VLAN 配置故障排除", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("6.3", "使用路由器的 VLAN 间路由");
+        t = new netacad.models.Topic("6.3.1", "VLAN 间路由操作");
+        p = new netacad.models.Page("6.3.1.1", "什么是 VLAN 间路由？", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.3.1.2", "传统 VLAN 间路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.3.1.3", "单臂路由器 VLAN 间路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.3.1.4", "练习 - 确定 VLAN 间路由的类型", "Activity", "Other", "Flash DnD");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("6.3.2", "配置传统 VLAN 间路由");
+        p = new netacad.models.Page("6.3.2.1", "配置传统 VLAN 间路由：准备工作", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.3.2.2", "配置传统 VLAN 间路由：交换机配置", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.3.2.3", "配置传统 VLAN 间路由：路由器接口配置", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.3.2.4", "实验 - 配置每接口的 VLAN 间路由", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("6.3.3", "配置 VLAN 间单臂路由");
+        p = new netacad.models.Page("6.3.3.1", "配置单臂路由器：准备", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.3.3.2", "配置单臂路由器：交换机配置", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.3.3.3", "配置单臂路由器：路由器子接口配置", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.3.3.4", "配置单臂路由器：验证子接口", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.3.3.5", "配置单臂路由器：验证路由", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.3.3.6", "Packet Tracer - 配置单臂路由器 VLAN 间路由", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.3.3.7", "实验 - 配置基于 801.2Q 中继的 VLAN 间路由", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.3.3.8", "Packet Tracer - VLAN 间路由练习", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("6.4", "小结");
+        t = new netacad.models.Topic("6.4.1", "结论");
+        p = new netacad.models.Page("6.4.1.1", "内部跟踪", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.4.1.2", "Packet Tracer - 综合技能练习", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.4.1.3", "第 6 章：VLAN", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("7", "访问控制列表");
+        s = new netacad.models.Section("7.0", "简介");
+        t = new netacad.models.Topic("7.0.1", "欢迎");
+        p = new netacad.models.Page("7.0.1.1", "第 7 章：访问控制列表", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.0.1.2", "允许我帮助您", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("7.1", "ACL 工作原理");
+        t = new netacad.models.Topic("7.1.1", "ACL 的用途");
+        p = new netacad.models.Page("7.1.1.1", "什么是 ACL？", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.1.1.2", "数据包过滤", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.1.1.3", "ACL 工作原理", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.1.1.4", "Packet Tracer - ACL 演示", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("7.1.2", "ACL 中的通配符掩码");
+        p = new netacad.models.Page("7.1.2.1", "介绍 ACL 通配符掩码", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.1.2.2", "通配符掩码示例 ", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.1.2.3", "计算通配符掩码", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.1.2.4", "通配符掩码关键字", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.1.2.5", "通配符掩码关键字示例", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.1.2.6", "练习 - 确定正确的通配符掩码", "Activity", "Other", "Flash FIB");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.1.2.7", "练习 - 确定允许或拒绝", "Activity", "Other", "Flash Check Box");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("7.1.3", "ACL 的创建原则");
+        p = new netacad.models.Page("7.1.3.1", "创建 ACL 的一般指导原则", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.1.3.2", "ACL 最佳做法", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.1.3.3", "练习 - ACL 工作原理", "Activity", "Other", "Flash DnD");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("7.1.4", "ACL 的放置原则");
+        p = new netacad.models.Page("7.1.4.1", "ACL 的放置位置", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.1.4.2", "标准 ACL 放置", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("7.2", "标准 IPv4 ACL ");
+        t = new netacad.models.Topic("7.2.1", "配置标准 IPv4 ACL");
+        p = new netacad.models.Page("7.2.1.1", "编号标准 IPv4 ACL 语法", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.2.1.2", "将标准 IPv4 ACL 应用于接口", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.2.1.3", "编号标准 IPv4 ACL 示例", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.2.1.4", "命名的标准 IPv4 ACL 语法", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.2.1.5", "练习 - 配置标准 IPv4 ACL", "Activity", "Other", "Flash DnD");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.2.1.6", "Packet Tracer - 配置编号标准 IPv4 ACL", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.2.1.7", "Packet Tracer - 配置命名标准 IPv4 ACL", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("7.2.2", "修改 IPv4 ACL");
+        p = new netacad.models.Page("7.2.2.1", "方法 1 - 使用文本编辑器", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.2.2.2", "方法 2 - 使用序号", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.2.2.3", "编辑标准命名 ACL", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.2.2.4", "验证 ACL", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.2.2.5", "ACL 统计信息", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.2.2.6", "实验 - 配置和修改标准 IPv4 ACL", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("7.2.3", "使用标准 IPv4 ACL 保护 VTY 端口 ");
+        p = new netacad.models.Page("7.2.3.1", "access-class 命令 ", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.2.3.2", "验证 VTY 端口是否安全", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.2.3.3", "Packet Tracer - 在 VTY 线路上配置 IPv4 ACL", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.2.3.4", "实验 - 配置和验证 VTY 限制", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("7.3", "排除 ACL 故障");
+        t = new netacad.models.Topic("7.3.1", "使用 ACL 处理数据包");
+        p = new netacad.models.Page("7.3.1.1", "隐式 deny any", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.3.1.2", "ACL 中 ACE 的顺序", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.3.1.3", "思科 IOS 对标准 ACL 重新排序 ", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.3.1.4", "路由过程和 ACL", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("7.3.2", "常见 IPv4 标准 ACL 错误 ");
+        p = new netacad.models.Page("7.3.2.1", "对标准 IPv4 ACL 进行故障排除 - 示例 1", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.3.2.2", "对标准 IPv4 ACL 进行故障排除 - 示例 2", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.3.2.3", "对标准 IPv4 ACL 进行故障排除 - 示例 3", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.3.2.4", "Packet Tracer - 标准 IPv4 ACL 故障排除", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("7.4", "小结");
+        t = new netacad.models.Topic("7.4.1", "结论");
+        p = new netacad.models.Page("7.4.1.1", "FTP 被拒绝", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.4.1.2", "Packet Tracer - 综合技能练习", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.4.1.3", "第 7 章：访问控制列表", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("8", "DHCP");
+        s = new netacad.models.Section("8.0", "简介");
+        t = new netacad.models.Topic("8.0.1", "欢迎");
+        p = new netacad.models.Page("8.0.1.1", "第 8 章：DHCP", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("8.1", "DHCPv4");
+        t = new netacad.models.Topic("8.1.1", "DHCPv4 操作");
+        p = new netacad.models.Page("8.1.1.1", "介绍 DHCPv4", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.1.1.2", "DHCPv4 操作", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.1.1.3", "DHCPv4 消息格式", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.1.1.4", "DHCPv4 发现和提供消息", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.1.1.5", "练习 - 标识 DHCPv4 操作中的步骤", "Activity", "Other", "Flash DnD");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("8.1.2", "配置基本 DHCPv4 服务器");
+        p = new netacad.models.Page("8.1.2.1", "配置基本 DHCPv4 服务器", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.1.2.2", "验证 DHCPv4", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.1.2.3", "DHCPv4 中继", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.1.2.4", "实验 - 在路由器上配置基本 DHCPv4", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.1.2.5", "试验 - 配置交换机的基本 DHCPv4", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("8.1.3", "配置 DHCPv4 客户端");
+        p = new netacad.models.Page("8.1.3.1", "将路由器配置为 DHCPv4 客户端", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.1.3.2", "将无线路由器配置为 DHCPv4 客户端 ", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.1.3.3", "Packet Tracer - 使用思科 IOS 配置 DHCPv4", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("8.1.4", "对 DHCPv4 进行故障排除");
+        p = new netacad.models.Page("8.1.4.1", "故障排除任务", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.1.4.2", "验证路由器 DHCPv4 配置", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.1.4.3", "调试 DHCPv4", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.1.4.4", "实验 - DHCPv4 故障排除", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("8.2", "DHCPv6");
+        t = new netacad.models.Topic("8.2.1", "SLAAC 和 DHCPv6");
+        p = new netacad.models.Page("8.2.1.1", "无状态地址自动配置 (SLAAC)", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.2.1.2", "SLAAC 工作原理", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.2.1.3", "SLAAC 和 DHCPv6", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.2.1.4", "SLAAC 选项", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.2.1.5", "无状态 DHCPv6 选项", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.2.1.6", "有状态 DHCPv6 选项", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.2.1.7", "DHCPv6 操作", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.2.1.8", "练习 - 标识 DHCPv6 操作中的步骤", "Activity", "Other", "Flash DnD");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("8.2.2", "无状态 DHCPv6");
+        p = new netacad.models.Page("8.2.2.1", "将路由器配置为无状态 DHCPv6 服务器", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.2.2.2", "将路由器配置为无状态 DHCPv6 客户端", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.2.2.3", "验证无状态 DHCPv6 ", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("8.2.3", "有状态 DHCPv6 服务器");
+        p = new netacad.models.Page("8.2.3.1", "将路由器配置为有状态 DHCPv6 服务器", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.2.3.2", "将路由器配置为有状态 DHCPv6 客户端", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.2.3.3", "验证有状态 DHCPv6 ", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.2.3.4", "将路由器配置为 DHCPv6 中继代理", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.2.3.5", "实验 - 配置无状态和有状态 DHCPv6", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("8.2.4", "对 DHCPv6 进行故障排除");
+        p = new netacad.models.Page("8.2.4.1", "故障排除任务", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.2.4.2", "验证路由器 DHCPv6 配置", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.2.4.3", "调试 DHCPv6", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.2.4.4", "实验 - DHCPv6 故障排除", "Activity", "Lab", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("8.3", "小结");
+        t = new netacad.models.Topic("8.3.1", "结论");
+        p = new netacad.models.Page("8.3.1.1", "课堂练习 - IoE 和 DHCP", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.3.1.2", "Packet Tracer - 综合技能练习", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.3.1.3", "第 8 章：DHCP", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("9", "IPv4 NAT");
+        s = new netacad.models.Section("9.0", "简介");
+        t = new netacad.models.Topic("9.0.1", "欢迎");
+        p = new netacad.models.Page("9.0.1.1", "第 9 章：IPv4 NAT", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.0.1.2", " NAT 概念", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("9.1", "NAT 操作");
+        t = new netacad.models.Topic("9.1.1", "NAT 的特性");
+        p = new netacad.models.Page("9.1.1.1", "IPv4 私有地址空间", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.1.1.2", "何谓 NAT？", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.1.1.3", "NAT 术语", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.1.1.4", "NAT 术语（续）", "");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.1.1.5", "NAT 如何工作", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.1.1.6", "练习 - 确定 NAT 术语", "Activity", "Other", "Flash DnD");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("9.1.2", "NAT 的类型");
+        p = new netacad.models.Page("9.1.2.1", "静态 NAT", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.1.2.2", "动态 NAT", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.1.2.3", "端口地址转换 (PAT)", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.1.2.4", "下一可用端口", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.1.2.5", "比较 NAT 和 PAT", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.1.2.6", "Packet Tracer – 调查 NAT 操作", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("9.1.3", "NAT 优势");
+        p = new netacad.models.Page("9.1.3.1", "NAT 的优势", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.1.3.2", "NAT 的缺点", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("9.2", "配置 NAT");
+        t = new netacad.models.Topic("9.2.1", "配置静态 NAT");
+        p = new netacad.models.Page("9.2.1.1", "配置静态 NAT", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.1.2", "分析静态 NAT", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.1.3", "验证静态 NAT", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.1.4", "Packet Tracer - 配置静态 NAT", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("9.2.2", "配置动态 NAT");
+        p = new netacad.models.Page("9.2.2.1", "动态 NAT 操作", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.2.2", "配置动态 NAT", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.2.3", "分析动态 NAT", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.2.4", "验证动态 NAT", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.2.5", "Packet Tracer - 配置动态 NAT", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.2.6", "实验 - 配置动态和静态 NAT", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("9.2.3", "配置 PAT");
+        p = new netacad.models.Page("9.2.3.1", "配置 PAT：地址池", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.3.2", "配置 PAT：单个地址", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.3.3", "分析 PAT", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.3.4", "验证 PAT", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.3.5", "练习 - 确定每一跳的地址信息", "Activity", "Other", "Flash DnD");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.3.6", "Packet Tracer – 实施静态 NAT 和动态 NAT", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.3.7", "实验 - 配置端口地址转换 (PAT)", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("9.2.4", "配置端口转发");
+        p = new netacad.models.Page("9.2.4.1", "端口转发", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.4.2", "无线路由器示例 ", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.4.3", "使用 IOS 配置端口转发", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.4.4", "Packet Tracer – 配置无线路由器上的端口转发", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("9.2.5", "NAT 和 IPv6");
+        p = new netacad.models.Page("9.2.5.1", "用于 IPv6 的 NAT？", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.5.2", "IPv6 唯一本地地址", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.2.5.3", "IPv6 NAT", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("9.3", "排除 NAT 故障");
+        t = new netacad.models.Topic("9.3.1", "NAT 故障排除命令");
+        p = new netacad.models.Page("9.3.1.1", "show ip nat 命令", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.3.1.2", "debug ip nat 命令", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.3.1.3", "NAT 故障排除场景", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.3.1.4", "Packet Tracer – 验证 NAT 配置并进行故障排除", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.3.1.5", "实验 - NAT 配置故障排除", "Activity", "Packet Tracer", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("9.4", "小结");
+        t = new netacad.models.Topic("9.4.1", "结论");
+        p = new netacad.models.Page("9.4.1.1", "NAT 检查", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.4.1.2", "Packet Tracer - 综合技能练习", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("9.4.1.3", "第 9 章：IPv4 NAT", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("10", "设备发现、管理和维护");
+        s = new netacad.models.Section("10.0", "简介");
+        t = new netacad.models.Topic("10.0.1", "欢迎");
+        p = new netacad.models.Page("10.0.1.1", "第 10 章：设备发现、管理和维护", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("10.1", "设备发现");
+        t = new netacad.models.Topic("10.1.1", "使用 CDP 发现设备");
+        p = new netacad.models.Page("10.1.1.1", "CDP 概述", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.1.1.2", "配置和验证 CDP", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.1.1.3", "使用 CDP 发现设备", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.1.1.4", "Packet Tracer - 使用 CDP 映射网络", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("10.1.2", "使用 LLDP 发现设备");
+        p = new netacad.models.Page("10.1.2.1", "LLDP 概述", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.1.2.2", "配置和验证 LLDP", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.1.2.3", "使用 LLDP 发现设备", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.1.2.4", "练习 - 比较 CDP 和 LLDP", "Activity", "Other", "Flash Check Box");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.1.2.5", "实验 - 配置 CDP 和 LLDP", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("10.2", "设备管理");
+        t = new netacad.models.Topic("10.2.1", "NTP");
+        p = new netacad.models.Page("10.2.1.1", "设置系统时钟", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.2.1.2", "NTP 操作", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.2.1.3", "配置和验证 NTP", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.2.1.4", "Packet Tracer - 配置和验证 NTP", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("10.2.2", "系统日志操作");
+        p = new netacad.models.Page("10.2.2.1", "系统日志简介", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.2.2.2", "系统日志操作", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.2.2.3", "系统日志消息格式", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.2.2.4", "服务时间戳", "");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.2.2.5", "练习 - 解释系统日志输出", "Activity", "Other", "Flash DnD");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("10.2.3", "系统日志配置");
+        p = new netacad.models.Page("10.2.3.1", "系统日志服务器", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.2.3.2", "默认日志记录", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.2.3.3", "用于系统日志客户端的路由器和交换机命令", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.2.3.4", "验证系统日志", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.2.3.5", "Packet Tracer - 配置系统日志和 NTP", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.2.3.6", "实验 - 配置系统日志和 NTP", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("10.3", "设备维护");
+        t = new netacad.models.Topic("10.3.1", "路由器和交换机文件维护");
+        p = new netacad.models.Page("10.3.1.1", "路由器文件系统", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.1.2", "交换机文件系统", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.1.3", "使用文本文件备份和恢复", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.1.4", "使用 TFTP 备份和恢复", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.1.5", "使用思科路由器上的 USB 端口", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.1.6", "使用 USB 备份和恢复", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.1.7", "密码恢复", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.1.8", "Packet Tracer - 备份配置文件", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.1.9", "实验 - 使用 Tera Term 管理路由器配置文件", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.1.10", "实验 - 使用 TFTP、闪存和 USB 管理设备配置文件", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.1.11", "实验 - 研究密码恢复程序", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("10.3.2", "IOS 系统文件");
+        p = new netacad.models.Page("10.3.2.1", "IOS 15 系统映像包装", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.2.2", "IOS 映像文件名", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("10.3.3", "IOS 映像管理");
+        p = new netacad.models.Page("10.3.3.1", "TFTP 服务器作为备份位置", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.3.2", "将 IOS 映像备份到 TFTP 服务器的步骤", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.3.3", "将 IOS 映像复制到设备的步骤", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.3.4", "boot system 命令", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.3.5", "Packet Tracer – 使用 TFTP 服务器升级思科 IOS 映像", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.3.6", "视频演示 - 管理思科 IOS 映像", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("10.3.4", "软件许可 ");
+        p = new netacad.models.Page("10.3.4.1", "许可概述", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.4.2", "许可流程", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.4.3", "步骤 1.购买要安装的软件包或功能", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.4.4", "步骤 2.获取许可证", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.4.5", "步骤 3.安装许可证", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("10.3.5", "许可证验证和管理");
+        p = new netacad.models.Page("10.3.5.1", "许可证验证", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.5.2", "激活评估使用权许可证", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.5.3", "备份许可证", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.5.4", "卸载许可证", "");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.3.5.5", "视频演示 - 使用 IOS 15 映像许可证", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("10.4", "小结");
+        t = new netacad.models.Topic("10.4.1", "结论");
+        p = new netacad.models.Page("10.4.1.1", "Packet Tracer - 综合技能练习", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("10.4.1.2", "第 10 章：设备发现、管理和维护", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        return c;
+      }();
+
+    </script>
+  </head>
+  <body aria-live="polite">
+    <div id="login" role="document" aria-hidden="true">在访问该课程之前，请登录 <a href="http://netacad.com">netacad.com</a>。</div>
+    <div id="splash" role="document" aria-hidden="true">
+      <div class="logo" title="Cisco Systems, Inc."></div>
+      <h1>路由和交换基本要素</h1>
+      <p>单击任意图像开始课程。</p>
+      <ul>
+        <li>
+          <div class="bg-0">
+            <input id="bg-0" type="image" src="course/common/backgrounds/bg-0-S.jpg" alt="背景影像 0" aria-label="背景影像 0"/>
+            <label id="bg-0-text" for="bg-0"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-1">
+            <input id="bg-1" type="image" src="course/common/backgrounds/bg-1-S.jpg" alt="背景影像 1" aria-label="背景影像 1"/>
+            <label id="bg-1-text" for="bg-1"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-2">
+            <input id="bg-2" type="image" src="course/common/backgrounds/bg-2-S.jpg" alt="背景影像 2" aria-label="背景影像 2"/>
+            <label id="bg-2-text" for="bg-2"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-3">
+            <input id="bg-3" type="image" src="course/common/backgrounds/bg-3-S.jpg" alt="背景影像 3" aria-label="背景影像 3"/>
+            <label id="bg-3-text" for="bg-3"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-4">
+            <input id="bg-4" type="image" src="course/common/backgrounds/bg-4-S.jpg" alt="背景影像 4" aria-label="背景影像 4"/>
+            <label id="bg-4-text" for="bg-4"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-5">
+            <input id="bg-5" type="image" src="course/common/backgrounds/bg-5-S.jpg" alt="背景影像 5" aria-label="背景影像 5"/>
+            <label id="bg-5-text" for="bg-5"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-6">
+            <input id="bg-6" type="image" src="course/common/backgrounds/bg-6-S.jpg" alt="背景影像 6" aria-label="背景影像 6"/>
+            <label id="bg-6-text" for="bg-6"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-7">
+            <input id="bg-7" type="image" src="course/common/backgrounds/bg-7-S.jpg" alt="背景影像 7" aria-label="背景影像 7"/>
+            <label id="bg-7-text" for="bg-7"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-8">
+            <input id="bg-8" type="image" src="course/common/backgrounds/bg-8-S.jpg" alt="背景影像 8" aria-label="背景影像 8"/>
+            <label id="bg-8-text" for="bg-8"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-9">
+            <input id="bg-9" type="image" src="course/common/backgrounds/bg-9-S.jpg" alt="背景影像 9" aria-label="背景影像 9"/>
+            <label id="bg-9-text" for="bg-9"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-10">
+            <input id="bg-10" type="image" src="course/common/backgrounds/bg-10-S.jpg" alt="背景影像 10" aria-label="背景影像 10"/>
+            <label id="bg-10-text" for="bg-10"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-11">
+            <input id="bg-11" type="image" src="course/common/backgrounds/bg-11-S.jpg" alt="背景影像 11" aria-label="背景影像 11"/>
+            <label id="bg-11-text" for="bg-11"></label>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="main" role="document" aria-hidden="false">
+      <div id="header">
+        <div class="logo" title="Cisco Systems, Inc."></div>
+        <h1><a id="course-title" href="">路由和交换基本要素</a></h1>
+      </div>
+      <div id="map" role="navigation">
+        <div class="map-container" id="map-modules" aria-live="polite">
+          <div class="scroll-pane active">
+            <button type="button" class="scroll-pane-up-button" title="向上滚动" aria-hidden="true">向上滚动</button>
+            <button type="button" class="scroll-pane-down-button" title="向下滚动" aria-hidden="true">向下滚动</button>
+            <div class="scroll-pane-content" tabindex="-1"></div>
+          </div>
+        </div>
+        <div class="map-container" id="map-sections" aria-live="polite">
+          <div class="scroll-pane">
+            <button type="button" class="scroll-pane-up-button" title="向上滚动" aria-hidden="true">向上滚动</button>
+            <button type="button" class="scroll-pane-down-button" title="向下滚动" aria-hidden="true">向下滚动</button>
+            <div class="scroll-pane-content" tabindex="-1"></div>
+          </div>
+        </div>
+        <div class="map-container" id="map-topics" aria-live="polite">
+          <div class="scroll-pane">
+            <button type="button" class="scroll-pane-up-button" title="向上滚动" aria-hidden="true">向上滚动</button>
+            <button type="button" class="scroll-pane-down-button" title="向下滚动" aria-hidden="true">向下滚动</button>
+            <div class="scroll-pane-content" tabindex="-1"></div>
+          </div>
+        </div>
+        <div class="map-container" id="map-pages" aria-live="polite">
+          <div class="scroll-pane">
+            <button type="button" class="scroll-pane-up-button" title="向上滚动" aria-hidden="true">向上滚动</button>
+            <button type="button" class="scroll-pane-down-button" title="向下滚动" aria-hidden="true">向下滚动</button>
+            <div class="scroll-pane-content" tabindex="-1"></div>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div id="container">
+          <div id="page-header">
+            <nav class="breadcrumbs" aria-label="breadcumbs">
+              <ul>
+                <li aria-level="1">
+                  <a id="breadcrumbs-module" href="#">
+                    <span id="breadcrumbs-module-li" class="breadcrumbs-header">第 # 章</span>
+                    <span id="breadcrumbs-module-title" class="breadcrumbs-title"></span>
+                  </a>
+                </li>
+                <li aria-level="2">
+                  <a id="breadcrumbs-section" href="#">
+                    <span id="breadcrumbs-section-li" class="breadcrumbs-header">第 # 节</span>
+                    <span id="breadcrumbs-section-title" class="breadcrumbs-title"></span>
+                  </a>
+                </li>
+                <li aria-level="3">
+                  <a id="breadcrumbs-topic" href="#">
+                    <span id="breadcrumbs-topic-li" class="breadcrumbs-header">主题 #</span>
+                    <span id="breadcrumbs-topic-title" class="breadcrumbs-title"></span>
+                  </a>
+                </li>
+                <li aria-level="4">
+                  <a id="breadcrumbs-page" href="#">
+                    <span id="breadcrumbs-page-li" class="breadcrumbs-header">第 # 页</span>
+                    <span id="breadcrumbs-page-title" class="breadcrumbs-title"></span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="page-menu">
+              <button type="button" id="page-menu-close-button" title="关闭">
+                <span aria-hidden="true">关闭</span>
+              </button>
+            </div>
+          </div>
+          <div id="page-content" role="main" aria-live="polite"></div>
+          <div id="page-footer">
+            <div id="page-slide-buttons"></div>
+            <div class="page-menu" role="menu">
+              <button type="button" id="page-menu-transcript-button" role="menuitem" title="脚本">脚本</button>
+              <button type="button" id="page-menu-bookmark-button" role="menuitem" title="书签">书签</button>
+              <button type="button" id="page-menu-previous-button" role="menuitem" title="上一个">上一个</button>
+              <button type="button" id="page-menu-next-button" role="menuitem" title="下一个">下一个</button>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-course-index" aria-hidden="true" aria-labelledby="menu-course-index" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">课程索引</div>
+            <button type="button" class="overlay-close-button" title="关闭">
+              <span aria-hidden="true">关闭</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div id="course-index-buttons" role="menu">
+                <button type="button" class="index-button" id="index-course" role="menuitem" title="课程索引">
+                  <span class="index-button-icon"></span>
+                  <span class="index-button-label">课程索引</span>
+                </button>
+                <button type="button" class="index-button" id="index-packet-tracer" role="menuitem" title="Packet Tracer 索引">
+                  <span class="index-button-icon"></span>
+                  <span class="index-button-label">Packet Tracer 索引</span>
+                </button>
+                <button type="button" class="index-button" id="index-lab" role="menuitem" title="实验索引">
+                  <span class="index-button-icon"></span>
+                  <span class="index-button-label">实验索引</span>
+                </button>
+                <button type="button" class="index-button" id="index-video" role="menuitem" title="视频索引">
+                  <span class="index-button-icon"></span>
+                  <span class="index-button-label">视频索引</span>
+                </button>
+              </div>
+              <div class="scroll-pane active">
+                <button type="button" class="scroll-pane-up-button" title="向上滚动" aria-hidden="true">向上滚动</button>
+                <button type="button" class="scroll-pane-down-button" title="向下滚动" aria-hidden="true">向下滚动</button>
+                <div class="scroll-pane-content" tabindex="-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-recent-pages" aria-hidden="true" aria-labelledby="menu-recent-pages" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">最近访问的页面</div>
+            <button type="button" class="overlay-close-button" title="关闭">
+              <span aria-hidden="true">关闭</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div class="scroll-pane active">
+                <button type="button" class="scroll-pane-up-button" title="向上滚动" aria-hidden="true">向上滚动</button>
+                <button type="button" class="scroll-pane-down-button" title="向下滚动" aria-hidden="true">向下滚动</button>
+                <div class="scroll-pane-content" tabindex="-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-bookmarks" aria-hidden="true" aria-labelledby="menu-bookmarks" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">书签</div>
+            <button type="button" class="overlay-close-button" title="关闭">
+              <span aria-hidden="true">关闭</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div class="scroll-pane active">
+                <button type="button" class="scroll-pane-up-button" title="向上滚动" aria-hidden="true">向上滚动</button>
+                <button type="button" class="scroll-pane-down-button" title="向下滚动" aria-hidden="true">向下滚动</button>
+                <div class="scroll-pane-content" tabindex="-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-backgrounds" aria-hidden="true" aria-labelledby="menu-backgrounds" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">选择背景</div>
+            <button type="button" class="overlay-close-button" title="关闭">
+              <span aria-hidden="true">关闭</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div class="scroll-pane active">
+                <button type="button" class="scroll-pane-up-button" title="向上滚动" aria-hidden="true">向上滚动</button>
+                <button type="button" class="scroll-pane-down-button" title="向下滚动" aria-hidden="true">向下滚动</button>
+                <div class="scroll-pane-content" tabindex="-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-search" aria-hidden="true" aria-labelledby="menu-search" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">搜索</div>
+            <button type="button" class="overlay-close-button" title="关闭">
+              <span aria-hidden="true">关闭</span>
+            </button>
+            <input id="search-input" title="搜索" aria-label="搜索" type="search"/>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div class="scroll-pane active">
+                <button type="button" class="scroll-pane-up-button" title="向上滚动" aria-hidden="true">向上滚动</button>
+                <button type="button" class="scroll-pane-down-button" title="向下滚动" aria-hidden="true">向下滚动</button>
+                <div class="scroll-pane-content" tabindex="-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-languages" aria-hidden="true" aria-labelledby="menu-languages" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">语言</div>
+            <button type="button" class="overlay-close-button" title="关闭">
+              <span aria-hidden="true">关闭</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div class="scroll-pane active">
+                <button type="button" class="scroll-pane-up-button" title="向上滚动" aria-hidden="true">向上滚动</button>
+                <button type="button" class="scroll-pane-down-button" title="向下滚动" aria-hidden="true">向下滚动</button>
+                <div class="scroll-pane-content" tabindex="-1">
+                  <p>选择课程语言：</p>
+                  <ul>
+                    <li><a href="#" data-lang="ar" lang="ar" title="العربية (Arabic)" >العربية</a></li>
+                    <li><a href="#" data-lang="de" lang="de" title="Deutsch (German)">Deutsch</a></li>
+                    <li><a href="#" data-lang="en" lang="en" title="English (English)">English</a></li>
+                    <li><a href="#" data-lang="es" lang="es" title="Español (Spanish)">Español</a></li>
+                    <li><a href="#" data-lang="fr" lang="fr" title="Français (French)">Français</a></li>
+                    <li><a href="#" data-lang="he" lang="he" title="עברית (Hebrew)">עברית</a></li>
+                    <li><a href="#" data-lang="hr" lang="hr" title="Hrvatski (Croatian)">Hrvatski</a></li>
+                    <li><a href="#" data-lang="hu" lang="hu" title="Magyar (Hungarian)">Magyar</a></li>
+                    <li><a href="#" data-lang="hy" lang="hy" title="Հայերեն (Armenian)">Հայերեն</a></li>
+                    <li><a href="#" data-lang="it" lang="it" title="Italiano (Italian)">Italiano</a></li>
+                    <li><a href="#" data-lang="jp" lang="ja" title="日本語 (Japanese)">日本語</a></li>
+                    <li><a href="#" data-lang="ka" lang="ka" title="ქართული (Georgian)">ქართული</a></li>
+                    <li><a href="#" data-lang="ko" lang="ko" title="한국어 (Korean)">한국어</a></li>
+                    <li><a href="#" data-lang="nl" lang="nl" title="Nederlands (Dutch)">Nederlands</a></li>
+                    <li><a href="#" data-lang="pl" lang="pl" title="Polski (Polish)">Polski</a></li>
+                    <li><a href="#" data-lang="pt" lang="pt" title="Português (Portuguese)">Português</a></li>
+                    <li><a href="#" data-lang="ro" lang="ro" title="Română (Romanian)">Română</a></li>
+                    <li><a href="#" data-lang="ru" lang="ru" title="Русский (Russian)">Русский</a></li>
+                    <li><a href="#" data-lang="tr" lang="tr" title="Türkçe (Turkish)">Türkçe</a></li>
+                    <li><a href="#" data-lang="uk" lang="uk" title="Українська (Ukrainian)">Українська</a></li>
+                    <li><a href="#" data-lang="zh" lang="zh-Hans" title="简体中文 (Simplified Chinese)">简体中文</a></li>
+                    <li><a href="#" data-lang="ch" lang="zh-Hant" title="繁體中文 (Traditional Chinese)">繁體中文</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-help" aria-hidden="true" aria-labelledby="menu-help" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">帮助</div>
+            <button type="button" class="overlay-close-button" title="关闭">
+              <span aria-hidden="true">关闭</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div id="help-buttons" role="menu">
+                <button type="button" class="help-button" id="help-1" role="menuitem" title="简介">
+                  <span class="help-button-icon"></span>
+                  <span class="help-button-label">简介</span>
+                </button>
+                <button type="button" class="help-button" id="help-2" role="menuitem" title="课程导航">
+                  <span class="help-button-icon"></span>
+                  <span class="help-button-label">课程导航</span>
+                </button>
+                <button type="button" class="help-button" id="help-3" role="menuitem" title="评估和证书">
+                  <span class="help-button-icon"></span>
+                  <span class="help-button-label">评估和证书</span>
+                </button>
+                <button type="button" class="help-button" id="help-4" role="menuitem" title="Packet Tracer – 安装教程">
+                  <span class="help-button-icon"></span>
+                  <span class="help-button-label">Packet Tracer – 安装教程</span>
+                </button>
+                <button type="button" class="help-button" id="help-5" role="menuitem" title="Packet Tracer – 导航教程">
+                  <span class="help-button-icon"></span>
+                  <span class="help-button-label">Packet Tracer – 导航教程</span>
+                </button>
+                <div class="help-button" role="menuitem" title="在 Facebook 上关注我们">
+                  <a href="http://www.facebook.com/cisconetworkingacademy" target="facebook-netacad">
+                    <div class="help-facebook-icon"></div>
+                    <div class="help-button-label">在 Facebook 上关注我们</div>
+                  </a>
+                </div>
+              </div>
+              <div id="help-content" tabindex="-1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-developer" aria-hidden="true" aria-labelledby="menu-developer" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">Developer Tools</div>
+            <button type="button" class="overlay-close-button" title="关闭">
+              <span aria-hidden="true">关闭</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <ul class="items">
+                <li><button id="clear-local-storage-button">Clear Local Storage</button></li>
+                <li><button id="clear-background-button">Clear Background</button></li>
+                <li>
+                  <button id="enable-pseudolocalization-button">Enable Pseudolocalization</button>
+                  <button id="disable-pseudolocalization-button">Disable Pseudolocalization</button>
+                </li>
+                <li><button id="disable-developer-tools-button">Disable Developer Tools</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu" role="menu">
+        <div class="menu-buttons">
+          <button type="button" class="menu-button" role="menuitem" id="menu-developer" title="Developer Tools" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Developer Tools</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" role="menuitem" id="menu-recent-pages" title="最近访问的页面" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">最近访问的页面</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" role="menuitem" id="menu-bookmarks" title="书签" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">书签</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" role="menuitem" id="menu-course-index" title="课程索引" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">课程索引</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" role="menuitem" id="menu-search" title="搜索" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">搜索</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" role="menuitem" id="menu-languages" title="语言" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">语言</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" role="menuitem" id="menu-backgrounds" title="选择背景" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">选择背景</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" role="menuitem" id="menu-help" title="帮助" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">帮助</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" role="menuitem" id="menu-return" title="返回课程">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">返回课程</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
